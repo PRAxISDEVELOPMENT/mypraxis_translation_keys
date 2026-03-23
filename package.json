@@ -1,0 +1,7 @@
+{
+    "name": "mypraxis_translation_keys",
+    "private": true,
+    "scripts": {
+      "update": "sh ./update.sh"
+    }
+  }

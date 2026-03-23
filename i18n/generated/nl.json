@@ -10,7 +10,6 @@
   },
   "common": {
     "save": "Opslaan",
-    "cancel": "Annuleren",
-    "test": "test"
+    "cancel": "Annuleren"
   }
 }

@@ -10,7 +10,6 @@
   },
   "common": {
     "save": "Enregistrer",
-    "cancel": "Annuler",
-    "test": "test"
+    "cancel": "Annuler"
   }
 }

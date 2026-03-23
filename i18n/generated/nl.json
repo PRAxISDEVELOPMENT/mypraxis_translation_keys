@@ -1,15 +1,5 @@
 {
   "metadata": {
-    "title": "PRAxIS GROUP N.V. - MyPRAxIS",
-    "description": "Klantenportaal van PRAxIS Group"
-  },
-  "auth": {
-    "login": {
-      "title": "Aanmelden"
-    }
-  },
-  "common": {
-    "save": "Opslaan",
-    "cancel": "Annulesren"
+    "title": "PRAxIS GROUP N.V. - MyPRAxIS"
   }
 }

@@ -1,15 +1,5 @@
 {
   "metadata": {
-    "title": "PRAxIS GROUP N.V. - MyPRAxIS",
-    "description": "Portail client de PRAxIS Group"
-  },
-  "auth": {
-    "login": {
-      "title": "Connexion"
-    }
-  },
-  "common": {
-    "save": "Enregistrer",
-    "cancel": "Annuler"
+    "title": "PRAxIS GROUP N.V. - MyPRAxIS"
   }
 }

@@ -1,0 +1,20 @@
+[
+    {
+        "key": "Metadata.title",
+        "nl": "PRAxIS GROUP N.V. - MyPRAxIS",
+        "fr": "PRAxIS GROUP N.V. - MyPRAxIS",
+        "en": "PRAxIS GROUP N.V. - MyPRAxIS"
+    },
+    {
+        "key": "Metadata.description",
+        "nl": "Klantenportaal van PRAxIS Group",
+        "fr": "Portail client de PRAxIS Group",
+        "en": "Customer portal for PRAxIS Group"
+    },
+    {
+        "key": "Auth.Login.title",
+        "nl": "Aanmelden",
+        "fr": "Connexion",
+        "en": "Sign in"
+    }
+]

@@ -1,0 +1,44 @@
+name: Build translations
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'i18n/translations.json'
+      - 'i18n/buildTranslations.js'
+      - '.github/workflows/buildTranslations.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build translations
+        run: node i18n/buildTranslations.js
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add i18n/generated/*.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore(i18n): generate locale files"
+            git push
+          fi

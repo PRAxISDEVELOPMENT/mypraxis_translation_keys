@@ -4,29 +4,5 @@
         "nl": "PRAxIS GROUP N.V. - MyPRAxIS",
         "fr": "PRAxIS GROUP N.V. - MyPRAxIS",
         "en": "PRAxIS GROUP N.V. - MyPRAxIS"
-    },
-    {
-        "key": "metadata.description",
-        "nl": "Klantenportaal van PRAxIS Group",
-        "fr": "Portail client de PRAxIS Group",
-        "en": "Customer portal for PRAxIS Group"
-    },
-    {
-        "key": "auth.login.title",
-        "nl": "Aanmelden",
-        "fr": "Connexion",
-        "en": "Sign in"
-    },
-    {
-        "key": "common.save",
-        "nl": "Opslaan",
-        "fr": "Enregistrer",
-        "en": "Save"
-    },
-    {
-        "key": "common.cancel",
-        "nl": "Annuleren",
-        "fr": "Annuler",
-        "en": "Cancel"
     }
 ]

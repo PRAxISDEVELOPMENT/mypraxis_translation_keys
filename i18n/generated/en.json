@@ -1,5 +1,8 @@
 {
   "metadata": {
-    "title": "PRAxIS GROUP N.V. - MyPRAxIS"
+    "general": {
+      "title": "PRAxIS GROUP N.V. - MyPRAxIS",
+      "description": "Application where administrative documents, customer data, reports and live alarm notifications can be consulted and managed."
+    }
   }
 }

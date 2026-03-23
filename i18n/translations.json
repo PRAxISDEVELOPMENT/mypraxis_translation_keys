@@ -1,8 +1,14 @@
 [
     {
-        "key": "metadata.title",
+        "key": "metadata.general.title",
         "nl": "PRAxIS GROUP N.V. - MyPRAxIS",
         "fr": "PRAxIS GROUP N.V. - MyPRAxIS",
         "en": "PRAxIS GROUP N.V. - MyPRAxIS"
+    },
+    {
+        "key": "metadata.general.description",
+        "nl": "Applicatie waar administratieve documenten, klantgegevens, rapporten en live alarmmeldingen kunnen worden geraadpleegd en beheerd.",
+        "fr": "Application où les documents administratifs, les données clients, les rapports et les notifications d’alarme en direct peuvent être consultés et gérés.",
+        "en": "Application where administrative documents, customer data, reports and live alarm notifications can be consulted and managed."
     }
 ]

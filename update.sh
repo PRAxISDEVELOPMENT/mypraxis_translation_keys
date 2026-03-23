@@ -4,7 +4,7 @@ printf "Commit message: "
 read MESSAGE
 
 if [ -z "$MESSAGE" ]; then
-  echo "Geen commit message ingevuld."
+  echo "No commit message filled in."
   exit 1
 fi
 
@@ -15,7 +15,7 @@ git push
 SECONDS_LEFT=120
 
 while [ $SECONDS_LEFT -gt 0 ]; do
-  printf "\rPull in %02d seconden..." "$SECONDS_LEFT"
+  printf "\rPull in %02d seconds..." "$SECONDS_LEFT"
   sleep 1
   SECONDS_LEFT=$((SECONDS_LEFT - 1))
 done
@@ -23,4 +23,4 @@ done
 printf "\rPulling latest changes now...            \n"
 git pull --rebase origin main
 
-echo "Klaar."
+echo "Ready."

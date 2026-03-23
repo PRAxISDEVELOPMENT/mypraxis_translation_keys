@@ -1,0 +1,11 @@
+{
+  "Metadata": {
+    "title": "PRAxIS GROUP N.V. - MyPRAxIS",
+    "description": "Portail client de PRAxIS Group"
+  },
+  "Auth": {
+    "Login": {
+      "title": "Connexion"
+    }
+  }
+}

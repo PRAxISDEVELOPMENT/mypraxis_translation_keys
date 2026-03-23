@@ -16,5 +16,11 @@
         "nl": "Aanmelden",
         "fr": "Connexion",
         "en": "Sign in"
+    },
+    {
+        "key": "Common.save",
+        "nl": "Opslaan",
+        "fr": "Enregistrer",
+        "en": "Save"
     }
 ]

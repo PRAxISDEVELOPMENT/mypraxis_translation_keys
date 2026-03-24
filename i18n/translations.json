@@ -132,31 +132,25 @@
         "en": "Extern"
     },
     {
-        "key": "common.get",
+        "key": "common.GET",
         "nl": "GET",
         "fr": "GET",
         "en": "GET"
     },
     {
-        "key": "common.post",
+        "key": "common.POST",
         "nl": "POST",
         "fr": "POST",
         "en": "POST"
     },
     {
-        "key": "common.patch",
+        "key": "common.PATCH",
         "nl": "PATCH",
         "fr": "PATCH",
         "en": "PATCH"
     },
     {
-        "key": "common.delete",
-        "nl": "DELETE",
-        "fr": "DELETE",
-        "en": "DELETE"
-    },
-    {
-        "key": "common.delete",
+        "key": "common.DELETE",
         "nl": "DELETE",
         "fr": "DELETE",
         "en": "DELETE"
@@ -210,7 +204,7 @@
         "en": "API success"
     },
     {
-        "key": "success.success",
+        "key": "success.successDetails",
         "nl": "Details geslaagd",
         "fr": "Détails concernant la réussite",
         "en": "Success Details"
@@ -592,5 +586,311 @@
         "nl": "Selecteer formule",
         "fr": "Sélectionner la formule",
         "en": "Select formula"
+    },
+    {
+        "key": "info.selectFormulaOfYourGuardDuty",
+        "nl": "Selecteer via onderstaand veld de gewenste formule voor uw wachtdienst. Met formule bedoelen we welk actiepatroon gevolgd wordt voor het contacteren van uw techniekers.",
+        "fr": "Sélectionnez la formule préférée pour votre service de permanence via le champ ci-dessous. La formule déterminera le plan d'action pour les appels à vos techniciens de permanence.",
+        "en": "Select the desired formula of your guard duty via the field below."
+    },
+    {
+        "key": "info.selectFormulaOfYourGuardDuty",
+        "nl": "Selecteer via onderstaand veld het tijdstip waarop voor uw organisatie de wachtdienst dagelijks aanvangt en waarop dus de overdracht van de ene permanentie-technieker naar de andere plaatsvindt.",
+        "fr": "Utilisez le champ ci-dessous pour sélectionner l'heure de début quotidienne de votre service de permanence. C'est également l'heure du transfert de service d'un technicien de permanence à l'autre.",
+        "en": "Use the field below to select the time at which the guard duty starts daily for your organisation and at which point the transition from one on-duty technician to the other takes place."
+    },
+    {
+        "key": "info.forMoreInfoSeeFAQ",
+        "nl": "Voor meer info zie onze FAQ op de 'help' pagina",
+        "fr": "Pour plus d'informations, consultez notre FAQ sur la page 'Besoin d'aide?'.",
+        "en": "For more information see our FAQ on the 'help' page"
+    },
+    {
+        "key": "info.setItemsViaThisPage",
+        "nl": "Via deze pagina kan u onderstaande zaken instellen",
+        "fr": "Vous pouvez configurer les éléments suivants via cette page",
+        "en": "You can set the following items via this page"
+    },
+    {
+        "key": "common.reference",
+        "nl": "Referentie",
+        "fr": "Référence",
+        "en": "Reference"
+    },
+    {
+        "key": "common.ourReference",
+        "nl": "Onze referentie",
+        "fr": "Nos références",
+        "en": "Our reference"
+    },
+    {
+        "key": "common.ourReference",
+        "nl": "Uw referentie",
+        "fr": "Vos références",
+        "en": "Your reference"
+    },
+    {
+        "key": "common.understood",
+        "nl": "Begrepen",
+        "fr": "Compris",
+        "en": "Understood"
+    },
+    {
+        "key": "info.coockieInfo",
+        "nl": "Cookies helpen ons bij het leveren van onze diensten. Door gebruik te maken van onze diensten, gaat u uitdrukkelijk akkoord met ons gebruik van cookies.",
+        "fr": "Les cookies facilitent nos services. En utilisant nos services, vous acceptez expressément l'utilisation de cookies par PRAXIS GROUP.",
+        "en": "Cookies assist us in providing our services. By using our services, you expressly agree to our use of cookies."
+    },
+    {
+        "key": "common.generalInformation",
+        "nl": "Algemene informatie",
+        "fr": "Information générale",
+        "en": "General information"
+    },
+    {
+        "key": "common.user",
+        "nl": "Gebruiker",
+        "fr": "Utilisateur",
+        "en": "User"
+    },
+    {
+        "key": "common.selectDivision",
+        "nl": "Selecteer divisie",
+        "fr": "Sélectionner une division",
+        "en": "Select division"
+    },
+    {
+        "key": "error.accessForbidden",
+        "nl": "Toegang geweigerd",
+        "fr": "Accès interdit",
+        "en": "Access forbidden"
+    },
+    {
+        "key": "success.divisionChanged",
+        "nl": "Divisie gewijzigd",
+        "fr": "Division modifiée",
+        "en": "Division changed"
+    },
+    {
+        "key": "success.groupChanged",
+        "nl": "Groep gewijzigd",
+        "fr": "Groupe modifié",
+        "en": "Group changed"
+    },
+    {
+        "key": "common.changeDivision",
+        "nl": "Divisie wijzigen",
+        "fr": "Modifier la division",
+        "en": "Change division"
+    },
+    {
+        "key": "common.contact",
+        "nl": "Contact",
+        "fr": "Contact",
+        "en": "Contact"
+    },
+    {
+        "key": "common.edit",
+        "nl": "Bewerken",
+        "fr": "Modifier",
+        "en": "Edit"
+    },
+    {
+        "key": "common.editGroup",
+        "nl": "Groep bewerken",
+        "fr": "Modifier le groupe",
+        "en": "Edit group"
+    },
+    {
+        "key": "common.deleteButton",
+        "nl": "Verwijderknop",
+        "fr": "Supprimer le bouton",
+        "en": "Delete button"
+    },
+    {
+        "key": "common.mobileNumber",
+        "nl": "Mobiel nummer",
+        "fr": "Numéro mobile",
+        "en": "Mobile number"
+    },
+    {
+        "key": "common.name",
+        "nl": "Naam",
+        "fr": "Nom",
+        "en": "Name"
+    },
+    {
+        "key": "common.language",
+        "nl": "Taal",
+        "fr": "Langue",
+        "en": "Language"
+    },
+    {
+        "key": "common.none",
+        "nl": "Geen",
+        "fr": "Aucun(e)",
+        "en": "None"
+    },
+    {
+        "key": "success.guardDutyFormulaChanged",
+        "nl": "Wachtdienstformule gewijzigd",
+        "fr": "Formule du service de permanence modifiée",
+        "en": "Guard duty formula changed"
+    },
+    {
+        "key": "success.beginEndTimeChanged",
+        "nl": "Start- en eindtijd gewijzigd",
+        "fr": "Heure de début et heure de fin modifiée(s)",
+        "en": "Begin- and endtime changed"
+    },
+    {
+        "key": "common.status",
+        "nl": "Status",
+        "fr": "Statut",
+        "en": "Status"
+    },
+    {
+        "key": "common.manageGroups",
+        "nl": "Groepen beheren",
+        "fr": "Gérer des groupes",
+        "en": "Manage groups"
+    },
+    {
+        "key": "common.groups",
+        "nl": "Groepen",
+        "fr": "Groupes",
+        "en": "Groups"
+    },
+    {
+        "key": "common.days",
+        "nl": "Dagen",
+        "fr": "Jours",
+        "en": "Days"
+    },
+    {
+        "key": "success.groupDeleted",
+        "nl": "Groep verwijderd",
+        "fr": "Groupe supprimé",
+        "en": "Group deleted"
+    },
+    {
+        "key": "common.from",
+        "nl": "Van",
+        "fr": "De",
+        "en": "From"
+    },
+    {
+        "key": "common.mandatoryCSVHeaders",
+        "nl": "Verplichte CSV headers",
+        "fr": "En-têtes CSV obligatoires",
+        "en": "Mandatory CSV headers"
+    },
+    {
+        "key": "common.results",
+        "nl": "Resultaten",
+        "fr": "Résultats",
+        "en": "Results"
+    },
+    {
+        "key": "common.delete",
+        "nl": "Verwijderen",
+        "fr": "Supprimer",
+        "en": "Delete"
+    },
+    {
+        "key": "common.delete",
+        "nl": "Verwijderen",
+        "fr": "Supprimer",
+        "en": "Delete"
+    },
+    {
+        "key": "error.noDataFound",
+        "nl": "Geen gegevens gevonden",
+        "fr": "Aucune donnée trouvée",
+        "en": "No data found"
+    },
+    {
+        "key": "success.calendarChanged",
+        "nl": "Kalender gewijzigd",
+        "fr": "Calendrier modifié",
+        "en": "Calendar changed"
+    },
+    {
+        "key": "common.search",
+        "nl": "Zoeken",
+        "fr": "Rechercher",
+        "en": "Search"
+    },
+    {
+        "key": "common.error",
+        "nl": "Fout",
+        "fr": "Erreur",
+        "en": "Error"
+    },
+    {
+        "key": "common.attention",
+        "nl": "Opgelet",
+        "fr": "Attention",
+        "en": "Attention"
+    },
+    {
+        "key": "common.installerName",
+        "nl": "Installateursnaam",
+        "fr": "Nom de l'installateur",
+        "en": "Installer name"
+    },
+    {
+        "key": "common.installerNumber",
+        "nl": "Installateursnummer",
+        "fr": "Numéro de l'installateur",
+        "en": "Installer number"
+    },
+    {
+        "key": "common.generateQuote",
+        "nl": "Offerte genereren",
+        "fr": "Générer un devis",
+        "en": "Generate quote"
+    },
+    {
+        "key": "common.requestQuotes",
+        "nl": "Offerte opvragen",
+        "fr": "Consulter un devis",
+        "en": "Request quotes"
+    },
+    {
+        "key": "common.requestPricelist",
+        "nl": "Prijslijst opvragen",
+        "fr": "Demander le tarif",
+        "en": "Request price list"
+    },
+    {
+        "key": "common.additionalData",
+        "nl": "Bijkomende gegevens",
+        "fr": "Données supplémentaires",
+        "en": "Additional data"
+    },
+    {
+        "key": "common.export",
+        "nl": "Exporteer",
+        "fr": "Exporter",
+        "en": "Export"
+    },
+    {
+        "key": "common.addedToGroup",
+        "nl": "Toegevoegd aan groep",
+        "fr": "Ajouté au groupe",
+        "en": "Added to group"
+    },
+    {
+        "key": "common.fixedPhone",
+        "nl": "Vast toestel",
+        "fr": "Ligne fixe",
+        "en": "Fixed phone"
+    },
+    {
+        "key": "common.noActionPossible",
+        "nl": "Geen actie mogelijk",
+        "fr": "Aucune action possible",
+        "en": "No action possible"
     }
 ]

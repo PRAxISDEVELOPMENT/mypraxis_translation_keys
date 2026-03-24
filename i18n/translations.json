@@ -156,7 +156,7 @@
         "en": "DELETE"
     },
     {
-        "key": "alerts.lastTenMinutesByDefault",
+        "key": "info.lastTenMinutesByDefault",
         "nl": "Als je geen begin- of einddatum opgeeft, worden standaard de resultaten van de laatste 10 minuten getoond.",
         "fr": "Si vous n'indiquez ni date de début ou ni date de fin, les résultats des 10 dernières minutes seront affichés.",
         "en": "If you don't provide a start or end date, the results will default to the last 10 minutes."
@@ -1228,5 +1228,587 @@
         "nl": "Per contactgroep beheren wie er dagelijks de primaire technieker van wacht is, en wie zijn back-up is.",
         "fr": "Gérez par groupe qui est le technicien principal et le technicien suppléant du service de permanence quotidien.",
         "en": "Manage per contact group who is the primary and back-up technician on guard duty on a daily basis."
+    },
+    {
+        "key": "info.manageExceptionPerGroup",
+        "nl": "Per contactgroep uitzonderingen beheren voor zowel de primaire als de back-up technieker van wacht (omwille van bv. verlof, ziekte, afwezigheid, …).",
+        "fr": "Gérer des exceptions, par groupe , pour le technicien principal et le technicien suppléant du service de permanence (en raison, par exemple, d'un congé, d'une maladie, d'une absence, etc.).",
+        "en": "Manage exceptions per contact group for both the primary and back-up technician on guard duty (due to for example leave, illness, absence, etc.)."
+    },
+    {
+        "key": "info.clickInCalendarOnGroupToChange",
+        "nl": "Klik in de kalender op de groep waarvan u de contacten wilt toewijzen of wijzigen. Je kan contacten toewijzen tot het einde van de betreffende maand.",
+        "fr": "Cliquez dans le \"Calendrier\" sur le groupe pour lequel vous souhaitez attribuer ou modifier des techniciens, déterminés par groupe. Si vous le souhaitez, les contacts peuvent être attribués jusqu'à la fin du mois concerné.",
+        "en": "Click in the calendar on the group for which you wish to assign or change the contacts, determined per group. If desired, contacts can be assigned until the end of the relevant month."
+    },
+    {
+        "key": "info.clickInCalendarToManageExceptions",
+        "nl": "Klik in de kalender op de groep waarvan u uitzonderingen wil beheren.",
+        "fr": "Cliquez dans le calendrier sur le groupe pour lequel vous souhaitez gérer des exceptions.",
+        "en": "Click in the calendar on the group for which you want to manage exceptions."
+    },
+    {
+        "key": "common.standard",
+        "nl": "Standaard",
+        "fr": "Standard",
+        "en": "Standard"
+    },
+    {
+        "key": "common.password",
+        "nl": "Wachtwoord",
+        "fr": "Mot de passe",
+        "en": "Password"
+    },
+    {
+        "key": "common.provideValidEmail",
+        "nl": "Geef een geldig e-mailadres op",
+        "fr": "Veuillez nous faire parvenir une adresse e-mail valide",
+        "en": "Please provide a valid e-mail address"
+    },
+    {
+        "key": "common.login",
+        "nl": "Aanmelden",
+        "fr": "Se connecter",
+        "en": "Login"
+    },
+    {
+        "key": "common.totalPrice",
+        "nl": "Totaalprijs",
+        "fr": "Prix total",
+        "en": "Total price"
+    },
+    {
+        "key": "common.extraInfo",
+        "nl": "Extra info",
+        "fr": "Info supplémentaire",
+        "en": "Extra info"
+    },
+    {
+        "key": "common.alarmSystem",
+        "nl": "Alarmsysteem",
+        "fr": "Système d'alarme",
+        "en": "Alarmsystem"
+    },
+    {
+        "key": "common.primaryChannel",
+        "nl": "Primair kanaal",
+        "fr": "Canal principal",
+        "en": "Primary channel"
+    },
+    {
+        "key": "common.backupChannel",
+        "nl": "Back-up kanaal",
+        "fr": "Canal de back-up",
+        "en": "Back-up channel"
+    },
+    {
+        "key": "common.callNumbers",
+        "nl": "Oproepnummers",
+        "fr": "Numéros d'appel",
+        "en": "Call numbers"
+    },
+    {
+        "key": "common.benelux",
+        "nl": "BeNeLux",
+        "fr": "BeNeLux",
+        "en": "BeNeLux"
+    },
+    {
+        "key": "common.outsideBenelux",
+        "nl": "Buiten BeNeLux (binnen EU)",
+        "fr": "Hors BeNeLux (dans l'UE)",
+        "en": "Outside BeNeLux (inside EU)"
+    },
+    {
+        "key": "common.outsideBenelux",
+        "nl": "Buiten EU",
+        "fr": "Hors l'UE",
+        "en": "Outside EU"
+    },
+    {
+        "key": "common.videoSystemAuthentication",
+        "nl": "Videosysteem (IP camera/DVR/NVR) gebruikt voor alarmverificatie",
+        "fr": "Système vidéo (Caméra IP/DVR/NVR) pour vérification par caméra(s)",
+        "en": "Video system (IP camera/DVR/NVR) used for authentication"
+    },
+    {
+        "key": "common.videoVerification",
+        "nl": "Videoverificatie",
+        "fr": "Vérification par vidéo",
+        "en": "Video verification"
+    },
+    {
+        "key": "common.virtualSurveillance",
+        "nl": "Virtuele Bewaking",
+        "fr": "Ronde Virtuelle",
+        "en": "Virtual surveillance"
+    },
+    {
+        "key": "common.totalNumberOfCameras",
+        "nl": "Totaal aantal camera's",
+        "fr": "Nombre de caméras en total",
+        "en": "Total number of cameras"
+    },
+    {
+        "key": "common.numberOfCameras",
+        "nl": "Aantal camera's",
+        "fr": "Nombre de caméras",
+        "en": "Total number of cameras"
+    },
+    {
+        "key": "common.numberOfFixedCameras",
+        "nl": "Aantal vaste camera's",
+        "fr": "Nombre de caméras fixes",
+        "en": "Number of fixed cameras"
+    },
+    {
+        "key": "common.numberOfMobileCameras",
+        "nl": "Aantal beweegbare camera's",
+        "fr": "Nombre de caméras mobiles",
+        "en": "Number of mobile cameras"
+    },
+    {
+        "key": "common.numberOfRoundsPer24hr",
+        "nl": "Aantal rondes per 24 uur",
+        "fr": "Nombre de rondes virtuelles chaques 24 heures",
+        "en": "Number of rounds per 24 hours"
+    },
+    {
+        "key": "common.options",
+        "nl": "Opties",
+        "fr": "Options",
+        "en": "Options"
+    },
+    {
+        "key": "common.activeOnOff",
+        "nl": "Actieve on/off",
+        "fr": "On/off actif",
+        "en": "Active on/off"
+    },
+    {
+        "key": "common.eventReport",
+        "nl": "Rapport evenementen",
+        "fr": "Rapport d'événements",
+        "en": "Event report"
+    },
+    {
+        "key": "common.notificationsReport",
+        "nl": "Rapport meldingen",
+        "fr": "Rapport des notifications",
+        "en": "Notifications report"
+    },
+    {
+        "key": "common.numberOfPhotoDetectors",
+        "nl": "Aantal foto-detectoren",
+        "fr": "Nombre de détecteurs-photos",
+        "en": "Number of photo detectors"
+    },
+    {
+        "key": "common.numberOfVideoDetectors",
+        "nl": "Aantal video-detectoren",
+        "fr": "Nombre de détecteurs-vidéo",
+        "en": "Number of video detectors"
+    },
+    {
+        "key": "common.listenIn",
+        "nl": "Inluistering",
+        "fr": "Écoute à distance",
+        "en": "Listen-in"
+    },
+    {
+        "key": "common.smsWhenArmingSystem",
+        "nl": "SMS bij (ont)wapenen systeem",
+        "fr": "SMS lors de l'armement/désarmement du système",
+        "en": "SMS when (dis)arming the system"
+    },
+    {
+        "key": "common.costOverview",
+        "nl": "Overzicht kosten",
+        "fr": "Aperçu des prix d'achat",
+        "en": "Cost overview"
+    },
+    {
+        "key": "common.generateQuotation",
+        "nl": "Offerte genereren",
+        "fr": "Générer un devis",
+        "en": "Generate quotation"
+    },
+    {
+        "key": "common.quotationToolSalesPrices",
+        "nl": "Offertetool - verkoopprijzen",
+        "fr": "Outil de devis – prix de vente",
+        "en": "Quotation tool – sales prices"
+    },
+    {
+        "key": "common.register",
+        "nl": "Registreren",
+        "fr": "S'inscrire",
+        "en": "Register"
+    },
+    {
+        "key": "common.telemonitoring",
+        "nl": "Telebewaking",
+        "fr": "Télésurveillance",
+        "en": "Telemonitoring"
+    },
+    {
+        "key": "common.save",
+        "nl": "Opslaan",
+        "fr": "Sauvegarder",
+        "en": "Save"
+    },
+    {
+        "key": "common.praxisClientnumber",
+        "nl": "PRAxIS klantnummer",
+        "fr": "Numéro de client PRAxIS",
+        "en": "PRAxIS clientnumber"
+    },
+    {
+        "key": "common.clientHasMaintenanceContract",
+        "nl": "Klant heeft onderhoudscontract (waarde 0 of 1)",
+        "fr": "Le client a (oui = 1 ou non = 0) un contrat d'entretien",
+        "en": "Client has maintenance contract (value 0 or 1)"
+    },
+    {
+        "key": "common.download",
+        "nl": "Download",
+        "fr": "Téléchargez",
+        "en": "Download"
+    },
+    {
+        "key": "common.here",
+        "nl": "Hier",
+        "fr": "Ici",
+        "en": "Here"
+    },
+    {
+        "key": "common.exampleCSVFile",
+        "nl": "Een voorbeeld van CSV-bestand",
+        "fr": "Un fichier CSV de référence",
+        "en": "An example CSV file"
+    },
+    {
+        "key": "common.withBackup",
+        "nl": "Met back-up = 2 verschillende eprom nummers op dezelfde klantkaart (1 primair en 1 back-up)",
+        "fr": "Avec back-up = 2 différents numéros d'EPROM sur la même fiche de client (1 principal et 1 de back-up)",
+        "en": "With back-up"
+    },
+    {
+        "key": "common.connectionTypePrimary",
+        "nl": "Type aansluiting (primair)",
+        "fr": "Type de connexion principal",
+        "en": "Connection type primary"
+    },
+    {
+        "key": "common.additionalHandling",
+        "nl": "Extra afhandelingen",
+        "fr": "Traitement d'alarme supplémentaire",
+        "en": "Additional handling"
+    },
+    {
+        "key": "common.purchaseQuote",
+        "nl": "Aankoopofferte",
+        "fr": "Devis d'achat",
+        "en": "Purchase quote"
+    },
+    {
+        "key": "common.salesQuotation",
+        "nl": "Verkoopofferte",
+        "fr": "Devis commercial",
+        "en": "Sales quotation"
+    },
+    {
+        "key": "error.fileTooBig5",
+        "nl": "Bestand te groot! Max. 5MB toegestaan",
+        "fr": "Le fichier ne peut pas dépasser les 5 MB",
+        "en": "File too big! max. 5MB allowed"
+    },
+    {
+        "key": "common.noConnectionTypePrimary",
+        "nl": "Geen",
+        "fr": "Aucun",
+        "en": "No connection type primary"
+    },
+    {
+        "key": "common.classicAlarmViaIPOrPSTN",
+        "nl": "Klassiek alarmsysteem via IP/GPRS",
+        "fr": "Système d'alarme classique via IP/GPRS",
+        "en": "Classic alarm system via IP/GPRS"
+    },
+    {
+        "key": "common.classicAlarmViaPSTN",
+        "nl": "Klassiek alarmsysteem via PSTN",
+        "fr": "Système d'alarme classique via PSTN",
+        "en": "Classic alarm system via PSTN"
+    },
+    {
+        "key": "common.alarmWithPhotoDetector",
+        "nl": "Alarmsysteem met foto-detector",
+        "fr": "Système d'alarme avec détecteur(s) photos",
+        "en": "Alarm system with photo detector"
+    },
+    {
+        "key": "common.alarmWithVideoDetector",
+        "nl": "Alarmsysteem met video-detector",
+        "fr": "Système d'alarme avec détecteur(s) vidéo",
+        "en": "Alarm system with video detector"
+    },
+    {
+        "key": "common.cameraUsedAsAlarmSystem",
+        "nl": "Autonoom camerasysteem gebruikt als alarmsysteem",
+        "fr": "Système de vidéo autonome utilisé comme système d'alarme",
+        "en": "Autonomous camera system used as an alarm system"
+    },
+    {
+        "key": "common.no",
+        "nl": "Nee",
+        "fr": "Non",
+        "en": "No"
+    },
+    {
+        "key": "common.yes",
+        "nl": "Ja",
+        "fr": "Oui",
+        "en": "Yes"
+    },
+    {
+        "key": "common.noVirtualSurveillance",
+        "nl": "Geen virtuele bewaking",
+        "fr": "Pas de ronde virtuelle",
+        "en": "No virtual surveillance"
+    },
+    {
+        "key": "common.noFollowUp",
+        "nl": "Geen virtuele bewaking",
+        "fr": "Pas de ronde virtuelle",
+        "en": "No follow-up"
+    },
+    {
+        "key": "common.notificationViaSMS",
+        "nl": "Melding via SMS",
+        "fr": "Notification par SMS",
+        "en": "Notification via SMS"
+    },
+    {
+        "key": "common.notificationByOperator",
+        "nl": "Melding door operator",
+        "fr": "Notification par un opérateur de PRAxIS",
+        "en": "Notification by operator"
+    },
+    {
+        "key": "common.noReport",
+        "nl": "Geen rapport",
+        "fr": "Pas de rapport",
+        "en": "No report"
+    },
+    {
+        "key": "common.daily",
+        "nl": "Dagelijks",
+        "fr": "Quotidien",
+        "en": "Daily"
+    },
+    {
+        "key": "common.weekly",
+        "nl": "Wekelijks",
+        "fr": "Hebdomadaire",
+        "en": "Weekly"
+    },
+    {
+        "key": "common.monthly",
+        "nl": "Maandelijks",
+        "fr": "Mensuel",
+        "en": "Monthly"
+    },
+    {
+        "key": "common.noLineTest",
+        "nl": "Geen lijntest",
+        "fr": "Aucun test de ligne",
+        "en": "No line test"
+    },
+    {
+        "key": "common.noLineTestCheck",
+        "nl": "Geen lijntestcontrole",
+        "fr": "Aucune vérification de test de ligne",
+        "en": "No line test check"
+    },
+    {
+        "key": "common.every24h",
+        "nl": "Om de 24 uur",
+        "fr": "Chaque 24 heures",
+        "en": "Every 24 hours"
+    },
+    {
+        "key": "common.every12h",
+        "nl": "Om de 12 uur",
+        "fr": "Chaque 12 heures",
+        "en": "Every 12 hours"
+    },
+    {
+        "key": "common.every6h",
+        "nl": "Om de 6 uur",
+        "fr": "Chaque 6 heures",
+        "en": "Every 6 hours"
+    },
+    {
+        "key": "common.every4h",
+        "nl": "Om de 4 uur",
+        "fr": "Chaque 4 heures",
+        "en": "Every 4 hours"
+    },
+    {
+        "key": "common.every3h",
+        "nl": "Om de 3 uur",
+        "fr": "Chaque 3 heures",
+        "en": "Every 3 hours"
+    },
+    {
+        "key": "common.every2h",
+        "nl": "Om de 2 uur",
+        "fr": "Chaque 2 heures",
+        "en": "Every 2 hours"
+    },
+    {
+        "key": "common.every1h",
+        "nl": "Om het uur",
+        "fr": "Chaque heure",
+        "en": "Every hour"
+    },
+    {
+        "key": "common.every30min",
+        "nl": "Om de 30 minuten",
+        "fr": "Chaque 30 minutes",
+        "en": "Every 30 minutes"
+    },
+    {
+        "key": "common.every3min",
+        "nl": "Om de 3 minuten",
+        "fr": "Chaque 3 minutes",
+        "en": "Every 3 minutes"
+    },
+    {
+        "key": "common.every1min",
+        "nl": "Om de minuut",
+        "fr": "Chaque minute",
+        "en": "Every minute"
+    },
+    {
+        "key": "common.noPolling",
+        "nl": "Geen polling",
+        "fr": "Aucun Polling",
+        "en": "No polling"
+    },
+    {
+        "key": "common.salesQuote",
+        "nl": "Verkoopofferte (niet beschikbaar: er zijn geen verkoopprijzen bepaald)",
+        "fr": "Devis commercial (indisponible, car aucun prix de vente n'a été défini)",
+        "en": "Sales quote (unavailable due to no sales prices defined)"
+    },
+    {
+        "key": "common.bus",
+        "nl": "Bus",
+        "fr": "Boîte",
+        "en": "Bus"
+    },
+    {
+        "key": "common.street",
+        "nl": "Straat",
+        "fr": "Rue",
+        "en": "Street"
+    },
+    {
+        "key": "common.resendEmailInfo",
+        "nl": "Vul je e-mailadres in en klik op - Wachtwoord aanvragen - en volg daarna de instructies die u per e-mail ontvangt.",
+        "fr": "Entrez ici votre adresse e-mail et cliquez sur 'Demander un mot de passe'. Les prochaines étapes à suivre seront envoyées par e-mail.",
+        "en": "Enter your e-mail address and click request password. Follow the instructions that will be sent to you by e-mail."
+    },
+    {
+        "key": "common.forgotPassword",
+        "nl": "Wachtwoord vergeten?",
+        "fr": "Mot de passe oublié?",
+        "en": "Forgot password?"
+    },
+    {
+        "key": "common.requestPassword",
+        "nl": "Wachtwoord aanvragen",
+        "fr": "Demander un mot de passe",
+        "en": "Request password"
+    },
+    {
+        "key": "common.previous",
+        "nl": "Vorige",
+        "fr": "Précédent",
+        "en": "Previous"
+    },
+    {
+        "key": "success.furtherInstructionSendTo",
+        "nl": "Verdere instructies zijn verzonden naar {{value}}",
+        "fr": "D'autres instructions ont été envoyées à {{value}}",
+        "en": "Further instructions were sent to {{value}}"
+    },
+    {
+        "key": "common.country",
+        "nl": "Land",
+        "fr": "Pays",
+        "en": "Country"
+    },
+    {
+        "key": "common.currentPassword",
+        "nl": "Huidig wachtwoord",
+        "fr": "Mot de passe actuel",
+        "en": "Current password"
+    },
+    {
+        "key": "common.newPassword",
+        "nl": "Nieuw wachtwoord",
+        "fr": "Nouveau mot de passe",
+        "en": "New password"
+    },
+    {
+        "key": "common.confirmPassword",
+        "nl": "Bevestig wachtwoord",
+        "fr": "Confirmer votre mot de passe",
+        "en": "Confirm password"
+    },
+    {
+        "key": "common.confirmNewPassword",
+        "nl": "Bevestig nieuw wachtwoord",
+        "fr": "Confirmer votre nouveau mot de passe",
+        "en": "Confirm new password"
+    },
+    {
+        "key": "common.uploadLogo",
+        "nl": "Logo uploaden",
+        "fr": "Téléverser le logo",
+        "en": "Upload logo"
+    },
+    {
+        "key": "common.uploadFile",
+        "nl": "Bestand uploaden",
+        "fr": "Téléverser le fichier",
+        "en": "Upload file"
+    },
+    {
+        "key": "common.companyName",
+        "nl": "Bedrijfsnaam",
+        "fr": "Nom d'entreprise",
+        "en": "Company name"
+    },
+    {
+        "key": "info.provideEmailToChangeData",
+        "nl": "Als u gegevens wil wijzigen, gelieve uw instructies door te sturen via e-mail naar",
+        "fr": "Si vous souhaitez modifier des données, veuillez envoyer vos instructions par e-mail à",
+        "en": "If you wish change data, please provide your instructions via e-mail to"
+    },
+    {
+        "key": "common.administration",
+        "nl": "Administratie",
+        "fr": "Administration",
+        "en": "Administration"
+    },
+    {
+        "key": "common.previousPage",
+        "nl": "Vorige pagina",
+        "fr": "Page précédente",
+        "en": "Previous page"
     }
 ]

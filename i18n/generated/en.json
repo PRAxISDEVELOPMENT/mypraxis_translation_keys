@@ -10,22 +10,83 @@
     "method": "Method",
     "url": "URL",
     "host": "Host",
-    "innovaphoneCall": "Innovaphone Call",
     "mypraxis": "MyPRAxIS",
     "extern": "Extern",
     "get": "GET",
     "post": "POST",
     "patch": "PATCH",
-    "delete": "DELETE"
+    "delete": "DELETE",
+    "header": "Header",
+    "body": "Body",
+    "viewFullHeader": "View full header",
+    "viewFullbody": "Logs",
+    "duration": "Duration",
+    "response": "Response",
+    "subject": "Subject",
+    "paymentTerms": "Payment terms",
+    "to": "To",
+    "cc": "CC",
+    "bcc": "BCC",
+    "emailDetails": "Email details",
+    "attachement": "Attachement",
+    "message": "Message",
+    "emailContent": "Email content",
+    "html": "HTML",
+    "emailType": "Email type",
+    "fullView": "Full view",
+    "log": "Log",
+    "deeplink": "Deeplink",
+    "report": "Report",
+    "settings": "Settings",
+    "calendar": "Calendar",
+    "calendarOverview": "Calendar overview",
+    "contacts": "Contacts",
+    "primaryAndBackupContacts": "Primary and back-up contacts",
+    "history": "History",
+    "help": "Help",
+    "quotationtool": "Pricelist",
+    "guardDuty": "Guard duty",
+    "1day": "1 day",
+    "restOfTheMonth": "Rest of the month",
+    "logout": "Logout",
+    "reportSomething": "Report something?",
+    "loading": "Loading",
+    "startPage": "Startpage",
+    "safePlace": "We can take you to a safe place!",
+    "otherPlace": "We can take you to an other place!",
+    "emailAddres": "E-mail addres",
+    "topic": "Topic",
+    "description": "Description",
+    "addFile": "Add file",
+    "faq": "Frequently Asked Questions",
+    "changeFormula": "Change formula",
+    "changeBeginEndTime": "Change begin- and endtime",
+    "onlyEmailToTheOffice": "Only e-mail to the office",
+    "smsAndSms": "SMS + SMS to technician on guard duty",
+    "smsAndEmail": "SMS + e-mail to technician on guard duty",
+    "haveQuestion": "I have a question",
+    "haveSuggestion": "I have a suggestion",
+    "haveComplaint": "I have a complaint",
+    "haveProblem": "I have a problem",
+    "selectFormula": "Select formula"
   },
-  "errors": {
+  "error": {
     "apiErrors": "API errors",
-    "errorDetails": "Error Details"
+    "errorDetails": "Error Details",
+    "warning": "Warning",
+    "mustBeValidIpAddress": "The provided IP address must be a valid IP address",
+    "cantDeleteException": "Can't delete exception. Try again later.",
+    "pageDoesNotExist": "Oops, this page does not exist anymore."
   },
   "authentication": {
-    "firebaseUUID": "Firebase UUID"
+    "firebaseUUID": "Firebase UUID",
+    "fcm": "FCM",
+    "firebaseUUIDSender": "Firebase UUID sender",
+    "firebaseUUIDReceiver": "Firebase UUID receiver",
+    "fcmDetails": "FCM token"
   },
   "applicationNames": {
+    "innovaphoneCall": "Innovaphone Call",
     "postman": "Postman",
     "praxisAuto": "PRAxIS Auto",
     "praxisMail": "PRAxIS Mail",
@@ -35,6 +96,18 @@
     "praxisApp": "PRAxIS App",
     "mypraxisData": "myPRAxIS data",
     "postgres": "Postgres",
-    "praxisSollications": "PRAxIS sollicitation"
+    "praxisSollications": "PRAxIS sollicitation",
+    "praxisApiUsers": "PRAxIS API users",
+    "praxisWeb": "PRAxIS Web"
+  },
+  "alerts": {
+    "lastTenMinutesByDefault": "If you don't provide a start or end date, the results will default to the last 10 minutes."
+  },
+  "success": {
+    "success": "Success Details",
+    "excpetionDeleted": "Excpetion deleted"
+  },
+  "info": {
+    "tooManyResultsPerformanceWarning": "We've found 250 or more results based on your filters. To view more manageable data and ensure optimal performance, please refine your filters"
   }
 }

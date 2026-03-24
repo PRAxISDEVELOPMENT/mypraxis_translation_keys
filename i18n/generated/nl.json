@@ -10,22 +10,83 @@
     "method": "Methode",
     "url": "URL",
     "host": "Host",
-    "innovaphoneCall": "Innovaphone oproep",
     "mypraxis": "MyPRAxIS",
     "extern": "Extern",
     "get": "GET",
     "post": "POST",
     "patch": "PATCH",
-    "delete": "DELETE"
+    "delete": "DELETE",
+    "header": "Header",
+    "body": "Body",
+    "viewFullHeader": "Bekijk volledige header",
+    "viewFullbody": "Logs",
+    "duration": "Duur",
+    "response": "Antwoord",
+    "subject": "Onderwerp",
+    "paymentTerms": "Betalingsvoorwaarden",
+    "to": "Aan",
+    "cc": "CC",
+    "bcc": "BCC",
+    "emailDetails": "E-maildetails",
+    "attachement": "E-maildetails",
+    "message": "Bericht",
+    "emailContent": "E-mailinhoud",
+    "html": "HTML",
+    "emailType": "E-mailtype",
+    "fullView": "Volledig overzicht",
+    "log": "Logboek",
+    "deeplink": "Deeplink",
+    "report": "Melden",
+    "settings": "Instellingen",
+    "calendar": "Kalender",
+    "calendarOverview": "Kalenderoverzicht",
+    "contacts": "Contacten",
+    "primaryAndBackupContacts": "Primaire en back-up contacten",
+    "history": "Historie",
+    "help": "Help",
+    "quotationtool": "Prijslijst",
+    "guardDuty": "Wachtdienst",
+    "1day": "1 dag",
+    "restOfTheMonth": "Rest van de maand",
+    "logout": "Uitloggen",
+    "reportSomething": "Iets te melden?",
+    "loading": "Laden",
+    "startPage": "Startpagina",
+    "safePlace": "We kunnen u naar een veilige plaats brengen!",
+    "otherPlace": "We kunnen u naar een andere plaats brengen!",
+    "emailAddres": "E-mailadres",
+    "topic": "Onderwerp",
+    "description": "Omschrijving",
+    "addFile": "Bestand toevoegen",
+    "faq": "FAQ",
+    "changeFormula": "Formule wijzigen",
+    "changeBeginEndTime": "Start- en eindtijd wijzigen",
+    "onlyEmailToTheOffice": "Enkel e-mail naar kantoor",
+    "smsAndSms": "SMS + SMS naar technieker van wacht",
+    "smsAndEmail": "SMS + e-mail naar technieker van wacht",
+    "haveQuestion": "Ik heb een vraag",
+    "haveSuggestion": "Ik heb een suggestie",
+    "haveComplaint": "Ik heb een klacht",
+    "haveProblem": "Ik heb een probleem",
+    "selectFormula": "Selecteer formule"
   },
-  "errors": {
+  "error": {
     "apiErrors": "API-fouten",
-    "errorDetails": "Details fout"
+    "errorDetails": "Details fout",
+    "warning": "Waarschuwing",
+    "mustBeValidIpAddress": "Het opgegeven IP-adres moet een geldig IP-adres zijn",
+    "cantDeleteException": "Kan uitzondering niet verwijderen. Probeer het later opnieuw.",
+    "pageDoesNotExist": "Oeps, deze pagina bestaat niet meer."
   },
   "authentication": {
-    "firebaseUUID": "Firebase UUID"
+    "firebaseUUID": "Firebase UUID",
+    "fcm": "FCM",
+    "firebaseUUIDSender": "Firebase UUID afzender",
+    "firebaseUUIDReceiver": "Firebase UUID ontvanger",
+    "fcmDetails": "FCM-token"
   },
   "applicationNames": {
+    "innovaphoneCall": "Innovaphone oproep",
     "postman": "Postman",
     "praxisAuto": "PRAxIS Auto",
     "praxisMail": "PRAxIS Mail",
@@ -35,6 +96,18 @@
     "praxisApp": "PRAxIS App",
     "mypraxisData": "MyPRAxIS gegevens",
     "postgres": "Postgres",
-    "praxisSollications": "PRAxIS sollicitatie"
+    "praxisSollications": "PRAxIS sollicitatie",
+    "praxisApiUsers": "PRAxIS API gebruikers",
+    "praxisWeb": "PRAxIS Web"
+  },
+  "alerts": {
+    "lastTenMinutesByDefault": "Als je geen begin- of einddatum opgeeft, worden standaard de resultaten van de laatste 10 minuten getoond."
+  },
+  "success": {
+    "success": "Details geslaagd",
+    "excpetionDeleted": "Uitzondering verwijderd"
+  },
+  "info": {
+    "tooManyResultsPerformanceWarning": "We hebben 250 of meer resultaten gevonden op basis van je filters. Pas je filters aan om de gegevens beter beheersbaar te maken en optimale prestaties te garanderen."
   }
 }

@@ -10,22 +10,83 @@
     "method": "Méthode",
     "url": "URL",
     "host": "Hôte",
-    "innovaphoneCall": "Appel Innovaphone",
     "mypraxis": "MyPRAxIS",
     "extern": "Externe",
     "get": "GET",
     "post": "POST",
     "patch": "PATCH",
-    "delete": "DELETE"
+    "delete": "DELETE",
+    "header": "En-tête",
+    "body": "Corps",
+    "viewFullHeader": "Voir l'en-tête complet",
+    "viewFullbody": "Journaux",
+    "duration": "Durée",
+    "response": "Réponse",
+    "subject": "Sujet",
+    "paymentTerms": "Conditions de paiement",
+    "to": "À",
+    "cc": "CC",
+    "bcc": "CCI",
+    "emailDetails": "Détails de l'e-mail",
+    "attachement": "Pièce jointe",
+    "message": "Message",
+    "emailContent": "Contenu de l'e-mail",
+    "html": "HTML",
+    "emailType": "Type d'e-mail",
+    "fullView": "Ecran complet",
+    "log": "Journal",
+    "deeplink": "Lien profond",
+    "report": "Rapporter",
+    "settings": "Paramètres",
+    "calendar": "Calendrier",
+    "calendarOverview": "Aperçu du calendrier",
+    "contacts": "Contacts",
+    "primaryAndBackupContacts": "Contacts principaux et suppléants",
+    "history": "Historique",
+    "help": "Besoin d'aide?",
+    "quotationtool": "Tarif",
+    "guardDuty": "Service de permanence",
+    "1day": "1 jour",
+    "restOfTheMonth": "Restant du mois",
+    "logout": "Se déconnecter",
+    "reportSomething": "Quelque chose à signaler?",
+    "loading": "Chargement en cours",
+    "startPage": "Page d'accueil",
+    "safePlace": "Nous pouvons vous emmener vers un endroit sûr !",
+    "otherPlace": "Nous pouvons vous emmener vers un autre endroit !",
+    "emailAddres": "Adresse e-mail",
+    "topic": "Sujet",
+    "description": "Description",
+    "addFile": "Ajouter un fichier",
+    "faq": "FAQ",
+    "changeFormula": "Modifier la formule",
+    "changeBeginEndTime": "Modifier l'heure de début et l'heure de fin",
+    "onlyEmailToTheOffice": "Uniquement envoyer l'e-mail à nos bureaux",
+    "smsAndSms": "SMS + SMS au technicien de permanence",
+    "smsAndEmail": "SMS + e-mail au technicien de permanence",
+    "haveQuestion": "J'ai une question",
+    "haveSuggestion": "J'ai une suggestion",
+    "haveComplaint": "J'ai une plainte",
+    "haveProblem": "J'ai un problème",
+    "selectFormula": "Sélectionner la formule"
   },
-  "errors": {
+  "error": {
     "apiErrors": "Erreurs d'API",
-    "errorDetails": "Détails de l'erreur"
+    "errorDetails": "Détails de l'erreur",
+    "warning": "Attention",
+    "mustBeValidIpAddress": "L'adresse IP fournie doit être une adresse IP valide",
+    "cantDeleteException": "Impossible de supprimer l'exception. Réessayez plus tard.",
+    "pageDoesNotExist": "Oups, cette page n'existe plus."
   },
   "authentication": {
-    "firebaseUUID": "UUID Firebase"
+    "firebaseUUID": "UUID Firebase",
+    "fcm": "FCM",
+    "firebaseUUIDSender": "UUID Firebase de l'expéditeur",
+    "firebaseUUIDReceiver": "UUID Firebase du destinataire",
+    "fcmDetails": "Jeton FCM"
   },
   "applicationNames": {
+    "innovaphoneCall": "Appel Innovaphone",
     "postman": "Postman",
     "praxisAuto": "PRAxIS Auto",
     "praxisMail": "PRAxIS Mail",
@@ -35,6 +96,18 @@
     "praxisApp": "Application PRAxIS",
     "mypraxisData": "Données MyPRAxIS",
     "postgres": "Postgres",
-    "praxisSollications": "Sollicitation PRAxIS"
+    "praxisSollications": "Sollicitation PRAxIS",
+    "praxisApiUsers": "Utilisateurs d'API PRAxIS",
+    "praxisWeb": "PRAxIS Web"
+  },
+  "alerts": {
+    "lastTenMinutesByDefault": "Si vous n'indiquez ni date de début ou ni date de fin, les résultats des 10 dernières minutes seront affichés."
+  },
+  "success": {
+    "success": "Détails concernant la réussite",
+    "excpetionDeleted": "Exception supprimée"
+  },
+  "info": {
+    "tooManyResultsPerformanceWarning": "Nous avons trouvé plus que 250 résultats correspondant à vos critères de recherche. Pour afficher des données plus faciles à gérer et garantir une performance optimale, veuillez affiner vos critères de recherche."
   }
 }

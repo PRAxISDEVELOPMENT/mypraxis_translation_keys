@@ -251,7 +251,7 @@ If needed, you can still do everything manually:
 ```bash
 git add .
 git commit -m "your commit message"
-git push
+git push --force-with-lease origin main
 git pull --rebase origin main
 ```
 
@@ -283,7 +283,7 @@ The script automatically performs:
 
 1. `git add .`
 2. `git commit -m "your message"`
-3. `git push`
+3. `git push --force-with-lease origin main`
 4. waits for GitHub Actions to generate the locale files
 5. `git pull --rebase origin main`
 
@@ -318,7 +318,7 @@ fi
 
 git add .
 git commit -m "$MESSAGE"
-git push
+git push --force-with-lease origin main
 
 SECONDS_LEFT=120
 

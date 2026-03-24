@@ -10,5 +10,155 @@
         "nl": "Applicatie waar administratieve documenten, klantgegevens, rapporten en live alarmmeldingen kunnen worden geraadpleegd en beheerd.",
         "fr": "Application où les documents administratifs, les données clients, les rapports et les notifications d’alarme en direct peuvent être consultés et gérés.",
         "en": "Application where administrative documents, customer data, reports and live alarm notifications can be consulted and managed."
+    },
+    {
+        "key": "common.api",
+        "nl": "API",
+        "fr": "API",
+        "en": "API"
+    },
+    {
+        "key": "errors.apiErrors",
+        "nl": "API-fouten",
+        "fr": "Erreurs d'API",
+        "en": "API errors"
+    },
+    {
+        "key": "errors.errorDetails",
+        "nl": "Details fout",
+        "fr": "Détails de l'erreur",
+        "en": "Error Details"
+    },
+    {
+        "key": "authentication.firebaseUUID",
+        "nl": "Firebase UUID",
+        "fr": "UUID Firebase",
+        "en": "Firebase UUID"
+    },
+    {
+        "key": "common.method",
+        "nl": "Methode",
+        "fr": "Méthode",
+        "en": "Method"
+    },
+    {
+        "key": "common.url",
+        "nl": "URL",
+        "fr": "URL",
+        "en": "URL"
+    },
+    {
+        "key": "common.host",
+        "nl": "Host",
+        "fr": "Hôte",
+        "en": "Host"
+    },
+    {
+        "key": "common.innovaphoneCall",
+        "nl": "Innovaphone oproep",
+        "fr": "Appel Innovaphone",
+        "en": "Innovaphone Call"
+    },
+    {
+        "key": "applicationNames.postman",
+        "nl": "Postman",
+        "fr": "Postman",
+        "en": "Postman"
+    },
+    {
+        "key": "applicationNames.praxisAuto",
+        "nl": "PRAxIS Auto",
+        "fr": "PRAxIS Auto",
+        "en": "PRAxIS Auto"
+    },
+    {
+        "key": "applicationNames.praxisMail",
+        "nl": "PRAxIS Mail",
+        "fr": "PRAxIS Mail",
+        "en": "PRAxIS Mail"
+    },
+    {
+        "key": "applicationNames.praxisV3",
+        "nl": "PRAxIS V3",
+        "fr": "PRAxIS V3",
+        "en": "PRAxIS V3"
+    },
+    {
+        "key": "applicationNames.praxisFacturation",
+        "nl": "PRAxIS Facturatie",
+        "fr": "PRAxIS Facturation",
+        "en": "PRAxIS Facturatie"
+    },
+    {
+        "key": "applicationNames.praxisReceiver",
+        "nl": "PRAxIS ontvanger",
+        "fr": "Récepteur PRAxIS",
+        "en": "PRAxIS receiver"
+    },
+    {
+        "key": "applicationNames.praxisApp",
+        "nl": "PRAxIS App",
+        "fr": "Application PRAxIS",
+        "en": "PRAxIS App"
+    },
+    {
+        "key": "common.mypraxis",
+        "nl": "MyPRAxIS",
+        "fr": "MyPRAxIS",
+        "en": "MyPRAxIS"
+    },
+    {
+        "key": "applicationNames.mypraxisData",
+        "nl": "MyPRAxIS gegevens",
+        "fr": "Données MyPRAxIS",
+        "en": "myPRAxIS data"
+    },
+    {
+        "key": "applicationNames.postgres",
+        "nl": "Postgres",
+        "fr": "Postgres",
+        "en": "Postgres"
+    },
+    {
+        "key": "applicationNames.praxisSollications",
+        "nl": "PRAxIS sollicitatie",
+        "fr": "Sollicitation PRAxIS",
+        "en": "PRAxIS sollicitation"
+    },
+    {
+        "key": "common.extern",
+        "nl": "Extern",
+        "fr": "Externe",
+        "en": "Extern"
+    },
+    {
+        "key": "common.get",
+        "nl": "GET",
+        "fr": "GET",
+        "en": "GET"
+    },
+    {
+        "key": "common.post",
+        "nl": "POST",
+        "fr": "POST",
+        "en": "POST"
+    },
+    {
+        "key": "common.patch",
+        "nl": "PATCH",
+        "fr": "PATCH",
+        "en": "PATCH"
+    },
+    {
+        "key": "common.delete",
+        "nl": "DELETE",
+        "fr": "DELETE",
+        "en": "DELETE"
+    },
+    {
+        "key": "common.delete",
+        "nl": "DELETE",
+        "fr": "DELETE",
+        "en": "DELETE"
     }
 ]

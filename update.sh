@@ -10,7 +10,7 @@ fi
 
 git add .
 git commit -m "$MESSAGE"
-git push
+git push --force-with-lease origin main
 
 SECONDS_LEFT=120
 

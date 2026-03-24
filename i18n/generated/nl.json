@@ -12,10 +12,10 @@
     "host": "Host",
     "mypraxis": "MyPRAxIS",
     "extern": "Extern",
-    "get": "GET",
-    "post": "POST",
-    "patch": "PATCH",
-    "delete": "DELETE",
+    "GET": "GET",
+    "POST": "POST",
+    "PATCH": "PATCH",
+    "DELETE": "DELETE",
     "header": "Header",
     "body": "Body",
     "viewFullHeader": "Bekijk volledige header",
@@ -68,7 +68,43 @@
     "haveSuggestion": "Ik heb een suggestie",
     "haveComplaint": "Ik heb een klacht",
     "haveProblem": "Ik heb een probleem",
-    "selectFormula": "Selecteer formule"
+    "selectFormula": "Selecteer formule",
+    "reference": "Referentie",
+    "ourReference": "Uw referentie",
+    "understood": "Begrepen",
+    "generalInformation": "Algemene informatie",
+    "user": "Gebruiker",
+    "selectDivision": "Selecteer divisie",
+    "changeDivision": "Divisie wijzigen",
+    "contact": "Contact",
+    "edit": "Bewerken",
+    "editGroup": "Groep bewerken",
+    "deleteButton": "Verwijderknop",
+    "mobileNumber": "Mobiel nummer",
+    "name": "Naam",
+    "language": "Taal",
+    "none": "Geen",
+    "status": "Status",
+    "manageGroups": "Groepen beheren",
+    "groups": "Groepen",
+    "days": "Dagen",
+    "from": "Van",
+    "mandatoryCSVHeaders": "Verplichte CSV headers",
+    "results": "Resultaten",
+    "delete": "Verwijderen",
+    "search": "Zoeken",
+    "error": "Fout",
+    "attention": "Opgelet",
+    "installerName": "Installateursnaam",
+    "installerNumber": "Installateursnummer",
+    "generateQuote": "Offerte genereren",
+    "requestQuotes": "Offerte opvragen",
+    "requestPricelist": "Prijslijst opvragen",
+    "additionalData": "Bijkomende gegevens",
+    "export": "Exporteer",
+    "addedToGroup": "Toegevoegd aan groep",
+    "fixedPhone": "Vast toestel",
+    "noActionPossible": "Geen actie mogelijk"
   },
   "error": {
     "apiErrors": "API-fouten",
@@ -76,7 +112,9 @@
     "warning": "Waarschuwing",
     "mustBeValidIpAddress": "Het opgegeven IP-adres moet een geldig IP-adres zijn",
     "cantDeleteException": "Kan uitzondering niet verwijderen. Probeer het later opnieuw.",
-    "pageDoesNotExist": "Oeps, deze pagina bestaat niet meer."
+    "pageDoesNotExist": "Oeps, deze pagina bestaat niet meer.",
+    "accessForbidden": "Toegang geweigerd",
+    "noDataFound": "Geen gegevens gevonden"
   },
   "authentication": {
     "firebaseUUID": "Firebase UUID",
@@ -104,10 +142,21 @@
     "lastTenMinutesByDefault": "Als je geen begin- of einddatum opgeeft, worden standaard de resultaten van de laatste 10 minuten getoond."
   },
   "success": {
-    "success": "Details geslaagd",
-    "excpetionDeleted": "Uitzondering verwijderd"
+    "success": "API geslaagd",
+    "successDetails": "Details geslaagd",
+    "excpetionDeleted": "Uitzondering verwijderd",
+    "divisionChanged": "Divisie gewijzigd",
+    "groupChanged": "Groep gewijzigd",
+    "guardDutyFormulaChanged": "Wachtdienstformule gewijzigd",
+    "beginEndTimeChanged": "Start- en eindtijd gewijzigd",
+    "groupDeleted": "Groep verwijderd",
+    "calendarChanged": "Kalender gewijzigd"
   },
   "info": {
-    "tooManyResultsPerformanceWarning": "We hebben 250 of meer resultaten gevonden op basis van je filters. Pas je filters aan om de gegevens beter beheersbaar te maken en optimale prestaties te garanderen."
+    "tooManyResultsPerformanceWarning": "We hebben 250 of meer resultaten gevonden op basis van je filters. Pas je filters aan om de gegevens beter beheersbaar te maken en optimale prestaties te garanderen.",
+    "selectFormulaOfYourGuardDuty": "Selecteer via onderstaand veld het tijdstip waarop voor uw organisatie de wachtdienst dagelijks aanvangt en waarop dus de overdracht van de ene permanentie-technieker naar de andere plaatsvindt.",
+    "forMoreInfoSeeFAQ": "Voor meer info zie onze FAQ op de 'help' pagina",
+    "setItemsViaThisPage": "Via deze pagina kan u onderstaande zaken instellen",
+    "coockieInfo": "Cookies helpen ons bij het leveren van onze diensten. Door gebruik te maken van onze diensten, gaat u uitdrukkelijk akkoord met ons gebruik van cookies."
   }
 }

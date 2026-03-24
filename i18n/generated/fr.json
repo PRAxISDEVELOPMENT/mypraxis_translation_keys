@@ -12,10 +12,10 @@
     "host": "Hôte",
     "mypraxis": "MyPRAxIS",
     "extern": "Externe",
-    "get": "GET",
-    "post": "POST",
-    "patch": "PATCH",
-    "delete": "DELETE",
+    "GET": "GET",
+    "POST": "POST",
+    "PATCH": "PATCH",
+    "DELETE": "DELETE",
     "header": "En-tête",
     "body": "Corps",
     "viewFullHeader": "Voir l'en-tête complet",
@@ -68,7 +68,43 @@
     "haveSuggestion": "J'ai une suggestion",
     "haveComplaint": "J'ai une plainte",
     "haveProblem": "J'ai un problème",
-    "selectFormula": "Sélectionner la formule"
+    "selectFormula": "Sélectionner la formule",
+    "reference": "Référence",
+    "ourReference": "Vos références",
+    "understood": "Compris",
+    "generalInformation": "Information générale",
+    "user": "Utilisateur",
+    "selectDivision": "Sélectionner une division",
+    "changeDivision": "Modifier la division",
+    "contact": "Contact",
+    "edit": "Modifier",
+    "editGroup": "Modifier le groupe",
+    "deleteButton": "Supprimer le bouton",
+    "mobileNumber": "Numéro mobile",
+    "name": "Nom",
+    "language": "Langue",
+    "none": "Aucun(e)",
+    "status": "Statut",
+    "manageGroups": "Gérer des groupes",
+    "groups": "Groupes",
+    "days": "Jours",
+    "from": "De",
+    "mandatoryCSVHeaders": "En-têtes CSV obligatoires",
+    "results": "Résultats",
+    "delete": "Supprimer",
+    "search": "Rechercher",
+    "error": "Erreur",
+    "attention": "Attention",
+    "installerName": "Nom de l'installateur",
+    "installerNumber": "Numéro de l'installateur",
+    "generateQuote": "Générer un devis",
+    "requestQuotes": "Consulter un devis",
+    "requestPricelist": "Demander le tarif",
+    "additionalData": "Données supplémentaires",
+    "export": "Exporter",
+    "addedToGroup": "Ajouté au groupe",
+    "fixedPhone": "Ligne fixe",
+    "noActionPossible": "Aucune action possible"
   },
   "error": {
     "apiErrors": "Erreurs d'API",
@@ -76,7 +112,9 @@
     "warning": "Attention",
     "mustBeValidIpAddress": "L'adresse IP fournie doit être une adresse IP valide",
     "cantDeleteException": "Impossible de supprimer l'exception. Réessayez plus tard.",
-    "pageDoesNotExist": "Oups, cette page n'existe plus."
+    "pageDoesNotExist": "Oups, cette page n'existe plus.",
+    "accessForbidden": "Accès interdit",
+    "noDataFound": "Aucune donnée trouvée"
   },
   "authentication": {
     "firebaseUUID": "UUID Firebase",
@@ -104,10 +142,21 @@
     "lastTenMinutesByDefault": "Si vous n'indiquez ni date de début ou ni date de fin, les résultats des 10 dernières minutes seront affichés."
   },
   "success": {
-    "success": "Détails concernant la réussite",
-    "excpetionDeleted": "Exception supprimée"
+    "success": "Transfert API réussi",
+    "successDetails": "Détails concernant la réussite",
+    "excpetionDeleted": "Exception supprimée",
+    "divisionChanged": "Division modifiée",
+    "groupChanged": "Groupe modifié",
+    "guardDutyFormulaChanged": "Formule du service de permanence modifiée",
+    "beginEndTimeChanged": "Heure de début et heure de fin modifiée(s)",
+    "groupDeleted": "Groupe supprimé",
+    "calendarChanged": "Calendrier modifié"
   },
   "info": {
-    "tooManyResultsPerformanceWarning": "Nous avons trouvé plus que 250 résultats correspondant à vos critères de recherche. Pour afficher des données plus faciles à gérer et garantir une performance optimale, veuillez affiner vos critères de recherche."
+    "tooManyResultsPerformanceWarning": "Nous avons trouvé plus que 250 résultats correspondant à vos critères de recherche. Pour afficher des données plus faciles à gérer et garantir une performance optimale, veuillez affiner vos critères de recherche.",
+    "selectFormulaOfYourGuardDuty": "Utilisez le champ ci-dessous pour sélectionner l'heure de début quotidienne de votre service de permanence. C'est également l'heure du transfert de service d'un technicien de permanence à l'autre.",
+    "forMoreInfoSeeFAQ": "Pour plus d'informations, consultez notre FAQ sur la page 'Besoin d'aide?'.",
+    "setItemsViaThisPage": "Vous pouvez configurer les éléments suivants via cette page",
+    "coockieInfo": "Les cookies facilitent nos services. En utilisant nos services, vous acceptez expressément l'utilisation de cookies par PRAXIS GROUP."
   }
 }

@@ -12,10 +12,10 @@
     "host": "Host",
     "mypraxis": "MyPRAxIS",
     "extern": "Extern",
-    "get": "GET",
-    "post": "POST",
-    "patch": "PATCH",
-    "delete": "DELETE",
+    "GET": "GET",
+    "POST": "POST",
+    "PATCH": "PATCH",
+    "DELETE": "DELETE",
     "header": "Header",
     "body": "Body",
     "viewFullHeader": "View full header",
@@ -68,7 +68,43 @@
     "haveSuggestion": "I have a suggestion",
     "haveComplaint": "I have a complaint",
     "haveProblem": "I have a problem",
-    "selectFormula": "Select formula"
+    "selectFormula": "Select formula",
+    "reference": "Reference",
+    "ourReference": "Your reference",
+    "understood": "Understood",
+    "generalInformation": "General information",
+    "user": "User",
+    "selectDivision": "Select division",
+    "changeDivision": "Change division",
+    "contact": "Contact",
+    "edit": "Edit",
+    "editGroup": "Edit group",
+    "deleteButton": "Delete button",
+    "mobileNumber": "Mobile number",
+    "name": "Name",
+    "language": "Language",
+    "none": "None",
+    "status": "Status",
+    "manageGroups": "Manage groups",
+    "groups": "Groups",
+    "days": "Days",
+    "from": "From",
+    "mandatoryCSVHeaders": "Mandatory CSV headers",
+    "results": "Results",
+    "delete": "Delete",
+    "search": "Search",
+    "error": "Error",
+    "attention": "Attention",
+    "installerName": "Installer name",
+    "installerNumber": "Installer number",
+    "generateQuote": "Generate quote",
+    "requestQuotes": "Request quotes",
+    "requestPricelist": "Request price list",
+    "additionalData": "Additional data",
+    "export": "Export",
+    "addedToGroup": "Added to group",
+    "fixedPhone": "Fixed phone",
+    "noActionPossible": "No action possible"
   },
   "error": {
     "apiErrors": "API errors",
@@ -76,7 +112,9 @@
     "warning": "Warning",
     "mustBeValidIpAddress": "The provided IP address must be a valid IP address",
     "cantDeleteException": "Can't delete exception. Try again later.",
-    "pageDoesNotExist": "Oops, this page does not exist anymore."
+    "pageDoesNotExist": "Oops, this page does not exist anymore.",
+    "accessForbidden": "Access forbidden",
+    "noDataFound": "No data found"
   },
   "authentication": {
     "firebaseUUID": "Firebase UUID",
@@ -104,10 +142,21 @@
     "lastTenMinutesByDefault": "If you don't provide a start or end date, the results will default to the last 10 minutes."
   },
   "success": {
-    "success": "Success Details",
-    "excpetionDeleted": "Excpetion deleted"
+    "success": "API success",
+    "successDetails": "Success Details",
+    "excpetionDeleted": "Excpetion deleted",
+    "divisionChanged": "Division changed",
+    "groupChanged": "Group changed",
+    "guardDutyFormulaChanged": "Guard duty formula changed",
+    "beginEndTimeChanged": "Begin- and endtime changed",
+    "groupDeleted": "Group deleted",
+    "calendarChanged": "Calendar changed"
   },
   "info": {
-    "tooManyResultsPerformanceWarning": "We've found 250 or more results based on your filters. To view more manageable data and ensure optimal performance, please refine your filters"
+    "tooManyResultsPerformanceWarning": "We've found 250 or more results based on your filters. To view more manageable data and ensure optimal performance, please refine your filters",
+    "selectFormulaOfYourGuardDuty": "Use the field below to select the time at which the guard duty starts daily for your organisation and at which point the transition from one on-duty technician to the other takes place.",
+    "forMoreInfoSeeFAQ": "For more information see our FAQ on the 'help' page",
+    "setItemsViaThisPage": "You can set the following items via this page",
+    "coockieInfo": "Cookies assist us in providing our services. By using our services, you expressly agree to our use of cookies."
   }
 }

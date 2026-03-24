@@ -4,5 +4,37 @@
       "title": "PRAxIS GROUP N.V. - MyPRAxIS",
       "description": "Applicatie waar administratieve documenten, klantgegevens, rapporten en live alarmmeldingen kunnen worden geraadpleegd en beheerd."
     }
+  },
+  "common": {
+    "api": "API",
+    "method": "Methode",
+    "url": "URL",
+    "host": "Host",
+    "innovaphoneCall": "Innovaphone oproep",
+    "mypraxis": "MyPRAxIS",
+    "extern": "Extern",
+    "get": "GET",
+    "post": "POST",
+    "patch": "PATCH",
+    "delete": "DELETE"
+  },
+  "errors": {
+    "apiErrors": "API-fouten",
+    "errorDetails": "Details fout"
+  },
+  "authentication": {
+    "firebaseUUID": "Firebase UUID"
+  },
+  "applicationNames": {
+    "postman": "Postman",
+    "praxisAuto": "PRAxIS Auto",
+    "praxisMail": "PRAxIS Mail",
+    "praxisV3": "PRAxIS V3",
+    "praxisFacturation": "PRAxIS Facturatie",
+    "praxisReceiver": "PRAxIS ontvanger",
+    "praxisApp": "PRAxIS App",
+    "mypraxisData": "MyPRAxIS gegevens",
+    "postgres": "Postgres",
+    "praxisSollications": "PRAxIS sollicitatie"
   }
 }

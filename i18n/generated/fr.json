@@ -4,5 +4,37 @@
       "title": "PRAxIS GROUP N.V. - MyPRAxIS",
       "description": "Application où les documents administratifs, les données clients, les rapports et les notifications d’alarme en direct peuvent être consultés et gérés."
     }
+  },
+  "common": {
+    "api": "API",
+    "method": "Méthode",
+    "url": "URL",
+    "host": "Hôte",
+    "innovaphoneCall": "Appel Innovaphone",
+    "mypraxis": "MyPRAxIS",
+    "extern": "Externe",
+    "get": "GET",
+    "post": "POST",
+    "patch": "PATCH",
+    "delete": "DELETE"
+  },
+  "errors": {
+    "apiErrors": "Erreurs d'API",
+    "errorDetails": "Détails de l'erreur"
+  },
+  "authentication": {
+    "firebaseUUID": "UUID Firebase"
+  },
+  "applicationNames": {
+    "postman": "Postman",
+    "praxisAuto": "PRAxIS Auto",
+    "praxisMail": "PRAxIS Mail",
+    "praxisV3": "PRAxIS V3",
+    "praxisFacturation": "PRAxIS Facturation",
+    "praxisReceiver": "Récepteur PRAxIS",
+    "praxisApp": "Application PRAxIS",
+    "mypraxisData": "Données MyPRAxIS",
+    "postgres": "Postgres",
+    "praxisSollications": "Sollicitation PRAxIS"
   }
 }

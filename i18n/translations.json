@@ -892,5 +892,341 @@
         "nl": "Geen actie mogelijk",
         "fr": "Aucune action possible",
         "en": "No action possible"
+    },
+    {
+        "key": "common.add",
+        "nl": "Toevoegen",
+        "fr": "Ajouter",
+        "en": "Add"
+    },
+    {
+        "key": "common.lastMonth",
+        "nl": "Vorige maand",
+        "fr": "Le mois dernier",
+        "en": "Last month"
+    },
+    {
+        "key": "common.nextMonth",
+        "nl": "Volgende maand",
+        "fr": "Le mois prochain",
+        "en": "Next month"
+    },
+    {
+        "key": "common.clientNumber",
+        "nl": "Klantnummer",
+        "fr": "Numéro de client",
+        "en": "Client number"
+    },
+    {
+        "key": "common.clientName",
+        "nl": "Klantnaam",
+        "fr": "Nom du client",
+        "en": "Client name"
+    },
+    {
+        "key": "common.streetName",
+        "nl": "Straatnaam",
+        "fr": "Nom de la rue",
+        "en": "Street name"
+    },
+    {
+        "key": "common.optionalCSVHeaders",
+        "nl": "Optionele CSV headers",
+        "fr": "En-têtes CSV facultatifs",
+        "en": "Optional CSV headers"
+    },
+    {
+        "key": "common.housenumber",
+        "nl": "Huisnummer",
+        "fr": "Numéro de la porte",
+        "en": "Housenumber"
+    },
+    {
+        "key": "common.zip",
+        "nl": "Postcode",
+        "fr": "Code postal",
+        "en": "Zip"
+    },
+    {
+        "key": "common.city",
+        "nl": "Plaats",
+        "fr": "Ville",
+        "en": "City"
+    },
+    {
+        "key": "common.overviewData",
+        "nl": "Overzicht gegevens",
+        "fr": "Aperçu des données",
+        "en": "Overview data"
+    },
+    {
+        "key": "common.overviewData",
+        "nl": "Groep",
+        "fr": "Groupe",
+        "en": "Group"
+    },
+    {
+        "key": "common.dropCSVFilesToUpload",
+        "nl": "Sleep een CSV-bestand naar hier of klik voor een upload ervan.",
+        "fr": "Déposez le fichier CSV ici ou cliquez ici pour le télécharger",
+        "en": "Drop CSV file here or click to upload"
+    },
+    {
+        "key": "common.addContacts",
+        "nl": "Contactpersonen toevoegen",
+        "fr": "Ajouter des contacts",
+        "en": "Add contacts"
+    },
+    {
+        "key": "common.today",
+        "nl": "Vandaag",
+        "fr": "Aujourd'hui",
+        "en": "Today"
+    },
+    {
+        "key": "common.basicIndex",
+        "nl": "Basis index",
+        "fr": "Indice de base",
+        "en": "Basic index"
+    },
+    {
+        "key": "info.exceptionsHaveBeenFound",
+        "nl": "Er werden uitzonderingen gevonden. Ga naar 'uitzonderingen' om een overzicht te bekijken.",
+        "fr": "Nous avons détecté des exceptions. Naviguez vers 'Exceptions' pour obtenir un aperçu.",
+        "en": "Exceptions have been found. Go to 'exceptions' to see a review."
+    },
+    {
+        "key": "common.currentIndex",
+        "nl": "Huidige index",
+        "fr": "Indice actuel",
+        "en": "Current index"
+    },
+    {
+        "key": "common.indexed",
+        "nl": "Geïndexeerd",
+        "fr": "Indexé",
+        "en": "Indexed"
+    },
+    {
+        "key": "info.missingDataFoundInCalendar",
+        "nl": "Uitroeptekens in de kalender wijzen er op dat er gegevens ontbreken. Voeg per dag minstens 1 contact toe zodat wij de gewenste wachtdienstformule voor u kunnen uitvoeren.",
+        "fr": "Un point d'exclamation dans le calendrier indique que certains données manquent pour ce jour. Ajoutez au moins 1 technicien de permanence par jour afin que nous puissions activer le plan d'action pour votre service de permanence.",
+        "en": "Exclamation marks in the calendar indicate that missing data has been found. Add at least 1 contact per day so that we can carry out the desired guard duty formula for you"
+    },
+    {
+        "key": "common.CSV",
+        "nl": "CSV",
+        "fr": "CSV",
+        "en": "CSV"
+    },
+    {
+        "key": "common.CSV",
+        "nl": "CSV beheren",
+        "fr": "Info via un fichier CSV",
+        "en": "Manage CSV"
+    },
+    {
+        "key": "common.editCalendar",
+        "nl": "Kalender bewerken",
+        "fr": "Modifier le calendrier",
+        "en": "Edit calendar"
+    },
+    {
+        "key": "common.clickOnGroupToManageExceptions",
+        "nl": "Klik op de groep om uitzonderingen te beheren",
+        "fr": "Cliquez sur le groupe concerné pour gérer une exception",
+        "en": "Click on the group to manage exceptions"
+    },
+    {
+        "key": "common.primaryContact",
+        "nl": "Primair contact",
+        "fr": "Contact principal",
+        "en": "Primary contact"
+    },
+    {
+        "key": "common.backupContact",
+        "nl": "Back-up contact",
+        "fr": "Contact suppléant",
+        "en": "Back-up contact"
+    },
+    {
+        "key": "success.exceptionAdded",
+        "nl": "Uitzondering toegevoegd",
+        "fr": "Une exception a été ajoutée",
+        "en": "Exception added"
+    },
+    {
+        "key": "common.service",
+        "nl": "Dienst",
+        "fr": "Service",
+        "en": "Service"
+    },
+    {
+        "key": "common.basicPrice",
+        "nl": "Basisprijs",
+        "fr": "Prix de base",
+        "en": "Basic price"
+    },
+    {
+        "key": "common.indexedPrices",
+        "nl": "Geïndexeerde prijs",
+        "fr": "Prix indexés",
+        "en": "Indexed prices"
+    },
+    {
+        "key": "common.assignFor",
+        "nl": "Toekennen aan",
+        "fr": "Attribuer à",
+        "en": "Assign for"
+    },
+    {
+        "key": "common.clientNumberPrimaryBackup",
+        "nl": "Klantnummer (primair | back-up)",
+        "fr": "Numéro client (principal | de secours)",
+        "en": "Client number (primair | back-up)"
+    },
+    {
+        "key": "common.addException",
+        "nl": "Uitzondering toevoegen",
+        "fr": "Ajouter une exception",
+        "en": "Add exception"
+    },
+    {
+        "key": "common.exceptions",
+        "nl": "Uitzonderingen",
+        "fr": "Exceptions",
+        "en": "Exceptions"
+    },
+    {
+        "key": "common.manageExceptions",
+        "nl": "Uitzonderingen beheren",
+        "fr": "Gérer les exceptions",
+        "en": "Manage exceptions"
+    },
+    {
+        "key": "common.startTime",
+        "nl": "Starttijd",
+        "fr": "Heure de début",
+        "en": "Start time"
+    },
+    {
+        "key": "info.exceptionWasFound",
+        "nl": "Er werd een uitzondering gevonden",
+        "fr": "Exeption constatée",
+        "en": "An exception was found"
+    },
+    {
+        "key": "common.endTime",
+        "nl": "Eindtijd",
+        "fr": "Heure de fin",
+        "en": "End time"
+    },
+    {
+        "key": "common.active",
+        "nl": "Actief",
+        "fr": "Actif",
+        "en": "Active"
+    },
+    {
+        "key": "success.successfull",
+        "nl": "Geslaagd",
+        "fr": "Action réussite",
+        "en": "Successfull"
+    },
+    {
+        "key": "common.contact3",
+        "nl": "Contact 3de graad",
+        "fr": "Contact de 3ième degré",
+        "en": "Contact 3rd degree"
+    },
+    {
+        "key": "common.contact4",
+        "nl": "Contact 4de graad",
+        "fr": "Contact de 4ième degré",
+        "en": "Contact 4th degree"
+    },
+    {
+        "key": "error.csvMissingMandatoryHeaders",
+        "nl": "Er ontbreken verplichte headers in de CSV",
+        "fr": "Le CSV manque des en-têtes obligatoires",
+        "en": "CSV contains missing mandatory headers"
+    },
+    {
+        "key": "common.sendCSV",
+        "nl": "CSV doorsturen",
+        "fr": "Télecharger un fichier CSV",
+        "en": "Send CSV"
+    },
+    {
+        "key": "success.CSVUploadSuccessful",
+        "nl": "CSV upload geslaagd",
+        "fr": "Téléchargement du fichier CSV réussi",
+        "en": "CSV upload successful"
+    },
+    {
+        "key": "success.exceptionGranted",
+        "nl": "Er werd een uitzondering op het primair of back-up contact toegekend.",
+        "fr": "Téléchargement du fichier CSV réussi",
+        "en": "An exception to primary or back-up contact has been granted."
+    },
+    {
+        "key": "error.noPrimaryOrBackupContactAssigned",
+        "nl": "Er werd geen primair of back-up contact toegekend.",
+        "fr": "Aucun technicien principal ni technicien suppléant n'a été attribué.",
+        "en": "No primary or back-up contact has been assigned."
+    },
+    {
+        "key": "info.noPrimaryOrBackupContactAssigned",
+        "nl": "Er werd geen primair of back-up contact toegekend.",
+        "fr": "Aucun technicien principal ni technicien suppléant n'a été attribué.",
+        "en": "No primary or back-up contact has been assigned."
+    },
+    {
+        "key": "info.atLeastOneContactOnEveryDayOfMonth",
+        "nl": "Er werd voor elke dag van de maand minstens 1 contact toegevoegd!",
+        "fr": "Au moins 1 technicien a été ajouté pour chaque jour du mois!",
+        "en": "At least 1 contact was added on every day of the month!"
+    },
+    {
+        "key": "info.openViaComputerOrTablet",
+        "nl": "Open de applicatie via computer of tablet",
+        "fr": "Ouvrez l'application via un ordinateur ou une tablette",
+        "en": "Open the application via computer or tablet"
+    },
+    {
+        "key": "common.primaryContactException",
+        "nl": "Uitzondering primair contact",
+        "fr": "Exception sur le technicien principal",
+        "en": "Primary contact exception"
+    },
+    {
+        "key": "common.backupContactException",
+        "nl": "Uitzondering back-up contact",
+        "fr": "Exception sur le technicien suppléant",
+        "en": "Back-up contact exception"
+    },
+    {
+        "key": "info.ifRemoveAlreadyAddedContactsFromGroup",
+        "nl": "Als u contactpersonen uit een groep verwijderd, en zijn ze nog in de kalender opgenomen, worden ze automtisch uit de kalender verwijderd.",
+        "fr": "Si vous supprimez un technicien d'un groupe déjà attribué dans le calendrier, ce technicien sera automatiquement supprimé dand le calendrier.",
+        "en": "If you remove contacts from a group that have already been identified on the calendar, they will therefore also be removed from the calendar."
+    },
+    {
+        "key": "info.calendarNotAvailableOnMobileDevices",
+        "nl": "Kalender momenteel niet beschikbaar op mobiele toestellen",
+        "fr": "Le calendrier est actuellement indisponible sur les appareils mobiles",
+        "en": "Calendar currently not available on mobile devices"
+    },
+    {
+        "key": "info.contactsFoundWithoutMailInCalendar",
+        "nl": "Er zijn contactpersonen waarvan wij het e-mailadres niet hebben. Daardoor zijn deze contacten niet zichtbaar en kunnen ze niet geselecteerd worden in de groepen en in de kalender.",
+        "fr": "Nous avons trouvé au moins 1 technicien dont nous n'avons pas l'adresse e-mail. Par conséquent, il n'apparaîtra pas et ne pourra donc pas être sélectionné dans aucun groupe et dans aucun calendrier.",
+        "en": "Contacts were found for which we do not yet have the e-mail address. As a result, these contacts will not appear and therefore cannot be selected in the groups and in the calendar."
+    },
+    {
+        "key": "info.manageContactsPerGroupOnDailyBasis",
+        "nl": "Per contactgroep beheren wie er dagelijks de primaire technieker van wacht is, en wie zijn back-up is.",
+        "fr": "Gérez par groupe qui est le technicien principal et le technicien suppléant du service de permanence quotidien.",
+        "en": "Manage per contact group who is the primary and back-up technician on guard duty on a daily basis."
     }
 ]

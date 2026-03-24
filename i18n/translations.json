@@ -18,13 +18,13 @@
         "en": "API"
     },
     {
-        "key": "errors.apiErrors",
+        "key": "error.apiErrors",
         "nl": "API-fouten",
         "fr": "Erreurs d'API",
         "en": "API errors"
     },
     {
-        "key": "errors.errorDetails",
+        "key": "error.errorDetails",
         "nl": "Details fout",
         "fr": "Détails de l'erreur",
         "en": "Error Details"
@@ -54,7 +54,7 @@
         "en": "Host"
     },
     {
-        "key": "common.innovaphoneCall",
+        "key": "applicationNames.innovaphoneCall",
         "nl": "Innovaphone oproep",
         "fr": "Appel Innovaphone",
         "en": "Innovaphone Call"
@@ -160,5 +160,437 @@
         "nl": "DELETE",
         "fr": "DELETE",
         "en": "DELETE"
+    },
+    {
+        "key": "alerts.lastTenMinutesByDefault",
+        "nl": "Als je geen begin- of einddatum opgeeft, worden standaard de resultaten van de laatste 10 minuten getoond.",
+        "fr": "Si vous n'indiquez ni date de début ou ni date de fin, les résultats des 10 dernières minutes seront affichés.",
+        "en": "If you don't provide a start or end date, the results will default to the last 10 minutes."
+    },
+    {
+        "key": "common.header",
+        "nl": "Header",
+        "fr": "En-tête",
+        "en": "Header"
+    },
+    {
+        "key": "common.body",
+        "nl": "Body",
+        "fr": "Corps",
+        "en": "Body"
+    },
+    {
+        "key": "common.viewFullHeader",
+        "nl": "Bekijk volledige header",
+        "fr": "Voir l'en-tête complet",
+        "en": "View full header"
+    },
+    {
+        "key": "common.viewFullbody",
+        "nl": "Bekijk volledige body",
+        "fr": "Voir le contenu complet",
+        "en": "View full body"
+    },
+    {
+        "key": "common.viewFullbody",
+        "nl": "Logs",
+        "fr": "Journaux",
+        "en": "Logs"
+    },
+    {
+        "key": "applicationNames.praxisApiUsers",
+        "nl": "PRAxIS API gebruikers",
+        "fr": "Utilisateurs d'API PRAxIS",
+        "en": "PRAxIS API users"
+    },
+    {
+        "key": "success.success",
+        "nl": "API geslaagd",
+        "fr": "Transfert API réussi",
+        "en": "API success"
+    },
+    {
+        "key": "success.success",
+        "nl": "Details geslaagd",
+        "fr": "Détails concernant la réussite",
+        "en": "Success Details"
+    },
+    {
+        "key": "common.duration",
+        "nl": "Duur",
+        "fr": "Durée",
+        "en": "Duration"
+    },
+    {
+        "key": "common.response",
+        "nl": "Antwoord",
+        "fr": "Réponse",
+        "en": "Response"
+    },
+    {
+        "key": "common.subject",
+        "nl": "Onderwerp",
+        "fr": "Sujet",
+        "en": "Subject"
+    },
+    {
+        "key": "common.paymentTerms",
+        "nl": "Betalingsvoorwaarden",
+        "fr": "Conditions de paiement",
+        "en": "Payment terms"
+    },
+    {
+        "key": "common.to",
+        "nl": "Aan",
+        "fr": "À",
+        "en": "To"
+    },
+    {
+        "key": "common.cc",
+        "nl": "CC",
+        "fr": "CC",
+        "en": "CC"
+    },
+    {
+        "key": "common.bcc",
+        "nl": "BCC",
+        "fr": "CCI",
+        "en": "BCC"
+    },
+    {
+        "key": "common.emailDetails",
+        "nl": "E-maildetails",
+        "fr": "Détails de l'e-mail",
+        "en": "Email details"
+    },
+    {
+        "key": "common.attachement",
+        "nl": "E-maildetails",
+        "fr": "Pièce jointe",
+        "en": "Attachement"
+    },
+    {
+        "key": "common.message",
+        "nl": "Bericht",
+        "fr": "Message",
+        "en": "Message"
+    },
+    {
+        "key": "common.emailContent",
+        "nl": "E-mailinhoud",
+        "fr": "Contenu de l'e-mail",
+        "en": "Email content"
+    },
+    {
+        "key": "common.html",
+        "nl": "HTML",
+        "fr": "HTML",
+        "en": "HTML"
+    },
+    {
+        "key": "common.emailType",
+        "nl": "E-mailtype",
+        "fr": "Type d'e-mail",
+        "en": "Email type"
+    },
+    {
+        "key": "common.fullView",
+        "nl": "Volledig overzicht",
+        "fr": "Ecran complet",
+        "en": "Full view"
+    },
+    {
+        "key": "authentication.fcm",
+        "nl": "FCM",
+        "fr": "FCM",
+        "en": "FCM"
+    },
+    {
+        "key": "authentication.firebaseUUIDSender",
+        "nl": "Firebase UUID afzender",
+        "fr": "UUID Firebase de l'expéditeur",
+        "en": "Firebase UUID sender"
+    },
+    {
+        "key": "authentication.firebaseUUIDReceiver",
+        "nl": "Firebase UUID ontvanger",
+        "fr": "UUID Firebase du destinataire",
+        "en": "Firebase UUID receiver"
+    },
+    {
+        "key": "authentication.fcmDetails",
+        "nl": "FCM-details",
+        "fr": "Détails FCM",
+        "en": "FCM details"
+    },
+    {
+        "key": "authentication.fcmDetails",
+        "nl": "FCM-token",
+        "fr": "Jeton FCM",
+        "en": "FCM token"
+    },
+    {
+        "key": "applicationNames.praxisWeb",
+        "nl": "PRAxIS Web",
+        "fr": "PRAxIS Web",
+        "en": "PRAxIS Web"
+    },
+    {
+        "key": "common.log",
+        "nl": "Logboek",
+        "fr": "Journal",
+        "en": "Log"
+    },
+    {
+        "key": "common.deeplink",
+        "nl": "Deeplink",
+        "fr": "Lien profond",
+        "en": "Deeplink"
+    },
+    {
+        "key": "error.warning",
+        "nl": "Waarschuwing",
+        "fr": "Attention",
+        "en": "Warning"
+    },
+    {
+        "key": "info.tooManyResultsPerformanceWarning",
+        "nl": "We hebben 250 of meer resultaten gevonden op basis van je filters. Pas je filters aan om de gegevens beter beheersbaar te maken en optimale prestaties te garanderen.",
+        "fr": "Nous avons trouvé plus que 250 résultats correspondant à vos critères de recherche. Pour afficher des données plus faciles à gérer et garantir une performance optimale, veuillez affiner vos critères de recherche.",
+        "en": "We've found 250 or more results based on your filters. To view more manageable data and ensure optimal performance, please refine your filters"
+    },
+    {
+        "key": "error.mustBeValidIpAddress",
+        "nl": "Het opgegeven IP-adres moet een geldig IP-adres zijn",
+        "fr": "L'adresse IP fournie doit être une adresse IP valide",
+        "en": "The provided IP address must be a valid IP address"
+    },
+    {
+        "key": "common.report",
+        "nl": "Melden",
+        "fr": "Rapporter",
+        "en": "Report"
+    },
+    {
+        "key": "common.settings",
+        "nl": "Instellingen",
+        "fr": "Paramètres",
+        "en": "Settings"
+    },
+    {
+        "key": "common.calendar",
+        "nl": "Kalender",
+        "fr": "Calendrier",
+        "en": "Calendar"
+    },
+    {
+        "key": "common.calendarOverview",
+        "nl": "Kalenderoverzicht",
+        "fr": "Aperçu du calendrier",
+        "en": "Calendar overview"
+    },
+    {
+        "key": "common.contacts",
+        "nl": "Contacten",
+        "fr": "Contacts",
+        "en": "Contacts"
+    },
+    {
+        "key": "common.primaryAndBackupContacts",
+        "nl": "Primaire en back-up contacten",
+        "fr": "Contacts principaux et suppléants",
+        "en": "Primary and back-up contacts"
+    },
+    {
+        "key": "common.history",
+        "nl": "Historie",
+        "fr": "Historique",
+        "en": "History"
+    },
+    {
+        "key": "common.help",
+        "nl": "Help",
+        "fr": "Besoin d'aide?",
+        "en": "Help"
+    },
+    {
+        "key": "common.quotationtool",
+        "nl": "Offertetool",
+        "fr": "Outil de devis",
+        "en": "Quotationtool"
+    },
+    {
+        "key": "common.quotationtool",
+        "nl": "Prijslijst",
+        "fr": "Tarif",
+        "en": "Pricelist"
+    },
+    {
+        "key": "common.guardDuty",
+        "nl": "Wachtdienst",
+        "fr": "Service de permanence",
+        "en": "Guard duty"
+    },
+    {
+        "key": "common.1day",
+        "nl": "1 dag",
+        "fr": "1 jour",
+        "en": "1 day"
+    },
+    {
+        "key": "common.restOfTheMonth",
+        "nl": "Rest van de maand",
+        "fr": "Restant du mois",
+        "en": "Rest of the month"
+    },
+    {
+        "key": "common.logout",
+        "nl": "Uitloggen",
+        "fr": "Se déconnecter",
+        "en": "Logout"
+    },
+    {
+        "key": "common.logout",
+        "nl": "Uitloggen",
+        "fr": "Se déconnecter",
+        "en": "Logout"
+    },
+    {
+        "key": "success.excpetionDeleted",
+        "nl": "Uitzondering verwijderd",
+        "fr": "Exception supprimée",
+        "en": "Excpetion deleted"
+    },
+    {
+        "key": "error.cantDeleteException",
+        "nl": "Kan uitzondering niet verwijderen. Probeer het later opnieuw.",
+        "fr": "Impossible de supprimer l'exception. Réessayez plus tard.",
+        "en": "Can't delete exception. Try again later."
+    },
+    {
+        "key": "common.reportSomething",
+        "nl": "Iets te melden?",
+        "fr": "Quelque chose à signaler?",
+        "en": "Report something?"
+    },
+    {
+        "key": "common.loading",
+        "nl": "Laden",
+        "fr": "Chargement en cours",
+        "en": "Loading"
+    },
+    {
+        "key": "error.pageDoesNotExist",
+        "nl": "Oeps, deze pagina bestaat niet meer.",
+        "fr": "Oups, cette page n'existe plus.",
+        "en": "Oops, this page does not exist anymore."
+    },
+    {
+        "key": "common.startPage",
+        "nl": "Startpagina",
+        "fr": "Page d'accueil",
+        "en": "Startpage"
+    },
+    {
+        "key": "common.safePlace",
+        "nl": "We kunnen u naar een veilige plaats brengen!",
+        "fr": "Nous pouvons vous emmener vers un endroit sûr !",
+        "en": "We can take you to a safe place!"
+    },
+    {
+        "key": "common.otherPlace",
+        "nl": "We kunnen u naar een andere plaats brengen!",
+        "fr": "Nous pouvons vous emmener vers un autre endroit !",
+        "en": "We can take you to an other place!"
+    },
+    {
+        "key": "common.emailAddres",
+        "nl": "E-mailadres",
+        "fr": "Adresse e-mail",
+        "en": "E-mail addres"
+    },
+    {
+        "key": "common.topic",
+        "nl": "Onderwerp",
+        "fr": "Sujet",
+        "en": "Topic"
+    },
+    {
+        "key": "common.description",
+        "nl": "Omschrijving",
+        "fr": "Description",
+        "en": "Description"
+    },
+    {
+        "key": "common.addFile",
+        "nl": "Bestand toevoegen",
+        "fr": "Ajouter un fichier",
+        "en": "Add file"
+    },
+    {
+        "key": "common.faq",
+        "nl": "FAQ",
+        "fr": "FAQ",
+        "en": "Frequently Asked Questions"
+    },
+    {
+        "key": "common.changeFormula",
+        "nl": "Formule wijzigen",
+        "fr": "Modifier la formule",
+        "en": "Change formula"
+    },
+    {
+        "key": "common.changeBeginEndTime",
+        "nl": "Start- en eindtijd wijzigen",
+        "fr": "Modifier l'heure de début et l'heure de fin",
+        "en": "Change begin- and endtime"
+    },
+    {
+        "key": "common.onlyEmailToTheOffice",
+        "nl": "Enkel e-mail naar kantoor",
+        "fr": "Uniquement envoyer l'e-mail à nos bureaux",
+        "en": "Only e-mail to the office"
+    },
+    {
+        "key": "common.smsAndSms",
+        "nl": "SMS + SMS naar technieker van wacht",
+        "fr": "SMS + SMS au technicien de permanence",
+        "en": "SMS + SMS to technician on guard duty"
+    },
+    {
+        "key": "common.smsAndEmail",
+        "nl": "SMS + e-mail naar technieker van wacht",
+        "fr": "SMS + e-mail au technicien de permanence",
+        "en": "SMS + e-mail to technician on guard duty"
+    },
+    {
+        "key": "common.haveQuestion",
+        "nl": "Ik heb een vraag",
+        "fr": "J'ai une question",
+        "en": "I have a question"
+    },
+    {
+        "key": "common.haveSuggestion",
+        "nl": "Ik heb een suggestie",
+        "fr": "J'ai une suggestion",
+        "en": "I have a suggestion"
+    },
+    {
+        "key": "common.haveComplaint",
+        "nl": "Ik heb een klacht",
+        "fr": "J'ai une plainte",
+        "en": "I have a complaint"
+    },
+    {
+        "key": "common.haveProblem",
+        "nl": "Ik heb een probleem",
+        "fr": "J'ai un problème",
+        "en": "I have a problem"
+    },
+    {
+        "key": "common.selectFormula",
+        "nl": "Selecteer formule",
+        "fr": "Sélectionner la formule",
+        "en": "Select formula"
     }
 ]

@@ -2200,5 +2200,221 @@
         "nl": "Gespreksduur",
         "fr": "Durée de l'appel",
         "en": "Call duration"
+    },
+    {
+        "key": "common.calledOn",
+        "nl": "Gebeld op",
+        "fr": "Appelé le",
+        "en": "Called on"
+    },
+    {
+        "key": "common.chosenHandling",
+        "nl": "Gekozen afhandeling",
+        "fr": "Gestion choisie",
+        "en": "Chosen handling"
+    },
+    {
+        "key": "common.settlementDate",
+        "nl": "Datum afhandeling",
+        "fr": "Date de règlement",
+        "en": "Settlement date"
+    },
+    {
+        "key": "info.noAdditionInfoFound",
+        "nl": "Geen aanvullende info gevonden",
+        "fr": "Aucune information supplémentaire disponible",
+        "en": "No additional info found"
+    },
+    {
+        "key": "common.smsSent",
+        "nl": "SMS verzonden",
+        "fr": "SMS envoyé",
+        "en": "SMS sent"
+    },
+    {
+        "key": "common.emailSent",
+        "nl": "E-mail verzonden",
+        "fr": "E-mail envoyé",
+        "en": "E-mail sent"
+    },
+    {
+        "key": "common.contactByTelephone",
+        "nl": "Telefonisch gecontacteerd",
+        "fr": "Contacté par téléphone",
+        "en": "Contacted by telephone"
+    },
+    {
+        "key": "common.contactByTelephone",
+        "nl": "Telefonisch gecontacteerd",
+        "fr": "Contacté par téléphone",
+        "en": "Contacted by telephone"
+    },
+    {
+        "key": "common.alarmHandling",
+        "nl": "Alarmafhandeling",
+        "fr": "Traitement d'alarme",
+        "en": "Alarm handling"
+    },
+    {
+        "key": "common.locationDetermination",
+        "nl": "Locatiebepaling",
+        "fr": "Localisation géographique",
+        "en": "Location determination"
+    },
+    {
+        "key": "common.additionalInfo",
+        "nl": "Aanvullende informatie",
+        "fr": "Information supplémentaire",
+        "en": "Additional info"
+    },
+    {
+        "key": "common.filterOnDate",
+        "nl": "Filter op datum",
+        "fr": "Filtrer par date",
+        "en": "Filter on date"
+    },
+    {
+        "key": "common.nextWeek",
+        "nl": "Volgende week",
+        "fr": "Semaine prochaine",
+        "en": "Next week"
+    },
+    {
+        "key": "common.lastWeek",
+        "nl": "Vorige week",
+        "fr": "Semaine dernière",
+        "en": "Last week"
+    },
+    {
+        "key": "common.currentWeek",
+        "nl": "Huidige week",
+        "fr": "Semaine en cours",
+        "en": "Current week"
+    },
+    {
+        "key": "common.notification",
+        "nl": "Melding",
+        "fr": "Notification",
+        "en": "Notification"
+    },
+    {
+        "key": "common.notifications",
+        "nl": "Meldingen",
+        "fr": "Notifications",
+        "en": "Notifications"
+    },
+    {
+        "key": "common.filterOnNotifications",
+        "nl": "Filter op meldingen",
+        "fr": "Filtrer selon la notification",
+        "en": "Filter on notifications"
+    },
+    {
+        "key": "common.operatorComment",
+        "nl": "Commentaar operator",
+        "fr": "Commentaire de l'opérateur PRAxIS",
+        "en": "Operator comment"
+    },
+    {
+        "key": "common.notificationsWithAction",
+        "nl": "Meldingen met actie",
+        "fr": "Notifications avec l'intervention d'un opérateur",
+        "en": "Notifications with action"
+    },
+    {
+        "key": "common.notificationsOnlyLogged",
+        "nl": "Meldingen enkel gelogd",
+        "fr": "Notifications uniquement enregistrées",
+        "en": "Notifications only logged"
+    },
+    {
+        "key": "common.notificationsViaBackup",
+        "nl": "Meldingen via back-up kanaal",
+        "fr": "Notifications via le canal de back-up",
+        "en": "Notifications via back-up channel"
+    },
+    {
+        "key": "common.notificationsInTest",
+        "nl": "Meldingen gedurende in test",
+        "fr": "Notifications lors en test",
+        "en": "Notifications in test"
+    },
+    {
+        "key": "info.noNotificationsFound",
+        "nl": "Geen meldingen gevonden",
+        "fr": "Aucune notification trouvée",
+        "en": "No notifications found"
+    },
+    {
+        "key": "common.event",
+        "nl": "Event",
+        "fr": "Evénement",
+        "en": "Event"
+    },
+    {
+        "key": "common.alarmDescription",
+        "nl": "Alarmomschrijving",
+        "fr": "Description de l'alarme",
+        "en": "Alarm description"
+    },
+    {
+        "key": "common.time",
+        "nl": "Tijd",
+        "fr": "Temps",
+        "en": "Time"
+    },
+    {
+        "key": "error.ZoneAndPartitionAlreadyExists",
+        "nl": "Dit zonenummer in combinatie met het partitienummer bestaat al en mag slechts één keer voorkomen",
+        "fr": "Le numéro de zone associé au numéro de partition existe déjà et ne peut apparâitre qu'une seule fois par système",
+        "en": "Zone number in combination with partition number already exists and can only occur once per system"
+    },
+    {
+        "key": "success.zoneAdded",
+        "nl": "Zone toegevoegd",
+        "fr": "Zone ajoutée",
+        "en": "Zone added"
+    },
+    {
+        "key": "success.zoneDeleted",
+        "nl": "Zone verwijderd",
+        "fr": "Zone supprimée",
+        "en": "Zone deleted"
+    },
+    {
+        "key": "success.zoneChanged",
+        "nl": "Zone gewijzigd",
+        "fr": "Zone modifiée",
+        "en": "Zone changed"
+    },
+    {
+        "key": "success.zonesDeleted",
+        "nl": "{{value}} zone(s) verwijderd",
+        "fr": "{{value}} zone(s) supprimées",
+        "en": "{{value}} zone(s) deleted"
+    },
+    {
+        "key": "info.siaLevel3Info",
+        "nl": "Volgens onze gegevens stuurt het alarmpaneel de zoneteksten automatisch door (SIA NIVEAU 3). Hierdoor kunnen zones niet handmatig worden toegevoegd of gewijzigd.",
+        "fr": "Basé sur les données dont nous disposons, ce panneau d'alarme transmet automatiquement les descriptions de zone (NIVEAU SIA 3). Par conséquent, il est impossible d'ajouter ou de modifier ici manuellement les desciptions de zone.",
+        "en": "According to our records, the alarm panel automatically forwards the zone descriptions (SIA LEVEL 3). As a result, zones cannot be added or changed manually."
+    },
+    {
+        "key": "common.areYouSureToActivateCustomer",
+        "nl": "Bent u zeker dat u het abonnement wil activeren?",
+        "fr": "Êtes-vous sûr que vous voulez activer ce client?",
+        "en": "Are you sure you wish to activate the customer?"
+    },
+    {
+        "key": "common.youAreAboutToActiveTheCustomer",
+        "nl": "U staat op het punt dit abonnement te activeren in onze software",
+        "fr": "Vous êtes sur le point d'activer le client dans notre logiciel",
+        "en": "You are about to activate the customer in our software"
+    },
+    {
+        "key": "succes.customerHasBeenActivated",
+        "nl": "L'activation du client a réussi",
+        "fr": "Vous êtes sur le point d'activer le client dans notre logiciel",
+        "en": "The customer has been successfully activated"
     }
 ]

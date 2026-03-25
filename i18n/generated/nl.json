@@ -290,7 +290,33 @@
     "files": "Bestanden",
     "callComment": "Belcommentaar",
     "action": "Actie",
-    "callDuration": "Gespreksduur"
+    "callDuration": "Gespreksduur",
+    "calledOn": "Gebeld op",
+    "chosenHandling": "Gekozen afhandeling",
+    "settlementDate": "Datum afhandeling",
+    "smsSent": "SMS verzonden",
+    "emailSent": "E-mail verzonden",
+    "contactByTelephone": "Telefonisch gecontacteerd",
+    "alarmHandling": "Alarmafhandeling",
+    "locationDetermination": "Locatiebepaling",
+    "additionalInfo": "Aanvullende informatie",
+    "filterOnDate": "Filter op datum",
+    "nextWeek": "Volgende week",
+    "lastWeek": "Vorige week",
+    "currentWeek": "Huidige week",
+    "notification": "Melding",
+    "notifications": "Meldingen",
+    "filterOnNotifications": "Filter op meldingen",
+    "operatorComment": "Commentaar operator",
+    "notificationsWithAction": "Meldingen met actie",
+    "notificationsOnlyLogged": "Meldingen enkel gelogd",
+    "notificationsViaBackup": "Meldingen via back-up kanaal",
+    "notificationsInTest": "Meldingen gedurende in test",
+    "event": "Event",
+    "alarmDescription": "Alarmomschrijving",
+    "time": "Tijd",
+    "areYouSureToActivateCustomer": "Bent u zeker dat u het abonnement wil activeren?",
+    "youAreAboutToActiveTheCustomer": "U staat op het punt dit abonnement te activeren in onze software"
   },
   "error": {
     "apiErrors": "API-fouten",
@@ -305,7 +331,8 @@
     "noPrimaryOrBackupContactAssigned": "Er werd geen primair of back-up contact toegekend.",
     "fileTooBig5": "Bestand te groot! Max. 5MB toegestaan",
     "failedToLoadVideo": "Kan de video niet laden",
-    "failedToLoadImage": "Kan de afbeelding niet laden"
+    "failedToLoadImage": "Kan de afbeelding niet laden",
+    "ZoneAndPartitionAlreadyExists": "Dit zonenummer in combinatie met het partitienummer bestaat al en mag slechts één keer voorkomen"
   },
   "authentication": {
     "firebaseUUID": "Firebase UUID",
@@ -351,7 +378,10 @@
     "clickInCalendarToManageExceptions": "Klik in de kalender op de groep waarvan u uitzonderingen wil beheren.",
     "provideEmailToChangeData": "Als u gegevens wil wijzigen, gelieve uw instructies door te sturen via e-mail naar",
     "noVehicleDetailsFound": "Geen voertuiggegevens gevonden",
-    "noFilesFound": "Geen bestanden gevonden"
+    "noFilesFound": "Geen bestanden gevonden",
+    "noAdditionInfoFound": "Geen aanvullende info gevonden",
+    "noNotificationsFound": "Geen meldingen gevonden",
+    "siaLevel3Info": "Volgens onze gegevens stuurt het alarmpaneel de zoneteksten automatisch door (SIA NIVEAU 3). Hierdoor kunnen zones niet handmatig worden toegevoegd of gewijzigd."
   },
   "success": {
     "success": "API geslaagd",
@@ -369,6 +399,13 @@
     "exceptionGranted": "Er werd een uitzondering op het primair of back-up contact toegekend.",
     "furtherInstructionSendTo": "Verdere instructies zijn verzonden naar {{value}}",
     "vehicleDetailsChanged": "Voertuiggegevens gewijzigd",
-    "alineContactNumber": "ALINE contactnummer"
+    "alineContactNumber": "ALINE contactnummer",
+    "zoneAdded": "Zone toegevoegd",
+    "zoneDeleted": "Zone verwijderd",
+    "zoneChanged": "Zone gewijzigd",
+    "zonesDeleted": "{{value}} zone(s) verwijderd"
+  },
+  "succes": {
+    "customerHasBeenActivated": "Dit abonnement werd succesvol geactiveerd"
   }
 }

@@ -290,7 +290,33 @@
     "files": "Fichiers",
     "callComment": "Commentaire concernant l'appel téléphonique",
     "action": "Action",
-    "callDuration": "Durée de l'appel"
+    "callDuration": "Durée de l'appel",
+    "calledOn": "Appelé le",
+    "chosenHandling": "Gestion choisie",
+    "settlementDate": "Date de règlement",
+    "smsSent": "SMS envoyé",
+    "emailSent": "E-mail envoyé",
+    "contactByTelephone": "Contacté par téléphone",
+    "alarmHandling": "Traitement d'alarme",
+    "locationDetermination": "Localisation géographique",
+    "additionalInfo": "Information supplémentaire",
+    "filterOnDate": "Filtrer par date",
+    "nextWeek": "Semaine prochaine",
+    "lastWeek": "Semaine dernière",
+    "currentWeek": "Semaine en cours",
+    "notification": "Notification",
+    "notifications": "Notifications",
+    "filterOnNotifications": "Filtrer selon la notification",
+    "operatorComment": "Commentaire de l'opérateur PRAxIS",
+    "notificationsWithAction": "Notifications avec l'intervention d'un opérateur",
+    "notificationsOnlyLogged": "Notifications uniquement enregistrées",
+    "notificationsViaBackup": "Notifications via le canal de back-up",
+    "notificationsInTest": "Notifications lors en test",
+    "event": "Evénement",
+    "alarmDescription": "Description de l'alarme",
+    "time": "Temps",
+    "areYouSureToActivateCustomer": "Êtes-vous sûr que vous voulez activer ce client?",
+    "youAreAboutToActiveTheCustomer": "Vous êtes sur le point d'activer le client dans notre logiciel"
   },
   "error": {
     "apiErrors": "Erreurs d'API",
@@ -305,7 +331,8 @@
     "noPrimaryOrBackupContactAssigned": "Aucun technicien principal ni technicien suppléant n'a été attribué.",
     "fileTooBig5": "Le fichier ne peut pas dépasser les 5 MB",
     "failedToLoadVideo": "Le téléchargement des images vidéo a échoué",
-    "failedToLoadImage": "Le téléchargement des images a échoué"
+    "failedToLoadImage": "Le téléchargement des images a échoué",
+    "ZoneAndPartitionAlreadyExists": "Le numéro de zone associé au numéro de partition existe déjà et ne peut apparâitre qu'une seule fois par système"
   },
   "authentication": {
     "firebaseUUID": "UUID Firebase",
@@ -351,7 +378,10 @@
     "clickInCalendarToManageExceptions": "Cliquez dans le calendrier sur le groupe pour lequel vous souhaitez gérer des exceptions.",
     "provideEmailToChangeData": "Si vous souhaitez modifier des données, veuillez envoyer vos instructions par e-mail à",
     "noVehicleDetailsFound": "Aucune information sur le véhicule",
-    "noFilesFound": "Aucun fichier trouvé"
+    "noFilesFound": "Aucun fichier trouvé",
+    "noAdditionInfoFound": "Aucune information supplémentaire disponible",
+    "noNotificationsFound": "Aucune notification trouvée",
+    "siaLevel3Info": "Basé sur les données dont nous disposons, ce panneau d'alarme transmet automatiquement les descriptions de zone (NIVEAU SIA 3). Par conséquent, il est impossible d'ajouter ou de modifier ici manuellement les desciptions de zone."
   },
   "success": {
     "success": "Transfert API réussi",
@@ -369,6 +399,13 @@
     "exceptionGranted": "Téléchargement du fichier CSV réussi",
     "furtherInstructionSendTo": "D'autres instructions ont été envoyées à {{value}}",
     "vehicleDetailsChanged": "Les détails du véhicule ont été modifiés",
-    "alineContactNumber": "Numéro de contact chez 'ALINE'"
+    "alineContactNumber": "Numéro de contact chez 'ALINE'",
+    "zoneAdded": "Zone ajoutée",
+    "zoneDeleted": "Zone supprimée",
+    "zoneChanged": "Zone modifiée",
+    "zonesDeleted": "{{value}} zone(s) supprimées"
+  },
+  "succes": {
+    "customerHasBeenActivated": "Vous êtes sur le point d'activer le client dans notre logiciel"
   }
 }

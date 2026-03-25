@@ -290,7 +290,33 @@
     "files": "Files",
     "callComment": "Call comment",
     "action": "Action",
-    "callDuration": "Call duration"
+    "callDuration": "Call duration",
+    "calledOn": "Called on",
+    "chosenHandling": "Chosen handling",
+    "settlementDate": "Settlement date",
+    "smsSent": "SMS sent",
+    "emailSent": "E-mail sent",
+    "contactByTelephone": "Contacted by telephone",
+    "alarmHandling": "Alarm handling",
+    "locationDetermination": "Location determination",
+    "additionalInfo": "Additional info",
+    "filterOnDate": "Filter on date",
+    "nextWeek": "Next week",
+    "lastWeek": "Last week",
+    "currentWeek": "Current week",
+    "notification": "Notification",
+    "notifications": "Notifications",
+    "filterOnNotifications": "Filter on notifications",
+    "operatorComment": "Operator comment",
+    "notificationsWithAction": "Notifications with action",
+    "notificationsOnlyLogged": "Notifications only logged",
+    "notificationsViaBackup": "Notifications via back-up channel",
+    "notificationsInTest": "Notifications in test",
+    "event": "Event",
+    "alarmDescription": "Alarm description",
+    "time": "Time",
+    "areYouSureToActivateCustomer": "Are you sure you wish to activate the customer?",
+    "youAreAboutToActiveTheCustomer": "You are about to activate the customer in our software"
   },
   "error": {
     "apiErrors": "API errors",
@@ -305,7 +331,8 @@
     "noPrimaryOrBackupContactAssigned": "No primary or back-up contact has been assigned.",
     "fileTooBig5": "File too big! max. 5MB allowed",
     "failedToLoadVideo": "Failed to load video",
-    "failedToLoadImage": "Failed to load image"
+    "failedToLoadImage": "Failed to load image",
+    "ZoneAndPartitionAlreadyExists": "Zone number in combination with partition number already exists and can only occur once per system"
   },
   "authentication": {
     "firebaseUUID": "Firebase UUID",
@@ -351,7 +378,10 @@
     "clickInCalendarToManageExceptions": "Click in the calendar on the group for which you want to manage exceptions.",
     "provideEmailToChangeData": "If you wish change data, please provide your instructions via e-mail to",
     "noVehicleDetailsFound": "No vehicle details found",
-    "noFilesFound": "No files found"
+    "noFilesFound": "No files found",
+    "noAdditionInfoFound": "No additional info found",
+    "noNotificationsFound": "No notifications found",
+    "siaLevel3Info": "According to our records, the alarm panel automatically forwards the zone descriptions (SIA LEVEL 3). As a result, zones cannot be added or changed manually."
   },
   "success": {
     "success": "API success",
@@ -369,6 +399,13 @@
     "exceptionGranted": "An exception to primary or back-up contact has been granted.",
     "furtherInstructionSendTo": "Further instructions were sent to {{value}}",
     "vehicleDetailsChanged": "Vehicle details changed",
-    "alineContactNumber": "ALINE contact number"
+    "alineContactNumber": "ALINE contact number",
+    "zoneAdded": "Zone added",
+    "zoneDeleted": "Zone deleted",
+    "zoneChanged": "Zone changed",
+    "zonesDeleted": "{{value}} zone(s) deleted"
+  },
+  "succes": {
+    "customerHasBeenActivated": "The customer has been successfully activated"
   }
 }

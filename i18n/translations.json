@@ -2413,7 +2413,7 @@
     },
     {
         "key": "succes.customerHasBeenActivated",
-        "nl": "L'activation du client a réussi",
+        "nl": "Dit abonnement werd succesvol geactiveerd",
         "fr": "Vous êtes sur le point d'activer le client dans notre logiciel",
         "en": "The customer has been successfully activated"
     }

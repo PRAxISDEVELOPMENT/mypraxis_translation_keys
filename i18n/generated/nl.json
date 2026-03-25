@@ -257,7 +257,40 @@
     "lastname": "Achternaam",
     "isBillingAddressSameAsAddress": "Is het facturatieadres hetzelfde als het installatieadres?",
     "IBAN": "IBAN",
-    "BIC": "BIC"
+    "BIC": "BIC",
+    "facturationMethod": "Facturatiemethode",
+    "monthlyToInstaller": "Maandelijks aan installateur",
+    "yearlyToEndCustomerWithCommision": "Jaarlijks aan eindklant, met commissie",
+    "listeninNumber": "Nummer voor inluistering",
+    "codeUnderDuress": "Code onder dwang",
+    "requiredFields": "Verplichte velden",
+    "endDate": "Einddatum",
+    "reverseOrder": "Omgekeerde volgorde",
+    "generate": "Genereren",
+    "reportType": "Rapporttype",
+    "generateReport": "Rapport genereren",
+    "overviewOfReports": "Overzicht van rapporten",
+    "withIdentificationData": "Met identificatiegegevens",
+    "withoutIdentificationData": "Zonder identificatiegegevens",
+    "detailed": "Gedetailleerd",
+    "reporting": "Rapportering",
+    "noContactsFound": "Geen contacten gevonden",
+    "contactDeleted": "Contact verwijderd",
+    "aboutToDeleteContacts": "U staat op het punt om {{value}} contact(en) te verwijderen",
+    "manageContacts": "Contacten beheren",
+    "comment": "Commentaar",
+    "color": "Kleur",
+    "alarmType": "Alarmtype",
+    "licensePlate": "Nummerplaat",
+    "chassisNumber": "Chassisnummer",
+    "implemented": "Ingevoerd",
+    "brand": "Merk",
+    "vehicleType": "Type voertuig / object",
+    "vehicleDetails": "Details voertuig",
+    "files": "Bestanden",
+    "callComment": "Belcommentaar",
+    "action": "Actie",
+    "callDuration": "Gespreksduur"
   },
   "error": {
     "apiErrors": "API-fouten",
@@ -270,7 +303,9 @@
     "noDataFound": "Geen gegevens gevonden",
     "csvMissingMandatoryHeaders": "Er ontbreken verplichte headers in de CSV",
     "noPrimaryOrBackupContactAssigned": "Er werd geen primair of back-up contact toegekend.",
-    "fileTooBig5": "Bestand te groot! Max. 5MB toegestaan"
+    "fileTooBig5": "Bestand te groot! Max. 5MB toegestaan",
+    "failedToLoadVideo": "Kan de video niet laden",
+    "failedToLoadImage": "Kan de afbeelding niet laden"
   },
   "authentication": {
     "firebaseUUID": "Firebase UUID",
@@ -314,7 +349,9 @@
     "manageExceptionPerGroup": "Per contactgroep uitzonderingen beheren voor zowel de primaire als de back-up technieker van wacht (omwille van bv. verlof, ziekte, afwezigheid, …).",
     "clickInCalendarOnGroupToChange": "Klik in de kalender op de groep waarvan u de contacten wilt toewijzen of wijzigen. Je kan contacten toewijzen tot het einde van de betreffende maand.",
     "clickInCalendarToManageExceptions": "Klik in de kalender op de groep waarvan u uitzonderingen wil beheren.",
-    "provideEmailToChangeData": "Als u gegevens wil wijzigen, gelieve uw instructies door te sturen via e-mail naar"
+    "provideEmailToChangeData": "Als u gegevens wil wijzigen, gelieve uw instructies door te sturen via e-mail naar",
+    "noVehicleDetailsFound": "Geen voertuiggegevens gevonden",
+    "noFilesFound": "Geen bestanden gevonden"
   },
   "success": {
     "success": "API geslaagd",
@@ -330,6 +367,8 @@
     "successfull": "Geslaagd",
     "CSVUploadSuccessful": "CSV upload geslaagd",
     "exceptionGranted": "Er werd een uitzondering op het primair of back-up contact toegekend.",
-    "furtherInstructionSendTo": "Verdere instructies zijn verzonden naar {{value}}"
+    "furtherInstructionSendTo": "Verdere instructies zijn verzonden naar {{value}}",
+    "vehicleDetailsChanged": "Voertuiggegevens gewijzigd",
+    "alineContactNumber": "ALINE contactnummer"
   }
 }

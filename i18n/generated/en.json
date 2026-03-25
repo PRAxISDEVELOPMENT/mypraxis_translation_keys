@@ -257,7 +257,40 @@
     "lastname": "Last name",
     "isBillingAddressSameAsAddress": "Is billing address the same as address?",
     "IBAN": "IBAN",
-    "BIC": "BIC"
+    "BIC": "BIC",
+    "facturationMethod": "Facturation method",
+    "monthlyToInstaller": "Monthly to installer",
+    "yearlyToEndCustomerWithCommision": "Yearly to end customer, with commission",
+    "listeninNumber": "Listen-in number",
+    "codeUnderDuress": "Code under duress",
+    "requiredFields": "Required fields",
+    "endDate": "End date",
+    "reverseOrder": "Reverse order",
+    "generate": "Generate",
+    "reportType": "Report type",
+    "generateReport": "Generate report",
+    "overviewOfReports": "Overview of reports",
+    "withIdentificationData": "With identification data",
+    "withoutIdentificationData": "Without identification data",
+    "detailed": "Detailed",
+    "reporting": "Reporting",
+    "noContactsFound": "No contacts found",
+    "contactDeleted": "Contact deleted",
+    "aboutToDeleteContacts": "You are about to delete {{value}} contact(s)",
+    "manageContacts": "Manage contacts",
+    "comment": "Comment",
+    "color": "Color",
+    "alarmType": "Alarm type",
+    "licensePlate": "License plate",
+    "chassisNumber": "Chassis number",
+    "implemented": "Implemented",
+    "brand": "Brand",
+    "vehicleType": "Vehicle type",
+    "vehicleDetails": "Vehicle details",
+    "files": "Files",
+    "callComment": "Call comment",
+    "action": "Action",
+    "callDuration": "Call duration"
   },
   "error": {
     "apiErrors": "API errors",
@@ -270,7 +303,9 @@
     "noDataFound": "No data found",
     "csvMissingMandatoryHeaders": "CSV contains missing mandatory headers",
     "noPrimaryOrBackupContactAssigned": "No primary or back-up contact has been assigned.",
-    "fileTooBig5": "File too big! max. 5MB allowed"
+    "fileTooBig5": "File too big! max. 5MB allowed",
+    "failedToLoadVideo": "Failed to load video",
+    "failedToLoadImage": "Failed to load image"
   },
   "authentication": {
     "firebaseUUID": "Firebase UUID",
@@ -314,7 +349,9 @@
     "manageExceptionPerGroup": "Manage exceptions per contact group for both the primary and back-up technician on guard duty (due to for example leave, illness, absence, etc.).",
     "clickInCalendarOnGroupToChange": "Click in the calendar on the group for which you wish to assign or change the contacts, determined per group. If desired, contacts can be assigned until the end of the relevant month.",
     "clickInCalendarToManageExceptions": "Click in the calendar on the group for which you want to manage exceptions.",
-    "provideEmailToChangeData": "If you wish change data, please provide your instructions via e-mail to"
+    "provideEmailToChangeData": "If you wish change data, please provide your instructions via e-mail to",
+    "noVehicleDetailsFound": "No vehicle details found",
+    "noFilesFound": "No files found"
   },
   "success": {
     "success": "API success",
@@ -330,6 +367,8 @@
     "successfull": "Successfull",
     "CSVUploadSuccessful": "CSV upload successful",
     "exceptionGranted": "An exception to primary or back-up contact has been granted.",
-    "furtherInstructionSendTo": "Further instructions were sent to {{value}}"
+    "furtherInstructionSendTo": "Further instructions were sent to {{value}}",
+    "vehicleDetailsChanged": "Vehicle details changed",
+    "alineContactNumber": "ALINE contact number"
   }
 }

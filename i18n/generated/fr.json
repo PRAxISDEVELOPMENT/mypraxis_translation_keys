@@ -257,7 +257,40 @@
     "lastname": "Nom de famille",
     "isBillingAddressSameAsAddress": "L'adresse de facturation est-elle la même que l'adresse d'installation?",
     "IBAN": "IBAN",
-    "BIC": "BIC"
+    "BIC": "BIC",
+    "facturationMethod": "Méthode de facturation",
+    "monthlyToInstaller": "Mensuellement vers l'installateur",
+    "yearlyToEndCustomerWithCommision": "Annuellement vers le client final, avec commission",
+    "listeninNumber": "Numéro d'appel de l'écoute à distance",
+    "codeUnderDuress": "Code sous contrainte",
+    "requiredFields": "Champs obligatoires",
+    "endDate": "Date de fin",
+    "reverseOrder": "En ordre inverse",
+    "generate": "Générer",
+    "reportType": "Type de rapport",
+    "generateReport": "Générer un rapport",
+    "overviewOfReports": "Aperçu des rapports",
+    "withIdentificationData": "Avec les données d'identification",
+    "withoutIdentificationData": "Sans les données d'identification",
+    "detailed": "Détaillé",
+    "reporting": "Rapport",
+    "noContactsFound": "Aucun contact trouvé",
+    "contactDeleted": "Contact supprimé",
+    "aboutToDeleteContacts": "Vous êtes sur le point de supprimer {{value}} contact(s)",
+    "manageContacts": "Gérer des contacts",
+    "comment": "Commentaire",
+    "color": "Couleur",
+    "alarmType": "Type d'alarme",
+    "licensePlate": "Plaque d'immatriculation",
+    "chassisNumber": "Numéro de châssis",
+    "implemented": "Mis en œuvre",
+    "brand": "Marque",
+    "vehicleType": "Type de véhicule",
+    "vehicleDetails": "Détails du véhicule",
+    "files": "Fichiers",
+    "callComment": "Commentaire concernant l'appel téléphonique",
+    "action": "Action",
+    "callDuration": "Durée de l'appel"
   },
   "error": {
     "apiErrors": "Erreurs d'API",
@@ -270,7 +303,9 @@
     "noDataFound": "Aucune donnée trouvée",
     "csvMissingMandatoryHeaders": "Le CSV manque des en-têtes obligatoires",
     "noPrimaryOrBackupContactAssigned": "Aucun technicien principal ni technicien suppléant n'a été attribué.",
-    "fileTooBig5": "Le fichier ne peut pas dépasser les 5 MB"
+    "fileTooBig5": "Le fichier ne peut pas dépasser les 5 MB",
+    "failedToLoadVideo": "Le téléchargement des images vidéo a échoué",
+    "failedToLoadImage": "Le téléchargement des images a échoué"
   },
   "authentication": {
     "firebaseUUID": "UUID Firebase",
@@ -314,7 +349,9 @@
     "manageExceptionPerGroup": "Gérer des exceptions, par groupe , pour le technicien principal et le technicien suppléant du service de permanence (en raison, par exemple, d'un congé, d'une maladie, d'une absence, etc.).",
     "clickInCalendarOnGroupToChange": "Cliquez dans le \"Calendrier\" sur le groupe pour lequel vous souhaitez attribuer ou modifier des techniciens, déterminés par groupe. Si vous le souhaitez, les contacts peuvent être attribués jusqu'à la fin du mois concerné.",
     "clickInCalendarToManageExceptions": "Cliquez dans le calendrier sur le groupe pour lequel vous souhaitez gérer des exceptions.",
-    "provideEmailToChangeData": "Si vous souhaitez modifier des données, veuillez envoyer vos instructions par e-mail à"
+    "provideEmailToChangeData": "Si vous souhaitez modifier des données, veuillez envoyer vos instructions par e-mail à",
+    "noVehicleDetailsFound": "Aucune information sur le véhicule",
+    "noFilesFound": "Aucun fichier trouvé"
   },
   "success": {
     "success": "Transfert API réussi",
@@ -330,6 +367,8 @@
     "successfull": "Action réussite",
     "CSVUploadSuccessful": "Téléchargement du fichier CSV réussi",
     "exceptionGranted": "Téléchargement du fichier CSV réussi",
-    "furtherInstructionSendTo": "D'autres instructions ont été envoyées à {{value}}"
+    "furtherInstructionSendTo": "D'autres instructions ont été envoyées à {{value}}",
+    "vehicleDetailsChanged": "Les détails du véhicule ont été modifiés",
+    "alineContactNumber": "Numéro de contact chez 'ALINE'"
   }
 }

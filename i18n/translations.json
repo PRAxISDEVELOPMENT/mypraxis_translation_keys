@@ -1810,5 +1810,161 @@
         "nl": "Vorige pagina",
         "fr": "Page précédente",
         "en": "Previous page"
+    },
+    {
+        "key": "common.previousPage",
+        "nl": "Volgende pagina",
+        "fr": "Page suivante",
+        "en": "Next page"
+    },
+    {
+        "key": "common.userManagement",
+        "nl": "Gebruikersbeheer",
+        "fr": "Gestion d'utilisateurs",
+        "en": "User management"
+    },
+    {
+        "key": "common.salesQuotationValidUntil",
+        "nl": "Verkoopofferte geldig tot",
+        "fr": "Devis commercial valable jusqu'à",
+        "en": "Sales quotation valid until"
+    },
+    {
+        "key": "common.type",
+        "nl": "Type",
+        "fr": "Type",
+        "en": "Type"
+    },
+    {
+        "key": "common.expiredInvoices",
+        "nl": "Vervallen facturen",
+        "fr": "Factures échues",
+        "en": "Expired invoices"
+    },
+    {
+        "key": "common.unexpiredInvoices",
+        "nl": "Niet-vervallen facturen",
+        "fr": "Factures non échues",
+        "en": "Unexpired invoices"
+    },
+    {
+        "key": "common.paidInvoices",
+        "nl": "Betaalde facturen",
+        "fr": "Factures payées",
+        "en": "Paid invoices"
+    },
+    {
+        "key": "common.allInvoices",
+        "nl": "Alle facturen",
+        "fr": "Toutes les factures",
+        "en": "All invoices"
+    },
+    {
+        "key": "common.invoice",
+        "nl": "Factuur",
+        "fr": "Facture",
+        "en": "Invoice"
+    },
+    {
+        "key": "common.invoiceNumber",
+        "nl": "Factuurnummer",
+        "fr": "Numéro de facture",
+        "en": "Invoice number"
+    },
+    {
+        "key": "common.invoicePeriod",
+        "nl": "Periode van facturatie",
+        "fr": "Période de facturation",
+        "en": "Invoice period"
+    },
+    {
+        "key": "common.invoiceDate",
+        "nl": "Factuurdatum",
+        "fr": "Date de la facture",
+        "en": "Invoice date"
+    },
+    {
+        "key": "common.expirationDate",
+        "nl": "Vervaldatum",
+        "fr": "Date d'échéance",
+        "en": "Expiration date"
+    },
+    {
+        "key": "common.totalAmount",
+        "nl": "Totaal bedrag",
+        "fr": "Montant total",
+        "en": "Total amount"
+    },
+    {
+        "key": "common.outstandingAmount",
+        "nl": "Openstaand bedrag",
+        "fr": "Montant dû",
+        "en": "Outstanding amount"
+    },
+    {
+        "key": "common.paidOn",
+        "nl": "Betaald op",
+        "fr": "Payé le",
+        "en": "Paid on"
+    },
+    {
+        "key": "common.yearly",
+        "nl": "Jaarlijks",
+        "fr": "Annuellement",
+        "en": "Yearly"
+    },
+    {
+        "key": "common.quarterly",
+        "nl": "Per kwartaal",
+        "fr": "Trimestriel",
+        "en": "Quarterly"
+    },
+    {
+        "key": "common.manageClients",
+        "nl": "Klanten beheren",
+        "fr": "Gérer des clients",
+        "en": "Manage clients"
+    },
+    {
+        "key": "common.customerManagement",
+        "nl": "Klantenbeheer",
+        "fr": "Gestion de clients",
+        "en": "Customer management"
+    },
+    {
+        "key": "common.autoEmails",
+        "nl": "E-mailadres voor geautomatiseerde e-mails",
+        "fr": "L'adresse e-mail pour l'envoi des e-mails automatisés",
+        "en": "E-mail for automated mails"
+    },
+    {
+        "key": "common.firstname",
+        "nl": "Voornaam",
+        "fr": "Prénom",
+        "en": "First name"
+    },
+    {
+        "key": "common.lastname",
+        "nl": "Achternaam",
+        "fr": "Nom de famille",
+        "en": "Last name"
+    },
+    {
+        "key": "common.isBillingAddressSameAsAddress",
+        "nl": "Is het facturatieadres hetzelfde als het installatieadres?",
+        "fr": "L'adresse de facturation est-elle la même que l'adresse d'installation?",
+        "en": "Is billing address the same as address?"
+    },
+    {
+        "key": "common.IBAN",
+        "nl": "IBAN",
+        "fr": "IBAN",
+        "en": "IBAN"
+    },
+    {
+        "key": "common.BIC",
+        "nl": "BIC",
+        "fr": "BIC",
+        "en": "BIC"
     }
 ]

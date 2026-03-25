@@ -1966,5 +1966,239 @@
         "nl": "BIC",
         "fr": "BIC",
         "en": "BIC"
+    },
+    {
+        "key": "common.facturationMethod",
+        "nl": "Facturatiemethode",
+        "fr": "Méthode de facturation",
+        "en": "Facturation method"
+    },
+    {
+        "key": "common.monthlyToInstaller",
+        "nl": "Maandelijks aan installateur",
+        "fr": "Mensuellement vers l'installateur",
+        "en": "Monthly to installer"
+    },
+    {
+        "key": "common.yearlyToEndCustomerWithCommision",
+        "nl": "Jaarlijks aan eindklant, met commissie",
+        "fr": "Annuellement vers le client final, avec commission",
+        "en": "Yearly to end customer, with commission"
+    },
+    {
+        "key": "success.vehicleDetailsChanged",
+        "nl": "Voertuiggegevens gewijzigd",
+        "fr": "Les détails du véhicule ont été modifiés",
+        "en": "Vehicle details changed"
+    },
+    {
+        "key": "common.listeninNumber",
+        "nl": "Nummer voor inluistering",
+        "fr": "Numéro d'appel de l'écoute à distance",
+        "en": "Listen-in number"
+    },
+    {
+        "key": "success.alineContactNumber",
+        "nl": "ALINE contactnummer",
+        "fr": "Numéro de contact chez 'ALINE'",
+        "en": "ALINE contact number"
+    },
+    {
+        "key": "common.codeUnderDuress",
+        "nl": "Code onder dwang",
+        "fr": "Code sous contrainte",
+        "en": "Code under duress"
+    },
+    {
+        "key": "common.requiredFields",
+        "nl": "Verplichte velden",
+        "fr": "Champs obligatoires",
+        "en": "Required fields"
+    },
+    {
+        "key": "common.endDate",
+        "nl": "Einddatum",
+        "fr": "Date de fin",
+        "en": "End date"
+    },
+    {
+        "key": "common.reverseOrder",
+        "nl": "Omgekeerde volgorde",
+        "fr": "En ordre inverse",
+        "en": "Reverse order"
+    },
+    {
+        "key": "common.generate",
+        "nl": "Genereren",
+        "fr": "Générer",
+        "en": "Generate"
+    },
+    {
+        "key": "common.reportType",
+        "nl": "Rapporttype",
+        "fr": "Type de rapport",
+        "en": "Report type"
+    },
+    {
+        "key": "common.generateReport",
+        "nl": "Rapport genereren",
+        "fr": "Générer un rapport",
+        "en": "Generate report"
+    },
+    {
+        "key": "common.overviewOfReports",
+        "nl": "Overzicht van rapporten",
+        "fr": "Aperçu des rapports",
+        "en": "Overview of reports"
+    },
+    {
+        "key": "common.withIdentificationData",
+        "nl": "Met identificatiegegevens",
+        "fr": "Avec les données d'identification",
+        "en": "With identification data"
+    },
+    {
+        "key": "common.withoutIdentificationData",
+        "nl": "Zonder identificatiegegevens",
+        "fr": "Sans les données d'identification",
+        "en": "Without identification data"
+    },
+    {
+        "key": "common.detailed",
+        "nl": "Gedetailleerd",
+        "fr": "Détaillé",
+        "en": "Detailed"
+    },
+    {
+        "key": "common.reporting",
+        "nl": "Rapportering",
+        "fr": "Rapport",
+        "en": "Reporting"
+    },
+    {
+        "key": "common.noContactsFound",
+        "nl": "Geen contacten gevonden",
+        "fr": "Aucun contact trouvé",
+        "en": "No contacts found"
+    },
+    {
+        "key": "common.contactDeleted",
+        "nl": "Contact verwijderd",
+        "fr": "Contact supprimé",
+        "en": "Contact deleted"
+    },
+    {
+        "key": "common.aboutToDeleteContacts",
+        "nl": "U staat op het punt om {{value}} contact(en) te verwijderen",
+        "fr": "Vous êtes sur le point de supprimer {{value}} contact(s)",
+        "en": "You are about to delete {{value}} contact(s)"
+    },
+    {
+        "key": "common.manageContacts",
+        "nl": "Contacten beheren",
+        "fr": "Gérer des contacts",
+        "en": "Manage contacts"
+    },
+    {
+        "key": "common.comment",
+        "nl": "Commentaar",
+        "fr": "Commentaire",
+        "en": "Comment"
+    },
+    {
+        "key": "common.color",
+        "nl": "Kleur",
+        "fr": "Couleur",
+        "en": "Color"
+    },
+    {
+        "key": "common.alarmType",
+        "nl": "Alarmtype",
+        "fr": "Type d'alarme",
+        "en": "Alarm type"
+    },
+    {
+        "key": "common.licensePlate",
+        "nl": "Nummerplaat",
+        "fr": "Plaque d'immatriculation",
+        "en": "License plate"
+    },
+    {
+        "key": "common.chassisNumber",
+        "nl": "Chassisnummer",
+        "fr": "Numéro de châssis",
+        "en": "Chassis number"
+    },
+    {
+        "key": "common.implemented",
+        "nl": "Ingevoerd",
+        "fr": "Mis en œuvre",
+        "en": "Implemented"
+    },
+    {
+        "key": "common.brand",
+        "nl": "Merk",
+        "fr": "Marque",
+        "en": "Brand"
+    },
+    {
+        "key": "common.vehicleType",
+        "nl": "Type voertuig / object",
+        "fr": "Type de véhicule",
+        "en": "Vehicle type"
+    },
+    {
+        "key": "info.noVehicleDetailsFound",
+        "nl": "Geen voertuiggegevens gevonden",
+        "fr": "Aucune information sur le véhicule",
+        "en": "No vehicle details found"
+    },
+    {
+        "key": "common.vehicleDetails",
+        "nl": "Details voertuig",
+        "fr": "Détails du véhicule",
+        "en": "Vehicle details"
+    },
+    {
+        "key": "error.failedToLoadVideo",
+        "nl": "Kan de video niet laden",
+        "fr": "Le téléchargement des images vidéo a échoué",
+        "en": "Failed to load video"
+    },
+    {
+        "key": "error.failedToLoadImage",
+        "nl": "Kan de afbeelding niet laden",
+        "fr": "Le téléchargement des images a échoué",
+        "en": "Failed to load image"
+    },
+    {
+        "key": "info.noFilesFound",
+        "nl": "Geen bestanden gevonden",
+        "fr": "Aucun fichier trouvé",
+        "en": "No files found"
+    },
+    {
+        "key": "common.files",
+        "nl": "Bestanden",
+        "fr": "Fichiers",
+        "en": "Files"
+    },
+    {
+        "key": "common.callComment",
+        "nl": "Belcommentaar",
+        "fr": "Commentaire concernant l'appel téléphonique",
+        "en": "Call comment"
+    },
+    {
+        "key": "common.action",
+        "nl": "Actie",
+        "fr": "Action",
+        "en": "Action"
+    },
+    {
+        "key": "common.callDuration",
+        "nl": "Gespreksduur",
+        "fr": "Durée de l'appel",
+        "en": "Call duration"
     }
 ]

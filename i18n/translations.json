@@ -186,7 +186,7 @@
         "en": "View full body"
     },
     {
-        "key": "common.viewFullbody",
+        "key": "common.logs",
         "nl": "Logs",
         "fr": "Journaux",
         "en": "Logs"
@@ -2412,7 +2412,7 @@
         "en": "You are about to activate the customer in our software"
     },
     {
-        "key": "succes.customerHasBeenActivated",
+        "key": "success.customerHasBeenActivated",
         "nl": "Dit abonnement werd succesvol geactiveerd",
         "fr": "Vous êtes sur le point d'activer le client dans notre logiciel",
         "en": "The customer has been successfully activated"

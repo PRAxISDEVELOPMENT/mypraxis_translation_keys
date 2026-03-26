@@ -19,7 +19,8 @@
     "header": "Header",
     "body": "Body",
     "viewFullHeader": "View full header",
-    "viewFullbody": "Logs",
+    "viewFullbody": "View full body",
+    "logs": "Logs",
     "duration": "Duration",
     "response": "Response",
     "subject": "Subject",
@@ -403,9 +404,7 @@
     "zoneAdded": "Zone added",
     "zoneDeleted": "Zone deleted",
     "zoneChanged": "Zone changed",
-    "zonesDeleted": "{{value}} zone(s) deleted"
-  },
-  "succes": {
+    "zonesDeleted": "{{value}} zone(s) deleted",
     "customerHasBeenActivated": "The customer has been successfully activated"
   }
 }

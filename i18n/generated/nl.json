@@ -19,7 +19,8 @@
     "header": "Header",
     "body": "Body",
     "viewFullHeader": "Bekijk volledige header",
-    "viewFullbody": "Logs",
+    "viewFullbody": "Bekijk volledige body",
+    "logs": "Logs",
     "duration": "Duur",
     "response": "Antwoord",
     "subject": "Onderwerp",
@@ -403,9 +404,7 @@
     "zoneAdded": "Zone toegevoegd",
     "zoneDeleted": "Zone verwijderd",
     "zoneChanged": "Zone gewijzigd",
-    "zonesDeleted": "{{value}} zone(s) verwijderd"
-  },
-  "succes": {
+    "zonesDeleted": "{{value}} zone(s) verwijderd",
     "customerHasBeenActivated": "Dit abonnement werd succesvol geactiveerd"
   }
 }

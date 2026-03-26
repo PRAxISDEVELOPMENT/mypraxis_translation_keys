@@ -19,7 +19,8 @@
     "header": "En-tête",
     "body": "Corps",
     "viewFullHeader": "Voir l'en-tête complet",
-    "viewFullbody": "Journaux",
+    "viewFullbody": "Voir le contenu complet",
+    "logs": "Journaux",
     "duration": "Durée",
     "response": "Réponse",
     "subject": "Sujet",
@@ -403,9 +404,7 @@
     "zoneAdded": "Zone ajoutée",
     "zoneDeleted": "Zone supprimée",
     "zoneChanged": "Zone modifiée",
-    "zonesDeleted": "{{value}} zone(s) supprimées"
-  },
-  "succes": {
+    "zonesDeleted": "{{value}} zone(s) supprimées",
     "customerHasBeenActivated": "Vous êtes sur le point d'activer le client dans notre logiciel"
   }
 }

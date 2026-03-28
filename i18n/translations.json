@@ -2244,12 +2244,6 @@
         "en": "Contacted by telephone"
     },
     {
-        "key": "common.contactByTelephone",
-        "nl": "Telefonisch gecontacteerd",
-        "fr": "Contacté par téléphone",
-        "en": "Contacted by telephone"
-    },
-    {
         "key": "common.alarmHandling",
         "nl": "Alarmafhandeling",
         "fr": "Traitement d'alarme",

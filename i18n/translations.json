@@ -2402,7 +2402,7 @@
     {
         "key": "common.test",
         "nl": "THIS IS A TEST",
-        "fr": "",
-        "en": ""
+        "fr": "THIS IS A TEST",
+        "en": "THIS IS A TEST"
     }
 ]

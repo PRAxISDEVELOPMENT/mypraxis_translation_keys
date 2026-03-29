@@ -9,7 +9,7 @@
     "uniqueKeys": 401,
     "namespaces": 7,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 1
+    "keysWithMissingLocales": 0
   },
   "keys": [
     {
@@ -6431,14 +6431,11 @@
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
-      "missingLocales": [
-        "en",
-        "fr"
-      ],
+      "missingLocales": [],
       "resolved": {
         "nl": "THIS IS A TEST",
-        "fr": "",
-        "en": ""
+        "fr": "THIS IS A TEST",
+        "en": "THIS IS A TEST"
       }
     },
     {

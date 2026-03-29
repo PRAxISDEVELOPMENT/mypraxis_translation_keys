@@ -12,13 +12,19 @@
         "en": "Application where administrative documents, customer data, reports and live alarm notifications can be consulted and managed."
     },
     {
-        "key": "common.api",
+        "key": "error.errorLog",
+        "nl": "Foutenlog",
+        "fr": "Journal des erreurs",
+        "en": "Error log"
+    },
+    {
+        "key": "common.API",
         "nl": "API",
         "fr": "API",
         "en": "API"
     },
     {
-        "key": "error.apiErrors",
+        "key": "error.APIErrors",
         "nl": "API-fouten",
         "fr": "Erreurs d'API",
         "en": "API errors"
@@ -42,7 +48,7 @@
         "en": "Method"
     },
     {
-        "key": "common.url",
+        "key": "common.URL",
         "nl": "URL",
         "fr": "URL",
         "en": "URL"
@@ -102,16 +108,16 @@
         "en": "PRAxIS App"
     },
     {
-        "key": "common.mypraxis",
+        "key": "common.MyPRAxIS",
         "nl": "MyPRAxIS",
         "fr": "MyPRAxIS",
         "en": "MyPRAxIS"
     },
     {
-        "key": "applicationNames.mypraxisData",
+        "key": "common.MyPRAxISData",
         "nl": "MyPRAxIS gegevens",
         "fr": "Données MyPRAxIS",
-        "en": "myPRAxIS data"
+        "en": "MyPRAxIS data"
     },
     {
         "key": "applicationNames.postgres",
@@ -124,6 +130,12 @@
         "nl": "PRAxIS sollicitatie",
         "fr": "Sollicitation PRAxIS",
         "en": "PRAxIS sollicitation"
+    },
+    {
+        "key": "applicationNames.praxisApibackgroundworker",
+        "nl": "PRAxIS ApiBackgroundworker",
+        "fr": "PRAxIS ApiBackgroundworker",
+        "en": "PRAxIS ApiBackgroundworker"
     },
     {
         "key": "common.extern",
@@ -156,7 +168,7 @@
         "en": "DELETE"
     },
     {
-        "key": "info.lastTenMinutesByDefault",
+        "key": "info.provideStartOrEndDate",
         "nl": "Als je geen begin- of einddatum opgeeft, worden standaard de resultaten van de laatste 10 minuten getoond.",
         "fr": "Si vous n'indiquez ni date de début ou ni date de fin, les résultats des 10 dernières minutes seront affichés.",
         "en": "If you don't provide a start or end date, the results will default to the last 10 minutes."
@@ -180,7 +192,7 @@
         "en": "View full header"
     },
     {
-        "key": "common.viewFullbody",
+        "key": "common.viewFullBody",
         "nl": "Bekijk volledige body",
         "fr": "Voir le contenu complet",
         "en": "View full body"
@@ -198,7 +210,7 @@
         "en": "PRAxIS API users"
     },
     {
-        "key": "success.success",
+        "key": "success.APISuccess",
         "nl": "API geslaagd",
         "fr": "Transfert API réussi",
         "en": "API success"
@@ -240,13 +252,13 @@
         "en": "To"
     },
     {
-        "key": "common.cc",
+        "key": "common.CC",
         "nl": "CC",
         "fr": "CC",
         "en": "CC"
     },
     {
-        "key": "common.bcc",
+        "key": "common.BCC",
         "nl": "BCC",
         "fr": "CCI",
         "en": "BCC"
@@ -259,7 +271,7 @@
     },
     {
         "key": "common.attachement",
-        "nl": "E-maildetails",
+        "nl": "Bijlage",
         "fr": "Pièce jointe",
         "en": "Attachement"
     },
@@ -276,7 +288,7 @@
         "en": "Email content"
     },
     {
-        "key": "common.html",
+        "key": "common.HTML",
         "nl": "HTML",
         "fr": "HTML",
         "en": "HTML"
@@ -294,7 +306,7 @@
         "en": "Full view"
     },
     {
-        "key": "authentication.fcm",
+        "key": "authentication.FCM",
         "nl": "FCM",
         "fr": "FCM",
         "en": "FCM"
@@ -342,13 +354,13 @@
         "en": "Deeplink"
     },
     {
-        "key": "error.warning",
+        "key": "common.warning",
         "nl": "Waarschuwing",
         "fr": "Attention",
         "en": "Warning"
     },
     {
-        "key": "info.tooManyResultsPerformanceWarning",
+        "key": "info.foundMoreThen250Results",
         "nl": "We hebben 250 of meer resultaten gevonden op basis van je filters. Pas je filters aan om de gegevens beter beheersbaar te maken en optimale prestaties te garanderen.",
         "fr": "Nous avons trouvé plus que 250 résultats correspondant à vos critères de recherche. Pour afficher des données plus faciles à gérer et garantir une performance optimale, veuillez affiner vos critères de recherche.",
         "en": "We've found 250 or more results based on your filters. To view more manageable data and ensure optimal performance, please refine your filters"
@@ -390,7 +402,7 @@
         "en": "Contacts"
     },
     {
-        "key": "common.primaryAndBackupContacts",
+        "key": "common.primairyAndBackupContacts",
         "nl": "Primaire en back-up contacten",
         "fr": "Contacts principaux et suppléants",
         "en": "Primary and back-up contacts"
@@ -444,7 +456,7 @@
         "en": "Logout"
     },
     {
-        "key": "success.excpetionDeleted",
+        "key": "common.exceptionDeleted",
         "nl": "Uitzondering verwijderd",
         "fr": "Exception supprimée",
         "en": "Excpetion deleted"
@@ -474,19 +486,19 @@
         "en": "Oops, this page does not exist anymore."
     },
     {
-        "key": "common.startPage",
+        "key": "common.startpage",
         "nl": "Startpagina",
         "fr": "Page d'accueil",
         "en": "Startpage"
     },
     {
-        "key": "common.safePlace",
+        "key": "info.safePlace",
         "nl": "We kunnen u naar een veilige plaats brengen!",
         "fr": "Nous pouvons vous emmener vers un endroit sûr !",
         "en": "We can take you to a safe place!"
     },
     {
-        "key": "common.otherPlace",
+        "key": "info.otherPlace",
         "nl": "We kunnen u naar een andere plaats brengen!",
         "fr": "Nous pouvons vous emmener vers un autre endroit !",
         "en": "We can take you to an other place!"
@@ -516,7 +528,7 @@
         "en": "Add file"
     },
     {
-        "key": "common.faq",
+        "key": "common.FAQ",
         "nl": "FAQ",
         "fr": "FAQ",
         "en": "Frequently Asked Questions"
@@ -540,13 +552,13 @@
         "en": "Only e-mail to the office"
     },
     {
-        "key": "common.smsAndSms",
+        "key": "common.SMSAndSMSToTechnicaionOnGuardDuty",
         "nl": "SMS + SMS naar technieker van wacht",
         "fr": "SMS + SMS au technicien de permanence",
         "en": "SMS + SMS to technician on guard duty"
     },
     {
-        "key": "common.smsAndEmail",
+        "key": "common.SMSAndEmailToTechnicaionOnGuardDuty",
         "nl": "SMS + e-mail naar technieker van wacht",
         "fr": "SMS + e-mail au technicien de permanence",
         "en": "SMS + e-mail to technician on guard duty"
@@ -582,13 +594,13 @@
         "en": "Select formula"
     },
     {
-        "key": "info.selectFormulaOfYourGuardDuty",
+        "key": "info.selecteFormulaViaFieldBelow",
         "nl": "Selecteer via onderstaand veld de gewenste formule voor uw wachtdienst. Met formule bedoelen we welk actiepatroon gevolgd wordt voor het contacteren van uw techniekers.",
-        "fr": "Sélectionnez la formule préférée pour votre service de permanence via le champ ci-dessous. La formule déterminera le plan d'action pour les appels à vos techniciens de permanence.",
+        "fr": "Sélectionnez la formule préférée pour votre service de permanence via le champ ci-dessous.  La formule déterminera le plan d'action pour les appels à vos techniciens de permanence.",
         "en": "Select the desired formula of your guard duty via the field below."
     },
     {
-        "key": "info.selectTimeOfYourGuardDuty",
+        "key": "info.selectStartTimeOfDutyTechnician",
         "nl": "Selecteer via onderstaand veld het tijdstip waarop voor uw organisatie de wachtdienst dagelijks aanvangt en waarop dus de overdracht van de ene permanentie-technieker naar de andere plaatsvindt.",
         "fr": "Utilisez le champ ci-dessous pour sélectionner l'heure de début quotidienne de votre service de permanence. C'est également l'heure du transfert de service d'un technicien de permanence à l'autre.",
         "en": "Use the field below to select the time at which the guard duty starts daily for your organisation and at which point the transition from one on-duty technician to the other takes place."
@@ -600,7 +612,7 @@
         "en": "For more information see our FAQ on the 'help' page"
     },
     {
-        "key": "info.setItemsViaThisPage",
+        "key": "info.canSetItemsViaThisPage",
         "nl": "Via deze pagina kan u onderstaande zaken instellen",
         "fr": "Vous pouvez configurer les éléments suivants via cette page",
         "en": "You can set the following items via this page"
@@ -630,7 +642,7 @@
         "en": "Understood"
     },
     {
-        "key": "info.coockieInfo",
+        "key": "info.cookieText",
         "nl": "Cookies helpen ons bij het leveren van onze diensten. Door gebruik te maken van onze diensten, gaat u uitdrukkelijk akkoord met ons gebruik van cookies.",
         "fr": "Les cookies facilitent nos services. En utilisant nos services, vous acceptez expressément l'utilisation de cookies par PRAXIS GROUP.",
         "en": "Cookies assist us in providing our services. By using our services, you expressly agree to our use of cookies."
@@ -864,7 +876,7 @@
         "en": "Export"
     },
     {
-        "key": "common.addedToGroup",
+        "key": "success.addedToGroup",
         "nl": "Toegevoegd aan groep",
         "fr": "Ajouté au groupe",
         "en": "Added to group"
@@ -876,7 +888,7 @@
         "en": "Fixed phone"
     },
     {
-        "key": "common.noActionPossible",
+        "key": "info.noActionPossible",
         "nl": "Geen actie mogelijk",
         "fr": "Aucune action possible",
         "en": "No action possible"
@@ -924,7 +936,7 @@
         "en": "Optional CSV headers"
     },
     {
-        "key": "common.housenumber",
+        "key": "common.houseNumber",
         "nl": "Huisnummer",
         "fr": "Numéro de la porte",
         "en": "Housenumber"
@@ -954,7 +966,7 @@
         "en": "Group"
     },
     {
-        "key": "common.dropCSVFilesToUpload",
+        "key": "info.dropCSVFilesToUpload",
         "nl": "Sleep een CSV-bestand naar hier of klik voor een upload ervan.",
         "fr": "Déposez le fichier CSV ici ou cliquez ici pour le télécharger",
         "en": "Drop CSV file here or click to upload"
@@ -991,12 +1003,12 @@
     },
     {
         "key": "common.indexed",
-        "nl": "Geïndexeerd",
+        "nl": "Geïndexeerd ",
         "fr": "Indexé",
         "en": "Indexed"
     },
     {
-        "key": "info.missingDataFoundInCalendar",
+        "key": "error.missingDataFoundInCalendar",
         "nl": "Uitroeptekens in de kalender wijzen er op dat er gegevens ontbreken. Voeg per dag minstens 1 contact toe zodat wij de gewenste wachtdienstformule voor u kunnen uitvoeren.",
         "fr": "Un point d'exclamation dans le calendrier indique que certains données manquent pour ce jour. Ajoutez au moins 1 technicien de permanence par jour afin que nous puissions activer le plan d'action pour votre service de permanence.",
         "en": "Exclamation marks in the calendar indicate that missing data has been found. Add at least 1 contact per day so that we can carry out the desired guard duty formula for you"
@@ -1054,1355 +1066,5 @@
         "nl": "Basisprijs",
         "fr": "Prix de base",
         "en": "Basic price"
-    },
-    {
-        "key": "common.indexedPrices",
-        "nl": "Geïndexeerde prijs",
-        "fr": "Prix indexés",
-        "en": "Indexed prices"
-    },
-    {
-        "key": "common.assignFor",
-        "nl": "Toekennen aan",
-        "fr": "Attribuer à",
-        "en": "Assign for"
-    },
-    {
-        "key": "common.clientNumberPrimaryBackup",
-        "nl": "Klantnummer (primair | back-up)",
-        "fr": "Numéro client (principal | de secours)",
-        "en": "Client number (primair | back-up)"
-    },
-    {
-        "key": "common.addException",
-        "nl": "Uitzondering toevoegen",
-        "fr": "Ajouter une exception",
-        "en": "Add exception"
-    },
-    {
-        "key": "common.exceptions",
-        "nl": "Uitzonderingen",
-        "fr": "Exceptions",
-        "en": "Exceptions"
-    },
-    {
-        "key": "common.manageExceptions",
-        "nl": "Uitzonderingen beheren",
-        "fr": "Gérer les exceptions",
-        "en": "Manage exceptions"
-    },
-    {
-        "key": "common.startTime",
-        "nl": "Starttijd",
-        "fr": "Heure de début",
-        "en": "Start time"
-    },
-    {
-        "key": "info.exceptionWasFound",
-        "nl": "Er werd een uitzondering gevonden",
-        "fr": "Exeption constatée",
-        "en": "An exception was found"
-    },
-    {
-        "key": "common.endTime",
-        "nl": "Eindtijd",
-        "fr": "Heure de fin",
-        "en": "End time"
-    },
-    {
-        "key": "common.active",
-        "nl": "Actief",
-        "fr": "Actif",
-        "en": "Active"
-    },
-    {
-        "key": "success.successfull",
-        "nl": "Geslaagd",
-        "fr": "Action réussite",
-        "en": "Successfull"
-    },
-    {
-        "key": "common.contact3",
-        "nl": "Contact 3de graad",
-        "fr": "Contact de 3ième degré",
-        "en": "Contact 3rd degree"
-    },
-    {
-        "key": "common.contact4",
-        "nl": "Contact 4de graad",
-        "fr": "Contact de 4ième degré",
-        "en": "Contact 4th degree"
-    },
-    {
-        "key": "error.csvMissingMandatoryHeaders",
-        "nl": "Er ontbreken verplichte headers in de CSV",
-        "fr": "Le CSV manque des en-têtes obligatoires",
-        "en": "CSV contains missing mandatory headers"
-    },
-    {
-        "key": "common.sendCSV",
-        "nl": "CSV doorsturen",
-        "fr": "Télecharger un fichier CSV",
-        "en": "Send CSV"
-    },
-    {
-        "key": "success.CSVUploadSuccessful",
-        "nl": "CSV upload geslaagd",
-        "fr": "Téléchargement du fichier CSV réussi",
-        "en": "CSV upload successful"
-    },
-    {
-        "key": "success.exceptionGranted",
-        "nl": "Er werd een uitzondering op het primair of back-up contact toegekend.",
-        "fr": "Téléchargement du fichier CSV réussi",
-        "en": "An exception to primary or back-up contact has been granted."
-    },
-    {
-        "key": "error.noPrimaryOrBackupContactAssigned",
-        "nl": "Er werd geen primair of back-up contact toegekend.",
-        "fr": "Aucun technicien principal ni technicien suppléant n'a été attribué.",
-        "en": "No primary or back-up contact has been assigned."
-    },
-    {
-        "key": "info.noPrimaryOrBackupContactAssigned",
-        "nl": "Er werd geen primair of back-up contact toegekend.",
-        "fr": "Aucun technicien principal ni technicien suppléant n'a été attribué.",
-        "en": "No primary or back-up contact has been assigned."
-    },
-    {
-        "key": "info.atLeastOneContactOnEveryDayOfMonth",
-        "nl": "Er werd voor elke dag van de maand minstens 1 contact toegevoegd!",
-        "fr": "Au moins 1 technicien a été ajouté pour chaque jour du mois!",
-        "en": "At least 1 contact was added on every day of the month!"
-    },
-    {
-        "key": "info.openViaComputerOrTablet",
-        "nl": "Open de applicatie via computer of tablet",
-        "fr": "Ouvrez l'application via un ordinateur ou une tablette",
-        "en": "Open the application via computer or tablet"
-    },
-    {
-        "key": "common.primaryContactException",
-        "nl": "Uitzondering primair contact",
-        "fr": "Exception sur le technicien principal",
-        "en": "Primary contact exception"
-    },
-    {
-        "key": "common.backupContactException",
-        "nl": "Uitzondering back-up contact",
-        "fr": "Exception sur le technicien suppléant",
-        "en": "Back-up contact exception"
-    },
-    {
-        "key": "info.ifRemoveAlreadyAddedContactsFromGroup",
-        "nl": "Als u contactpersonen uit een groep verwijderd, en zijn ze nog in de kalender opgenomen, worden ze automtisch uit de kalender verwijderd.",
-        "fr": "Si vous supprimez un technicien d'un groupe déjà attribué dans le calendrier, ce technicien sera automatiquement supprimé dand le calendrier.",
-        "en": "If you remove contacts from a group that have already been identified on the calendar, they will therefore also be removed from the calendar."
-    },
-    {
-        "key": "info.calendarNotAvailableOnMobileDevices",
-        "nl": "Kalender momenteel niet beschikbaar op mobiele toestellen",
-        "fr": "Le calendrier est actuellement indisponible sur les appareils mobiles",
-        "en": "Calendar currently not available on mobile devices"
-    },
-    {
-        "key": "info.contactsFoundWithoutMailInCalendar",
-        "nl": "Er zijn contactpersonen waarvan wij het e-mailadres niet hebben. Daardoor zijn deze contacten niet zichtbaar en kunnen ze niet geselecteerd worden in de groepen en in de kalender.",
-        "fr": "Nous avons trouvé au moins 1 technicien dont nous n'avons pas l'adresse e-mail. Par conséquent, il n'apparaîtra pas et ne pourra donc pas être sélectionné dans aucun groupe et dans aucun calendrier.",
-        "en": "Contacts were found for which we do not yet have the e-mail address. As a result, these contacts will not appear and therefore cannot be selected in the groups and in the calendar."
-    },
-    {
-        "key": "info.manageContactsPerGroupOnDailyBasis",
-        "nl": "Per contactgroep beheren wie er dagelijks de primaire technieker van wacht is, en wie zijn back-up is.",
-        "fr": "Gérez par groupe qui est le technicien principal et le technicien suppléant du service de permanence quotidien.",
-        "en": "Manage per contact group who is the primary and back-up technician on guard duty on a daily basis."
-    },
-    {
-        "key": "info.manageExceptionPerGroup",
-        "nl": "Per contactgroep uitzonderingen beheren voor zowel de primaire als de back-up technieker van wacht (omwille van bv. verlof, ziekte, afwezigheid, …).",
-        "fr": "Gérer des exceptions, par groupe , pour le technicien principal et le technicien suppléant du service de permanence (en raison, par exemple, d'un congé, d'une maladie, d'une absence, etc.).",
-        "en": "Manage exceptions per contact group for both the primary and back-up technician on guard duty (due to for example leave, illness, absence, etc.)."
-    },
-    {
-        "key": "info.clickInCalendarOnGroupToChange",
-        "nl": "Klik in de kalender op de groep waarvan u de contacten wilt toewijzen of wijzigen. Je kan contacten toewijzen tot het einde van de betreffende maand.",
-        "fr": "Cliquez dans le \"Calendrier\" sur le groupe pour lequel vous souhaitez attribuer ou modifier des techniciens, déterminés par groupe. Si vous le souhaitez, les contacts peuvent être attribués jusqu'à la fin du mois concerné.",
-        "en": "Click in the calendar on the group for which you wish to assign or change the contacts, determined per group. If desired, contacts can be assigned until the end of the relevant month."
-    },
-    {
-        "key": "info.clickInCalendarToManageExceptions",
-        "nl": "Klik in de kalender op de groep waarvan u uitzonderingen wil beheren.",
-        "fr": "Cliquez dans le calendrier sur le groupe pour lequel vous souhaitez gérer des exceptions.",
-        "en": "Click in the calendar on the group for which you want to manage exceptions."
-    },
-    {
-        "key": "common.standard",
-        "nl": "Standaard",
-        "fr": "Standard",
-        "en": "Standard"
-    },
-    {
-        "key": "common.password",
-        "nl": "Wachtwoord",
-        "fr": "Mot de passe",
-        "en": "Password"
-    },
-    {
-        "key": "common.provideValidEmail",
-        "nl": "Geef een geldig e-mailadres op",
-        "fr": "Veuillez nous faire parvenir une adresse e-mail valide",
-        "en": "Please provide a valid e-mail address"
-    },
-    {
-        "key": "common.login",
-        "nl": "Aanmelden",
-        "fr": "Se connecter",
-        "en": "Login"
-    },
-    {
-        "key": "common.totalPrice",
-        "nl": "Totaalprijs",
-        "fr": "Prix total",
-        "en": "Total price"
-    },
-    {
-        "key": "common.extraInfo",
-        "nl": "Extra info",
-        "fr": "Info supplémentaire",
-        "en": "Extra info"
-    },
-    {
-        "key": "common.alarmSystem",
-        "nl": "Alarmsysteem",
-        "fr": "Système d'alarme",
-        "en": "Alarmsystem"
-    },
-    {
-        "key": "common.primaryChannel",
-        "nl": "Primair kanaal",
-        "fr": "Canal principal",
-        "en": "Primary channel"
-    },
-    {
-        "key": "common.backupChannel",
-        "nl": "Back-up kanaal",
-        "fr": "Canal de back-up",
-        "en": "Back-up channel"
-    },
-    {
-        "key": "common.callNumbers",
-        "nl": "Oproepnummers",
-        "fr": "Numéros d'appel",
-        "en": "Call numbers"
-    },
-    {
-        "key": "common.benelux",
-        "nl": "BeNeLux",
-        "fr": "BeNeLux",
-        "en": "BeNeLux"
-    },
-    {
-        "key": "common.outsideBenelux",
-        "nl": "Buiten BeNeLux (binnen EU)",
-        "fr": "Hors BeNeLux (dans l'UE)",
-        "en": "Outside BeNeLux (inside EU)"
-    },
-    {
-        "key": "common.outsideEU",
-        "nl": "Buiten EU",
-        "fr": "Hors l'UE",
-        "en": "Outside EU"
-    },
-    {
-        "key": "common.videoSystemAuthentication",
-        "nl": "Videosysteem (IP camera/DVR/NVR) gebruikt voor alarmverificatie",
-        "fr": "Système vidéo (Caméra IP/DVR/NVR) pour vérification par caméra(s)",
-        "en": "Video system (IP camera/DVR/NVR) used for authentication"
-    },
-    {
-        "key": "common.videoVerification",
-        "nl": "Videoverificatie",
-        "fr": "Vérification par vidéo",
-        "en": "Video verification"
-    },
-    {
-        "key": "common.virtualSurveillance",
-        "nl": "Virtuele Bewaking",
-        "fr": "Ronde Virtuelle",
-        "en": "Virtual surveillance"
-    },
-    {
-        "key": "common.totalNumberOfCameras",
-        "nl": "Totaal aantal camera's",
-        "fr": "Nombre de caméras en total",
-        "en": "Total number of cameras"
-    },
-    {
-        "key": "common.numberOfCameras",
-        "nl": "Aantal camera's",
-        "fr": "Nombre de caméras",
-        "en": "Total number of cameras"
-    },
-    {
-        "key": "common.numberOfFixedCameras",
-        "nl": "Aantal vaste camera's",
-        "fr": "Nombre de caméras fixes",
-        "en": "Number of fixed cameras"
-    },
-    {
-        "key": "common.numberOfMobileCameras",
-        "nl": "Aantal beweegbare camera's",
-        "fr": "Nombre de caméras mobiles",
-        "en": "Number of mobile cameras"
-    },
-    {
-        "key": "common.numberOfRoundsPer24hr",
-        "nl": "Aantal rondes per 24 uur",
-        "fr": "Nombre de rondes virtuelles chaques 24 heures",
-        "en": "Number of rounds per 24 hours"
-    },
-    {
-        "key": "common.options",
-        "nl": "Opties",
-        "fr": "Options",
-        "en": "Options"
-    },
-    {
-        "key": "common.activeOnOff",
-        "nl": "Actieve on/off",
-        "fr": "On/off actif",
-        "en": "Active on/off"
-    },
-    {
-        "key": "common.eventReport",
-        "nl": "Rapport evenementen",
-        "fr": "Rapport d'événements",
-        "en": "Event report"
-    },
-    {
-        "key": "common.notificationsReport",
-        "nl": "Rapport meldingen",
-        "fr": "Rapport des notifications",
-        "en": "Notifications report"
-    },
-    {
-        "key": "common.numberOfPhotoDetectors",
-        "nl": "Aantal foto-detectoren",
-        "fr": "Nombre de détecteurs-photos",
-        "en": "Number of photo detectors"
-    },
-    {
-        "key": "common.numberOfVideoDetectors",
-        "nl": "Aantal video-detectoren",
-        "fr": "Nombre de détecteurs-vidéo",
-        "en": "Number of video detectors"
-    },
-    {
-        "key": "common.listenIn",
-        "nl": "Inluistering",
-        "fr": "Écoute à distance",
-        "en": "Listen-in"
-    },
-    {
-        "key": "common.smsWhenArmingSystem",
-        "nl": "SMS bij (ont)wapenen systeem",
-        "fr": "SMS lors de l'armement/désarmement du système",
-        "en": "SMS when (dis)arming the system"
-    },
-    {
-        "key": "common.costOverview",
-        "nl": "Overzicht kosten",
-        "fr": "Aperçu des prix d'achat",
-        "en": "Cost overview"
-    },
-    {
-        "key": "common.generateQuotation",
-        "nl": "Offerte genereren",
-        "fr": "Générer un devis",
-        "en": "Generate quotation"
-    },
-    {
-        "key": "common.quotationToolSalesPrices",
-        "nl": "Offertetool - verkoopprijzen",
-        "fr": "Outil de devis – prix de vente",
-        "en": "Quotation tool – sales prices"
-    },
-    {
-        "key": "common.register",
-        "nl": "Registreren",
-        "fr": "S'inscrire",
-        "en": "Register"
-    },
-    {
-        "key": "common.telemonitoring",
-        "nl": "Telebewaking",
-        "fr": "Télésurveillance",
-        "en": "Telemonitoring"
-    },
-    {
-        "key": "common.save",
-        "nl": "Opslaan",
-        "fr": "Sauvegarder",
-        "en": "Save"
-    },
-    {
-        "key": "common.praxisClientnumber",
-        "nl": "PRAxIS klantnummer",
-        "fr": "Numéro de client PRAxIS",
-        "en": "PRAxIS clientnumber"
-    },
-    {
-        "key": "common.clientHasMaintenanceContract",
-        "nl": "Klant heeft onderhoudscontract (waarde 0 of 1)",
-        "fr": "Le client a (oui = 1 ou non = 0) un contrat d'entretien",
-        "en": "Client has maintenance contract (value 0 or 1)"
-    },
-    {
-        "key": "common.download",
-        "nl": "Download",
-        "fr": "Téléchargez",
-        "en": "Download"
-    },
-    {
-        "key": "common.here",
-        "nl": "Hier",
-        "fr": "Ici",
-        "en": "Here"
-    },
-    {
-        "key": "common.exampleCSVFile",
-        "nl": "Een voorbeeld van CSV-bestand",
-        "fr": "Un fichier CSV de référence",
-        "en": "An example CSV file"
-    },
-    {
-        "key": "common.withBackup",
-        "nl": "Met back-up = 2 verschillende eprom nummers op dezelfde klantkaart (1 primair en 1 back-up)",
-        "fr": "Avec back-up = 2 différents numéros d'EPROM sur la même fiche de client (1 principal et 1 de back-up)",
-        "en": "With back-up"
-    },
-    {
-        "key": "common.connectionTypePrimary",
-        "nl": "Type aansluiting (primair)",
-        "fr": "Type de connexion principal",
-        "en": "Connection type primary"
-    },
-    {
-        "key": "common.additionalHandling",
-        "nl": "Extra afhandelingen",
-        "fr": "Traitement d'alarme supplémentaire",
-        "en": "Additional handling"
-    },
-    {
-        "key": "common.purchaseQuote",
-        "nl": "Aankoopofferte",
-        "fr": "Devis d'achat",
-        "en": "Purchase quote"
-    },
-    {
-        "key": "common.salesQuotation",
-        "nl": "Verkoopofferte",
-        "fr": "Devis commercial",
-        "en": "Sales quotation"
-    },
-    {
-        "key": "error.fileTooBig5",
-        "nl": "Bestand te groot! Max. 5MB toegestaan",
-        "fr": "Le fichier ne peut pas dépasser les 5 MB",
-        "en": "File too big! max. 5MB allowed"
-    },
-    {
-        "key": "common.noConnectionTypePrimary",
-        "nl": "Geen",
-        "fr": "Aucun",
-        "en": "No connection type primary"
-    },
-    {
-        "key": "common.classicAlarmViaIPOrPSTN",
-        "nl": "Klassiek alarmsysteem via IP/GPRS",
-        "fr": "Système d'alarme classique via IP/GPRS",
-        "en": "Classic alarm system via IP/GPRS"
-    },
-    {
-        "key": "common.classicAlarmViaPSTN",
-        "nl": "Klassiek alarmsysteem via PSTN",
-        "fr": "Système d'alarme classique via PSTN",
-        "en": "Classic alarm system via PSTN"
-    },
-    {
-        "key": "common.alarmWithPhotoDetector",
-        "nl": "Alarmsysteem met foto-detector",
-        "fr": "Système d'alarme avec détecteur(s) photos",
-        "en": "Alarm system with photo detector"
-    },
-    {
-        "key": "common.alarmWithVideoDetector",
-        "nl": "Alarmsysteem met video-detector",
-        "fr": "Système d'alarme avec détecteur(s) vidéo",
-        "en": "Alarm system with video detector"
-    },
-    {
-        "key": "common.cameraUsedAsAlarmSystem",
-        "nl": "Autonoom camerasysteem gebruikt als alarmsysteem",
-        "fr": "Système de vidéo autonome utilisé comme système d'alarme",
-        "en": "Autonomous camera system used as an alarm system"
-    },
-    {
-        "key": "common.no",
-        "nl": "Nee",
-        "fr": "Non",
-        "en": "No"
-    },
-    {
-        "key": "common.yes",
-        "nl": "Ja",
-        "fr": "Oui",
-        "en": "Yes"
-    },
-    {
-        "key": "common.noVirtualSurveillance",
-        "nl": "Geen virtuele bewaking",
-        "fr": "Pas de ronde virtuelle",
-        "en": "No virtual surveillance"
-    },
-    {
-        "key": "common.noFollowUp",
-        "nl": "Geen virtuele bewaking",
-        "fr": "Pas de ronde virtuelle",
-        "en": "No follow-up"
-    },
-    {
-        "key": "common.notificationViaSMS",
-        "nl": "Melding via SMS",
-        "fr": "Notification par SMS",
-        "en": "Notification via SMS"
-    },
-    {
-        "key": "common.notificationByOperator",
-        "nl": "Melding door operator",
-        "fr": "Notification par un opérateur de PRAxIS",
-        "en": "Notification by operator"
-    },
-    {
-        "key": "common.noReport",
-        "nl": "Geen rapport",
-        "fr": "Pas de rapport",
-        "en": "No report"
-    },
-    {
-        "key": "common.daily",
-        "nl": "Dagelijks",
-        "fr": "Quotidien",
-        "en": "Daily"
-    },
-    {
-        "key": "common.weekly",
-        "nl": "Wekelijks",
-        "fr": "Hebdomadaire",
-        "en": "Weekly"
-    },
-    {
-        "key": "common.monthly",
-        "nl": "Maandelijks",
-        "fr": "Mensuel",
-        "en": "Monthly"
-    },
-    {
-        "key": "common.noLineTest",
-        "nl": "Geen lijntest",
-        "fr": "Aucun test de ligne",
-        "en": "No line test"
-    },
-    {
-        "key": "common.noLineTestCheck",
-        "nl": "Geen lijntestcontrole",
-        "fr": "Aucune vérification de test de ligne",
-        "en": "No line test check"
-    },
-    {
-        "key": "common.every24h",
-        "nl": "Om de 24 uur",
-        "fr": "Chaque 24 heures",
-        "en": "Every 24 hours"
-    },
-    {
-        "key": "common.every12h",
-        "nl": "Om de 12 uur",
-        "fr": "Chaque 12 heures",
-        "en": "Every 12 hours"
-    },
-    {
-        "key": "common.every6h",
-        "nl": "Om de 6 uur",
-        "fr": "Chaque 6 heures",
-        "en": "Every 6 hours"
-    },
-    {
-        "key": "common.every4h",
-        "nl": "Om de 4 uur",
-        "fr": "Chaque 4 heures",
-        "en": "Every 4 hours"
-    },
-    {
-        "key": "common.every3h",
-        "nl": "Om de 3 uur",
-        "fr": "Chaque 3 heures",
-        "en": "Every 3 hours"
-    },
-    {
-        "key": "common.every2h",
-        "nl": "Om de 2 uur",
-        "fr": "Chaque 2 heures",
-        "en": "Every 2 hours"
-    },
-    {
-        "key": "common.every1h",
-        "nl": "Om het uur",
-        "fr": "Chaque heure",
-        "en": "Every hour"
-    },
-    {
-        "key": "common.every30min",
-        "nl": "Om de 30 minuten",
-        "fr": "Chaque 30 minutes",
-        "en": "Every 30 minutes"
-    },
-    {
-        "key": "common.every3min",
-        "nl": "Om de 3 minuten",
-        "fr": "Chaque 3 minutes",
-        "en": "Every 3 minutes"
-    },
-    {
-        "key": "common.every1min",
-        "nl": "Om de minuut",
-        "fr": "Chaque minute",
-        "en": "Every minute"
-    },
-    {
-        "key": "common.noPolling",
-        "nl": "Geen polling",
-        "fr": "Aucun Polling",
-        "en": "No polling"
-    },
-    {
-        "key": "common.salesQuote",
-        "nl": "Verkoopofferte (niet beschikbaar: er zijn geen verkoopprijzen bepaald)",
-        "fr": "Devis commercial (indisponible, car aucun prix de vente n'a été défini)",
-        "en": "Sales quote (unavailable due to no sales prices defined)"
-    },
-    {
-        "key": "common.bus",
-        "nl": "Bus",
-        "fr": "Boîte",
-        "en": "Bus"
-    },
-    {
-        "key": "common.street",
-        "nl": "Straat",
-        "fr": "Rue",
-        "en": "Street"
-    },
-    {
-        "key": "common.resendEmailInfo",
-        "nl": "Vul je e-mailadres in en klik op - Wachtwoord aanvragen - en volg daarna de instructies die u per e-mail ontvangt.",
-        "fr": "Entrez ici votre adresse e-mail et cliquez sur 'Demander un mot de passe'. Les prochaines étapes à suivre seront envoyées par e-mail.",
-        "en": "Enter your e-mail address and click request password. Follow the instructions that will be sent to you by e-mail."
-    },
-    {
-        "key": "common.forgotPassword",
-        "nl": "Wachtwoord vergeten?",
-        "fr": "Mot de passe oublié?",
-        "en": "Forgot password?"
-    },
-    {
-        "key": "common.requestPassword",
-        "nl": "Wachtwoord aanvragen",
-        "fr": "Demander un mot de passe",
-        "en": "Request password"
-    },
-    {
-        "key": "common.previous",
-        "nl": "Vorige",
-        "fr": "Précédent",
-        "en": "Previous"
-    },
-    {
-        "key": "success.furtherInstructionSendTo",
-        "nl": "Verdere instructies zijn verzonden naar {{value}}",
-        "fr": "D'autres instructions ont été envoyées à {{value}}",
-        "en": "Further instructions were sent to {{value}}"
-    },
-    {
-        "key": "common.country",
-        "nl": "Land",
-        "fr": "Pays",
-        "en": "Country"
-    },
-    {
-        "key": "common.currentPassword",
-        "nl": "Huidig wachtwoord",
-        "fr": "Mot de passe actuel",
-        "en": "Current password"
-    },
-    {
-        "key": "common.newPassword",
-        "nl": "Nieuw wachtwoord",
-        "fr": "Nouveau mot de passe",
-        "en": "New password"
-    },
-    {
-        "key": "common.confirmPassword",
-        "nl": "Bevestig wachtwoord",
-        "fr": "Confirmer votre mot de passe",
-        "en": "Confirm password"
-    },
-    {
-        "key": "common.confirmNewPassword",
-        "nl": "Bevestig nieuw wachtwoord",
-        "fr": "Confirmer votre nouveau mot de passe",
-        "en": "Confirm new password"
-    },
-    {
-        "key": "common.uploadLogo",
-        "nl": "Logo uploaden",
-        "fr": "Téléverser le logo",
-        "en": "Upload logo"
-    },
-    {
-        "key": "common.uploadFile",
-        "nl": "Bestand uploaden",
-        "fr": "Téléverser le fichier",
-        "en": "Upload file"
-    },
-    {
-        "key": "common.companyName",
-        "nl": "Bedrijfsnaam",
-        "fr": "Nom d'entreprise",
-        "en": "Company name"
-    },
-    {
-        "key": "info.provideEmailToChangeData",
-        "nl": "Als u gegevens wil wijzigen, gelieve uw instructies door te sturen via e-mail naar",
-        "fr": "Si vous souhaitez modifier des données, veuillez envoyer vos instructions par e-mail à",
-        "en": "If you wish change data, please provide your instructions via e-mail to"
-    },
-    {
-        "key": "common.administration",
-        "nl": "Administratie",
-        "fr": "Administration",
-        "en": "Administration"
-    },
-    {
-        "key": "common.previousPage",
-        "nl": "Vorige pagina",
-        "fr": "Page précédente",
-        "en": "Previous page"
-    },
-    {
-        "key": "common.nextPage",
-        "nl": "Volgende pagina",
-        "fr": "Page suivante",
-        "en": "Next page"
-    },
-    {
-        "key": "common.userManagement",
-        "nl": "Gebruikersbeheer",
-        "fr": "Gestion d'utilisateurs",
-        "en": "User management"
-    },
-    {
-        "key": "common.salesQuotationValidUntil",
-        "nl": "Verkoopofferte geldig tot",
-        "fr": "Devis commercial valable jusqu'à",
-        "en": "Sales quotation valid until"
-    },
-    {
-        "key": "common.type",
-        "nl": "Type",
-        "fr": "Type",
-        "en": "Type"
-    },
-    {
-        "key": "common.expiredInvoices",
-        "nl": "Vervallen facturen",
-        "fr": "Factures échues",
-        "en": "Expired invoices"
-    },
-    {
-        "key": "common.unexpiredInvoices",
-        "nl": "Niet-vervallen facturen",
-        "fr": "Factures non échues",
-        "en": "Unexpired invoices"
-    },
-    {
-        "key": "common.paidInvoices",
-        "nl": "Betaalde facturen",
-        "fr": "Factures payées",
-        "en": "Paid invoices"
-    },
-    {
-        "key": "common.allInvoices",
-        "nl": "Alle facturen",
-        "fr": "Toutes les factures",
-        "en": "All invoices"
-    },
-    {
-        "key": "common.invoice",
-        "nl": "Factuur",
-        "fr": "Facture",
-        "en": "Invoice"
-    },
-    {
-        "key": "common.invoiceNumber",
-        "nl": "Factuurnummer",
-        "fr": "Numéro de facture",
-        "en": "Invoice number"
-    },
-    {
-        "key": "common.invoicePeriod",
-        "nl": "Periode van facturatie",
-        "fr": "Période de facturation",
-        "en": "Invoice period"
-    },
-    {
-        "key": "common.invoiceDate",
-        "nl": "Factuurdatum",
-        "fr": "Date de la facture",
-        "en": "Invoice date"
-    },
-    {
-        "key": "common.expirationDate",
-        "nl": "Vervaldatum",
-        "fr": "Date d'échéance",
-        "en": "Expiration date"
-    },
-    {
-        "key": "common.totalAmount",
-        "nl": "Totaal bedrag",
-        "fr": "Montant total",
-        "en": "Total amount"
-    },
-    {
-        "key": "common.outstandingAmount",
-        "nl": "Openstaand bedrag",
-        "fr": "Montant dû",
-        "en": "Outstanding amount"
-    },
-    {
-        "key": "common.paidOn",
-        "nl": "Betaald op",
-        "fr": "Payé le",
-        "en": "Paid on"
-    },
-    {
-        "key": "common.yearly",
-        "nl": "Jaarlijks",
-        "fr": "Annuellement",
-        "en": "Yearly"
-    },
-    {
-        "key": "common.quarterly",
-        "nl": "Per kwartaal",
-        "fr": "Trimestriel",
-        "en": "Quarterly"
-    },
-    {
-        "key": "common.manageClients",
-        "nl": "Klanten beheren",
-        "fr": "Gérer des clients",
-        "en": "Manage clients"
-    },
-    {
-        "key": "common.customerManagement",
-        "nl": "Klantenbeheer",
-        "fr": "Gestion de clients",
-        "en": "Customer management"
-    },
-    {
-        "key": "common.autoEmails",
-        "nl": "E-mailadres voor geautomatiseerde e-mails",
-        "fr": "L'adresse e-mail pour l'envoi des e-mails automatisés",
-        "en": "E-mail for automated mails"
-    },
-    {
-        "key": "common.firstname",
-        "nl": "Voornaam",
-        "fr": "Prénom",
-        "en": "First name"
-    },
-    {
-        "key": "common.lastname",
-        "nl": "Achternaam",
-        "fr": "Nom de famille",
-        "en": "Last name"
-    },
-    {
-        "key": "common.isBillingAddressSameAsAddress",
-        "nl": "Is het facturatieadres hetzelfde als het installatieadres?",
-        "fr": "L'adresse de facturation est-elle la même que l'adresse d'installation?",
-        "en": "Is billing address the same as address?"
-    },
-    {
-        "key": "common.IBAN",
-        "nl": "IBAN",
-        "fr": "IBAN",
-        "en": "IBAN"
-    },
-    {
-        "key": "common.BIC",
-        "nl": "BIC",
-        "fr": "BIC",
-        "en": "BIC"
-    },
-    {
-        "key": "common.facturationMethod",
-        "nl": "Facturatiemethode",
-        "fr": "Méthode de facturation",
-        "en": "Facturation method"
-    },
-    {
-        "key": "common.monthlyToInstaller",
-        "nl": "Maandelijks aan installateur",
-        "fr": "Mensuellement vers l'installateur",
-        "en": "Monthly to installer"
-    },
-    {
-        "key": "common.yearlyToEndCustomerWithCommision",
-        "nl": "Jaarlijks aan eindklant, met commissie",
-        "fr": "Annuellement vers le client final, avec commission",
-        "en": "Yearly to end customer, with commission"
-    },
-    {
-        "key": "success.vehicleDetailsChanged",
-        "nl": "Voertuiggegevens gewijzigd",
-        "fr": "Les détails du véhicule ont été modifiés",
-        "en": "Vehicle details changed"
-    },
-    {
-        "key": "common.listeninNumber",
-        "nl": "Nummer voor inluistering",
-        "fr": "Numéro d'appel de l'écoute à distance",
-        "en": "Listen-in number"
-    },
-    {
-        "key": "success.alineContactNumber",
-        "nl": "ALINE contactnummer",
-        "fr": "Numéro de contact chez 'ALINE'",
-        "en": "ALINE contact number"
-    },
-    {
-        "key": "common.codeUnderDuress",
-        "nl": "Code onder dwang",
-        "fr": "Code sous contrainte",
-        "en": "Code under duress"
-    },
-    {
-        "key": "common.requiredFields",
-        "nl": "Verplichte velden",
-        "fr": "Champs obligatoires",
-        "en": "Required fields"
-    },
-    {
-        "key": "common.endDate",
-        "nl": "Einddatum",
-        "fr": "Date de fin",
-        "en": "End date"
-    },
-    {
-        "key": "common.reverseOrder",
-        "nl": "Omgekeerde volgorde",
-        "fr": "En ordre inverse",
-        "en": "Reverse order"
-    },
-    {
-        "key": "common.generate",
-        "nl": "Genereren",
-        "fr": "Générer",
-        "en": "Generate"
-    },
-    {
-        "key": "common.reportType",
-        "nl": "Rapporttype",
-        "fr": "Type de rapport",
-        "en": "Report type"
-    },
-    {
-        "key": "common.generateReport",
-        "nl": "Rapport genereren",
-        "fr": "Générer un rapport",
-        "en": "Generate report"
-    },
-    {
-        "key": "common.overviewOfReports",
-        "nl": "Overzicht van rapporten",
-        "fr": "Aperçu des rapports",
-        "en": "Overview of reports"
-    },
-    {
-        "key": "common.withIdentificationData",
-        "nl": "Met identificatiegegevens",
-        "fr": "Avec les données d'identification",
-        "en": "With identification data"
-    },
-    {
-        "key": "common.withoutIdentificationData",
-        "nl": "Zonder identificatiegegevens",
-        "fr": "Sans les données d'identification",
-        "en": "Without identification data"
-    },
-    {
-        "key": "common.detailed",
-        "nl": "Gedetailleerd",
-        "fr": "Détaillé",
-        "en": "Detailed"
-    },
-    {
-        "key": "common.reporting",
-        "nl": "Rapportering",
-        "fr": "Rapport",
-        "en": "Reporting"
-    },
-    {
-        "key": "common.noContactsFound",
-        "nl": "Geen contacten gevonden",
-        "fr": "Aucun contact trouvé",
-        "en": "No contacts found"
-    },
-    {
-        "key": "common.contactDeleted",
-        "nl": "Contact verwijderd",
-        "fr": "Contact supprimé",
-        "en": "Contact deleted"
-    },
-    {
-        "key": "common.aboutToDeleteContacts",
-        "nl": "U staat op het punt om {{value}} contact(en) te verwijderen",
-        "fr": "Vous êtes sur le point de supprimer {{value}} contact(s)",
-        "en": "You are about to delete {{value}} contact(s)"
-    },
-    {
-        "key": "common.manageContacts",
-        "nl": "Contacten beheren",
-        "fr": "Gérer des contacts",
-        "en": "Manage contacts"
-    },
-    {
-        "key": "common.comment",
-        "nl": "Commentaar",
-        "fr": "Commentaire",
-        "en": "Comment"
-    },
-    {
-        "key": "common.color",
-        "nl": "Kleur",
-        "fr": "Couleur",
-        "en": "Color"
-    },
-    {
-        "key": "common.alarmType",
-        "nl": "Alarmtype",
-        "fr": "Type d'alarme",
-        "en": "Alarm type"
-    },
-    {
-        "key": "common.licensePlate",
-        "nl": "Nummerplaat",
-        "fr": "Plaque d'immatriculation",
-        "en": "License plate"
-    },
-    {
-        "key": "common.chassisNumber",
-        "nl": "Chassisnummer",
-        "fr": "Numéro de châssis",
-        "en": "Chassis number"
-    },
-    {
-        "key": "common.implemented",
-        "nl": "Ingevoerd",
-        "fr": "Mis en œuvre",
-        "en": "Implemented"
-    },
-    {
-        "key": "common.brand",
-        "nl": "Merk",
-        "fr": "Marque",
-        "en": "Brand"
-    },
-    {
-        "key": "common.vehicleType",
-        "nl": "Type voertuig / object",
-        "fr": "Type de véhicule",
-        "en": "Vehicle type"
-    },
-    {
-        "key": "info.noVehicleDetailsFound",
-        "nl": "Geen voertuiggegevens gevonden",
-        "fr": "Aucune information sur le véhicule",
-        "en": "No vehicle details found"
-    },
-    {
-        "key": "common.vehicleDetails",
-        "nl": "Details voertuig",
-        "fr": "Détails du véhicule",
-        "en": "Vehicle details"
-    },
-    {
-        "key": "error.failedToLoadVideo",
-        "nl": "Kan de video niet laden",
-        "fr": "Le téléchargement des images vidéo a échoué",
-        "en": "Failed to load video"
-    },
-    {
-        "key": "error.failedToLoadImage",
-        "nl": "Kan de afbeelding niet laden",
-        "fr": "Le téléchargement des images a échoué",
-        "en": "Failed to load image"
-    },
-    {
-        "key": "info.noFilesFound",
-        "nl": "Geen bestanden gevonden",
-        "fr": "Aucun fichier trouvé",
-        "en": "No files found"
-    },
-    {
-        "key": "common.files",
-        "nl": "Bestanden",
-        "fr": "Fichiers",
-        "en": "Files"
-    },
-    {
-        "key": "common.callComment",
-        "nl": "Belcommentaar",
-        "fr": "Commentaire concernant l'appel téléphonique",
-        "en": "Call comment"
-    },
-    {
-        "key": "common.action",
-        "nl": "Actie",
-        "fr": "Action",
-        "en": "Action"
-    },
-    {
-        "key": "common.callDuration",
-        "nl": "Gespreksduur",
-        "fr": "Durée de l'appel",
-        "en": "Call duration"
-    },
-    {
-        "key": "common.calledOn",
-        "nl": "Gebeld op",
-        "fr": "Appelé le",
-        "en": "Called on"
-    },
-    {
-        "key": "common.chosenHandling",
-        "nl": "Gekozen afhandeling",
-        "fr": "Gestion choisie",
-        "en": "Chosen handling"
-    },
-    {
-        "key": "common.settlementDate",
-        "nl": "Datum afhandeling",
-        "fr": "Date de règlement",
-        "en": "Settlement date"
-    },
-    {
-        "key": "info.noAdditionInfoFound",
-        "nl": "Geen aanvullende info gevonden",
-        "fr": "Aucune information supplémentaire disponible",
-        "en": "No additional info found"
-    },
-    {
-        "key": "common.smsSent",
-        "nl": "SMS verzonden",
-        "fr": "SMS envoyé",
-        "en": "SMS sent"
-    },
-    {
-        "key": "common.emailSent",
-        "nl": "E-mail verzonden",
-        "fr": "E-mail envoyé",
-        "en": "E-mail sent"
-    },
-    {
-        "key": "common.contactByTelephone",
-        "nl": "Telefonisch gecontacteerd",
-        "fr": "Contacté par téléphone",
-        "en": "Contacted by telephone"
-    },
-    {
-        "key": "common.alarmHandling",
-        "nl": "Alarmafhandeling",
-        "fr": "Traitement d'alarme",
-        "en": "Alarm handling"
-    },
-    {
-        "key": "common.locationDetermination",
-        "nl": "Locatiebepaling",
-        "fr": "Localisation géographique",
-        "en": "Location determination"
-    },
-    {
-        "key": "common.additionalInfo",
-        "nl": "Aanvullende informatie",
-        "fr": "Information supplémentaire",
-        "en": "Additional info"
-    },
-    {
-        "key": "common.filterOnDate",
-        "nl": "Filter op datum",
-        "fr": "Filtrer par date",
-        "en": "Filter on date"
-    },
-    {
-        "key": "common.nextWeek",
-        "nl": "Volgende week",
-        "fr": "Semaine prochaine",
-        "en": "Next week"
-    },
-    {
-        "key": "common.lastWeek",
-        "nl": "Vorige week",
-        "fr": "Semaine dernière",
-        "en": "Last week"
-    },
-    {
-        "key": "common.currentWeek",
-        "nl": "Huidige week",
-        "fr": "Semaine en cours",
-        "en": "Current week"
-    },
-    {
-        "key": "common.notification",
-        "nl": "Melding",
-        "fr": "Notification",
-        "en": "Notification"
-    },
-    {
-        "key": "common.notifications",
-        "nl": "Meldingen",
-        "fr": "Notifications",
-        "en": "Notifications"
-    },
-    {
-        "key": "common.filterOnNotifications",
-        "nl": "Filter op meldingen",
-        "fr": "Filtrer selon la notification",
-        "en": "Filter on notifications"
-    },
-    {
-        "key": "common.operatorComment",
-        "nl": "Commentaar operator",
-        "fr": "Commentaire de l'opérateur PRAxIS",
-        "en": "Operator comment"
-    },
-    {
-        "key": "common.notificationsWithAction",
-        "nl": "Meldingen met actie",
-        "fr": "Notifications avec l'intervention d'un opérateur",
-        "en": "Notifications with action"
-    },
-    {
-        "key": "common.notificationsOnlyLogged",
-        "nl": "Meldingen enkel gelogd",
-        "fr": "Notifications uniquement enregistrées",
-        "en": "Notifications only logged"
-    },
-    {
-        "key": "common.notificationsViaBackup",
-        "nl": "Meldingen via back-up kanaal",
-        "fr": "Notifications via le canal de back-up",
-        "en": "Notifications via back-up channel"
-    },
-    {
-        "key": "common.notificationsInTest",
-        "nl": "Meldingen gedurende in test",
-        "fr": "Notifications lors en test",
-        "en": "Notifications in test"
-    },
-    {
-        "key": "info.noNotificationsFound",
-        "nl": "Geen meldingen gevonden",
-        "fr": "Aucune notification trouvée",
-        "en": "No notifications found"
-    },
-    {
-        "key": "common.event",
-        "nl": "Event",
-        "fr": "Evénement",
-        "en": "Event"
-    },
-    {
-        "key": "common.alarmDescription",
-        "nl": "Alarmomschrijving",
-        "fr": "Description de l'alarme",
-        "en": "Alarm description"
-    },
-    {
-        "key": "common.time",
-        "nl": "Tijd",
-        "fr": "Temps",
-        "en": "Time"
-    },
-    {
-        "key": "error.ZoneAndPartitionAlreadyExists",
-        "nl": "Dit zonenummer in combinatie met het partitienummer bestaat al en mag slechts één keer voorkomen",
-        "fr": "Le numéro de zone associé au numéro de partition existe déjà et ne peut apparâitre qu'une seule fois par système",
-        "en": "Zone number in combination with partition number already exists and can only occur once per system"
-    },
-    {
-        "key": "success.zoneAdded",
-        "nl": "Zone toegevoegd",
-        "fr": "Zone ajoutée",
-        "en": "Zone added"
-    },
-    {
-        "key": "success.zoneDeleted",
-        "nl": "Zone verwijderd",
-        "fr": "Zone supprimée",
-        "en": "Zone deleted"
-    },
-    {
-        "key": "success.zoneChanged",
-        "nl": "Zone gewijzigd",
-        "fr": "Zone modifiée",
-        "en": "Zone changed"
-    },
-    {
-        "key": "success.zonesDeleted",
-        "nl": "{{value}} zone(s) verwijderd",
-        "fr": "{{value}} zone(s) supprimées",
-        "en": "{{value}} zone(s) deleted"
-    },
-    {
-        "key": "info.siaLevel3Info",
-        "nl": "Volgens onze gegevens stuurt het alarmpaneel de zoneteksten automatisch door (SIA NIVEAU 3). Hierdoor kunnen zones niet handmatig worden toegevoegd of gewijzigd.",
-        "fr": "Basé sur les données dont nous disposons, ce panneau d'alarme transmet automatiquement les descriptions de zone (NIVEAU SIA 3). Par conséquent, il est impossible d'ajouter ou de modifier ici manuellement les desciptions de zone.",
-        "en": "According to our records, the alarm panel automatically forwards the zone descriptions (SIA LEVEL 3). As a result, zones cannot be added or changed manually."
-    },
-    {
-        "key": "common.areYouSureToActivateCustomer",
-        "nl": "Bent u zeker dat u het abonnement wil activeren?",
-        "fr": "Êtes-vous sûr que vous voulez activer ce client?",
-        "en": "Are you sure you wish to activate the customer?"
-    },
-    {
-        "key": "common.youAreAboutToActiveTheCustomer",
-        "nl": "U staat op het punt dit abonnement te activeren in onze software",
-        "fr": "Vous êtes sur le point d'activer le client dans notre logiciel",
-        "en": "You are about to activate the customer in our software"
-    },
-    {
-        "key": "success.customerHasBeenActivated",
-        "nl": "Dit abonnement werd succesvol geactiveerd",
-        "fr": "Vous êtes sur le point d'activer le client dans notre logiciel",
-        "en": "The customer has been successfully activated"
-    },
-    {
-        "key": "common.test",
-        "nl": "THIS IS A TEST",
-        "fr": "THIS IS A TEST",
-        "en": "THIS IS A TEST"
     }
 ]

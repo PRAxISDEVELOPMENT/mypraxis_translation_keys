@@ -7,8 +7,8 @@
     "en"
   ],
   "totals": {
-    "sourceEntries": 401,
-    "uniqueKeys": 401,
+    "sourceEntries": 178,
+    "uniqueKeys": 178,
     "namespaces": 7,
     "warnings": 0,
     "errors": 0,
@@ -18,11 +18,11 @@
   "namespaces": {
     "applicationNames": 13,
     "authentication": 6,
-    "common": 319,
-    "error": 14,
-    "info": 26,
+    "common": 126,
+    "error": 9,
+    "info": 12,
     "metadata": 2,
-    "success": 21
+    "success": 10
   },
   "warningCounts": {},
   "errorCounts": {}

@@ -1,561 +1,626 @@
 # mypraxis_translation_keys
 
-Central translation source and generated locale files for MyPRAxIS.
+Central translation source and generation pipeline for MyPRAxIS.
 
-This repository is used to manage translations from a single source file and automatically generate locale-specific JSON files for runtime usage in the MyPRAxIS application.
+This repository keeps translations in one editable source file and automatically generates:
 
----
+- runtime locale files for the application
+- namespace metadata for future tooling
+- a key registry for autocomplete, validation, and editor support
 
-## Table of contents
+## Quick Start
 
-- [Purpose](#purpose)
-- [How it works](#how-it-works)
-- [Repository structure](#repository-structure)
-- [Translation source format](#translation-source-format)
-- [Generated output format](#generated-output-format)
-- [Update workflow](#update-workflow)
-- [NPM update command](#npm-update-command)
-- [GitHub Actions automation](#github-actions-automation)
-- [Rules](#rules)
-- [Common issues](#common-issues)
-- [Why this setup](#why-this-setup)
-- [Future-proofing](#future-proofing)
+If you only need the normal daily workflow, use this:
 
----
-
-## Purpose
-
-This repository exists to solve two problems:
-
-1. Keep translation management simple by editing only one source file
-2. Generate runtime locale files automatically for the application
-
-The goal is to avoid manually maintaining multiple translation files while still producing the exact locale-based JSON structure required by the frontend application.
-
----
-
-## How it works
-
-The flow is:
-
-```text
-i18n/translations.json
-→ i18n/buildTranslations.js
-→ i18n/generated/nl.json
-→ i18n/generated/fr.json
-→ i18n/generated/en.json
+```bash
+npm run update
 ```
 
-### In practice
+What it does:
 
-- You only edit `i18n/translations.json`
-- GitHub Actions automatically runs the generator
-- Generated locale files are rebuilt
-- The generated files are committed automatically if they changed
-- The MyPRAxIS application reads the generated locale files
+1. builds translations locally
+2. shows a compact validation summary
+3. asks for a commit message
+4. commits and pushes
+5. waits for GitHub Actions when possible
+6. pulls the latest generated files back
 
-This means there is only **one source of truth** for translations, while the application still receives the per-locale output it needs.
+If you only want to rebuild locally:
+
+```bash
+npm run build:translations
+```
+
+If you want help in the terminal:
+
+```bash
+npm run help:translations
+```
+
+If you want a quick health report:
+
+```bash
+npm run report:translations
+```
 
 ---
 
-## Repository structure
+## What You Edit
 
-```text
-.github/
-  workflows/
-    buildTranslations.yml
+In normal use, you usually edit only:
 
-i18n/
-  translations.json
-  buildTranslations.js
-  generated/
-    nl.json
-    fr.json
-    en.json
+- [`i18n/translations.json`](i18n/translations.json)
 
-package.json
-update.sh
-README.md
-```
+Sometimes you may also edit:
 
-### File responsibilities
+- [`i18n/namespaces.json`](i18n/namespaces.json)
 
-#### `i18n/translations.json`
-Main translation source file.  
-This is the only file that should be edited manually for translation content.
+You should **not** manually edit:
 
-#### `i18n/buildTranslations.js`
-Build script that converts the flat translation source into nested locale-specific JSON files.
+- [`i18n/generated/nl.json`](i18n/generated/nl.json)
+- [`i18n/generated/fr.json`](i18n/generated/fr.json)
+- [`i18n/generated/en.json`](i18n/generated/en.json)
+- [`i18n/generated/keys.json`](i18n/generated/keys.json)
+- [`i18n/generated/namespaces.json`](i18n/generated/namespaces.json)
+- [`i18n/generated/registry.json`](i18n/generated/registry.json)
 
-#### `i18n/generated/nl.json`
-Generated Dutch locale file.
-
-#### `i18n/generated/fr.json`
-Generated French locale file.
-
-#### `i18n/generated/en.json`
-Generated English locale file.
-
-#### `.github/workflows/buildTranslations.yml`
-GitHub Actions workflow that automatically regenerates locale files after updates.
-
-#### `package.json`
-Contains the `npm run update` helper command.
-
-#### `update.sh`
-Helper script that simplifies the full workflow:
-- add
-- commit
-- push
-- wait
-- pull latest generated changes
+Those files are generated automatically.
 
 ---
 
-## Translation source format
+## Daily Workflow
 
-Translations are stored as a flat array of objects.
+### Add or update translations
 
-Each object contains:
-- a `key`
-- a Dutch translation
-- a French translation
-- an English translation
+1. Open [`i18n/translations.json`](i18n/translations.json)
+2. Add or update a translation entry
+3. Run:
 
-### Example
-
-```json
-[
-  {
-    "key": "Metadata.title",
-    "nl": "PRAxIS GROUP N.V. - MyPRAxIS",
-    "fr": "PRAxIS GROUP N.V. - MyPRAxIS",
-    "en": "PRAxIS GROUP N.V. - MyPRAxIS"
-  },
-  {
-    "key": "Metadata.description",
-    "nl": "Klantenportaal van PRAxIS Group",
-    "fr": "Portail client de PRAxIS Group",
-    "en": "Customer portal for PRAxIS Group"
-  },
-  {
-    "key": "Auth.Login.title",
-    "nl": "Aanmelden",
-    "fr": "Connexion",
-    "en": "Sign in"
-  },
-  {
-    "key": "Common.save",
-    "nl": "Opslaan",
-    "fr": "Enregistrer",
-    "en": "Save"
-  }
-]
+```bash
+npm run update
 ```
 
-### Key naming convention
+### Only validate locally
 
-Use semantic dot-notation keys.
+```bash
+npm run validate:translations
+```
 
-Recommended examples:
+Use this when you want to catch warnings and errors before committing.
 
-- `Metadata.title`
-- `Metadata.description`
-- `Auth.Login.title`
-- `Auth.Login.submit`
-- `Common.save`
-- `Common.cancel`
-- `Navigation.dashboard`
-- `Validation.required`
+### Only check whether generated files are already correct
 
-### Why dot notation is used
+```bash
+npm run check:translations
+```
 
-The generator splits the key on `.` and converts it into a nested JSON structure.
+Use this when you want to verify sync without rewriting files.
 
-Example source key:
+---
+
+## How A Translation Entry Works
+
+Each entry in [`i18n/translations.json`](i18n/translations.json) is a flat object.
+
+Example:
 
 ```json
 {
-  "key": "Common.save",
+  "key": "common.save",
+  "description": "Primary save button",
   "nl": "Opslaan",
   "fr": "Enregistrer",
   "en": "Save"
 }
 ```
 
-This becomes:
+Required fields:
+
+- `key`
+- `nl`
+- `fr`
+- `en`
+
+Optional fields:
+
+- `description`
+- `notes`
+- `deprecated`
+
+The generator converts this flat structure into nested runtime JSON.
+
+Example:
 
 ```json
 {
-  "Common": {
+  "key": "common.save",
+  "nl": "Opslaan",
+  "fr": "Enregistrer",
+  "en": "Save"
+}
+```
+
+becomes this in [`i18n/generated/nl.json`](i18n/generated/nl.json):
+
+```json
+{
+  "common": {
     "save": "Opslaan"
   }
 }
 ```
 
-in `nl.json`.
+---
+
+## How To Choose A Key
+
+Keys use dot notation:
+
+```text
+namespace.leaf
+namespace.group.leaf
+```
+
+Good examples:
+
+- `common.save`
+- `common.delete`
+- `info.helpText`
+- `error.apiErrors`
+- `success.customerActivated`
+- `authentication.firebaseUUID`
+
+Avoid:
+
+- `.save`
+- `save.`
+- `common..save`
+- `button that saves`
+- using the same key for two different meanings
+
+### Practical naming advice
+
+- Use `common.*` for shared UI labels, buttons, form fields, and generic text
+- Use `info.*` for helper text, descriptions, instructions, and hints
+- Use `error.*` for error labels or failure-state text
+- Use `success.*` for success confirmations
+- Use `authentication.*` for login or auth-related terms
+- Use `applicationNames.*` for product or app names
+- Use `metadata.*` for page title and meta description content
+
+If you are unsure, start with `common.*` only when the text is truly generic and reusable.
 
 ---
 
-## Generated output format
+## Namespace System
 
-The application does not use `translations.json` directly.
+Allowed namespaces are defined centrally in [`i18n/namespaces.json`](i18n/namespaces.json).
 
-It uses the generated locale files:
+Current namespaces:
 
-- `i18n/generated/nl.json`
-- `i18n/generated/fr.json`
-- `i18n/generated/en.json`
+- `applicationNames`
+- `authentication`
+- `common`
+- `error`
+- `info`
+- `metadata`
+- `success`
+- `test`
 
-### Example generated `nl.json`
+Important rules:
+
+- if you use a namespace that does not exist in [`i18n/namespaces.json`](i18n/namespaces.json), the build fails
+- if you use a namespace marked as restricted, the build warns
+
+This is how namespace governance works:
+
+1. choose an existing namespace
+2. create a clear key under that namespace
+3. only add a new namespace if it is truly needed
+
+---
+
+## How To Add A New Key
+
+Example: you want to add a new reusable button label for "Cancel".
+
+1. Decide the namespace:
+   `common`, because this is generic UI text
+
+2. Add the entry to [`i18n/translations.json`](i18n/translations.json):
 
 ```json
 {
-  "Metadata": {
-    "title": "PRAxIS GROUP N.V. - MyPRAxIS",
-    "description": "Klantenportaal van PRAxIS Group"
-  },
-  "Auth": {
-    "Login": {
-      "title": "Aanmelden"
-    }
-  },
-  "Common": {
-    "save": "Opslaan"
-  }
-}
-```
-
-These files are runtime-ready for the frontend application.
-
----
-
-## Update workflow
-
-There are two ways to update translations.
-
-### Recommended way
-
-Use the built-in helper command:
-
-```bash
-npm run update
-```
-
-The script will ask for a commit message and then handle the full process automatically.
-
-### Manual way
-
-If needed, you can still do everything manually:
-
-```bash
-git add .
-git commit -m "your commit message"
-git push --force-with-lease origin main
-git pull --rebase origin main
-```
-
-But the recommended flow is `npm run update`.
-
----
-
-## NPM update command
-
-This repository contains a helper command so contributors do not need to remember the full Git workflow.
-
-### Usage
-
-```bash
-npm run update
-```
-
-The script will prompt for a commit message.
-
-Example:
-
-```text
-Commit message: add common translations
-```
-
-### What it does
-
-The script automatically performs:
-
-1. `git add .`
-2. `git commit -m "your message"`
-3. `git push --force-with-lease origin main`
-4. waits for GitHub Actions to generate the locale files
-5. `git pull --rebase origin main`
-
-This makes the normal update process much easier.
-
-### Related files
-
-#### `package.json`
-
-```json
-{
-  "name": "mypraxis_translation_keys",
-  "private": true,
-  "scripts": {
-    "update": "sh ./update.sh"
-  }
-}
-```
-
-#### `update.sh`
-
-```sh
-#!/bin/sh
-
-printf "Commit message: "
-read MESSAGE
-
-if [ -z "$MESSAGE" ]; then
-  echo "Geen commit message ingevuld."
-  exit 1
-fi
-
-git add .
-git commit -m "$MESSAGE"
-git push --force-with-lease origin main
-
-SECONDS_LEFT=120
-
-while [ $SECONDS_LEFT -gt 0 ]; do
-  printf "\rPull in %02d seconden..." "$SECONDS_LEFT"
-  sleep 1
-  SECONDS_LEFT=$((SECONDS_LEFT - 1))
-done
-
-printf "\rPulling latest changes now...            \n"
-git pull --rebase origin main
-
-echo "Klaar."
-```
-
-### One-time setup
-
-Make sure the script is executable:
-
-```bash
-chmod +x update.sh
-```
-
----
-
-## GitHub Actions automation
-
-This repository contains a GitHub Actions workflow that rebuilds generated locale files automatically.
-
-### Workflow file
-
-```text
-.github/workflows/buildTranslations.yml
-```
-
-### What it does
-
-When relevant files are changed and pushed to `main`, GitHub Actions:
-
-1. checks out the repo
-2. sets up Node.js
-3. runs the translation generator
-4. stages generated files
-5. commits and pushes them if they changed
-
-### Relevant trigger paths
-
-The workflow is triggered when these files change:
-
-- `i18n/translations.json`
-- `i18n/buildTranslations.js`
-- `.github/workflows/buildTranslations.yml`
-
-### Important note
-
-This means the generator works whether changes are made:
-- locally through Git and pushed
-- or directly through GitHub file editing
-
-As long as the commit lands on `main` and matches the workflow paths, the generation will run.
-
----
-
-## Rules
-
-### Always edit
-- `i18n/translations.json`
-
-### Never edit manually
-- `i18n/generated/nl.json`
-- `i18n/generated/fr.json`
-- `i18n/generated/en.json`
-
-These files are generated output and should be treated as derived files.
-
-### Recommended practice
-- keep keys semantic and stable
-- keep values complete for all supported locales
-- avoid ad hoc or UI-text-as-key patterns
-
----
-
-## Common issues
-
-### 1. Invalid JSON in `translations.json`
-
-If GitHub Actions fails with a JSON parsing error, your JSON is invalid.
-
-Most common cause:
-- trailing comma before `]`
-
-### Invalid example
-
-```json
-[
-  {
-    "key": "Common.save",
-    "nl": "Opslaan",
-    "fr": "Enregistrer",
-    "en": "Save"
-  },
-]
-```
-
-### Correct example
-
-```json
-[
-  {
-    "key": "Common.save",
-    "nl": "Opslaan",
-    "fr": "Enregistrer",
-    "en": "Save"
-  }
-]
-```
-
-### 2. Local branch is behind remote
-
-If GitHub Actions automatically committed generated files, your local repo may be behind.
-
-Run:
-
-```bash
-git pull --rebase origin main
-```
-
-Using `npm run update` already includes this.
-
-### 3. GitHub Action failed
-
-Check:
-- `translations.json` is valid JSON
-- file names match the workflow
-- the build script path matches the actual file name
-- the workflow still points to the correct script
-
-### 4. Generated files did not update
-
-Possible reasons:
-- the workflow failed
-- the JSON was invalid
-- the changed file path did not match the workflow trigger
-- no actual output difference was produced
-
----
-
-## Why this setup
-
-This setup was chosen because it offers the best balance between simplicity and future extensibility.
-
-### Advantages
-
-- one central translation source
-- no need to manually maintain three locale files
-- generated locale output stays clean and application-ready
-- GitHub handles the automation
-- contributors only need a simple update flow
-
-This is much easier to manage than manually editing `nl.json`, `fr.json`, and `en.json` separately.
-
----
-
-## Future-proofing
-
-This structure is designed so it can later evolve into a more advanced translation management system.
-
-Possible future upgrades:
-
-- translation editing from an admin panel
-- validation for missing languages
-- review/approval status per translation
-- database-backed translation storage
-- export/import tooling
-- automated checks for missing keys
-
-The current source format already supports that future direction because it keeps translations centralized per key.
-
----
-
-## Typical daily usage
-
-### Edit translations
-Open:
-
-```text
-i18n/translations.json
-```
-
-### Add or update entries
-Example:
-
-```json
-{
-  "key": "Common.cancel",
+  "key": "common.cancel",
+  "description": "Generic cancel button",
   "nl": "Annuleren",
   "fr": "Annuler",
   "en": "Cancel"
 }
 ```
 
-### Save and publish
+3. Run:
+
+```bash
+npm run build:translations
+```
+
+4. The generator updates:
+   - [`i18n/generated/nl.json`](i18n/generated/nl.json)
+   - [`i18n/generated/fr.json`](i18n/generated/fr.json)
+   - [`i18n/generated/en.json`](i18n/generated/en.json)
+   - [`i18n/generated/keys.json`](i18n/generated/keys.json)
+   - [`i18n/generated/namespaces.json`](i18n/generated/namespaces.json)
+   - [`i18n/generated/registry.json`](i18n/generated/registry.json)
+
+5. If everything looks correct, run:
+
+```bash
+npm run update
+```
+
+---
+
+## Commands
+
+### `npm run help:translations`
+
+Shows a quick help guide in the terminal:
+
+```bash
+npm run help:translations
+```
+
+### `npm run build:translations`
+
+Builds all generated artifacts:
+
+```bash
+npm run build:translations
+```
+
+This:
+
+- validates the source file
+- validates namespace usage
+- prints a summary
+- rewrites all generated files
+
+### `npm run check:translations`
+
+Checks whether generated files are already in sync:
+
+```bash
+npm run check:translations
+```
+
+### `npm run validate:translations`
+
+Fails on warnings and errors:
+
+```bash
+npm run validate:translations
+```
+
+This is useful before a commit or before merging changes.
+
+### `npm run namespaces:translations`
+
+Prints all configured namespaces and their status:
+
+```bash
+npm run namespaces:translations
+```
+
+### `npm run report:translations`
+
+Prints a compact translation health report:
+
+```bash
+npm run report:translations
+```
+
+This gives you:
+
+- total source entries
+- total unique keys
+- namespace counts
+- duplicate-key count
+- missing-locale count
+- warning and error totals
+
+### `npm run update`
+
+Runs the end-to-end local workflow:
+
+```bash
+npm run update
+```
+
+This uses [`update.sh`](update.sh).
+
+---
+
+## What The Generator Produces
+
+The generator script is [`i18n/buildTranslations.js`](i18n/buildTranslations.js).
+
+It creates two types of output.
+
+### 1. Runtime locale files
+
+These are the files your application should consume:
+
+- [`i18n/generated/nl.json`](i18n/generated/nl.json)
+- [`i18n/generated/fr.json`](i18n/generated/fr.json)
+- [`i18n/generated/en.json`](i18n/generated/en.json)
+
+The application should **not** read [`i18n/translations.json`](i18n/translations.json) directly.
+
+### 2. Tooling and editor support files
+
+These files exist for governance, autocomplete, and future editor support.
+
+#### [`i18n/generated/keys.json`](i18n/generated/keys.json)
+
+Contains a flat sorted list of all unique keys.
+
+Useful for:
+
+- autocomplete
+- usage scans
+- quick key lookups
+
+#### [`i18n/generated/namespaces.json`](i18n/generated/namespaces.json)
+
+Contains the generated namespace summary, including:
+
+- namespace names
+- labels
+- descriptions
+- status
+- key counts
+
+Useful for:
+
+- namespace dropdowns
+- docs
+- future editor forms
+
+#### [`i18n/generated/registry.json`](i18n/generated/registry.json)
+
+Contains detailed metadata per unique key, including:
+
+- namespace
+- leaf segment
+- source entry numbers
+- duplicate counts
+- missing locale info
+- resolved values
+
+Useful for:
+
+- future editor backends
+- validation reports
+- usage comparison with another repo
+
+#### [`i18n/generated/summary.json`](i18n/generated/summary.json)
+
+Contains a compact health summary of the current translation source.
+
+Useful for:
+
+- dashboards
+- CI reporting
+- future admin overviews
+- quick diagnostics without parsing the full registry
+
+---
+
+## Validation Rules
+
+The build checks for:
+
+- invalid JSON
+- missing `key`
+- invalid key structure
+- unknown namespaces
+- restricted namespaces
+- duplicate keys
+- missing locale values
+- nested key conflicts
+
+### Important behavior
+
+- unknown namespaces are **errors**
+- invalid structure is an **error**
+- missing locale values are **warnings**
+- duplicate keys are **warnings**
+- restricted namespaces are **warnings**
+
+If you run `npm run validate:translations`, warnings also become blocking.
+
+---
+
+## GitHub Actions
+
+The workflow file is:
+
+- [`.github/workflows/buildTranslations.yml`](.github/workflows/buildTranslations.yml)
+
+It runs when these files change:
+
+- `i18n/translations.json`
+- `i18n/namespaces.json`
+- `i18n/buildTranslations.js`
+- `.github/workflows/buildTranslations.yml`
+
+### On pull requests
+
+GitHub Actions:
+
+1. checks out the repo
+2. sets up Node.js
+3. runs the generator
+4. checks that generated files are in sync
+
+### On `main`
+
+GitHub Actions:
+
+1. rebuilds generated files
+2. commits them if they changed
+3. pushes the generated commit back to `main`
+
+This means the repo can stay the single source of truth while still shipping runtime-ready locale files.
+
+---
+
+## VS Code Support
+
+This repository includes:
+
+- [`i18n/translations.schema.json`](i18n/translations.schema.json)
+- [`.vscode/settings.json`](.vscode/settings.json)
+
+That gives [`i18n/translations.json`](i18n/translations.json) better editor support in VS Code.
+
+It helps with:
+
+- structure awareness
+- expected fields
+- less guesswork when editing entries
+
+---
+
+## Future Editor Integration
+
+This repo is ready to support a future translation editor.
+
+Recommended architecture:
+
+```text
+translation editor frontend
+-> backend or controlled GitHub integration
+-> update translations.json in this repo
+-> GitHub Actions rebuilds generated files
+-> editor polls workflow status
+-> main application consumes generated locale files
+```
+
+Recommended responsibility split:
+
+This repo should own:
+
+- source data
+- namespace contract
+- generator logic
+- generated artifacts
+- GitHub workflow
+
+Another project should own:
+
+- translator UI
+- authentication
+- save flow
+- workflow polling
+- user-facing success and error messages
+
+---
+
+## Common Problems
+
+### 1. Unknown namespace
+
+You added a key like:
+
+```json
+{
+  "key": "random.save",
+  "nl": "Opslaan",
+  "fr": "Enregistrer",
+  "en": "Save"
+}
+```
+
+but `random` does not exist in [`i18n/namespaces.json`](i18n/namespaces.json).
+
+Fix:
+
+- use an existing namespace
+- or deliberately add a new namespace to [`i18n/namespaces.json`](i18n/namespaces.json)
+
+### 2. Duplicate key
+
+Two entries use the same `key`.
+
+Result:
+
+- build warns
+- last value wins in generated runtime files
+
+Fix:
+
+- merge them into one entry
+- or rename one of the keys
+
+### 3. Missing locale values
+
+If `nl`, `fr`, or `en` is empty, the build warns.
+
+For `nl` and `fr`, the generator falls back to English when possible.
+
+Fix:
+
+- fill in the missing translation values
+
+### 4. Generated files are out of sync
+
 Run:
 
 ```bash
-npm run update
+npm run build:translations
 ```
 
-### Done
-GitHub Actions will regenerate the locale files and your local repo will pull them back in after the wait period.
+or:
 
----
-
-## Summary
-
-### Source of truth
-```text
-i18n/translations.json
-```
-
-### Generated automatically
-```text
-i18n/generated/nl.json
-i18n/generated/fr.json
-i18n/generated/en.json
-```
-
-### Recommended command
 ```bash
 npm run update
 ```
 
-### Do not edit generated files manually
-Always edit the source file instead.
+### 5. Local branch is behind remote
+
+If GitHub Actions created an extra generated commit, your branch may be behind.
+
+Run:
+
+```bash
+git pull --rebase origin main
+```
+
+The update script already does this at the end.
 
 ---
 
-## Maintainers
+## Best Practices
 
-PRAxIS DEVELOPMENT / MyPRAxIS
+- keep keys unique
+- keep values complete in all locales
+- use `description` when meaning is not obvious
+- use `notes` when translators need context
+- prefer an existing namespace before creating a new one
+- do not leave `test.*` keys in production
+- treat warnings as real cleanup work
+
+---
+
+## Why This Setup Is Strong
+
+This setup gives you:
+
+- one source of truth
+- generated runtime files
+- namespace governance
+- key registry support
+- editor readiness
+- GitHub automation

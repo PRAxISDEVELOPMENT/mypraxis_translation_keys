@@ -318,7 +318,7 @@
         "en": "FCM details"
     },
     {
-        "key": "authentication.fcmDetails",
+        "key": "authentication.fcmToken",
         "nl": "FCM-token",
         "fr": "Jeton FCM",
         "en": "FCM token"
@@ -414,7 +414,7 @@
         "en": "Quotationtool"
     },
     {
-        "key": "common.quotationtool",
+        "key": "common.pricelist",
         "nl": "Prijslijst",
         "fr": "Tarif",
         "en": "Pricelist"
@@ -436,12 +436,6 @@
         "nl": "Rest van de maand",
         "fr": "Restant du mois",
         "en": "Rest of the month"
-    },
-    {
-        "key": "common.logout",
-        "nl": "Uitloggen",
-        "fr": "Se déconnecter",
-        "en": "Logout"
     },
     {
         "key": "common.logout",
@@ -594,7 +588,7 @@
         "en": "Select the desired formula of your guard duty via the field below."
     },
     {
-        "key": "info.selectFormulaOfYourGuardDuty",
+        "key": "info.selectTimeOfYourGuardDuty",
         "nl": "Selecteer via onderstaand veld het tijdstip waarop voor uw organisatie de wachtdienst dagelijks aanvangt en waarop dus de overdracht van de ene permanentie-technieker naar de andere plaatsvindt.",
         "fr": "Utilisez le champ ci-dessous pour sélectionner l'heure de début quotidienne de votre service de permanence. C'est également l'heure du transfert de service d'un technicien de permanence à l'autre.",
         "en": "Use the field below to select the time at which the guard duty starts daily for your organisation and at which point the transition from one on-duty technician to the other takes place."
@@ -624,7 +618,7 @@
         "en": "Our reference"
     },
     {
-        "key": "common.ourReference",
+        "key": "common.yourReference",
         "nl": "Uw referentie",
         "fr": "Vos références",
         "en": "Your reference"
@@ -798,12 +792,6 @@
         "en": "Delete"
     },
     {
-        "key": "common.delete",
-        "nl": "Verwijderen",
-        "fr": "Supprimer",
-        "en": "Delete"
-    },
-    {
         "key": "error.noDataFound",
         "nl": "Geen gegevens gevonden",
         "fr": "Aucune donnée trouvée",
@@ -960,7 +948,7 @@
         "en": "Overview data"
     },
     {
-        "key": "common.overviewData",
+        "key": "common.group",
         "nl": "Groep",
         "fr": "Groupe",
         "en": "Group"
@@ -1020,7 +1008,7 @@
         "en": "CSV"
     },
     {
-        "key": "common.CSV",
+        "key": "common.manageCSV",
         "nl": "CSV beheren",
         "fr": "Info via un fichier CSV",
         "en": "Manage CSV"
@@ -1320,7 +1308,7 @@
         "en": "Outside BeNeLux (inside EU)"
     },
     {
-        "key": "common.outsideBenelux",
+        "key": "common.outsideEU",
         "nl": "Buiten EU",
         "fr": "Hors l'UE",
         "en": "Outside EU"
@@ -1812,7 +1800,7 @@
         "en": "Previous page"
     },
     {
-        "key": "common.previousPage",
+        "key": "common.nextPage",
         "nl": "Volgende pagina",
         "fr": "Page suivante",
         "en": "Next page"
@@ -2410,11 +2398,5 @@
         "nl": "Dit abonnement werd succesvol geactiveerd",
         "fr": "Vous êtes sur le point d'activer le client dans notre logiciel",
         "en": "The customer has been successfully activated"
-    },
-    {
-        "key": "test.test",
-        "nl": "azerty",
-        "fr": "",
-        "en": ""
     }
 ]

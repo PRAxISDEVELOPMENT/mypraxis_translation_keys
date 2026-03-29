@@ -1,0 +1,29 @@
+{
+  "sourceFile": "i18n/translations.json",
+  "namespaceFile": "i18n/namespaces.json",
+  "locales": [
+    "nl",
+    "fr",
+    "en"
+  ],
+  "totals": {
+    "sourceEntries": 400,
+    "uniqueKeys": 400,
+    "namespaces": 7,
+    "warnings": 0,
+    "errors": 0,
+    "duplicateKeys": 0,
+    "keysWithMissingLocales": 0
+  },
+  "namespaces": {
+    "applicationNames": 13,
+    "authentication": 6,
+    "common": 318,
+    "error": 14,
+    "info": 26,
+    "metadata": 2,
+    "success": 21
+  },
+  "warningCounts": {},
+  "errorCounts": {}
+}

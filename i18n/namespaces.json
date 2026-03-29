@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "defaultNamespace": "common",
+  "namespaces": [
+    {
+      "name": "applicationNames",
+      "label": "Application Names",
+      "description": "Product, service, or application names shown in the UI.",
+      "status": "active"
+    },
+    {
+      "name": "authentication",
+      "label": "Authentication",
+      "description": "Labels and messages related to login, identity, and auth metadata.",
+      "status": "active"
+    },
+    {
+      "name": "common",
+      "label": "Common",
+      "description": "Reusable UI labels, buttons, headings, and generic interface text.",
+      "status": "active"
+    },
+    {
+      "name": "error",
+      "label": "Error",
+      "description": "Error labels, error detail fields, and failure-state messages.",
+      "status": "active"
+    },
+    {
+      "name": "info",
+      "label": "Info",
+      "description": "Informational helper text, onboarding copy, and contextual guidance.",
+      "status": "active"
+    },
+    {
+      "name": "metadata",
+      "label": "Metadata",
+      "description": "Page metadata such as titles and descriptions.",
+      "status": "active"
+    },
+    {
+      "name": "success",
+      "label": "Success",
+      "description": "Success messages, completed-state feedback, and positive confirmations.",
+      "status": "active"
+    }
+  ]
+}

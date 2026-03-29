@@ -2,6 +2,12 @@
   "name": "mypraxis_translation_keys",
   "private": true,
   "scripts": {
+    "build:translations": "node i18n/buildTranslations.js",
+    "check:translations": "node i18n/buildTranslations.js --check",
+    "help:translations": "node i18n/buildTranslations.js --help",
+    "namespaces:translations": "node i18n/buildTranslations.js --list-namespaces",
+    "report:translations": "node i18n/buildTranslations.js --report",
+    "validate:translations": "node i18n/buildTranslations.js --validate",
     "update": "sh ./update.sh"
   }
 }

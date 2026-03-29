@@ -406,5 +406,8 @@
     "zoneChanged": "Zone changed",
     "zonesDeleted": "{{value}} zone(s) deleted",
     "customerHasBeenActivated": "The customer has been successfully activated"
+  },
+  "test": {
+    "test": ""
   }
 }

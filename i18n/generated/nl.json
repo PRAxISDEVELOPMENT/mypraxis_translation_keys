@@ -406,5 +406,8 @@
     "zoneChanged": "Zone gewijzigd",
     "zonesDeleted": "{{value}} zone(s) verwijderd",
     "customerHasBeenActivated": "Dit abonnement werd succesvol geactiveerd"
+  },
+  "test": {
+    "test": "azerty"
   }
 }

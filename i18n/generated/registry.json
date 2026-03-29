@@ -5,11 +5,11 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 400,
-    "uniqueKeys": 400,
+    "totalEntries": 401,
+    "uniqueKeys": 401,
     "namespaces": 7,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 0
+    "keysWithMissingLocales": 1
   },
   "keys": [
     {
@@ -6418,6 +6418,30 @@
       }
     },
     {
+      "key": "common.test",
+      "namespace": "common",
+      "leaf": "test",
+      "segments": [
+        "common",
+        "test"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        401
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [
+        "en",
+        "fr"
+      ],
+      "resolved": {
+        "nl": "test",
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
       "key": "common.time",
       "namespace": "common",
       "leaf": "time",
@@ -8435,7 +8459,7 @@
       "label": "Common",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 318
+      "keyCount": 319
     },
     {
       "name": "error",

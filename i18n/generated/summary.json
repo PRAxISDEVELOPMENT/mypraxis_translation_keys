@@ -7,25 +7,23 @@
     "en"
   ],
   "totals": {
-    "sourceEntries": 179,
-    "uniqueKeys": 179,
+    "sourceEntries": 857,
+    "uniqueKeys": 857,
     "namespaces": 7,
-    "warnings": 1,
+    "warnings": 0,
     "errors": 0,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 1
+    "keysWithMissingLocales": 0
   },
   "namespaces": {
     "applicationNames": 13,
     "authentication": 6,
-    "common": 127,
-    "error": 9,
-    "info": 12,
+    "common": 706,
+    "error": 16,
+    "info": 56,
     "metadata": 2,
-    "success": 10
+    "success": 58
   },
-  "warningCounts": {
-    "Missing locale values": 1
-  },
+  "warningCounts": {},
   "errorCounts": {}
 }

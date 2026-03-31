@@ -5,11 +5,11 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 178,
-    "uniqueKeys": 178,
+    "totalEntries": 179,
+    "uniqueKeys": 179,
     "namespaces": 7,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 0
+    "keysWithMissingLocales": 1
   },
   "keys": [
     {
@@ -2827,6 +2827,29 @@
       }
     },
     {
+      "key": "common.test",
+      "namespace": "common",
+      "leaf": "test",
+      "segments": [
+        "common",
+        "test"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        179
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [
+        "nl"
+      ],
+      "resolved": {
+        "nl": "Basic price",
+        "fr": "Prix de base",
+        "en": "Basic price"
+      }
+    },
+    {
       "key": "common.to",
       "namespace": "common",
       "leaf": "to",
@@ -3773,7 +3796,7 @@
       "label": "Common",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 126
+      "keyCount": 127
     },
     {
       "name": "error",

@@ -1066,5 +1066,11 @@
         "nl": "Basisprijs",
         "fr": "Prix de base",
         "en": "Basic price"
+    },
+    {
+        "key": "common.test",
+        "nl": "",
+        "fr": "Prix de base",
+        "en": "Basic price"
     }
 ]

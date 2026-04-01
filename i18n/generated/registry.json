@@ -20098,16 +20098,15 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        957,
-        3206
+        957
       ],
-      "duplicateCount": 2,
-      "duplicateValuesDiffer": true,
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
       "missingLocales": [],
       "resolved": {
-        "nl": "Verstuurd op",
-        "fr": "Envoyé le",
-        "en": "Send on"
+        "nl": "E-mail",
+        "fr": "E-mail",
+        "en": "Email"
       }
     },
     {
@@ -43178,9 +43177,10 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3205
+        3205,
+        3206
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateValuesDiffer": false,
       "missingLocales": [],
       "resolved": {

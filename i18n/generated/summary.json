@@ -25,7 +25,7 @@
     "success": 264
   },
   "warningCounts": {
-    "Duplicate keys with different values": 1
+    "Duplicate keys with the same values": 1
   },
   "errorCounts": {}
 }

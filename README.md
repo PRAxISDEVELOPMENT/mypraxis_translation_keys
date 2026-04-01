@@ -2,90 +2,124 @@
 
 Central translation source and automation pipeline for MyPRAxIS.
 
-This repo has 1 source of truth:
-- [`i18n/translations.json`](i18n/translations.json)
+This repository keeps one editable source file and derives everything else from it:
 
-Everything else is validation, generation, or upload automation around that file.
+- source translations
+- namespace governance
+- application usage metadata
+- generated runtime locale files
+- editor upload processing
+- CI validation and sync checks
 
-## Core Rules
+## Source Of Truth
 
-- Keys must be unique.
-- Editors never choose keys or namespaces.
-- Existing keys may be updated directly.
-- New entries always go through a proposal branch and PR review.
-- Generated files in [`i18n/generated`](i18n/generated) are never edited manually.
-
-## File Overview
-
-### Source and config
+The primary source file is:
 
 - [`i18n/translations.json`](i18n/translations.json)
-  Flat source file with every translation entry.
+
+Every translation entry lives there and must define:
+
+- `key`
+- `nl`
+- `fr`
+- `en`
+- `applications`
+
+Optional fields:
+
+- `description`
+- `notes`
+- `deprecated`
+
+Example:
+
+```json
+{
+  "key": "common.save",
+  "nl": "Opslaan",
+  "fr": "Enregistrer",
+  "en": "Save",
+  "applications": ["mypraxis_web"]
+}
+```
+
+## Repository Structure
+
+### Source And Config
+
+- [`i18n/translations.json`](i18n/translations.json)
+  Flat translation source used for all generation and validation.
 
 - [`i18n/namespaces.json`](i18n/namespaces.json)
-  Allowed namespace list and the default namespace.
+  Allowed namespaces and default namespace.
+
+- [`i18n/applications.json`](i18n/applications.json)
+  Allowed application identifiers, labels, descriptions, and status.
 
 - [`i18n/translations.schema.json`](i18n/translations.schema.json)
-  Editor schema for the source file.
+  Editor schema for `translations.json`.
 
 - [`i18n/upload.schema.json`](i18n/upload.schema.json)
   Schema for editor upload payloads.
 
 ### Scripts
 
-- [`update.sh`](update.sh)
-  Simple local developer flow: build, commit, push, wait for GitHub Actions, pull latest back.
-
 - [`i18n/buildTranslations.js`](i18n/buildTranslations.js)
-  Validates the source, blocks duplicate keys and bad namespaces, and generates runtime files plus reporting artifacts.
+  Core validator and generator. Reads the source/config files and writes `i18n/generated/*`.
 
 - [`i18n/processUpload.js`](i18n/processUpload.js)
-  Takes editor uploads and splits them into:
-  existing-key direct updates, or new-entry proposals.
+  Classifies editor uploads into direct existing-key updates or new-entry proposals.
 
 - [`i18n/processUploadInbox.js`](i18n/processUploadInbox.js)
-  Processes queued upload JSON files from the inbox directories the same way GitHub Actions does.
+  Batch processor for upload files already committed into the repo.
 
-### Generated output
+- [`update.sh`](update.sh)
+  Local developer shortcut: build, commit, push, wait for GitHub Actions, pull latest back.
+
+### Generated Files
 
 - [`i18n/generated/nl.json`](i18n/generated/nl.json)
 - [`i18n/generated/fr.json`](i18n/generated/fr.json)
 - [`i18n/generated/en.json`](i18n/generated/en.json)
-  Runtime locale files consumed by the application.
+  Runtime locale files consumed by applications.
 
 - [`i18n/generated/keys.json`](i18n/generated/keys.json)
-  Flat key list for lookups and tooling.
+  Flat list of generated keys.
 
 - [`i18n/generated/namespaces.json`](i18n/generated/namespaces.json)
-  Namespace summary with key counts.
+  Namespace metadata with key counts.
+
+- [`i18n/generated/applications.json`](i18n/generated/applications.json)
+  Application metadata for frontend mapping.
 
 - [`i18n/generated/registry.json`](i18n/generated/registry.json)
-  Per-key registry with metadata, duplicates, and missing locale info.
+  Per-key registry including namespace, applications, duplicates, missing locales, and resolved values.
 
 - [`i18n/generated/summary.json`](i18n/generated/summary.json)
-  Compact health summary for dashboards and CI.
+  Compact build summary for diagnostics, dashboards, and CI.
 
-### GitHub workflows
+### Workflows
 
 - [`.github/workflows/buildTranslations.yml`](.github/workflows/buildTranslations.yml)
-  Validates scripts and rebuilds generated translation files.
+  Validates and rebuilds translation artifacts.
 
 - [`.github/workflows/processTranslationUploads.yml`](.github/workflows/processTranslationUploads.yml)
-  Processes editor-upload payloads committed from the frontend.
+  Processes frontend-uploaded translation payloads.
 
-### Files that cannot contain inline comments
+## Core Rules
 
-These files are explained here in the README because JSON does not support comments:
-
-- [`i18n/translations.json`](i18n/translations.json)
-- [`i18n/namespaces.json`](i18n/namespaces.json)
-- [`i18n/upload.schema.json`](i18n/upload.schema.json)
-- [`i18n/translations.schema.json`](i18n/translations.schema.json)
-- [`package.json`](package.json)
+- Keys must be unique.
+- Unknown namespaces are not allowed.
+- Unknown applications are not allowed.
+- Every entry must define at least one application.
+- Generated files are never edited manually.
+- Editors do not choose keys or namespaces.
+- Existing keys may go directly to `main`.
+- New keys always go through proposal review.
 
 ## Namespaces
 
-Allowed namespaces today:
+Allowed namespaces:
 
 - `applicationNames`
 - `authentication`
@@ -95,34 +129,53 @@ Allowed namespaces today:
 - `metadata`
 - `success`
 
-Use them like this:
+Usage guide:
 
 - `common.*`
-  Generic UI labels, buttons, field names, reusable text.
+  Shared UI labels, buttons, field names, reusable interface text.
 
 - `info.*`
-  Help text, explanation, onboarding, instructions.
+  Explanations, help text, onboarding, contextual guidance.
 
 - `error.*`
-  Error labels and failure messages.
+  Errors, failure messages, validation feedback.
 
 - `success.*`
-  Success messages and completed-state feedback.
+  Completed-state and success feedback.
 
 - `authentication.*`
-  Login, token, verification, auth-related text.
+  Identity, login, token, verification, and auth-specific copy.
 
 - `applicationNames.*`
-  Product or application names.
+  Product and application names.
 
 - `metadata.*`
   Page titles and meta descriptions.
 
 If no stronger namespace fits, use `common.*`.
 
+## Applications
+
+Allowed application values are defined in [`i18n/applications.json`](i18n/applications.json):
+
+- `mypraxis_app`
+- `mypraxis_web`
+- `documenten`
+- `mypraxis_data`
+
+These values are validated in:
+
+- the editor schema
+- the build pipeline
+- generated metadata output
+
+This allows frontend code to map application labels from a single generated source:
+
+- [`i18n/generated/applications.json`](i18n/generated/applications.json)
+
 ## Commands
 
-### Developer flow
+### Build And Validate
 
 ```bash
 npm run build:translations
@@ -146,75 +199,91 @@ Fails on warnings and errors.
 npm run report:translations
 ```
 
-Prints a compact health report.
+Prints a compact report with namespace and application counts.
 
 ```bash
 npm run namespaces:translations
 ```
 
-Prints the configured namespaces.
+Prints configured namespaces.
 
 ```bash
 npm run update
 ```
 
-Local end-to-end developer flow: build, commit, push, wait, pull.
+Runs the local developer flow end-to-end.
 
-### Upload flow
+### Upload Processing
 
 ```bash
 npm run prepare:upload -- --input ./upload.json --report ./upload.report.json
 ```
 
-Classifies an upload into direct updates and proposals.
+Classifies one upload payload into direct updates and proposals.
 
 ```bash
 npm run prepare:upload -- --input ./upload.json --report ./upload.report.json --apply-direct
 ```
 
-Does the same, but also applies safe direct updates immediately.
+Same as above, but immediately applies safe direct updates.
 
 ```bash
 npm run apply:proposals -- --input ./upload.report.json
 ```
 
-Accepts the proposals from a previously generated report.
+Accepts proposal entries from a report.
 
 ```bash
 npm run process:upload-inbox -- --mode direct
 ```
 
-Processes queued uploads meant for `main`.
+Processes queued uploads intended for `main`.
 
 ```bash
 npm run process:upload-inbox -- --mode proposal
 ```
 
-Processes queued uploads meant for proposal branches.
+Processes queued uploads intended for proposal branches.
 
-## Developer Flow
+### Frontend Flow Dry Runs
 
-For devs working in editor:
+```bash
+npm run test:frontend:direct
+```
 
-1. Edit [`i18n/translations.json`](i18n/translations.json) and, if needed, [`i18n/namespaces.json`](i18n/namespaces.json).
-2. Run `npm run build:translations`.
-3. Review generated files in [`i18n/generated`](i18n/generated).
-4. Commit and push.
+Dry-run simulation of the direct frontend flow.
 
-This is the only flow where keys and namespaces are edited directly.
+```bash
+npm run test:frontend:proposal
+```
 
-## Editor Flow
+Dry-run simulation of the proposal frontend flow.
 
-Editors work from your application, not directly in the source file.
+## Developer Workflow
 
-### Existing key update
+For developers working directly in the repository:
 
-Use this when the translation key already exists.
+1. Edit [`i18n/translations.json`](i18n/translations.json).
+2. Edit [`i18n/namespaces.json`](i18n/namespaces.json) only when a genuinely new namespace is required.
+3. Keep `applications` accurate per entry.
+4. Run `npm run build:translations`.
+5. Review generated output in [`i18n/generated`](i18n/generated).
+6. Commit and push.
 
-- The payload includes the fixed `key`.
-- Only `nl`, `fr`, and `en` may change.
-- The payload is committed to [`i18n/uploads/incoming`](i18n/uploads/incoming) on `main`.
-- GitHub Actions processes it and applies the locale changes directly.
+This is the only flow where keys and namespaces are changed manually.
+
+## Editor Workflow
+
+Editors work through your application, not directly in `translations.json`.
+
+### Existing Key Update
+
+Use this path when the key already exists.
+
+- upload payload includes a fixed `key`
+- only `nl`, `fr`, and `en` may change
+- payload is committed into [`i18n/uploads/incoming`](i18n/uploads/incoming) on `main`
+- GitHub Actions processes the update automatically
 
 Example:
 
@@ -229,16 +298,16 @@ Example:
 }
 ```
 
-### New translation proposal
+### New Translation Proposal
 
-Use this when the editor adds new text without a key.
+Use this path when no key exists yet.
 
-- The payload does not include a `key`.
-- The system suggests a namespace from the existing namespace list.
-- The system suggests a key.
-- The payload is committed to [`i18n/uploads/incoming`](i18n/uploads/incoming) on a branch like `translation-proposals/<id>`.
-- A PR is opened to `main`.
-- Devs review the proposed key, namespace, and app usage before merge.
+- payload does not contain a `key`
+- the system suggests a namespace
+- the system suggests a key
+- payload is committed into [`i18n/uploads/incoming`](i18n/uploads/incoming) on a branch like `translation-proposals/<id>`
+- a PR is opened to `main`
+- developers review key, namespace, applications, and usage before merge
 
 Example:
 
@@ -255,30 +324,32 @@ Example:
 
 ## Validation Rules
 
-[`i18n/buildTranslations.js`](i18n/buildTranslations.js) enforces these rules:
+[`i18n/buildTranslations.js`](i18n/buildTranslations.js) enforces:
 
 - missing or invalid keys are errors
 - unknown namespaces are errors
+- unknown or missing applications are errors
 - duplicate keys are errors
-- invalid nested key conflicts are errors
+- nested key conflicts are errors
 - missing locale values are warnings
 - restricted namespaces are warnings
+- duplicate application values inside one entry are warnings
 
-Important:
+Important behavior:
 
-- If a key is duplicated, the build fails.
-- If a locale value is empty, the build still works but reports a warning.
-- `nl` and `fr` fall back to `en` when possible in generated runtime output.
+- duplicate keys fail the build
+- missing locales do not block a normal build, but do block `validate`
+- generated runtime locales fall back to `en` when `nl` or `fr` is empty
 
-## Upload Payload Rules
+## Upload Rules
 
-[`i18n/processUpload.js`](i18n/processUpload.js) enforces these rules:
+[`i18n/processUpload.js`](i18n/processUpload.js) enforces:
 
 - direct updates must use an existing non-empty key
 - direct updates may only contain `key`, `nl`, `fr`, `en`
 - proposal entries may not contain a key
 - proposal entries may only contain `nl`, `fr`, `en`, `description`, `notes`
-- namespace suggestions are limited to namespaces that already exist in [`i18n/namespaces.json`](i18n/namespaces.json)
+- namespace suggestions only use existing namespaces
 
 ## Inbox Directories
 
@@ -289,11 +360,23 @@ Important:
   Archived payloads after processing.
 
 - [`i18n/upload-reports`](i18n/upload-reports)
-  JSON reports written by upload processing.
+  JSON reports produced by upload processing.
 
 ## Production Model
 
-- developers own keys and namespaces
-- editors only submit locale content
-- direct existing-key updates can go to `main`
-- new entries must go through `translation-proposals/*` and PR review
+- developers own keys, namespaces, and application usage
+- editors only submit translation content
+- existing-key updates may go directly to `main`
+- new keys must go through `translation-proposals/*` and PR review
+- frontend can read generated metadata from `registry.json`, `summary.json`, `namespaces.json`, and `applications.json`
+
+## Notes
+
+These files are explained in this README because JSON cannot contain inline comments:
+
+- [`i18n/translations.json`](i18n/translations.json)
+- [`i18n/namespaces.json`](i18n/namespaces.json)
+- [`i18n/applications.json`](i18n/applications.json)
+- [`i18n/upload.schema.json`](i18n/upload.schema.json)
+- [`i18n/translations.schema.json`](i18n/translations.schema.json)
+- [`package.json`](package.json)

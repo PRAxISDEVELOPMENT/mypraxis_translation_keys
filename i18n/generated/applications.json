@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "applications": [
+    {
+      "name": "documenten",
+      "label": "Documenten",
+      "description": "Document generation or document-specific flows.",
+      "status": "active"
+    },
+    {
+      "name": "mypraxis_app",
+      "label": "MyPRAxIS App",
+      "description": "Native or mobile application surfaces.",
+      "status": "active"
+    },
+    {
+      "name": "mypraxis_data",
+      "label": "MyPRAxIS Data",
+      "description": "Data-oriented tooling and internal data views.",
+      "status": "active"
+    },
+    {
+      "name": "mypraxis_web",
+      "label": "MyPRAxIS Web",
+      "description": "Primary web application surfaces.",
+      "status": "active"
+    }
+  ]
+}

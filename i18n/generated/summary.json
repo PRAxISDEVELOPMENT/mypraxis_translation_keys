@@ -1,10 +1,17 @@
 {
   "sourceFile": "i18n/translations.json",
   "namespaceFile": "i18n/namespaces.json",
+  "applicationFile": "i18n/applications.json",
   "locales": [
     "nl",
     "fr",
     "en"
+  ],
+  "applications": [
+    "documenten",
+    "mypraxis_app",
+    "mypraxis_data",
+    "mypraxis_web"
   ],
   "totals": {
     "sourceEntries": 3213,
@@ -23,6 +30,12 @@
     "info": 248,
     "metadata": 2,
     "success": 265
+  },
+  "applicationCounts": {
+    "documenten": 0,
+    "mypraxis_app": 0,
+    "mypraxis_data": 0,
+    "mypraxis_web": 3213
   },
   "warningCounts": {},
   "errorCounts": {}

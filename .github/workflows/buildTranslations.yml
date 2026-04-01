@@ -11,6 +11,7 @@ on:
     paths:
       - 'i18n/translations.json'
       - 'i18n/namespaces.json'
+      - 'i18n/applications.json'
       - 'i18n/buildTranslations.js'
       - 'i18n/processUpload.js'
       - 'i18n/processUploadInbox.js'
@@ -24,6 +25,7 @@ on:
     paths:
       - 'i18n/translations.json'
       - 'i18n/namespaces.json'
+      - 'i18n/applications.json'
       - 'i18n/buildTranslations.js'
       - 'i18n/processUpload.js'
       - 'i18n/processUploadInbox.js'

@@ -21,7 +21,8 @@ function parseArgs(argv) {
         uploadsDir: DEFAULT_UPLOADS_DIR,
         reportsDir: DEFAULT_REPORTS_DIR,
         processedDir: DEFAULT_PROCESSED_DIR,
-        build: true
+        build: true,
+        dryRun: false
     };
 
     for (let index = 0; index < argv.length; index += 1) {
@@ -53,6 +54,9 @@ function parseArgs(argv) {
                 break;
             case 'no-build':
                 result.build = false;
+                break;
+            case 'dry-run':
+                result.dryRun = true;
                 break;
             case 'help':
             case 'h':
@@ -88,6 +92,9 @@ Options
 
   --processed-dir <path>
     Directory where processed upload payloads are archived.
+
+  --dry-run
+    Preview the inbox result without editing translations.json or archiving uploads.
 
   --no-build
     Skip the final translation build after applying changes.
@@ -163,6 +170,16 @@ function processUploadFile(filePath, options) {
             );
         }
 
+        if (options.dryRun) {
+            return {
+                filePath,
+                reportPath,
+                archivedPath: null,
+                directUpdates: report.summary.directUpdates,
+                proposals: 0
+            };
+        }
+
         if (hasDirectUpdates) {
             runNodeScript(PROCESS_UPLOAD_SCRIPT, [
                 'prepare',
@@ -196,6 +213,16 @@ function processUploadFile(filePath, options) {
         throw new Error(
             `Upload "${path.basename(filePath)}" contains existing-key updates. Proposal mode only accepts new entries without keys.`
         );
+    }
+
+    if (options.dryRun) {
+        return {
+            filePath,
+            reportPath,
+            archivedPath: null,
+            directUpdates: 0,
+            proposals: report.summary.proposals
+        };
     }
 
     if (hasProposals) {
@@ -236,6 +263,7 @@ function main() {
     console.log(`  Mode:        ${options.mode}`);
     console.log(`  Uploads dir: ${path.relative(ROOT_DIR, options.uploadsDir)}`);
     console.log(`  Reports dir: ${path.relative(ROOT_DIR, options.reportsDir)}`);
+    console.log(`  Dry run:     ${options.dryRun ? 'yes' : 'no'}`);
     console.log(`  Files:       ${uploadFiles.length}`);
 
     if (uploadFiles.length === 0) {
@@ -252,14 +280,14 @@ function main() {
         totalProposals += result.proposals;
     }
 
-    if (options.build) {
+    if (options.build && !options.dryRun) {
         runNodeScript(BUILD_SCRIPT, []);
     }
 
     console.log('\nUpload Inbox Processed');
     console.log(`  Direct updates applied: ${totalDirectUpdates}`);
     console.log(`  Proposals applied:      ${totalProposals}`);
-    console.log(`  Upload files archived:  ${uploadFiles.length}`);
+    console.log(`  Upload files archived:  ${options.dryRun ? 0 : uploadFiles.length}`);
 }
 
 try {

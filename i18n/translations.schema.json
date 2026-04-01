@@ -7,7 +7,7 @@
   "items": {
     "type": "object",
     "additionalProperties": false,
-    "required": ["key", "nl", "fr", "en"],
+    "required": ["key", "nl", "fr", "en", "applications"],
     "properties": {
       "key": {
         "type": "string",
@@ -24,6 +24,16 @@
       "en": {
         "type": "string",
         "description": "English translation value."
+      },
+      "applications": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "description": "Applications where this translation key is used.",
+        "items": {
+          "type": "string",
+          "enum": ["mypraxis_app", "mypraxis_web", "documenten", "mypraxis_data"]
+        }
       },
       "description": {
         "type": "string",

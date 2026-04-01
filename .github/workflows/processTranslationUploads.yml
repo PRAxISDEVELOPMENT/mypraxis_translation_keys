@@ -17,6 +17,7 @@ on:
       - 'i18n/processUploadInbox.js'
       - 'i18n/upload.schema.json'
       - 'i18n/buildTranslations.js'
+      - 'i18n/applications.json'
       - 'i18n/namespaces.json'
       - '.github/workflows/processTranslationUploads.yml'
   workflow_dispatch:

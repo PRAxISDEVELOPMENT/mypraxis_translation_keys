@@ -5,6 +5,8 @@
     "prepare:upload": "node i18n/processUpload.js prepare",
     "apply:proposals": "node i18n/processUpload.js apply-proposals",
     "process:upload-inbox": "node i18n/processUploadInbox.js",
+    "test:frontend:direct": "node i18n/processUploadInbox.js --mode direct --uploads-dir i18n/test-fixtures/direct --reports-dir i18n/upload-reports/test-direct --processed-dir i18n/uploads/processed/test-direct --dry-run --no-build",
+    "test:frontend:proposal": "node i18n/processUploadInbox.js --mode proposal --uploads-dir i18n/test-fixtures/proposal --reports-dir i18n/upload-reports/test-proposal --processed-dir i18n/uploads/processed/test-proposal --dry-run --no-build",
     "build:translations": "node i18n/buildTranslations.js",
     "check:translations": "node i18n/buildTranslations.js --check",
     "help:translations": "node i18n/buildTranslations.js --help",

@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-01T10:09:10.965Z",
+  "inputFile": "i18n/test-fixtures/direct/direct-test.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 0,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.save",
+      "namespace": "common",
+      "changes": {
+        "fr": "Enregistrer"
+      },
+      "current": {
+        "nl": "Opslaan",
+        "fr": "Sauvegarder",
+        "en": "Save"
+      },
+      "next": {
+        "nl": "Opslaan",
+        "fr": "Enregistrer",
+        "en": "Save"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

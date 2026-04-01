@@ -7,6 +7,7 @@ const path = require('path');
 
 const SOURCE_PATH = path.join(__dirname, 'translations.json');
 const NAMESPACE_CONFIG_PATH = path.join(__dirname, 'namespaces.json');
+const APPLICATION_CONFIG_PATH = path.join(__dirname, 'applications.json');
 const OUTPUT_DIR = path.join(__dirname, 'generated');
 const LOCALES = ['nl', 'fr', 'en'];
 const KEY_SEGMENT_PATTERN = /^[A-Za-z0-9]+$/;
@@ -94,7 +95,57 @@ function readNamespaceConfig() {
     };
 }
 
-function printHelp(namespaceConfig) {
+function readApplicationConfig() {
+    const parsed = readJsonFile(APPLICATION_CONFIG_PATH);
+
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+        throw new Error('applications.json must contain an object.');
+    }
+
+    if (!Array.isArray(parsed.applications) || parsed.applications.length === 0) {
+        throw new Error('applications.json must contain a non-empty "applications" array.');
+    }
+
+    const applicationMap = new Map();
+
+    for (const applicationDefinition of parsed.applications) {
+        if (!applicationDefinition || typeof applicationDefinition !== 'object' || Array.isArray(applicationDefinition)) {
+            throw new Error('Each application definition must be an object.');
+        }
+
+        if (typeof applicationDefinition.name !== 'string' || applicationDefinition.name.trim() === '') {
+            throw new Error('Each application definition must contain a non-empty "name" string.');
+        }
+
+        const normalizedName = applicationDefinition.name.trim();
+
+        if (applicationMap.has(normalizedName)) {
+            throw new Error(`Duplicate application definition found for "${normalizedName}".`);
+        }
+
+        applicationMap.set(normalizedName, {
+            name: normalizedName,
+            label:
+                typeof applicationDefinition.label === 'string' && applicationDefinition.label.trim() !== ''
+                    ? applicationDefinition.label.trim()
+                    : normalizedName,
+            description:
+                typeof applicationDefinition.description === 'string' ? applicationDefinition.description : '',
+            status:
+                typeof applicationDefinition.status === 'string' && applicationDefinition.status.trim() !== ''
+                    ? applicationDefinition.status.trim()
+                    : 'active'
+        });
+    }
+
+    return {
+        version: parsed.version ?? 1,
+        applicationMap,
+        applications: Array.from(applicationMap.values()).sort((left, right) => left.name.localeCompare(right.name))
+    };
+}
+
+function printHelp(namespaceConfig, applicationConfig) {
     const activeNamespaces = namespaceConfig.namespaces
         .filter((namespaceDefinition) => namespaceDefinition.status === 'active')
         .map((namespaceDefinition) => namespaceDefinition.name);
@@ -102,6 +153,9 @@ function printHelp(namespaceConfig) {
     const restrictedNamespaces = namespaceConfig.namespaces
         .filter((namespaceDefinition) => namespaceDefinition.status !== 'active')
         .map((namespaceDefinition) => `${namespaceDefinition.name} (${namespaceDefinition.status})`);
+    const activeApplications = applicationConfig.applications
+        .filter((applicationDefinition) => applicationDefinition.status === 'active')
+        .map((applicationDefinition) => applicationDefinition.name);
 
     console.log(`
 Translation Commands
@@ -129,6 +183,9 @@ Source Files
 
   i18n/namespaces.json
     Central namespace list. Add a namespace here before using a new namespace prefix.
+
+  i18n/applications.json
+    Central application list. Add or rename application identifiers here before using them in entries.
 
 Key Format
   Use dot notation:
@@ -164,10 +221,16 @@ Choosing The Right Namespace
   metadata
     Page titles and meta descriptions.
 
+Applications
+  Allowed values:
+    ${activeApplications.join(', ')}
+  Every translation entry must define an applications array.
+
 Quick Rules
   - Do not edit files in i18n/generated manually.
   - Keep keys unique.
   - Prefer common.* for shared UI labels.
+  - Keep applications accurate per key.
   - Add description or notes when a translation is ambiguous.
   - Remove test.* keys before production use.
 `);
@@ -335,11 +398,12 @@ function getResolvedValue(entry, locale) {
     return '';
 }
 
-function collectIssues(entries, namespaceConfig) {
+function collectIssues(entries, namespaceConfig, applicationConfig) {
     const errors = [];
     const warnings = [];
     const keyUsage = new Map();
     const knownNamespaces = namespaceConfig.namespaces.map((namespaceDefinition) => namespaceDefinition.name).join(', ');
+    const knownApplications = applicationConfig.applications.map((applicationDefinition) => applicationDefinition.name);
 
     for (const [index, entry] of entries.entries()) {
         if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
@@ -436,6 +500,44 @@ function collectIssues(entries, namespaceConfig) {
         }
 
         keyUsage.get(normalizedKey).push(index);
+
+        if (!Array.isArray(entry.applications) || entry.applications.length === 0) {
+            errors.push({
+                category: 'missing-applications',
+                categoryLabel: 'Missing applications',
+                key: normalizedKey,
+                message: `Key "${normalizedKey}" must define a non-empty applications array.`,
+                entries: [formatEntryLabel(index, normalizedKey)]
+            });
+        } else {
+            const invalidApplications = entry.applications.filter(
+                (application) => typeof application !== 'string' || application.trim() === '' || !applicationConfig.applicationMap.has(application.trim())
+            );
+
+            if (invalidApplications.length > 0) {
+                errors.push({
+                    category: 'invalid-applications',
+                    categoryLabel: 'Invalid applications',
+                    key: normalizedKey,
+                    message: `Key "${normalizedKey}" uses invalid applications: ${invalidApplications.join(', ')}. Allowed values: ${knownApplications.join(', ')}.`,
+                    entries: [formatEntryLabel(index, normalizedKey)]
+                });
+            }
+
+            const normalizedApplications = entry.applications
+                .filter((application) => typeof application === 'string' && application.trim() !== '')
+                .map((application) => application.trim());
+
+            if (new Set(normalizedApplications).size !== normalizedApplications.length) {
+                warnings.push({
+                    category: 'duplicate-applications',
+                    categoryLabel: 'Duplicate applications',
+                    key: normalizedKey,
+                    message: `Key "${normalizedKey}" contains duplicate applications.`,
+                    entries: [formatEntryLabel(index, normalizedKey)]
+                });
+            }
+        }
 
         for (const locale of LOCALES) {
             const value = entry[locale];
@@ -558,6 +660,7 @@ function buildRegistry(entries, namespaceConfig) {
                 namespace,
                 leaf,
                 segments,
+                applications: [],
                 namespaceStatus: namespaceConfig.namespaceMap.get(namespace)?.status ?? 'unknown',
                 sourceEntries: [],
                 duplicateCount: 0,
@@ -580,6 +683,18 @@ function buildRegistry(entries, namespaceConfig) {
         record.resolved = Object.fromEntries(
             LOCALES.map((locale) => [locale, getResolvedValue(entry, locale)])
         );
+        record.applications = Array.from(
+            new Set([
+                ...record.applications,
+                ...(
+                    Array.isArray(entry.applications)
+                        ? entry.applications
+                            .filter((application) => typeof application === 'string' && application.trim() !== '')
+                            .map((application) => application.trim())
+                        : []
+                )
+            ])
+        ).sort();
 
         for (const locale of LOCALES) {
             if (typeof entry[locale] !== 'string' || entry[locale].trim() === '') {
@@ -610,7 +725,7 @@ function buildRegistry(entries, namespaceConfig) {
     return Array.from(registryByKey.values()).sort((left, right) => left.key.localeCompare(right.key));
 }
 
-function buildSummary(entries, registry, namespaceConfig, warnings, errors) {
+function buildSummary(entries, registry, namespaceConfig, applicationConfig, warnings, errors) {
     const namespaceCounts = Object.fromEntries(
         namespaceConfig.namespaces.map((namespaceDefinition) => [
             namespaceDefinition.name,
@@ -630,10 +745,19 @@ function buildSummary(entries, registry, namespaceConfig, warnings, errors) {
         return result;
     }, {});
 
+    const applicationCounts = Object.fromEntries(
+        applicationConfig.applications.map((applicationDefinition) => [
+            applicationDefinition.name,
+            registry.filter((record) => record.applications.includes(applicationDefinition.name)).length
+        ])
+    );
+
     return {
         sourceFile: path.relative(process.cwd(), SOURCE_PATH),
         namespaceFile: path.relative(process.cwd(), NAMESPACE_CONFIG_PATH),
+        applicationFile: path.relative(process.cwd(), APPLICATION_CONFIG_PATH),
         locales: LOCALES,
+        applications: applicationConfig.applications.map((applicationDefinition) => applicationDefinition.name),
         totals: {
             sourceEntries: entries.length,
             uniqueKeys: registry.length,
@@ -644,15 +768,16 @@ function buildSummary(entries, registry, namespaceConfig, warnings, errors) {
             keysWithMissingLocales: registry.filter((record) => record.missingLocales.length > 0).length
         },
         namespaces: namespaceCounts,
+        applicationCounts,
         warningCounts,
         errorCounts
     };
 }
 
-function generateArtifacts(entries, namespaceConfig, warnings = [], errors = []) {
+function generateArtifacts(entries, namespaceConfig, applicationConfig, warnings = [], errors = []) {
     const artifacts = new Map();
     const registry = buildRegistry(entries, namespaceConfig);
-    const summary = buildSummary(entries, registry, namespaceConfig, warnings, errors);
+    const summary = buildSummary(entries, registry, namespaceConfig, applicationConfig, warnings, errors);
 
     for (const locale of LOCALES) {
         const localeTree = buildLocaleTree(entries, locale);
@@ -683,6 +808,18 @@ function generateArtifacts(entries, namespaceConfig, warnings = [], errors = [])
     );
 
     artifacts.set(
+        'applications.json',
+        JSON.stringify(
+            {
+                version: applicationConfig.version,
+                applications: applicationConfig.applications
+            },
+            null,
+            2
+        ) + '\n'
+    );
+
+    artifacts.set(
         'registry.json',
         JSON.stringify(
             {
@@ -691,9 +828,11 @@ function generateArtifacts(entries, namespaceConfig, warnings = [], errors = [])
                     totalEntries: entries.length,
                     uniqueKeys: registry.length,
                     namespaces: namespaceSummaries.length,
+                    applications: applicationConfig.applications.length,
                     duplicateKeys: registry.filter((record) => record.duplicateCount > 1).length,
                     keysWithMissingLocales: registry.filter((record) => record.missingLocales.length > 0).length
                 },
+                applications: applicationConfig.applications,
                 keys: registry,
                 namespaces: namespaceSummaries
             },
@@ -741,9 +880,9 @@ function printLocalSummary(entries, namespaceConfig, errors, warnings) {
     console.log(`  Warnings:    ${warnings.length}`);
 }
 
-function printReport(entries, namespaceConfig, warnings, errors) {
+function printReport(entries, namespaceConfig, applicationConfig, warnings, errors) {
     const registry = buildRegistry(entries, namespaceConfig);
-    const summary = buildSummary(entries, registry, namespaceConfig, warnings, errors);
+    const summary = buildSummary(entries, registry, namespaceConfig, applicationConfig, warnings, errors);
 
     console.log('\nTranslation Report');
     console.log(`  Source entries:       ${summary.totals.sourceEntries}`);
@@ -758,14 +897,20 @@ function printReport(entries, namespaceConfig, warnings, errors) {
     for (const namespaceDefinition of namespaceConfig.namespaces) {
         console.log(`  - ${namespaceDefinition.name}: ${summary.namespaces[namespaceDefinition.name] || 0}`);
     }
+
+    console.log('\nApplication Counts');
+    for (const application of summary.applications) {
+        console.log(`  - ${application}: ${summary.applicationCounts[application] || 0}`);
+    }
 }
 
 function main() {
     const options = parseArgs(process.argv.slice(2));
     const namespaceConfig = readNamespaceConfig();
+    const applicationConfig = readApplicationConfig();
     
     if (options.help) {
-        printHelp(namespaceConfig);
+        printHelp(namespaceConfig, applicationConfig);
         return;
     }
 
@@ -775,10 +920,10 @@ function main() {
     }
 
     const entries = readSourceEntries();
-    const { errors, warnings } = collectIssues(entries, namespaceConfig);
+    const { errors, warnings } = collectIssues(entries, namespaceConfig, applicationConfig);
 
     if (options.report) {
-        printReport(entries, namespaceConfig, warnings, errors);
+        printReport(entries, namespaceConfig, applicationConfig, warnings, errors);
         return;
     }
 
@@ -800,7 +945,7 @@ function main() {
         return;
     }
 
-    const artifacts = generateArtifacts(entries, namespaceConfig, warnings, errors);
+    const artifacts = generateArtifacts(entries, namespaceConfig, applicationConfig, warnings, errors);
 
     if (options.check) {
         const mismatches = checkArtifacts(artifacts);

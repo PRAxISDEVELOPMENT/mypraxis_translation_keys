@@ -11079,19 +11079,19 @@
     ]
   },
   {
-    "key": "common.houseNumber",
+    "key": "common.housenumber",
     "nl": "Huisnummer",
     "fr": "Numéro",
-    "en": "House number",
+    "en": "Housenumber",
     "applications": [
       "mypraxis_web"
     ]
   },
   {
-    "key": "common.housenumber",
+    "key": "common.houseNumber",
     "nl": "Huisnummer",
     "fr": "Numéro",
-    "en": "Housenumber",
+    "en": "House number",
     "applications": [
       "mypraxis_web"
     ]
@@ -19683,6 +19683,15 @@
     ]
   },
   {
+    "key": "common.test",
+    "nl": "test",
+    "fr": "test",
+    "en": "test",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.testClient",
     "nl": "Testklant",
     "fr": "Client de test",
@@ -20646,19 +20655,19 @@
     ]
   },
   {
-    "key": "common.typeOfVisualMaterial",
-    "nl": "Type beeldmateriaal",
-    "fr": "Type de matériel visuel",
-    "en": "Type of visual material",
+    "key": "common.typeOfSubscription",
+    "nl": "Type abonnement",
+    "fr": "Type d'abonnement",
+    "en": "Type of subscription",
     "applications": [
       "mypraxis_web"
     ]
   },
   {
-    "key": "common.typeOfSubscription",
-    "nl": "Type abonnement",
-    "fr": "Type d'abonnement",
-    "en": "Type of subscription",
+    "key": "common.typeOfVisualMaterial",
+    "nl": "Type beeldmateriaal",
+    "fr": "Type de matériel visuel",
+    "en": "Type of visual material",
     "applications": [
       "mypraxis_web"
     ]
@@ -25299,19 +25308,19 @@
     ]
   },
   {
-    "key": "info.localChangesNotYetSaved",
-    "nl": "{{count}} lokale wijziging(en) nog niet opgeslagen.",
-    "fr": "{{count}} modification(s) locale(s) pas encore enregistrée(s).",
-    "en": "{{count}} local change(s) not yet saved.",
+    "key": "info.linkedCustomersConsistOfAtLeastTwoCustomerNumbersWithOneDesignatedAsTheMainCustomerTheseCustomersAreInvoicedTogetherFromAFinancialStandpointAndShareEitherPartialOrFullOperationalFunctionality",
+    "nl": "Gelinkte klanten bestaan uit minstens twee klantnummers, waarbij één klant als hoofdklant fungeert. Gelinkte klanten worden financieel samen gefactureerd en delen operationeel een gedeeltelijke of volledige werking.",
+    "fr": "Les clients liés sont sonstitués d'au moins deux numéros de client, dont l'un est désigné comme client principal. Ils sont facturés ensemble et partagent tout ou partie des fonctionnalités opérationnelles.",
+    "en": "Linked customers consist of at least two customer numbers, with one designated as the main customer. These customers are invoiced together from a financial standpoint and share either partial or full operational functionality.",
     "applications": [
       "mypraxis_web"
     ]
   },
   {
-    "key": "info.linkedCustomersConsistOfAtLeastTwoCustomerNumbersWithOneDesignatedAsTheMainCustomerTheseCustomersAreInvoicedTogetherFromAFinancialStandpointAndShareEitherPartialOrFullOperationalFunctionality",
-    "nl": "Gelinkte klanten bestaan uit minstens twee klantnummers, waarbij één klant als hoofdklant fungeert. Gelinkte klanten worden financieel samen gefactureerd en delen operationeel een gedeeltelijke of volledige werking.",
-    "fr": "Les clients liés sont sonstitués d'au moins deux numéros de client, dont l'un est désigné comme client principal. Ils sont facturés ensemble et partagent tout ou partie des fonctionnalités opérationnelles.",
-    "en": "Linked customers consist of at least two customer numbers, with one designated as the main customer. These customers are invoiced together from a financial standpoint and share either partial or full operational functionality.",
+    "key": "info.localChangesNotYetSaved",
+    "nl": "{{count}} lokale wijziging(en) nog niet opgeslagen.",
+    "fr": "{{count}} modification(s) locale(s) pas encore enregistrée(s).",
+    "en": "{{count}} local change(s) not yet saved.",
     "applications": [
       "mypraxis_web"
     ]
@@ -26563,6 +26572,15 @@
     "nl": "In test regel toegevoegd",
     "fr": "Ligne en test ajoutée",
     "en": "Added in test line",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "success.addedPermanentCommentary",
+    "nl": "Permanente commentaar toegevoegd",
+    "fr": "Commentaire permanent ajouté",
+    "en": "Added permanent commentary",
     "applications": [
       "mypraxis_web"
     ]
@@ -28057,15 +28075,6 @@
     "nl": "Periodiek rapport toegevoegd",
     "fr": "Rapport périodique ajouté",
     "en": "Periodic report added",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "success.addedPermanentCommentary",
-    "nl": "Permanente commentaar toegevoegd",
-    "fr": "Commentaire permanent ajouté",
-    "en": "Added permanent commentary",
     "applications": [
       "mypraxis_web"
     ]

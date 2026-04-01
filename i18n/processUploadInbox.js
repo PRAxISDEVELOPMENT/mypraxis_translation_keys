@@ -2,7 +2,7 @@
 
 // Batch processor for upload files already committed into the repo.
 // main = direct updates for existing keys.
-// translation-proposals/* = new entries that stay reviewable in a PR.
+// translation_proposals/* = new entries that stay reviewable in a PR.
 
 const fs = require('fs');
 const path = require('path');

@@ -259,64 +259,84 @@ npm run test:frontend:proposal
 
 Dry-run simulation of the proposal frontend flow.
 
-## Naming Conventions
+## Provenance And Naming
 
-Use structured names in GitHub so editor-driven translation work stays readable.
+Use batch-based naming in GitHub so each translation upload is traceable and readable.
 
-### Branches
+### Frontend-Created Objects
 
-- direct updates
-  No separate branch. Commit the upload payload to `main`.
+These are created by the editor frontend or its GitHub API integration.
 
-- proposal branches
-  Use:
-  `translation-proposals/<timestamp>-<slug>`
+#### Direct Update Flow
+
+- branch
+  `main`
+
+- upload file
+  `frontend_direct_batch_<batchId>.json`
+
+- frontend commit message
+  `Frontend Translation Direct Batch <batchId>`
+
+#### Proposal Flow
+
+- branch
+  `translation_proposals/<batchId>`
+
+- upload file
+  `frontend_proposal_batch_<batchId>.json`
+
+- pull request title
+  `Translation Review Batch <batchId> (<count> entries)`
+
+- frontend commit message
+  `Frontend Translation Proposal Batch <batchId>`
+
+- pull request body
+  Include:
+  - batch id
+  - entry count
+  - source `frontend-editor`
+  - optional editor note or batch label
+
+#### Batch Id Format
+
+Use a stable machine-friendly id:
+
+```text
+YYYYMMDD-HHMMSS-<shortId>
+```
 
 Example:
 
 ```text
-translation-proposals/20260401-guard-duty-call-list
+20260401-114343-gz8lix
 ```
 
-### Upload Files
-
-Store frontend-generated payloads in:
-
-- [`i18n/uploads/incoming`](i18n/uploads/incoming)
-
-Use a structured file name:
+That produces:
 
 ```text
-translation-<timestamp>-<short-id>.json
+branch: translation_proposals/20260401-114343-gz8lix
+file:   frontend_proposal_batch_20260401-114343-gz8lix.json
+pr:     Translation Review Batch 20260401-114343-gz8lix (12 entries)
 ```
 
-Example:
+### Bot-Created Objects
 
-```text
-translation-20260401-113226-vslhv4.json
-```
+These are created by GitHub Actions after the frontend has already committed the upload payload.
 
-### Pull Request Titles
+- artifact regeneration commit
+  `Translation Bot: Regenerate Generated Files`
 
-For new translation proposals, use:
+- upload processing commit
+  `Translation Bot: Process Upload Batch`
 
-```text
-feat(translations): propose new editor entries for <scope>
-```
+### Why This Format
 
-Examples:
-
-```text
-feat(translations): propose new editor entries for guard duty
-feat(translations): propose new editor entries for customer portal
-```
-
-### Bot Commit Messages
-
-Automated commits in this repository use:
-
-- `chore(translations): regenerate generated artifacts`
-- `chore(translations): apply editor upload batch`
+- one batch can contain multiple unrelated entries
+- names stay readable even when scopes are mixed
+- frontend-created items and bot-created items are easy to distinguish
+- branch, file, PR, and commit names all point back to the same batch id
 
 ## Developer Workflow
 
@@ -365,7 +385,7 @@ Use this path when no key exists yet.
 - the system suggests a namespace
 - the system suggests a key
 - the system assigns default applications from the repository config, currently `mypraxis_web`
-- payload is committed into [`i18n/uploads/incoming`](i18n/uploads/incoming) on a branch like `translation-proposals/<timestamp>-<slug>`
+- payload is committed into [`i18n/uploads/incoming`](i18n/uploads/incoming) on a branch like `translation_proposals/<batchId>`
 - a PR is opened to `main`
 - developers review key, namespace, applications, and usage before merge
 
@@ -427,7 +447,7 @@ Important behavior:
 - developers own keys, namespaces, and application usage
 - editors only submit translation content
 - existing-key updates may go directly to `main`
-- new keys must go through `translation-proposals/*` and PR review
+- new keys must go through `translation_proposals/*` and PR review
 - frontend can read generated metadata from `registry.json`, `summary.json`, `namespaces.json`, and `applications.json`
 
 ## Notes

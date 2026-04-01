@@ -1,7 +1,7 @@
 #
 # Processes frontend-uploaded translation payloads committed into i18n/uploads/incoming.
 # main handles existing-key updates directly.
-# translation-proposals/* handles new entries on review branches.
+# translation_proposals/* handles new entries on review branches.
 #
 
 name: Process Translation Editor Uploads
@@ -10,7 +10,7 @@ on:
   push:
     branches:
       - main
-      - 'translation-proposals/**'
+      - 'translation_proposals/**'
     paths:
       - 'i18n/uploads/incoming/*.json'
       - 'i18n/processUpload.js'
@@ -75,7 +75,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No processed upload changes to commit"
           else
-            git commit -m "chore(translations): apply editor upload batch"
+            git commit -m "Translation Bot: Process Upload Batch"
             git pull --rebase origin "${GITHUB_REF_NAME}"
             git push origin HEAD:"${GITHUB_REF_NAME}"
           fi

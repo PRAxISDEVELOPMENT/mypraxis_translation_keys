@@ -1,6 +1,6 @@
-// Translation pipeline for MyPRAxIS.
-// This script validates the flat source file, enforces namespace governance,
-// and generates both runtime locale files and editor-support artifacts.
+// Core translation validator and generator.
+// Reads translations.json + namespaces.json, blocks invalid data,
+// and writes the generated runtime/tooling files under i18n/generated.
 
 const fs = require('fs');
 const path = require('path');
@@ -462,7 +462,7 @@ function collectIssues(entries, namespaceConfig) {
 
         const serializedValues = new Set(indexes.map((index) => JSON.stringify(entries[index])));
 
-        warnings.push({
+        errors.push({
             category: serializedValues.size === 1 ? 'duplicate-key-same' : 'duplicate-key-different',
             categoryLabel:
                 serializedValues.size === 1
@@ -472,7 +472,7 @@ function collectIssues(entries, namespaceConfig) {
             message:
                 serializedValues.size === 1
                     ? `Duplicate key "${key}" is defined multiple times with the same values.`
-                    : `Duplicate key "${key}" is defined multiple times with different values. The last entry currently wins.`,
+                    : `Duplicate key "${key}" is defined multiple times with different values.`,
             entries: indexes.map((index) => formatEntryLabel(index, key))
         });
     }

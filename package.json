@@ -4,6 +4,7 @@
   "scripts": {
     "prepare:upload": "node i18n/processUpload.js prepare",
     "apply:proposals": "node i18n/processUpload.js apply-proposals",
+    "process:upload-inbox": "node i18n/processUploadInbox.js",
     "build:translations": "node i18n/buildTranslations.js",
     "check:translations": "node i18n/buildTranslations.js --check",
     "help:translations": "node i18n/buildTranslations.js --help",

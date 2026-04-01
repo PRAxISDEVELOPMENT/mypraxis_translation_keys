@@ -1,3 +1,9 @@
+#
+# Validates the translation source and rebuilds generated artifacts.
+# PRs are checked for validity and sync.
+# Pushes to main regenerate i18n/generated/*.json and commit them when needed.
+#
+
 name: Build translations
 
 on:
@@ -6,7 +12,12 @@ on:
       - 'i18n/translations.json'
       - 'i18n/namespaces.json'
       - 'i18n/buildTranslations.js'
+      - 'i18n/processUpload.js'
+      - 'i18n/processUploadInbox.js'
+      - 'i18n/upload.schema.json'
+      - 'i18n/translations.schema.json'
       - '.github/workflows/buildTranslations.yml'
+      - '.github/workflows/processTranslationUploads.yml'
   push:
     branches:
       - main
@@ -14,7 +25,12 @@ on:
       - 'i18n/translations.json'
       - 'i18n/namespaces.json'
       - 'i18n/buildTranslations.js'
+      - 'i18n/processUpload.js'
+      - 'i18n/processUploadInbox.js'
+      - 'i18n/upload.schema.json'
+      - 'i18n/translations.schema.json'
       - '.github/workflows/buildTranslations.yml'
+      - '.github/workflows/processTranslationUploads.yml'
   workflow_dispatch:
 
 permissions:
@@ -41,6 +57,12 @@ jobs:
         with:
           node-version: 20
 
+      - name: Check translation tooling syntax
+        run: |
+          node --check i18n/buildTranslations.js
+          node --check i18n/processUpload.js
+          node --check i18n/processUploadInbox.js
+
       - name: Validate translation source structure
         run: node i18n/buildTranslations.js
 
@@ -61,6 +83,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+
+      - name: Check translation tooling syntax
+        run: |
+          node --check i18n/buildTranslations.js
+          node --check i18n/processUpload.js
+          node --check i18n/processUploadInbox.js
 
       - name: Build translations
         run: node i18n/buildTranslations.js

@@ -7,12 +7,12 @@
     "en"
   ],
   "totals": {
-    "sourceEntries": 3206,
+    "sourceEntries": 3205,
     "uniqueKeys": 3205,
     "namespaces": 7,
-    "warnings": 1,
+    "warnings": 0,
     "errors": 0,
-    "duplicateKeys": 1,
+    "duplicateKeys": 0,
     "keysWithMissingLocales": 0
   },
   "namespaces": {
@@ -24,8 +24,6 @@
     "metadata": 2,
     "success": 264
   },
-  "warningCounts": {
-    "Duplicate keys with the same values": 1
-  },
+  "warningCounts": {},
   "errorCounts": {}
 }

@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Local developer helper for the normal translation workflow.
+# It builds translations, asks for a commit message, pushes to main,
+# waits for the build workflow when possible, then pulls the latest changes back.
+
 set -eu
 
 POLL_INTERVAL="${POLL_INTERVAL:-5}"

@@ -12330,6 +12330,12 @@
         "en": "Send e-mail if no results"
     },
     {
+        "key": "common.sendOn",
+        "nl": "Verstuurd op",
+        "fr": "Envoyé le",
+        "en": "Send on"
+    },
+    {
         "key": "common.sent",
         "nl": "Verzonden",
         "fr": "Envoyé",
@@ -19222,17 +19228,5 @@
         "nl": "{{value}} zonetype(s) verwijderd.",
         "fr": "{{value}} type(s) de zone supprimé(s).",
         "en": "{{value}} zone type(s) deleted"
-    },
-    {
-        "key": "common.sendOn",
-        "nl": "Verstuurd op",
-        "fr": "Envoyé le",
-        "en": "Send on"
-    },
-    {
-        "key": "common.sendOn",
-        "nl": "Verstuurd op",
-        "fr": "Envoyé le",
-        "en": "Send on"
     }
 ]

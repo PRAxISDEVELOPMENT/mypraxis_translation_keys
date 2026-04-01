@@ -4,7 +4,7 @@
   "title": "MyPRAxIS Translation Upload Payload",
   "description": "Editor-facing upload payload processed by i18n/processUpload.js before changes are merged into translations.json.",
   "type": "object",
-  "additionalProperties": true,
+  "additionalProperties": false,
   "required": ["entries"],
   "properties": {
     "version": {
@@ -17,10 +17,11 @@
       "type": "array",
       "items": {
         "type": "object",
-        "additionalProperties": true,
+        "additionalProperties": false,
         "properties": {
           "key": {
             "type": "string",
+            "minLength": 1,
             "description": "Optional existing translation key. If present, the upload is treated as a direct update candidate."
           },
           "nl": {
@@ -37,9 +38,6 @@
           },
           "notes": {
             "type": "string"
-          },
-          "deprecated": {
-            "type": "boolean"
           }
         }
       }

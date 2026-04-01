@@ -1,241 +1,91 @@
 # mypraxis_translation_keys
 
-Central translation source and generation pipeline for MyPRAxIS.
+Central translation source and automation pipeline for MyPRAxIS.
 
-This repository keeps translations in one editable source file and automatically generates:
-
-- runtime locale files for the application
-- namespace metadata for future tooling
-- a key registry for autocomplete, validation, and editor support
-- an upload-processing layer for editor-submitted translation changes
-
-## Quick Start
-
-If you only need the normal daily workflow, use this:
-
-```bash
-npm run update
-```
-
-What it does:
-
-1. builds translations locally
-2. shows a compact validation summary
-3. asks for a commit message
-4. commits and pushes
-5. waits for GitHub Actions when possible
-6. pulls the latest generated files back
-
-If you only want to rebuild locally:
-
-```bash
-npm run build:translations
-```
-
-If you want to process an editor upload:
-
-```bash
-npm run prepare:upload -- --input ./upload.json --report ./upload.report.json
-```
-
-If you want help in the terminal:
-
-```bash
-npm run help:translations
-```
-
-If you want a quick health report:
-
-```bash
-npm run report:translations
-```
-
----
-
-## What You Edit
-
-In normal use, you usually edit only:
-
+This repo has 1 source of truth:
 - [`i18n/translations.json`](i18n/translations.json)
 
-Sometimes you may also edit:
+Everything else is validation, generation, or upload automation around that file.
+
+## Core Rules
+
+- Keys must be unique.
+- Editors never choose keys or namespaces.
+- Existing keys may be updated directly.
+- New entries always go through a proposal branch and PR review.
+- Generated files in [`i18n/generated`](i18n/generated) are never edited manually.
+
+## File Overview
+
+### Source and config
+
+- [`i18n/translations.json`](i18n/translations.json)
+  Flat source file with every translation entry.
 
 - [`i18n/namespaces.json`](i18n/namespaces.json)
+  Allowed namespace list and the default namespace.
 
-You should **not** manually edit:
+- [`i18n/translations.schema.json`](i18n/translations.schema.json)
+  Editor schema for the source file.
+
+- [`i18n/upload.schema.json`](i18n/upload.schema.json)
+  Schema for editor upload payloads.
+
+### Scripts
+
+- [`update.sh`](update.sh)
+  Simple local developer flow: build, commit, push, wait for GitHub Actions, pull latest back.
+
+- [`i18n/buildTranslations.js`](i18n/buildTranslations.js)
+  Validates the source, blocks duplicate keys and bad namespaces, and generates runtime files plus reporting artifacts.
+
+- [`i18n/processUpload.js`](i18n/processUpload.js)
+  Takes editor uploads and splits them into:
+  existing-key direct updates, or new-entry proposals.
+
+- [`i18n/processUploadInbox.js`](i18n/processUploadInbox.js)
+  Processes queued upload JSON files from the inbox directories the same way GitHub Actions does.
+
+### Generated output
 
 - [`i18n/generated/nl.json`](i18n/generated/nl.json)
 - [`i18n/generated/fr.json`](i18n/generated/fr.json)
 - [`i18n/generated/en.json`](i18n/generated/en.json)
+  Runtime locale files consumed by the application.
+
 - [`i18n/generated/keys.json`](i18n/generated/keys.json)
+  Flat key list for lookups and tooling.
+
 - [`i18n/generated/namespaces.json`](i18n/generated/namespaces.json)
+  Namespace summary with key counts.
+
 - [`i18n/generated/registry.json`](i18n/generated/registry.json)
+  Per-key registry with metadata, duplicates, and missing locale info.
 
-Those files are generated automatically.
+- [`i18n/generated/summary.json`](i18n/generated/summary.json)
+  Compact health summary for dashboards and CI.
 
-Editor uploads should not write directly to [`i18n/translations.json`](i18n/translations.json).
-They should first go through [`i18n/processUpload.js`](i18n/processUpload.js).
+### GitHub workflows
 
----
+- [`.github/workflows/buildTranslations.yml`](.github/workflows/buildTranslations.yml)
+  Validates scripts and rebuilds generated translation files.
 
-## Daily Workflow
+- [`.github/workflows/processTranslationUploads.yml`](.github/workflows/processTranslationUploads.yml)
+  Processes editor-upload payloads committed from the frontend.
 
-### Add or update translations
+### Files that cannot contain inline comments
 
-1. Open [`i18n/translations.json`](i18n/translations.json)
-2. Add or update a translation entry
-3. Run:
+These files are explained here in the README because JSON does not support comments:
 
-```bash
-npm run update
-```
+- [`i18n/translations.json`](i18n/translations.json)
+- [`i18n/namespaces.json`](i18n/namespaces.json)
+- [`i18n/upload.schema.json`](i18n/upload.schema.json)
+- [`i18n/translations.schema.json`](i18n/translations.schema.json)
+- [`package.json`](package.json)
 
-### Only validate locally
+## Namespaces
 
-```bash
-npm run validate:translations
-```
-
-Use this when you want to catch warnings and errors before committing.
-
-### Only check whether generated files are already correct
-
-```bash
-npm run check:translations
-```
-
-Use this when you want to verify sync without rewriting files.
-
-### Process editor uploads
-
-This repository now supports a split upload flow:
-
-- existing keys can be updated directly
-- new translations without a key become proposals for developer review
-
-Prepare an upload report:
-
-```bash
-npm run prepare:upload -- --input ./upload.json --report ./upload.report.json
-```
-
-Prepare an upload and immediately merge safe updates for existing keys:
-
-```bash
-npm run prepare:upload -- --input ./upload.json --report ./upload.report.json --apply-direct
-```
-
-Accept the proposal entries from a report after review:
-
-```bash
-npm run apply:proposals -- --input ./upload.report.json
-```
-
----
-
-## How A Translation Entry Works
-
-Each entry in [`i18n/translations.json`](i18n/translations.json) is a flat object.
-
-Example:
-
-```json
-{
-  "key": "common.save",
-  "description": "Primary save button",
-  "nl": "Opslaan",
-  "fr": "Enregistrer",
-  "en": "Save"
-}
-```
-
-Required fields:
-
-- `key`
-- `nl`
-- `fr`
-- `en`
-
-Optional fields:
-
-- `description`
-- `notes`
-- `deprecated`
-
-The generator converts this flat structure into nested runtime JSON.
-
-Example:
-
-```json
-{
-  "key": "common.save",
-  "nl": "Opslaan",
-  "fr": "Enregistrer",
-  "en": "Save"
-}
-```
-
-becomes this in [`i18n/generated/nl.json`](i18n/generated/nl.json):
-
-```json
-{
-  "common": {
-    "save": "Opslaan"
-  }
-}
-```
-
----
-
-## How To Choose A Key
-
-Keys use dot notation:
-
-```text
-namespace.leaf
-namespace.group.leaf
-```
-
-Good examples:
-
-- `common.save`
-- `common.delete`
-- `info.helpText`
-- `error.apiErrors`
-- `success.customerActivated`
-- `authentication.firebaseUUID`
-
-Avoid:
-
-- `.save`
-- `save.`
-- `common..save`
-- `button that saves`
-- using the same key for two different meanings
-
-### Practical naming advice
-
-- Use `common.*` for shared UI labels, buttons, form fields, and generic text
-- Use `info.*` for helper text, descriptions, instructions, and hints
-- Use `error.*` for error labels or failure-state text
-- Use `success.*` for success confirmations
-- Use `authentication.*` for login or auth-related terms
-- Use `applicationNames.*` for product or app names
-- Use `metadata.*` for page title and meta description content
-
-If you are unsure, start with `common.*` only when the text is truly generic and reusable.
-
-For editor uploads, keys are optional in the upload payload.
-If the editor supplies an existing key, the upload processor treats the item as a direct update.
-If no key is supplied, the upload processor suggests a namespace and a new key for review.
-
----
-
-## Namespace System
-
-Allowed namespaces are defined centrally in [`i18n/namespaces.json`](i18n/namespaces.json).
-
-Current namespaces:
+Allowed namespaces today:
 
 - `applicationNames`
 - `authentication`
@@ -245,119 +95,156 @@ Current namespaces:
 - `metadata`
 - `success`
 
-Important rules:
+Use them like this:
 
-- if you use a namespace that does not exist in [`i18n/namespaces.json`](i18n/namespaces.json), the build fails
-- if you use a namespace marked as restricted, the build warns
+- `common.*`
+  Generic UI labels, buttons, field names, reusable text.
 
-This is how namespace governance works:
+- `info.*`
+  Help text, explanation, onboarding, instructions.
 
-1. choose an existing namespace
-2. create a clear key under that namespace
-3. only add a new namespace if it is truly needed
+- `error.*`
+  Error labels and failure messages.
 
-For editor uploads, namespace suggestions are automatic.
-New namespace creation should still be reviewed by developers before merge.
+- `success.*`
+  Success messages and completed-state feedback.
 
----
+- `authentication.*`
+  Login, token, verification, auth-related text.
 
-## How To Add A New Key
+- `applicationNames.*`
+  Product or application names.
 
-Example: you want to add a new reusable button label for "Cancel".
+- `metadata.*`
+  Page titles and meta descriptions.
 
-1. Decide the namespace:
-   `common`, because this is generic UI text
+If no stronger namespace fits, use `common.*`.
 
-2. Add the entry to [`i18n/translations.json`](i18n/translations.json):
+## Commands
 
-```json
-{
-  "key": "common.cancel",
-  "description": "Generic cancel button",
-  "nl": "Annuleren",
-  "fr": "Annuler",
-  "en": "Cancel"
-}
-```
-
-3. Run:
+### Developer flow
 
 ```bash
 npm run build:translations
 ```
 
-4. The generator updates:
-   - [`i18n/generated/nl.json`](i18n/generated/nl.json)
-   - [`i18n/generated/fr.json`](i18n/generated/fr.json)
-   - [`i18n/generated/en.json`](i18n/generated/en.json)
-   - [`i18n/generated/keys.json`](i18n/generated/keys.json)
-   - [`i18n/generated/namespaces.json`](i18n/generated/namespaces.json)
-   - [`i18n/generated/registry.json`](i18n/generated/registry.json)
+Validates the source and rewrites generated files.
 
-5. If everything looks correct, run:
+```bash
+npm run check:translations
+```
+
+Checks whether generated files are already in sync.
+
+```bash
+npm run validate:translations
+```
+
+Fails on warnings and errors.
+
+```bash
+npm run report:translations
+```
+
+Prints a compact health report.
+
+```bash
+npm run namespaces:translations
+```
+
+Prints the configured namespaces.
 
 ```bash
 npm run update
 ```
 
----
+Local end-to-end developer flow: build, commit, push, wait, pull.
 
-## Editor Upload Flow
+### Upload flow
 
-The editor-facing flow is intentionally different from the developer flow.
-
-### Existing key updates
-
-If the upload entry contains a known key:
-
-- the key is treated as fixed
-- namespace is treated as fixed
-- only locale values are updated
-- this path is safe to merge directly
-
-Example upload item:
-
-```json
-{
-  "key": "common.save",
-  "fr": "Enregistrer"
-}
+```bash
+npm run prepare:upload -- --input ./upload.json --report ./upload.report.json
 ```
 
-### New translation proposals
+Classifies an upload into direct updates and proposals.
 
-If the upload entry does not contain a key:
-
-- the processor suggests a namespace
-- the processor suggests a new key
-- the entry is placed in the proposal section of the report
-- developers can review and accept it before merge
-
-Example upload item:
-
-```json
-{
-  "nl": "Tijdelijke bellijst",
-  "en": "Temporary call list"
-}
+```bash
+npm run prepare:upload -- --input ./upload.json --report ./upload.report.json --apply-direct
 ```
 
-### Upload payload schema
+Does the same, but also applies safe direct updates immediately.
 
-Use [`i18n/upload.schema.json`](i18n/upload.schema.json) for editor payloads.
-The payload format is intentionally lighter than the main source file.
+```bash
+npm run apply:proposals -- --input ./upload.report.json
+```
 
-Example payload:
+Accepts the proposals from a previously generated report.
+
+```bash
+npm run process:upload-inbox -- --mode direct
+```
+
+Processes queued uploads meant for `main`.
+
+```bash
+npm run process:upload-inbox -- --mode proposal
+```
+
+Processes queued uploads meant for proposal branches.
+
+## Developer Flow
+
+For devs working in editor:
+
+1. Edit [`i18n/translations.json`](i18n/translations.json) and, if needed, [`i18n/namespaces.json`](i18n/namespaces.json).
+2. Run `npm run build:translations`.
+3. Review generated files in [`i18n/generated`](i18n/generated).
+4. Commit and push.
+
+This is the only flow where keys and namespaces are edited directly.
+
+## Editor Flow
+
+Editors work from your application, not directly in the source file.
+
+### Existing key update
+
+Use this when the translation key already exists.
+
+- The payload includes the fixed `key`.
+- Only `nl`, `fr`, and `en` may change.
+- The payload is committed to [`i18n/uploads/incoming`](i18n/uploads/incoming) on `main`.
+- GitHub Actions processes it and applies the locale changes directly.
+
+Example:
 
 ```json
 {
-  "version": 1,
-  "source": "editor-ui",
   "entries": [
     {
       "key": "common.save",
       "fr": "Enregistrer"
-    },
+    }
+  ]
+}
+```
+
+### New translation proposal
+
+Use this when the editor adds new text without a key.
+
+- The payload does not include a `key`.
+- The system suggests a namespace from the existing namespace list.
+- The system suggests a key.
+- The payload is committed to [`i18n/uploads/incoming`](i18n/uploads/incoming) on a branch like `translation-proposals/<id>`.
+- A PR is opened to `main`.
+- Devs review the proposed key, namespace, and app usage before merge.
+
+Example:
+
+```json
+{
+  "entries": [
     {
       "nl": "Tijdelijke bellijst",
       "en": "Temporary call list"
@@ -366,397 +253,47 @@ Example payload:
 }
 ```
 
-### What the upload processor does
-
-[`i18n/processUpload.js`](i18n/processUpload.js) reads the upload payload and:
-
-- separates direct existing-key updates from new-entry proposals
-- suggests a namespace for entries without a key
-- suggests a new key for entries without a key
-- optionally applies direct updates to [`i18n/translations.json`](i18n/translations.json)
-- writes a report JSON file for review and automation
-
-### Suggested production flow
-
-For editors using your application:
-
-1. editor submits upload payload
-2. backend runs `npm run prepare:upload`
-3. direct updates for existing keys may be auto-applied
-4. proposal entries are committed on a review branch or PR
-5. developers review the proposal PR
-6. after merge, GitHub Actions regenerates [`i18n/generated`](i18n/generated)
-
-For developers working in VS Code:
-
-1. edit [`i18n/translations.json`](i18n/translations.json) or [`i18n/namespaces.json`](i18n/namespaces.json)
-2. run `npm run build:translations`
-3. commit and push
-
-This keeps the developer workflow strict while keeping the editor workflow simple.
-
----
-
-## Commands
-
-### `npm run help:translations`
-
-Shows a quick help guide in the terminal:
-
-```bash
-npm run help:translations
-```
-
-### `npm run build:translations`
-
-Builds all generated artifacts:
-
-```bash
-npm run build:translations
-```
-
-This:
-
-- validates the source file
-- validates namespace usage
-- prints a summary
-- rewrites all generated files
-
-### `npm run check:translations`
-
-Checks whether generated files are already in sync:
-
-```bash
-npm run check:translations
-```
-
-### `npm run validate:translations`
-
-Fails on warnings and errors:
-
-```bash
-npm run validate:translations
-```
-
-This is useful before a commit or before merging changes.
-
-### `npm run namespaces:translations`
-
-Prints all configured namespaces and their status:
-
-```bash
-npm run namespaces:translations
-```
-
-### `npm run report:translations`
-
-Prints a compact translation health report:
-
-```bash
-npm run report:translations
-```
-
-This gives you:
-
-- total source entries
-- total unique keys
-- namespace counts
-- duplicate-key count
-- missing-locale count
-- warning and error totals
-
-### `npm run update`
-
-Runs the end-to-end local workflow:
-
-```bash
-npm run update
-```
-
-This uses [`update.sh`](update.sh).
-
----
-
-## What The Generator Produces
-
-The generator script is [`i18n/buildTranslations.js`](i18n/buildTranslations.js).
-
-It creates two types of output.
-
-### 1. Runtime locale files
-
-These are the files your application should consume:
-
-- [`i18n/generated/nl.json`](i18n/generated/nl.json)
-- [`i18n/generated/fr.json`](i18n/generated/fr.json)
-- [`i18n/generated/en.json`](i18n/generated/en.json)
-
-The application should **not** read [`i18n/translations.json`](i18n/translations.json) directly.
-
-### 2. Tooling and editor support files
-
-These files exist for governance, autocomplete, and future editor support.
-
-#### [`i18n/generated/keys.json`](i18n/generated/keys.json)
-
-Contains a flat sorted list of all unique keys.
-
-Useful for:
-
-- autocomplete
-- usage scans
-- quick key lookups
-
-#### [`i18n/generated/namespaces.json`](i18n/generated/namespaces.json)
-
-Contains the generated namespace summary, including:
-
-- namespace names
-- labels
-- descriptions
-- status
-- key counts
-
-Useful for:
-
-- namespace dropdowns
-- docs
-- future editor forms
-
-#### [`i18n/generated/registry.json`](i18n/generated/registry.json)
-
-Contains detailed metadata per unique key, including:
-
-- namespace
-- leaf segment
-- source entry numbers
-- duplicate counts
-- missing locale info
-- resolved values
-
-Useful for:
-
-- future editor backends
-- validation reports
-- usage comparison with another repo
-
-#### [`i18n/generated/summary.json`](i18n/generated/summary.json)
-
-Contains a compact health summary of the current translation source.
-
-Useful for:
-
-- dashboards
-- CI reporting
-- future admin overviews
-- quick diagnostics without parsing the full registry
-
----
-
 ## Validation Rules
 
-The build checks for:
+[`i18n/buildTranslations.js`](i18n/buildTranslations.js) enforces these rules:
 
-- invalid JSON
-- missing `key`
-- invalid key structure
-- unknown namespaces
-- restricted namespaces
-- duplicate keys
-- missing locale values
-- nested key conflicts
+- missing or invalid keys are errors
+- unknown namespaces are errors
+- duplicate keys are errors
+- invalid nested key conflicts are errors
+- missing locale values are warnings
+- restricted namespaces are warnings
 
-### Important behavior
+Important:
 
-- unknown namespaces are **errors**
-- invalid structure is an **error**
-- missing locale values are **warnings**
-- duplicate keys are **warnings**
-- restricted namespaces are **warnings**
+- If a key is duplicated, the build fails.
+- If a locale value is empty, the build still works but reports a warning.
+- `nl` and `fr` fall back to `en` when possible in generated runtime output.
 
-If you run `npm run validate:translations`, warnings also become blocking.
+## Upload Payload Rules
 
----
+[`i18n/processUpload.js`](i18n/processUpload.js) enforces these rules:
 
-## GitHub Actions
+- direct updates must use an existing non-empty key
+- direct updates may only contain `key`, `nl`, `fr`, `en`
+- proposal entries may not contain a key
+- proposal entries may only contain `nl`, `fr`, `en`, `description`, `notes`
+- namespace suggestions are limited to namespaces that already exist in [`i18n/namespaces.json`](i18n/namespaces.json)
 
-The workflow file is:
+## Inbox Directories
 
-- [`.github/workflows/buildTranslations.yml`](.github/workflows/buildTranslations.yml)
+- [`i18n/uploads/incoming`](i18n/uploads/incoming)
+  Frontend-uploaded payloads waiting to be processed.
 
-It runs when these files change:
+- [`i18n/uploads/processed`](i18n/uploads/processed)
+  Archived payloads after processing.
 
-- `i18n/translations.json`
-- `i18n/namespaces.json`
-- `i18n/buildTranslations.js`
-- `.github/workflows/buildTranslations.yml`
+- [`i18n/upload-reports`](i18n/upload-reports)
+  JSON reports written by upload processing.
 
-### On pull requests
+## Production Model
 
-GitHub Actions:
-
-1. checks out the repo
-2. sets up Node.js
-3. runs the generator
-4. checks that generated files are in sync
-
-### On `main`
-
-GitHub Actions:
-
-1. rebuilds generated files
-2. commits them if they changed
-3. pushes the generated commit back to `main`
-
-This means the repo can stay the single source of truth while still shipping runtime-ready locale files.
-
----
-
-## VS Code Support
-
-This repository includes:
-
-- [`i18n/translations.schema.json`](i18n/translations.schema.json)
-- [`.vscode/settings.json`](.vscode/settings.json)
-
-That gives [`i18n/translations.json`](i18n/translations.json) better editor support in VS Code.
-
-It helps with:
-
-- structure awareness
-- expected fields
-- less guesswork when editing entries
-
----
-
-## Future Editor Integration
-
-This repo is ready to support a future translation editor.
-
-Recommended architecture:
-
-```text
-translation editor frontend
--> backend or controlled GitHub integration
--> update translations.json in this repo
--> GitHub Actions rebuilds generated files
--> editor polls workflow status
--> main application consumes generated locale files
-```
-
-Recommended responsibility split:
-
-This repo should own:
-
-- source data
-- namespace contract
-- generator logic
-- generated artifacts
-- GitHub workflow
-
-Another project should own:
-
-- translator UI
-- authentication
-- save flow
-- workflow polling
-- user-facing success and error messages
-
----
-
-## Common Problems
-
-### 1. Unknown namespace
-
-You added a key like:
-
-```json
-{
-  "key": "random.save",
-  "nl": "Opslaan",
-  "fr": "Enregistrer",
-  "en": "Save"
-}
-```
-
-but `random` does not exist in [`i18n/namespaces.json`](i18n/namespaces.json).
-
-Fix:
-
-- use an existing namespace
-- or deliberately add a new namespace to [`i18n/namespaces.json`](i18n/namespaces.json)
-
-### 2. Duplicate key
-
-Two entries use the same `key`.
-
-Result:
-
-- build warns
-- last value wins in generated runtime files
-
-Fix:
-
-- merge them into one entry
-- or rename one of the keys
-
-### 3. Missing locale values
-
-If `nl`, `fr`, or `en` is empty, the build warns.
-
-For `nl` and `fr`, the generator falls back to English when possible.
-
-Fix:
-
-- fill in the missing translation values
-
-### 4. Generated files are out of sync
-
-Run:
-
-```bash
-npm run build:translations
-```
-
-or:
-
-```bash
-npm run update
-```
-
-### 5. Local branch is behind remote
-
-If GitHub Actions created an extra generated commit, your branch may be behind.
-
-Run:
-
-```bash
-git pull --rebase origin main
-```
-
-The update script already does this at the end.
-
----
-
-## Best Practices
-
-- keep keys unique
-- keep values complete in all locales
-- use `description` when meaning is not obvious
-- use `notes` when translators need context
-- prefer an existing namespace before creating a new one
-- do not leave `test.*` keys in production
-- treat warnings as real cleanup work
-
----
-
-## Why This Setup Is Strong
-
-This setup gives you:
-
-- one source of truth
-- generated runtime files
-- namespace governance
-- key registry support
-- editor readiness
-- GitHub automation
+- developers own keys and namespaces
+- editors only submit locale content
+- direct existing-key updates can go to `main`
+- new entries must go through `translation-proposals/*` and PR review

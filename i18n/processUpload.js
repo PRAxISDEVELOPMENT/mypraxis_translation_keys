@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
+// Upload classifier for editor-submitted changes.
+// Existing keys become direct locale updates.
+// Entries without a key become proposals with a suggested namespace and key.
+
 const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
@@ -9,24 +13,14 @@ const SOURCE_PATH = path.join(__dirname, 'translations.json');
 const NAMESPACE_CONFIG_PATH = path.join(__dirname, 'namespaces.json');
 const BUILD_SCRIPT_PATH = path.join(__dirname, 'buildTranslations.js');
 const LOCALES = ['nl', 'fr', 'en'];
-
-const DOMAIN_NAMESPACE_KEYWORDS = [
-    { name: 'billing', label: 'Billing', keywords: ['billing', 'invoice', 'price', 'payment', 'facturation'] },
-    { name: 'calls', label: 'Calls', keywords: ['call', 'operator', 'bellijst', 'call list', 'temporary call list'] },
-    { name: 'contacts', label: 'Contacts', keywords: ['contact', 'phone', 'telephone', 'email contact'] },
-    { name: 'contracts', label: 'Contracts', keywords: ['contract', 'signature', 'layout', 'attachment'] },
-    { name: 'customers', label: 'Customers', keywords: ['customer', 'client', 'installation'] },
-    { name: 'documents', label: 'Documents', keywords: ['document', 'file', 'attachment', 'template', 'download'] },
-    { name: 'notifications', label: 'Notifications', keywords: ['notification', 'alarm', 'event', 'alert'] },
-    { name: 'reports', label: 'Reports', keywords: ['report', 'pdf', 'excel', 'export'] }
-];
+const DIRECT_UPDATE_ALLOWED_FIELDS = new Set(['key', ...LOCALES]);
+const PROPOSAL_ALLOWED_FIELDS = new Set([...LOCALES, 'description', 'notes']);
 
 function parseArgs(argv) {
     const result = {
         _: [],
         build: true,
-        applyDirect: false,
-        allowNamespaceProposals: false
+        applyDirect: false
     };
 
     for (let index = 0; index < argv.length; index += 1) {
@@ -51,9 +45,6 @@ function parseArgs(argv) {
                 break;
             case 'apply-direct':
                 result.applyDirect = true;
-                break;
-            case 'allow-namespace-proposals':
-                result.allowNamespaceProposals = true;
                 break;
             case 'no-build':
                 result.build = false;
@@ -89,9 +80,6 @@ Options
 
   --apply-direct
     When preparing, immediately merge safe updates for existing keys into translations.json.
-
-  --allow-namespace-proposals
-    Allow the report to suggest a brand-new namespace for review when a strong domain match is found.
 
   --no-build
     Skip running the translation generator after applying changes.
@@ -177,6 +165,14 @@ function toOptionalTrimmedString(value) {
     return value.trim();
 }
 
+function getUnexpectedFields(entry, allowedFields) {
+    return Object.keys(entry).filter((field) => !allowedFields.has(field));
+}
+
+function hasOwn(entry, field) {
+    return Object.prototype.hasOwnProperty.call(entry, field);
+}
+
 function getUploadText(entry) {
     for (const locale of ['en', 'nl', 'fr']) {
         const value = toOptionalTrimmedString(entry[locale]);
@@ -187,6 +183,16 @@ function getUploadText(entry) {
     }
 
     return '';
+}
+
+function getSuggestionContext(entry) {
+    return [
+        getUploadText(entry),
+        toOptionalTrimmedString(entry.description),
+        toOptionalTrimmedString(entry.notes)
+    ]
+        .filter(Boolean)
+        .join(' ');
 }
 
 function normalizeWords(input) {
@@ -271,98 +277,88 @@ function ensureUniqueKey(baseKey, usedKeys) {
     }
 }
 
-function suggestNamespace(entry, namespaceConfig, options = {}) {
+function hasNamespace(namespaceConfig, namespace) {
+    return namespaceConfig.namespaceMap.has(namespace);
+}
+
+// Namespace suggestions are intentionally limited to namespaces that already exist.
+function suggestNamespace(entry, namespaceConfig) {
     const text = getUploadText(entry);
-    const lower = text.toLowerCase();
+    const context = getSuggestionContext(entry);
+    const lower = context.toLowerCase();
+    const defaultNamespace = hasNamespace(namespaceConfig, namespaceConfig.defaultNamespace)
+        ? namespaceConfig.defaultNamespace
+        : 'common';
 
     if (!text) {
         return {
-            namespace: namespaceConfig.defaultNamespace || 'common',
+            namespace: defaultNamespace,
             confidence: 'low',
-            reason: 'No text was provided, so the default namespace was used.',
-            namespaceProposal: null
+            reason: 'No text was provided, so the default namespace was used.'
         };
     }
 
     const directMatches = [
-        {
-            namespace: 'authentication',
-            confidence: 'high',
-            reason: 'Detected authentication terminology.',
-            pattern: /auth|password|login|logout|verify|verification|firebase|token|credential|multifactor|two factor|captcha|email address/
-        },
-        {
-            namespace: 'error',
-            confidence: 'high',
-            reason: 'Detected failure or validation language.',
-            pattern: /cannot|invalid|failed|missing|required|not found|expired|restricted|unable|must be/
-        },
-        {
-            namespace: 'success',
-            confidence: 'high',
-            reason: 'Detected completed-state language.',
-            pattern: /\b(added|deleted|changed|updated|saved|imported|registered|completed|refreshed)\b/
-        },
-        {
-            namespace: 'info',
-            confidence: 'medium',
-            reason: 'Detected explanatory or helper copy.',
-            pattern: /^please |^to disable |^to enable |^as soon as |^you are about to |check the box|this means/
-        },
-        {
-            namespace: 'applicationNames',
-            confidence: 'medium',
-            reason: 'Detected a product or application name.',
-            pattern: /^(mypraxis|praxis)\b/
-        }
+        [
+            'metadata',
+            'high',
+            'Detected page metadata wording.',
+            /(page title|meta description|browser title|seo title|seo description|\bmetadata\b)/
+        ],
+        [
+            'applicationNames',
+            'high',
+            'Detected a product or application name.',
+            /^(mypraxis|praxis|postman|postgres|innovaphone)\b/
+        ],
+        [
+            'authentication',
+            'high',
+            'Detected authentication terminology.',
+            /(auth|password|login|logout|sign in|sign out|verify|verification|firebase|token|credential|multifactor|two factor|captcha|bearer|authenticator|email verification|authorization)/
+        ],
+        [
+            'error',
+            'high',
+            'Detected failure or validation language.',
+            /(\berror\b|cannot|invalid|failed|failure|missing|required|not found|expired|restricted|unable|forbidden|not authorized|must be|already exists)/
+        ],
+        [
+            'success',
+            'high',
+            'Detected completed-state language.',
+            /(\bsuccess\b|successfully|\badded\b|\bdeleted\b|\bchanged\b|\bupdated\b|\bsaved\b|\bimported\b|\bregistered\b|\bcompleted\b|\brefreshed\b|\bcreated\b|\bcopied\b|\bsent\b)/
+        ],
+        [
+            'info',
+            'medium',
+            'Detected explanatory or helper copy.',
+            /(^please |^to disable |^to enable |^as soon as |^you are about to |check the box|this means|you can|used to|intended for|before continuing|after successful|by pressing this button)/
+        ]
     ];
 
-    for (const match of directMatches) {
-        if (match.pattern.test(lower)) {
+    for (const [namespace, confidence, reason, pattern] of directMatches) {
+        if (hasNamespace(namespaceConfig, namespace) && pattern.test(lower)) {
             return {
-                namespace: match.namespace,
-                confidence: match.confidence,
-                reason: match.reason,
-                namespaceProposal: null
+                namespace,
+                confidence,
+                reason
             };
         }
     }
 
-    if (options.allowNamespaceProposals) {
-        for (const candidate of DOMAIN_NAMESPACE_KEYWORDS) {
-            const hit = candidate.keywords.some((keyword) => lower.includes(keyword));
-
-            if (!hit) {
-                continue;
-            }
-
-            if (namespaceConfig.namespaceMap.has(candidate.name)) {
-                return {
-                    namespace: candidate.name,
-                    confidence: 'medium',
-                    reason: `Detected strong domain match for "${candidate.name}".`,
-                    namespaceProposal: null
-                };
-            }
-
-            return {
-                namespace: namespaceConfig.defaultNamespace || 'common',
-                confidence: 'low',
-                reason: `Detected a likely new domain namespace "${candidate.name}", but it does not yet exist.`,
-                namespaceProposal: {
-                    name: candidate.name,
-                    label: candidate.label,
-                    description: `Suggested automatically from uploaded translation content related to ${candidate.name}.`
-                }
-            };
-        }
+    if (hasNamespace(namespaceConfig, 'info') && text.length > 90) {
+        return {
+            namespace: 'info',
+            confidence: 'medium',
+            reason: 'Longer explanatory copy usually belongs in the info namespace.'
+        };
     }
 
     return {
-        namespace: 'common',
+        namespace: hasNamespace(namespaceConfig, 'common') ? 'common' : defaultNamespace,
         confidence: text.length > 60 ? 'medium' : 'low',
-        reason: 'No stronger namespace signal was detected, so common was used.',
-        namespaceProposal: null
+        reason: 'No stronger namespace signal was detected, so common was used.'
     };
 }
 
@@ -378,18 +374,27 @@ function createReportSkeleton(command, inputPath) {
             appliedDirectUpdates: 0,
             proposals: 0,
             skipped: 0,
-            errors: 0,
-            namespaceProposals: 0
+            errors: 0
         },
         directUpdates: [],
         proposals: [],
         skipped: [],
-        errors: [],
-        namespaceProposals: []
+        errors: []
     };
 }
 
 function buildDirectUpdate(uploadEntry, existingEntry, index) {
+    const unexpectedFields = getUnexpectedFields(uploadEntry, DIRECT_UPDATE_ALLOWED_FIELDS);
+
+    if (unexpectedFields.length > 0) {
+        return {
+            type: 'error',
+            index,
+            key: existingEntry.key,
+            reason: `Direct updates may only contain key, nl, fr, and en. Unexpected fields: ${unexpectedFields.join(', ')}.`
+        };
+    }
+
     const changes = {};
 
     for (const locale of LOCALES) {
@@ -426,8 +431,9 @@ function buildDirectUpdate(uploadEntry, existingEntry, index) {
     };
 }
 
-function buildProposal(uploadEntry, index, usedKeys, namespaceConfig, options) {
+function buildProposal(uploadEntry, index, usedKeys, namespaceConfig) {
     const text = getUploadText(uploadEntry);
+    const unexpectedFields = getUnexpectedFields(uploadEntry, PROPOSAL_ALLOWED_FIELDS);
 
     if (!text) {
         return {
@@ -437,7 +443,23 @@ function buildProposal(uploadEntry, index, usedKeys, namespaceConfig, options) {
         };
     }
 
-    const namespaceSuggestion = suggestNamespace(uploadEntry, namespaceConfig, options);
+    if (unexpectedFields.length > 0) {
+        return {
+            type: 'error',
+            index,
+            reason: `Proposal entries may only contain nl, fr, en, description, and notes. Unexpected fields: ${unexpectedFields.join(', ')}.`
+        };
+    }
+
+    if (hasOwn(uploadEntry, 'key')) {
+        return {
+            type: 'error',
+            index,
+            reason: 'Proposal entries may not contain a key. Existing keys must be sent through the direct-update path.'
+        };
+    }
+
+    const namespaceSuggestion = suggestNamespace(uploadEntry, namespaceConfig);
     const baseKey = `${namespaceSuggestion.namespace}.${buildLeafKey(text) || 'newTranslation'}`;
     const suggestedKey = ensureUniqueKey(baseKey, usedKeys);
     const proposedEntry = {
@@ -462,7 +484,6 @@ function buildProposal(uploadEntry, index, usedKeys, namespaceConfig, options) {
         suggestedNamespace: namespaceSuggestion.namespace,
         confidence: namespaceSuggestion.confidence,
         reason: namespaceSuggestion.reason,
-        namespaceProposal: namespaceSuggestion.namespaceProposal,
         proposedEntry,
         reviewRequired: true
     };
@@ -506,9 +527,26 @@ function prepareUpload(options) {
 
     payload.entries.forEach((uploadEntry, uploadIndex) => {
         const index = uploadIndex + 1;
+
+        if (!uploadEntry || typeof uploadEntry !== 'object' || Array.isArray(uploadEntry)) {
+            report.errors.push({
+                index,
+                reason: 'Each uploaded entry must be an object.'
+            });
+            return;
+        }
+
         const normalizedKey = typeof uploadEntry.key === 'string' && uploadEntry.key.trim() !== ''
             ? uploadEntry.key.trim()
             : '';
+
+        if (hasOwn(uploadEntry, 'key') && !normalizedKey) {
+            report.errors.push({
+                index,
+                reason: 'If a key is provided, it must be a non-empty string.'
+            });
+            return;
+        }
 
         if (normalizedKey) {
             const existingEntry = byKey.get(normalizedKey);
@@ -524,6 +562,11 @@ function prepareUpload(options) {
 
             const result = buildDirectUpdate(uploadEntry, existingEntry, index);
 
+            if (result.type === 'error') {
+                report.errors.push(result);
+                return;
+            }
+
             if (result.type === 'skipped') {
                 report.skipped.push(result);
                 return;
@@ -534,20 +577,16 @@ function prepareUpload(options) {
             return;
         }
 
-        const proposal = buildProposal(uploadEntry, index, usedKeys, namespaceConfig, {
-            allowNamespaceProposals: options.allowNamespaceProposals
-        });
+        const proposal = buildProposal(uploadEntry, index, usedKeys, namespaceConfig);
+
+        if (proposal.type === 'error') {
+            report.errors.push(proposal);
+            return;
+        }
 
         if (proposal.type === 'skipped') {
             report.skipped.push(proposal);
             return;
-        }
-
-        if (proposal.namespaceProposal) {
-            report.namespaceProposals.push({
-                index,
-                suggestedNamespace: proposal.namespaceProposal
-            });
         }
 
         report.proposals.push(proposal);
@@ -569,7 +608,6 @@ function prepareUpload(options) {
     report.summary.proposals = report.proposals.length;
     report.summary.skipped = report.skipped.length;
     report.summary.errors = report.errors.length;
-    report.summary.namespaceProposals = report.namespaceProposals.length;
 
     const reportPath = path.resolve(
         options.report || `${options.input}.report.json`
@@ -581,7 +619,6 @@ function prepareUpload(options) {
     console.log(`  Direct updates:         ${report.summary.directUpdates}`);
     console.log(`  Applied direct updates: ${report.summary.appliedDirectUpdates}`);
     console.log(`  New proposals:          ${report.summary.proposals}`);
-    console.log(`  Namespace proposals:    ${report.summary.namespaceProposals}`);
     console.log(`  Skipped:                ${report.summary.skipped}`);
     console.log(`  Errors:                 ${report.summary.errors}`);
     console.log(`  Report:                 ${path.relative(ROOT_DIR, reportPath)}`);
@@ -643,7 +680,7 @@ function applyProposals(options) {
     console.log('\nApplied Proposal Entries');
     console.log(`  Accepted proposals: ${acceptedEntries.length}`);
     console.log(`  Source file:        ${path.relative(ROOT_DIR, SOURCE_PATH)}`);
-  }
+}
 
 function main() {
     const options = parseArgs(process.argv.slice(2));

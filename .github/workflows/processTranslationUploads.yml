@@ -1,0 +1,79 @@
+#
+# Processes frontend-uploaded translation payloads committed into i18n/uploads/incoming.
+# main handles existing-key updates directly.
+# translation-proposals/* handles new entries on review branches.
+#
+
+name: Process translation uploads
+
+on:
+  push:
+    branches:
+      - main
+      - 'translation-proposals/**'
+    paths:
+      - 'i18n/uploads/incoming/*.json'
+      - 'i18n/processUpload.js'
+      - 'i18n/processUploadInbox.js'
+      - 'i18n/upload.schema.json'
+      - 'i18n/buildTranslations.js'
+      - 'i18n/namespaces.json'
+      - '.github/workflows/processTranslationUploads.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: translation-uploads-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  process:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Determine processing mode
+        id: mode
+        run: |
+          if [ "${GITHUB_REF_NAME}" = "main" ]; then
+            echo "mode=direct" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=proposal" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Process upload inbox
+        run: |
+          node i18n/processUploadInbox.js \
+            --mode "${{ steps.mode.outputs.mode }}"
+
+      - name: Commit processed translation changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            i18n/translations.json \
+            i18n/generated/*.json \
+            i18n/upload-reports \
+            i18n/uploads/incoming \
+            i18n/uploads/processed
+
+          if git diff --cached --quiet; then
+            echo "No processed upload changes to commit"
+          else
+            git commit -m "AUTO: process translation uploads"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin HEAD:"${GITHUB_REF_NAME}"
+          fi

@@ -7,6 +7,7 @@ This repository keeps translations in one editable source file and automatically
 - runtime locale files for the application
 - namespace metadata for future tooling
 - a key registry for autocomplete, validation, and editor support
+- an upload-processing layer for editor-submitted translation changes
 
 ## Quick Start
 
@@ -29,6 +30,12 @@ If you only want to rebuild locally:
 
 ```bash
 npm run build:translations
+```
+
+If you want to process an editor upload:
+
+```bash
+npm run prepare:upload -- --input ./upload.json --report ./upload.report.json
 ```
 
 If you want help in the terminal:
@@ -66,6 +73,9 @@ You should **not** manually edit:
 
 Those files are generated automatically.
 
+Editor uploads should not write directly to [`i18n/translations.json`](i18n/translations.json).
+They should first go through [`i18n/processUpload.js`](i18n/processUpload.js).
+
 ---
 
 ## Daily Workflow
@@ -95,6 +105,31 @@ npm run check:translations
 ```
 
 Use this when you want to verify sync without rewriting files.
+
+### Process editor uploads
+
+This repository now supports a split upload flow:
+
+- existing keys can be updated directly
+- new translations without a key become proposals for developer review
+
+Prepare an upload report:
+
+```bash
+npm run prepare:upload -- --input ./upload.json --report ./upload.report.json
+```
+
+Prepare an upload and immediately merge safe updates for existing keys:
+
+```bash
+npm run prepare:upload -- --input ./upload.json --report ./upload.report.json --apply-direct
+```
+
+Accept the proposal entries from a report after review:
+
+```bash
+npm run apply:proposals -- --input ./upload.report.json
+```
 
 ---
 
@@ -190,6 +225,10 @@ Avoid:
 
 If you are unsure, start with `common.*` only when the text is truly generic and reusable.
 
+For editor uploads, keys are optional in the upload payload.
+If the editor supplies an existing key, the upload processor treats the item as a direct update.
+If no key is supplied, the upload processor suggests a namespace and a new key for review.
+
 ---
 
 ## Namespace System
@@ -205,7 +244,6 @@ Current namespaces:
 - `info`
 - `metadata`
 - `success`
-- `test`
 
 Important rules:
 
@@ -217,6 +255,9 @@ This is how namespace governance works:
 1. choose an existing namespace
 2. create a clear key under that namespace
 3. only add a new namespace if it is truly needed
+
+For editor uploads, namespace suggestions are automatic.
+New namespace creation should still be reviewed by developers before merge.
 
 ---
 
@@ -258,6 +299,101 @@ npm run build:translations
 ```bash
 npm run update
 ```
+
+---
+
+## Editor Upload Flow
+
+The editor-facing flow is intentionally different from the developer flow.
+
+### Existing key updates
+
+If the upload entry contains a known key:
+
+- the key is treated as fixed
+- namespace is treated as fixed
+- only locale values are updated
+- this path is safe to merge directly
+
+Example upload item:
+
+```json
+{
+  "key": "common.save",
+  "fr": "Enregistrer"
+}
+```
+
+### New translation proposals
+
+If the upload entry does not contain a key:
+
+- the processor suggests a namespace
+- the processor suggests a new key
+- the entry is placed in the proposal section of the report
+- developers can review and accept it before merge
+
+Example upload item:
+
+```json
+{
+  "nl": "Tijdelijke bellijst",
+  "en": "Temporary call list"
+}
+```
+
+### Upload payload schema
+
+Use [`i18n/upload.schema.json`](i18n/upload.schema.json) for editor payloads.
+The payload format is intentionally lighter than the main source file.
+
+Example payload:
+
+```json
+{
+  "version": 1,
+  "source": "editor-ui",
+  "entries": [
+    {
+      "key": "common.save",
+      "fr": "Enregistrer"
+    },
+    {
+      "nl": "Tijdelijke bellijst",
+      "en": "Temporary call list"
+    }
+  ]
+}
+```
+
+### What the upload processor does
+
+[`i18n/processUpload.js`](i18n/processUpload.js) reads the upload payload and:
+
+- separates direct existing-key updates from new-entry proposals
+- suggests a namespace for entries without a key
+- suggests a new key for entries without a key
+- optionally applies direct updates to [`i18n/translations.json`](i18n/translations.json)
+- writes a report JSON file for review and automation
+
+### Suggested production flow
+
+For editors using your application:
+
+1. editor submits upload payload
+2. backend runs `npm run prepare:upload`
+3. direct updates for existing keys may be auto-applied
+4. proposal entries are committed on a review branch or PR
+5. developers review the proposal PR
+6. after merge, GitHub Actions regenerates [`i18n/generated`](i18n/generated)
+
+For developers working in VS Code:
+
+1. edit [`i18n/translations.json`](i18n/translations.json) or [`i18n/namespaces.json`](i18n/namespaces.json)
+2. run `npm run build:translations`
+3. commit and push
+
+This keeps the developer workflow strict while keeping the editor workflow simple.
 
 ---
 

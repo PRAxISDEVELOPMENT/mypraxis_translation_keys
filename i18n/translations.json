@@ -3948,6 +3948,12 @@
         "en": "Contact information"
     },
     {
+        "key": "common.contactInformationTitle",
+        "nl": "Contactinformatie",
+        "fr": "Coördonnées du contact",
+        "en": "Contact Information"
+    },
+    {
         "key": "common.contactName",
         "nl": "Naam contact",
         "fr": "Nom du contact",
@@ -4690,6 +4696,12 @@
         "nl": "Offertedatum",
         "fr": "Date du devis",
         "en": "Date quotation"
+    },
+    {
+        "key": "common.dateSlashTime",
+        "nl": "Datum / Tijd",
+        "fr": "Date / Heure",
+        "en": "Date / Time"
     },
     {
         "key": "common.dateTime",
@@ -7380,6 +7392,12 @@
         "en": "House number"
     },
     {
+        "key": "common.housenumber",
+        "nl": "Huisnummer",
+        "fr": "Numéro",
+        "en": "Housenumber"
+    },
+    {
         "key": "common.howLong",
         "nl": "Hoelang?",
         "fr": "Combien de temps?",
@@ -9163,12 +9181,6 @@
     },
     {
         "key": "common.myPRAxISData",
-        "nl": "MyPRAxIS gegevens",
-        "fr": "Données MyPRAxIS",
-        "en": "MyPRAxIS data"
-    },
-    {
-        "key": "common.MyPRAxISData",
         "nl": "MyPRAxIS gegevens",
         "fr": "Données MyPRAxIS",
         "en": "MyPRAxIS data"
@@ -13750,6 +13762,12 @@
         "nl": "Type melding",
         "fr": "Type de notification",
         "en": "Type notification"
+    },
+    {
+        "key": "common.typeOfVisualMaterial",
+        "nl": "Type beeldmateriaal",
+        "fr": "Type de matériel visuel",
+        "en": "Type of visual material"
     },
     {
         "key": "common.typeOfSubscription",
@@ -18688,6 +18706,12 @@
         "nl": "Periodiek rapport toegevoegd",
         "fr": "Rapport périodique ajouté",
         "en": "Periodic report added"
+    },
+    {
+        "key": "success.addedPermanentCommentary",
+        "nl": "Permanente commentaar toegevoegd",
+        "fr": "Commentaire permanent ajouté",
+        "en": "Added permanent commentary"
     },
     {
         "key": "success.permanentCommentaryAdded",

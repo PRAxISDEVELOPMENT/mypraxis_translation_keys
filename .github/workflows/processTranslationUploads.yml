@@ -4,7 +4,7 @@
 # translation-proposals/* handles new entries on review branches.
 #
 
-name: Process translation uploads
+name: Process Translation Editor Uploads
 
 on:
   push:
@@ -33,19 +33,20 @@ jobs:
   process:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
+    name: Process Editor Upload Batch
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Translation Repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js
+      - name: Set Up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Determine processing mode
+      - name: Determine Upload Processing Mode
         id: mode
         run: |
           if [ "${GITHUB_REF_NAME}" = "main" ]; then
@@ -54,12 +55,12 @@ jobs:
             echo "mode=proposal" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Process upload inbox
+      - name: Process Queued Upload Payloads
         run: |
           node i18n/processUploadInbox.js \
             --mode "${{ steps.mode.outputs.mode }}"
 
-      - name: Commit processed translation changes
+      - name: Commit Processed Upload Results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -74,7 +75,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No processed upload changes to commit"
           else
-            git commit -m "AUTO: process translation uploads"
+            git commit -m "chore(translations): apply editor upload batch"
             git pull --rebase origin "${GITHUB_REF_NAME}"
             git push origin HEAD:"${GITHUB_REF_NAME}"
           fi

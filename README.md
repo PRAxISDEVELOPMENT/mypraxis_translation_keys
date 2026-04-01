@@ -259,6 +259,65 @@ npm run test:frontend:proposal
 
 Dry-run simulation of the proposal frontend flow.
 
+## Naming Conventions
+
+Use structured names in GitHub so editor-driven translation work stays readable.
+
+### Branches
+
+- direct updates
+  No separate branch. Commit the upload payload to `main`.
+
+- proposal branches
+  Use:
+  `translation-proposals/<timestamp>-<slug>`
+
+Example:
+
+```text
+translation-proposals/20260401-guard-duty-call-list
+```
+
+### Upload Files
+
+Store frontend-generated payloads in:
+
+- [`i18n/uploads/incoming`](i18n/uploads/incoming)
+
+Use a structured file name:
+
+```text
+translation-<timestamp>-<short-id>.json
+```
+
+Example:
+
+```text
+translation-20260401-113226-vslhv4.json
+```
+
+### Pull Request Titles
+
+For new translation proposals, use:
+
+```text
+feat(translations): propose new editor entries for <scope>
+```
+
+Examples:
+
+```text
+feat(translations): propose new editor entries for guard duty
+feat(translations): propose new editor entries for customer portal
+```
+
+### Bot Commit Messages
+
+Automated commits in this repository use:
+
+- `chore(translations): regenerate generated artifacts`
+- `chore(translations): apply editor upload batch`
+
 ## Developer Workflow
 
 For developers working directly in the repository:
@@ -305,7 +364,8 @@ Use this path when no key exists yet.
 - payload does not contain a `key`
 - the system suggests a namespace
 - the system suggests a key
-- payload is committed into [`i18n/uploads/incoming`](i18n/uploads/incoming) on a branch like `translation-proposals/<id>`
+- the system assigns default applications from the repository config, currently `mypraxis_web`
+- payload is committed into [`i18n/uploads/incoming`](i18n/uploads/incoming) on a branch like `translation-proposals/<timestamp>-<slug>`
 - a PR is opened to `main`
 - developers review key, namespace, applications, and usage before merge
 

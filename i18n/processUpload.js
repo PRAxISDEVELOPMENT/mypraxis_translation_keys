@@ -11,6 +11,7 @@ const { execFileSync } = require('child_process');
 const ROOT_DIR = path.join(__dirname, '..');
 const SOURCE_PATH = path.join(__dirname, 'translations.json');
 const NAMESPACE_CONFIG_PATH = path.join(__dirname, 'namespaces.json');
+const APPLICATION_CONFIG_PATH = path.join(__dirname, 'applications.json');
 const BUILD_SCRIPT_PATH = path.join(__dirname, 'buildTranslations.js');
 const LOCALES = ['nl', 'fr', 'en'];
 const DIRECT_UPDATE_ALLOWED_FIELDS = new Set(['key', ...LOCALES]);
@@ -136,6 +137,16 @@ function readNamespaceConfig() {
         ...config,
         namespaceMap
     };
+}
+
+function readApplicationConfig() {
+    const config = readJsonFile(APPLICATION_CONFIG_PATH);
+
+    if (!config || typeof config !== 'object' || !Array.isArray(config.applications)) {
+        throw new Error('applications.json must contain an "applications" array.');
+    }
+
+    return config;
 }
 
 function sortEntries(entries) {
@@ -279,6 +290,36 @@ function ensureUniqueKey(baseKey, usedKeys) {
 
 function hasNamespace(namespaceConfig, namespace) {
     return namespaceConfig.namespaceMap.has(namespace);
+}
+
+function getDefaultProposalApplications(applicationConfig) {
+    const names = applicationConfig.applications
+        .filter((application) => application && typeof application === 'object')
+        .filter((application) => typeof application.name === 'string' && application.name.trim() !== '')
+        .map((application) => ({
+            name: application.name.trim(),
+            status: typeof application.status === 'string' && application.status.trim() !== ''
+                ? application.status.trim()
+                : 'active'
+        }));
+
+    const web = names.find((application) => application.name === 'mypraxis_web');
+
+    if (web) {
+        return [web.name];
+    }
+
+    const active = names.find((application) => application.status === 'active');
+
+    if (active) {
+        return [active.name];
+    }
+
+    if (names.length > 0) {
+        return [names[0].name];
+    }
+
+    throw new Error('applications.json must define at least one valid application.');
 }
 
 // Namespace suggestions are intentionally limited to namespaces that already exist.
@@ -431,7 +472,7 @@ function buildDirectUpdate(uploadEntry, existingEntry, index) {
     };
 }
 
-function buildProposal(uploadEntry, index, usedKeys, namespaceConfig) {
+function buildProposal(uploadEntry, index, usedKeys, namespaceConfig, applicationConfig) {
     const text = getUploadText(uploadEntry);
     const unexpectedFields = getUnexpectedFields(uploadEntry, PROPOSAL_ALLOWED_FIELDS);
 
@@ -466,7 +507,8 @@ function buildProposal(uploadEntry, index, usedKeys, namespaceConfig) {
         key: suggestedKey,
         nl: toOptionalTrimmedString(uploadEntry.nl) ?? '',
         fr: toOptionalTrimmedString(uploadEntry.fr) ?? '',
-        en: toOptionalTrimmedString(uploadEntry.en) ?? ''
+        en: toOptionalTrimmedString(uploadEntry.en) ?? '',
+        applications: getDefaultProposalApplications(applicationConfig)
     };
 
     if (typeof uploadEntry.description === 'string' && uploadEntry.description.trim() !== '') {
@@ -518,6 +560,7 @@ function prepareUpload(options) {
 
     const entries = readSourceEntries();
     const namespaceConfig = readNamespaceConfig();
+    const applicationConfig = readApplicationConfig();
     const byKey = new Map(entries.map((entry) => [entry.key, entry]));
     const usedKeys = new Set(entries.map((entry) => entry.key));
     const report = createReportSkeleton('prepare', options.input);
@@ -577,7 +620,7 @@ function prepareUpload(options) {
             return;
         }
 
-        const proposal = buildProposal(uploadEntry, index, usedKeys, namespaceConfig);
+        const proposal = buildProposal(uploadEntry, index, usedKeys, namespaceConfig, applicationConfig);
 
         if (proposal.type === 'error') {
             report.errors.push(proposal);

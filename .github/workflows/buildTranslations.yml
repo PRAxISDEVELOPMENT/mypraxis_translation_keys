@@ -4,7 +4,7 @@
 # Pushes to main regenerate i18n/generated/*.json and commit them when needed.
 #
 
-name: Build translations
+name: Validate And Build Translation Artifacts
 
 on:
   pull_request:
@@ -46,56 +46,58 @@ jobs:
   validate:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
+    name: Validate Pull Request Translation Changes
 
     permissions:
       contents: read
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Translation Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Set Up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Check translation tooling syntax
+      - name: Validate Translation Tooling Syntax
         run: |
           node --check i18n/buildTranslations.js
           node --check i18n/processUpload.js
           node --check i18n/processUploadInbox.js
 
-      - name: Validate translation source structure
+      - name: Validate Translation Source
         run: node i18n/buildTranslations.js
 
-      - name: Check generator output is stable
+      - name: Verify Generated Artifacts Are In Sync
         run: node i18n/buildTranslations.js --check
 
   build:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
+    name: Regenerate Translation Artifacts On Main
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Translation Repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js
+      - name: Set Up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Check translation tooling syntax
+      - name: Validate Translation Tooling Syntax
         run: |
           node --check i18n/buildTranslations.js
           node --check i18n/processUpload.js
           node --check i18n/processUploadInbox.js
 
-      - name: Build translations
+      - name: Regenerate Translation Artifacts
         run: node i18n/buildTranslations.js
 
-      - name: Commit generated files
+      - name: Commit Regenerated Artifacts
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -105,7 +107,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "AUTO: generate locale files"
+            git commit -m "chore(translations): regenerate generated artifacts"
             git pull --rebase origin main
             git push origin HEAD:main
           fi

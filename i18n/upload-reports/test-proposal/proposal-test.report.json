@@ -1,7 +1,7 @@
 {
   "version": 1,
   "command": "prepare",
-  "createdAt": "2026-04-01T10:09:27.230Z",
+  "createdAt": "2026-04-01T11:34:40.104Z",
   "inputFile": "i18n/test-fixtures/proposal/proposal-test.json",
   "summary": {
     "totalEntries": 1,
@@ -24,7 +24,10 @@
         "key": "common.testNewText",
         "nl": "Test nieuwe tekst",
         "fr": "Nouveau texte de test",
-        "en": "Test new text"
+        "en": "Test new text",
+        "applications": [
+          "mypraxis_web"
+        ]
       },
       "reviewRequired": true
     }

@@ -2186,6 +2186,7 @@
   "common.terminateCall",
   "common.terminationEffectiveOn",
   "common.terminationRequestedOn",
+  "common.test",
   "common.testClient",
   "common.text",
   "common.textColor",

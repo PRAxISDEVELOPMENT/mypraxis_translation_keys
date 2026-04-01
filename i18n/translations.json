@@ -19683,15 +19683,6 @@
     ]
   },
   {
-    "key": "common.test",
-    "nl": "test",
-    "fr": "testupdate",
-    "en": "test",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
     "key": "common.testClient",
     "nl": "Testklant",
     "fr": "Client de test",

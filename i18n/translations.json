@@ -2610,6 +2610,12 @@
         "en": "Bus number"
     },
     {
+        "key": "common.busynessIndicator",
+        "nl": "Druktebarometer",
+        "fr": "Baromètre d’activité",
+        "en": "Busyness indicator"
+    },
+    {
         "key": "common.byDefaultTheEmailAddressFromTheGeneralInformationIsUsedToSendTheDailyEmail",
         "nl": "Standaard wordt het e-mailadres uit de algemene gegevens gebruikt voor het verzenden van de dagelijkse e-mail.",
         "fr": "Par défaut, l'adresse e-mail dans l'information générale est utilisée pour l'envoi de l'e-mail quotidien.",
@@ -15600,6 +15606,12 @@
         "en": "Invalid verification ID."
     },
     {
+        "key": "error.linkedCustomerCannotBeDeactivatedWhileLinked",
+        "nl": "Dit betreft een gelinkte klant. Deze klant kan niet stopgezet worden zolang deze gelinkt is. Gelieve dit door te geven aan finance@praxis-group.eu om deze los te koppelen en stop te zetten.",
+        "fr": "Il s'agit d'un client lié. Ce client ne peut pas être désactivé tant qu'il est lié. Veuillez le signaler à finance@praxis-group.eu afin qu'il soit dissocié et désactivé.",
+        "en": "This concerns a linked customer. This customer cannot be deactivated as long as it is linked. Please contact finance@praxis-group.eu to have it unlinked and deactivated."
+    },
+    {
         "key": "error.locationPermissionIsRequiredToUseYourCurrentAddress",
         "nl": "Locatietoestemming is vereist om uw huidige adres te gebruiken",
         "fr": "Veuillez autoriser l'accès à votre localisation geographique pour pouvoir utiliser votre localisation actuelle",
@@ -16836,6 +16848,12 @@
         "en": "Used in the layout editor as [company_name]. Brackets are added in the layout. Spaces become underscores and the token is saved in lowercase"
     },
     {
+        "key": "info.localChangesNotYetSaved",
+        "nl": "{{count}} lokale wijziging(en) nog niet opgeslagen.",
+        "fr": "{{count}} modification(s) locale(s) pas encore enregistrée(s).",
+        "en": "{{count}} local change(s) not yet saved."
+    },
+    {
         "key": "info.linkedCustomersConsistOfAtLeastTwoCustomerNumbersWithOneDesignatedAsTheMainCustomerTheseCustomersAreInvoicedTogetherFromAFinancialStandpointAndShareEitherPartialOrFullOperationalFunctionality",
         "nl": "Gelinkte klanten bestaan uit minstens twee klantnummers, waarbij één klant als hoofdklant fungeert. Gelinkte klanten worden financieel samen gefactureerd en delen operationeel een gedeeltelijke of volledige werking.",
         "fr": "Les clients liés sont sonstitués d'au moins deux numéros de client, dont l'un est désigné comme client principal. Ils sont facturés ensemble et partagent tout ou partie des fonctionnalités opérationnelles.",
@@ -16972,6 +16990,12 @@
         "nl": "Open de applicatie via computer of tablet",
         "fr": "Ouvrez l'application via un ordinateur ou une tablette",
         "en": "Open the application via computer or tablet"
+    },
+    {
+        "key": "info.originallyIncompleteInSourceData",
+        "nl": "Oorspronkelijk onvolledig in de brongegevens",
+        "fr": "Initialement incomplet dans les données source",
+        "en": "Originally incomplete in the source data"
     },
     {
         "key": "info.otherPlace",

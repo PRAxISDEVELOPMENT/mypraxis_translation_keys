@@ -21,21 +21,21 @@
       "label": "Common",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2416
+      "keyCount": 2417
     },
     {
       "name": "error",
       "label": "Error",
       "description": "Error labels, error detail fields, and failure-state messages.",
       "status": "active",
-      "keyCount": 182
+      "keyCount": 183
     },
     {
       "name": "info",
       "label": "Info",
       "description": "Informational helper text, onboarding copy, and contextual guidance.",
       "status": "active",
-      "keyCount": 246
+      "keyCount": 248
     },
     {
       "name": "metadata",

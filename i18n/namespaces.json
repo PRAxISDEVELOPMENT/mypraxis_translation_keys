@@ -41,7 +41,7 @@
     {
       "name": "success",
       "label": "Success",
-      "description": "Success messages, completed-state feedback, and positive confirmations.",
+      "description": "Success messages, completed state feedback, and positive confirmations.",
       "status": "active"
     }
   ]

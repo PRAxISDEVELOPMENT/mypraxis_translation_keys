@@ -6,8 +6,8 @@
 const { runProcessUploadCommand } = require('./lib/upload/process');
 
 try {
-  runProcessUploadCommand();
+    runProcessUploadCommand();
 } catch (error) {
-  console.error(error.message);
-  process.exitCode = 1;
+    console.error(error.message);
+    process.exitCode = 1;
 }

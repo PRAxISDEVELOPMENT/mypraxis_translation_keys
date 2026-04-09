@@ -2,17 +2,15 @@
   "name": "mypraxis_translation_keys",
   "private": true,
   "scripts": {
-    "prepare:upload": "node i18n/processUpload.js prepare",
-    "apply:proposals": "node i18n/processUpload.js apply-proposals",
-    "process:upload-inbox": "node i18n/processUploadInbox.js",
-    "test:frontend:direct": "node i18n/processUploadInbox.js --mode direct --uploads-dir i18n/test-fixtures/direct --reports-dir i18n/upload-reports/test-direct --processed-dir i18n/uploads/processed/test-direct --dry-run --no-build",
-    "test:frontend:proposal": "node i18n/processUploadInbox.js --mode proposal --uploads-dir i18n/test-fixtures/proposal --reports-dir i18n/upload-reports/test-proposal --processed-dir i18n/uploads/processed/test-proposal --dry-run --no-build",
-    "build:translations": "node i18n/buildTranslations.js",
-    "check:translations": "node i18n/buildTranslations.js --check",
-    "help:translations": "node i18n/buildTranslations.js --help",
-    "namespaces:translations": "node i18n/buildTranslations.js --list-namespaces",
-    "report:translations": "node i18n/buildTranslations.js --report",
-    "validate:translations": "node i18n/buildTranslations.js --validate",
-    "update": "sh ./update.sh"
+    "translations:build": "node i18n/bin/build-translations.js",
+    "translations:check": "node i18n/bin/build-translations.js --check",
+    "translations:help": "node i18n/bin/build-translations.js --help",
+    "translations:list-namespaces": "node i18n/bin/build-translations.js --list-namespaces",
+    "translations:report": "node i18n/bin/build-translations.js --report",
+    "translations:validate": "node i18n/bin/build-translations.js --validate",
+    "uploads:prepare": "node i18n/bin/process-upload.js prepare",
+    "uploads:apply-proposals": "node i18n/bin/process-upload.js apply-proposals",
+    "uploads:process-inbox": "node i18n/bin/process-upload-inbox.js",
+    "update": "sh ./scripts/update-translations.sh"
   }
 }

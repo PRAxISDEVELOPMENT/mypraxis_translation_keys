@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "./translations.schema.json",
+  "title": "MyPRAxIS Translation Source",
+  "description": "Flat translation source entries stored in i18n/source/translations.json and used to generate runtime locale files.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["key", "nl", "fr", "en", "applications"],
+    "properties": {
+      "key": {
+        "type": "string",
+        "description": "Dot-notation translation key, for example common.save or info.helpText."
+      },
+      "nl": {
+        "type": "string",
+        "description": "Dutch translation value."
+      },
+      "fr": {
+        "type": "string",
+        "description": "French translation value."
+      },
+      "en": {
+        "type": "string",
+        "description": "English translation value."
+      },
+      "applications": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "description": "Applications where this translation key is used.",
+        "items": {
+          "type": "string",
+          "enum": ["mypraxis_app", "mypraxis_web", "documenten", "mypraxis_data"]
+        }
+      },
+      "description": {
+        "type": "string",
+        "description": "Optional internal note describing where or how the translation is used."
+      },
+      "notes": {
+        "type": "string",
+        "description": "Optional translator note or implementation note."
+      },
+      "deprecated": {
+        "type": "boolean",
+        "description": "Optional marker indicating that the key is deprecated."
+      }
+    }
+  }
+}

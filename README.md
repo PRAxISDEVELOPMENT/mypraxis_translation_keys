@@ -1,68 +1,148 @@
 # MyPRAxIS Translation Keys
 
-Deze repository is de centrale plek voor alle vertaalsleutels van MyPRAxIS.
+De centrale repository voor het beheren, valideren, opbouwen en verwerken van vertalingen binnen MyPRAxIS.
 
-Hier beheer je:
+> [!IMPORTANT]
+> Deze repository werkt bewust met één bron van waarheid.
+> Handmatige inhoudelijke wijzigingen gebeuren in [`i18n/source/translations.json`](i18n/source/translations.json).
+> Alles onder [`i18n/artifacts/generated/`](i18n/artifacts/generated) is afgeleide output.
 
-- de brondata van vertalingen
-- de lijst met toegestane namespaces
-- de lijst met toegestane applicaties
-- de gegenereerde outputbestanden
-- de verwerking van uploads uit de editorflow
+## Inhoud
 
-Het uitgangspunt is simpel: er is maar één bronbestand dat je handmatig aanpast. Alles wat daaruit volgt, wordt opnieuw opgebouwd.
+- [Snel overzicht](#snel-overzicht)
+- [Architectuur](#architectuur)
+- [Ontwerpkeuzes](#ontwerpkeuzes)
+- [Repositorystructuur](#repositorystructuur)
+- [Belangrijkste bestanden](#belangrijkste-bestanden)
+- [Dagelijkse werkwijze](#dagelijkse-werkwijze)
+- [Build en validatie](#build-en-validatie)
+- [Uploadverwerking](#uploadverwerking)
+- [Commando-overzicht](#commando-overzicht)
+- [Praktische regels](#praktische-regels)
+- [Automatisering](#automatisering)
+- [Veelgemaakte fouten](#veelgemaakte-fouten)
+- [Samenvatting](#samenvatting)
 
-## Waarvoor dient deze repo?
+## Snel overzicht
 
-Zonder duidelijke afspraken lopen vertalingen snel uit elkaar. Dan krijg je bijvoorbeeld:
+| Onderdeel | Rol |
+| --- | --- |
+| [`i18n/source/`](i18n/source) | Handmatig beheerde brondata |
+| [`i18n/config/`](i18n/config) | Toegestane namespaces, applicaties en schema's |
+| [`i18n/bin/`](i18n/bin) | CLI-entrypoints |
+| [`i18n/src/`](i18n/src) | Interne implementatie van build- en uploadlogica |
+| [`i18n/artifacts/generated/`](i18n/artifacts/generated) | Gegenereerde runtime- en controlegegevens |
+| [`i18n/artifacts/reports/`](i18n/artifacts/reports) | Rapporten van uploadverwerking |
+| [`i18n/uploads/`](i18n/uploads) | Inbox en archief van uploadbestanden |
 
-- dubbele keys
-- verschillende schrijfwijzen voor dezelfde namespace
-- applicaties die niet meer kloppen
-- losse JSON-bestanden die handmatig aangepast zijn
-- uploads die niet duidelijk gescheiden zijn van de echte brondata
+### Kernidee
 
-Deze repo houdt dat bewust strak:
+De repository is opgebouwd rond drie heldere principes:
 
-- `i18n/source/` bevat de bron
-- `i18n/config/` bevat de afspraken
-- `i18n/artifacts/` bevat alleen afgeleide bestanden
-- `i18n/uploads/` bevat tijdelijke uploadbestanden en archief
-- `i18n/src/` bevat de logica van de tooling
+1. Er is één inhoudelijke bron.
+2. Configuratie staat los van content.
+3. Gegenereerde output wordt altijd opnieuw opgebouwd.
 
-## Overzicht
+## Architectuur
 
 ```mermaid
 flowchart LR
-    A[i18n/source/translations.json] --> B[build-proces]
-    C[i18n/config/namespaces.json] --> B
-    D[i18n/config/applications.json] --> B
-    B --> E[i18n/artifacts/generated/en.json]
-    B --> F[i18n/artifacts/generated/fr.json]
-    B --> G[i18n/artifacts/generated/nl.json]
-    B --> H[i18n/artifacts/generated/registry.json]
-    B --> I[i18n/artifacts/generated/summary.json]
-    B --> J[i18n/artifacts/generated/namespaces.json]
-    B --> K[i18n/artifacts/generated/applications.json]
+    subgraph Source[Bron en configuratie]
+        A[i18n/source/translations.json]
+        B[i18n/config/namespaces.json]
+        C[i18n/config/applications.json]
+    end
+
+    subgraph Entry[CLI]
+        D[i18n/bin/build-translations.js]
+        E[i18n/bin/process-upload.js]
+        F[i18n/bin/process-upload-inbox.js]
+    end
+
+    subgraph Logic[Implementatie]
+        G[i18n/src/translation-build]
+        H[i18n/src/upload-processing]
+        I[i18n/src/core]
+    end
+
+    subgraph Output[Afgeleide output]
+        J[i18n/artifacts/generated/*.json]
+        K[i18n/artifacts/reports/*.json]
+        L[i18n/uploads/processed/*.json]
+    end
+
+    A --> D
+    B --> D
+    C --> D
+    D --> G
+    G --> I
+    G --> J
+
+    A --> E
+    B --> E
+    C --> E
+    E --> H
+    H --> I
+    H --> K
+    H --> J
+
+    F --> H
+    H --> L
 ```
 
-## Projectstructuur
+### Functionele stroom
+
+```mermaid
+flowchart TD
+    A[Brondata aanpassen] --> B[Valideren]
+    B --> C[Artifacts opbouwen]
+    C --> D[Output controleren]
+    D --> E[Committen]
+
+    F[Upload ontvangen] --> G[Upload analyseren]
+    G --> H[Rapport maken]
+    H --> I[Direct toepassen of voorsteltraject]
+    I --> C
+```
+
+## Ontwerpkeuzes
+
+### Eén bron van waarheid
+
+Alle inhoudelijke wijzigingen starten in [`i18n/source/translations.json`](i18n/source/translations.json). Daarmee is altijd duidelijk waar een vertaling vandaan komt.
+
+### Afspraken zijn expliciet
+
+Namespaces en applicaties zijn geen mondelinge afspraken, maar formele configuratie in:
+
+- [`i18n/config/namespaces.json`](i18n/config/namespaces.json)
+- [`i18n/config/applications.json`](i18n/config/applications.json)
+
+### Output is vervangbaar
+
+Bestanden onder [`i18n/artifacts/generated/`](i18n/artifacts/generated) zijn per definitie opnieuw te maken. Dat maakt controle in CI en lokale validatie betrouwbaar.
+
+### Uploads zijn tijdelijk
+
+Uploads horen niet rechtstreeks bij de blijvende bron. Ze worden eerst gelezen, beoordeeld, gerapporteerd en pas daarna eventueel verwerkt.
+
+## Repositorystructuur
 
 ```text
 i18n/
 ├── artifacts/
-│   ├── generated/            # opgebouwd uit de bron; niet handmatig aanpassen
+│   ├── generated/            # afgeleide runtime- en controlegegevens
 │   └── reports/              # rapporten van uploadverwerking
-├── bin/                      # CLI entrypoints
-├── config/                   # namespaces, applications en JSON-schema's
-├── source/                   # de enige handmatig bewerkte brondata
+├── bin/                      # CLI-entrypoints
+├── config/                   # formele configuratie en JSON-schema's
+├── source/                   # handmatig beheerde brondata
 ├── src/
-│   ├── core/                 # gedeelde helpers en padconfig
-│   ├── translation-build/    # validatie, rapportage en generatie
-│   └── upload-processing/    # uploadlogica voor prepare/apply/inbox
+│   ├── core/                 # gedeelde helpers, padconfig en JSON-IO
+│   ├── translation-build/    # validatie, analyse, rapportage en generatie
+│   └── upload-processing/    # uploadanalyse, voorstellen en inboxflow
 └── uploads/
-    ├── incoming/             # nieuwe uploads die nog verwerkt moeten worden
-    └── processed/            # verwerkte uploads
+    ├── incoming/             # nieuwe uploadbestanden
+    └── processed/            # verwerkte en gearchiveerde uploads
 
 scripts/
 └── update-translations.sh    # lokale helper voor build, commit, push en pull
@@ -70,141 +150,274 @@ scripts/
 
 ## Belangrijkste bestanden
 
+### Bron en configuratie
+
 - [`i18n/source/translations.json`](i18n/source/translations.json)
-  De centrale bron van alle vertaalregels.
+  Centrale lijst met alle vertaalregels.
 
 - [`i18n/config/namespaces.json`](i18n/config/namespaces.json)
-  De lijst met toegestane namespaces en de standaardnamespace.
+  Bepaalt welke namespaces toegestaan zijn en welke standaardnamespace gebruikt wordt.
 
 - [`i18n/config/applications.json`](i18n/config/applications.json)
-  De lijst met toegestane applicatie-id's.
+  Bepaalt welke applicatie-id's toegestaan zijn.
+
+- [`i18n/config/translations.schema.json`](i18n/config/translations.schema.json)
+  Beschrijft de vorm van de vertaalbron.
+
+- [`i18n/config/upload.schema.json`](i18n/config/upload.schema.json)
+  Beschrijft de vorm van uploadpayloads.
+
+### Tooling
+
+- [`i18n/bin/build-translations.js`](i18n/bin/build-translations.js)
+  Startpunt voor build, check, validate, report en namespace-overzicht.
+
+- [`i18n/bin/process-upload.js`](i18n/bin/process-upload.js)
+  Startpunt voor één upload of één uploadrapport.
+
+- [`i18n/bin/process-upload-inbox.js`](i18n/bin/process-upload-inbox.js)
+  Startpunt voor batchverwerking van de inbox.
+
+### Gegenereerde output
 
 - [`i18n/artifacts/generated/`](i18n/artifacts/generated)
-  De opgebouwde bestanden voor runtime, controle en rapportage.
+  Bevat runtimebestanden, metadata, registry en samenvattingen.
 
-## Commando's
+<details>
+<summary><strong>Welke bestanden worden opgebouwd?</strong></summary>
 
-| Commando | Wat doet het? |
+| Bestand | Doel |
 | --- | --- |
-| `npm run translations:build` | Valideert de bron en schrijft alle gegenereerde bestanden opnieuw weg |
-| `npm run translations:check` | Controleert of de gegenereerde bestanden nog in sync zijn |
-| `npm run translations:validate` | Faalt zodra er warnings of errors zijn |
-| `npm run translations:report` | Toont een compacte samenvatting van de staat van de vertalingen |
-| `npm run translations:list-namespaces` | Toont alle namespaces met hun status |
-| `npm run uploads:prepare -- --input <file>` | Analyseert één uploadbestand en maakt een rapport |
-| `npm run uploads:apply-proposals -- --input <report-file>` | Voegt voorstelregels uit een rapport toe aan de bron |
-| `npm run uploads:process-inbox -- --mode direct` | Verwerkt inboxbestanden voor directe updates |
-| `npm run uploads:process-inbox -- --mode proposal` | Verwerkt inboxbestanden voor voorstelbranches |
-| `npm run update` | Draait de lokale buildflow, commit, push en haalt daarna de laatste stand op |
+| `en.json` | Engelse runtimeboom |
+| `fr.json` | Franse runtimeboom |
+| `nl.json` | Nederlandse runtimeboom |
+| `keys.json` | Platte lijst met alle keys |
+| `namespaces.json` | Namespace-overzicht met tellingen |
+| `applications.json` | Toepassingsmetadata voor gebruik elders |
+| `registry.json` | Uitgebreide registratie per key |
+| `summary.json` | Compacte samenvatting voor controle en CI |
 
-## Dagelijkse workflow
+</details>
 
-Voor gewone wijzigingen is de route kort:
+## Dagelijkse werkwijze
+
+Voor de meeste wijzigingen is de route kort en voorspelbaar:
 
 1. Pas [`i18n/source/translations.json`](i18n/source/translations.json) aan.
-2. Voeg alleen een namespace toe als dat echt nodig is in [`i18n/config/namespaces.json`](i18n/config/namespaces.json).
-3. Voeg alleen een applicatie-id toe of wijzig die in [`i18n/config/applications.json`](i18n/config/applications.json).
+2. Pas alleen indien nodig [`i18n/config/namespaces.json`](i18n/config/namespaces.json) aan.
+3. Pas alleen indien nodig [`i18n/config/applications.json`](i18n/config/applications.json) aan.
 4. Draai `npm run translations:build`.
 5. Controleer de output in [`i18n/artifacts/generated/`](i18n/artifacts/generated).
+6. Commit pas als bron en output samen kloppen.
 
 ```mermaid
 flowchart TD
-    A[Vertalingen aanpassen] --> B[npm run translations:build]
-    B --> C{Validatie ok?}
-    C -- nee --> D[Fouten of warnings oplossen]
+    A[Bron of configuratie aanpassen] --> B[npm run translations:build]
+    B --> C{Validatie geslaagd?}
+    C -- nee --> D[Probleem oplossen]
     D --> B
-    C -- ja --> E[Gegenereerde bestanden controleren]
+    C -- ja --> E[Artifacts controleren]
     E --> F[Committen en pushen]
 ```
 
-## Hoe uploadverwerking werkt
+## Build en validatie
 
-Er zijn twee soorten uploads:
+### Wat de build leest
+
+- [`i18n/source/translations.json`](i18n/source/translations.json)
+- [`i18n/config/namespaces.json`](i18n/config/namespaces.json)
+- [`i18n/config/applications.json`](i18n/config/applications.json)
+
+### Wat de build schrijft
+
+Alle output komt terecht in [`i18n/artifacts/generated/`](i18n/artifacts/generated).
+
+### Waarom deze scheiding belangrijk is
+
+Deze scheiding zorgt ervoor dat:
+
+- output opnieuw opgebouwd kan worden zonder handwerk
+- CI objectief kan controleren of de repo in sync is
+- fouten terug te leiden zijn naar bron of configuratie
+
+### Validatiemodel
+
+```mermaid
+flowchart LR
+    A[translations.json] --> D[Validatieregels]
+    B[namespaces.json] --> D
+    C[applications.json] --> D
+    D --> E[Errors]
+    D --> F[Warnings]
+    D --> G[Generated artifacts]
+```
+
+## Uploadverwerking
+
+Uploads zijn bedoeld voor editorflows. Ze worden niet gezien als primaire brondata.
+
+Er zijn twee paden:
 
 - directe updates voor bestaande keys
 - voorstellen voor nieuwe keys
 
-### 1. Directe update van een bestaande key
+### Overzicht uploadstroom
 
-Gebruik dit pad wanneer de key al bestaat en alleen een vertaling aangepast moet worden.
+```mermaid
+flowchart LR
+    A[i18n/uploads/incoming/*.json] --> B[uploads:process-inbox]
+    B --> C{Mode}
+    C --> D[direct]
+    C --> E[proposal]
+    D --> F[i18n/artifacts/reports]
+    D --> G[i18n/source/translations.json]
+    D --> H[i18n/uploads/processed]
+    E --> F
+    E --> G
+    E --> H
+```
 
-Voorbeelden van wat wel mag:
+### Directe updates
 
+Gebruik dit pad alleen wanneer de key al bestaat.
+
+Toegestaan:
+
+- een bestaande `key` meesturen
 - `nl`, `fr` of `en` aanpassen
-- een bestaande key opnieuw aanleveren
 
-Wat niet mag:
+Niet toegestaan:
 
-- extra velden meesturen
-- een onbekende key gebruiken
-- via dit pad een nieuwe key proberen toe te voegen
+- onbekende keys gebruiken
+- extra velden meesturen buiten de uploadstructuur
+- een nieuwe key toevoegen via dit pad
 
 ```mermaid
 flowchart TD
     A[Upload met bestaande key] --> B[uploads:prepare]
-    B --> C{Alleen geldige taalupdates?}
-    C -- nee --> D[Rapport met fout of blokkade]
-    C -- ja --> E[Directe wijzigingen toepassen]
-    E --> F[build-proces]
-    F --> G[Upload archiveren + rapport bewaren]
+    B --> C[Velden controleren]
+    C --> D[Bestaande key controleren]
+    D --> E{Veilige taalupdate?}
+    E -- nee --> F[Rapport met blokkade of fout]
+    E -- ja --> G[Wijziging toepassen]
+    G --> H[npm run translations:build]
+    H --> I[Rapport bewaren en upload archiveren]
 ```
 
-### 2. Voorstel voor een nieuwe key
+### Voorsteltraject
 
 Gebruik dit pad wanneer er nog geen key bestaat.
 
 In dat geval:
 
 - stuur je geen `key` mee
-- probeert het systeem een namespace te kiezen
-- wordt een voorstel voor een nieuwe key gemaakt
-- gaat de wijziging langs review
+- bepaalt het systeem een waarschijnlijke namespace
+- wordt een key voorgesteld
+- wordt pas daarna beslist of de wijziging opgenomen wordt
 
 ```mermaid
 flowchart TD
     A[Upload zonder key] --> B[uploads:prepare]
-    B --> C[Namespace en key voorstellen]
-    C --> D[Rapport opslaan]
-    D --> E[uploads:apply-proposals]
-    E --> F[build-proces]
-    F --> G[Review via branch of PR]
+    B --> C[Namespace voorstellen]
+    C --> D[Key voorstellen]
+    D --> E[Rapport opslaan]
+    E --> F[uploads:apply-proposals]
+    F --> G[npm run translations:build]
+    G --> H[Reviewflow]
 ```
 
-## Regels van dit project
+<details>
+<summary><strong>Waarom uploads niet rechtstreeks in de bron terechtkomen</strong></summary>
 
-- Bewerk nooit handmatig bestanden in `i18n/artifacts/generated/`.
+Dit voorkomt onder meer:
+
+- ongecontroleerde nieuwe keys
+- inconsistente namespaces
+- structurele wijzigingen via frontendflows
+- vervuiling van de bron door onvolledige of foutieve payloads
+
+</details>
+
+## Commando-overzicht
+
+| Commando | Gebruik |
+| --- | --- |
+| `npm run translations:build` | Valideert en genereert alle artifacts opnieuw |
+| `npm run translations:check` | Controleert of de gegenereerde artifacts nog overeenkomen met de bron |
+| `npm run translations:validate` | Faalt zodra er waarschuwingen of fouten zijn |
+| `npm run translations:report` | Toont een samenvatting van namespaces, regels, fouten en waarschuwingen |
+| `npm run translations:list-namespaces` | Toont alle geconfigureerde namespaces |
+| `npm run uploads:prepare -- --input <file>` | Analyseert één uploadbestand en maakt een rapport |
+| `npm run uploads:apply-proposals -- --input <report-file>` | Neemt voorstelregels uit een rapport over in de bron |
+| `npm run uploads:process-inbox -- --mode direct` | Verwerkt inboxbestanden als directe updates |
+| `npm run uploads:process-inbox -- --mode proposal` | Verwerkt inboxbestanden als voorsteltraject |
+| `npm run update` | Draait de lokale standaardflow voor build, commit, push en synchronisatie |
+
+## Praktische regels
+
+> [!NOTE]
+> Als je twijfelt waar een wijziging thuishoort, begin dan niet in `artifacts/` of `uploads/`.
+> Begin bijna altijd in `source/`, `config/` of `src/`.
+
+### Functionele regels
+
 - Elke vertaalregel moet een unieke key hebben.
-- Elke vertaalregel moet minstens één application bevatten.
-- Een namespace moet eerst bestaan in `i18n/config/namespaces.json`.
-- Een application-id moet eerst bestaan in `i18n/config/applications.json`.
-- Bestaande keys mogen direct bijgewerkt worden als het alleen om veilige taalupdates gaat.
-- Nieuwe keys lopen altijd via het voorsteltraject.
+- Elke vertaalregel moet minstens één applicatie bevatten.
+- Een namespace moet vooraf bestaan in `i18n/config/namespaces.json`.
+- Een applicatie-id moet vooraf bestaan in `i18n/config/applications.json`.
+- Bestanden in `i18n/artifacts/generated/` worden nooit handmatig aangepast.
+- Bestaande keys kunnen rechtstreeks bijgewerkt worden als het om veilige taalupdates gaat.
+- Nieuwe keys volgen altijd het voorsteltraject.
 
-## Wat waar thuishoort
+### Praktische vuistregels
 
-Twijfel je waar een wijziging moet gebeuren, hou dan deze vuistregels aan:
-
-- brondata aanpassen: `i18n/source/`
-- afspraken aanpassen: `i18n/config/`
-- tooling aanpassen: `i18n/src/`
-- CLI gedrag starten: `i18n/bin/`
-- output nakijken: `i18n/artifacts/generated/`
-- uploadbestanden opvolgen: `i18n/uploads/` en `i18n/artifacts/reports/`
+- pas inhoud aan in `i18n/source/`
+- pas afspraken aan in `i18n/config/`
+- pas tooling aan in `i18n/src/`
+- gebruik `i18n/bin/` om processen te starten
+- beschouw `i18n/uploads/` als tijdelijke verwerkingsruimte
 
 ## Automatisering
 
+De repository bevat twee centrale GitHub Actions-workflows:
+
 - [`.github/workflows/buildTranslations.yml`](.github/workflows/buildTranslations.yml)
-  Controleert wijzigingen in de bron en regenereert artifacts op `main`.
+  Controleert wijzigingen in bron en configuratie, valideert de tooling en regenereert artifacts op `main`.
 
 - [`.github/workflows/processTranslationUploads.yml`](.github/workflows/processTranslationUploads.yml)
-  Verwerkt editor-uploads uit de inbox en archiveert de resultaten.
+  Verwerkt editor-uploads uit `i18n/uploads/incoming/`, schrijft rapporten weg en archiveert verwerkte uploads.
 
-## Kort samengevat
+### Samenhang tussen lokaal werk en CI
 
-Als je één ding onthoudt, laat het dit zijn:
+```mermaid
+flowchart TD
+    A[Lokale wijziging] --> B[npm run translations:build]
+    B --> C[Commit en push]
+    C --> D[GitHub Actions]
+    D --> E[Validatie of uploadverwerking]
+    E --> F[Bron en artifacts blijven in sync]
+```
 
-- bewerk de bron in `i18n/source/`
-- beheer afspraken in `i18n/config/`
-- laat `i18n/artifacts/` door de tooling vullen
+## Veelgemaakte fouten
 
-Dan blijft het project voorspelbaar, controleerbaar en schoon.
+> [!WARNING]
+> De meeste problemen ontstaan niet in de tooling, maar doordat bron, configuratie en output door elkaar gehaald worden.
+
+- rechtstreeks werken in `i18n/artifacts/generated/`
+- nieuwe namespaces gebruiken zonder `i18n/config/namespaces.json` aan te passen
+- nieuwe applicatie-id's gebruiken zonder `i18n/config/applications.json` aan te passen
+- uploads behandelen alsof ze blijvende brondata zijn
+- alleen output committen zonder de echte bronwijziging
+
+## Samenvatting
+
+Als je deze repository in één model wilt onthouden, is dit de juiste verdeling:
+
+- [`i18n/source/`](i18n/source) is de bron
+- [`i18n/config/`](i18n/config) bepaalt de grenzen
+- [`i18n/src/`](i18n/src) bevat de logica
+- [`i18n/bin/`](i18n/bin) start de processen
+- [`i18n/artifacts/`](i18n/artifacts) bevat afgeleide output
+- [`i18n/uploads/`](i18n/uploads) is tijdelijke invoer en archief
+
+Zolang die scheiding bewaakt blijft, blijft het project overzichtelijk voor developers, betrouwbaar in CI en veilig voor editor-gestuurde wijzigingen.

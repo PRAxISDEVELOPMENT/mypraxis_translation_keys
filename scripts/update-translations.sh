@@ -11,6 +11,36 @@ MAX_WAIT_SECONDS="${MAX_WAIT_SECONDS:-300}"
 WORKFLOW_FILE="${WORKFLOW_FILE:-buildTranslations.yml}"
 CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 
+commit_touches_build_workflow_paths() {
+  changed_paths="$(git diff-tree --no-commit-id --name-only -r HEAD)"
+  old_ifs="$IFS"
+  IFS='
+'
+
+  for changed_path in $changed_paths; do
+    case "$changed_path" in
+      i18n/source/translations.json|\
+      i18n/config/namespaces.json|\
+      i18n/config/applications.json|\
+      i18n/bin/build-translations.js|\
+      i18n/bin/process-upload.js|\
+      i18n/bin/process-upload-inbox.js|\
+      i18n/bin/route-upload-batches.js|\
+      i18n/config/upload.schema.json|\
+      i18n/config/translations.schema.json|\
+      i18n/src/*|\
+      .github/workflows/buildTranslations.yml|\
+      .github/workflows/processTranslationUploads.yml)
+        IFS="$old_ifs"
+        return 0
+        ;;
+    esac
+  done
+
+  IFS="$old_ifs"
+  return 1
+}
+
 wait_for_github_actions() {
   target_sha="$1"
 
@@ -82,13 +112,13 @@ git push origin HEAD:"$CURRENT_BRANCH"
 PUSHED_SHA="$(git rev-parse HEAD)"
 
 printf "\n==> Step 4/5: Waiting for automation\n"
-if [ "$CURRENT_BRANCH" = "main" ] && wait_for_github_actions "$PUSHED_SHA"; then
+if [ "$CURRENT_BRANCH" = "main" ] && commit_touches_build_workflow_paths && wait_for_github_actions "$PUSHED_SHA"; then
   echo "GitHub Actions completed successfully."
 else
-  if [ "$CURRENT_BRANCH" = "main" ]; then
+  if [ "$CURRENT_BRANCH" = "main" ] && commit_touches_build_workflow_paths; then
     echo "Continuing without confirmed workflow completion."
   else
-    echo "Skipping workflow wait because the current branch is \"$CURRENT_BRANCH\"."
+    echo "Skipping workflow wait because no matching build workflow is expected for \"$CURRENT_BRANCH\"."
   fi
 fi
 

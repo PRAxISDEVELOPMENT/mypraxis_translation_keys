@@ -166,7 +166,6 @@ i18n/
     └── processed/            # archived processed uploads
 
 .github/
-├── CODEOWNERS
 ├── pull_request_template.md
 └── workflows/
     ├── buildTranslations.yml
@@ -290,14 +289,6 @@ Configure these in GitHub Actions repository variables when needed:
 
 - `TRANSLATION_PROPOSAL_ASSIGNEES`
   Comma-separated GitHub usernames.
-
-### CODEOWNERS
-
-[`/.github/CODEOWNERS`](.github/CODEOWNERS) routes repository ownership to:
-
-- `@PRAxISDEVELOPMENT/translation-admins`
-
-That improves visibility and keeps review ownership explicit.
 
 ### Notifications and email
 

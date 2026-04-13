@@ -10,7 +10,6 @@ on:
       - 'i18n/artifacts/reports/**'
       - 'i18n/config/namespaces.json'
       - 'i18n/config/applications.json'
-      - '.github/CODEOWNERS'
       - '.github/pull_request_template.md'
       - '.github/workflows/openTranslationProposalPr.yml'
   workflow_dispatch:

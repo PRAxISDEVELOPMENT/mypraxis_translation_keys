@@ -112,10 +112,16 @@ git push origin HEAD:"$CURRENT_BRANCH"
 PUSHED_SHA="$(git rev-parse HEAD)"
 
 printf "\n==> Step 4/5: Waiting for automation\n"
-if [ "$CURRENT_BRANCH" = "main" ] && commit_touches_build_workflow_paths && wait_for_github_actions "$PUSHED_SHA"; then
+SHOULD_WAIT_FOR_WORKFLOW=0
+
+if [ "$CURRENT_BRANCH" = "main" ] && commit_touches_build_workflow_paths; then
+  SHOULD_WAIT_FOR_WORKFLOW=1
+fi
+
+if [ "$SHOULD_WAIT_FOR_WORKFLOW" -eq 1 ] && wait_for_github_actions "$PUSHED_SHA"; then
   echo "GitHub Actions completed successfully."
 else
-  if [ "$CURRENT_BRANCH" = "main" ] && commit_touches_build_workflow_paths; then
+  if [ "$SHOULD_WAIT_FOR_WORKFLOW" -eq 1 ]; then
     echo "Continuing without confirmed workflow completion."
   else
     echo "Skipping workflow wait because no matching build workflow is expected for \"$CURRENT_BRANCH\"."
@@ -123,6 +129,14 @@ else
 fi
 
 printf "\n==> Step 5/5: Pulling latest changes\n"
-git pull --rebase origin "$CURRENT_BRANCH"
+if [ "$SHOULD_WAIT_FOR_WORKFLOW" -eq 1 ]; then
+  if git pull --rebase origin "$CURRENT_BRANCH"; then
+    echo "Local branch synchronized."
+  else
+    echo "Pull failed after a successful push. The remote branch already contains your commit; you can retry sync later."
+  fi
+else
+  echo "Skipping pull because no follow-up automation commit is expected."
+fi
 
 echo "Ready."

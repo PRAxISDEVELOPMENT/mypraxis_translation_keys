@@ -1,14 +1,15 @@
 #!/bin/sh
 
 # Local developer helper for the normal translation workflow.
-# It builds translations, asks for a commit message, pushes to main,
-# waits for the build workflow when possible, then pulls the latest changes back.
+# It builds translations, asks for a commit message, pushes the current branch,
+# waits for the main build workflow when applicable, then pulls the latest changes back.
 
 set -eu
 
 POLL_INTERVAL="${POLL_INTERVAL:-5}"
 MAX_WAIT_SECONDS="${MAX_WAIT_SECONDS:-300}"
 WORKFLOW_FILE="${WORKFLOW_FILE:-buildTranslations.yml}"
+CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 
 wait_for_github_actions() {
   target_sha="$1"
@@ -75,18 +76,22 @@ fi
 
 printf "\n==> Step 3/5: Commit and push\n"
 git commit -m "$MESSAGE"
-git push origin HEAD:main
+git push origin HEAD:"$CURRENT_BRANCH"
 
 PUSHED_SHA="$(git rev-parse HEAD)"
 
 printf "\n==> Step 4/5: Waiting for automation\n"
-if wait_for_github_actions "$PUSHED_SHA"; then
+if [ "$CURRENT_BRANCH" = "main" ] && wait_for_github_actions "$PUSHED_SHA"; then
   echo "GitHub Actions completed successfully."
 else
-  echo "Continuing without confirmed workflow completion."
+  if [ "$CURRENT_BRANCH" = "main" ]; then
+    echo "Continuing without confirmed workflow completion."
+  else
+    echo "Skipping workflow wait because the current branch is \"$CURRENT_BRANCH\"."
+  fi
 fi
 
 printf "\n==> Step 5/5: Pulling latest changes\n"
-git pull --rebase origin main
+git pull --rebase origin "$CURRENT_BRANCH"
 
 echo "Ready."

@@ -1,7 +1,8 @@
 #
 # Processes frontend-uploaded translation payloads committed into i18n/uploads/incoming.
-# main handles existing-key updates directly.
-# translation_proposals/* handles new entries on review branches.
+# main routes mixed upload batches, processes direct updates, and offloads new keys
+# to dedicated proposal branches for PR review.
+# translation_proposals/* handles proposal processing after routing.
 #
 
 name: Process Translation Editor Uploads
@@ -15,6 +16,7 @@ on:
       - 'i18n/uploads/incoming/*.json'
       - 'i18n/bin/process-upload.js'
       - 'i18n/bin/process-upload-inbox.js'
+      - 'i18n/bin/route-upload-batches.js'
       - 'i18n/bin/build-translations.js'
       - 'i18n/config/upload.schema.json'
       - 'i18n/config/applications.json'
@@ -31,10 +33,10 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  process:
-    if: github.actor != 'github-actions[bot]'
+  process-main:
+    if: github.actor != 'github-actions[bot]' && github.ref_name == 'main'
     runs-on: ubuntu-latest
-    name: Process Editor Upload Batch
+    name: Route And Process Main Upload Batch
 
     steps:
       - name: Checkout Translation Repository
@@ -47,22 +49,105 @@ jobs:
         with:
           node-version: 20
 
-      - name: Determine Upload Processing Mode
-        id: mode
+      - name: Configure Git Identity
         run: |
-          if [ "${GITHUB_REF_NAME}" = "main" ]; then
-            echo "mode=direct" >> "$GITHUB_OUTPUT"
-          else
-            echo "mode=proposal" >> "$GITHUB_OUTPUT"
-          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Process Queued Upload Payloads
+      - name: Route Incoming Upload Payloads
+        id: route
+        env:
+          DIRECT_DIR: ${{ runner.temp }}/translation-routing/direct
+          PROPOSAL_DIR: ${{ runner.temp }}/translation-routing/proposal
+          REPORTS_DIR: i18n/artifacts/reports
+        run: |
+          mkdir -p "$DIRECT_DIR" "$PROPOSAL_DIR" "$REPORTS_DIR"
+          node i18n/bin/route-upload-batches.js \
+            --input-dir i18n/uploads/incoming \
+            --direct-dir "$DIRECT_DIR" \
+            --proposal-dir "$PROPOSAL_DIR" \
+            --reports-dir "$REPORTS_DIR"
+
+          direct_count=$(find "$DIRECT_DIR" -maxdepth 1 -name '*.json' | wc -l | tr -d ' ')
+          proposal_count=$(find "$PROPOSAL_DIR" -maxdepth 1 -name '*.json' | wc -l | tr -d ' ')
+
+          echo "direct_dir=$DIRECT_DIR" >> "$GITHUB_OUTPUT"
+          echo "proposal_dir=$PROPOSAL_DIR" >> "$GITHUB_OUTPUT"
+          echo "direct_count=$direct_count" >> "$GITHUB_OUTPUT"
+          echo "proposal_count=$proposal_count" >> "$GITHUB_OUTPUT"
+
+      - name: Remove Routed Upload Payloads From Main Inbox
+        run: rm -f i18n/uploads/incoming/*.json
+
+      - name: Process Direct Upload Payloads On Main
+        if: steps.route.outputs.direct_count != '0'
         run: |
           node i18n/bin/process-upload-inbox.js \
-            --mode "${{ steps.mode.outputs.mode }}"
+            --mode direct \
+            --uploads-dir "${{ steps.route.outputs.direct_dir }}"
+
+      - name: Commit Main Branch Upload Results
+        run: |
+          git add \
+            i18n/source/translations.json \
+            i18n/artifacts/generated/*.json \
+            i18n/artifacts/reports \
+            i18n/uploads/incoming \
+            i18n/uploads/processed
+
+          if git diff --cached --quiet; then
+            echo "No main-branch upload changes to commit"
+          else
+            git commit -m "Translation Bot: Process Main Upload Batch"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Create Proposal Branch For New Keys
+        if: steps.route.outputs.proposal_count != '0'
+        env:
+          PROPOSAL_DIR: ${{ steps.route.outputs.proposal_dir }}
+        run: |
+          branch_name="translation_proposals/auto-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git checkout -b "$branch_name"
+          mkdir -p i18n/uploads/incoming
+          cp "$PROPOSAL_DIR"/*.json i18n/uploads/incoming/
+          git add i18n/uploads/incoming
+
+          if git diff --cached --quiet; then
+            echo "No proposal uploads to queue"
+          else
+            git commit -m "Translation Bot: Queue Proposal Upload Batch"
+            git push origin HEAD:"$branch_name"
+          fi
+
+  process-proposal-branch:
+    if: startsWith(github.ref_name, 'translation_proposals/')
+    runs-on: ubuntu-latest
+    name: Process Proposal Branch Upload Batch
+
+    steps:
+      - name: Checkout Translation Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set Up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Detect Queued Proposal Uploads
+        id: queued
+        run: |
+          incoming_count=$(find i18n/uploads/incoming -maxdepth 1 -name '*.json' 2>/dev/null | wc -l | tr -d ' ')
+          echo "incoming_count=$incoming_count" >> "$GITHUB_OUTPUT"
 
       - name: Commit Processed Upload Results
+        if: steps.queued.outputs.incoming_count != '0'
         run: |
+          node i18n/bin/process-upload-inbox.js --mode proposal
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 

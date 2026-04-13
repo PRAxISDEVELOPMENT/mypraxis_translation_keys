@@ -10,6 +10,7 @@
     "translations:validate": "node i18n/bin/build-translations.js --validate",
     "uploads:prepare": "node i18n/bin/process-upload.js prepare",
     "uploads:apply-proposals": "node i18n/bin/process-upload.js apply-proposals",
+    "uploads:route": "node i18n/bin/route-upload-batches.js",
     "uploads:process-inbox": "node i18n/bin/process-upload-inbox.js",
     "update": "sh ./scripts/update-translations.sh"
   }

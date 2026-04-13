@@ -1,0 +1,264 @@
+name: Open Translation Proposal Pull Request
+
+on:
+  push:
+    branches:
+      - 'translation_proposals/**'
+    paths:
+      - 'i18n/source/translations.json'
+      - 'i18n/artifacts/generated/*.json'
+      - 'i18n/artifacts/reports/**'
+      - 'i18n/config/namespaces.json'
+      - 'i18n/config/applications.json'
+      - '.github/CODEOWNERS'
+      - '.github/pull_request_template.md'
+      - '.github/workflows/openTranslationProposalPr.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: translation-proposal-pr-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  open-pr:
+    runs-on: ubuntu-latest
+    name: Open Or Update Proposal Pull Request
+
+    steps:
+      - name: Checkout Translation Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch Main Branch
+        run: git fetch origin main
+
+      - name: Open Or Update Pull Request
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const { execFileSync } = require('child_process');
+
+            const branch = context.ref.replace('refs/heads/', '');
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const base = 'main';
+            const reviewers = `${{ vars.TRANSLATION_PROPOSAL_REVIEWERS || '' }}`
+              .split(',')
+              .map((value) => value.trim())
+              .filter(Boolean);
+            const teamReviewers = `${{ vars.TRANSLATION_PROPOSAL_TEAM_REVIEWERS || '' }}`
+              .split(',')
+              .map((value) => value.trim())
+              .filter(Boolean);
+            const assignees = `${{ vars.TRANSLATION_PROPOSAL_ASSIGNEES || '' }}`
+              .split(',')
+              .map((value) => value.trim())
+              .filter(Boolean);
+            const labels = [
+              {
+                name: 'translation-proposal',
+                color: '0E8A16',
+                description: 'New translation keys awaiting review before merge.'
+              },
+              {
+                name: 'auto-generated',
+                color: '5319E7',
+                description: 'Pull request was created automatically by translation automation.'
+              },
+              {
+                name: 'needs-review',
+                color: 'D93F0B',
+                description: 'Pull request is ready for reviewer or admin attention.'
+              }
+            ];
+
+            async function ensureLabel(label) {
+              try {
+                await github.rest.issues.getLabel({
+                  owner,
+                  repo,
+                  name: label.name
+                });
+              } catch (error) {
+                if (error.status !== 404) {
+                  throw error;
+                }
+
+                await github.rest.issues.createLabel({
+                  owner,
+                  repo,
+                  name: label.name,
+                  color: label.color,
+                  description: label.description
+                });
+              }
+            }
+
+            for (const label of labels) {
+              await ensureLabel(label);
+            }
+
+            function getChangedProposalReports() {
+              const output = execFileSync(
+                'git',
+                ['diff', '--name-only', 'origin/main...HEAD', '--', 'i18n/artifacts/reports'],
+                { encoding: 'utf8' }
+              );
+
+              return output
+                .split('\n')
+                .map((value) => value.trim())
+                .filter(Boolean)
+                .filter((filePath) => filePath.endsWith('.proposal.report.json'));
+            }
+
+            function loadProposalSummary(reportPaths) {
+              const summary = {
+                reportPaths,
+                proposedKeys: [],
+                totalProposals: 0
+              };
+
+              for (const reportPath of reportPaths) {
+                const absolutePath = path.join(process.env.GITHUB_WORKSPACE, reportPath);
+
+                if (!fs.existsSync(absolutePath)) {
+                  continue;
+                }
+
+                const report = JSON.parse(fs.readFileSync(absolutePath, 'utf8'));
+                const proposals = Array.isArray(report.proposals) ? report.proposals : [];
+
+                summary.totalProposals += proposals.length;
+
+                for (const proposal of proposals) {
+                  if (proposal && typeof proposal.suggestedKey === 'string' && proposal.suggestedKey.trim() !== '') {
+                    summary.proposedKeys.push(proposal.suggestedKey.trim());
+                  }
+                }
+              }
+
+              return summary;
+            }
+
+            const branchSlug = branch.replace(/^translation_proposals\//, '');
+            const branchTitle = branchSlug
+              .replace(/[-_]+/g, ' ')
+              .replace(/\s+/g, ' ')
+              .trim();
+            const reportPaths = getChangedProposalReports();
+            const proposalSummary = loadProposalSummary(reportPaths);
+            const keyPreview = proposalSummary.proposedKeys.slice(0, 12);
+            const keyLines =
+              keyPreview.length > 0
+                ? keyPreview.map((key) => `- \`${key}\``)
+                : ['- No proposal report summary was available in the branch diff.'];
+            const extraKeyCount = proposalSummary.proposedKeys.length - keyPreview.length;
+
+            const title = branchTitle
+              ? `Translation Proposal: ${branchTitle}`
+              : `Translation Proposal: ${branch}`;
+
+            const body = [
+              '## Translation Proposal',
+              '',
+              'This pull request was opened automatically for newly proposed translation keys.',
+              '',
+              '### Summary',
+              '',
+              `- branch: \`${branch}\``,
+              `- proposal reports: ${proposalSummary.reportPaths.length}`,
+              `- proposed keys: ${proposalSummary.totalProposals}`,
+              '',
+              '### Proposed Keys',
+              '',
+              ...keyLines,
+              ...(extraKeyCount > 0 ? [`- plus ${extraKeyCount} additional proposed key(s)`] : []),
+              '',
+              ...(proposalSummary.reportPaths.length > 0
+                ? [
+                    '### Report Files',
+                    '',
+                    ...proposalSummary.reportPaths.map((reportPath) => `- \`${reportPath}\``),
+                    ''
+                  ]
+                : []),
+              '',
+              'Review expectations:',
+              '- verify the suggested keys and namespaces',
+              '- verify the locale text and application scope',
+              '- merge only after the translation validation workflow is green',
+              '',
+              'Operational rule:',
+              '- existing keys may still flow directly to `main`',
+              '- new keys must land through a reviewed pull request'
+            ].join('\n');
+
+            const existing = await github.rest.pulls.list({
+              owner,
+              repo,
+              state: 'open',
+              head: `${owner}:${branch}`,
+              base
+            });
+
+            let pullNumber;
+
+            if (existing.data.length === 0) {
+              const created = await github.rest.pulls.create({
+                owner,
+                repo,
+                title,
+                head: branch,
+                base,
+                body
+              });
+
+              pullNumber = created.data.number;
+              core.info(`Created pull request #${pullNumber} for ${branch}.`);
+            } else {
+              pullNumber = existing.data[0].number;
+              core.info(`Using existing pull request #${pullNumber} for ${branch}.`);
+
+              await github.rest.pulls.update({
+                owner,
+                repo,
+                pull_number: pullNumber,
+                title,
+                body
+              });
+            }
+
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number: pullNumber,
+              labels: labels.map((label) => label.name)
+            });
+
+            if (assignees.length > 0) {
+              await github.rest.issues.addAssignees({
+                owner,
+                repo,
+                issue_number: pullNumber,
+                assignees
+              });
+            }
+
+            if (reviewers.length > 0 || teamReviewers.length > 0) {
+              await github.rest.pulls.requestReviewers({
+                owner,
+                repo,
+                pull_number: pullNumber,
+                reviewers,
+                team_reviewers: teamReviewers
+              });
+            }

@@ -1,18 +1,32 @@
 # i18n/src
 
-De CLI-bestanden staan in `i18n/bin/`. De echte implementatie zit hier:
+Implementation for the translation toolchain lives here. The CLI entry points remain in `i18n/bin/`, but the actual behavior is implemented in this directory.
+
+## Structure
 
 - `core/`
-  Algemene helpers voor paden, JSON-IO, config lezen, entry helpers en script runners.
+  Shared helpers for paths, JSON IO, config loading, entry loading, and script execution.
 
 - `translation-build/`
-  Alles voor validatie, rapportage en artifact-generatie van translations.
+  Validation, issue collection, reporting, artifact generation, and artifact sync checks.
 
 - `upload-processing/`
-  Alles voor uploadverwerking: argument parsing, key-suggesties, reports en inbox-flow.
+  Upload preparation, direct update handling, proposal generation, inbox processing, and mixed-batch routing.
 
-Snelle regel:
+## Placement rules
 
-- nieuw gedeeld gedrag -> `core/`
-- translation build-logica -> `translation-build/`
-- uploadverwerking -> `upload-processing/`
+- new shared utility -> `core/`
+- translation validation or generation logic -> `translation-build/`
+- editor upload logic -> `upload-processing/`
+
+## Current upload-processing responsibilities
+
+The upload-processing layer now supports:
+
+- classification of direct updates versus proposals
+- suggested namespace and key generation for new entries
+- proposal application from generated reports
+- inbox processing for both direct and proposal modes
+- routing mixed upload batches into separate execution paths
+
+Keep CLI parsing close to the corresponding command implementation unless the logic is shared broadly enough to belong in `core/`.

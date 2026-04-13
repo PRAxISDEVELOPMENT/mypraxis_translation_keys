@@ -26,6 +26,7 @@ wait_for_github_actions() {
 
   elapsed=0
 
+
   echo "Waiting for GitHub Actions run to start..."
 
   while [ "$elapsed" -lt "$MAX_WAIT_SECONDS" ]; do

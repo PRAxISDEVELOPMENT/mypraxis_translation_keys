@@ -28,7 +28,7 @@ jobs:
 
     steps:
       - name: Checkout Full Repository History
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
@@ -38,7 +38,7 @@ jobs:
           git bundle create "backup/mypraxis_translation_keys-${GITHUB_RUN_ID}.bundle" --all
 
       - name: Upload Backup Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: repository-backup-${{ github.run_id }}
           path: backup/*.bundle
@@ -57,6 +57,7 @@ jobs:
               ;;
           esac
 
+          git ls-remote "$AUTH_URL" > /dev/null
           git remote add backup "$AUTH_URL"
           git push --mirror backup
 

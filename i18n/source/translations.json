@@ -19683,6 +19683,15 @@
     ]
   },
   {
+    "key": "common.test",
+    "nl": "Dit is een test",
+    "fr": "s",
+    "en": "",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.testClient",
     "nl": "Testklant",
     "fr": "Client de test",
@@ -28912,15 +28921,6 @@
     "nl": "{{value}} zonetype(s) verwijderd.",
     "fr": "{{value}} type(s) de zone supprimé(s).",
     "en": "{{value}} zone type(s) deleted",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.test",
-    "nl": "Dit is een test",
-    "fr": "",
-    "en": "",
     "applications": [
       "mypraxis_web"
     ]

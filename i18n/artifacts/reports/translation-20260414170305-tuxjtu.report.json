@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-14T17:03:17.219Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260414170305-tuxjtu.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 1,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.adminTestEn",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "proposedEntry": {
+        "key": "common.adminTestEn",
+        "nl": "",
+        "fr": "",
+        "en": "admin test en",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

@@ -2241,6 +2241,15 @@
     ]
   },
   {
+    "key": "common.adminTestEn",
+    "nl": "",
+    "fr": "",
+    "en": "admin test en",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.advancedSearch",
     "nl": "Uitgebreid zoeken",
     "fr": "Recherche avancée",

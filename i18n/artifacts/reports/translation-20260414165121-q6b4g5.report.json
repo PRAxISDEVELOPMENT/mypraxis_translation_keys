@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-14T16:51:31.788Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260414165121-q6b4g5.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.test",
+      "namespace": "common",
+      "changes": {
+        "fr": "ddddd",
+        "en": "aaaa"
+      },
+      "current": {
+        "nl": "Dit is een test",
+        "fr": "s",
+        "en": ""
+      },
+      "next": {
+        "nl": "Dit is een test",
+        "fr": "ddddd",
+        "en": "aaaa"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

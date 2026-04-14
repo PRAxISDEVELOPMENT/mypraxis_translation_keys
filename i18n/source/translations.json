@@ -19685,8 +19685,8 @@
   {
     "key": "common.test",
     "nl": "Dit is een test",
-    "fr": "s",
-    "en": "",
+    "fr": "ddddd",
+    "en": "aaaa",
     "applications": [
       "mypraxis_web"
     ]

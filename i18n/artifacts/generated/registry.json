@@ -10,7 +10,7 @@
     "namespaces": 7,
     "applications": 4,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 1
+    "keysWithMissingLocales": 0
   },
   "applications": [
     {
@@ -52544,13 +52544,11 @@
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
-      "missingLocales": [
-        "en"
-      ],
+      "missingLocales": [],
       "resolved": {
         "nl": "Dit is een test",
-        "fr": "s",
-        "en": ""
+        "fr": "ddddd",
+        "en": "aaaa"
       }
     },
     {

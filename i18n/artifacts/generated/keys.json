@@ -248,6 +248,7 @@
   "common.administrativeData",
   "common.administrator",
   "common.administratorAccount",
+  "common.adminTest1",
   "common.advancedSearch",
   "common.afterReceiptOfTheSignedContract",
   "common.afterReceiptOfTheSignedContractThisCertificateIsGeneratedViaAPIAndSentByEmail",

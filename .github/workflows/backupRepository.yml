@@ -25,6 +25,7 @@ jobs:
     env:
       BACKUP_REPO_URL: ${{ secrets.BACKUP_REPO_URL }}
       BACKUP_REPO_TOKEN: ${{ secrets.BACKUP_REPO_TOKEN }}
+      BACKUP_REPO_USERNAME: ${{ secrets.BACKUP_REPO_USERNAME }}
 
     steps:
       - name: Checkout Full Repository History
@@ -45,11 +46,11 @@ jobs:
           retention-days: 90
 
       - name: Mirror To External Backup Repository
-        if: ${{ env.BACKUP_REPO_URL != '' && env.BACKUP_REPO_TOKEN != '' }}
+        if: ${{ env.BACKUP_REPO_URL != '' && env.BACKUP_REPO_TOKEN != '' && env.BACKUP_REPO_USERNAME != '' }}
         run: |
           case "$BACKUP_REPO_URL" in
             https://*)
-              AUTH_URL="$(printf '%s' "$BACKUP_REPO_URL" | sed "s#https://#https://x-access-token:${BACKUP_REPO_TOKEN}@#")"
+              AUTH_URL="$(printf '%s' "$BACKUP_REPO_URL" | sed "s#https://#https://${BACKUP_REPO_USERNAME}:${BACKUP_REPO_TOKEN}@#")"
               ;;
             *)
               echo "BACKUP_REPO_URL must be an https URL."
@@ -62,7 +63,7 @@ jobs:
           git push --mirror backup
 
       - name: Explain Missing External Mirror Configuration
-        if: ${{ env.BACKUP_REPO_URL == '' || env.BACKUP_REPO_TOKEN == '' }}
+        if: ${{ env.BACKUP_REPO_URL == '' || env.BACKUP_REPO_TOKEN == '' || env.BACKUP_REPO_USERNAME == '' }}
         run: |
           echo "External mirror backup is not configured."
-          echo "Set BACKUP_REPO_URL and BACKUP_REPO_TOKEN to enable true disaster-recovery backups."
+          echo "Set BACKUP_REPO_URL, BACKUP_REPO_TOKEN, and BACKUP_REPO_USERNAME to enable true disaster-recovery backups."

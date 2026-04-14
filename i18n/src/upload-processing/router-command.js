@@ -1,20 +1,8 @@
-const fs = require('fs');
 const path = require('path');
 const { ensureDirectory, readJsonFile, writeJsonFile } = require('../core/json-files');
 const { ROOT_DIR } = require('../core/path-config');
+const { listJsonFiles } = require('../core/upload-files');
 const { prepareUpload } = require('./command');
-
-function listUploadFiles(dirPath) {
-  if (!fs.existsSync(dirPath)) {
-    return [];
-  }
-
-  return fs
-    .readdirSync(dirPath)
-    .filter((fileName) => fileName.endsWith('.json'))
-    .sort((left, right) => left.localeCompare(right))
-    .map((fileName) => path.join(dirPath, fileName));
-}
 
 function buildSubsetPayload(payload, allowedIndexes) {
   return {
@@ -106,7 +94,7 @@ function runRouteUploadBatchesCommand(argv = process.argv.slice(2)) {
   ensureDirectory(options.proposalDir);
   ensureDirectory(options.reportsDir);
 
-  const uploadFiles = listUploadFiles(options.inputDir);
+  const uploadFiles = listJsonFiles(options.inputDir);
 
   console.log('\nUpload Routing');
   console.log(`  Input dir:    ${path.relative(ROOT_DIR, options.inputDir)}`);

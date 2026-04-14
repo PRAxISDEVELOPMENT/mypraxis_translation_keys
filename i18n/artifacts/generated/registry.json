@@ -5,12 +5,12 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 3214,
-    "uniqueKeys": 3214,
+    "totalEntries": 3213,
+    "uniqueKeys": 3213,
     "namespaces": 7,
     "applications": 4,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 1
+    "keysWithMissingLocales": 0
   },
   "applications": [
     {
@@ -52528,33 +52528,6 @@
       }
     },
     {
-      "key": "common.test",
-      "namespace": "common",
-      "leaf": "test",
-      "segments": [
-        "common",
-        "test"
-      ],
-      "applications": [
-        "mypraxis_data"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        3214
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [
-        "en",
-        "fr"
-      ],
-      "resolved": {
-        "nl": "Dit is een test",
-        "fr": "",
-        "en": ""
-      }
-    },
-    {
       "key": "common.testClient",
       "namespace": "common",
       "leaf": "testClient",
@@ -77165,7 +77138,6 @@
         "zoneTypesDeleted"
       ],
       "applications": [
-        "mypraxis_data",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -77202,7 +77174,7 @@
       "label": "Common",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2421
+      "keyCount": 2420
     },
     {
       "name": "error",

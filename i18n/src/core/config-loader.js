@@ -4,48 +4,62 @@ const {
   NAMESPACE_CONFIG_PATH
 } = require('./path-config');
 
-function readNamespaceConfig() {
-  const parsed = readJsonFile(NAMESPACE_CONFIG_PATH);
+function readConfigObject(filePath, label) {
+  const parsed = readJsonFile(filePath);
 
   if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
-    throw new Error('namespaces.json must contain an object.');
+    throw new Error(`${label} must contain an object.`);
   }
 
-  if (!Array.isArray(parsed.namespaces) || parsed.namespaces.length === 0) {
-    throw new Error('namespaces.json must contain a non-empty "namespaces" array.');
+  return parsed;
+}
+
+function normalizeDefinitionCollection(definitions, collectionLabel, definitionLabel) {
+  if (!Array.isArray(definitions) || definitions.length === 0) {
+    throw new Error(collectionLabel);
   }
 
-  const namespaceMap = new Map();
+  const definitionMap = new Map();
 
-  for (const namespaceDefinition of parsed.namespaces) {
-    if (!namespaceDefinition || typeof namespaceDefinition !== 'object' || Array.isArray(namespaceDefinition)) {
-      throw new Error('Each namespace definition must be an object.');
+  for (const definition of definitions) {
+    if (!definition || typeof definition !== 'object' || Array.isArray(definition)) {
+      throw new Error(`Each ${definitionLabel} definition must be an object.`);
     }
 
-    if (typeof namespaceDefinition.name !== 'string' || namespaceDefinition.name.trim() === '') {
-      throw new Error('Each namespace definition must contain a non-empty "name" string.');
+    if (typeof definition.name !== 'string' || definition.name.trim() === '') {
+      throw new Error(`Each ${definitionLabel} definition must contain a non-empty "name" string.`);
     }
 
-    const normalizedName = namespaceDefinition.name.trim();
+    const normalizedName = definition.name.trim();
 
-    if (namespaceMap.has(normalizedName)) {
-      throw new Error(`Duplicate namespace definition found for "${normalizedName}".`);
+    if (definitionMap.has(normalizedName)) {
+      throw new Error(`Duplicate ${definitionLabel} definition found for "${normalizedName}".`);
     }
 
-    namespaceMap.set(normalizedName, {
+    definitionMap.set(normalizedName, {
       name: normalizedName,
       label:
-        typeof namespaceDefinition.label === 'string' && namespaceDefinition.label.trim() !== ''
-          ? namespaceDefinition.label.trim()
+        typeof definition.label === 'string' && definition.label.trim() !== ''
+          ? definition.label.trim()
           : normalizedName,
-      description:
-        typeof namespaceDefinition.description === 'string' ? namespaceDefinition.description : '',
+      description: typeof definition.description === 'string' ? definition.description : '',
       status:
-        typeof namespaceDefinition.status === 'string' && namespaceDefinition.status.trim() !== ''
-          ? namespaceDefinition.status.trim()
+        typeof definition.status === 'string' && definition.status.trim() !== ''
+          ? definition.status.trim()
           : 'active'
     });
   }
+
+  return definitionMap;
+}
+
+function readNamespaceConfig() {
+  const parsed = readConfigObject(NAMESPACE_CONFIG_PATH, 'namespaces.json');
+  const namespaceMap = normalizeDefinitionCollection(
+    parsed.namespaces,
+    'namespaces.json must contain a non-empty "namespaces" array.',
+    'namespace'
+  );
 
   const defaultNamespace =
     typeof parsed.defaultNamespace === 'string' && parsed.defaultNamespace.trim() !== ''
@@ -65,47 +79,12 @@ function readNamespaceConfig() {
 }
 
 function readApplicationConfig() {
-  const parsed = readJsonFile(APPLICATION_CONFIG_PATH);
-
-  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
-    throw new Error('applications.json must contain an object.');
-  }
-
-  if (!Array.isArray(parsed.applications) || parsed.applications.length === 0) {
-    throw new Error('applications.json must contain a non-empty "applications" array.');
-  }
-
-  const applicationMap = new Map();
-
-  for (const applicationDefinition of parsed.applications) {
-    if (!applicationDefinition || typeof applicationDefinition !== 'object' || Array.isArray(applicationDefinition)) {
-      throw new Error('Each application definition must be an object.');
-    }
-
-    if (typeof applicationDefinition.name !== 'string' || applicationDefinition.name.trim() === '') {
-      throw new Error('Each application definition must contain a non-empty "name" string.');
-    }
-
-    const normalizedName = applicationDefinition.name.trim();
-
-    if (applicationMap.has(normalizedName)) {
-      throw new Error(`Duplicate application definition found for "${normalizedName}".`);
-    }
-
-    applicationMap.set(normalizedName, {
-      name: normalizedName,
-      label:
-        typeof applicationDefinition.label === 'string' && applicationDefinition.label.trim() !== ''
-          ? applicationDefinition.label.trim()
-          : normalizedName,
-      description:
-        typeof applicationDefinition.description === 'string' ? applicationDefinition.description : '',
-      status:
-        typeof applicationDefinition.status === 'string' && applicationDefinition.status.trim() !== ''
-          ? applicationDefinition.status.trim()
-          : 'active'
-    });
-  }
+  const parsed = readConfigObject(APPLICATION_CONFIG_PATH, 'applications.json');
+  const applicationMap = normalizeDefinitionCollection(
+    parsed.applications,
+    'applications.json must contain a non-empty "applications" array.',
+    'application'
+  );
 
   return {
     version: parsed.version ?? 1,

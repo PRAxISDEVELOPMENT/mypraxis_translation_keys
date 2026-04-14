@@ -1,153 +1,57 @@
 # MyPRAxIS Translation Keys
 
-Central repository for managing, validating, building, and processing translations across MyPRAxIS.
+Central repository for MyPRAxIS translation content, validation, artifact generation, upload processing, and proposal automation.
 
 > [!IMPORTANT]
-> This repository has a single source of truth:
-> [`i18n/source/translations.json`](i18n/source/translations.json).
-> Everything under [`i18n/artifacts/generated/`](i18n/artifacts/generated) is derived output.
+> The single source of truth is [i18n/source/translations.json](i18n/source/translations.json).
+> Files under [i18n/artifacts/generated/](i18n/artifacts/generated/) are generated output.
 
-## Table of Contents
+## What This Repository Does
 
-- [Overview](#overview)
-- [Operating Model](#operating-model)
-- [Architecture](#architecture)
-- [Repository Layout](#repository-layout)
-- [Primary Workflows](#primary-workflows)
-- [GitHub Automation](#github-automation)
-- [Command Reference](#command-reference)
-- [Operational Rules](#operational-rules)
-- [Practical Notes](#practical-notes)
+This project solves four separate problems in one place:
 
-## Overview
+1. Store canonical translation data.
+2. Validate keys, namespaces, applications, and locale completeness.
+3. Generate runtime JSON artifacts for consumers.
+4. Process editor or frontend uploads for both existing keys and newly proposed keys.
 
-This repository is built around three principles:
+The repository deliberately separates direct edits from structural translation changes:
 
-1. Translation content lives in one canonical source file.
-2. Configuration is explicit and versioned.
-3. Generated runtime files are always reproducible.
+- Existing keys are updated directly.
+- New keys are treated as proposals and routed through review.
 
-The system supports two distinct editor-facing behaviors:
-
-- **Editing an existing key**
-  Safe locale updates for existing keys continue to flow directly to `main`.
-
-- **Adding a new key**
-  New entries are treated as proposals. The system suggests a key, creates a proposal branch, and opens a pull request for review.
-
-That split is the core design decision of this repository.
+That distinction keeps normal editorial work fast while still protecting key structure.
 
 ## Operating Model
 
-### Existing key edits
+### Existing key update
 
-Use this path when the incoming payload contains a known translation `key`.
+When an upload includes an existing `key`:
 
-- the update is processed on `main`
-- only safe locale changes are applied
-- generated artifacts are rebuilt on `main`
-- no proposal PR is required
+- the update is classified as a direct update
+- safe locale changes are applied to `main`
+- generated artifacts are rebuilt
+- the upload is archived
 
-This keeps editorial work fast for admins and developers.
+### New key proposal
 
-### New key additions
+When an upload does not include a `key`:
 
-Use this path when the incoming payload does **not** contain an existing `key`.
-
-- the system analyzes the text
-- the system suggests a namespace
-- the system generates a proposed key
+- the upload is classified as a proposal
+- a namespace and key suggestion are generated
 - the proposal is processed on a `translation_proposals/*` branch
-- GitHub automatically opens or updates a PR to `main`
-- the PR is labeled for review and routed to the translation review team
+- GitHub opens or updates a PR to `main`
 
-This keeps structural changes controlled without slowing down normal editing.
+### Mixed upload batch
 
-### End-to-end flow
+One upload file may contain both:
 
-```mermaid
-flowchart TD
-    A[Editor or app upload] --> B{Existing key?}
-    B -- Yes --> C[Process on main]
-    C --> D[Apply safe locale updates]
-    D --> E[Rebuild generated artifacts]
-    E --> F[Done]
-    B -- No --> G[Suggest namespace and key]
-    G --> H[Create translation_proposals branch]
-    H --> I[Process proposal batch]
-    I --> J[Open PR to main]
-    J --> K[Review and merge]
-```
+- updates for existing keys
+- new translation entries
 
-## Architecture
+The router splits those into separate direct and proposal batches automatically.
 
-### Source, config, processing, output
-
-```mermaid
-flowchart LR
-    subgraph Source[Source and Configuration]
-        A[i18n/source/translations.json]
-        B[i18n/config/namespaces.json]
-        C[i18n/config/applications.json]
-        D[i18n/config/upload.schema.json]
-    end
-
-    subgraph CLI[CLI Entry Points]
-        E[i18n/bin/build-translations.js]
-        F[i18n/bin/process-upload.js]
-        G[i18n/bin/process-upload-inbox.js]
-        H[i18n/bin/route-upload-batches.js]
-    end
-
-    subgraph Logic[Implementation]
-        I[i18n/src/translation-build]
-        J[i18n/src/upload-processing]
-        K[i18n/src/core]
-    end
-
-    subgraph Output[Derived Output]
-        L[i18n/artifacts/generated/*.json]
-        M[i18n/artifacts/reports/*.json]
-        N[i18n/uploads/processed/*.json]
-    end
-
-    A --> E
-    B --> E
-    C --> E
-    E --> I
-    I --> K
-    I --> L
-
-    A --> F
-    B --> F
-    C --> F
-    D --> F
-    F --> J
-    J --> K
-
-    H --> J
-    G --> J
-    J --> M
-    J --> N
-```
-
-### Upload routing model
-
-```mermaid
-flowchart LR
-    A[i18n/uploads/incoming/*.json] --> B[uploads:route]
-    B --> C[Direct-only payloads]
-    B --> D[Proposal-only payloads]
-    B --> E[Routing reports]
-    C --> F[uploads:process-inbox --mode direct]
-    F --> G[Update source on main]
-    F --> H[Archive processed payloads]
-    D --> I[translation_proposals/* branch]
-    I --> J[uploads:process-inbox --mode proposal]
-    J --> K[PR to main]
-```
-
-## Repository Layout
+## Repository Structure
 
 ```text
 i18n/
@@ -162,8 +66,8 @@ i18n/
 │   ├── translation-build/    # validation and artifact generation
 │   └── upload-processing/    # upload classification, routing, and proposals
 └── uploads/
-    ├── incoming/             # queued editor uploads
-    └── processed/            # archived processed uploads
+    ├── incoming/             # queued upload payloads
+    └── processed/            # archived processed payloads
 
 .github/
 ├── pull_request_template.md
@@ -176,203 +80,207 @@ scripts/
 └── update-translations.sh
 ```
 
-### Key files
+## Core Files
 
-- [`i18n/source/translations.json`](i18n/source/translations.json)
-  Canonical list of translation entries.
-
-- [`i18n/config/namespaces.json`](i18n/config/namespaces.json)
+- [i18n/source/translations.json](i18n/source/translations.json)
+  Canonical translation entries.
+- [i18n/config/namespaces.json](i18n/config/namespaces.json)
   Allowed namespaces and default namespace.
-
-- [`i18n/config/applications.json`](i18n/config/applications.json)
+- [i18n/config/applications.json](i18n/config/applications.json)
   Allowed application identifiers.
+- [i18n/config/upload.schema.json](i18n/config/upload.schema.json)
+  Upload payload shape for editor or frontend integrations.
+- [i18n/bin/build-translations.js](i18n/bin/build-translations.js)
+  Validation and artifact generation CLI.
+- [i18n/bin/process-upload.js](i18n/bin/process-upload.js)
+  Single upload prepare and proposal-apply CLI.
+- [i18n/bin/process-upload-inbox.js](i18n/bin/process-upload-inbox.js)
+  Batch inbox processor.
+- [i18n/bin/route-upload-batches.js](i18n/bin/route-upload-batches.js)
+  Mixed-batch router.
+- [i18n/bin/simulate-upload.js](i18n/bin/simulate-upload.js)
+  Local helper for app-style upload simulation.
 
-- [`i18n/bin/build-translations.js`](i18n/bin/build-translations.js)
-  Validation and artifact generation entry point.
+## Local Development
 
-- [`i18n/bin/process-upload.js`](i18n/bin/process-upload.js)
-  Single upload preparation and proposal application entry point.
+### Install
 
-- [`i18n/bin/process-upload-inbox.js`](i18n/bin/process-upload-inbox.js)
-  Batch processing entry point for queued uploads.
+```bash
+npm install
+npm run tooling:check-syntax
+```
 
-- [`i18n/bin/route-upload-batches.js`](i18n/bin/route-upload-batches.js)
-  Splits mixed upload batches into direct updates and proposals.
-
-## Primary Workflows
-
-### 1. Manual source update
-
-Use this when directly editing translation data in the repository.
-
-1. Update [`i18n/source/translations.json`](i18n/source/translations.json).
-2. Update [`i18n/config/namespaces.json`](i18n/config/namespaces.json) only if needed.
-3. Update [`i18n/config/applications.json`](i18n/config/applications.json) only if needed.
-4. Run `npm run translations:build`.
-5. Verify the generated files in [`i18n/artifacts/generated/`](i18n/artifacts/generated).
-6. Commit and push.
-
-### 2. Existing key edit from the editor
-
-Use this when an upload includes a known `key`.
-
-1. The upload lands in `i18n/uploads/incoming`.
-2. The processing workflow routes the batch.
-3. Direct updates are applied on `main`.
-4. Artifacts are rebuilt on `main`.
-5. The payload is archived under `i18n/uploads/processed`.
-
-### 3. New key proposal from the editor
-
-Use this when an upload does not include an existing `key`.
-
-1. The upload lands in `i18n/uploads/incoming`.
-2. The routing step identifies proposal entries.
-3. A suggested namespace and key are generated.
-4. A `translation_proposals/*` branch is created automatically.
-5. Proposal processing writes the new entry into that branch.
-6. GitHub opens or updates a PR to `main`.
-7. The review team receives a review request through GitHub.
-
-### 4. Mixed upload batch
-
-Mixed batches are fully supported.
-
-If one upload file contains:
-
-- existing-key edits
-- new key proposals
-
-the router splits them automatically so both paths continue independently.
-
-## GitHub Automation
-
-The repository uses three GitHub Actions workflows:
-
-- [`.github/workflows/buildTranslations.yml`](.github/workflows/buildTranslations.yml)
-  Validates source and configuration changes and rebuilds generated artifacts on `main`.
-
-- [`.github/workflows/processTranslationUploads.yml`](.github/workflows/processTranslationUploads.yml)
-  Processes editor uploads, routes mixed batches, applies direct updates on `main`, and creates proposal branches for new keys.
-
-- [`.github/workflows/openTranslationProposalPr.yml`](.github/workflows/openTranslationProposalPr.yml)
-  Opens or updates the PR for `translation_proposals/*` branches, applies labels, and requests reviewers.
-
-### Proposal PR behavior
-
-Proposal pull requests are designed to be review-ready:
-
-- target branch: `main`
-- labels:
-  - `translation-proposal`
-  - `needs-review`
-  - `auto-generated`
-- review routing:
-  - individual reviewers through `TRANSLATION_PROPOSAL_REVIEWERS`
-  - team reviewers through `TRANSLATION_PROPOSAL_TEAM_REVIEWERS`
-  - assignees through `TRANSLATION_PROPOSAL_ASSIGNEES`
-- PR body includes:
-  - branch name
-  - number of proposal reports
-  - proposed keys
-  - report file references
-
-### Reviewer routing variables
-
-Configure these in GitHub Actions repository variables when needed:
-
-- `TRANSLATION_PROPOSAL_REVIEWERS`
-  Comma-separated GitHub usernames.
-
-- `TRANSLATION_PROPOSAL_TEAM_REVIEWERS`
-  Comma-separated GitHub team slugs.
-
-- `TRANSLATION_PROPOSAL_ASSIGNEES`
-  Comma-separated GitHub usernames.
-
-### Notifications and email
-
-The repository does **not** send email directly.
-
-GitHub sends notifications when review requests are created. Whether team members receive those by email depends on their own GitHub notification settings.
-
-## Command Reference
-
-| Command | Purpose |
-| --- | --- |
-| `npm run translations:build` | Validate the source and regenerate all derived files |
-| `npm run translations:check` | Verify that generated artifacts are in sync with source |
-| `npm run translations:validate` | Fail on warnings or errors |
-| `npm run translations:report` | Print a detailed validation summary |
-| `npm run translations:list-namespaces` | List configured namespaces |
-| `npm run uploads:prepare -- --input <file>` | Analyze one upload file and generate a report |
-| `npm run uploads:apply-proposals -- --input <report-file>` | Apply proposal entries from a report |
-| `npm run uploads:route` | Split upload batches into direct and proposal payloads |
-| `npm run uploads:process-inbox -- --mode direct` | Process direct updates |
-| `npm run uploads:process-inbox -- --mode proposal` | Process proposal batches |
-| `npm run update` | Build, commit, push, and sync the current branch |
-
-## Operational Rules
-
-### Source and output
-
-- Never edit files under `i18n/artifacts/generated/` manually.
-- Always treat `i18n/source/translations.json` as the canonical source.
-- Keep configuration changes in `i18n/config/`, not in generated output.
-
-### Existing keys
-
-- Existing keys may be updated directly if the change is a safe locale update.
-- Direct updates must not introduce new keys.
-- Unknown keys in direct mode are rejected.
-
-### New keys
-
-- New keys always follow the proposal path.
-- Proposal uploads should not provide a final key directly.
-- The system suggests the namespace and key.
-- Review happens in the automatically generated PR.
-
-### Namespace and application control
-
-- Every entry must use an allowed namespace.
-- Every entry must include at least one allowed application.
-- New namespaces and application identifiers must be added to configuration first.
-
-## Practical Notes
-
-### Recommended developer workflow
-
-For normal repo work:
+### Build translations
 
 ```bash
 npm run translations:build
-npm run update
 ```
 
-For upload investigation:
+### Validate without writing artifacts
+
+```bash
+npm run translations:check
+npm run translations:validate
+```
+
+### Generate a detailed report
+
+```bash
+npm run translations:report
+```
+
+## Upload Processing
+
+### Upload payload shape
+
+```json
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.save",
+      "nl": "Opslaan"
+    },
+    {
+      "nl": "Nieuwe knop",
+      "fr": "Nouveau bouton",
+      "en": "New button"
+    }
+  ]
+}
+```
+
+Rules:
+
+- Include `key` only for existing translation keys.
+- Omit `key` for new translation proposals.
+- Locale fields supported today are `nl`, `fr`, and `en`.
+- Proposal entries may also include `description` and `notes`.
+
+### Inspect a single upload
 
 ```bash
 npm run uploads:prepare -- --input path/to/upload.json
 ```
 
-### Common mistakes
+### Route mixed upload batches
 
-- editing generated files directly
-- adding a new key through the direct-update path
-- treating uploads as permanent source files
-- changing namespaces or applications without updating configuration
-- committing generated output without the matching source change
+```bash
+npm run uploads:route
+```
 
-### Short summary
+### Process inbox batches
 
-If you remember only one model, remember this:
+```bash
+npm run uploads:process-inbox -- --mode direct
+npm run uploads:process-inbox -- --mode proposal
+```
+
+## Frontend And App Testing
+
+Use the simulate helper when you want to test the same classification and inbox flow locally without hand-writing files in `i18n/uploads/incoming`.
+
+### Simulate an existing key update
+
+```bash
+npm run uploads:simulate -- edit --key common.save --fr "Enregistrer depuis l'app"
+```
+
+### Simulate a new translation proposal
+
+```bash
+npm run uploads:simulate -- new --nl "Nieuwe knop" --fr "Nouveau bouton" --en "New button"
+```
+
+Both commands default to `dry run`.
+
+Add `--apply` if you want the change applied locally to:
+
+- [i18n/source/translations.json](i18n/source/translations.json)
+- [i18n/artifacts/generated/](i18n/artifacts/generated/)
+
+Examples:
+
+```bash
+npm run uploads:simulate -- edit --key common.save --fr "Enregistrer depuis l'app" --apply
+npm run uploads:simulate -- new --nl "Nieuwe knop" --fr "Nouveau bouton" --en "New button" --apply
+```
+
+## Automation
+
+This repository uses three GitHub Actions workflows:
+
+- [.github/workflows/buildTranslations.yml](.github/workflows/buildTranslations.yml)
+  Validates source changes and regenerates artifacts on `main`.
+- [.github/workflows/processTranslationUploads.yml](.github/workflows/processTranslationUploads.yml)
+  Routes and processes incoming uploads.
+- [.github/workflows/openTranslationProposalPr.yml](.github/workflows/openTranslationProposalPr.yml)
+  Opens or updates proposal PRs for new keys.
+
+### Proposal PR behavior
+
+Proposal branches target `main` and are automatically prepared for review:
+
+- labels are applied
+- reviewers and assignees may be requested through repository variables
+- report files are summarized in the PR body
+
+Repository variables used by the PR automation:
+
+- `TRANSLATION_PROPOSAL_REVIEWERS`
+- `TRANSLATION_PROPOSAL_TEAM_REVIEWERS`
+- `TRANSLATION_PROPOSAL_ASSIGNEES`
+
+## Command Reference
+
+| Command | Purpose |
+| --- | --- |
+| `npm run translations:build` | Validate source and regenerate derived files |
+| `npm run tooling:check-syntax` | Syntax-check all Node CLI and implementation files |
+| `npm run help` | Print the main translation help output |
+| `npm run translations:check` | Verify generated artifacts are in sync |
+| `npm run translations:validate` | Fail on warnings or errors |
+| `npm run translations:report` | Print a full validation report |
+| `npm run translations:list-namespaces` | List configured namespaces |
+| `npm run uploads:help` | Print help for single-upload processing |
+| `npm run uploads:prepare -- --input <file>` | Analyze one upload payload |
+| `npm run uploads:apply-proposals -- --input <report-file>` | Apply proposals from a report |
+| `npm run uploads:process-inbox:help` | Print help for inbox processing |
+| `npm run uploads:route` | Split mixed upload files into direct and proposal batches |
+| `npm run uploads:route:help` | Print help for upload routing |
+| `npm run uploads:process-inbox -- --mode direct` | Process direct-update batches |
+| `npm run uploads:process-inbox -- --mode proposal` | Process proposal batches |
+| `npm run uploads:simulate -- edit ...` | Simulate an existing-key app upload |
+| `npm run uploads:simulate -- new ...` | Simulate a new-key app upload |
+| `npm run uploads:simulate:help` | Print help for upload simulation |
+| `npm run update` | Build, commit, push, and sync the current branch |
+
+## Operational Rules
+
+- Never edit files under `i18n/artifacts/generated/` manually.
+- Keep `i18n/source/translations.json` as the canonical source.
+- Direct updates must use existing keys only.
+- New keys must enter through the proposal path.
+- Every entry must use an allowed namespace.
+- Every entry must include at least one allowed application.
+
+## Practical Notes
+
+- If a `dry run` succeeds, the payload shape and classification are valid.
+- If `--apply` succeeds, the local source and generated artifacts have been updated.
+- A warning about missing locale values does not block artifact generation unless validation mode is stricter.
+- The `simulate` helper tests the repository upload pipeline, not the frontend UI itself.
+
+## Summary
+
+If you remember only the model:
 
 - source lives in `i18n/source/`
 - rules live in `i18n/config/`
 - logic lives in `i18n/src/`
 - entry points live in `i18n/bin/`
-- generated output lives in `i18n/artifacts/`
-- incoming editor data lives in `i18n/uploads/`
+- runtime output lives in `i18n/artifacts/generated/`
+- upload state lives in `i18n/uploads/`
 
-That separation is what keeps the repository understandable, automatable, and safe.
+That separation is what keeps the system predictable and automatable.

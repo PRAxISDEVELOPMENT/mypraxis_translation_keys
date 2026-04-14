@@ -20,14 +20,8 @@ commit_touches_build_workflow_paths() {
   for changed_path in $changed_paths; do
     case "$changed_path" in
       i18n/source/translations.json|\
-      i18n/config/namespaces.json|\
-      i18n/config/applications.json|\
-      i18n/bin/build-translations.js|\
-      i18n/bin/process-upload.js|\
-      i18n/bin/process-upload-inbox.js|\
-      i18n/bin/route-upload-batches.js|\
-      i18n/config/upload.schema.json|\
-      i18n/config/translations.schema.json|\
+      i18n/config/*|\
+      i18n/bin/*|\
       i18n/src/*|\
       .github/workflows/buildTranslations.yml|\
       .github/workflows/processTranslationUploads.yml)

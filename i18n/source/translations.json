@@ -28913,16 +28913,7 @@
     "fr": "{{value}} type(s) de zone supprimé(s).",
     "en": "{{value}} zone type(s) deleted",
     "applications": [
-      "mypraxis_web","mypraxis_data"
-    ]
-  },
-  {
-    "key": "common.test",
-    "nl": "Dit is een test",
-    "fr": "",
-    "en": "",
-    "applications": [
-      "mypraxis_data"
+      "mypraxis_web"
     ]
   }
 ]

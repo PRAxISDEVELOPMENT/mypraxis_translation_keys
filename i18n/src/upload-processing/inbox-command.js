@@ -1,4 +1,3 @@
-const fs = require('fs');
 const path = require('path');
 const { ensureDirectory, readJsonFile } = require('../core/json-files');
 const {
@@ -7,33 +6,7 @@ const {
   ROOT_DIR
 } = require('../core/path-config');
 const { runNodeScript } = require('../core/script-runner');
-
-function listUploadFiles(dirPath) {
-  if (!fs.existsSync(dirPath)) {
-    return [];
-  }
-
-  return fs
-    .readdirSync(dirPath)
-    .filter((fileName) => fileName.endsWith('.json'))
-    .sort((left, right) => left.localeCompare(right))
-    .map((fileName) => path.join(dirPath, fileName));
-}
-
-function archiveUpload(filePath, processedDir) {
-  ensureDirectory(processedDir);
-  const parsed = path.parse(filePath);
-  let targetPath = path.join(processedDir, `${parsed.name}${parsed.ext}`);
-  let counter = 2;
-
-  while (fs.existsSync(targetPath)) {
-    targetPath = path.join(processedDir, `${parsed.name}-${counter}${parsed.ext}`);
-    counter += 1;
-  }
-
-  fs.renameSync(filePath, targetPath);
-  return targetPath;
-}
+const { archiveFileWithUniqueName, listJsonFiles } = require('../core/upload-files');
 
 function processUploadFile(filePath, options) {
   ensureDirectory(options.reportsDir);
@@ -85,7 +58,7 @@ function processUploadFile(filePath, options) {
     return {
       filePath,
       reportPath,
-      archivedPath: archiveUpload(filePath, options.processedDir),
+      archivedPath: archiveFileWithUniqueName(filePath, options.processedDir),
       directUpdates: report.summary.directUpdates,
       proposals: 0
     };
@@ -120,7 +93,7 @@ function processUploadFile(filePath, options) {
   return {
     filePath,
     reportPath,
-    archivedPath: archiveUpload(filePath, options.processedDir),
+    archivedPath: archiveFileWithUniqueName(filePath, options.processedDir),
     directUpdates: 0,
     proposals: report.summary.proposals
   };
@@ -142,7 +115,7 @@ function runProcessUploadInboxCommand(argv = process.argv.slice(2)) {
   ensureDirectory(options.reportsDir);
   ensureDirectory(options.processedDir);
 
-  const uploadFiles = listUploadFiles(options.uploadsDir);
+  const uploadFiles = listJsonFiles(options.uploadsDir);
 
   console.log('\nUpload Inbox Processing');
   console.log(`  Mode:        ${options.mode}`);
@@ -169,9 +142,13 @@ function runProcessUploadInboxCommand(argv = process.argv.slice(2)) {
     runNodeScript(BUILD_SCRIPT_PATH, []);
   }
 
-  console.log('\nUpload Inbox Processed');
-  console.log(`  Direct updates applied: ${totalDirectUpdates}`);
-  console.log(`  Proposals applied:      ${totalProposals}`);
+  const resultLabel = options.dryRun ? 'Upload Inbox Dry Run Complete' : 'Upload Inbox Processed';
+  const directLabel = options.dryRun ? 'Direct updates detected' : 'Direct updates applied';
+  const proposalLabel = options.dryRun ? 'Proposals detected' : 'Proposals applied';
+
+  console.log(`\n${resultLabel}`);
+  console.log(`  ${directLabel}: ${totalDirectUpdates}`);
+  console.log(`  ${proposalLabel}:      ${totalProposals}`);
   console.log(`  Upload files archived:  ${options.dryRun ? 0 : uploadFiles.length}`);
 }
 

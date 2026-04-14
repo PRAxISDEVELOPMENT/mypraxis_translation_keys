@@ -14,13 +14,8 @@ on:
       - 'translation_proposals/**'
     paths:
       - 'i18n/uploads/incoming/*.json'
-      - 'i18n/bin/process-upload.js'
-      - 'i18n/bin/process-upload-inbox.js'
-      - 'i18n/bin/route-upload-batches.js'
-      - 'i18n/bin/build-translations.js'
-      - 'i18n/config/upload.schema.json'
-      - 'i18n/config/applications.json'
-      - 'i18n/config/namespaces.json'
+      - 'i18n/bin/*.js'
+      - 'i18n/config/**'
       - 'i18n/src/**'
       - '.github/workflows/processTranslationUploads.yml'
   workflow_dispatch:

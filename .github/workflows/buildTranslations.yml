@@ -10,15 +10,12 @@ on:
   pull_request:
     paths:
       - 'i18n/source/translations.json'
-      - 'i18n/config/namespaces.json'
-      - 'i18n/config/applications.json'
-      - 'i18n/bin/build-translations.js'
-      - 'i18n/bin/process-upload.js'
-      - 'i18n/bin/process-upload-inbox.js'
-      - 'i18n/bin/route-upload-batches.js'
-      - 'i18n/config/upload.schema.json'
-      - 'i18n/config/translations.schema.json'
+      - 'i18n/config/**'
+      - 'i18n/bin/*.js'
       - 'i18n/src/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'scripts/**'
       - '.github/workflows/buildTranslations.yml'
       - '.github/workflows/processTranslationUploads.yml'
   push:
@@ -26,15 +23,12 @@ on:
       - main
     paths:
       - 'i18n/source/translations.json'
-      - 'i18n/config/namespaces.json'
-      - 'i18n/config/applications.json'
-      - 'i18n/bin/build-translations.js'
-      - 'i18n/bin/process-upload.js'
-      - 'i18n/bin/process-upload-inbox.js'
-      - 'i18n/bin/route-upload-batches.js'
-      - 'i18n/config/upload.schema.json'
-      - 'i18n/config/translations.schema.json'
+      - 'i18n/config/**'
+      - 'i18n/bin/*.js'
       - 'i18n/src/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'scripts/**'
       - '.github/workflows/buildTranslations.yml'
       - '.github/workflows/processTranslationUploads.yml'
   workflow_dispatch:
@@ -65,11 +59,7 @@ jobs:
           node-version: 20
 
       - name: Validate Translation Tooling Syntax
-        run: |
-          node --check i18n/bin/build-translations.js
-          node --check i18n/bin/process-upload.js
-          node --check i18n/bin/process-upload-inbox.js
-          node --check i18n/bin/route-upload-batches.js
+        run: npm run tooling:check-syntax
 
       - name: Validate Translation Source
         run: node i18n/bin/build-translations.js
@@ -94,11 +84,7 @@ jobs:
           node-version: 20
 
       - name: Validate Translation Tooling Syntax
-        run: |
-          node --check i18n/bin/build-translations.js
-          node --check i18n/bin/process-upload.js
-          node --check i18n/bin/process-upload-inbox.js
-          node --check i18n/bin/route-upload-batches.js
+        run: npm run tooling:check-syntax
 
       - name: Regenerate Translation Artifacts
         run: node i18n/bin/build-translations.js

@@ -1,17 +1,29 @@
 {
   "name": "mypraxis_translation_keys",
   "private": true,
+  "description": "Translation source, validation, artifact generation, and upload automation for MyPRAxIS.",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
+    "help": "node i18n/bin/build-translations.js --help",
+    "tooling:check-syntax": "sh scripts/check-node-syntax.sh",
     "translations:build": "node i18n/bin/build-translations.js",
     "translations:check": "node i18n/bin/build-translations.js --check",
     "translations:help": "node i18n/bin/build-translations.js --help",
     "translations:list-namespaces": "node i18n/bin/build-translations.js --list-namespaces",
     "translations:report": "node i18n/bin/build-translations.js --report",
     "translations:validate": "node i18n/bin/build-translations.js --validate",
+    "uploads:help": "node i18n/bin/process-upload.js --help",
     "uploads:prepare": "node i18n/bin/process-upload.js prepare",
     "uploads:apply-proposals": "node i18n/bin/process-upload.js apply-proposals",
+    "uploads:process-inbox:help": "node i18n/bin/process-upload-inbox.js --help",
     "uploads:route": "node i18n/bin/route-upload-batches.js",
+    "uploads:route:help": "node i18n/bin/route-upload-batches.js --help",
     "uploads:process-inbox": "node i18n/bin/process-upload-inbox.js",
+    "uploads:simulate": "node i18n/bin/simulate-upload.js",
+    "uploads:simulate:help": "node i18n/bin/simulate-upload.js --help",
     "update": "sh ./scripts/update-translations.sh"
   }
 }

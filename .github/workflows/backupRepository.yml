@@ -1,0 +1,67 @@
+#
+# Creates a scheduled repository backup.
+# A local artifact is useful for convenience, but the real disaster-recovery path
+# is pushing a mirror to a separate private backup repository.
+#
+
+name: Backup Translation Repository
+
+on:
+  schedule:
+    - cron: '17 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: repository-backup
+  cancel-in-progress: false
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    name: Create Repository Backup
+
+    steps:
+      - name: Checkout Full Repository History
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create Git Bundle
+        run: |
+          mkdir -p backup
+          git bundle create "backup/mypraxis_translation_keys-${GITHUB_RUN_ID}.bundle" --all
+
+      - name: Upload Backup Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: repository-backup-${{ github.run_id }}
+          path: backup/*.bundle
+          retention-days: 90
+
+      - name: Mirror To External Backup Repository
+        if: ${{ secrets.BACKUP_REPO_URL != '' && secrets.BACKUP_REPO_TOKEN != '' }}
+        env:
+          BACKUP_REPO_URL: ${{ secrets.BACKUP_REPO_URL }}
+          BACKUP_REPO_TOKEN: ${{ secrets.BACKUP_REPO_TOKEN }}
+        run: |
+          case "$BACKUP_REPO_URL" in
+            https://*)
+              AUTH_URL="$(printf '%s' "$BACKUP_REPO_URL" | sed "s#https://#https://x-access-token:${BACKUP_REPO_TOKEN}@#")"
+              ;;
+            *)
+              echo "BACKUP_REPO_URL must be an https URL."
+              exit 1
+              ;;
+          esac
+
+          git remote add backup "$AUTH_URL"
+          git push --mirror backup
+
+      - name: Explain Missing External Mirror Configuration
+        if: ${{ !(secrets.BACKUP_REPO_URL != '' && secrets.BACKUP_REPO_TOKEN != '') }}
+        run: |
+          echo "External mirror backup is not configured."
+          echo "Set BACKUP_REPO_URL and BACKUP_REPO_TOKEN to enable true disaster-recovery backups."

@@ -209,7 +209,7 @@ npm run uploads:simulate -- new --nl "Nieuwe knop" --fr "Nouveau bouton" --en "N
 
 ## Automation
 
-This repository uses three GitHub Actions workflows:
+This repository uses four GitHub Actions workflows:
 
 - [.github/workflows/buildTranslations.yml](.github/workflows/buildTranslations.yml)
   Validates source changes and regenerates artifacts on `main`.
@@ -217,6 +217,8 @@ This repository uses three GitHub Actions workflows:
   Routes and processes incoming uploads.
 - [.github/workflows/openTranslationProposalPr.yml](.github/workflows/openTranslationProposalPr.yml)
   Opens or updates proposal PRs for new keys.
+- [.github/workflows/backupRepository.yml](.github/workflows/backupRepository.yml)
+  Creates scheduled repository backups and can mirror the repository to a separate backup remote.
 
 ### Proposal PR behavior
 
@@ -231,6 +233,35 @@ Repository variables used by the PR automation:
 - `TRANSLATION_PROPOSAL_REVIEWERS`
 - `TRANSLATION_PROPOSAL_TEAM_REVIEWERS`
 - `TRANSLATION_PROPOSAL_ASSIGNEES`
+
+## Backups
+
+Automatic backups are supported.
+
+The repository now includes a scheduled backup workflow in [.github/workflows/backupRepository.yml](.github/workflows/backupRepository.yml).
+
+What it does:
+
+- creates a full `git bundle` backup on a schedule
+- uploads that bundle as a workflow artifact
+- optionally mirrors the entire repository to a separate private backup repository
+
+Important:
+
+- an artifact stored inside the same GitHub repository is convenient, but it is not enough as sole disaster recovery if the repository itself is deleted
+- the safe setup is a second private backup repository
+
+Recommended configuration:
+
+1. Create a separate private GitHub repository dedicated to backups.
+2. Add these repository secrets in the main repository:
+   `BACKUP_REPO_URL`
+   HTTPS URL of the private backup repository, for example `https://github.com/<owner>/<repo>.git`
+   `BACKUP_REPO_TOKEN`
+   A token with write access only to that backup repository
+3. Leave the schedule as-is or adjust the cron expression in the workflow.
+
+If the mirror secrets are not configured, the workflow still creates a bundle artifact, but that should be treated as convenience only, not as your final safety net.
 
 ## Command Reference
 

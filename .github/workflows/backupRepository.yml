@@ -26,6 +26,8 @@ jobs:
       BACKUP_REPO_URL: ${{ secrets.BACKUP_REPO_URL }}
       BACKUP_REPO_TOKEN: ${{ secrets.BACKUP_REPO_TOKEN }}
       BACKUP_REPO_USERNAME: ${{ secrets.BACKUP_REPO_USERNAME }}
+      BACKUP_REPO_SSH_URL: ${{ secrets.BACKUP_REPO_SSH_URL }}
+      BACKUP_REPO_SSH_KEY: ${{ secrets.BACKUP_REPO_SSH_KEY }}
 
     steps:
       - name: Checkout Full Repository History
@@ -45,8 +47,24 @@ jobs:
           path: backup/*.bundle
           retention-days: 90
 
-      - name: Mirror To External Backup Repository
-        if: ${{ env.BACKUP_REPO_URL != '' && env.BACKUP_REPO_TOKEN != '' && env.BACKUP_REPO_USERNAME != '' }}
+      - name: Configure SSH Mirror Authentication
+        if: ${{ env.BACKUP_REPO_SSH_URL != '' && env.BACKUP_REPO_SSH_KEY != '' }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$BACKUP_REPO_SSH_KEY" > ~/.ssh/backup_repo
+          chmod 600 ~/.ssh/backup_repo
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - name: Mirror To External Backup Repository Over SSH
+        if: ${{ env.BACKUP_REPO_SSH_URL != '' && env.BACKUP_REPO_SSH_KEY != '' }}
+        run: |
+          export GIT_SSH_COMMAND="ssh -i ~/.ssh/backup_repo -o IdentitiesOnly=yes"
+          git ls-remote "$BACKUP_REPO_SSH_URL" > /dev/null
+          git remote add backup "$BACKUP_REPO_SSH_URL"
+          git push --mirror backup
+
+      - name: Mirror To External Backup Repository Over HTTPS
+        if: ${{ (env.BACKUP_REPO_SSH_URL == '' || env.BACKUP_REPO_SSH_KEY == '') && env.BACKUP_REPO_URL != '' && env.BACKUP_REPO_TOKEN != '' && env.BACKUP_REPO_USERNAME != '' }}
         run: |
           case "$BACKUP_REPO_URL" in
             https://*)
@@ -63,7 +81,9 @@ jobs:
           git push --mirror backup
 
       - name: Explain Missing External Mirror Configuration
-        if: ${{ env.BACKUP_REPO_URL == '' || env.BACKUP_REPO_TOKEN == '' || env.BACKUP_REPO_USERNAME == '' }}
+        if: ${{ !((env.BACKUP_REPO_SSH_URL != '' && env.BACKUP_REPO_SSH_KEY != '') || (env.BACKUP_REPO_URL != '' && env.BACKUP_REPO_TOKEN != '' && env.BACKUP_REPO_USERNAME != '')) }}
         run: |
           echo "External mirror backup is not configured."
-          echo "Set BACKUP_REPO_URL, BACKUP_REPO_TOKEN, and BACKUP_REPO_USERNAME to enable true disaster-recovery backups."
+          echo "Configure either SSH mirror secrets or HTTPS mirror secrets."
+          echo "SSH: BACKUP_REPO_SSH_URL + BACKUP_REPO_SSH_KEY"
+          echo "HTTPS: BACKUP_REPO_URL + BACKUP_REPO_TOKEN + BACKUP_REPO_USERNAME"

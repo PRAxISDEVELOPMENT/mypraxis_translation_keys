@@ -254,14 +254,25 @@ Important:
 Recommended configuration:
 
 1. Create a separate private GitHub repository dedicated to backups.
-2. Add these repository secrets in the main repository:
+2. Prefer SSH deploy-key mirroring for the backup repository.
+3. Add one of these secret sets in the main repository.
+
+Preferred SSH setup:
+   `BACKUP_REPO_SSH_URL`
+   SSH URL of the backup repository, for example `git@github.com:<owner>/<repo>.git`
+   `BACKUP_REPO_SSH_KEY`
+   Private SSH key whose public key is added as a write-enabled deploy key on the backup repository
+
+Fallback HTTPS setup:
    `BACKUP_REPO_URL`
    HTTPS URL of the private backup repository, for example `https://github.com/<owner>/<repo>.git`
    `BACKUP_REPO_TOKEN`
    A token with write access only to that backup repository
-3. Leave the schedule as-is or adjust the cron expression in the workflow.
+   `BACKUP_REPO_USERNAME`
+   GitHub username that owns the token
+4. Leave the schedule as-is or adjust the cron expression in the workflow.
 
-If the mirror secrets are not configured, the workflow still creates a bundle artifact, but that should be treated as convenience only, not as your final safety net.
+If mirror secrets are not configured, the workflow still creates a bundle artifact, but that should be treated as convenience only, not as your final safety net.
 
 ## Command Reference
 

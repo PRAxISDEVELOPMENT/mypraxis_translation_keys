@@ -224,15 +224,14 @@ jobs:
             const proposalLines =
               proposalPreview.length > 0
                 ? proposalPreview.flatMap((proposal) => [
-                    `#### \`${proposal.key || proposal.proposalId}\``,
+                    `<details open>`,
+                    `<summary><strong>${proposal.key || proposal.proposalId}</strong> - ${formatLink(
+                      'Edit this proposal',
+                      buildEditUrl(proposal.proposalPath)
+                    )}</summary>`,
                     '',
                     '| Field | Value |',
                     '| --- | --- |',
-                    `| Edit | ${formatLink('edit file', buildEditUrl(proposal.proposalPath))} |`,
-                    `| View | ${formatLink('view file', buildBlobUrl(proposal.proposalPath))} |`,
-                    `| File | \`${proposal.proposalPath}\` |`,
-                    ...(proposal.sourceUploadFile ? [`| Source upload | \`${proposal.sourceUploadFile}\` |`] : []),
-                    `| Confidence | \`${proposal.confidence}\` |`,
                     `| Applications | ${
                       proposal.applications.length > 0
                         ? proposal.applications.map((value) => `\`${value}\``).join(', ')
@@ -243,7 +242,14 @@ jobs:
                     `| EN | ${formatInlineCode(proposal.en)} |`,
                     ...(proposal.description ? [`| Description | ${formatInlineCode(proposal.description)} |`] : []),
                     ...(proposal.notes ? [`| Notes | ${formatInlineCode(proposal.notes)} |`] : []),
-                    ...(proposal.reason ? [`| Why this key | ${proposal.reason} |`] : []),
+                    '',
+                    `View file: ${formatLink('open file', buildBlobUrl(proposal.proposalPath))}`,
+                    ...(proposal.reason ? [`Why this key: ${proposal.reason}`] : []),
+                    ...(proposal.sourceUploadFile ? [`Source upload: \`${proposal.sourceUploadFile}\``] : []),
+                    `Confidence: \`${proposal.confidence}\``,
+                    `File: \`${proposal.proposalPath}\``,
+                    '',
+                    `</details>`,
                     ''
                   ])
                 : ['- No proposal objects were available in the branch diff.'];

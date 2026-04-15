@@ -44,6 +44,7 @@ If you only need orientation, use this table first.
 | understand the repository quickly | [How It Works](#how-it-works) |
 | find the important files and directories | [Repository Layout](#repository-layout) |
 | run the right command | [Command Guide](#command-guide) |
+| copy a ready-to-use client i18n setup | [Client Templates](#client-templates) |
 | understand upload routing and proposal behavior | [Upload Processing](#upload-processing) |
 | understand GitHub Actions automation | [Automation](#automation) |
 | get deeper implementation detail | [Detailed Documentation](#detailed-documentation) |
@@ -138,6 +139,7 @@ i18n/
     └── processed/            # archived upload payloads
 
 docs/                         # deeper reference guides
+templates/                    # copy-ready JS and TS client i18n examples
 scripts/                      # local helper scripts
 .github/workflows/            # CI and automation behavior
 ```
@@ -158,6 +160,7 @@ scripts/                      # local helper scripts
 | [i18n/src/translation-build/](i18n/src/translation-build/) | translation validation and generation logic |
 | [i18n/src/upload-processing/](i18n/src/upload-processing/) | upload classification, routing, and proposal logic |
 | [i18n/artifacts/reports/](i18n/artifacts/reports/) | prepare, routing, and apply reports |
+| [templates/](templates/) | copy-ready JS and TS client integration examples |
 
 ## Requirements And Setup
 
@@ -233,6 +236,30 @@ Typical local workflow:
 2. run `npm run translations:build`
 3. inspect the generated changes
 4. run `npm run translations:check`
+
+## Client Templates
+
+If you need to consume these translations from a web app or Expo app, use the ready-to-copy examples in [templates/](templates/).
+
+They are aligned with the current repository output:
+
+- they load `en`, `fr`, and `nl`
+- they fetch from `i18n/artifacts/generated/{{lng}}.json`
+- they keep missing translations visible as `(missing key) your.key`
+- they keep `moment` synchronized with the active language
+
+Raw GitHub URL pattern:
+
+```text
+https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated/{{lng}}.json
+```
+
+Available template files:
+
+- [templates/javascript/web/i18n.js](templates/javascript/web/i18n.js)
+- [templates/javascript/expo/i18n.js](templates/javascript/expo/i18n.js)
+- [templates/typescript/web/i18n.ts](templates/typescript/web/i18n.ts)
+- [templates/typescript/expo/i18n.ts](templates/typescript/expo/i18n.ts)
 
 ## Upload Processing
 
@@ -447,6 +474,7 @@ The root README is the fastest orientation layer. Deeper guides live in [docs/](
 | [docs/upload-processing.md](docs/upload-processing.md) | upload routing, direct updates, proposals, and reports |
 | [docs/github-automation.md](docs/github-automation.md) | GitHub Actions and proposal branch behavior |
 | [docs/maintainer-workflow.md](docs/maintainer-workflow.md) | everyday maintainer workflow and troubleshooting |
+| [templates/README.md](templates/README.md) | client integration templates for JS, TS, web, and Expo |
 
 ## Short Version
 

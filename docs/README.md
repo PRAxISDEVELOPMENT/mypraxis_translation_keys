@@ -21,6 +21,7 @@ If someone is new to the repository, this order works best:
 | --- | --- |
 | what the repository is for | [../README.md](../README.md) |
 | how contributors should work in this repository | [../CONTRIBUTING.md](../CONTRIBUTING.md) |
+| how to consume the generated locale files in an app | [../templates/README.md](../templates/README.md) |
 | how the system is split into source, config, logic, artifacts, and uploads | [architecture.md](architecture.md) |
 | how app/editor uploads are classified and processed | [upload-processing.md](upload-processing.md) |
 | how GitHub Actions and proposal PRs behave | [github-automation.md](github-automation.md) |
@@ -35,6 +36,9 @@ If someone is new to the repository, this order works best:
 
 - [../CONTRIBUTING.md](../CONTRIBUTING.md)
   Contributor onboarding, working rules, and expected local workflow.
+
+- [../templates/README.md](../templates/README.md)
+  Copy-ready client integration templates for consuming the generated locale files.
 
 ### Deep Reference
 

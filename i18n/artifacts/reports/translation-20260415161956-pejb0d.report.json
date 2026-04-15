@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-15T16:20:11.934Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260415161956-pejb0d.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 1,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.prup2En",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "prup 2",
+        "fr": "",
+        "en": "prup 2 EN"
+      },
+      "proposedEntry": {
+        "key": "common.prup2En",
+        "nl": "prup 2",
+        "fr": "",
+        "en": "prup 2 EN",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

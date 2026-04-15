@@ -33,7 +33,7 @@
         "key": "common.aanvraag1Nl",
         "nl": "aanvraag 1 nl",
         "fr": "",
-        "en": "",
+        "en": "confirm",
         "applications": [
           "mypraxis_web"
         ]

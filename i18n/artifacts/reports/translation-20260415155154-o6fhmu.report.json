@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-15T15:52:05.754Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260415155154-o6fhmu.json",
+  "summary": {
+    "totalEntries": 3,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 0,
+    "skipped": 3,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [],
+  "skipped": [
+    {
+      "type": "skipped",
+      "index": 1,
+      "key": "applicationNames.innovaphoneCall",
+      "reason": "No locale changes were provided for the existing key."
+    },
+    {
+      "type": "skipped",
+      "index": 2,
+      "key": "common.aanvraag3EnkelEn",
+      "reason": "No locale changes were provided for the existing key."
+    },
+    {
+      "type": "skipped",
+      "index": 3,
+      "key": "common.aanvraag1Nl",
+      "reason": "No locale changes were provided for the existing key."
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "test2",
+      "fr": "",
+      "en": ""
+    },
+    {
+      "nl": "",
+      "fr": "test3",
+      "en": ""
+    }
+  ]
+}

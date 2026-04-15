@@ -81,11 +81,10 @@
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
       "missingLocales": [
-        "en",
-        "nl"
+        "en"
       ],
       "resolved": {
-        "nl": "",
+        "nl": "test",
         "fr": "aanvraag 1 enkel fr",
         "en": ""
       }

@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-15T13:06:21.767Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260415130610-edtu69.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.aanvraag1EnkelFr",
+      "namespace": "common",
+      "changes": {
+        "nl": "test"
+      },
+      "current": {
+        "nl": "",
+        "fr": "aanvraag 1 enkel fr",
+        "en": ""
+      },
+      "next": {
+        "nl": "test",
+        "fr": "aanvraag 1 enkel fr",
+        "en": ""
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

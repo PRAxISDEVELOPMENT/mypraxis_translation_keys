@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "applicationNames.innovaphoneCall",
+      "nl": "test nl",
+      "en": "tes en"
+    }
+  ]
+}

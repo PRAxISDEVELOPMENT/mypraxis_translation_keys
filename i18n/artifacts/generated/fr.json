@@ -1,10 +1,10 @@
 {
   "applicationNames": {
-    "innovaphoneCall": ""
+    "innovaphoneCall": "INNOVAPHONE FR"
   },
   "common": {
-    "aanvraag1EnkelFr": "",
-    "aanvraag1Nl": "",
-    "aanvraag3EnkelEn": ""
+    "aanvraag1EnkelFr": "TEST EE",
+    "aanvraag1Nl": "TEST NL",
+    "aanvraag3EnkelEn": "TEST FR"
   }
 }

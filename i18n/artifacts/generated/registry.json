@@ -57,12 +57,11 @@
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
       "missingLocales": [
-        "en",
-        "fr"
+        "en"
       ],
       "resolved": {
-        "nl": "test nl",
-        "fr": "",
+        "nl": "INNOVAPHONE NL",
+        "fr": "INNOVAPHONE FR",
         "en": ""
       }
     },
@@ -85,12 +84,11 @@
       "duplicateValuesDiffer": false,
       "missingLocales": [
         "en",
-        "fr",
         "nl"
       ],
       "resolved": {
         "nl": "",
-        "fr": "",
+        "fr": "TEST EE",
         "en": ""
       }
     },
@@ -113,12 +111,11 @@
       "duplicateValuesDiffer": false,
       "missingLocales": [
         "en",
-        "fr",
         "nl"
       ],
       "resolved": {
         "nl": "",
-        "fr": "",
+        "fr": "TEST NL",
         "en": ""
       }
     },
@@ -141,12 +138,11 @@
       "duplicateValuesDiffer": false,
       "missingLocales": [
         "en",
-        "fr",
         "nl"
       ],
       "resolved": {
         "nl": "",
-        "fr": "",
+        "fr": "TEST FR",
         "en": ""
       }
     }

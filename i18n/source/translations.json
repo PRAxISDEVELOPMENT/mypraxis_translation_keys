@@ -1,8 +1,8 @@
 [
   {
     "key": "applicationNames.innovaphoneCall",
-    "nl": "test nl",
-    "fr": "",
+    "nl": "INNOVAPHONE NL",
+    "fr": "INNOVAPHONE FR",
     "en": "",
     "applications": [
       "mypraxis_web"
@@ -14,7 +14,7 @@
       "mypraxis_web"
     ],
     "nl": "",
-    "fr": "",
+    "fr": "TEST EE",
     "en": ""
   },
   {
@@ -23,7 +23,7 @@
       "mypraxis_web"
     ],
     "nl": "",
-    "fr": "",
+    "fr": "TEST NL",
     "en": ""
   },
   {
@@ -32,7 +32,7 @@
       "mypraxis_web"
     ],
     "nl": "",
-    "fr": "",
+    "fr": "TEST FR",
     "en": ""
   }
 ]

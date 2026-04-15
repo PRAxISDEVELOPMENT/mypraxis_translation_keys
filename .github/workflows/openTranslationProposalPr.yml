@@ -222,38 +222,53 @@ jobs:
             const reportPaths = getChangedProposalReports();
             const proposalSummary = loadProposalSummary(proposalPaths, reportPaths);
             const proposalPreview = proposalSummary.proposals.slice(0, 12);
+            const editableFields = [
+              'proposedEntry.key',
+              'proposedEntry.applications',
+              'proposedEntry.nl',
+              'proposedEntry.fr',
+              'proposedEntry.en',
+              'proposedEntry.description',
+              'proposedEntry.notes'
+            ];
+            const editableFieldsText = editableFields.map((field) => `\`${field}\``).join(', ');
+
+            function buildReviewFlowLines() {
+              return [
+                '1. Open a file in `i18n/proposals/pending/`.',
+                '2. Edit only `proposedEntry` when the key, applications, or texts need adjustment.',
+                '3. Commit the change on this proposal branch.',
+                '4. Merge after approval and green checks.',
+                '5. Merge applies the approved proposal file(s) to `main` automatically.'
+              ];
+            }
+
+            function buildProposalSectionLines() {
+              if (proposalPreview.length === 0) {
+                return ['- No proposal objects were available in the branch diff.'];
+              }
+
+              return proposalPreview.flatMap((proposal) => [
+                `- \`${proposal.key || proposal.proposalId}\``,
+                `  Edit: ${formatLink('edit proposal file', buildEditUrl(proposal.proposalPath))}`,
+                `  View: ${formatLink('open file', buildBlobUrl(proposal.proposalPath))}`,
+                `  Applications: ${
+                  proposal.applications.length > 0
+                    ? proposal.applications.map((value) => `\`${value}\``).join(', ')
+                    : '_missing_'
+                }`,
+                `  NL: ${formatInlineCode(proposal.nl)}`,
+                `  FR: ${formatInlineCode(proposal.fr)}`,
+                `  EN: ${formatInlineCode(proposal.en)}`,
+                ...(proposal.description ? [`  Description: ${formatInlineCode(proposal.description)}`] : []),
+                ...(proposal.notes ? [`  Notes: ${formatInlineCode(proposal.notes)}`] : []),
+                ...(proposal.reason ? [`  Why this key: ${proposal.reason}`] : []),
+                ...(proposal.sourceUploadFile ? [`  Source upload: \`${proposal.sourceUploadFile}\``] : [])
+              ]);
+            }
+
             const proposalLines =
-              proposalPreview.length > 0
-                ? proposalPreview.flatMap((proposal) => [
-                    `<details open>`,
-                    `<summary><strong>${proposal.key || proposal.proposalId}</strong> - ${formatLink(
-                      'Edit this proposal',
-                      buildEditUrl(proposal.proposalPath)
-                    )}</summary>`,
-                    '',
-                    '| Field | Value |',
-                    '| --- | --- |',
-                    `| Applications | ${
-                      proposal.applications.length > 0
-                        ? proposal.applications.map((value) => `\`${value}\``).join(', ')
-                        : '_missing_'
-                    } |`,
-                    `| NL | ${formatInlineCode(proposal.nl)} |`,
-                    `| FR | ${formatInlineCode(proposal.fr)} |`,
-                    `| EN | ${formatInlineCode(proposal.en)} |`,
-                    ...(proposal.description ? [`| Description | ${formatInlineCode(proposal.description)} |`] : []),
-                    ...(proposal.notes ? [`| Notes | ${formatInlineCode(proposal.notes)} |`] : []),
-                    '',
-                    `View file: ${formatLink('open file', buildBlobUrl(proposal.proposalPath))}`,
-                    ...(proposal.reason ? [`Why this key: ${proposal.reason}`] : []),
-                    ...(proposal.sourceUploadFile ? [`Source upload: \`${proposal.sourceUploadFile}\``] : []),
-                    `Confidence: \`${proposal.confidence}\``,
-                    `File: \`${proposal.proposalPath}\``,
-                    '',
-                    `</details>`,
-                    ''
-                  ])
-                : ['- No proposal objects were available in the branch diff.'];
+              buildProposalSectionLines();
             const extraProposalCount = proposalSummary.proposals.length - proposalPreview.length;
 
             const title = branchTitle
@@ -267,37 +282,35 @@ jobs:
               return [
                 '## Translation Proposal',
                 '',
-                'This PR contains reviewable proposal objects for new translation keys.',
+                'This PR contains new texts uploaded from the application.',
                 '',
                 '### Quick Summary',
                 '',
                 '| Field | Value |',
                 '| --- | --- |',
                 `| Branch | \`${branch}\` |`,
-                `| Proposal objects | ${proposalSummary.proposalPaths.length} |`,
-                `| Proposed keys | ${proposalSummary.proposals.length} |`,
+                `| Proposal files | ${proposalSummary.proposalPaths.length} |`,
+                `| Texts to review | ${proposalSummary.proposals.length} |`,
                 `| Reviewers configured | ${hasConfiguredReviewRouting ? 'yes' : 'no'} |`,
                 `| Assignees configured | ${hasConfiguredAssignees ? 'yes' : 'no'} |`,
                 '',
-                '### Do This',
+                '### Review Flow',
                 '',
-                'Open the proposal object you want to review. Use the `edit file` link if the key, applications, or locale text must change. Review only `proposedEntry`. Approve when the proposal objects are final. Merge only when checks are green.',
+                ...buildReviewFlowLines(),
                 '',
-                '### Proposal Objects',
+                '### Edit Only',
                 '',
-                'Edit the files under `i18n/proposals/pending/` when changes are needed before merge.',
+                editableFieldsText,
+                '',
+                '### Proposal Files',
                 '',
                 ...proposalLines,
-                ...(extraProposalCount > 0 ? [`- plus ${extraProposalCount} additional proposal object(s)`] : []),
-                '',
-                '### You May Edit Only',
-                '',
-                '`proposedEntry.key`, `proposedEntry.applications`, `proposedEntry.nl`, `proposedEntry.fr`, `proposedEntry.en`, and optionally `proposedEntry.description` or `proposedEntry.notes`.',
+                ...(extraProposalCount > 0 ? [`- plus ${extraProposalCount} additional proposal file(s)`] : []),
                 '',
                 '### Merge',
                 '',
                 'Merge this PR with the normal GitHub `Merge pull request` button after approval and green checks.',
-                'After merge, automation applies the final approved proposal objects on `main`.',
+                'Automation then applies the final approved proposal file(s) on `main`.',
                 '',
                 ...(proposalSummary.reportPaths.length > 0
                   ? [
@@ -417,32 +430,25 @@ jobs:
                 guidanceMarker,
                 '## Review Guide',
                 '',
-                'Use this PR to review and, if needed, edit the proposal object files directly.',
+                'Use this PR to review and edit uploaded texts before they are applied on `main`.',
                 '',
-                '### Do This',
+                '### Review Flow',
                 '',
-                'Open the proposal file you want to review. Click `edit proposal file` if changes are needed. Edit only `proposedEntry`. Approve when final. Merge with the normal GitHub merge button once checks are green.',
+                ...buildReviewFlowLines(),
                 '',
-                '### Direct Edit Links',
+                '### Edit Only',
                 '',
-                ...(proposalPreview.length > 0
-                  ? proposalPreview.map(
-                      (proposal) =>
-                        `- \`${proposal.key || proposal.proposalId}\`: ${formatLink(
-                          'edit proposal file',
-                          buildEditUrl(proposal.proposalPath)
-                        )} | ${formatLink('view proposal file', buildBlobUrl(proposal.proposalPath))}`
-                    )
-                  : ['- No proposal objects were found in this branch diff.']),
+                editableFieldsText,
                 '',
-                '### Edit Only These Fields',
+                '### Proposal Files',
                 '',
-                '`proposedEntry.key`, `proposedEntry.applications`, `proposedEntry.nl`, `proposedEntry.fr`, `proposedEntry.en`, and optionally `proposedEntry.description` or `proposedEntry.notes`.',
+                ...proposalLines,
+                ...(extraProposalCount > 0 ? [`- plus ${extraProposalCount} additional proposal file(s)`] : []),
                 '',
                 '### Merge',
                 '',
                 'After approval and green checks, click `Merge pull request` in GitHub.',
-                'Automation will then apply the approved proposal objects on `main`.',
+                'Automation will then apply the approved proposal file(s) on `main`.',
                 '',
                 ...(reviewRoutingError
                   ? [

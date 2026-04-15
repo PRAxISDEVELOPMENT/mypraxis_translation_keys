@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-15T16:13:11.858Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260415161302-5n71e5.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.aanvraag1EnkelFr",
+      "namespace": "common",
+      "changes": {
+        "nl": "TES",
+        "en": "TEST"
+      },
+      "current": {
+        "nl": "",
+        "fr": "TEST EE",
+        "en": ""
+      },
+      "next": {
+        "nl": "TES",
+        "fr": "TEST EE",
+        "en": "TEST"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

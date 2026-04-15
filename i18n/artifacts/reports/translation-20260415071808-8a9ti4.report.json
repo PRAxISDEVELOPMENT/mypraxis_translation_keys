@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-15T07:18:20.812Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260415071808-8a9ti4.json",
+  "summary": {
+    "totalEntries": 2,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 2,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.ditIsEenEersteTest",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "dit is een eerste test",
+        "fr": "",
+        "en": ""
+      },
+      "proposedEntry": {
+        "key": "common.ditIsEenEersteTest",
+        "nl": "dit is een eerste test",
+        "fr": "",
+        "en": "",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 2,
+      "suggestedKey": "common.ditIsEenTweedeTest",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "dit is een tweede test",
+        "fr": "",
+        "en": ""
+      },
+      "proposedEntry": {
+        "key": "common.ditIsEenTweedeTest",
+        "nl": "dit is een tweede test",
+        "fr": "",
+        "en": "",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

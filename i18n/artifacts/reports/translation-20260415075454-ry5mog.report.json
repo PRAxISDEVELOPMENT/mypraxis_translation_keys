@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-15T07:55:05.574Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260415075454-ry5mog.json",
+  "summary": {
+    "totalEntries": 2,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 2,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.test2",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "test2",
+        "fr": "",
+        "en": ""
+      },
+      "proposedEntry": {
+        "key": "common.test2",
+        "nl": "test2",
+        "fr": "",
+        "en": "",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 2,
+      "suggestedKey": "common.test3",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "",
+        "fr": "test3",
+        "en": ""
+      },
+      "proposedEntry": {
+        "key": "common.test3",
+        "nl": "",
+        "fr": "test3",
+        "en": "",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

@@ -1,9 +1,9 @@
 [
   {
     "key": "applicationNames.innovaphoneCall",
-    "nl": "",
+    "nl": "test nl",
     "fr": "",
-    "en": "",
+    "en": "tes en",
     "applications": [
       "mypraxis_web"
     ]

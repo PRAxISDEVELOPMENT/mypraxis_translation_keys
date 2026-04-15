@@ -10,7 +10,7 @@
     "namespaces": 7,
     "applications": 4,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 3
+    "keysWithMissingLocales": 4
   },
   "applications": [
     {
@@ -56,11 +56,15 @@
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
-      "missingLocales": [],
+      "missingLocales": [
+        "en",
+        "fr",
+        "nl"
+      ],
       "resolved": {
-        "nl": "Innovaphone oproep",
-        "fr": "Appel Innovaphone",
-        "en": "Innovaphsssone Call"
+        "nl": "",
+        "fr": "",
+        "en": ""
       }
     },
     {
@@ -81,11 +85,13 @@
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
       "missingLocales": [
-        "en"
+        "en",
+        "fr",
+        "nl"
       ],
       "resolved": {
-        "nl": "test",
-        "fr": "aanvraag 1 enkel fr",
+        "nl": "",
+        "fr": "",
         "en": ""
       }
     },
@@ -107,12 +113,14 @@
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
       "missingLocales": [
-        "fr"
+        "en",
+        "fr",
+        "nl"
       ],
       "resolved": {
-        "nl": "aanvraag 1 nl",
-        "fr": "dsdf",
-        "en": "dsdf"
+        "nl": "",
+        "fr": "",
+        "en": ""
       }
     },
     {
@@ -133,13 +141,14 @@
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
       "missingLocales": [
+        "en",
         "fr",
         "nl"
       ],
       "resolved": {
-        "nl": "aanvraag 3 enkel EN",
-        "fr": "aanvraag 3 enkel EN",
-        "en": "aanvraag 3 enkel EN"
+        "nl": "",
+        "fr": "",
+        "en": ""
       }
     }
   ],

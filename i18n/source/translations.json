@@ -1,9 +1,9 @@
 [
   {
     "key": "applicationNames.innovaphoneCall",
-    "nl": "Innovaphone oproep",
-    "fr": "Appel Innovaphone",
-    "en": "Innovaphsssone Call",
+    "nl": "",
+    "fr": "",
+    "en": "",
     "applications": [
       "mypraxis_web"
     ]
@@ -13,8 +13,8 @@
     "applications": [
       "mypraxis_web"
     ],
-    "nl": "test",
-    "fr": "aanvraag 1 enkel fr",
+    "nl": "",
+    "fr": "",
     "en": ""
   },
   {
@@ -22,9 +22,9 @@
     "applications": [
       "mypraxis_web"
     ],
-    "nl": "aanvraag 1 nl",
+    "nl": "",
     "fr": "",
-    "en": "dsdf"
+    "en": ""
   },
   {
     "key": "common.aanvraag3EnkelEn",
@@ -33,6 +33,6 @@
     ],
     "nl": "",
     "fr": "",
-    "en": "aanvraag 3 enkel EN"
+    "en": ""
   }
 ]

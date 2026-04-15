@@ -186,6 +186,18 @@ jobs:
               return typeof value === 'string' && value.trim() !== '' ? '`' + value + '`' : '_empty_';
             }
 
+            function buildBlobUrl(filePath) {
+              return `https://github.com/${owner}/${repo}/blob/${branch}/${filePath}`;
+            }
+
+            function buildEditUrl(filePath) {
+              return `https://github.com/${owner}/${repo}/edit/${branch}/${filePath}`;
+            }
+
+            function formatLink(label, url) {
+              return `[${label}](${url})`;
+            }
+
             const branchSlug = branch.replace(/^translation_proposals\//, '');
             const branchTitle = branchSlug
               .replace(/[-_]+/g, ' ')
@@ -201,6 +213,7 @@ jobs:
                     `#### \`${proposal.key || proposal.proposalId}\``,
                     '',
                     `- proposal file: \`${proposal.proposalPath}\``,
+                    `- quick actions: ${formatLink('view file', buildBlobUrl(proposal.proposalPath))} | ${formatLink('edit file', buildEditUrl(proposal.proposalPath))}`,
                     ...(proposal.sourceUploadFile ? [`- source upload: \`${proposal.sourceUploadFile}\``] : []),
                     `- confidence: \`${proposal.confidence}\``,
                     `- applications: ${
@@ -222,6 +235,8 @@ jobs:
             const title = branchTitle
               ? `Translation Proposal: ${branchTitle}`
               : `Translation Proposal: ${branch}`;
+            const hasConfiguredReviewRouting = reviewers.length > 0 || teamReviewers.length > 0;
+            const hasConfiguredAssignees = assignees.length > 0;
 
             const body = [
               '## Translation Proposal',
@@ -234,6 +249,16 @@ jobs:
               `- proposal objects: ${proposalSummary.proposalPaths.length}`,
               `- proposal reports: ${proposalSummary.reportPaths.length}`,
               `- proposed keys: ${proposalSummary.proposals.length}`,
+              `- reviewers configured: ${hasConfiguredReviewRouting ? 'yes' : 'no'}`,
+              `- assignees configured: ${hasConfiguredAssignees ? 'yes' : 'no'}`,
+              '',
+              '### What To Do In This PR',
+              '',
+              '1. Open the proposal files listed below.',
+              '2. Click the `edit file` link for any object that needs changes.',
+              '3. Update `proposedEntry.key`, `proposedEntry.applications`, and the locale text as needed.',
+              '4. Request changes or approve only after the proposal objects are final.',
+              '5. Merge the PR only when the validation workflow is green.',
               '',
               '### Reviewable Proposal Objects',
               '',
@@ -247,6 +272,23 @@ jobs:
                     '### Report Files',
                     '',
                     ...proposalSummary.reportPaths.map((reportPath) => `- \`${reportPath}\``),
+                    ''
+                  ]
+                : []),
+              '',
+              ...(!hasConfiguredReviewRouting
+                ? [
+                    '### Configuration Needed',
+                    '',
+                    'Automatic reviewers are not configured yet.',
+                    'Set repository variable `TRANSLATION_PROPOSAL_REVIEWERS` or `TRANSLATION_PROPOSAL_TEAM_REVIEWERS` to request reviews automatically.',
+                    ''
+                  ]
+                : []),
+              ...(!hasConfiguredAssignees
+                ? [
+                    'Automatic assignees are not configured yet.',
+                    'Set repository variable `TRANSLATION_PROPOSAL_ASSIGNEES` if you want the PR to auto-assign maintainers.',
                     ''
                   ]
                 : []),
@@ -321,5 +363,90 @@ jobs:
                 pull_number: pullNumber,
                 reviewers,
                 team_reviewers: teamReviewers
+              });
+            }
+
+            const guidanceMarker = '<!-- translation-proposal-review-guide -->';
+            const guidanceBody = [
+              guidanceMarker,
+              '## Review Guide',
+              '',
+              'This PR is meant to be reviewed by editing the proposal object files directly.',
+              '',
+              '### Reviewer Steps',
+              '',
+              '1. Open the `Files changed` tab.',
+              '2. Find the files under `i18n/proposals/pending/`.',
+              '3. If something is wrong, click the edit link below and change the JSON in `proposedEntry`.',
+              '4. Approve only when those proposal objects are final.',
+              '',
+              '### Direct Edit Links',
+              '',
+              ...(proposalPreview.length > 0
+                ? proposalPreview.map(
+                    (proposal) =>
+                      `- \`${proposal.key || proposal.proposalId}\`: ${formatLink(
+                        'edit proposal file',
+                        buildEditUrl(proposal.proposalPath)
+                      )} | ${formatLink('view proposal file', buildBlobUrl(proposal.proposalPath))}`
+                  )
+                : ['- No proposal objects were found in this branch diff.']),
+              '',
+              '### Edit Only These Fields',
+              '',
+              '- `proposedEntry.key`',
+              '- `proposedEntry.applications`',
+              '- `proposedEntry.nl`',
+              '- `proposedEntry.fr`',
+              '- `proposedEntry.en`',
+              '- optional: `proposedEntry.description`',
+              '- optional: `proposedEntry.notes`',
+              '',
+              ...(hasConfiguredReviewRouting
+                ? []
+                : [
+                    '### Missing Review Routing',
+                    '',
+                    'No automatic reviewers are configured for proposal PRs yet.',
+                    'Configure repository variables `TRANSLATION_PROPOSAL_REVIEWERS` or `TRANSLATION_PROPOSAL_TEAM_REVIEWERS` to fix that.',
+                    ''
+                  ]),
+              ...(hasConfiguredAssignees
+                ? []
+                : [
+                    'No automatic assignees are configured yet.',
+                    'Configure repository variable `TRANSLATION_PROPOSAL_ASSIGNEES` if you want an owner assigned automatically.',
+                    ''
+                  ])
+            ].join('\n');
+
+            const comments = await github.rest.issues.listComments({
+              owner,
+              repo,
+              issue_number: pullNumber,
+              per_page: 100
+            });
+
+            const existingGuidanceComment = comments.data.find(
+              (comment) =>
+                comment.user &&
+                comment.user.type === 'Bot' &&
+                typeof comment.body === 'string' &&
+                comment.body.includes(guidanceMarker)
+            );
+
+            if (existingGuidanceComment) {
+              await github.rest.issues.updateComment({
+                owner,
+                repo,
+                comment_id: existingGuidanceComment.id,
+                body: guidanceBody
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: pullNumber,
+                body: guidanceBody
               });
             }

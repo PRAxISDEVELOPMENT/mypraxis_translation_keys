@@ -88,6 +88,33 @@ Repository variables used:
 - `TRANSLATION_PROPOSAL_TEAM_REVIEWERS`
 - `TRANSLATION_PROPOSAL_ASSIGNEES`
 
+## Recommended Repository Setup
+
+For a professional proposal-review workflow, configure these once in the repository settings.
+
+### Actions Variables
+
+Set these under `Settings -> Secrets and variables -> Actions -> Variables`:
+
+- `TRANSLATION_PROPOSAL_REVIEWERS`
+  comma-separated GitHub usernames for direct reviewer requests
+- `TRANSLATION_PROPOSAL_TEAM_REVIEWERS`
+  comma-separated team slugs for team review requests
+- `TRANSLATION_PROPOSAL_ASSIGNEES`
+  comma-separated GitHub usernames that should be auto-assigned to proposal PRs
+
+### Branch Protection
+
+Recommended settings for `main`:
+
+- require a pull request before merging
+- require at least 1 approval
+- require status checks to pass before merging
+- require conversation resolution before merging
+- optionally restrict who can push directly to `main`
+
+These settings make the proposal-object review model much more reliable.
+
 ## Branch Model
 
 The branch strategy is simple:

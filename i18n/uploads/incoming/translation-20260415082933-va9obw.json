@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "T",
+      "fr": "S",
+      "en": "A"
+    },
+    {
+      "nl": "",
+      "fr": "ENKEL FRANS",
+      "en": ""
+    },
+    {
+      "nl": "",
+      "fr": "",
+      "en": "ENKEL ENGELS"
+    }
+  ]
+}

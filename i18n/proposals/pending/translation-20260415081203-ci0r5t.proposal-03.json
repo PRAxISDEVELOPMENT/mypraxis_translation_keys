@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "proposalId": "translation-20260415081203-ci0r5t.proposal-03",
+  "status": "pending-review",
+  "createdAt": "2026-04-15T08:12:16.552Z",
+  "source": {
+    "uploadFile": "i18n/uploads/incoming/translation-20260415081203-ci0r5t.json",
+    "reportFile": "i18n/artifacts/reports/translation-20260415081203-ci0r5t.report.json",
+    "uploadEntryIndex": 3
+  },
+  "review": {
+    "required": true,
+    "suggestedKey": "common.testEngels",
+    "suggestedNamespace": "common",
+    "confidence": "low",
+    "reason": "No stronger namespace signal was detected, so common was used.",
+    "instructions": "Edit proposedEntry in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "originalEntry": {
+    "nl": "",
+    "fr": "",
+    "en": "TEST ENGELS"
+  },
+  "proposedEntry": {
+    "key": "common.testEngels",
+    "nl": "",
+    "fr": "",
+    "en": "TEST ENGELS",
+    "applications": [
+      "mypraxis_web"
+    ]
+  }
+}

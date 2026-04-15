@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-15T08:12:16.510Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260415081203-ci0r5t.json",
+  "summary": {
+    "totalEntries": 3,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 3,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.ditIsEenTestNederlands",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "DIT IS EEN TEST NEDERLANDS",
+        "fr": "",
+        "en": ""
+      },
+      "proposedEntry": {
+        "key": "common.ditIsEenTestNederlands",
+        "nl": "DIT IS EEN TEST NEDERLANDS",
+        "fr": "",
+        "en": "",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 2,
+      "suggestedKey": "common.testFrans",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "",
+        "fr": "TEST FRANS",
+        "en": ""
+      },
+      "proposedEntry": {
+        "key": "common.testFrans",
+        "nl": "",
+        "fr": "TEST FRANS",
+        "en": "",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 3,
+      "suggestedKey": "common.testEngels",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "",
+        "fr": "",
+        "en": "TEST ENGELS"
+      },
+      "proposedEntry": {
+        "key": "common.testEngels",
+        "nl": "",
+        "fr": "",
+        "en": "TEST ENGELS",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

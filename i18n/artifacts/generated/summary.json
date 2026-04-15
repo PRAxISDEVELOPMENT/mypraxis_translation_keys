@@ -17,10 +17,10 @@
     "sourceEntries": 4,
     "uniqueKeys": 4,
     "namespaces": 7,
-    "warnings": 7,
+    "warnings": 6,
     "errors": 0,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 4
+    "keysWithMissingLocales": 3
   },
   "namespaces": {
     "applicationNames": 1,
@@ -38,7 +38,7 @@
     "mypraxis_web": 4
   },
   "warningCounts": {
-    "Missing locale values": 7
+    "Missing locale values": 6
   },
   "errorCounts": {}
 }

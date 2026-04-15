@@ -10,7 +10,7 @@
     "namespaces": 7,
     "applications": 4,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 4
+    "keysWithMissingLocales": 3
   },
   "applications": [
     {
@@ -56,13 +56,11 @@
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
-      "missingLocales": [
-        "en"
-      ],
+      "missingLocales": [],
       "resolved": {
         "nl": "INNOVAPHONE NL",
         "fr": "INNOVAPHONE FR",
-        "en": ""
+        "en": "INNOVAPHONE EN"
       }
     },
     {

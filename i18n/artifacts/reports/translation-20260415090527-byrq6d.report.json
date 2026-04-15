@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-15T09:05:37.969Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260415090527-byrq6d.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.test",
+      "namespace": "common",
+      "changes": {
+        "en": "MEREGED"
+      },
+      "current": {
+        "nl": "Dit is een test",
+        "fr": "ddddd",
+        "en": "aaaa"
+      },
+      "next": {
+        "nl": "Dit is een test",
+        "fr": "ddddd",
+        "en": "MEREGED"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

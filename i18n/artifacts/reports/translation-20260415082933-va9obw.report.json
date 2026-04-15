@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-15T08:29:45.460Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260415082933-va9obw.json",
+  "summary": {
+    "totalEntries": 3,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 3,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.a",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "T",
+        "fr": "S",
+        "en": "A"
+      },
+      "proposedEntry": {
+        "key": "common.a",
+        "nl": "T",
+        "fr": "S",
+        "en": "A",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 2,
+      "suggestedKey": "common.enkelFrans",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "",
+        "fr": "ENKEL FRANS",
+        "en": ""
+      },
+      "proposedEntry": {
+        "key": "common.enkelFrans",
+        "nl": "",
+        "fr": "ENKEL FRANS",
+        "en": "",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 3,
+      "suggestedKey": "common.enkelEngels",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "",
+        "fr": "",
+        "en": "ENKEL ENGELS"
+      },
+      "proposedEntry": {
+        "key": "common.enkelEngels",
+        "nl": "",
+        "fr": "",
+        "en": "ENKEL ENGELS",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

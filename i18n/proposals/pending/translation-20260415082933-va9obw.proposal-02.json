@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "proposalId": "translation-20260415082933-va9obw.proposal-02",
+  "status": "pending-review",
+  "createdAt": "2026-04-15T08:29:45.502Z",
+  "source": {
+    "uploadFile": "i18n/uploads/incoming/translation-20260415082933-va9obw.json",
+    "reportFile": "i18n/artifacts/reports/translation-20260415082933-va9obw.report.json",
+    "uploadEntryIndex": 2
+  },
+  "review": {
+    "required": true,
+    "suggestedKey": "common.enkelFrans",
+    "suggestedNamespace": "common",
+    "confidence": "low",
+    "reason": "No stronger namespace signal was detected, so common was used.",
+    "instructions": "Edit proposedEntry in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "originalEntry": {
+    "nl": "",
+    "fr": "ENKEL FRANS",
+    "en": ""
+  },
+  "proposedEntry": {
+    "key": "common.enkelFrans",
+    "nl": "",
+    "fr": "ENKEL FRANS",
+    "en": "",
+    "applications": [
+      "mypraxis_web"
+    ]
+  }
+}

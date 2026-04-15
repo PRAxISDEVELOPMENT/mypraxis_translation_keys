@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "proposalId": "translation-20260415082933-va9obw.proposal-01",
+  "status": "pending-review",
+  "createdAt": "2026-04-15T08:29:45.501Z",
+  "source": {
+    "uploadFile": "i18n/uploads/incoming/translation-20260415082933-va9obw.json",
+    "reportFile": "i18n/artifacts/reports/translation-20260415082933-va9obw.report.json",
+    "uploadEntryIndex": 1
+  },
+  "review": {
+    "required": true,
+    "suggestedKey": "common.a",
+    "suggestedNamespace": "common",
+    "confidence": "low",
+    "reason": "No stronger namespace signal was detected, so common was used.",
+    "instructions": "Edit proposedEntry in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "originalEntry": {
+    "nl": "T",
+    "fr": "S",
+    "en": "A"
+  },
+  "proposedEntry": {
+    "key": "common.a",
+    "nl": "T",
+    "fr": "S",
+    "en": "A",
+    "applications": [
+      "mypraxis_web"
+    ]
+  }
+}

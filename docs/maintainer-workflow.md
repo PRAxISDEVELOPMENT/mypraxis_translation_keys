@@ -89,6 +89,7 @@ Useful references:
 - [github-automation.md](github-automation.md)
 - [../.github/pull_request_template.md](../.github/pull_request_template.md)
 - [../i18n/artifacts/reports/](../i18n/artifacts/reports/)
+- [../i18n/proposals/pending/](../i18n/proposals/pending/)
 
 ## What Not To Edit Manually
 
@@ -100,6 +101,10 @@ Avoid manual edits to:
 The canonical source remains:
 
 - [../i18n/source/translations.json](../i18n/source/translations.json)
+
+New keys should be reviewed first in:
+
+- [../i18n/proposals/pending/](../i18n/proposals/pending/)
 
 ## Troubleshooting
 
@@ -133,6 +138,7 @@ Use this shortcut:
 
 - build logic: [../i18n/src/translation-build/](../i18n/src/translation-build/)
 - upload logic: [../i18n/src/upload-processing/](../i18n/src/upload-processing/)
+- proposal review objects: [../i18n/proposals/pending/](../i18n/proposals/pending/)
 - shared utility code: [../i18n/src/core/](../i18n/src/core/)
 - command wrappers: [../i18n/bin/](../i18n/bin/)
 
@@ -150,4 +156,4 @@ If you need the shortest maintainer summary:
 - edit source when the repository itself is the actor
 - use uploads when an external editor/app is the actor
 - trust generated files only as derived output
-- trust automation to separate direct updates from proposals
+- trust automation to separate direct updates from reviewable proposal objects

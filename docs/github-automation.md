@@ -26,8 +26,8 @@ File:
 
 Behavior:
 
-- on pull requests, it validates syntax, validates source data, and checks whether generated artifacts are in sync
-- on pushes to `main`, it regenerates generated artifacts and commits them back when needed
+- on pull requests, it validates syntax, validates pending proposal objects, validates source data, and checks whether generated artifacts are in sync
+- on pushes to `main`, it applies approved proposal objects, regenerates generated artifacts, and commits the result back when needed
 
 Important consequence:
 
@@ -52,8 +52,8 @@ Behavior on `main`:
 Behavior on `translation_proposals/**` branches:
 
 1. detects queued proposal uploads
-2. processes proposal inbox items
-3. commits the resulting source, generated, report, and processed-state changes back to that proposal branch
+2. converts them into reviewable proposal object files under [../i18n/proposals/pending/](../i18n/proposals/pending/)
+3. commits the resulting proposal objects, reports, and processed upload state back to that proposal branch
 
 This workflow is the operational bridge between raw uploads and either direct source updates or proposal PRs.
 
@@ -67,8 +67,8 @@ Behavior:
 
 - runs on pushes to `translation_proposals/**`
 - compares proposal-branch changes against `main`
-- finds proposal report files
-- summarizes suggested keys
+- finds reviewable proposal object files
+- summarizes the exact objects that will be added
 - opens or updates a pull request targeting `main`
 - applies labels, assignees, and reviewer routing
 
@@ -78,7 +78,7 @@ The automation produces PRs with a consistent structure:
 
 - target branch is `main`
 - title is derived from the proposal branch name
-- PR body summarizes proposal reports and suggested keys
+- PR body summarizes the exact proposal objects under review
 - labels are enforced automatically
 - reviewers and assignees can be injected from repository variables
 
@@ -109,6 +109,8 @@ Automation can update:
 - [../i18n/source/translations.json](../i18n/source/translations.json)
 - [../i18n/artifacts/generated/](../i18n/artifacts/generated/)
 - [../i18n/artifacts/reports/](../i18n/artifacts/reports/)
+- [../i18n/proposals/pending/](../i18n/proposals/pending/)
+- [../i18n/proposals/processed/](../i18n/proposals/processed/)
 - [../i18n/uploads/incoming/](../i18n/uploads/incoming/)
 - [../i18n/uploads/processed/](../i18n/uploads/processed/)
 
@@ -145,4 +147,4 @@ It is part of the product behavior of this repository.
 It exists to enforce a strict distinction between:
 
 - direct edits to existing keys
-- reviewed introduction of new keys
+- reviewed introduction of new keys through explicit proposal objects

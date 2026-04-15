@@ -5,6 +5,7 @@
 
 ## Review Checklist
 
+- [ ] proposal object files under `i18n/proposals/pending/` reflect the final approved entries
 - [ ] suggested keys and namespaces are correct
 - [ ] locale text is complete and intentional
 - [ ] application scope is correct

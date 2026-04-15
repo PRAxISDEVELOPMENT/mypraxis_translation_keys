@@ -172,6 +172,7 @@ function createSimulationPaths(command) {
   const incomingDir = path.join(tempRoot, 'incoming');
   const processedDir = path.join(tempRoot, 'processed');
   const reportsDir = path.join(tempRoot, 'reports');
+  const proposalsDir = path.join(tempRoot, 'proposals', 'pending');
   const payloadPath = path.join(incomingDir, `${Date.now()}-${command}.json`);
 
   return {
@@ -179,6 +180,7 @@ function createSimulationPaths(command) {
     incomingDir,
     processedDir,
     reportsDir,
+    proposalsDir,
     payloadPath
   };
 }
@@ -217,6 +219,17 @@ function printSimulationSummary(options, paths, reportPath) {
   if (report.proposals.length > 0) {
     console.log(`  Suggested key:${report.proposals[0].suggestedKey ? ` ${report.proposals[0].suggestedKey}` : ''}`);
   }
+
+  if (!options.dryRun && options.command === 'new' && fs.existsSync(paths.proposalsDir)) {
+    const proposalFiles = fs
+      .readdirSync(paths.proposalsDir)
+      .filter((fileName) => fileName.endsWith('.json'))
+      .sort((left, right) => left.localeCompare(right));
+
+    if (proposalFiles.length > 0) {
+      console.log(`  Review file:  ${path.join(paths.proposalsDir, proposalFiles[0])}`);
+    }
+  }
 }
 
 function runSimulateUploadCommand(argv = process.argv.slice(2)) {
@@ -248,6 +261,8 @@ function runSimulateUploadCommand(argv = process.argv.slice(2)) {
     paths.incomingDir,
     '--reports-dir',
     paths.reportsDir,
+    '--proposals-dir',
+    paths.proposalsDir,
     '--processed-dir',
     paths.processedDir
   ];

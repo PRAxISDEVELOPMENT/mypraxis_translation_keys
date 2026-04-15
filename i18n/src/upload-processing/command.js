@@ -11,6 +11,10 @@ const {
   ensureUniqueKey,
   getDefaultProposalApplications
 } = require('./key-suggestions');
+const {
+  applyPendingProposalFiles,
+  queueProposalReviewObjects
+} = require('./proposal-review-files');
 const { getUploadText } = require('./upload-text');
 
 const DIRECT_UPDATE_ALLOWED_FIELDS = new Set(['key', ...LOCALES]);
@@ -118,6 +122,17 @@ function buildProposal(uploadEntry, index, usedKeys, namespaceConfig, applicatio
     suggestedNamespace: namespaceSuggestion.namespace,
     confidence: namespaceSuggestion.confidence,
     reason: namespaceSuggestion.reason,
+    submittedEntry: {
+      nl: toOptionalTrimmedString(uploadEntry.nl) ?? '',
+      fr: toOptionalTrimmedString(uploadEntry.fr) ?? '',
+      en: toOptionalTrimmedString(uploadEntry.en) ?? '',
+      ...(typeof uploadEntry.description === 'string' && uploadEntry.description.trim() !== ''
+        ? { description: uploadEntry.description.trim() }
+        : {}),
+      ...(typeof uploadEntry.notes === 'string' && uploadEntry.notes.trim() !== ''
+        ? { notes: uploadEntry.notes.trim() }
+        : {})
+    },
     proposedEntry,
     reviewRequired: true
   };
@@ -332,6 +347,20 @@ function runProcessUploadCommand(argv = process.argv.slice(2)) {
 
   if (command === 'apply-proposals') {
     applyProposals(options);
+    return;
+  }
+
+  if (command === 'queue-proposals') {
+    if (!options.input) {
+      throw new Error('The queue-proposals command requires --input <report-file>.');
+    }
+
+    queueProposalReviewObjects(options);
+    return;
+  }
+
+  if (command === 'apply-pending-proposals') {
+    applyPendingProposalFiles(options);
     return;
   }
 

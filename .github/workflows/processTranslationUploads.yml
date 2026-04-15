@@ -119,7 +119,7 @@ jobs:
   process-proposal-branch:
     if: startsWith(github.ref_name, 'translation_proposals/')
     runs-on: ubuntu-latest
-    name: Process Proposal Branch Upload Batch
+    name: Queue Proposal Review Objects
 
     steps:
       - name: Checkout Translation Repository
@@ -138,7 +138,7 @@ jobs:
           incoming_count=$(find i18n/uploads/incoming -maxdepth 1 -name '*.json' 2>/dev/null | wc -l | tr -d ' ')
           echo "incoming_count=$incoming_count" >> "$GITHUB_OUTPUT"
 
-      - name: Commit Processed Upload Results
+      - name: Queue Proposal Review Objects
         if: steps.queued.outputs.incoming_count != '0'
         run: |
           node i18n/bin/process-upload-inbox.js --mode proposal
@@ -147,16 +147,15 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add \
-            i18n/source/translations.json \
-            i18n/artifacts/generated/*.json \
             i18n/artifacts/reports \
+            i18n/proposals/pending \
             i18n/uploads/incoming \
             i18n/uploads/processed
 
           if git diff --cached --quiet; then
             echo "No processed upload changes to commit"
           else
-            git commit -m "Translation Bot: Process Upload Batch"
+            git commit -m "Translation Bot: Queue Proposal Review Objects"
             git pull --rebase origin "${GITHUB_REF_NAME}"
             git push origin HEAD:"${GITHUB_REF_NAME}"
           fi

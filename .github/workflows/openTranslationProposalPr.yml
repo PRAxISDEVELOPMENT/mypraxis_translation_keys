@@ -5,8 +5,7 @@ on:
     branches:
       - 'translation_proposals/**'
     paths:
-      - 'i18n/source/translations.json'
-      - 'i18n/artifacts/generated/*.json'
+      - 'i18n/proposals/pending/**'
       - 'i18n/artifacts/reports/**'
       - 'i18n/config/namespaces.json'
       - 'i18n/config/applications.json'
@@ -105,6 +104,19 @@ jobs:
               await ensureLabel(label);
             }
 
+            function getChangedProposalObjects() {
+              const output = execFileSync(
+                'git',
+                ['diff', '--name-only', 'origin/main...HEAD', '--', 'i18n/proposals/pending'],
+                { encoding: 'utf8' }
+              );
+
+              return output
+                .split('\n')
+                .map((value) => value.trim())
+                .filter(Boolean);
+            }
+
             function getChangedProposalReports() {
               const output = execFileSync(
                 'git',
@@ -116,36 +128,62 @@ jobs:
                 .split('\n')
                 .map((value) => value.trim())
                 .filter(Boolean)
-                .filter((filePath) => filePath.endsWith('.proposal.report.json'));
+                .filter((filePath) => filePath.endsWith('.report.json'));
             }
 
-            function loadProposalSummary(reportPaths) {
+            function loadProposalSummary(proposalPaths, reportPaths) {
               const summary = {
+                proposalPaths,
                 reportPaths,
-                proposedKeys: [],
-                totalProposals: 0
+                proposals: []
               };
 
-              for (const reportPath of reportPaths) {
-                const absolutePath = path.join(process.env.GITHUB_WORKSPACE, reportPath);
+              for (const proposalPath of proposalPaths) {
+                const absolutePath = path.join(process.env.GITHUB_WORKSPACE, proposalPath);
 
                 if (!fs.existsSync(absolutePath)) {
                   continue;
                 }
 
-                const report = JSON.parse(fs.readFileSync(absolutePath, 'utf8'));
-                const proposals = Array.isArray(report.proposals) ? report.proposals : [];
+                const proposalObject = JSON.parse(fs.readFileSync(absolutePath, 'utf8'));
+                const proposedEntry =
+                  proposalObject && proposalObject.proposedEntry && typeof proposalObject.proposedEntry === 'object'
+                    ? proposalObject.proposedEntry
+                    : {};
 
-                summary.totalProposals += proposals.length;
-
-                for (const proposal of proposals) {
-                  if (proposal && typeof proposal.suggestedKey === 'string' && proposal.suggestedKey.trim() !== '') {
-                    summary.proposedKeys.push(proposal.suggestedKey.trim());
-                  }
-                }
+                summary.proposals.push({
+                  proposalId:
+                    typeof proposalObject.proposalId === 'string' && proposalObject.proposalId.trim() !== ''
+                      ? proposalObject.proposalId.trim()
+                      : path.basename(proposalPath, '.json'),
+                  proposalPath,
+                  sourceUploadFile:
+                    proposalObject.source && typeof proposalObject.source.uploadFile === 'string'
+                      ? proposalObject.source.uploadFile
+                      : '',
+                  confidence:
+                    proposalObject.review && typeof proposalObject.review.confidence === 'string'
+                      ? proposalObject.review.confidence
+                      : 'unknown',
+                  reason:
+                    proposalObject.review && typeof proposalObject.review.reason === 'string'
+                      ? proposalObject.review.reason
+                      : '',
+                  key: typeof proposedEntry.key === 'string' ? proposedEntry.key : '',
+                  applications: Array.isArray(proposedEntry.applications) ? proposedEntry.applications : [],
+                  nl: typeof proposedEntry.nl === 'string' ? proposedEntry.nl : '',
+                  fr: typeof proposedEntry.fr === 'string' ? proposedEntry.fr : '',
+                  en: typeof proposedEntry.en === 'string' ? proposedEntry.en : '',
+                  description: typeof proposedEntry.description === 'string' ? proposedEntry.description : '',
+                  notes: typeof proposedEntry.notes === 'string' ? proposedEntry.notes : ''
+                });
               }
 
               return summary;
+            }
+
+            function formatInlineCode(value) {
+              return typeof value === 'string' && value.trim() !== '' ? '`' + value + '`' : '_empty_';
             }
 
             const branchSlug = branch.replace(/^translation_proposals\//, '');
@@ -153,14 +191,33 @@ jobs:
               .replace(/[-_]+/g, ' ')
               .replace(/\s+/g, ' ')
               .trim();
+            const proposalPaths = getChangedProposalObjects();
             const reportPaths = getChangedProposalReports();
-            const proposalSummary = loadProposalSummary(reportPaths);
-            const keyPreview = proposalSummary.proposedKeys.slice(0, 12);
-            const keyLines =
-              keyPreview.length > 0
-                ? keyPreview.map((key) => `- \`${key}\``)
-                : ['- No proposal report summary was available in the branch diff.'];
-            const extraKeyCount = proposalSummary.proposedKeys.length - keyPreview.length;
+            const proposalSummary = loadProposalSummary(proposalPaths, reportPaths);
+            const proposalPreview = proposalSummary.proposals.slice(0, 12);
+            const proposalLines =
+              proposalPreview.length > 0
+                ? proposalPreview.flatMap((proposal) => [
+                    `#### \`${proposal.key || proposal.proposalId}\``,
+                    '',
+                    `- proposal file: \`${proposal.proposalPath}\``,
+                    ...(proposal.sourceUploadFile ? [`- source upload: \`${proposal.sourceUploadFile}\``] : []),
+                    `- confidence: \`${proposal.confidence}\``,
+                    `- applications: ${
+                      proposal.applications.length > 0
+                        ? proposal.applications.map((value) => `\`${value}\``).join(', ')
+                        : '_missing_'
+                    }`,
+                    `- nl: ${formatInlineCode(proposal.nl)}`,
+                    `- fr: ${formatInlineCode(proposal.fr)}`,
+                    `- en: ${formatInlineCode(proposal.en)}`,
+                    ...(proposal.description ? [`- description: ${formatInlineCode(proposal.description)}`] : []),
+                    ...(proposal.notes ? [`- notes: ${formatInlineCode(proposal.notes)}`] : []),
+                    ...(proposal.reason ? [`- routing reason: ${proposal.reason}`] : []),
+                    ''
+                  ])
+                : ['- No proposal objects were available in the branch diff.'];
+            const extraProposalCount = proposalSummary.proposals.length - proposalPreview.length;
 
             const title = branchTitle
               ? `Translation Proposal: ${branchTitle}`
@@ -174,13 +231,16 @@ jobs:
               '### Summary',
               '',
               `- branch: \`${branch}\``,
+              `- proposal objects: ${proposalSummary.proposalPaths.length}`,
               `- proposal reports: ${proposalSummary.reportPaths.length}`,
-              `- proposed keys: ${proposalSummary.totalProposals}`,
+              `- proposed keys: ${proposalSummary.proposals.length}`,
               '',
-              '### Proposed Keys',
+              '### Reviewable Proposal Objects',
               '',
-              ...keyLines,
-              ...(extraKeyCount > 0 ? [`- plus ${extraKeyCount} additional proposed key(s)`] : []),
+              'Reviewers should edit the files under `i18n/proposals/pending/` in this PR when the key, applications, or locale text needs adjustment before merge.',
+              '',
+              ...proposalLines,
+              ...(extraProposalCount > 0 ? [`- plus ${extraProposalCount} additional proposal object(s)`] : []),
               '',
               ...(proposalSummary.reportPaths.length > 0
                 ? [
@@ -192,13 +252,15 @@ jobs:
                 : []),
               '',
               'Review expectations:',
-              '- verify the suggested keys and namespaces',
+              '- verify the final key and namespace inside each proposal object',
               '- verify the locale text and application scope',
+              '- edit the proposal object files in the PR when changes are needed',
               '- merge only after the translation validation workflow is green',
               '',
               'Operational rule:',
               '- existing keys may still flow directly to `main`',
-              '- new keys must land through a reviewed pull request'
+              '- new keys must land through reviewed proposal object files before merge',
+              '- merging this PR applies the final approved proposal objects on `main`'
             ].join('\n');
 
             const existing = await github.rest.pulls.list({

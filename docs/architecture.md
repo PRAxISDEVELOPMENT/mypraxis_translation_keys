@@ -129,7 +129,21 @@ Responsibility:
 
 Never edit these files manually.
 
-### 8. Operational Upload State
+### 8. Reviewable Proposal Objects
+
+Location:
+
+- [../i18n/proposals/pending/](../i18n/proposals/pending/)
+- [../i18n/proposals/processed/](../i18n/proposals/processed/)
+
+Responsibility:
+
+- `pending/` contains the exact proposal objects reviewers should inspect and edit in PRs
+- `processed/` archives proposal objects after they are applied on `main`
+
+This layer exists so proposal review happens against explicit JSON objects instead of hidden derived diffs.
+
+### 9. Operational Upload State
 
 Location:
 
@@ -149,6 +163,7 @@ The repository works because these boundaries stay clean:
 
 - source data is not mixed with runtime artifacts
 - generated output is not treated as handwritten truth
+- proposal review state is not mixed into the canonical source before approval
 - upload state is not treated as permanent business data
 - CLI wrappers stay separate from implementation logic
 - configuration stays declarative
@@ -209,6 +224,7 @@ If you need to inspect the repo quickly, start with these:
 - command wrappers: [../i18n/bin/](../i18n/bin/)
 - generated output: [../i18n/artifacts/generated/](../i18n/artifacts/generated/)
 - upload state: [../i18n/uploads/](../i18n/uploads/)
+- review objects: [../i18n/proposals/](../i18n/proposals/)
 
 ## One-Line Model
 

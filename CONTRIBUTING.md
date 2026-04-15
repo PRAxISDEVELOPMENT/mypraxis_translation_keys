@@ -36,6 +36,7 @@ Know the separation of responsibilities:
 - [i18n/src/](i18n/src/) contains implementation logic
 - [i18n/bin/](i18n/bin/) contains CLI entry points
 - [i18n/artifacts/generated/](i18n/artifacts/generated/) contains generated output
+- [i18n/proposals/](i18n/proposals/) contains reviewable proposal objects
 - [i18n/uploads/](i18n/uploads/) contains workflow state
 
 If you mix those responsibilities, the repository becomes harder to trust.
@@ -130,7 +131,7 @@ Also read:
 | `npm run uploads:prepare -- --input <file>` | analyze one upload file |
 | `npm run uploads:route` | split mixed upload batches |
 | `npm run uploads:process-inbox -- --mode direct` | process direct-update inbox files |
-| `npm run uploads:process-inbox -- --mode proposal` | process proposal inbox files |
+| `npm run uploads:process-inbox -- --mode proposal` | queue reviewable proposal object files |
 | `npm run uploads:simulate -- ...` | simulate upload behavior locally |
 | `npm run update` | interactive helper that builds, commits, pushes, and syncs |
 
@@ -170,6 +171,8 @@ If your change affects new translation keys, reviewers should still verify:
 - application scope
 
 The existing PR template in [.github/pull_request_template.md](.github/pull_request_template.md) remains part of the review contract.
+
+When a PR contains new keys, reviewers should inspect and, if needed, edit the files under [i18n/proposals/pending/](i18n/proposals/pending/) before merging.
 
 ## Documentation Discipline
 

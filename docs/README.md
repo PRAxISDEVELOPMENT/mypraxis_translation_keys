@@ -42,7 +42,7 @@ If someone is new to the repository, this order works best:
   Explains repository boundaries, data flow, generated artifacts, and where implementation belongs.
 
 - [upload-processing.md](upload-processing.md)
-  Explains the direct-update path, proposal path, mixed-batch routing, inbox behavior, and report output.
+  Explains the direct-update path, proposal path, mixed-batch routing, review-object files, inbox behavior, and report output.
 
 - [github-automation.md](github-automation.md)
   Explains what each GitHub workflow does, which branches trigger which jobs, and how proposal PRs are created.

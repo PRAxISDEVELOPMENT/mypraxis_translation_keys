@@ -10,6 +10,7 @@ const { archiveFileWithUniqueName, listJsonFiles } = require('../core/upload-fil
 
 function processUploadFile(filePath, options) {
   ensureDirectory(options.reportsDir);
+  ensureDirectory(options.proposalsDir);
   const reportPath = path.join(options.reportsDir, `${path.basename(filePath, '.json')}.report.json`);
 
   runNodeScript(PROCESS_UPLOAD_SCRIPT_PATH, [
@@ -82,12 +83,19 @@ function processUploadFile(filePath, options) {
       reportPath,
       archivedPath: null,
       directUpdates: 0,
-      proposals: report.summary.proposals
+      proposals: report.summary.proposals,
+      queuedProposalObjects: report.summary.proposals
     };
   }
 
   if (hasProposals) {
-    runNodeScript(PROCESS_UPLOAD_SCRIPT_PATH, ['apply-proposals', '--input', reportPath, '--no-build']);
+    runNodeScript(PROCESS_UPLOAD_SCRIPT_PATH, [
+      'queue-proposals',
+      '--input',
+      reportPath,
+      '--output-dir',
+      options.proposalsDir
+    ]);
   }
 
   return {
@@ -95,7 +103,8 @@ function processUploadFile(filePath, options) {
     reportPath,
     archivedPath: archiveFileWithUniqueName(filePath, options.processedDir),
     directUpdates: 0,
-    proposals: report.summary.proposals
+    proposals: report.summary.proposals,
+    queuedProposalObjects: report.summary.proposals
   };
 }
 
@@ -114,6 +123,7 @@ function runProcessUploadInboxCommand(argv = process.argv.slice(2)) {
   ensureDirectory(options.uploadsDir);
   ensureDirectory(options.reportsDir);
   ensureDirectory(options.processedDir);
+  ensureDirectory(options.proposalsDir);
 
   const uploadFiles = listJsonFiles(options.uploadsDir);
 
@@ -121,6 +131,7 @@ function runProcessUploadInboxCommand(argv = process.argv.slice(2)) {
   console.log(`  Mode:        ${options.mode}`);
   console.log(`  Uploads dir: ${path.relative(ROOT_DIR, options.uploadsDir)}`);
   console.log(`  Reports dir: ${path.relative(ROOT_DIR, options.reportsDir)}`);
+  console.log(`  Proposals:   ${path.relative(ROOT_DIR, options.proposalsDir)}`);
   console.log(`  Dry run:     ${options.dryRun ? 'yes' : 'no'}`);
   console.log(`  Files:       ${uploadFiles.length}`);
 
@@ -131,24 +142,30 @@ function runProcessUploadInboxCommand(argv = process.argv.slice(2)) {
 
   let totalDirectUpdates = 0;
   let totalProposals = 0;
+  let totalQueuedProposalObjects = 0;
 
   for (const filePath of uploadFiles) {
     const result = processUploadFile(filePath, options);
     totalDirectUpdates += result.directUpdates;
     totalProposals += result.proposals;
+    totalQueuedProposalObjects += result.queuedProposalObjects ?? 0;
   }
 
-  if (options.build && !options.dryRun) {
+  if (options.build && !options.dryRun && options.mode === 'direct') {
     runNodeScript(BUILD_SCRIPT_PATH, []);
   }
 
   const resultLabel = options.dryRun ? 'Upload Inbox Dry Run Complete' : 'Upload Inbox Processed';
   const directLabel = options.dryRun ? 'Direct updates detected' : 'Direct updates applied';
-  const proposalLabel = options.dryRun ? 'Proposals detected' : 'Proposals applied';
+  const proposalLabel = options.dryRun
+    ? 'Proposals detected'
+    : options.mode === 'proposal'
+      ? 'Proposal objects queued'
+      : 'Proposals processed';
 
   console.log(`\n${resultLabel}`);
   console.log(`  ${directLabel}: ${totalDirectUpdates}`);
-  console.log(`  ${proposalLabel}:      ${totalProposals}`);
+  console.log(`  ${proposalLabel}:      ${options.mode === 'proposal' ? totalQueuedProposalObjects : totalProposals}`);
   console.log(`  Upload files archived:  ${options.dryRun ? 0 : uploadFiles.length}`);
 }
 

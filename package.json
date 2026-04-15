@@ -18,6 +18,7 @@
     "uploads:help": "node i18n/bin/process-upload.js --help",
     "uploads:prepare": "node i18n/bin/process-upload.js prepare",
     "uploads:apply-proposals": "node i18n/bin/process-upload.js apply-proposals",
+    "proposals:apply-pending": "node i18n/bin/process-upload.js apply-pending-proposals --input-dir i18n/proposals/pending --processed-dir i18n/proposals/processed",
     "uploads:process-inbox:help": "node i18n/bin/process-upload-inbox.js --help",
     "uploads:route": "node i18n/bin/route-upload-batches.js",
     "uploads:route:help": "node i18n/bin/route-upload-batches.js --help",

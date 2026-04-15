@@ -25,7 +25,7 @@ The upload-processing layer now supports:
 
 - classification of direct updates versus proposals
 - suggested namespace and key generation for new entries
-- proposal application from generated reports
+- proposal review object generation and application
 - inbox processing for both direct and proposal modes
 - routing mixed upload batches into separate execution paths
 

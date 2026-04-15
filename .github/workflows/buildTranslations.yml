@@ -13,6 +13,7 @@ on:
       - 'i18n/config/**'
       - 'i18n/bin/*.js'
       - 'i18n/src/**'
+      - 'i18n/proposals/pending/**'
       - 'package.json'
       - 'package-lock.json'
       - 'scripts/**'
@@ -26,6 +27,7 @@ on:
       - 'i18n/config/**'
       - 'i18n/bin/*.js'
       - 'i18n/src/**'
+      - 'i18n/proposals/pending/**'
       - 'package.json'
       - 'package-lock.json'
       - 'scripts/**'
@@ -61,6 +63,9 @@ jobs:
       - name: Validate Translation Tooling Syntax
         run: npm run tooling:check-syntax
 
+      - name: Validate Pending Proposal Review Objects
+        run: node i18n/bin/process-upload.js apply-pending-proposals --input-dir i18n/proposals/pending --dry-run --no-build
+
       - name: Validate Translation Source
         run: node i18n/bin/build-translations.js
 
@@ -86,6 +91,14 @@ jobs:
       - name: Validate Translation Tooling Syntax
         run: npm run tooling:check-syntax
 
+      - name: Apply Approved Proposal Review Objects
+        run: |
+          node i18n/bin/process-upload.js apply-pending-proposals \
+            --input-dir i18n/proposals/pending \
+            --processed-dir i18n/proposals/processed \
+            --reports-dir i18n/artifacts/reports \
+            --no-build
+
       - name: Regenerate Translation Artifacts
         run: node i18n/bin/build-translations.js
 
@@ -94,12 +107,17 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add i18n/artifacts/generated/*.json
+          git add \
+            i18n/source/translations.json \
+            i18n/artifacts/generated/*.json \
+            i18n/artifacts/reports \
+            i18n/proposals/pending \
+            i18n/proposals/processed
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Translation Bot: Regenerate Generated Files"
+            git commit -m "Translation Bot: Apply Proposal Objects And Regenerate Files"
             git pull --rebase origin main
             git push origin HEAD:main
           fi

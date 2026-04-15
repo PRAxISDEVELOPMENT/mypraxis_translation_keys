@@ -26,6 +26,8 @@ This is the single most important rule in the upload pipeline.
 | --- | --- |
 | [../i18n/uploads/incoming/](../i18n/uploads/incoming/) | queued upload files waiting to be processed |
 | [../i18n/uploads/processed/](../i18n/uploads/processed/) | archived upload files that already ran through a flow |
+| [../i18n/proposals/pending/](../i18n/proposals/pending/) | reviewable proposal object files waiting for approval |
+| [../i18n/proposals/processed/](../i18n/proposals/processed/) | archived proposal objects that were already applied |
 | [../i18n/artifacts/reports/](../i18n/artifacts/reports/) | routing and proposal report output |
 
 ## Upload Payload Contract
@@ -86,8 +88,10 @@ Expected behavior:
 
 1. the entry is recognized as a proposal
 2. namespace and key suggestions are generated
-3. proposal reports are written
+3. a reviewable proposal object file is written under [../i18n/proposals/pending/](../i18n/proposals/pending/)
 4. the proposal branch workflow opens or updates a PR
+5. reviewers edit the proposal object when key, applications, or locale text need adjustment
+6. merge to `main` applies the final approved proposal object
 
 Typical examples:
 
@@ -149,19 +153,19 @@ npm run uploads:process-inbox -- --mode proposal
 Purpose:
 
 - process queued direct-update files on the direct path
-- process queued proposal files on the proposal path
+- turn queued proposal uploads into reviewable proposal object files on the proposal path
 
 ### Stage 4: Proposal Application
 
 Command:
 
 ```bash
-npm run uploads:apply-proposals -- --input path/to/report.json
+npm run proposals:apply-pending
 ```
 
 Purpose:
 
-- apply proposal output from a generated report
+- validate and apply reviewed proposal object files from [../i18n/proposals/pending/](../i18n/proposals/pending/)
 
 ## Local Simulation
 
@@ -181,7 +185,9 @@ npm run uploads:simulate -- new --nl "Nieuwe knop" --fr "Nouveau bouton" --en "N
 
 By default, these are dry runs.
 
-Use `--apply` when you explicitly want local source data and artifacts to change.
+Use `--apply` when you explicitly want the simulated result to be materialized locally.
+For direct updates that means source changes.
+For new proposals that means review-object files are queued locally.
 
 ## Outputs You Should Expect
 
@@ -190,6 +196,8 @@ Depending on the path, upload processing can modify:
 - [../i18n/source/translations.json](../i18n/source/translations.json)
 - [../i18n/artifacts/generated/](../i18n/artifacts/generated/)
 - [../i18n/artifacts/reports/](../i18n/artifacts/reports/)
+- [../i18n/proposals/pending/](../i18n/proposals/pending/)
+- [../i18n/proposals/processed/](../i18n/proposals/processed/)
 - [../i18n/uploads/incoming/](../i18n/uploads/incoming/)
 - [../i18n/uploads/processed/](../i18n/uploads/processed/)
 

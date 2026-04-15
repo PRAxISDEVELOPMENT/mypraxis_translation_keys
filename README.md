@@ -61,7 +61,7 @@ Use these when you need more than a quick overview:
 
 ## Mental Model
 
-The system becomes much easier to reason about if you separate it into six layers:
+The system becomes much easier to reason about if you separate it into seven layers:
 
 1. `i18n/source/`
    Canonical data that humans are allowed to change.
@@ -73,12 +73,14 @@ The system becomes much easier to reason about if you separate it into six layer
    CLI entry points that expose the implementation.
 5. `i18n/artifacts/generated/`
    Derived output for consumers. Always reproducible from source.
-6. `i18n/uploads/`
+6. `i18n/proposals/`
+   Reviewable proposal objects waiting for approval or already archived after application.
+7. `i18n/uploads/`
    Temporary operational state for queued and processed upload payloads.
 
 If you remember only one sentence, remember this:
 
-`source` is edited, `config` defines the rules, `src` contains the logic, `bin` runs it, `artifacts/generated` is derived output, and `uploads` is workflow state.
+`source` is edited, `config` defines the rules, `src` contains the logic, `bin` runs it, `artifacts/generated` is derived output, `proposals` is the review layer, and `uploads` is workflow state.
 
 ## End-To-End Overview
 
@@ -99,9 +101,12 @@ flowchart TD
     B -- Yes --> C[Direct update path]
     B -- No --> D[Proposal path]
     C --> E[Update source data]
-    D --> F[Generate proposal payload and report]
+    D --> F[Generate reviewable proposal objects]
     E --> G[Rebuild generated artifacts]
     F --> H[Open or update PR]
+    H --> I[Review and edit proposal objects]
+    I --> J[Merge to main]
+    J --> K[Apply approved proposal objects]
 ```
 
 ### Mixed Batch Flow
@@ -124,6 +129,9 @@ i18n/
 │   └── reports/              # processing and routing reports
 ├── bin/                      # CLI entry points
 ├── config/                   # namespaces, applications, and schemas
+├── proposals/
+│   ├── pending/              # reviewable proposal objects waiting for approval
+│   └── processed/            # archived proposal objects already applied on main
 ├── source/                   # canonical translation source
 ├── src/
 │   ├── core/                 # shared helpers and IO
@@ -158,6 +166,7 @@ scripts/
 | the CLI command surface | [i18n/bin/](i18n/bin/) | thin wrappers around implementation |
 | generated runtime output | [i18n/artifacts/generated/](i18n/artifacts/generated/) | produced by the build process |
 | upload reports | [i18n/artifacts/reports/](i18n/artifacts/reports/) | generated reports for routing/proposals |
+| reviewable proposal objects | [i18n/proposals/pending/](i18n/proposals/pending/) | exact new-entry objects reviewers can edit before merge |
 | queued upload files | [i18n/uploads/incoming/](i18n/uploads/incoming/) | inbox for work waiting to be processed |
 | already-processed upload files | [i18n/uploads/processed/](i18n/uploads/processed/) | archive trail |
 | developer convenience workflow | [scripts/update-translations.sh](scripts/update-translations.sh) | local build, commit, push, wait, sync |
@@ -280,7 +289,7 @@ Expected behavior:
 4. generated artifacts are rebuilt
 5. processed payloads are archived
 
-### Flow 2: Proposal
+### Flow 2: Proposal Review
 
 Use this when the upload entry introduces a new translation that does not yet have a key.
 
@@ -288,8 +297,10 @@ Expected behavior:
 
 1. the upload is classified as a proposal
 2. namespace and key suggestions are generated
-3. proposal payload/report is produced
+3. one or more reviewable proposal object files are written under `i18n/proposals/pending/`
 4. automation opens or updates a PR for review
+5. reviewers adjust key, applications, and locale text by editing those proposal object files
+6. merging the PR applies the final approved proposal objects on `main`
 
 ### Flow 3: Mixed Batch
 
@@ -309,6 +320,7 @@ npm run uploads:route
 npm run uploads:process-inbox -- --mode direct
 npm run uploads:process-inbox -- --mode proposal
 npm run uploads:apply-proposals -- --input path/to/report.json
+npm run proposals:apply-pending
 ```
 
 What they do:
@@ -316,8 +328,9 @@ What they do:
 - `uploads:prepare`: analyze one upload payload
 - `uploads:route`: split mixed batches
 - `uploads:process-inbox -- --mode direct`: process direct-update inbox files
-- `uploads:process-inbox -- --mode proposal`: process proposal inbox files
-- `uploads:apply-proposals`: apply proposals from a generated report
+- `uploads:process-inbox -- --mode proposal`: queue reviewable proposal objects for PR review
+- `uploads:apply-proposals`: legacy helper that applies proposals directly from a report
+- `proposals:apply-pending`: validate and apply reviewed proposal objects from `i18n/proposals/pending/`
 
 ## Local Testing
 
@@ -389,9 +402,9 @@ This repository uses three GitHub Actions workflows:
 
 | Workflow | Purpose |
 | --- | --- |
-| [.github/workflows/buildTranslations.yml](.github/workflows/buildTranslations.yml) | validate translation changes and regenerate generated artifacts |
-| [.github/workflows/processTranslationUploads.yml](.github/workflows/processTranslationUploads.yml) | route and process incoming upload batches |
-| [.github/workflows/openTranslationProposalPr.yml](.github/workflows/openTranslationProposalPr.yml) | open or update proposal pull requests for new keys |
+| [.github/workflows/buildTranslations.yml](.github/workflows/buildTranslations.yml) | validate translation changes, validate pending proposal objects, and apply approved proposal objects on `main` |
+| [.github/workflows/processTranslationUploads.yml](.github/workflows/processTranslationUploads.yml) | route incoming upload batches and queue reviewable proposal objects on proposal branches |
+| [.github/workflows/openTranslationProposalPr.yml](.github/workflows/openTranslationProposalPr.yml) | open or update proposal pull requests for new keys based on proposal object files |
 
 ### Proposal PR Behavior
 
@@ -430,6 +443,7 @@ Repository variables used by proposal automation:
 | `npm run uploads:simulate -- edit ...` | simulate an existing-key upload |
 | `npm run uploads:simulate -- new ...` | simulate a new-key upload |
 | `npm run uploads:simulate:help` | print help for upload simulation |
+| `npm run proposals:apply-pending` | validate and apply reviewed proposal object files on `main` |
 | `npm run update` | build, commit, push, wait, and sync the current branch |
 
 ## Operational Rules
@@ -438,6 +452,7 @@ Repository variables used by proposal automation:
 - keep [i18n/source/translations.json](i18n/source/translations.json) as the canonical source
 - direct updates must use existing keys only
 - new keys must enter through the proposal path
+- proposal PRs must review and, when needed, edit files under `i18n/proposals/pending/`
 - every entry must use an allowed namespace
 - every entry must include at least one allowed application
 
@@ -476,6 +491,7 @@ Use this shortcut:
 
 - validation/build behavior: `i18n/src/translation-build/`
 - upload behavior: `i18n/src/upload-processing/`
+- review objects: `i18n/proposals/pending/`
 - shared utility behavior: `i18n/src/core/`
 - CLI wiring: `i18n/bin/`
 
@@ -498,6 +514,7 @@ If you need the shortest possible project model:
 - logic lives in `i18n/src/`
 - entry points live in `i18n/bin/`
 - runtime output lives in `i18n/artifacts/generated/`
+- review objects live in `i18n/proposals/`
 - upload state lives in `i18n/uploads/`
 
 That separation is what keeps the system traceable, reviewable, and automatable.

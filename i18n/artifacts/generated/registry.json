@@ -5,12 +5,12 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 1,
-    "uniqueKeys": 1,
+    "totalEntries": 4,
+    "uniqueKeys": 4,
     "namespaces": 7,
     "applications": 4,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 0
+    "keysWithMissingLocales": 3
   },
   "applications": [
     {
@@ -62,6 +62,86 @@
         "fr": "Appel Innovaphone",
         "en": "Innovaphsssone Call"
       }
+    },
+    {
+      "key": "common.aanvraag1EnkelFr",
+      "namespace": "common",
+      "leaf": "aanvraag1EnkelFr",
+      "segments": [
+        "common",
+        "aanvraag1EnkelFr"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        2
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [
+        "en",
+        "nl"
+      ],
+      "resolved": {
+        "nl": "",
+        "fr": "aanvraag 1 enkel fr",
+        "en": ""
+      }
+    },
+    {
+      "key": "common.aanvraag1Nl",
+      "namespace": "common",
+      "leaf": "aanvraag1Nl",
+      "segments": [
+        "common",
+        "aanvraag1Nl"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [
+        "fr"
+      ],
+      "resolved": {
+        "nl": "aanvraag 1 nl",
+        "fr": "confirm",
+        "en": "confirm"
+      }
+    },
+    {
+      "key": "common.aanvraag3EnkelEn",
+      "namespace": "common",
+      "leaf": "aanvraag3EnkelEn",
+      "segments": [
+        "common",
+        "aanvraag3EnkelEn"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        4
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [
+        "fr",
+        "nl"
+      ],
+      "resolved": {
+        "nl": "aanvraag 3 enkel EN",
+        "fr": "aanvraag 3 enkel EN",
+        "en": "aanvraag 3 enkel EN"
+      }
     }
   ],
   "namespaces": [
@@ -84,7 +164,7 @@
       "label": "Common",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 0
+      "keyCount": 3
     },
     {
       "name": "error",

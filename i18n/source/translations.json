@@ -7,5 +7,32 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.aanvraag1EnkelFr",
+    "applications": [
+      "mypraxis_web"
+    ],
+    "nl": "",
+    "fr": "aanvraag 1 enkel fr",
+    "en": ""
+  },
+  {
+    "key": "common.aanvraag1Nl",
+    "applications": [
+      "mypraxis_web"
+    ],
+    "nl": "aanvraag 1 nl",
+    "fr": "",
+    "en": "confirm"
+  },
+  {
+    "key": "common.aanvraag3EnkelEn",
+    "applications": [
+      "mypraxis_web"
+    ],
+    "nl": "",
+    "fr": "",
+    "en": "aanvraag 3 enkel EN"
   }
 ]

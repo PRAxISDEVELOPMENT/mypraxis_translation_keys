@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "command": "apply-pending-proposals",
+  "createdAt": "2026-04-15T10:49:55.843Z",
+  "summary": {
+    "proposalFiles": 1,
+    "appliedEntries": 3
+  },
+  "applied": [
+    {
+      "proposalId": "translation-20260415101935-crqvfr.proposal-01",
+      "proposalFile": "i18n/proposals/pending/translation-20260415101935-crqvfr.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260415101935-crqvfr.json",
+      "key": "common.aanvraag1Nl",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "aanvraag 1 nl",
+      "fr": "",
+      "en": "confirm"
+    },
+    {
+      "proposalId": "translation-20260415101935-crqvfr.proposal-02",
+      "proposalFile": "i18n/proposals/pending/translation-20260415101935-crqvfr.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260415101935-crqvfr.json",
+      "key": "common.aanvraag1EnkelFr",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "",
+      "fr": "aanvraag 1 enkel fr",
+      "en": ""
+    },
+    {
+      "proposalId": "translation-20260415101935-crqvfr.proposal-03",
+      "proposalFile": "i18n/proposals/pending/translation-20260415101935-crqvfr.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260415101935-crqvfr.json",
+      "key": "common.aanvraag3EnkelEn",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "",
+      "fr": "",
+      "en": "aanvraag 3 enkel EN"
+    }
+  ]
+}

@@ -1,5 +1,10 @@
 {
   "applicationNames": {
     "innovaphoneCall": "Appel Innovaphone"
+  },
+  "common": {
+    "aanvraag1EnkelFr": "aanvraag 1 enkel fr",
+    "aanvraag1Nl": "confirm",
+    "aanvraag3EnkelEn": "aanvraag 3 enkel EN"
   }
 }

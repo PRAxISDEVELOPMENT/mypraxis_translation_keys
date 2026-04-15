@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-15T09:29:13.327Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260415092902-w1sftk.json",
+  "summary": {
+    "totalEntries": 2,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 2,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.q",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "q",
+        "fr": "q",
+        "en": "q"
+      },
+      "proposedEntry": {
+        "key": "common.q",
+        "nl": "q",
+        "fr": "q",
+        "en": "q",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 2,
+      "suggestedKey": "common.d",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "d",
+        "fr": "",
+        "en": ""
+      },
+      "proposedEntry": {
+        "key": "common.d",
+        "nl": "d",
+        "fr": "",
+        "en": "",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

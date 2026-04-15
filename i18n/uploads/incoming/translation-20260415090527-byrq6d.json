@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.test",
+      "nl": "Dit is een test",
+      "fr": "",
+      "en": "MEREGED"
+    }
+  ]
+}

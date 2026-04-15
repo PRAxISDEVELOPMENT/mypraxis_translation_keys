@@ -14,31 +14,29 @@
     "mypraxis_web"
   ],
   "totals": {
-    "sourceEntries": 3215,
-    "uniqueKeys": 3215,
+    "sourceEntries": 1,
+    "uniqueKeys": 1,
     "namespaces": 7,
-    "warnings": 2,
+    "warnings": 0,
     "errors": 0,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 1
+    "keysWithMissingLocales": 0
   },
   "namespaces": {
-    "applicationNames": 19,
-    "authentication": 76,
-    "common": 2422,
-    "error": 183,
-    "info": 248,
-    "metadata": 2,
-    "success": 265
+    "applicationNames": 1,
+    "authentication": 0,
+    "common": 0,
+    "error": 0,
+    "info": 0,
+    "metadata": 0,
+    "success": 0
   },
   "applicationCounts": {
     "documenten": 0,
-    "mypraxis_app": 0,
+    "mypraxis_app": 1,
     "mypraxis_data": 0,
-    "mypraxis_web": 3215
+    "mypraxis_web": 1
   },
-  "warningCounts": {
-    "Missing locale values": 2
-  },
+  "warningCounts": {},
   "errorCounts": {}
 }

@@ -26560,9 +26560,9 @@
   },
   {
     "key": "success.accountNumbersAdded",
-    "nl": "Account nummers toegevoegd",
-    "fr": "Numéros de compte ajoutés",
-    "en": "Account numbers added",
+    "nl": "Accountnummer toegevoegd",
+    "fr": "Numéro de compte ajouté",
+    "en": "Account number added",
     "applications": [
       "mypraxis_web"
     ]

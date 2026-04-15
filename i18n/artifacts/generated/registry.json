@@ -70887,9 +70887,9 @@
       "duplicateValuesDiffer": false,
       "missingLocales": [],
       "resolved": {
-        "nl": "Account nummers toegevoegd",
-        "fr": "Numéros de compte ajoutés",
-        "en": "Account numbers added"
+        "nl": "Accountnummer toegevoegd",
+        "fr": "Numéro de compte ajouté",
+        "en": "Account number added"
       }
     },
     {

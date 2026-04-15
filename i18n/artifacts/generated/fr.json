@@ -2965,7 +2965,7 @@
   },
   "success": {
     "accountCreatedSuccessfully": "Compte Créé avec succès. Veuillez vous connecter avec l'adresse e-mail et le mot de passe choisis",
-    "accountNumbersAdded": "Numéros de compte ajoutés",
+    "accountNumbersAdded": "Numéro de compte ajouté",
     "accountsImported": "Comptes importés",
     "addedInTestline": "Ligne en test ajoutée",
     "addedPermanentCommentary": "Commentaire permanent ajouté",

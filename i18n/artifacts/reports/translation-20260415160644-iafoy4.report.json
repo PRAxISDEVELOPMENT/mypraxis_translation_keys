@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-15T16:06:53.912Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260415160644-iafoy4.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "applicationNames.innovaphoneCall",
+      "namespace": "applicationNames",
+      "changes": {
+        "en": ""
+      },
+      "current": {
+        "nl": "test nl",
+        "fr": "",
+        "en": "tes en"
+      },
+      "next": {
+        "nl": "test nl",
+        "fr": "",
+        "en": ""
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

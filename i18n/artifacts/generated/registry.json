@@ -57,12 +57,13 @@
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
       "missingLocales": [
+        "en",
         "fr"
       ],
       "resolved": {
         "nl": "test nl",
-        "fr": "tes en",
-        "en": "tes en"
+        "fr": "",
+        "en": ""
       }
     },
     {

@@ -238,32 +238,26 @@ jobs:
                 '1. Open a file in `i18n/proposals/pending/`.',
                 '2. Edit only `proposedEntry` when the key, applications, or texts need adjustment.',
                 '3. Commit the change on this proposal branch.',
-                '4. Merge after approval and green checks.',
-                '5. Merge applies the approved proposal file(s) to `main` automatically.'
+                '4. Merge after approval and green checks.'
               ];
             }
 
             function buildProposalSectionLines() {
               if (proposalPreview.length === 0) {
-                return ['- No proposal objects were available in the branch diff.'];
+                return ['- No proposal files found in this branch.'];
               }
 
               return proposalPreview.flatMap((proposal) => [
-                `- \`${proposal.key || proposal.proposalId}\``,
-                `  Edit: ${formatLink('edit proposal file', buildEditUrl(proposal.proposalPath))}`,
-                `  View: ${formatLink('open file', buildBlobUrl(proposal.proposalPath))}`,
-                `  Applications: ${
-                  proposal.applications.length > 0
-                    ? proposal.applications.map((value) => `\`${value}\``).join(', ')
-                    : '_missing_'
-                }`,
-                `  NL: ${formatInlineCode(proposal.nl)}`,
-                `  FR: ${formatInlineCode(proposal.fr)}`,
-                `  EN: ${formatInlineCode(proposal.en)}`,
-                ...(proposal.description ? [`  Description: ${formatInlineCode(proposal.description)}`] : []),
-                ...(proposal.notes ? [`  Notes: ${formatInlineCode(proposal.notes)}`] : []),
-                ...(proposal.reason ? [`  Why this key: ${proposal.reason}`] : []),
-                ...(proposal.sourceUploadFile ? [`  Source upload: \`${proposal.sourceUploadFile}\``] : [])
+                `- \`${proposal.key || proposal.proposalId}\` | ${formatLink(
+                  'edit',
+                  buildEditUrl(proposal.proposalPath)
+                )} | ${formatLink('view', buildBlobUrl(proposal.proposalPath))}`,
+                `  NL ${formatInlineCode(proposal.nl)} | FR ${formatInlineCode(proposal.fr)} | EN ${formatInlineCode(proposal.en)}`,
+                ...(proposal.applications.length > 0
+                  ? [`  Apps ${proposal.applications.map((value) => `\`${value}\``).join(', ')}`]
+                  : []),
+                ...(proposal.description ? [`  Description ${formatInlineCode(proposal.description)}`] : []),
+                ...(proposal.notes ? [`  Notes ${formatInlineCode(proposal.notes)}`] : [])
               ]);
             }
 
@@ -278,23 +272,35 @@ jobs:
             const hasConfiguredAssignees = assignees.length > 0;
             let reviewRoutingError = '';
 
+            function buildStatusLines() {
+              const lines = [
+                `- Branch: \`${branch}\``,
+                `- Proposal files: ${proposalSummary.proposalPaths.length}`,
+                `- Texts to review: ${proposalSummary.proposals.length}`
+              ];
+
+              if (!hasConfiguredReviewRouting) {
+                lines.push('- Reviewers: not configured');
+              }
+
+              if (!hasConfiguredAssignees) {
+                lines.push('- Assignees: not configured');
+              }
+
+              return lines;
+            }
+
             function buildPullRequestBody() {
               return [
                 '## Translation Proposal',
                 '',
-                'This PR contains new texts uploaded from the application.',
+                'Nieuwe teksten uit de applicatie. Pas de proposal file aan indien nodig en merge daarna.',
                 '',
-                '### Quick Summary',
+                '### Status',
                 '',
-                '| Field | Value |',
-                '| --- | --- |',
-                `| Branch | \`${branch}\` |`,
-                `| Proposal files | ${proposalSummary.proposalPaths.length} |`,
-                `| Texts to review | ${proposalSummary.proposals.length} |`,
-                `| Reviewers configured | ${hasConfiguredReviewRouting ? 'yes' : 'no'} |`,
-                `| Assignees configured | ${hasConfiguredAssignees ? 'yes' : 'no'} |`,
+                ...buildStatusLines(),
                 '',
-                '### Review Flow',
+                '### Do This',
                 '',
                 ...buildReviewFlowLines(),
                 '',
@@ -309,12 +315,12 @@ jobs:
                 '',
                 '### Merge',
                 '',
-                'Merge this PR with the normal GitHub `Merge pull request` button after approval and green checks.',
-                'Automation then applies the final approved proposal file(s) on `main`.',
+                'Gebruik `Merge pull request` na approval en groene checks.',
+                'Na merge wordt dit automatisch op `main` toegepast.',
                 '',
                 ...(proposalSummary.reportPaths.length > 0
                   ? [
-                      '### Report Files',
+                      '### Reports',
                       '',
                       ...proposalSummary.reportPaths.map((reportPath) => `- \`${reportPath}\``),
                       ''
@@ -331,17 +337,15 @@ jobs:
                   : []),
                 ...(!hasConfiguredReviewRouting
                   ? [
-                      '### Missing Configuration',
+                      '### Config',
                       '',
-                      'Automatic reviewers are not configured.',
-                      'Set `TRANSLATION_PROPOSAL_REVIEWERS` or `TRANSLATION_PROPOSAL_TEAM_REVIEWERS`.',
+                      'Set `TRANSLATION_PROPOSAL_REVIEWERS` or `TRANSLATION_PROPOSAL_TEAM_REVIEWERS` for automatische review routing.',
                       ''
                     ]
                   : []),
                 ...(!hasConfiguredAssignees
                   ? [
-                      'Automatic assignees are not configured.',
-                      'Set `TRANSLATION_PROPOSAL_ASSIGNEES` if you want auto-assignment.',
+                      'Set `TRANSLATION_PROPOSAL_ASSIGNEES` if je automatische toewijzing wil.',
                       ''
                     ]
                   : []),
@@ -430,9 +434,13 @@ jobs:
                 guidanceMarker,
                 '## Review Guide',
                 '',
-                'Use this PR to review and edit uploaded texts before they are applied on `main`.',
+                'Korte handleiding voor deze proposal-PR.',
                 '',
-                '### Review Flow',
+                '### Status',
+                '',
+                ...buildStatusLines(),
+                '',
+                '### Do This',
                 '',
                 ...buildReviewFlowLines(),
                 '',
@@ -447,8 +455,8 @@ jobs:
                 '',
                 '### Merge',
                 '',
-                'After approval and green checks, click `Merge pull request` in GitHub.',
-                'Automation will then apply the approved proposal file(s) on `main`.',
+                'Klik `Merge pull request` na approval en groene checks.',
+                'Na merge wordt dit automatisch op `main` toegepast.',
                 '',
                 ...(reviewRoutingError
                   ? [
@@ -461,17 +469,15 @@ jobs:
                 ...(hasConfiguredReviewRouting
                   ? []
                   : [
-                      '### Missing Review Routing',
+                      '### Config',
                       '',
-                      'No automatic reviewers are configured.',
                       'Configure `TRANSLATION_PROPOSAL_REVIEWERS` or `TRANSLATION_PROPOSAL_TEAM_REVIEWERS`.',
                       ''
                     ]),
                 ...(hasConfiguredAssignees
                   ? []
                   : [
-                      'No automatic assignees are configured.',
-                      'Configure `TRANSLATION_PROPOSAL_ASSIGNEES` if you want an owner assigned automatically.',
+                      'Configure `TRANSLATION_PROPOSAL_ASSIGNEES` if je automatische toewijzing wil.',
                       ''
                     ])
               ].join('\n');

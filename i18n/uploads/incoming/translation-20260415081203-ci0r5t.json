@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "DIT IS EEN TEST NEDERLANDS",
+      "fr": "",
+      "en": ""
+    },
+    {
+      "nl": "",
+      "fr": "TEST FRANS",
+      "en": ""
+    },
+    {
+      "nl": "",
+      "fr": "",
+      "en": "TEST ENGELS"
+    }
+  ]
+}

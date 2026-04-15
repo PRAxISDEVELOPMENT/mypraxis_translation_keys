@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-15T08:53:40.243Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260415085329-gpbg6q.json",
+  "summary": {
+    "totalEntries": 3,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 3,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.test2",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "test",
+        "fr": "",
+        "en": ""
+      },
+      "proposedEntry": {
+        "key": "common.test2",
+        "nl": "test",
+        "fr": "",
+        "en": "",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 2,
+      "suggestedKey": "common.testFr",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "",
+        "fr": "test fr",
+        "en": ""
+      },
+      "proposedEntry": {
+        "key": "common.testFr",
+        "nl": "",
+        "fr": "test fr",
+        "en": "",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 3,
+      "suggestedKey": "common.testEn",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "",
+        "fr": "",
+        "en": "test en"
+      },
+      "proposedEntry": {
+        "key": "common.testEn",
+        "nl": "",
+        "fr": "",
+        "en": "test en",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

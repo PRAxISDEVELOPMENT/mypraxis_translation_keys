@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-15T16:14:14.665Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260415161359-tkd5v4.json",
+  "summary": {
+    "totalEntries": 3,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 3,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.testingVar",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "TESTING VAR",
+        "fr": "TESTING VAR FR",
+        "en": ""
+      },
+      "proposedEntry": {
+        "key": "common.testingVar",
+        "nl": "TESTING VAR",
+        "fr": "TESTING VAR FR",
+        "en": "",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 2,
+      "suggestedKey": "common.testingSecondVar",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "TESTING SECOND VAR",
+        "fr": "",
+        "en": ""
+      },
+      "proposedEntry": {
+        "key": "common.testingSecondVar",
+        "nl": "TESTING SECOND VAR",
+        "fr": "",
+        "en": "",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 3,
+      "suggestedKey": "common.testThVar",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "",
+        "fr": "",
+        "en": "TEST TH VAR"
+      },
+      "proposedEntry": {
+        "key": "common.testThVar",
+        "nl": "",
+        "fr": "",
+        "en": "TEST TH VAR",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

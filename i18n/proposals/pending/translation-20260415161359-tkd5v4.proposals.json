@@ -1,0 +1,95 @@
+{
+  "version": 2,
+  "proposalBatchId": "translation-20260415161359-tkd5v4.proposals",
+  "status": "pending-review",
+  "createdAt": "2026-04-15T16:14:14.704Z",
+  "source": {
+    "uploadFile": "i18n/uploads/incoming/translation-20260415161359-tkd5v4.json",
+    "reportFile": "i18n/artifacts/reports/translation-20260415161359-tkd5v4.report.json",
+    "proposalCount": 3
+  },
+  "review": {
+    "required": true,
+    "instructions": "Edit the proposedEntry block for each proposal in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "proposals": [
+    {
+      "proposalId": "translation-20260415161359-tkd5v4.proposal-01",
+      "source": {
+        "uploadEntryIndex": 1
+      },
+      "review": {
+        "suggestedKey": "common.testingVar",
+        "suggestedNamespace": "common",
+        "confidence": "low",
+        "reason": "No stronger namespace signal was detected, so common was used."
+      },
+      "originalEntry": {
+        "nl": "TESTING VAR",
+        "fr": "TESTING VAR FR",
+        "en": ""
+      },
+      "proposedEntry": {
+        "key": "common.testingVar",
+        "nl": "TESTING VAR",
+        "fr": "TESTING VAR FR",
+        "en": "",
+        "applications": [
+          "mypraxis_web"
+        ]
+      }
+    },
+    {
+      "proposalId": "translation-20260415161359-tkd5v4.proposal-02",
+      "source": {
+        "uploadEntryIndex": 2
+      },
+      "review": {
+        "suggestedKey": "common.testingSecondVar",
+        "suggestedNamespace": "common",
+        "confidence": "low",
+        "reason": "No stronger namespace signal was detected, so common was used."
+      },
+      "originalEntry": {
+        "nl": "TESTING SECOND VAR",
+        "fr": "",
+        "en": ""
+      },
+      "proposedEntry": {
+        "key": "common.testingSecondVar",
+        "nl": "TESTING SECOND VAR",
+        "fr": "",
+        "en": "",
+        "applications": [
+          "mypraxis_web"
+        ]
+      }
+    },
+    {
+      "proposalId": "translation-20260415161359-tkd5v4.proposal-03",
+      "source": {
+        "uploadEntryIndex": 3
+      },
+      "review": {
+        "suggestedKey": "common.testThVar",
+        "suggestedNamespace": "common",
+        "confidence": "low",
+        "reason": "No stronger namespace signal was detected, so common was used."
+      },
+      "originalEntry": {
+        "nl": "",
+        "fr": "",
+        "en": "TEST TH VAR"
+      },
+      "proposedEntry": {
+        "key": "common.testThVar",
+        "nl": "",
+        "fr": "",
+        "en": "TEST TH VAR",
+        "applications": [
+          "mypraxis_web"
+        ]
+      }
+    }
+  ]
+}

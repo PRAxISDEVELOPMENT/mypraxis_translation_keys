@@ -103,13 +103,17 @@ Options
 `);
 }
 
-function getLocaleValues(options) {
+function getLocaleValues(options, { includeEmpty = false } = {}) {
   const values = {};
 
   for (const locale of LOCALES) {
+    if (typeof options[locale] !== 'string') {
+      continue;
+    }
+
     const value = toOptionalTrimmedString(options[locale]);
 
-    if (value) {
+    if (includeEmpty || value) {
       values[locale] = value;
     }
   }
@@ -118,13 +122,13 @@ function getLocaleValues(options) {
 }
 
 function buildSimulatedEntry(options) {
-  const localeValues = getLocaleValues(options);
-
-  if (Object.keys(localeValues).length === 0) {
-    throw new Error('Provide at least one locale value with --nl, --fr, or --en.');
-  }
-
   if (options.command === 'edit') {
+    const localeValues = getLocaleValues(options, { includeEmpty: true });
+
+    if (Object.keys(localeValues).length === 0) {
+      throw new Error('Provide at least one locale value with --nl, --fr, or --en.');
+    }
+
     const key = toOptionalTrimmedString(options.key);
 
     if (!key) {
@@ -142,6 +146,12 @@ function buildSimulatedEntry(options) {
   }
 
   if (options.command === 'new') {
+    const localeValues = getLocaleValues(options);
+
+    if (Object.keys(localeValues).length === 0) {
+      throw new Error('Provide at least one non-empty locale value with --nl, --fr, or --en.');
+    }
+
     if (options.key) {
       throw new Error('The "new" command must not include --key.');
     }

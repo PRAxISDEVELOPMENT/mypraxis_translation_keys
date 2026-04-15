@@ -39,9 +39,13 @@ function buildDirectUpdate(uploadEntry, existingEntry, index) {
   const changes = {};
 
   for (const locale of LOCALES) {
+    if (!hasOwn(uploadEntry, locale)) {
+      continue;
+    }
+
     const nextValue = toOptionalTrimmedString(uploadEntry[locale]);
 
-    if (nextValue === null || nextValue === '') {
+    if (nextValue === null) {
       continue;
     }
 

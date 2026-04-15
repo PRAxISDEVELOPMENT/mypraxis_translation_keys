@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "TESTING VAR",
+      "fr": "TESTING VAR FR",
+      "en": ""
+    },
+    {
+      "nl": "TESTING SECOND VAR",
+      "fr": "",
+      "en": ""
+    },
+    {
+      "nl": "",
+      "fr": "",
+      "en": "TEST TH VAR"
+    }
+  ]
+}

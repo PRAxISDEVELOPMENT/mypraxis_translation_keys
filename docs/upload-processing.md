@@ -88,10 +88,10 @@ Expected behavior:
 
 1. the entry is recognized as a proposal
 2. namespace and key suggestions are generated
-3. a reviewable proposal object file is written under [../i18n/proposals/pending/](../i18n/proposals/pending/)
+3. one reviewable proposal file is written under [../i18n/proposals/pending/](../i18n/proposals/pending/) for that upload
 4. the proposal branch workflow opens or updates a PR
-5. reviewers edit the proposal object when key, applications, or locale text need adjustment
-6. merge to `main` applies the final approved proposal object
+5. reviewers edit that proposal file when key, applications, or locale text need adjustment
+6. merge to `main` applies the final approved proposal file
 
 Typical examples:
 
@@ -111,6 +111,7 @@ Expected behavior:
 2. direct-update entries are split into a direct subset
 3. new-key entries are split into a proposal subset
 4. each subset is processed in the correct execution path
+5. the proposal subset still ends up in one reviewable proposal file for that subset
 
 ## Processing Stages
 

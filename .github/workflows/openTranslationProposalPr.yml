@@ -150,6 +150,7 @@ jobs:
               const summary = {
                 proposalPaths,
                 reportPaths,
+                files: [],
                 proposals: []
               };
 
@@ -161,36 +162,49 @@ jobs:
                 }
 
                 const proposalObject = JSON.parse(fs.readFileSync(absolutePath, 'utf8'));
-                const proposedEntry =
-                  proposalObject && proposalObject.proposedEntry && typeof proposalObject.proposedEntry === 'object'
-                    ? proposalObject.proposedEntry
-                    : {};
+                const sourceUploadFile =
+                  proposalObject.source && typeof proposalObject.source.uploadFile === 'string'
+                    ? proposalObject.source.uploadFile
+                    : '';
+                const proposalItems = Array.isArray(proposalObject.proposals)
+                  ? proposalObject.proposals
+                  : [proposalObject];
 
-                summary.proposals.push({
-                  proposalId:
-                    typeof proposalObject.proposalId === 'string' && proposalObject.proposalId.trim() !== ''
-                      ? proposalObject.proposalId.trim()
-                      : path.basename(proposalPath, '.json'),
+                summary.files.push({
                   proposalPath,
-                  sourceUploadFile:
-                    proposalObject.source && typeof proposalObject.source.uploadFile === 'string'
-                      ? proposalObject.source.uploadFile
-                      : '',
-                  confidence:
-                    proposalObject.review && typeof proposalObject.review.confidence === 'string'
-                      ? proposalObject.review.confidence
-                      : 'unknown',
-                  reason:
-                    proposalObject.review && typeof proposalObject.review.reason === 'string'
-                      ? proposalObject.review.reason
-                      : '',
-                  key: typeof proposedEntry.key === 'string' ? proposedEntry.key : '',
-                  applications: Array.isArray(proposedEntry.applications) ? proposedEntry.applications : [],
-                  nl: typeof proposedEntry.nl === 'string' ? proposedEntry.nl : '',
-                  fr: typeof proposedEntry.fr === 'string' ? proposedEntry.fr : '',
-                  en: typeof proposedEntry.en === 'string' ? proposedEntry.en : '',
-                  description: typeof proposedEntry.description === 'string' ? proposedEntry.description : '',
-                  notes: typeof proposedEntry.notes === 'string' ? proposedEntry.notes : ''
+                  sourceUploadFile,
+                  proposalCount: proposalItems.filter(Boolean).length
+                });
+
+                proposalItems.forEach((proposalItem, index) => {
+                  const proposedEntry =
+                    proposalItem && proposalItem.proposedEntry && typeof proposalItem.proposedEntry === 'object'
+                      ? proposalItem.proposedEntry
+                      : {};
+
+                  summary.proposals.push({
+                    proposalId:
+                      typeof proposalItem?.proposalId === 'string' && proposalItem.proposalId.trim() !== ''
+                        ? proposalItem.proposalId.trim()
+                        : `${path.basename(proposalPath, '.json')}-${index + 1}`,
+                    proposalPath,
+                    sourceUploadFile,
+                    confidence:
+                      proposalItem?.review && typeof proposalItem.review.confidence === 'string'
+                        ? proposalItem.review.confidence
+                        : 'unknown',
+                    reason:
+                      proposalItem?.review && typeof proposalItem.review.reason === 'string'
+                        ? proposalItem.review.reason
+                        : '',
+                    key: typeof proposedEntry.key === 'string' ? proposedEntry.key : '',
+                    applications: Array.isArray(proposedEntry.applications) ? proposedEntry.applications : [],
+                    nl: typeof proposedEntry.nl === 'string' ? proposedEntry.nl : '',
+                    fr: typeof proposedEntry.fr === 'string' ? proposedEntry.fr : '',
+                    en: typeof proposedEntry.en === 'string' ? proposedEntry.en : '',
+                    description: typeof proposedEntry.description === 'string' ? proposedEntry.description : '',
+                    notes: typeof proposedEntry.notes === 'string' ? proposedEntry.notes : ''
+                  });
                 });
               }
 
@@ -222,47 +236,47 @@ jobs:
             const reportPaths = getChangedProposalReports();
             const proposalSummary = loadProposalSummary(proposalPaths, reportPaths);
             const proposalPreview = proposalSummary.proposals.slice(0, 12);
-            const editableFields = [
-              'proposedEntry.key',
-              'proposedEntry.applications',
-              'proposedEntry.nl',
-              'proposedEntry.fr',
-              'proposedEntry.en',
-              'proposedEntry.description',
-              'proposedEntry.notes'
-            ];
-            const editableFieldsText = editableFields.map((field) => `\`${field}\``).join(', ');
+            const editableFieldsText =
+              'In elk `proposedEntry` blok: `key`, `applications`, `nl`, `fr`, `en`, `description`, `notes`.';
 
             function buildReviewFlowLines() {
               return [
-                '1. Open a file in `i18n/proposals/pending/`.',
-                '2. Edit only `proposedEntry` when the key, applications, or texts need adjustment.',
+                '1. Open het proposal-bestand in `i18n/proposals/pending/`.',
+                '2. Pas alleen de `proposedEntry` blokken aan waar nodig.',
                 '3. Commit the change on this proposal branch.',
                 '4. Merge after approval and green checks.'
               ];
             }
 
             function buildProposalSectionLines() {
-              if (proposalPreview.length === 0) {
+              if (proposalSummary.files.length === 0) {
                 return ['- No proposal files found in this branch.'];
               }
 
+              return proposalSummary.files.flatMap((file) => [
+                `- ${formatLink('edit', buildEditUrl(file.proposalPath))} | ${formatLink(
+                  'view',
+                  buildBlobUrl(file.proposalPath)
+                )} | \`${file.proposalPath}\``,
+                `  Contains ${file.proposalCount} text(s)`,
+                ...(file.sourceUploadFile ? [`  Upload \`${file.sourceUploadFile}\``] : [])
+              ]);
+            }
+
+            function buildTextPreviewLines() {
+              if (proposalPreview.length === 0) {
+                return ['- No text previews available.'];
+              }
+
               return proposalPreview.flatMap((proposal) => [
-                `- \`${proposal.key || proposal.proposalId}\` | ${formatLink(
-                  'edit',
-                  buildEditUrl(proposal.proposalPath)
-                )} | ${formatLink('view', buildBlobUrl(proposal.proposalPath))}`,
-                `  NL ${formatInlineCode(proposal.nl)} | FR ${formatInlineCode(proposal.fr)} | EN ${formatInlineCode(proposal.en)}`,
-                ...(proposal.applications.length > 0
-                  ? [`  Apps ${proposal.applications.map((value) => `\`${value}\``).join(', ')}`]
-                  : []),
-                ...(proposal.description ? [`  Description ${formatInlineCode(proposal.description)}`] : []),
-                ...(proposal.notes ? [`  Notes ${formatInlineCode(proposal.notes)}`] : [])
+                `- \`${proposal.key || proposal.proposalId}\``,
+                `  NL ${formatInlineCode(proposal.nl)} | FR ${formatInlineCode(proposal.fr)} | EN ${formatInlineCode(proposal.en)}`
               ]);
             }
 
             const proposalLines =
               buildProposalSectionLines();
+            const textPreviewLines = buildTextPreviewLines();
             const extraProposalCount = proposalSummary.proposals.length - proposalPreview.length;
 
             const title = branchTitle
@@ -275,7 +289,7 @@ jobs:
             function buildStatusLines() {
               const lines = [
                 `- Branch: \`${branch}\``,
-                `- Proposal files: ${proposalSummary.proposalPaths.length}`,
+                `- Proposal files: ${proposalSummary.files.length}`,
                 `- Texts to review: ${proposalSummary.proposals.length}`
               ];
 
@@ -311,7 +325,11 @@ jobs:
                 '### Proposal Files',
                 '',
                 ...proposalLines,
-                ...(extraProposalCount > 0 ? [`- plus ${extraProposalCount} additional proposal file(s)`] : []),
+                '',
+                '### Text Preview',
+                '',
+                ...textPreviewLines,
+                ...(extraProposalCount > 0 ? [`- plus ${extraProposalCount} additional text(s)`] : []),
                 '',
                 '### Merge',
                 '',
@@ -451,7 +469,11 @@ jobs:
                 '### Proposal Files',
                 '',
                 ...proposalLines,
-                ...(extraProposalCount > 0 ? [`- plus ${extraProposalCount} additional proposal file(s)`] : []),
+                '',
+                '### Text Preview',
+                '',
+                ...textPreviewLines,
+                ...(extraProposalCount > 0 ? [`- plus ${extraProposalCount} additional text(s)`] : []),
                 '',
                 '### Merge',
                 '',

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-16T09:20:23.458Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260416092009-v1e4pu.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 1,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.eng",
+      "suggestedNamespace": "common",
+      "confidence": "low",
+      "reason": "No stronger namespace signal was detected, so common was used.",
+      "submittedEntry": {
+        "nl": "NL",
+        "fr": "FR",
+        "en": "ENG"
+      },
+      "proposedEntry": {
+        "key": "common.eng",
+        "nl": "NL",
+        "fr": "FR",
+        "en": "ENG",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

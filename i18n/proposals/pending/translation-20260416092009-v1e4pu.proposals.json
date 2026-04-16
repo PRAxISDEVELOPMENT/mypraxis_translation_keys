@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "proposalBatchId": "translation-20260416092009-v1e4pu.proposals",
+  "status": "pending-review",
+  "createdAt": "2026-04-16T09:20:23.497Z",
+  "source": {
+    "uploadFile": "i18n/uploads/incoming/translation-20260416092009-v1e4pu.json",
+    "reportFile": "i18n/artifacts/reports/translation-20260416092009-v1e4pu.report.json",
+    "proposalCount": 1
+  },
+  "review": {
+    "required": true,
+    "instructions": "Edit the proposedEntry block for each proposal in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "proposals": [
+    {
+      "proposalId": "translation-20260416092009-v1e4pu.proposal-01",
+      "source": {
+        "uploadEntryIndex": 1
+      },
+      "review": {
+        "suggestedKey": "common.eng",
+        "suggestedNamespace": "common",
+        "confidence": "low",
+        "reason": "No stronger namespace signal was detected, so common was used."
+      },
+      "originalEntry": {
+        "nl": "NL",
+        "fr": "FR",
+        "en": "ENG"
+      },
+      "proposedEntry": {
+        "key": "common.eng",
+        "nl": "NL",
+        "fr": "FR",
+        "en": "ENG",
+        "applications": [
+          "mypraxis_web"
+        ]
+      }
+    }
+  ]
+}

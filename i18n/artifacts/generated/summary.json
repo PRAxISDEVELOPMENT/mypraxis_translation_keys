@@ -14,8 +14,8 @@
     "mypraxis_web"
   ],
   "totals": {
-    "sourceEntries": 4,
-    "uniqueKeys": 4,
+    "sourceEntries": 5,
+    "uniqueKeys": 5,
     "namespaces": 7,
     "warnings": 4,
     "errors": 0,
@@ -25,7 +25,7 @@
   "namespaces": {
     "applicationNames": 1,
     "authentication": 0,
-    "common": 3,
+    "common": 4,
     "error": 0,
     "info": 0,
     "metadata": 0,
@@ -35,7 +35,7 @@
     "documenten": 0,
     "mypraxis_app": 0,
     "mypraxis_data": 0,
-    "mypraxis_web": 4
+    "mypraxis_web": 5
   },
   "warningCounts": {
     "Missing locale values": 4

@@ -5,6 +5,7 @@
   "common": {
     "aanvraag1EnkelFr": "TEST EE",
     "aanvraag1Nl": "TEST NL",
-    "aanvraag3EnkelEn": "TEST FR"
+    "aanvraag3EnkelEn": "TEST FR",
+    "eng": "FR"
   }
 }

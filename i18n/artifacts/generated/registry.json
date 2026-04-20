@@ -10,7 +10,7 @@
     "namespaces": 7,
     "applications": 4,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 5
+    "keysWithMissingLocales": 6
   },
   "applications": [
     {
@@ -196,11 +196,15 @@
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
-      "missingLocales": [],
+      "missingLocales": [
+        "en",
+        "fr",
+        "nl"
+      ],
       "resolved": {
-        "nl": "test",
-        "fr": "est",
-        "en": "test"
+        "nl": "",
+        "fr": "",
+        "en": ""
       }
     }
   ],

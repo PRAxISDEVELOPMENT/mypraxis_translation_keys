@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-20T14:15:16.949Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260420141502-a4fpu8.json",
+  "summary": {
+    "totalEntries": 4,
+    "directUpdates": 4,
+    "appliedDirectUpdates": 4,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.aanvraag1Nl",
+      "namespace": "common",
+      "changes": {
+        "nl": "s",
+        "en": "s"
+      },
+      "current": {
+        "nl": "",
+        "fr": "TEST NL",
+        "en": ""
+      },
+      "next": {
+        "nl": "s",
+        "fr": "TEST NL",
+        "en": "s"
+      }
+    },
+    {
+      "type": "directUpdate",
+      "index": 2,
+      "key": "common.aanvraag3EnkelEn",
+      "namespace": "common",
+      "changes": {
+        "nl": "s",
+        "en": "s"
+      },
+      "current": {
+        "nl": "",
+        "fr": "TEST FR",
+        "en": ""
+      },
+      "next": {
+        "nl": "s",
+        "fr": "TEST FR",
+        "en": "s"
+      }
+    },
+    {
+      "type": "directUpdate",
+      "index": 3,
+      "key": "common.eng",
+      "namespace": "common",
+      "changes": {
+        "nl": "NLq",
+        "fr": "FRq"
+      },
+      "current": {
+        "nl": "NL",
+        "fr": "FR",
+        "en": "ENG"
+      },
+      "next": {
+        "nl": "NLq",
+        "fr": "FRq",
+        "en": "ENG"
+      }
+    },
+    {
+      "type": "directUpdate",
+      "index": 4,
+      "key": "applicationNames.innovaphoneCall",
+      "namespace": "applicationNames",
+      "changes": {
+        "nl": "INNOVAPHONE NLq",
+        "fr": "INNOVAPHONE FRq",
+        "en": "INNOVAPHONE ENq"
+      },
+      "current": {
+        "nl": "INNOVAPHONE NL",
+        "fr": "INNOVAPHONE FR",
+        "en": "INNOVAPHONE EN"
+      },
+      "next": {
+        "nl": "INNOVAPHONE NLq",
+        "fr": "INNOVAPHONE FRq",
+        "en": "INNOVAPHONE ENq"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

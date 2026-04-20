@@ -1,11 +1,11 @@
 {
   "applicationNames": {
-    "innovaphoneCall": "INNOVAPHONE EN"
+    "innovaphoneCall": "INNOVAPHONE ENq"
   },
   "common": {
     "aanvraag1EnkelFr": "TEST",
-    "aanvraag1Nl": "",
-    "aanvraag3EnkelEn": "",
+    "aanvraag1Nl": "s",
+    "aanvraag3EnkelEn": "s",
     "eng": "ENG"
   }
 }

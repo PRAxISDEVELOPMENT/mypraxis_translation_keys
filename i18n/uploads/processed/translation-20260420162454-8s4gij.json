@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "succ test",
+      "fr": "succ test fr",
+      "en": "succ test en",
+      "requestedNamespace": "success",
+      "notes": "DIT \n\nIS \n\nEEN TEST"
+    },
+    {
+      "nl": "dq",
+      "fr": "qsdf",
+      "en": "qdsf",
+      "requestedNamespace": "applicationNames"
+    }
+  ]
+}

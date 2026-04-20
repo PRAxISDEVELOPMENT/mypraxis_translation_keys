@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-20T14:22:15.941Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260420142153-zq0n25.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.aanvraag1Nl",
+      "namespace": "common",
+      "changes": {
+        "nl": "azer",
+        "fr": "",
+        "en": ""
+      },
+      "current": {
+        "nl": "s",
+        "fr": "TEST NL",
+        "en": "s"
+      },
+      "next": {
+        "nl": "azer",
+        "fr": "",
+        "en": ""
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

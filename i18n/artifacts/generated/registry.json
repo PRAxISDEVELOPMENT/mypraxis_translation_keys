@@ -10,7 +10,7 @@
     "namespaces": 7,
     "applications": 4,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 0
+    "keysWithMissingLocales": 1
   },
   "applications": [
     {
@@ -104,11 +104,14 @@
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
-      "missingLocales": [],
+      "missingLocales": [
+        "en",
+        "fr"
+      ],
       "resolved": {
-        "nl": "s",
-        "fr": "TEST NL",
-        "en": "s"
+        "nl": "azer",
+        "fr": "",
+        "en": ""
       }
     },
     {

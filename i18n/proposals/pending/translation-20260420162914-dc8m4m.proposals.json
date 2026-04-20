@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "proposalBatchId": "translation-20260420162914-dc8m4m.proposals",
+  "status": "pending-review",
+  "createdAt": "2026-04-20T16:29:27.416Z",
+  "source": {
+    "uploadFile": "i18n/uploads/incoming/translation-20260420162914-dc8m4m.json",
+    "reportFile": "i18n/artifacts/reports/translation-20260420162914-dc8m4m.report.json",
+    "proposalCount": 1
+  },
+  "review": {
+    "required": true,
+    "instructions": "Edit the proposedEntry block for each proposal in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "proposals": [
+    {
+      "proposalId": "translation-20260420162914-dc8m4m.proposal-01",
+      "source": {
+        "uploadEntryIndex": 1
+      },
+      "review": {
+        "requestedNamespace": "metadata",
+        "suggestedKey": "metadata.mlkqsdjf",
+        "suggestedNamespace": "metadata",
+        "confidence": "requested",
+        "reason": "Upload explicitly requested namespace \"metadata\"."
+      },
+      "originalEntry": {
+        "nl": "METDATA TESTING",
+        "fr": "MQDSF",
+        "en": "MLKQSDJF",
+        "notes": "NOTITIE GOES HERE",
+        "requestedNamespace": "metadata"
+      },
+      "proposedEntry": {
+        "key": "metadata.mlkqsdjf",
+        "nl": "METDATA TESTING",
+        "fr": "MQDSF",
+        "en": "MLKQSDJF",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "NOTITIE GOES HERE"
+      }
+    }
+  ]
+}

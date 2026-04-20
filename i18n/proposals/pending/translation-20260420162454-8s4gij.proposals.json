@@ -27,7 +27,7 @@
       },
       "originalEntry": {
         "nl": "succ test",
-        "fr": "succ test fr",
+        "fr": "succ changed fr",
         "en": "succ test en",
         "notes": "DIT \n\nIS \n\nEEN TEST",
         "requestedNamespace": "success"

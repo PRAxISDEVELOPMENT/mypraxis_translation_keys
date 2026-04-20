@@ -1,8 +1,10 @@
 [
   "applicationNames.innovaphoneCall",
+  "applicationNames.qdsf",
   "common.aanvraag1EnkelFr",
   "common.aanvraag1Nl",
   "common.aanvraag3EnkelEn",
   "common.eng",
-  "common.test"
+  "common.test",
+  "success.succTestEn"
 ]

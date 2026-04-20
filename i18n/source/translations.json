@@ -9,6 +9,15 @@
     ]
   },
   {
+    "key": "applicationNames.qdsf",
+    "applications": [
+      "mypraxis_web"
+    ],
+    "nl": "dq",
+    "fr": "qsdf",
+    "en": "qdsf"
+  },
+  {
     "key": "common.aanvraag1EnkelFr",
     "applications": [
       "mypraxis_web"
@@ -52,5 +61,15 @@
     "nl": "",
     "fr": "",
     "en": ""
+  },
+  {
+    "key": "success.succTestEn",
+    "applications": [
+      "mypraxis_web"
+    ],
+    "nl": "succ test",
+    "fr": "succ test fr",
+    "en": "succ test en",
+    "notes": "DIT \n\nIS \n\nEEN TEST"
   }
 ]

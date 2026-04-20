@@ -7,7 +7,7 @@
       "label": "Application Names",
       "description": "Product, service, or application names shown in the UI.",
       "status": "active",
-      "keyCount": 1
+      "keyCount": 2
     },
     {
       "name": "authentication",
@@ -49,7 +49,7 @@
       "label": "Success",
       "description": "Success messages, completed state feedback, and positive confirmations.",
       "status": "active",
-      "keyCount": 0
+      "keyCount": 1
     }
   ]
 }

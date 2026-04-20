@@ -1,6 +1,7 @@
 {
   "applicationNames": {
-    "innovaphoneCall": ""
+    "innovaphoneCall": "",
+    "qdsf": "dq"
   },
   "common": {
     "aanvraag1EnkelFr": "",
@@ -8,5 +9,8 @@
     "aanvraag3EnkelEn": "",
     "eng": "",
     "test": ""
+  },
+  "success": {
+    "succTestEn": "succ test"
   }
 }

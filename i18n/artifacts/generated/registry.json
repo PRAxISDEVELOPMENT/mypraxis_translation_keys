@@ -5,8 +5,8 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 8,
-    "uniqueKeys": 8,
+    "totalEntries": 9,
+    "uniqueKeys": 9,
     "namespaces": 7,
     "applications": 4,
     "duplicateKeys": 0,
@@ -232,6 +232,30 @@
       }
     },
     {
+      "key": "metadata.mlkqsdjf",
+      "namespace": "metadata",
+      "leaf": "mlkqsdjf",
+      "segments": [
+        "metadata",
+        "mlkqsdjf"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        8
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "METDATA",
+        "fr": "MQDSF",
+        "en": "MLKQSDJF"
+      }
+    },
+    {
       "key": "success.succTestEn",
       "namespace": "success",
       "leaf": "succTestEn",
@@ -244,7 +268,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        8
+        9
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -297,7 +321,7 @@
       "label": "Metadata",
       "description": "Page metadata such as titles and descriptions.",
       "status": "active",
-      "keyCount": 0
+      "keyCount": 1
     },
     {
       "name": "success",

@@ -42,7 +42,7 @@
       "label": "Metadata",
       "description": "Page metadata such as titles and descriptions.",
       "status": "active",
-      "keyCount": 0
+      "keyCount": 1
     },
     {
       "name": "success",

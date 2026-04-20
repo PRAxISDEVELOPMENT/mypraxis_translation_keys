@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "command": "apply-pending-proposals",
+  "createdAt": "2026-04-20T16:30:53.611Z",
+  "summary": {
+    "proposalFiles": 1,
+    "appliedEntries": 1
+  },
+  "applied": [
+    {
+      "proposalId": "translation-20260420162914-dc8m4m.proposal-01",
+      "proposalFile": "i18n/proposals/pending/translation-20260420162914-dc8m4m.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260420162914-dc8m4m.json",
+      "key": "metadata.mlkqsdjf",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "METDATA",
+      "fr": "MQDSF",
+      "en": "MLKQSDJF"
+    }
+  ]
+}

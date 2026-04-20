@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "METDATA TESTING",
+      "fr": "MQDSF",
+      "en": "MLKQSDJF",
+      "requestedNamespace": "metadata",
+      "notes": "NOTITIE GOES HERE"
+    }
+  ]
+}

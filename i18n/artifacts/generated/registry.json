@@ -5,8 +5,8 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 5,
-    "uniqueKeys": 5,
+    "totalEntries": 6,
+    "uniqueKeys": 6,
     "namespaces": 7,
     "applications": 4,
     "duplicateKeys": 0,
@@ -178,6 +178,30 @@
         "fr": "",
         "en": ""
       }
+    },
+    {
+      "key": "common.test",
+      "namespace": "common",
+      "leaf": "test",
+      "segments": [
+        "common",
+        "test"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        6
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "test",
+        "fr": "est",
+        "en": "test"
+      }
     }
   ],
   "namespaces": [
@@ -200,7 +224,7 @@
       "label": "Common",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 4
+      "keyCount": 5
     },
     {
       "name": "error",

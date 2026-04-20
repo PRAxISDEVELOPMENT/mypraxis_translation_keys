@@ -43,5 +43,14 @@
     "nl": "",
     "fr": "",
     "en": ""
+  },
+  {
+    "key": "common.test",
+    "applications": [
+      "mypraxis_web"
+    ],
+    "nl": "test",
+    "fr": "est",
+    "en": "test"
   }
 ]

@@ -21,7 +21,7 @@
       "label": "Common",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 4
+      "keyCount": 5
     },
     {
       "name": "error",

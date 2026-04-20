@@ -1,9 +1,9 @@
 [
   {
     "key": "applicationNames.innovaphoneCall",
-    "nl": "INNOVAPHONE NLq",
-    "fr": "INNOVAPHONE FRq",
-    "en": "INNOVAPHONE ENq",
+    "nl": "",
+    "fr": "",
+    "en": "",
     "applications": [
       "mypraxis_web"
     ]
@@ -13,9 +13,9 @@
     "applications": [
       "mypraxis_web"
     ],
-    "nl": "TES",
-    "fr": "TEST EE",
-    "en": "TEST"
+    "nl": "",
+    "fr": "",
+    "en": ""
   },
   {
     "key": "common.aanvraag1Nl",
@@ -31,17 +31,17 @@
     "applications": [
       "mypraxis_web"
     ],
-    "nl": "s",
-    "fr": "TEST FR",
-    "en": "s"
+    "nl": "",
+    "fr": "",
+    "en": ""
   },
   {
     "key": "common.eng",
     "applications": [
       "mypraxis_web"
     ],
-    "nl": "NLq",
-    "fr": "FRq",
-    "en": "ENG"
+    "nl": "",
+    "fr": "",
+    "en": ""
   }
 ]

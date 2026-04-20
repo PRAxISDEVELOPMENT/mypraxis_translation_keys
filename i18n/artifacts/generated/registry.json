@@ -10,7 +10,7 @@
     "namespaces": 7,
     "applications": 4,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 1
+    "keysWithMissingLocales": 5
   },
   "applications": [
     {
@@ -56,11 +56,15 @@
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
-      "missingLocales": [],
+      "missingLocales": [
+        "en",
+        "fr",
+        "nl"
+      ],
       "resolved": {
-        "nl": "INNOVAPHONE NLq",
-        "fr": "INNOVAPHONE FRq",
-        "en": "INNOVAPHONE ENq"
+        "nl": "",
+        "fr": "",
+        "en": ""
       }
     },
     {
@@ -80,11 +84,15 @@
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
-      "missingLocales": [],
+      "missingLocales": [
+        "en",
+        "fr",
+        "nl"
+      ],
       "resolved": {
-        "nl": "TES",
-        "fr": "TEST EE",
-        "en": "TEST"
+        "nl": "",
+        "fr": "",
+        "en": ""
       }
     },
     {
@@ -131,11 +139,15 @@
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
-      "missingLocales": [],
+      "missingLocales": [
+        "en",
+        "fr",
+        "nl"
+      ],
       "resolved": {
-        "nl": "s",
-        "fr": "TEST FR",
-        "en": "s"
+        "nl": "",
+        "fr": "",
+        "en": ""
       }
     },
     {
@@ -155,11 +167,15 @@
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
-      "missingLocales": [],
+      "missingLocales": [
+        "en",
+        "fr",
+        "nl"
+      ],
       "resolved": {
-        "nl": "NLq",
-        "fr": "FRq",
-        "en": "ENG"
+        "nl": "",
+        "fr": "",
+        "en": ""
       }
     }
   ],

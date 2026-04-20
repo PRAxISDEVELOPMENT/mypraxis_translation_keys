@@ -114,10 +114,11 @@
       "duplicateValuesDiffer": false,
       "missingLocales": [
         "en",
-        "fr"
+        "fr",
+        "nl"
       ],
       "resolved": {
-        "nl": "azerqsdf",
+        "nl": "",
         "fr": "",
         "en": ""
       }

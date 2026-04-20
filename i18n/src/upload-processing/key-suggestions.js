@@ -24,6 +24,26 @@ function hasNamespace(namespaceConfig, namespace) {
   return namespaceConfig.namespaceMap.has(namespace);
 }
 
+function getRequestedNamespace(entry, namespaceConfig) {
+  if (typeof entry?.requestedNamespace !== 'string') {
+    return '';
+  }
+
+  const normalized = entry.requestedNamespace.trim();
+
+  if (!normalized) {
+    return '';
+  }
+
+  if (!hasNamespace(namespaceConfig, normalized)) {
+    throw new Error(
+      `Unknown requested namespace "${normalized}". Use one of the namespaces defined in i18n/config/namespaces.json.`
+    );
+  }
+
+  return normalized;
+}
+
 function getDefaultProposalApplications(applicationConfig) {
   const names = applicationConfig.applications
     .filter((application) => application && typeof application === 'object')
@@ -136,7 +156,14 @@ function suggestNamespace(entry, namespaceConfig) {
 }
 
 function buildSuggestedKey(entry, usedKeys, namespaceConfig) {
-  const namespaceSuggestion = suggestNamespace(entry, namespaceConfig);
+  const requestedNamespace = getRequestedNamespace(entry, namespaceConfig);
+  const namespaceSuggestion = requestedNamespace
+    ? {
+        namespace: requestedNamespace,
+        confidence: 'requested',
+        reason: `Upload explicitly requested namespace "${requestedNamespace}".`
+      }
+    : suggestNamespace(entry, namespaceConfig);
   const baseKey = `${namespaceSuggestion.namespace}.${buildLeafKey(getUploadText(entry)) || 'newTranslation'}`;
 
   return {
@@ -149,6 +176,7 @@ module.exports = {
   buildSuggestedKey,
   ensureUniqueKey,
   getDefaultProposalApplications,
+  getRequestedNamespace,
   hasNamespace,
   suggestNamespace
 };

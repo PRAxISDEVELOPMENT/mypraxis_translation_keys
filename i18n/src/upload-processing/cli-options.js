@@ -116,7 +116,8 @@ Upload Payload Shape
       },
       {
         "en": "Temporary call list",
-        "nl": "Tijdelijke bellijst"
+        "nl": "Tijdelijke bellijst",
+        "requestedNamespace": "info"
       }
     ]
   }

@@ -47,6 +47,10 @@ function parseSimulateUploadArgs(argv) {
         result.notes = next;
         index += 1;
         break;
+      case 'requested-namespace':
+        result.requestedNamespace = next;
+        index += 1;
+        break;
       case 'source':
         result.source = next;
         index += 1;
@@ -90,6 +94,7 @@ Options
 
   --description <text>
   --notes <text>
+  --requested-namespace <name>
     Optional proposal metadata for "new".
 
   --apply
@@ -135,7 +140,7 @@ function buildSimulatedEntry(options) {
       throw new Error('The "edit" command requires --key <translation-key>.');
     }
 
-    if (options.description || options.notes) {
+    if (options.description || options.notes || options.requestedNamespace) {
       throw new Error('The "edit" command only accepts --key and locale fields.');
     }
 
@@ -162,6 +167,7 @@ function buildSimulatedEntry(options) {
 
     const description = toOptionalTrimmedString(options.description);
     const notes = toOptionalTrimmedString(options.notes);
+    const requestedNamespace = toOptionalTrimmedString(options.requestedNamespace);
 
     if (description) {
       entry.description = description;
@@ -169,6 +175,10 @@ function buildSimulatedEntry(options) {
 
     if (notes) {
       entry.notes = notes;
+    }
+
+    if (requestedNamespace) {
+      entry.requestedNamespace = requestedNamespace;
     }
 
     return entry;

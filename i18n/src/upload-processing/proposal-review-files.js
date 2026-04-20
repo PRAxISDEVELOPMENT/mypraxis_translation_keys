@@ -26,6 +26,7 @@ function normalizeSubmittedEntry(proposal) {
 
   const description = toOptionalTrimmedString(submittedEntry.description);
   const notes = toOptionalTrimmedString(submittedEntry.notes);
+  const requestedNamespace = toOptionalTrimmedString(submittedEntry.requestedNamespace);
 
   if (description) {
     normalized.description = description;
@@ -33,6 +34,10 @@ function normalizeSubmittedEntry(proposal) {
 
   if (notes) {
     normalized.notes = notes;
+  }
+
+  if (requestedNamespace) {
+    normalized.requestedNamespace = requestedNamespace;
   }
 
   return normalized;
@@ -78,6 +83,10 @@ function createProposalReviewEntry(report, proposal) {
       uploadEntryIndex: proposal.index
     },
     review: {
+      requestedNamespace:
+        proposal.submittedEntry && typeof proposal.submittedEntry.requestedNamespace === 'string'
+          ? proposal.submittedEntry.requestedNamespace
+          : '',
       suggestedKey: proposal.suggestedKey || proposal.proposedEntry.key,
       suggestedNamespace: proposal.suggestedNamespace || '',
       confidence: proposal.confidence || 'unknown',

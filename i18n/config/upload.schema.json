@@ -38,6 +38,11 @@
           },
           "notes": {
             "type": "string"
+          },
+          "requestedNamespace": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Optional namespace/category requested by the submitting client for new translation proposals."
           }
         }
       }

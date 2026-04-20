@@ -18,7 +18,7 @@ const {
 const { getUploadText } = require('./upload-text');
 
 const DIRECT_UPDATE_ALLOWED_FIELDS = new Set(['key', ...LOCALES]);
-const PROPOSAL_ALLOWED_FIELDS = new Set([...LOCALES, 'description', 'notes']);
+const PROPOSAL_ALLOWED_FIELDS = new Set([...LOCALES, 'description', 'notes', 'requestedNamespace']);
 
 function getUnexpectedFields(entry, allowedFields) {
   return Object.keys(entry).filter((field) => !allowedFields.has(field));
@@ -90,7 +90,7 @@ function buildProposal(uploadEntry, index, usedKeys, namespaceConfig, applicatio
     return {
       type: 'error',
       index,
-      reason: `Proposal entries may only contain nl, fr, en, description, and notes. Unexpected fields: ${unexpectedFields.join(', ')}.`
+      reason: `Proposal entries may only contain nl, fr, en, description, notes, and requestedNamespace. Unexpected fields: ${unexpectedFields.join(', ')}.`
     };
   }
 
@@ -102,7 +102,19 @@ function buildProposal(uploadEntry, index, usedKeys, namespaceConfig, applicatio
     };
   }
 
-  const { namespaceSuggestion, suggestedKey } = buildSuggestedKey(uploadEntry, usedKeys, namespaceConfig);
+  let namespaceSuggestion;
+  let suggestedKey;
+
+  try {
+    ({ namespaceSuggestion, suggestedKey } = buildSuggestedKey(uploadEntry, usedKeys, namespaceConfig));
+  } catch (error) {
+    return {
+      type: 'error',
+      index,
+      reason: error.message
+    };
+  }
+
   const proposedEntry = {
     key: suggestedKey,
     nl: toOptionalTrimmedString(uploadEntry.nl) ?? '',
@@ -135,6 +147,9 @@ function buildProposal(uploadEntry, index, usedKeys, namespaceConfig, applicatio
         : {}),
       ...(typeof uploadEntry.notes === 'string' && uploadEntry.notes.trim() !== ''
         ? { notes: uploadEntry.notes.trim() }
+        : {}),
+      ...(typeof uploadEntry.requestedNamespace === 'string' && uploadEntry.requestedNamespace.trim() !== ''
+        ? { requestedNamespace: uploadEntry.requestedNamespace.trim() }
         : {})
     },
     proposedEntry,

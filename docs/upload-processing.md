@@ -51,7 +51,8 @@ Example payload:
       "nl": "Nieuwe knop",
       "fr": "Nouveau bouton",
       "en": "New button",
-      "description": "New scheduling CTA"
+      "description": "New scheduling CTA",
+      "requestedNamespace": "common"
     }
   ]
 }
@@ -61,6 +62,8 @@ Interpretation:
 
 - entries with `key` target existing translations
 - entries without `key` are treated as proposals
+- proposal entries may optionally send `requestedNamespace` to choose the namespace/category explicitly
+- if `requestedNamespace` is omitted, the existing namespace suggestion logic remains the fallback
 
 ## Flow A: Direct Update
 
@@ -87,7 +90,7 @@ Use this path when the upload entry does not contain a known key.
 Expected behavior:
 
 1. the entry is recognized as a proposal
-2. namespace and key suggestions are generated
+2. the requested namespace is used when present; otherwise namespace and key suggestions are generated
 3. one reviewable proposal file is written under [../i18n/proposals/pending/](../i18n/proposals/pending/) for that upload
 4. the proposal branch workflow opens or updates a PR
 5. reviewers edit that proposal file when key, applications, or locale text need adjustment
@@ -182,6 +185,8 @@ npm run uploads:simulate -- edit --key common.save --fr "Enregistrer depuis l'ap
 
 ```bash
 npm run uploads:simulate -- new --nl "Nieuwe knop" --fr "Nouveau bouton" --en "New button"
+
+npm run uploads:simulate -- new --nl "Nieuwe knop" --requested-namespace info
 ```
 
 By default, these are dry runs.

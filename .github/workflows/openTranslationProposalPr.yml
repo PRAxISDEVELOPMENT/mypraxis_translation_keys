@@ -181,6 +181,16 @@ jobs:
                     proposalItem && proposalItem.proposedEntry && typeof proposalItem.proposedEntry === 'object'
                       ? proposalItem.proposedEntry
                       : {};
+                  const requestedNamespace =
+                    proposalItem?.review && typeof proposalItem.review.requestedNamespace === 'string'
+                      ? proposalItem.review.requestedNamespace
+                      : proposalItem?.originalEntry && typeof proposalItem.originalEntry.requestedNamespace === 'string'
+                        ? proposalItem.originalEntry.requestedNamespace
+                        : '';
+                  const suggestedNamespace =
+                    proposalItem?.review && typeof proposalItem.review.suggestedNamespace === 'string'
+                      ? proposalItem.review.suggestedNamespace
+                      : '';
 
                   summary.proposals.push({
                     proposalId:
@@ -193,6 +203,8 @@ jobs:
                       proposalItem?.review && typeof proposalItem.review.confidence === 'string'
                         ? proposalItem.review.confidence
                         : 'unknown',
+                    requestedNamespace,
+                    suggestedNamespace,
                     reason:
                       proposalItem?.review && typeof proposalItem.review.reason === 'string'
                         ? proposalItem.review.reason
@@ -270,7 +282,14 @@ jobs:
 
               return proposalPreview.flatMap((proposal) => [
                 `- \`${proposal.key || proposal.proposalId}\``,
-                `  NL ${formatInlineCode(proposal.nl)} | FR ${formatInlineCode(proposal.fr)} | EN ${formatInlineCode(proposal.en)}`
+                `  NL ${formatInlineCode(proposal.nl)} | FR ${formatInlineCode(proposal.fr)} | EN ${formatInlineCode(proposal.en)}`,
+                ...(proposal.requestedNamespace || proposal.suggestedNamespace
+                  ? [
+                      `  Namespace requested ${formatInlineCode(proposal.requestedNamespace)} | suggested ${formatInlineCode(
+                        proposal.suggestedNamespace
+                      )}`
+                    ]
+                  : [])
               ]);
             }
 
@@ -285,6 +304,40 @@ jobs:
             const hasConfiguredReviewRouting = reviewers.length > 0 || teamReviewers.length > 0;
             const hasConfiguredAssignees = assignees.length > 0;
             let reviewRoutingError = '';
+
+            async function requestReviewersIndividually(kind, values) {
+              const failures = [];
+
+              for (const value of values) {
+                try {
+                  await github.rest.pulls.requestReviewers({
+                    owner,
+                    repo,
+                    pull_number: pullNumber,
+                    reviewers: kind === 'user' ? [value] : [],
+                    team_reviewers: kind === 'team' ? [value] : []
+                  });
+                } catch (error) {
+                  failures.push({
+                    kind,
+                    value,
+                    message: error.message
+                  });
+                  core.warning(`Failed to request ${kind} reviewer "${value}": ${error.message}`);
+                }
+              }
+
+              return failures;
+            }
+
+            function buildReviewRoutingWarning(failures) {
+              if (failures.length === 0) {
+                return '';
+              }
+
+              const labels = failures.map((failure) => `${failure.kind} "${failure.value}"`);
+              return `Automatic reviewer request failed for ${labels.join(', ')}. Update the configured reviewer/team slug or grant that reviewer access to this repository.`;
+            }
 
             function buildStatusLines() {
               const lines = [
@@ -422,19 +475,15 @@ jobs:
             }
 
             if (reviewers.length > 0 || teamReviewers.length > 0) {
-              try {
-                await github.rest.pulls.requestReviewers({
-                  owner,
-                  repo,
-                  pull_number: pullNumber,
-                  reviewers,
-                  team_reviewers: teamReviewers
-                });
-              } catch (error) {
-                reviewRoutingError =
-                  'Automatic reviewer request failed. Check that the configured user or team is a collaborator on this repository and is allowed to review pull requests.';
+              const routingFailures = [];
+
+              routingFailures.push(...(await requestReviewersIndividually('user', reviewers)));
+              routingFailures.push(...(await requestReviewersIndividually('team', teamReviewers)));
+
+              reviewRoutingError = buildReviewRoutingWarning(routingFailures);
+
+              if (reviewRoutingError) {
                 core.warning(reviewRoutingError);
-                core.warning(error.message);
               }
             }
 

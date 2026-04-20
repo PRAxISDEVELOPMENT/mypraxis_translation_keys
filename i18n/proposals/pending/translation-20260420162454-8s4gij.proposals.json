@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "proposalBatchId": "translation-20260420162454-8s4gij.proposals",
+  "status": "pending-review",
+  "createdAt": "2026-04-20T16:25:09.943Z",
+  "source": {
+    "uploadFile": "i18n/uploads/incoming/translation-20260420162454-8s4gij.json",
+    "reportFile": "i18n/artifacts/reports/translation-20260420162454-8s4gij.report.json",
+    "proposalCount": 2
+  },
+  "review": {
+    "required": true,
+    "instructions": "Edit the proposedEntry block for each proposal in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "proposals": [
+    {
+      "proposalId": "translation-20260420162454-8s4gij.proposal-01",
+      "source": {
+        "uploadEntryIndex": 1
+      },
+      "review": {
+        "requestedNamespace": "success",
+        "suggestedKey": "success.succTestEn",
+        "suggestedNamespace": "success",
+        "confidence": "requested",
+        "reason": "Upload explicitly requested namespace \"success\"."
+      },
+      "originalEntry": {
+        "nl": "succ test",
+        "fr": "succ test fr",
+        "en": "succ test en",
+        "notes": "DIT \n\nIS \n\nEEN TEST",
+        "requestedNamespace": "success"
+      },
+      "proposedEntry": {
+        "key": "success.succTestEn",
+        "nl": "succ test",
+        "fr": "succ test fr",
+        "en": "succ test en",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "DIT \n\nIS \n\nEEN TEST"
+      }
+    },
+    {
+      "proposalId": "translation-20260420162454-8s4gij.proposal-02",
+      "source": {
+        "uploadEntryIndex": 2
+      },
+      "review": {
+        "requestedNamespace": "applicationNames",
+        "suggestedKey": "applicationNames.qdsf",
+        "suggestedNamespace": "applicationNames",
+        "confidence": "requested",
+        "reason": "Upload explicitly requested namespace \"applicationNames\"."
+      },
+      "originalEntry": {
+        "nl": "dq",
+        "fr": "qsdf",
+        "en": "qdsf",
+        "requestedNamespace": "applicationNames"
+      },
+      "proposedEntry": {
+        "key": "applicationNames.qdsf",
+        "nl": "dq",
+        "fr": "qsdf",
+        "en": "qdsf",
+        "applications": [
+          "mypraxis_web"
+        ]
+      }
+    }
+  ]
+}

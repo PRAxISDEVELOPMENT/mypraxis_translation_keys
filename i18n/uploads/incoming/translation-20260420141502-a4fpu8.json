@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.aanvraag1Nl",
+      "nl": "s",
+      "en": "s"
+    },
+    {
+      "key": "common.aanvraag3EnkelEn",
+      "nl": "s",
+      "en": "s"
+    },
+    {
+      "key": "common.eng",
+      "nl": "NLq",
+      "fr": "FRq"
+    },
+    {
+      "key": "applicationNames.innovaphoneCall",
+      "nl": "INNOVAPHONE NLq",
+      "fr": "INNOVAPHONE FRq",
+      "en": "INNOVAPHONE ENq"
+    }
+  ]
+}

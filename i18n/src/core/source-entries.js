@@ -11,6 +11,20 @@ function readSourceEntries() {
   return parsed;
 }
 
+function sanitizeSourceEntry(entry) {
+  return {
+    key: entry.key,
+    nl: typeof entry.nl === 'string' ? entry.nl : '',
+    fr: typeof entry.fr === 'string' ? entry.fr : '',
+    en: typeof entry.en === 'string' ? entry.en : '',
+    applications: Array.isArray(entry.applications) ? entry.applications : []
+  };
+}
+
+function sanitizeSourceEntries(entries) {
+  return entries.map((entry) => sanitizeSourceEntry(entry));
+}
+
 function sortEntries(entries) {
   entries.sort((left, right) => {
     const keyCompare = String(left.key).localeCompare(String(right.key));
@@ -38,6 +52,7 @@ function hasOwn(entry, field) {
 module.exports = {
   hasOwn,
   readSourceEntries,
+  sanitizeSourceEntries,
   sortEntries,
   toOptionalTrimmedString
 };

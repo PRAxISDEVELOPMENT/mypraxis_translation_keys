@@ -34,18 +34,6 @@
           "type": "string",
           "enum": ["mypraxis_app", "mypraxis_web", "documenten", "mypraxis_data"]
         }
-      },
-      "description": {
-        "type": "string",
-        "description": "Optional internal note describing where or how the translation is used."
-      },
-      "notes": {
-        "type": "string",
-        "description": "Optional translator note or implementation note."
-      },
-      "deprecated": {
-        "type": "boolean",
-        "description": "Optional marker indicating that the key is deprecated."
       }
     }
   }

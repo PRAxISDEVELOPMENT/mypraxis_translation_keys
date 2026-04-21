@@ -73,7 +73,7 @@ Quick Rules
   - Keep keys unique.
   - Prefer common.* for shared UI labels.
   - Keep applications accurate per key.
-  - Add description or notes when a translation is ambiguous.
+  - Keep i18n/source/translations.json limited to key, locales, and applications.
 `);
 }
 

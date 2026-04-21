@@ -10,76 +10,74 @@
   },
   {
     "key": "applicationNames.qdsf",
-    "applications": [
-      "mypraxis_web"
-    ],
     "nl": "dq",
     "fr": "qsdf",
-    "en": "qdsf"
+    "en": "qdsf",
+    "applications": [
+      "mypraxis_web"
+    ]
   },
   {
     "key": "common.aanvraag1EnkelFr",
-    "applications": [
-      "mypraxis_web"
-    ],
     "nl": "",
     "fr": "",
-    "en": ""
+    "en": "",
+    "applications": [
+      "mypraxis_web"
+    ]
   },
   {
     "key": "common.aanvraag1Nl",
-    "applications": [
-      "mypraxis_web"
-    ],
     "nl": "",
     "fr": "",
-    "en": ""
+    "en": "",
+    "applications": [
+      "mypraxis_web"
+    ]
   },
   {
     "key": "common.aanvraag3EnkelEn",
-    "applications": [
-      "mypraxis_web"
-    ],
     "nl": "",
     "fr": "",
-    "en": ""
+    "en": "",
+    "applications": [
+      "mypraxis_web"
+    ]
   },
   {
     "key": "common.eng",
-    "applications": [
-      "mypraxis_web"
-    ],
     "nl": "",
     "fr": "",
-    "en": ""
+    "en": "",
+    "applications": [
+      "mypraxis_web"
+    ]
   },
   {
     "key": "common.test",
-    "applications": [
-      "mypraxis_web"
-    ],
     "nl": "",
     "fr": "",
-    "en": ""
+    "en": "",
+    "applications": [
+      "mypraxis_web"
+    ]
   },
   {
     "key": "metadata.mlkqsdjf",
-    "applications": [
-      "mypraxis_web"
-    ],
     "nl": "METDATA",
     "fr": "MQDSF",
     "en": "MLKQSDJF",
-    "notes": "NOTITIE GOES HERE"
+    "applications": [
+      "mypraxis_web"
+    ]
   },
   {
     "key": "success.succTestEn",
-    "applications": [
-      "mypraxis_web"
-    ],
     "nl": "succ test",
     "fr": "succ test fr",
     "en": "succ test en",
-    "notes": "DIT \n\nIS \n\nEEN TEST"
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

@@ -10,7 +10,12 @@ const {
   SOURCE_PATH
 } = require('../core/path-config');
 const { runBuild } = require('../core/script-runner');
-const { readSourceEntries, sortEntries, toOptionalTrimmedString } = require('../core/source-entries');
+const {
+  readSourceEntries,
+  sanitizeSourceEntries,
+  sortEntries,
+  toOptionalTrimmedString
+} = require('../core/source-entries');
 const { archiveFileWithUniqueName, listJsonFiles } = require('../core/upload-files');
 
 function normalizeSubmittedEntry(proposal) {
@@ -390,7 +395,7 @@ function applyPendingProposalFiles(options = {}) {
   }
 
   sortEntries(entries);
-  writeJsonFile(SOURCE_PATH, entries);
+  writeJsonFile(SOURCE_PATH, sanitizeSourceEntries(entries));
 
   ensureDirectory(processedDir);
   ensureDirectory(reportsDir);

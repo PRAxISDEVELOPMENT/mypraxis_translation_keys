@@ -1,7 +1,13 @@
 const path = require('path');
 const { LOCALES } = require('../core/constants');
 const { readApplicationConfig, readNamespaceConfig } = require('../core/config-loader');
-const { hasOwn, readSourceEntries, sortEntries, toOptionalTrimmedString } = require('../core/source-entries');
+const {
+  hasOwn,
+  readSourceEntries,
+  sanitizeSourceEntries,
+  sortEntries,
+  toOptionalTrimmedString
+} = require('../core/source-entries');
 const { readJsonFile, writeJsonFile } = require('../core/json-files');
 const { ROOT_DIR, SOURCE_PATH } = require('../core/path-config');
 const { runBuild } = require('../core/script-runner');
@@ -264,7 +270,7 @@ function prepareUpload(options) {
   if (options.applyDirect && directUpdates.length > 0) {
     applyDirectUpdates(entries, directUpdates);
     sortEntries(entries);
-    writeJsonFile(SOURCE_PATH, entries);
+    writeJsonFile(SOURCE_PATH, sanitizeSourceEntries(entries));
 
     if (options.build) {
       runBuild();
@@ -323,9 +329,11 @@ function applyProposals(options) {
   const acceptedEntries = [];
 
   for (const proposal of report.proposals) {
-    const proposedEntry = {
-      ...proposal.proposedEntry
-    };
+    const proposedEntry = sanitizeSourceEntries([
+      {
+        ...proposal.proposedEntry
+      }
+    ])[0];
 
     if (usedKeys.has(proposedEntry.key)) {
       proposedEntry.key = ensureUniqueKey(proposedEntry.key, usedKeys);
@@ -338,7 +346,7 @@ function applyProposals(options) {
   }
 
   sortEntries(entries);
-  writeJsonFile(SOURCE_PATH, entries);
+  writeJsonFile(SOURCE_PATH, sanitizeSourceEntries(entries));
 
   if (options.build) {
     runBuild();

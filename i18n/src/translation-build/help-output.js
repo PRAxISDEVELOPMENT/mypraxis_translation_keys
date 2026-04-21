@@ -2,6 +2,13 @@ function printHelp(namespaceConfig, applicationConfig) {
   const activeNamespaces = namespaceConfig.namespaces
     .filter((namespaceDefinition) => namespaceDefinition.status === 'active')
     .map((namespaceDefinition) => namespaceDefinition.name);
+  const namespaceChoices = namespaceConfig.namespaces
+    .filter((namespaceDefinition) => namespaceDefinition.status === 'active')
+    .map(
+      (namespaceDefinition) =>
+        `  ${namespaceDefinition.name}\n    ${namespaceDefinition.description || 'No description provided.'}`
+    )
+    .join('\n\n');
 
   const restrictedNamespaces = namespaceConfig.namespaces
     .filter((namespaceDefinition) => namespaceDefinition.status !== 'active')
@@ -54,26 +61,7 @@ Namespace Guide
     ${restrictedNamespaces.length > 0 ? restrictedNamespaces.join(', ') : 'none'}
 
 Choosing The Right Namespace
-  common
-    Reusable labels, buttons, field names, generic UI text.
-
-  info
-    Helper copy, instructions, onboarding, descriptions.
-
-  error
-    Error labels, failure messages, error detail headings.
-
-  success
-    Success messages and completed-state confirmations.
-
-  authentication
-    Login, auth metadata, identity-related labels.
-
-  applicationNames
-    Product names or application names.
-
-  metadata
-    Page titles and meta descriptions.
+${namespaceChoices}
 
 Applications
   Allowed values:

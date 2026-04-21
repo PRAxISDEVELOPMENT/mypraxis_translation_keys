@@ -96,7 +96,7 @@ function suggestNamespace(entry, namespaceConfig) {
       'metadata',
       'high',
       'Detected page metadata wording.',
-      /(page title|meta description|browser title|seo title|seo description|\bmetadata\b)/
+      /(page title|meta description|browser title|seo title|seo description|\bmetadata\b|titel van de pagina|meta beschrijving)/
     ],
     [
       'applicationNames',
@@ -108,25 +108,49 @@ function suggestNamespace(entry, namespaceConfig) {
       'authentication',
       'high',
       'Detected authentication terminology.',
-      /(auth|password|login|logout|sign in|sign out|verify|verification|firebase|token|credential|multifactor|two factor|captcha|bearer|authenticator|email verification|authorization)/
+      /(auth|password|login|logout|sign in|sign out|verify|verification|firebase|token|credential|multifactor|two factor|captcha|bearer|authenticator|email verification|authorization|wachtwoord|inloggen|uitloggen|verificatie|aanmelden|afmelden|mot de passe|connexion|deconnexion)/
+    ],
+    [
+      'warning',
+      'high',
+      'Detected caution or risky-action wording.',
+      /(\bwarning\b|\bwaarschuwing\b|\battention\b|you are about to|let op|caution|careful|risk|risico|gevaar|attention vous etes sur le point)/
     ],
     [
       'error',
       'high',
       'Detected failure or validation language.',
-      /(\berror\b|cannot|invalid|failed|failure|missing|required|not found|expired|restricted|unable|forbidden|not authorized|must be|already exists)/
+      /(\berror\b|cannot|invalid|failed|failure|missing|required|not found|expired|restricted|unable|forbidden|not authorized|must be|already exists|fout|ongeldig|mislukt|verlopen|verboden|manquant|invalide|echec)/
     ],
     [
       'success',
       'high',
       'Detected completed-state language.',
-      /(\bsuccess\b|successfully|\badded\b|\bdeleted\b|\bchanged\b|\bupdated\b|\bsaved\b|\bimported\b|\bregistered\b|\bcompleted\b|\brefreshed\b|\bcreated\b|\bcopied\b|\bsent\b)/
+      /(\bsuccess\b|successfully|\badded\b|\bdeleted\b|\bchanged\b|\bupdated\b|\bsaved\b|\bimported\b|\bregistered\b|\bcompleted\b|\brefreshed\b|\bcreated\b|\bcopied\b|\bsent\b|succes|succesvol|opgeslagen|bijgewerkt|verzonden|supprime|enregistre|termine)/
+    ],
+    [
+      'confirmation',
+      'high',
+      'Detected confirmation or consent wording.',
+      /(\bconfirm\b|confirmation|are you sure|please confirm|sure you want to proceed|i hereby confirm|bevestig|bevestigen|bevestiging|confirmer|confirmez)/
+    ],
+    [
+      'notification',
+      'high',
+      'Detected notification or alert wording.',
+      /(\bnotification\b|\bnotifications\b|notify|notified|push notification|browser notification|melding|meldingen|notificatie|notificaties)/
+    ],
+    [
+      'status',
+      'medium',
+      'Detected status or state wording.',
+      /(\bstatus\b|verification status|state|active inactive|actief inactief|statut|toestand)/
     ],
     [
       'info',
       'medium',
       'Detected explanatory or helper copy.',
-      /(^please |^to disable |^to enable |^as soon as |^you are about to |check the box|this means|you can|used to|intended for|before continuing|after successful|by pressing this button)/
+      /(^please |^to disable |^to enable |^as soon as |check the box|this means|you can|used to|intended for|before continuing|after successful|by pressing this button|raadpleeg|u kunt|dit betekent|avant de continuer)/
     ]
   ];
 

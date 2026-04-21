@@ -4,31 +4,37 @@
   "namespaces": [
     {
       "name": "applicationNames",
-      "label": "Application Names",
+      "label": "Applicaties",
       "description": "Product, service, or application names shown in the UI.",
       "status": "active"
     },
     {
       "name": "authentication",
-      "label": "Authentication",
+      "label": "Authenticatie",
       "description": "Labels and messages related to login, identity, and auth metadata.",
       "status": "active"
     },
     {
       "name": "common",
-      "label": "Common",
+      "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active"
     },
     {
+      "name": "confirmation",
+      "label": "Bevestiging",
+      "description": "Confirmation prompts, consent text, and double-check messages before continuing.",
+      "status": "active"
+    },
+    {
       "name": "error",
-      "label": "Error",
+      "label": "Fouten",
       "description": "Error labels, error detail fields, and failure-state messages.",
       "status": "active"
     },
     {
       "name": "info",
-      "label": "Info",
+      "label": "Informatie",
       "description": "Informational helper text, onboarding copy, and contextual guidance.",
       "status": "active"
     },
@@ -39,9 +45,27 @@
       "status": "active"
     },
     {
+      "name": "notification",
+      "label": "Meldingen",
+      "description": "Notification labels, alert delivery text, and browser or push messaging.",
+      "status": "active"
+    },
+    {
+      "name": "status",
+      "label": "Status",
+      "description": "Status labels, state filters, and active or inactive state wording.",
+      "status": "active"
+    },
+    {
       "name": "success",
-      "label": "Success",
+      "label": "Succes",
       "description": "Success messages, completed state feedback, and positive confirmations.",
+      "status": "active"
+    },
+    {
+      "name": "warning",
+      "label": "Waarschuwingen",
+      "description": "Caution text, risky-action notices, and non-fatal warnings that need attention.",
       "status": "active"
     }
   ]

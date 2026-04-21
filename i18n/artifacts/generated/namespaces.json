@@ -7,7 +7,7 @@
       "label": "Applicaties",
       "description": "Product, service, or application names shown in the UI.",
       "status": "active",
-      "keyCount": 2
+      "keyCount": 0
     },
     {
       "name": "authentication",
@@ -21,7 +21,7 @@
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 5
+      "keyCount": 0
     },
     {
       "name": "confirmation",
@@ -49,7 +49,7 @@
       "label": "Metadata",
       "description": "Page metadata such as titles and descriptions.",
       "status": "active",
-      "keyCount": 1
+      "keyCount": 0
     },
     {
       "name": "notification",
@@ -70,7 +70,7 @@
       "label": "Succes",
       "description": "Success messages, completed state feedback, and positive confirmations.",
       "status": "active",
-      "keyCount": 1
+      "keyCount": 0
     },
     {
       "name": "warning",

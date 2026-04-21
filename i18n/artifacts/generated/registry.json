@@ -5,12 +5,12 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 9,
-    "uniqueKeys": 9,
+    "totalEntries": 0,
+    "uniqueKeys": 0,
     "namespaces": 11,
     "applications": 4,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 6
+    "keysWithMissingLocales": 0
   },
   "applications": [
     {
@@ -38,255 +38,14 @@
       "status": "active"
     }
   ],
-  "keys": [
-    {
-      "key": "applicationNames.innovaphoneCall",
-      "namespace": "applicationNames",
-      "leaf": "innovaphoneCall",
-      "segments": [
-        "applicationNames",
-        "innovaphoneCall"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        1
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [
-        "en",
-        "fr",
-        "nl"
-      ],
-      "resolved": {
-        "nl": "",
-        "fr": "",
-        "en": ""
-      }
-    },
-    {
-      "key": "applicationNames.qdsf",
-      "namespace": "applicationNames",
-      "leaf": "qdsf",
-      "segments": [
-        "applicationNames",
-        "qdsf"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        2
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "dq",
-        "fr": "qsdf",
-        "en": "qdsf"
-      }
-    },
-    {
-      "key": "common.aanvraag1EnkelFr",
-      "namespace": "common",
-      "leaf": "aanvraag1EnkelFr",
-      "segments": [
-        "common",
-        "aanvraag1EnkelFr"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        3
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [
-        "en",
-        "fr",
-        "nl"
-      ],
-      "resolved": {
-        "nl": "",
-        "fr": "",
-        "en": ""
-      }
-    },
-    {
-      "key": "common.aanvraag1Nl",
-      "namespace": "common",
-      "leaf": "aanvraag1Nl",
-      "segments": [
-        "common",
-        "aanvraag1Nl"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        4
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [
-        "en",
-        "fr",
-        "nl"
-      ],
-      "resolved": {
-        "nl": "",
-        "fr": "",
-        "en": ""
-      }
-    },
-    {
-      "key": "common.aanvraag3EnkelEn",
-      "namespace": "common",
-      "leaf": "aanvraag3EnkelEn",
-      "segments": [
-        "common",
-        "aanvraag3EnkelEn"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        5
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [
-        "en",
-        "fr",
-        "nl"
-      ],
-      "resolved": {
-        "nl": "",
-        "fr": "",
-        "en": ""
-      }
-    },
-    {
-      "key": "common.eng",
-      "namespace": "common",
-      "leaf": "eng",
-      "segments": [
-        "common",
-        "eng"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        6
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [
-        "en",
-        "fr",
-        "nl"
-      ],
-      "resolved": {
-        "nl": "",
-        "fr": "",
-        "en": ""
-      }
-    },
-    {
-      "key": "common.test",
-      "namespace": "common",
-      "leaf": "test",
-      "segments": [
-        "common",
-        "test"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        7
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [
-        "en",
-        "fr",
-        "nl"
-      ],
-      "resolved": {
-        "nl": "",
-        "fr": "",
-        "en": ""
-      }
-    },
-    {
-      "key": "metadata.mlkqsdjf",
-      "namespace": "metadata",
-      "leaf": "mlkqsdjf",
-      "segments": [
-        "metadata",
-        "mlkqsdjf"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        8
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "METDATA",
-        "fr": "MQDSF",
-        "en": "MLKQSDJF"
-      }
-    },
-    {
-      "key": "success.succTestEn",
-      "namespace": "success",
-      "leaf": "succTestEn",
-      "segments": [
-        "success",
-        "succTestEn"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        9
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "succ test",
-        "fr": "succ test fr",
-        "en": "succ test en"
-      }
-    }
-  ],
+  "keys": [],
   "namespaces": [
     {
       "name": "applicationNames",
       "label": "Applicaties",
       "description": "Product, service, or application names shown in the UI.",
       "status": "active",
-      "keyCount": 2
+      "keyCount": 0
     },
     {
       "name": "authentication",
@@ -300,7 +59,7 @@
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 5
+      "keyCount": 0
     },
     {
       "name": "confirmation",
@@ -328,7 +87,7 @@
       "label": "Metadata",
       "description": "Page metadata such as titles and descriptions.",
       "status": "active",
-      "keyCount": 1
+      "keyCount": 0
     },
     {
       "name": "notification",
@@ -349,7 +108,7 @@
       "label": "Succes",
       "description": "Success messages, completed state feedback, and positive confirmations.",
       "status": "active",
-      "keyCount": 1
+      "keyCount": 0
     },
     {
       "name": "warning",

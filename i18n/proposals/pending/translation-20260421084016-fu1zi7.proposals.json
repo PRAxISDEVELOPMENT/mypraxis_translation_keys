@@ -34,7 +34,7 @@
       },
       "proposedEntry": {
         "key": "applicationNames.testingEn",
-        "nl": "testing NL",
+        "nl": "testing CHANGED NL",
         "fr": "testing FR",
         "en": "testing EN",
         "applications": [

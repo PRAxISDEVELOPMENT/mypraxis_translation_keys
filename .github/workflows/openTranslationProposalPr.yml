@@ -227,6 +227,56 @@ jobs:
               return typeof value === 'string' && value.trim() !== '' ? '`' + value + '`' : '_empty_';
             }
 
+            function decodeHtmlEntities(value) {
+              const entities = {
+                '&nbsp;': ' ',
+                '&amp;': '&',
+                '&lt;': '<',
+                '&gt;': '>',
+                '&quot;': '"',
+                '&#39;': "'"
+              };
+
+              return value.replace(/&(nbsp|amp|lt|gt|quot|#39);/g, (match) => entities[match] || match);
+            }
+
+            function htmlToPreviewText(value) {
+              if (typeof value !== 'string' || value.trim() === '') {
+                return '';
+              }
+
+              const readable = decodeHtmlEntities(
+                value
+                  .replace(/\r\n/g, '\n')
+                  .replace(/<\s*br\s*\/?>/gi, '\n')
+                  .replace(/<\s*\/p\s*>/gi, '\n\n')
+                  .replace(/<\s*p[^>]*>/gi, '')
+                  .replace(/<\s*li[^>]*>/gi, '- ')
+                  .replace(/<\s*\/li\s*>/gi, '\n')
+                  .replace(/<\s*\/?(ul|ol)[^>]*>/gi, '\n')
+                  .replace(/<\s*\/?(strong|b)[^>]*>/gi, '')
+                  .replace(/<\s*\/?(em|i)[^>]*>/gi, '')
+                  .replace(/<[^>]+>/g, '')
+              )
+                .split('\n')
+                .map((line) => line.trim())
+                .filter(Boolean)
+                .join(' / ')
+                .replace(/\s+/g, ' ')
+                .trim();
+
+              if (readable.length <= 180) {
+                return readable;
+              }
+
+              return `${readable.slice(0, 177)}...`;
+            }
+
+            function formatPreviewTextLine(label, value) {
+              const preview = htmlToPreviewText(value);
+              return preview ? `  ${label}: ${preview}` : '';
+            }
+
             function buildBlobUrl(filePath) {
               return `https://github.com/${owner}/${repo}/blob/${branch}/${filePath}`;
             }
@@ -283,6 +333,8 @@ jobs:
               return proposalPreview.flatMap((proposal) => [
                 `- \`${proposal.key || proposal.proposalId}\``,
                 `  NL ${formatInlineCode(proposal.nl)} | FR ${formatInlineCode(proposal.fr)} | EN ${formatInlineCode(proposal.en)}`,
+                ...[formatPreviewTextLine('Description', proposal.description)].filter(Boolean),
+                ...[formatPreviewTextLine('Notes', proposal.notes)].filter(Boolean),
                 ...(proposal.requestedNamespace || proposal.suggestedNamespace
                   ? [
                       `  Namespace requested ${formatInlineCode(proposal.requestedNamespace)} | suggested ${formatInlineCode(

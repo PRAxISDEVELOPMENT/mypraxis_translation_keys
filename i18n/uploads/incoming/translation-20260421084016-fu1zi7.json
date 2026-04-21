@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "testing NL",
+      "fr": "testing FR",
+      "en": "testing EN",
+      "requestedNamespace": "applicationNames",
+      "notes": "Notities \n\nworden\n\nhier\n\ngeschreven"
+    },
+    {
+      "nl": "warning nl",
+      "fr": "",
+      "en": "warning fr",
+      "requestedNamespace": "warning"
+    }
+  ]
+}

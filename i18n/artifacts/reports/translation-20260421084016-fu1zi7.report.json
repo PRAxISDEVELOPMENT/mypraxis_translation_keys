@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-21T08:40:31.906Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260421084016-fu1zi7.json",
+  "summary": {
+    "totalEntries": 2,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 2,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "applicationNames.testingEn",
+      "suggestedNamespace": "applicationNames",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"applicationNames\".",
+      "submittedEntry": {
+        "nl": "testing NL",
+        "fr": "testing FR",
+        "en": "testing EN",
+        "notes": "Notities \n\nworden\n\nhier\n\ngeschreven",
+        "requestedNamespace": "applicationNames"
+      },
+      "proposedEntry": {
+        "key": "applicationNames.testingEn",
+        "nl": "testing NL",
+        "fr": "testing FR",
+        "en": "testing EN",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Notities \n\nworden\n\nhier\n\ngeschreven"
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 2,
+      "suggestedKey": "warning.warningFr",
+      "suggestedNamespace": "warning",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"warning\".",
+      "submittedEntry": {
+        "nl": "warning nl",
+        "fr": "",
+        "en": "warning fr",
+        "requestedNamespace": "warning"
+      },
+      "proposedEntry": {
+        "key": "warning.warningFr",
+        "nl": "warning nl",
+        "fr": "",
+        "en": "warning fr",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

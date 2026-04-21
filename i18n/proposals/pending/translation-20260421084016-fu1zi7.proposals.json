@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "proposalBatchId": "translation-20260421084016-fu1zi7.proposals",
+  "status": "pending-review",
+  "createdAt": "2026-04-21T08:40:31.938Z",
+  "source": {
+    "uploadFile": "i18n/uploads/incoming/translation-20260421084016-fu1zi7.json",
+    "reportFile": "i18n/artifacts/reports/translation-20260421084016-fu1zi7.report.json",
+    "proposalCount": 2
+  },
+  "review": {
+    "required": true,
+    "instructions": "Edit the proposedEntry block for each proposal in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "proposals": [
+    {
+      "proposalId": "translation-20260421084016-fu1zi7.proposal-01",
+      "source": {
+        "uploadEntryIndex": 1
+      },
+      "review": {
+        "requestedNamespace": "applicationNames",
+        "suggestedKey": "applicationNames.testingEn",
+        "suggestedNamespace": "applicationNames",
+        "confidence": "requested",
+        "reason": "Upload explicitly requested namespace \"applicationNames\"."
+      },
+      "originalEntry": {
+        "nl": "testing NL",
+        "fr": "testing FR",
+        "en": "testing EN",
+        "notes": "Notities \n\nworden\n\nhier\n\ngeschreven",
+        "requestedNamespace": "applicationNames"
+      },
+      "proposedEntry": {
+        "key": "applicationNames.testingEn",
+        "nl": "testing NL",
+        "fr": "testing FR",
+        "en": "testing EN",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Notities \n\nworden\n\nhier\n\ngeschreven"
+      }
+    },
+    {
+      "proposalId": "translation-20260421084016-fu1zi7.proposal-02",
+      "source": {
+        "uploadEntryIndex": 2
+      },
+      "review": {
+        "requestedNamespace": "warning",
+        "suggestedKey": "warning.warningFr",
+        "suggestedNamespace": "warning",
+        "confidence": "requested",
+        "reason": "Upload explicitly requested namespace \"warning\"."
+      },
+      "originalEntry": {
+        "nl": "warning nl",
+        "fr": "",
+        "en": "warning fr",
+        "requestedNamespace": "warning"
+      },
+      "proposedEntry": {
+        "key": "warning.warningFr",
+        "nl": "warning nl",
+        "fr": "",
+        "en": "warning fr",
+        "applications": [
+          "mypraxis_web"
+        ]
+      }
+    }
+  ]
+}

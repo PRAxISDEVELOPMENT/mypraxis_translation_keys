@@ -16857,7 +16857,7 @@
         ]
     },
     {
-        "key": "info.restoreUser",
+        "key": "common.restoreUser",
         "nl": "Herstel gebruiker",
         "fr": "Restaurer l'utilisateur",
         "en": "Restore user",

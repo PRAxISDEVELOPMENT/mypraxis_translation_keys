@@ -44992,6 +44992,30 @@
       }
     },
     {
+      "key": "common.restoreUser",
+      "namespace": "common",
+      "leaf": "restoreUser",
+      "segments": [
+        "common",
+        "restoreUser"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        1874
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Herstel gebruiker",
+        "fr": "Restaurer l'utilisateur",
+        "en": "Restore user"
+      }
+    },
+    {
       "key": "common.restoreZone",
       "namespace": "common",
       "leaf": "restoreZone",
@@ -67672,30 +67696,6 @@
       }
     },
     {
-      "key": "info.restoreUser",
-      "namespace": "info",
-      "leaf": "restoreUser",
-      "segments": [
-        "info",
-        "restoreUser"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        1874
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Herstel gebruiker",
-        "fr": "Restaurer l'utilisateur",
-        "en": "Restore user"
-      }
-    },
-    {
       "key": "info.safePlace",
       "namespace": "info",
       "leaf": "safePlace",
@@ -81180,7 +81180,7 @@
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2254
+      "keyCount": 2255
     },
     {
       "name": "confirmation",
@@ -81201,7 +81201,7 @@
       "label": "Informatie",
       "description": "Informational helper text, onboarding copy, and contextual guidance.",
       "status": "active",
-      "keyCount": 267
+      "keyCount": 266
     },
     {
       "name": "metadata",

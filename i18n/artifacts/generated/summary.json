@@ -25,10 +25,10 @@
   "namespaces": {
     "applicationNames": 24,
     "authentication": 87,
-    "common": 2254,
+    "common": 2255,
     "confirmation": 18,
     "error": 250,
-    "info": 267,
+    "info": 266,
     "metadata": 1,
     "notification": 33,
     "status": 9,

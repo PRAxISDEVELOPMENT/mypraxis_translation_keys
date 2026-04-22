@@ -3358,6 +3358,7 @@
     "deleteVehicle": "Vous êtes sur le point de supprimer un véhicule.",
     "disableTwoStepVerificationWarning": "Vous vous appretez à désactiver la verification en deux étapes. Ceci pourrait diminuer la sécurité de votre compte.",
     "enableAutomaticallySaveReportsExcelInMyPRAxIS": "Vous êtes sur le point d'activer l'enregistrement automatique des rapports (Excel) dans MyPRAxIS.",
+    "NIELSSSSSSSSS": "Vous êtes sur le point de naviguer vers : {{value}}",
     "requestToChangeDivision": "Vous êtes sur le point de changer la division en: {{value}}",
     "requestToDeleteAlarmPriorities": "Vous êtes sur le point de supprimer {{value}} priorité(s) d'alarme.",
     "requestToDeleteAlarmTypes": "Vous êtes sur le point de supprimer {{value}} type(s) d'alarme.",

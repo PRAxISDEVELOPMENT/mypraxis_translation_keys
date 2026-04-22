@@ -3358,6 +3358,7 @@
     "deleteVehicle": "You are about to delete a vehicle.",
     "disableTwoStepVerificationWarning": "You are about to disable two-step verification. This may reduce the security of your account.",
     "enableAutomaticallySaveReportsExcelInMyPRAxIS": "You are about to enable automatically save reports (Excel) in MyPRAxIS.",
+    "NIELSSSSSSSSS": "You are about to navigate to: {{value}}",
     "requestToChangeDivision": "You are about to change the division to: {{value}}",
     "requestToDeleteAlarmPriorities": "You are about to delete {{value}} alarm priority/priorities.",
     "requestToDeleteAlarmTypes": "You are about to delete {{value}} alarm type(s).",

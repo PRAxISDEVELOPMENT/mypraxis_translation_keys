@@ -3358,6 +3358,7 @@
     "deleteVehicle": "U staat op het punt een voertuig te verwijderen.",
     "disableTwoStepVerificationWarning": "U staat op het punt om de tweestapsverificatie uit te schakelen. Dit kan de veiligheid van uw account verminderen.",
     "enableAutomaticallySaveReportsExcelInMyPRAxIS": "U staat op het punt om het automatisch opslaan van rapporten (Excel) in MyPRAxIS in te schakelen.",
+    "NIELSSSSSSSSS": "U staat op het punt te navigeren naar: {{value}}",
     "requestToChangeDivision": "U staat op het punt de divisie te wijzigen naar: {{value}}",
     "requestToDeleteAlarmPriorities": "U staat op het punt om {{value}} alarmprioriteit(en) te verwijderen.",
     "requestToDeleteAlarmTypes": "U staat op het punt om {{value}} alarmtype(s) te verwijderen.",

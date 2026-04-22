@@ -5,8 +5,8 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 3380,
-    "uniqueKeys": 3380,
+    "totalEntries": 3381,
+    "uniqueKeys": 3381,
     "namespaces": 11,
     "applications": 4,
     "duplicateKeys": 0,
@@ -80152,6 +80152,30 @@
       }
     },
     {
+      "key": "warning.NIELSSSSSSSSS",
+      "namespace": "warning",
+      "leaf": "NIELSSSSSSSSS",
+      "segments": [
+        "warning",
+        "NIELSSSSSSSSS"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3381
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "U staat op het punt te navigeren naar: {{value}}",
+        "fr": "Vous êtes sur le point de naviguer vers : {{value}}",
+        "en": "You are about to navigate to: {{value}}"
+      }
+    },
+    {
       "key": "warning.requestToChangeDivision",
       "namespace": "warning",
       "leaf": "requestToChangeDivision",
@@ -81236,7 +81260,7 @@
       "label": "Waarschuwingen",
       "description": "Caution text, risky-action notices, and non-fatal warnings that need attention.",
       "status": "active",
-      "keyCount": 118
+      "keyCount": 119
     }
   ]
 }

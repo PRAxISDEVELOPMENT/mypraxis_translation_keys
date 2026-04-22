@@ -33,7 +33,7 @@
         "requestedNamespace": "applicationNames"
       },
       "proposedEntry": {
-        "key": "applicationNames.test",
+        "key": "applicationNames.test2",
         "nl": "test",
         "fr": "test",
         "en": "test",

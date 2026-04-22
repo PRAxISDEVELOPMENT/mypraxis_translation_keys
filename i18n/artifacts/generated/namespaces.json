@@ -21,7 +21,7 @@
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2255
+      "keyCount": 2254
     },
     {
       "name": "confirmation",
@@ -42,7 +42,7 @@
       "label": "Informatie",
       "description": "Informational helper text, onboarding copy, and contextual guidance.",
       "status": "active",
-      "keyCount": 266
+      "keyCount": 267
     },
     {
       "name": "metadata",

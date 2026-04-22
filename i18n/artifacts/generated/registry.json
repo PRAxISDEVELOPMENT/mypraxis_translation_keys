@@ -40,12 +40,12 @@
   ],
   "keys": [
     {
-      "key": "applicationNames.innovaphoneCall",
+      "key": "applicationNames.innovaphone",
       "namespace": "applicationNames",
-      "leaf": "innovaphoneCall",
+      "leaf": "innovaphone",
       "segments": [
         "applicationNames",
-        "innovaphoneCall"
+        "innovaphone"
       ],
       "applications": [
         "mypraxis_web"

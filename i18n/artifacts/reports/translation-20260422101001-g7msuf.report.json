@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-04-22T10:10:16.427Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260422101001-g7msuf.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 1,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "applicationNames.test",
+      "suggestedNamespace": "applicationNames",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"applicationNames\".",
+      "submittedEntry": {
+        "nl": "test",
+        "fr": "test",
+        "en": "test",
+        "notes": "qsdfqsdf \n\nq\nsdf",
+        "requestedNamespace": "applicationNames"
+      },
+      "proposedEntry": {
+        "key": "applicationNames.test",
+        "nl": "test",
+        "fr": "test",
+        "en": "test",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "qsdfqsdf \n\nq\nsdf"
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

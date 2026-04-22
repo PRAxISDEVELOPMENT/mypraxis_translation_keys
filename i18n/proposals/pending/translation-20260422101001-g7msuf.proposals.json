@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "proposalBatchId": "translation-20260422101001-g7msuf.proposals",
+  "status": "pending-review",
+  "createdAt": "2026-04-22T10:10:16.467Z",
+  "source": {
+    "uploadFile": "i18n/uploads/incoming/translation-20260422101001-g7msuf.json",
+    "reportFile": "i18n/artifacts/reports/translation-20260422101001-g7msuf.report.json",
+    "proposalCount": 1
+  },
+  "review": {
+    "required": true,
+    "instructions": "Edit the proposedEntry block for each proposal in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "proposals": [
+    {
+      "proposalId": "translation-20260422101001-g7msuf.proposal-01",
+      "source": {
+        "uploadEntryIndex": 1
+      },
+      "review": {
+        "requestedNamespace": "applicationNames",
+        "suggestedKey": "applicationNames.test",
+        "suggestedNamespace": "applicationNames",
+        "confidence": "requested",
+        "reason": "Upload explicitly requested namespace \"applicationNames\"."
+      },
+      "originalEntry": {
+        "nl": "test",
+        "fr": "test",
+        "en": "test",
+        "notes": "qsdfqsdf \n\nq\nsdf",
+        "requestedNamespace": "applicationNames"
+      },
+      "proposedEntry": {
+        "key": "applicationNames.test",
+        "nl": "test",
+        "fr": "test",
+        "en": "test",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "qsdfqsdf \n\nq\nsdf"
+      }
+    }
+  ]
+}

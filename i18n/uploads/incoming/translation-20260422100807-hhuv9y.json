@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "error.crmCallCenterWasNotFound",
+      "en": "[CRM] Call center '{{callcenter_number}}' was not found"
+    }
+  ]
+}

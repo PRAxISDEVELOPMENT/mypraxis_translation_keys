@@ -2438,7 +2438,7 @@
     "contractCannotBeGeneratedDueToMissingRequiredInformation": "The contract cannot be generated due to missing required information: {{values}}",
     "contractTypeIsRequiredToGenerateTelemonitoringContract": "Contract type is required to generate the telemonitoring contract",
     "cORSIsNotSupportedByYourBrowser": "CORS is not supported by your browser.",
-    "crmCallCenterWasNotFound": "[CRM] Call center '{{callcenter_number}}' was not found.",
+    "crmCallCenterWasNotFound": "[CRM] Call center '{{callcenter_number}}' was not found",
     "crmClientWasNotFound": "[CRM] Client '{{client_number}}' was not found.",
     "crmInstallerWasNotFound": "[CRM] Installer '{{installer_number}}' was not found.",
     "cSLModulesMustBeOrderedVia": "CSL modules must be ordered via",

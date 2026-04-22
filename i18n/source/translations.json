@@ -23658,12 +23658,5 @@
     "fr": "Vous êtes sur le point de naviguer vers : {{value}}",
     "en": "You are about to navigate to: {{value}}",
     "applications": ["mypraxis_web"]
-  },
-  {
-    "key": "warning.NIELSSSSSSSSS",
-    "nl": "U staat op het punt te navigeren naar: {{value}}",
-    "fr": "Vous êtes sur le point de naviguer vers : {{value}}",
-    "en": "You are about to navigate to: {{value}}",
-    "applications": ["mypraxis_web"]
   }
 ]

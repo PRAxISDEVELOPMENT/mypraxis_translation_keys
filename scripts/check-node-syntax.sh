@@ -2,6 +2,6 @@
 
 set -eu
 
-find i18n/bin i18n/src -type f -name '*.js' | sort | while IFS= read -r file; do
-  node --check "$file"
-done
+SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+
+exec node "$SCRIPT_DIR/check-node-syntax.js"

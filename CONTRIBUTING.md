@@ -50,6 +50,9 @@ Requirements:
 - Git
 - optionally `gh` if you use the helper workflow that watches Actions runs
 
+The npm scripts are intended to work from macOS, Linux, `cmd.exe`, and PowerShell.
+You should not need Git Bash just to run repository tooling.
+
 Install dependencies:
 
 ```bash
@@ -62,6 +65,21 @@ Verify the repository locally:
 npm run tooling:check-syntax
 npm run translations:check
 ```
+
+## Default Local Workflow
+
+If you just want the standard maintainer path, use:
+
+```bash
+npm install
+npm run update
+```
+
+`npm run update` is the intended cross-platform helper for macOS, Linux, Windows `cmd.exe`, and PowerShell.
+It builds locally, asks for a commit message, commits, pushes, optionally waits for the relevant GitHub Actions run on `main`, and then syncs back to the latest remote state when appropriate.
+
+If `gh` is missing or not authenticated, the command still runs.
+Only the GitHub Actions wait step is skipped.
 
 ## Common Contribution Types
 
@@ -133,7 +151,7 @@ Also read:
 | `npm run uploads:process-inbox -- --mode direct` | process direct-update inbox files |
 | `npm run uploads:process-inbox -- --mode proposal` | queue reviewable proposal object files |
 | `npm run uploads:simulate -- ...` | simulate upload behavior locally |
-| `npm run update` | interactive helper that builds, commits, pushes, and syncs |
+| `npm run update` | cross-platform interactive helper that builds, commits, pushes, optionally waits for automation, and syncs |
 
 ## Working Rules
 

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "help": "node i18n/bin/build-translations.js --help",
-    "tooling:check-syntax": "sh scripts/check-node-syntax.sh",
+    "tooling:check-syntax": "node scripts/check-node-syntax.js",
     "translations:build": "node i18n/bin/build-translations.js",
     "translations:check": "node i18n/bin/build-translations.js --check",
     "translations:help": "node i18n/bin/build-translations.js --help",
@@ -25,6 +25,6 @@
     "uploads:process-inbox": "node i18n/bin/process-upload-inbox.js",
     "uploads:simulate": "node i18n/bin/simulate-upload.js",
     "uploads:simulate:help": "node i18n/bin/simulate-upload.js --help",
-    "update": "sh ./scripts/update-translations.sh"
+    "update": "node scripts/update-translations.js"
   }
 }

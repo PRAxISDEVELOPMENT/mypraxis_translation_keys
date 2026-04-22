@@ -10,6 +10,17 @@ Central repository for MyPRAxIS translation content, validation rules, generated
 > The canonical source of truth is [i18n/source/translations.json](i18n/source/translations.json).
 > Files under [i18n/artifacts/generated/](i18n/artifacts/generated/) are generated output and must not be edited manually.
 
+## Quick Start For Maintainers
+
+For the normal local maintainer flow:
+
+```bash
+npm install
+npm run update
+```
+
+That command path is intended to work from macOS, Linux, Windows `cmd.exe`, and PowerShell.
+
 ## Overview
 
 This repository exists to make translation changes:
@@ -171,6 +182,9 @@ Requirements:
 - Git
 - optionally `gh` for some maintainer workflows
 
+The local npm workflows are intended to work from macOS, Linux, Windows `cmd.exe`, and PowerShell.
+You should not need Git Bash just to run repository tooling.
+
 Install dependencies:
 
 ```bash
@@ -183,6 +197,27 @@ Recommended first checks:
 npm run tooling:check-syntax
 npm run translations:check
 ```
+
+## Fastest Local Flow
+
+For most maintainers and direct source edits, the intended local workflow is:
+
+```bash
+npm install
+npm run update
+```
+
+`npm run update` does this:
+
+1. builds translations locally
+2. asks for a commit message
+3. stages current changes
+4. commits and pushes the current branch
+5. on `main`, waits for the relevant GitHub Actions run when `gh` is installed and authenticated
+6. syncs the local branch back to the latest remote state when appropriate
+
+If `gh` is not installed or not authenticated correctly, the command still works.
+It simply skips the GitHub Actions wait step.
 
 ## Command Guide
 
@@ -217,7 +252,7 @@ npm run translations:check
 | --- | --- |
 | `npm run tooling:check-syntax` | syntax-checks the Node tooling files |
 | `npm run help` | shows build help |
-| `npm run update` | helper workflow that builds, commits, pushes, waits, and syncs |
+| `npm run update` | cross-platform helper workflow that builds, commits, pushes, optionally waits for automation, and syncs |
 
 ## Build And Validation Flow
 

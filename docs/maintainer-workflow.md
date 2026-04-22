@@ -55,6 +55,7 @@ Use this when you want to reproduce the automation path locally.
 
 The repository includes:
 
+- [../scripts/update-translations.js](../scripts/update-translations.js)
 - [../scripts/update-translations.sh](../scripts/update-translations.sh)
 
 Run it with:
@@ -63,16 +64,21 @@ Run it with:
 npm run update
 ```
 
+This is the intended maintainer flow on macOS, Linux, Windows `cmd.exe`, and PowerShell.
+You should not need Git Bash just to use the repository helper commands.
+
 What it does:
 
 1. builds translations locally
 2. asks for a commit message
 3. stages all current changes
 4. commits and pushes the current branch
-5. optionally waits for relevant GitHub Actions
+5. on `main`, optionally waits for relevant GitHub Actions when `gh` is installed and authenticated
 6. pulls the latest remote state back locally when appropriate
 
 Use it when you want a single interactive maintainer flow instead of separate manual git steps.
+
+If `gh` is unavailable, the helper still works and only skips the Actions wait step.
 
 ## Review Workflow For Proposal PRs
 
@@ -116,6 +122,17 @@ Run:
 npm run translations:build
 npm run translations:check
 ```
+
+### I just want the normal contributor path
+
+Run:
+
+```bash
+npm install
+npm run update
+```
+
+That is the default maintainer path for a normal direct repository change.
 
 ### I do not know whether a change belongs in source or uploads
 

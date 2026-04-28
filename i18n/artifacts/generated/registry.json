@@ -653,6 +653,31 @@
       }
     },
     {
+      "key": "authentication.anUnknownErrorOccurredPleaseTryAgainClientSideFirebase",
+      "namespace": "authentication",
+      "leaf": "anUnknownErrorOccurredPleaseTryAgainClientSideFirebase",
+      "segments": [
+        "authentication",
+        "anUnknownErrorOccurredPleaseTryAgainClientSideFirebase"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        2393
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Er is een onbekende fout opgetreden. Probeer het opnieuw. (client-side firebase)",
+        "fr": "Une erreur inconnue s'est produite. Veuillez réessayer. (côté client firebase)",
+        "en": "An unknown error occurred. Please try again. (client side firebase)"
+      }
+    },
+    {
       "key": "authentication.appIsNotAuthorizedToUseFirebase",
       "namespace": "authentication",
       "leaf": "appIsNotAuthorizedToUseFirebase",
@@ -700,6 +725,31 @@
         "nl": "Deze app is niet op uw apparaat geïnstalleerd.",
         "fr": "Cette application n'est pas installée sur votre appareil.",
         "en": "This app is not installed on your device."
+      }
+    },
+    {
+      "key": "authentication.aTimeoutHasOccurred",
+      "namespace": "authentication",
+      "leaf": "aTimeoutHasOccurred",
+      "segments": [
+        "authentication",
+        "aTimeoutHasOccurred"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        281
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Er is een time-out opgetreden.",
+        "fr": "Le délai d'attente est dépassé.",
+        "en": "A timeout has occurred."
       }
     },
     {
@@ -847,6 +897,31 @@
         "nl": "Autorisatie mislukt: token is verlopen.",
         "fr": "Échec de validation: le jeton a expiré.",
         "en": "Authorization failed: Token has expired."
+      }
+    },
+    {
+      "key": "authentication.authorizationFailedUserNotFound",
+      "namespace": "authentication",
+      "leaf": "authorizationFailedUserNotFound",
+      "segments": [
+        "authentication",
+        "authorizationFailedUserNotFound"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        2410
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Autorisatie mislukt: gebruiker niet gevonden.",
+        "fr": "Échec de validation: utilisateur introuvable.",
+        "en": "Authorization failed: User not found."
       }
     },
     {
@@ -2224,6 +2299,31 @@
       }
     },
     {
+      "key": "authentication.messagingPermissionsAreBlocked",
+      "namespace": "authentication",
+      "leaf": "messagingPermissionsAreBlocked",
+      "segments": [
+        "authentication",
+        "messagingPermissionsAreBlocked"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        1398
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Machtigingen voor berichten zijn geblokkeerd.",
+        "fr": "Les autorisations de messagerie sont bloquées.",
+        "en": "Messaging permissions are blocked."
+      }
+    },
+    {
       "key": "authentication.missingAndroidPackageName",
       "namespace": "authentication",
       "leaf": "missingAndroidPackageName",
@@ -2681,6 +2781,7 @@
         "noAuthenticationEvent"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -2694,6 +2795,56 @@
         "nl": "Geen authenticatiegebeurtenis.",
         "fr": "Pas d'événement d'authentification.",
         "en": "No authentication event."
+      }
+    },
+    {
+      "key": "authentication.noSuchIdentityProvider",
+      "namespace": "authentication",
+      "leaf": "noSuchIdentityProvider",
+      "segments": [
+        "authentication",
+        "noSuchIdentityProvider"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        1509
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Geen dergelijke identiteitsprovider.",
+        "fr": "Aucun fournisseur d'identité correspondant.",
+        "en": "No such Identity Provider."
+      }
+    },
+    {
+      "key": "authentication.noUserIsCurrentlySignedIn",
+      "namespace": "authentication",
+      "leaf": "noUserIsCurrentlySignedIn",
+      "segments": [
+        "authentication",
+        "noUserIsCurrentlySignedIn"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        2783
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Er is momenteel geen gebruiker ingelogd.",
+        "fr": "Aucun utilisateur n'est actuellement connecté.",
+        "en": "No user is currently signed in."
       }
     },
     {
@@ -2869,6 +3020,56 @@
       }
     },
     {
+      "key": "authentication.popupBlockedByTheBrowser",
+      "namespace": "authentication",
+      "leaf": "popupBlockedByTheBrowser",
+      "segments": [
+        "authentication",
+        "popupBlockedByTheBrowser"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        1687
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Pop-up geblokkeerd door de browser.",
+        "fr": "Popup bloqué par le navigateur.",
+        "en": "Popup blocked by the browser."
+      }
+    },
+    {
+      "key": "authentication.popupClosedByUser",
+      "namespace": "authentication",
+      "leaf": "popupClosedByUser",
+      "segments": [
+        "authentication",
+        "popupClosedByUser"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        1688
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Pop-up gesloten door de gebruiker.",
+        "fr": "Popup fermé par l'utilisateur.",
+        "en": "Popup closed by user."
+      }
+    },
+    {
       "key": "authentication.providedAPIKeyIsInvalid",
       "namespace": "authentication",
       "leaf": "providedAPIKeyIsInvalid",
@@ -2944,6 +3145,81 @@
       }
     },
     {
+      "key": "authentication.quotaExceeded",
+      "namespace": "authentication",
+      "leaf": "quotaExceeded",
+      "segments": [
+        "authentication",
+        "quotaExceeded"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        1758
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Quota overschreden.",
+        "fr": "Quota dépassé.",
+        "en": "Quota exceeded."
+      }
+    },
+    {
+      "key": "authentication.redirectCancelledByUser",
+      "namespace": "authentication",
+      "leaf": "redirectCancelledByUser",
+      "segments": [
+        "authentication",
+        "redirectCancelledByUser"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        1786
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Omleiding geannuleerd door de gebruiker.",
+        "fr": "Redirection annulée par l'utilisateur.",
+        "en": "Redirect cancelled by user."
+      }
+    },
+    {
+      "key": "authentication.redirectOperationIsPending",
+      "namespace": "authentication",
+      "leaf": "redirectOperationIsPending",
+      "segments": [
+        "authentication",
+        "redirectOperationIsPending"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        1787
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Omleidingsbewerking is in behandeling.",
+        "fr": "Opération de redirection en attente.",
+        "en": "Redirect operation is pending."
+      }
+    },
+    {
       "key": "authentication.rejectedCredential",
       "namespace": "authentication",
       "leaf": "rejectedCredential",
@@ -2952,6 +3228,7 @@
         "rejectedCredential"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -3298,6 +3575,7 @@
         "thePasswordIsWeak"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -3413,6 +3691,56 @@
       }
     },
     {
+      "key": "authentication.thisOperationIsNotAllowed",
+      "namespace": "authentication",
+      "leaf": "thisOperationIsNotAllowed",
+      "segments": [
+        "authentication",
+        "thisOperationIsNotAllowed"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        2605
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Deze bewerking is niet toegestaan.",
+        "fr": "Cette opération n'est pas autorisée.",
+        "en": "This operation is not allowed."
+      }
+    },
+    {
+      "key": "authentication.thisOperationIsNotSupportedInYourCurrentEnvironment",
+      "namespace": "authentication",
+      "leaf": "thisOperationIsNotSupportedInYourCurrentEnvironment",
+      "segments": [
+        "authentication",
+        "thisOperationIsNotSupportedInYourCurrentEnvironment"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        2606
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Deze bewerking wordt niet ondersteund in uw huidige omgeving.",
+        "fr": "Cette opération n'est pas prise en charge dans votre environnement actuel.",
+        "en": "This operation is not supported in your current environment."
+      }
+    },
+    {
       "key": "authentication.thisOperationIsRestrictedToAdministrators",
       "namespace": "authentication",
       "leaf": "thisOperationIsRestrictedToAdministrators",
@@ -3438,6 +3766,31 @@
       }
     },
     {
+      "key": "authentication.thisProviderIsAlreadyLinkedToYourAccount",
+      "namespace": "authentication",
+      "leaf": "thisProviderIsAlreadyLinkedToYourAccount",
+      "segments": [
+        "authentication",
+        "thisProviderIsAlreadyLinkedToYourAccount"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        2608
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Deze provider is al gekoppeld aan uw account.",
+        "fr": "Ce fournisseur est déjà lié à votre compte.",
+        "en": "This provider is already linked to your account."
+      }
+    },
+    {
       "key": "authentication.toggleMultifactorAuthenticationViaAuthenticatorApp",
       "namespace": "authentication",
       "leaf": "toggleMultifactorAuthenticationViaAuthenticatorApp",
@@ -3459,6 +3812,31 @@
         "nl": "Schakel de multi-factor authenticatie via authenticator-app in/uit",
         "fr": "Activer/désactiver l'authentification multifactorielle via application d'authentification",
         "en": "Enable/disable multi-factor authentication via authenticator app"
+      }
+    },
+    {
+      "key": "authentication.tooManyAttemptsPleaseTryAgainLater",
+      "namespace": "authentication",
+      "leaf": "tooManyAttemptsPleaseTryAgainLater",
+      "segments": [
+        "authentication",
+        "tooManyAttemptsPleaseTryAgainLater"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        2609
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Te veel pogingen. Probeer het later opnieuw.",
+        "fr": "Trop de tentatives. Veuillez réessayer plus tard.",
+        "en": "Too many attempts. Please try again later."
       }
     },
     {
@@ -3487,6 +3865,106 @@
       }
     },
     {
+      "key": "authentication.unverifiedEmailAddress",
+      "namespace": "authentication",
+      "leaf": "unverifiedEmailAddress",
+      "segments": [
+        "authentication",
+        "unverifiedEmailAddress"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        2193
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Niet-geverifieerd e-mailadres.",
+        "fr": "Adresse e-mail non vérifiée.",
+        "en": "Unverified email address."
+      }
+    },
+    {
+      "key": "authentication.userAccountIsDisabled",
+      "namespace": "authentication",
+      "leaf": "userAccountIsDisabled",
+      "segments": [
+        "authentication",
+        "userAccountIsDisabled"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3230
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Gebruikersaccount is uitgeschakeld.",
+        "fr": "Le compte utilisateur est désactivé.",
+        "en": "User account is disabled."
+      }
+    },
+    {
+      "key": "authentication.userCancelledAuthentication",
+      "namespace": "authentication",
+      "leaf": "userCancelledAuthentication",
+      "segments": [
+        "authentication",
+        "userCancelledAuthentication"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        2212
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Gebruiker heeft de authenticatie geannuleerd.",
+        "fr": "L'utilisateur a annulé l'authentification.",
+        "en": "User cancelled authentication."
+      }
+    },
+    {
+      "key": "authentication.userHasSignedOut",
+      "namespace": "authentication",
+      "leaf": "userHasSignedOut",
+      "segments": [
+        "authentication",
+        "userHasSignedOut"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        2214
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Gebruiker is uitgelogd.",
+        "fr": "L'utilisateur s'est déconnecté.",
+        "en": "User has signed out."
+      }
+    },
+    {
       "key": "authentication.userLoggedOut",
       "namespace": "authentication",
       "leaf": "userLoggedOut",
@@ -3511,6 +3989,31 @@
       }
     },
     {
+      "key": "authentication.userMismatch",
+      "namespace": "authentication",
+      "leaf": "userMismatch",
+      "segments": [
+        "authentication",
+        "userMismatch"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        2218
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Gebruiker komt niet overeen.",
+        "fr": "Non-conformité de l'utilisateur.",
+        "en": "User mismatch."
+      }
+    },
+    {
       "key": "authentication.userTokenHasExpired",
       "namespace": "authentication",
       "leaf": "userTokenHasExpired",
@@ -3519,6 +4022,7 @@
         "userTokenHasExpired"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -3580,6 +4084,31 @@
         "nl": "UUID-waarde is ongeldig.",
         "fr": "La valeur 'UUID' n'est pas valide.",
         "en": "Uuid value is not valid."
+      }
+    },
+    {
+      "key": "authentication.webStorageIsUnsupportedByYourBrowser",
+      "namespace": "authentication",
+      "leaf": "webStorageIsUnsupportedByYourBrowser",
+      "segments": [
+        "authentication",
+        "webStorageIsUnsupportedByYourBrowser"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        2315
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Webopslag wordt niet ondersteund door uw browser.",
+        "fr": "Le stockage web n'est pas pris en charge par votre navigateur.",
+        "en": "Web storage is unsupported by your browser."
       }
     },
     {
@@ -7657,30 +8186,6 @@
         "nl": "Toekennen aan",
         "fr": "Attribuer à",
         "en": "Assign to"
-      }
-    },
-    {
-      "key": "common.aTimeoutHasOccurred",
-      "namespace": "common",
-      "leaf": "aTimeoutHasOccurred",
-      "segments": [
-        "common",
-        "aTimeoutHasOccurred"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        281
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Er is een time-out opgetreden.",
-        "fr": "Le délai d'attente est dépassé.",
-        "en": "A timeout has occurred."
       }
     },
     {
@@ -34654,30 +35159,6 @@
       }
     },
     {
-      "key": "common.messagingPermissionsAreBlocked",
-      "namespace": "common",
-      "leaf": "messagingPermissionsAreBlocked",
-      "segments": [
-        "common",
-        "messagingPermissionsAreBlocked"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        1398
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Machtigingen voor berichten zijn geblokkeerd.",
-        "fr": "Les autorisations de messagerie sont bloquées.",
-        "en": "Messaging permissions are blocked."
-      }
-    },
-    {
       "key": "common.method",
       "namespace": "common",
       "leaf": "method",
@@ -37300,30 +37781,6 @@
         "nl": "Geen SMS",
         "fr": "Pas de SMS",
         "en": "No SMS"
-      }
-    },
-    {
-      "key": "common.noSuchIdentityProvider",
-      "namespace": "common",
-      "leaf": "noSuchIdentityProvider",
-      "segments": [
-        "common",
-        "noSuchIdentityProvider"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        1509
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Geen dergelijke identiteitsprovider.",
-        "fr": "Aucun fournisseur d'identité correspondant.",
-        "en": "No such Identity Provider."
       }
     },
     {
@@ -41619,54 +42076,6 @@
       }
     },
     {
-      "key": "common.popupBlockedByTheBrowser",
-      "namespace": "common",
-      "leaf": "popupBlockedByTheBrowser",
-      "segments": [
-        "common",
-        "popupBlockedByTheBrowser"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        1687
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Pop-up geblokkeerd door de browser.",
-        "fr": "Popup bloqué par le navigateur.",
-        "en": "Popup blocked by the browser."
-      }
-    },
-    {
-      "key": "common.popupClosedByUser",
-      "namespace": "common",
-      "leaf": "popupClosedByUser",
-      "segments": [
-        "common",
-        "popupClosedByUser"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        1688
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Pop-up gesloten door de gebruiker.",
-        "fr": "Popup fermé par l'utilisateur.",
-        "en": "Popup closed by user."
-      }
-    },
-    {
       "key": "common.port",
       "namespace": "common",
       "leaf": "port",
@@ -43345,30 +43754,6 @@
       }
     },
     {
-      "key": "common.quotaExceeded",
-      "namespace": "common",
-      "leaf": "quotaExceeded",
-      "segments": [
-        "common",
-        "quotaExceeded"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        1758
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Quota overschreden.",
-        "fr": "Quota dépassé.",
-        "en": "Quota exceeded."
-      }
-    },
-    {
       "key": "common.quotation",
       "namespace": "common",
       "leaf": "quotation",
@@ -44018,54 +44403,6 @@
         "nl": "Ontvangers",
         "fr": "Destinataires",
         "en": "Recipients"
-      }
-    },
-    {
-      "key": "common.redirectCancelledByUser",
-      "namespace": "common",
-      "leaf": "redirectCancelledByUser",
-      "segments": [
-        "common",
-        "redirectCancelledByUser"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        1786
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Omleiding geannuleerd door de gebruiker.",
-        "fr": "Redirection annulée par l'utilisateur.",
-        "en": "Redirect cancelled by user."
-      }
-    },
-    {
-      "key": "common.redirectOperationIsPending",
-      "namespace": "common",
-      "leaf": "redirectOperationIsPending",
-      "segments": [
-        "common",
-        "redirectOperationIsPending"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        1787
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Omleidingsbewerking is in behandeling.",
-        "fr": "Opération de redirection en attente.",
-        "en": "Redirect operation is pending."
       }
     },
     {
@@ -53829,30 +54166,6 @@
       }
     },
     {
-      "key": "common.unverifiedEmailAddress",
-      "namespace": "common",
-      "leaf": "unverifiedEmailAddress",
-      "segments": [
-        "common",
-        "unverifiedEmailAddress"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        2193
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Niet-geverifieerd e-mailadres.",
-        "fr": "Adresse e-mail non vérifiée.",
-        "en": "Unverified email address."
-      }
-    },
-    {
       "key": "common.upcoming",
       "namespace": "common",
       "leaf": "upcoming",
@@ -54266,30 +54579,6 @@
       }
     },
     {
-      "key": "common.userCancelledAuthentication",
-      "namespace": "common",
-      "leaf": "userCancelledAuthentication",
-      "segments": [
-        "common",
-        "userCancelledAuthentication"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        2212
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Gebruiker heeft de authenticatie geannuleerd.",
-        "fr": "L'utilisateur a annulé l'authentification.",
-        "en": "User cancelled authentication."
-      }
-    },
-    {
       "key": "common.userCustomPermissions",
       "namespace": "common",
       "leaf": "userCustomPermissions",
@@ -54311,30 +54600,6 @@
         "nl": "Gebruiker (aangepaste rechten)",
         "fr": "Utilisateur (permissions personnalisées)",
         "en": "User (custom permissions)"
-      }
-    },
-    {
-      "key": "common.userHasSignedOut",
-      "namespace": "common",
-      "leaf": "userHasSignedOut",
-      "segments": [
-        "common",
-        "userHasSignedOut"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        2214
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Gebruiker is uitgelogd.",
-        "fr": "L'utilisateur s'est déconnecté.",
-        "en": "User has signed out."
       }
     },
     {
@@ -54410,30 +54675,6 @@
         "nl": "Gebruikersbeheer",
         "fr": "Gestion d'utilisateurs",
         "en": "User management"
-      }
-    },
-    {
-      "key": "common.userMismatch",
-      "namespace": "common",
-      "leaf": "userMismatch",
-      "segments": [
-        "common",
-        "userMismatch"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        2218
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Gebruiker komt niet overeen.",
-        "fr": "Non-conformité de l'utilisateur.",
-        "en": "User mismatch."
       }
     },
     {
@@ -56788,30 +57029,6 @@
       }
     },
     {
-      "key": "common.webStorageIsUnsupportedByYourBrowser",
-      "namespace": "common",
-      "leaf": "webStorageIsUnsupportedByYourBrowser",
-      "segments": [
-        "common",
-        "webStorageIsUnsupportedByYourBrowser"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        2315
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Webopslag wordt niet ondersteund door uw browser.",
-        "fr": "Le stockage web n'est pas pris en charge par votre navigateur.",
-        "en": "Web storage is unsupported by your browser."
-      }
-    },
-    {
       "key": "common.weCanOnlyPutYourAlarmConnectionOnHoldAtTheExpressRequestOfYourInstaller",
       "namespace": "common",
       "leaf": "weCanOnlyPutYourAlarmConnectionOnHoldAtTheExpressRequestOfYourInstaller",
@@ -58633,30 +58850,6 @@
       }
     },
     {
-      "key": "error.anUnknownErrorOccurredPleaseTryAgainClientSideFirebase",
-      "namespace": "error",
-      "leaf": "anUnknownErrorOccurredPleaseTryAgainClientSideFirebase",
-      "segments": [
-        "error",
-        "anUnknownErrorOccurredPleaseTryAgainClientSideFirebase"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        2393
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Er is een onbekende fout opgetreden. Probeer het opnieuw. (client-side firebase)",
-        "fr": "Une erreur inconnue s'est produite. Veuillez réessayer. (côté client firebase)",
-        "en": "An unknown error occurred. Please try again. (client side firebase)"
-      }
-    },
-    {
       "key": "error.APIErrors",
       "namespace": "error",
       "leaf": "APIErrors",
@@ -59015,30 +59208,6 @@
         "nl": "Autorisatie mislukt: gebruiker heeft geen toegang.",
         "fr": "Échec de validation: l'utilisateur n'a pas accès.",
         "en": "Authorization failed: User does not have access."
-      }
-    },
-    {
-      "key": "error.authorizationFailedUserNotFound",
-      "namespace": "error",
-      "leaf": "authorizationFailedUserNotFound",
-      "segments": [
-        "error",
-        "authorizationFailedUserNotFound"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        2410
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Autorisatie mislukt: gebruiker niet gevonden.",
-        "fr": "Échec de validation: utilisateur introuvable.",
-        "en": "Authorization failed: User not found."
       }
     },
     {
@@ -62928,102 +63097,6 @@
         "nl": "Deze moet gericht worden aan",
         "fr": "Elle doit être adressé à",
         "en": "This must be addressed to"
-      }
-    },
-    {
-      "key": "error.thisOperationIsNotAllowed",
-      "namespace": "error",
-      "leaf": "thisOperationIsNotAllowed",
-      "segments": [
-        "error",
-        "thisOperationIsNotAllowed"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        2605
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Deze bewerking is niet toegestaan.",
-        "fr": "Cette opération n'est pas autorisée.",
-        "en": "This operation is not allowed."
-      }
-    },
-    {
-      "key": "error.thisOperationIsNotSupportedInYourCurrentEnvironment",
-      "namespace": "error",
-      "leaf": "thisOperationIsNotSupportedInYourCurrentEnvironment",
-      "segments": [
-        "error",
-        "thisOperationIsNotSupportedInYourCurrentEnvironment"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        2606
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Deze bewerking wordt niet ondersteund in uw huidige omgeving.",
-        "fr": "Cette opération n'est pas prise en charge dans votre environnement actuel.",
-        "en": "This operation is not supported in your current environment."
-      }
-    },
-    {
-      "key": "error.thisProviderIsAlreadyLinkedToYourAccount",
-      "namespace": "error",
-      "leaf": "thisProviderIsAlreadyLinkedToYourAccount",
-      "segments": [
-        "error",
-        "thisProviderIsAlreadyLinkedToYourAccount"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        2608
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Deze provider is al gekoppeld aan uw account.",
-        "fr": "Ce fournisseur est déjà lié à votre compte.",
-        "en": "This provider is already linked to your account."
-      }
-    },
-    {
-      "key": "error.tooManyAttemptsPleaseTryAgainLater",
-      "namespace": "error",
-      "leaf": "tooManyAttemptsPleaseTryAgainLater",
-      "segments": [
-        "error",
-        "tooManyAttemptsPleaseTryAgainLater"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        2609
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Te veel pogingen. Probeer het later opnieuw.",
-        "fr": "Trop de tentatives. Veuillez réessayer plus tard.",
-        "en": "Too many attempts. Please try again later."
       }
     },
     {
@@ -67659,30 +67732,6 @@
         "nl": "Er werd geen primair of back-up contact toegekend.",
         "fr": "Aucun technicien principal ni technicien suppléant n'a été attribué.",
         "en": "No primary or back-up contact has been assigned."
-      }
-    },
-    {
-      "key": "info.noUserIsCurrentlySignedIn",
-      "namespace": "info",
-      "leaf": "noUserIsCurrentlySignedIn",
-      "segments": [
-        "info",
-        "noUserIsCurrentlySignedIn"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        2783
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Er is momenteel geen gebruiker ingelogd.",
-        "fr": "Aucun utilisateur n'est actuellement connecté.",
-        "en": "No user is currently signed in."
       }
     },
     {
@@ -78723,30 +78772,6 @@
       }
     },
     {
-      "key": "success.userAccountIsDisabled",
-      "namespace": "success",
-      "leaf": "userAccountIsDisabled",
-      "segments": [
-        "success",
-        "userAccountIsDisabled"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        3230
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "resolved": {
-        "nl": "Gebruikersaccount is uitgeschakeld.",
-        "fr": "Le compte utilisateur est désactivé.",
-        "en": "User account is disabled."
-      }
-    },
-    {
       "key": "success.userAdded",
       "namespace": "success",
       "leaf": "userAdded",
@@ -82106,14 +82131,14 @@
       "label": "Authenticatie",
       "description": "Labels and messages related to login, identity, and auth metadata.",
       "status": "active",
-      "keyCount": 120
+      "keyCount": 141
     },
     {
       "name": "common",
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2242
+      "keyCount": 2229
     },
     {
       "name": "confirmation",
@@ -82127,14 +82152,14 @@
       "label": "Fouten",
       "description": "Error labels, error detail fields, and failure-state messages.",
       "status": "active",
-      "keyCount": 214
+      "keyCount": 208
     },
     {
       "name": "info",
       "label": "Informatie",
       "description": "Informational helper text, onboarding copy, and contextual guidance.",
       "status": "active",
-      "keyCount": 305
+      "keyCount": 304
     },
     {
       "name": "metadata",
@@ -82162,7 +82187,7 @@
       "label": "Succes",
       "description": "Success messages, completed state feedback, and positive confirmations.",
       "status": "active",
-      "keyCount": 315
+      "keyCount": 314
     },
     {
       "name": "warning",

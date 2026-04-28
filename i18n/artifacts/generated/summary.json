@@ -24,20 +24,20 @@
   },
   "namespaces": {
     "applicationNames": 24,
-    "authentication": 120,
-    "common": 2242,
+    "authentication": 141,
+    "common": 2229,
     "confirmation": 18,
-    "error": 214,
-    "info": 305,
+    "error": 208,
+    "info": 304,
     "metadata": 1,
     "notification": 28,
     "status": 9,
-    "success": 315,
+    "success": 314,
     "warning": 109
   },
   "applicationCounts": {
     "documenten": 0,
-    "mypraxis_app": 834,
+    "mypraxis_app": 859,
     "mypraxis_data": 0,
     "mypraxis_web": 3364
   },

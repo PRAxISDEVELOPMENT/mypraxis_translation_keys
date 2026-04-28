@@ -764,7 +764,8 @@
     "fr": "Pas d'événement d'authentification.",
     "en": "No authentication event.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -870,7 +871,8 @@
     "fr": "Certificat d'authenticité refusés.",
     "en": "Rejected credential.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -976,7 +978,8 @@
     "fr": "Le mot de passe est faible.",
     "en": "The password is weak.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -1032,7 +1035,8 @@
     "fr": "Le jeton utilisateur a expiré.",
     "en": "User token has expired.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -2621,12 +2625,13 @@
     ]
   },
   {
-    "key": "common.aTimeoutHasOccurred",
+    "key": "authentication.aTimeoutHasOccurred",
     "nl": "Er is een time-out opgetreden.",
     "fr": "Le délai d'attente est dépassé.",
     "en": "A timeout has occurred.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -12935,12 +12940,13 @@
     ]
   },
   {
-    "key": "common.messagingPermissionsAreBlocked",
+    "key": "authentication.messagingPermissionsAreBlocked",
     "nl": "Machtigingen voor berichten zijn geblokkeerd.",
     "fr": "Les autorisations de messagerie sont bloquées.",
     "en": "Messaging permissions are blocked.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -13969,12 +13975,13 @@
     ]
   },
   {
-    "key": "common.noSuchIdentityProvider",
+    "key": "authentication.noSuchIdentityProvider",
     "nl": "Geen dergelijke identiteitsprovider.",
     "fr": "Aucun fournisseur d'identité correspondant.",
     "en": "No such Identity Provider.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -15616,21 +15623,23 @@
     ]
   },
   {
-    "key": "common.popupBlockedByTheBrowser",
+    "key": "authentication.popupBlockedByTheBrowser",
     "nl": "Pop-up geblokkeerd door de browser.",
     "fr": "Popup bloqué par le navigateur.",
     "en": "Popup blocked by the browser.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
-    "key": "common.popupClosedByUser",
+    "key": "authentication.popupClosedByUser",
     "nl": "Pop-up gesloten door de gebruiker.",
     "fr": "Popup fermé par l'utilisateur.",
     "en": "Popup closed by user.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -16277,12 +16286,13 @@
     ]
   },
   {
-    "key": "common.quotaExceeded",
+    "key": "authentication.quotaExceeded",
     "nl": "Quota overschreden.",
     "fr": "Quota dépassé.",
     "en": "Quota exceeded.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -16533,21 +16543,23 @@
     ]
   },
   {
-    "key": "common.redirectCancelledByUser",
+    "key": "authentication.redirectCancelledByUser",
     "nl": "Omleiding geannuleerd door de gebruiker.",
     "fr": "Redirection annulée par l'utilisateur.",
     "en": "Redirect cancelled by user.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
-    "key": "common.redirectOperationIsPending",
+    "key": "authentication.redirectOperationIsPending",
     "nl": "Omleidingsbewerking is in behandeling.",
     "fr": "Opération de redirection en attente.",
     "en": "Redirect operation is pending.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -20286,12 +20298,13 @@
     ]
   },
   {
-    "key": "common.unverifiedEmailAddress",
+    "key": "authentication.unverifiedEmailAddress",
     "nl": "Niet-geverifieerd e-mailadres.",
     "fr": "Adresse e-mail non vérifiée.",
     "en": "Unverified email address.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -20463,12 +20476,13 @@
     ]
   },
   {
-    "key": "common.userCancelledAuthentication",
+    "key": "authentication.userCancelledAuthentication",
     "nl": "Gebruiker heeft de authenticatie geannuleerd.",
     "fr": "L'utilisateur a annulé l'authentification.",
     "en": "User cancelled authentication.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -20481,12 +20495,13 @@
     ]
   },
   {
-    "key": "common.userHasSignedOut",
+    "key": "authentication.userHasSignedOut",
     "nl": "Gebruiker is uitgelogd.",
     "fr": "L'utilisateur s'est déconnecté.",
     "en": "User has signed out.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -20520,12 +20535,13 @@
     ]
   },
   {
-    "key": "common.userMismatch",
+    "key": "authentication.userMismatch",
     "nl": "Gebruiker komt niet overeen.",
     "fr": "Non-conformité de l'utilisateur.",
     "en": "User mismatch.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -21440,12 +21456,13 @@
     ]
   },
   {
-    "key": "common.webStorageIsUnsupportedByYourBrowser",
+    "key": "authentication.webStorageIsUnsupportedByYourBrowser",
     "nl": "Webopslag wordt niet ondersteund door uw browser.",
     "fr": "Le stockage web n'est pas pris en charge par votre navigateur.",
     "en": "Web storage is unsupported by your browser.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -22165,12 +22182,13 @@
     ]
   },
   {
-    "key": "error.anUnknownErrorOccurredPleaseTryAgainClientSideFirebase",
+    "key": "authentication.anUnknownErrorOccurredPleaseTryAgainClientSideFirebase",
     "nl": "Er is een onbekende fout opgetreden. Probeer het opnieuw. (client-side firebase)",
     "fr": "Une erreur inconnue s'est produite. Veuillez réessayer. (côté client firebase)",
     "en": "An unknown error occurred. Please try again. (client side firebase)",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -22320,12 +22338,13 @@
     ]
   },
   {
-    "key": "error.authorizationFailedUserNotFound",
+    "key": "authentication.authorizationFailedUserNotFound",
     "nl": "Autorisatie mislukt: gebruiker niet gevonden.",
     "fr": "Échec de validation: utilisateur introuvable.",
     "en": "Authorization failed: User not found.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -24134,21 +24153,23 @@
     ]
   },
   {
-    "key": "error.thisOperationIsNotAllowed",
+    "key": "authentication.thisOperationIsNotAllowed",
     "nl": "Deze bewerking is niet toegestaan.",
     "fr": "Cette opération n'est pas autorisée.",
     "en": "This operation is not allowed.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
-    "key": "error.thisOperationIsNotSupportedInYourCurrentEnvironment",
+    "key": "authentication.thisOperationIsNotSupportedInYourCurrentEnvironment",
     "nl": "Deze bewerking wordt niet ondersteund in uw huidige omgeving.",
     "fr": "Cette opération n'est pas prise en charge dans votre environnement actuel.",
     "en": "This operation is not supported in your current environment.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -24162,21 +24183,23 @@
     ]
   },
   {
-    "key": "error.thisProviderIsAlreadyLinkedToYourAccount",
+    "key": "authentication.thisProviderIsAlreadyLinkedToYourAccount",
     "nl": "Deze provider is al gekoppeld aan uw account.",
     "fr": "Ce fournisseur est déjà lié à votre compte.",
     "en": "This provider is already linked to your account.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
-    "key": "error.tooManyAttemptsPleaseTryAgainLater",
+    "key": "authentication.tooManyAttemptsPleaseTryAgainLater",
     "nl": "Te veel pogingen. Probeer het later opnieuw.",
     "fr": "Trop de tentatives. Veuillez réessayer plus tard.",
     "en": "Too many attempts. Please try again later.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -25771,12 +25794,13 @@
     ]
   },
   {
-    "key": "info.noUserIsCurrentlySignedIn",
+    "key": "authentication.noUserIsCurrentlySignedIn",
     "nl": "Er is momenteel geen gebruiker ingelogd.",
     "fr": "Aucun utilisateur n'est actuellement connecté.",
     "en": "No user is currently signed in.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -29850,12 +29874,13 @@
     ]
   },
   {
-    "key": "success.userAccountIsDisabled",
+    "key": "authentication.userAccountIsDisabled",
     "nl": "Gebruikersaccount is uitgeschakeld.",
     "fr": "Le compte utilisateur est désactivé.",
     "en": "User account is disabled.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {

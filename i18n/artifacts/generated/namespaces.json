@@ -14,14 +14,14 @@
       "label": "Authenticatie",
       "description": "Labels and messages related to login, identity, and auth metadata.",
       "status": "active",
-      "keyCount": 120
+      "keyCount": 141
     },
     {
       "name": "common",
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2242
+      "keyCount": 2229
     },
     {
       "name": "confirmation",
@@ -35,14 +35,14 @@
       "label": "Fouten",
       "description": "Error labels, error detail fields, and failure-state messages.",
       "status": "active",
-      "keyCount": 214
+      "keyCount": 208
     },
     {
       "name": "info",
       "label": "Informatie",
       "description": "Informational helper text, onboarding copy, and contextual guidance.",
       "status": "active",
-      "keyCount": 305
+      "keyCount": 304
     },
     {
       "name": "metadata",
@@ -70,7 +70,7 @@
       "label": "Succes",
       "description": "Success messages, completed state feedback, and positive confirmations.",
       "status": "active",
-      "keyCount": 315
+      "keyCount": 314
     },
     {
       "name": "warning",

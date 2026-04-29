@@ -5,8 +5,8 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 3385,
-    "uniqueKeys": 3385,
+    "totalEntries": 3386,
+    "uniqueKeys": 3386,
     "namespaces": 11,
     "applications": 4,
     "duplicateKeys": 0,
@@ -51147,6 +51147,31 @@
       }
     },
     {
+      "key": "common.test",
+      "namespace": "common",
+      "leaf": "test",
+      "segments": [
+        "common",
+        "test"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3386
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "De verificatiecode moet exact 6 cijfers bevatten",
+        "fr": "Le code de vérification doit comporter exactement 6 chiffres",
+        "en": "The verification code must be exactly 6 digits"
+      }
+    },
+    {
       "key": "common.testClient",
       "namespace": "common",
       "leaf": "testClient",
@@ -82138,7 +82163,7 @@
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2229
+      "keyCount": 2230
     },
     {
       "name": "confirmation",

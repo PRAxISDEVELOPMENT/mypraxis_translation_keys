@@ -31301,5 +31301,15 @@
       "mypraxis_web",
       "mypraxis_app"
     ]
+  },
+  {
+    "key": "common.test",
+    "nl": "De verificatiecode moet exact 6 cijfers bevatten",
+    "fr": "Le code de vérification doit comporter exactement 6 chiffres",
+    "en": "The verification code must be exactly 6 digits",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
+    ]
   }
 ]

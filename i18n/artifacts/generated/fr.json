@@ -2109,6 +2109,7 @@
     "terminateCall": "Terminer",
     "terminationEffectiveOn": "Résiliation effective à partir du",
     "terminationRequestedOn": "Résiliation demandée le",
+    "test": "Le code de vérification doit comporter exactement 6 chiffres",
     "testClient": "Client de test",
     "text": "Texte",
     "textColor": "Couleur du texte",

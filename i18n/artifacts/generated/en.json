@@ -2109,6 +2109,7 @@
     "terminateCall": "Terminate",
     "terminationEffectiveOn": "Termination effective on",
     "terminationRequestedOn": "Termination requested on",
+    "test": "The verification code must be exactly 6 digits",
     "testClient": "Test client",
     "text": "Text",
     "textColor": "Text color",

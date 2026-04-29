@@ -18,7 +18,7 @@ export const i18nReady = i18n
     lng: Localization.getLocales()[0]?.languageCode || 'en',
     load: 'languageOnly',
     preload: PRELOAD_LANGUAGES,
-    parseMissingKeyHandler: (key) => `(missing key) ${key}`,
+    parseMissingKeyHandler: (key) => `[missing key: ${key}]`,
     interpolation: {
       escapeValue: false
     },

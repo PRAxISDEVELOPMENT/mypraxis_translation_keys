@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-05-04T14:15:06.039Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260504141443-56at9n.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.actionNeeded",
+      "namespace": "common",
+      "changes": {
+        "nl": "Actie vereist"
+      },
+      "current": {
+        "nl": "Actie vereistsss",
+        "fr": "Action requise",
+        "en": "Action needed"
+      },
+      "next": {
+        "nl": "Actie vereist",
+        "fr": "Action requise",
+        "en": "Action needed"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

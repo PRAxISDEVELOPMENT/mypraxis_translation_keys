@@ -11,11 +11,12 @@
     "documenten",
     "mypraxis_app",
     "mypraxis_data",
-    "mypraxis_web"
+    "mypraxis_web",
+    "unknown"
   ],
   "totals": {
-    "sourceEntries": 3385,
-    "uniqueKeys": 3385,
+    "sourceEntries": 3241,
+    "uniqueKeys": 3241,
     "namespaces": 11,
     "warnings": 0,
     "errors": 0,
@@ -23,23 +24,24 @@
     "keysWithMissingLocales": 0
   },
   "namespaces": {
-    "applicationNames": 24,
-    "authentication": 141,
-    "common": 2229,
-    "confirmation": 18,
-    "error": 208,
-    "info": 304,
-    "metadata": 1,
-    "notification": 28,
-    "status": 9,
-    "success": 314,
-    "warning": 109
+    "applicationNames": 15,
+    "authentication": 120,
+    "common": 2224,
+    "confirmation": 16,
+    "error": 200,
+    "info": 288,
+    "metadata": 0,
+    "notification": 16,
+    "status": 4,
+    "success": 234,
+    "warning": 124
   },
   "applicationCounts": {
     "documenten": 0,
-    "mypraxis_app": 859,
+    "mypraxis_app": 860,
     "mypraxis_data": 0,
-    "mypraxis_web": 3364
+    "mypraxis_web": 2367,
+    "unknown": 698
   },
   "warningCounts": {},
   "errorCounts": {}

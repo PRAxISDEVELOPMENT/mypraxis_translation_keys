@@ -24,6 +24,12 @@
       "label": "MyPRAxIS Web",
       "description": "Primary web application surfaces.",
       "status": "active"
+    },
+    {
+      "name": "unknown",
+      "label": "Unknown",
+      "description": "Unknown application",
+      "status": "active"
     }
   ]
 }

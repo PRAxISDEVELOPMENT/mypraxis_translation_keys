@@ -24,6 +24,12 @@
       "label": "MyPRAxIS Data",
       "description": "Data oriented tooling and internal data views.",
       "status": "active"
+    },
+    {
+      "name": "unknown",
+      "label": "Unknown",
+      "description": "Unknown application",
+      "status": "active"
     }
   ]
 }

@@ -7,77 +7,77 @@
       "label": "Applicaties",
       "description": "Product, service, or application names shown in the UI.",
       "status": "active",
-      "keyCount": 24
+      "keyCount": 15
     },
     {
       "name": "authentication",
       "label": "Authenticatie",
       "description": "Labels and messages related to login, identity, and auth metadata.",
       "status": "active",
-      "keyCount": 141
+      "keyCount": 120
     },
     {
       "name": "common",
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2229
+      "keyCount": 2224
     },
     {
       "name": "confirmation",
       "label": "Bevestiging",
       "description": "Confirmation prompts, consent text, and double-check messages before continuing.",
       "status": "active",
-      "keyCount": 18
+      "keyCount": 16
     },
     {
       "name": "error",
       "label": "Fouten",
       "description": "Error labels, error detail fields, and failure-state messages.",
       "status": "active",
-      "keyCount": 208
+      "keyCount": 200
     },
     {
       "name": "info",
       "label": "Informatie",
       "description": "Informational helper text, onboarding copy, and contextual guidance.",
       "status": "active",
-      "keyCount": 304
+      "keyCount": 288
     },
     {
       "name": "metadata",
       "label": "Metadata",
       "description": "Page metadata such as titles and descriptions.",
       "status": "active",
-      "keyCount": 1
+      "keyCount": 0
     },
     {
       "name": "notification",
       "label": "Meldingen",
       "description": "Notification labels, alert delivery text, and browser or push messaging.",
       "status": "active",
-      "keyCount": 28
+      "keyCount": 16
     },
     {
       "name": "status",
       "label": "Status",
       "description": "Status labels, state filters, and active or inactive state wording.",
       "status": "active",
-      "keyCount": 9
+      "keyCount": 4
     },
     {
       "name": "success",
       "label": "Succes",
       "description": "Success messages, completed state feedback, and positive confirmations.",
       "status": "active",
-      "keyCount": 314
+      "keyCount": 234
     },
     {
       "name": "warning",
       "label": "Waarschuwingen",
       "description": "Caution text, risky-action notices, and non-fatal warnings that need attention.",
       "status": "active",
-      "keyCount": 109
+      "keyCount": 124
     }
   ]
 }

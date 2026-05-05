@@ -5,8 +5,8 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 3244,
-    "uniqueKeys": 3244,
+    "totalEntries": 3256,
+    "uniqueKeys": 3256,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -6901,6 +6901,30 @@
       }
     },
     {
+      "key": "common.answered",
+      "namespace": "common",
+      "leaf": "answered",
+      "segments": [
+        "common",
+        "answered"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3254
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Beantwoord",
+        "fr": "Répondu",
+        "en": "Answered"
+      }
+    },
+    {
       "key": "common.API",
       "namespace": "common",
       "leaf": "API",
@@ -8063,6 +8087,30 @@
       }
     },
     {
+      "key": "common.available",
+      "namespace": "common",
+      "leaf": "available",
+      "segments": [
+        "common",
+        "available"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3246
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Beschikbaar",
+        "fr": "Disponible",
+        "en": "Available"
+      }
+    },
+    {
       "key": "common.availableFor",
       "namespace": "common",
       "leaf": "availableFor",
@@ -8132,6 +8180,30 @@
         "nl": "In afwachting van goedkeuring",
         "fr": "En attente d’approbation",
         "en": "Awaiting approval"
+      }
+    },
+    {
+      "key": "common.away",
+      "namespace": "common",
+      "leaf": "away",
+      "segments": [
+        "common",
+        "away"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3247
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Afwezig",
+        "fr": "Absent",
+        "en": "Away"
       }
     },
     {
@@ -9588,6 +9660,30 @@
         "nl": "Bus",
         "fr": "Boîte",
         "en": "Bus"
+      }
+    },
+    {
+      "key": "common.businessTrip",
+      "namespace": "common",
+      "leaf": "businessTrip",
+      "segments": [
+        "common",
+        "businessTrip"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3250
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Zakenreis",
+        "fr": "Voyage d'affaires",
+        "en": "Business trip"
       }
     },
     {
@@ -21129,6 +21225,30 @@
       }
     },
     {
+      "key": "common.dnd",
+      "namespace": "common",
+      "leaf": "dnd",
+      "segments": [
+        "common",
+        "dnd"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3248
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Niet storen",
+        "fr": "Ne pas déranger",
+        "en": "Do not disturb"
+      }
+    },
+    {
       "key": "common.document",
       "namespace": "common",
       "leaf": "document",
@@ -23009,6 +23129,30 @@
         "nl": "Einddatum & -tijdstip",
         "fr": "Date/heure de fin",
         "en": "End date/time"
+      }
+    },
+    {
+      "key": "common.ended",
+      "namespace": "common",
+      "leaf": "ended",
+      "segments": [
+        "common",
+        "ended"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3256
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Beëindigd",
+        "fr": "Terminé",
+        "en": "Ended"
       }
     },
     {
@@ -28537,6 +28681,30 @@
       }
     },
     {
+      "key": "common.idle",
+      "namespace": "common",
+      "leaf": "idle",
+      "segments": [
+        "common",
+        "idle"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3252
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Inactief",
+        "fr": "Inactif",
+        "en": "Idle"
+      }
+    },
+    {
       "key": "common.ifACommercialActionIsActiveAtInstaller",
       "namespace": "common",
       "leaf": "ifACommercialActionIsActiveAtInstaller",
@@ -28775,6 +28943,30 @@
         "nl": "Importeren of manueel",
         "fr": "Importation ou manuellement",
         "en": "Import or manual"
+      }
+    },
+    {
+      "key": "common.incall",
+      "namespace": "common",
+      "leaf": "incall",
+      "segments": [
+        "common",
+        "incall"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3255
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "In gesprek",
+        "fr": "En appel",
+        "en": "In call"
       }
     },
     {
@@ -32561,6 +32753,30 @@
         "nl": "Laag",
         "fr": "Basse",
         "en": "Low"
+      }
+    },
+    {
+      "key": "common.lunchBreak",
+      "namespace": "common",
+      "leaf": "lunchBreak",
+      "segments": [
+        "common",
+        "lunchBreak"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3249
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Lunchpauze",
+        "fr": "Pause déjeuner",
+        "en": "Lunch break"
       }
     },
     {
@@ -37212,6 +37428,30 @@
       }
     },
     {
+      "key": "common.noUsersFound",
+      "namespace": "common",
+      "leaf": "noUsersFound",
+      "segments": [
+        "common",
+        "noUsersFound"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3245
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Geen gebruikers gevonden",
+        "fr": "Aucun utilisateur trouvé",
+        "en": "No users found"
+      }
+    },
+    {
       "key": "common.noVariablesConfiguredForThisType",
       "namespace": "common",
       "leaf": "noVariablesConfiguredForThisType",
@@ -38180,6 +38420,30 @@
         "nl": "Offline",
         "fr": "Déconnecté",
         "en": "Offline"
+      }
+    },
+    {
+      "key": "common.offWork",
+      "namespace": "common",
+      "leaf": "offWork",
+      "segments": [
+        "common",
+        "offWork"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3251
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Buiten werktijd",
+        "fr": "En dehors des heures de travail",
+        "en": "Off work"
       }
     },
     {
@@ -45885,6 +46149,30 @@
         "nl": "Omgekeerde volgorde",
         "fr": "En ordre inverse",
         "en": "Reverse order"
+      }
+    },
+    {
+      "key": "common.ringing",
+      "namespace": "common",
+      "leaf": "ringing",
+      "segments": [
+        "common",
+        "ringing"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3253
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Gaat over",
+        "fr": "Sonnerie",
+        "en": "Ringing"
       }
     },
     {
@@ -78606,7 +78894,7 @@
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2227
+      "keyCount": 2239
     },
     {
       "name": "confirmation",

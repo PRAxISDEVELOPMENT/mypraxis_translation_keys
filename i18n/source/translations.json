@@ -29878,5 +29878,113 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.noUsersFound",
+    "nl": "Geen gebruikers gevonden",
+    "fr": "Aucun utilisateur trouvé",
+    "en": "No users found",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.available",
+    "nl": "Beschikbaar",
+    "fr": "Disponible",
+    "en": "Available",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.away",
+    "nl": "Afwezig",
+    "fr": "Absent",
+    "en": "Away",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.dnd",
+    "nl": "Niet storen",
+    "fr": "Ne pas déranger",
+    "en": "Do not disturb",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.lunchBreak",
+    "nl": "Lunchpauze",
+    "fr": "Pause déjeuner",
+    "en": "Lunch break",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.businessTrip",
+    "nl": "Zakenreis",
+    "fr": "Voyage d'affaires",
+    "en": "Business trip",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.offWork",
+    "nl": "Buiten werktijd",
+    "fr": "En dehors des heures de travail",
+    "en": "Off work",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.idle",
+    "nl": "Inactief",
+    "fr": "Inactif",
+    "en": "Idle",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.ringing",
+    "nl": "Gaat over",
+    "fr": "Sonnerie",
+    "en": "Ringing",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.answered",
+    "nl": "Beantwoord",
+    "fr": "Répondu",
+    "en": "Answered",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.incall",
+    "nl": "In gesprek",
+    "fr": "En appel",
+    "en": "In call",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.ended",
+    "nl": "Beëindigd",
+    "fr": "Terminé",
+    "en": "Ended",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

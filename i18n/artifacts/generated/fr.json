@@ -205,6 +205,7 @@
     "additionalHandlingClient": "Traitement d'alarme suppl. (client)",
     "additionalHandlingInstaller": "Traitement d'alarme suppl. (installateur)",
     "additionalInfo": "Information supplémentaire",
+    "additionArrangementsCanOnlyConfiguredTroughSectionObligationsOfTheContractors": "Les arrangements supplémentaires ne peuvent être configurés que via la section « Obligations des contractants ».",
     "addLink": "Ajouter un lien",
     "addOneOptionAtATimeAndPressEnter": "Ajoutez une option à la fois et appuyez sur Entrée",
     "addOption": "Ajouter une option",

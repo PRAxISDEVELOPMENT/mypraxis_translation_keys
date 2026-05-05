@@ -13827,6 +13827,15 @@
     ]
   },
   {
+    "key": "common.additionArrangementsCanOnlyConfiguredTroughSectionObligationsOfTheContractors",
+    "nl": "Bijkomende afspraken kunnen alleen worden geconfigureerd via de sectie “Verplichtingen van de contractanten”.",
+    "fr": "Les arrangements supplémentaires ne peuvent être configurés que via la section « Obligations des contractants ».",
+    "en": "Additional arrangements can only be configured through the section “Obligations of the contractors”.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.noAlarmPrioritySelected",
     "nl": "Geen alarmprioriteit geselecteerd",
     "fr": "Aucune priorité d'alarme sélectionnée",

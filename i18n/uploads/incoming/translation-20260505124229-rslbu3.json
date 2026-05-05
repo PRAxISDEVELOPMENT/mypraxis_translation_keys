@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "TEST",
+      "fr": "TEST",
+      "en": "TEST",
+      "requestedNamespace": "applicationNames",
+      "notes": "TEST"
+    }
+  ]
+}

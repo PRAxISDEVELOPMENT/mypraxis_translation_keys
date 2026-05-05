@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-05-05T12:42:41.751Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260505124229-rslbu3.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 1,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "applicationNames.test",
+      "suggestedNamespace": "applicationNames",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"applicationNames\".",
+      "submittedEntry": {
+        "nl": "TEST",
+        "fr": "TEST",
+        "en": "TEST",
+        "notes": "TEST",
+        "requestedNamespace": "applicationNames"
+      },
+      "proposedEntry": {
+        "key": "applicationNames.test",
+        "nl": "TEST",
+        "fr": "TEST",
+        "en": "TEST",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "TEST"
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

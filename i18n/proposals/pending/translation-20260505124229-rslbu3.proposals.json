@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "proposalBatchId": "translation-20260505124229-rslbu3.proposals",
+  "status": "pending-review",
+  "createdAt": "2026-05-05T12:42:41.791Z",
+  "source": {
+    "uploadFile": "i18n/uploads/incoming/translation-20260505124229-rslbu3.json",
+    "reportFile": "i18n/artifacts/reports/translation-20260505124229-rslbu3.report.json",
+    "proposalCount": 1
+  },
+  "review": {
+    "required": true,
+    "instructions": "Edit the proposedEntry block for each proposal in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "proposals": [
+    {
+      "proposalId": "translation-20260505124229-rslbu3.proposal-01",
+      "source": {
+        "uploadEntryIndex": 1
+      },
+      "review": {
+        "requestedNamespace": "applicationNames",
+        "suggestedKey": "applicationNames.test",
+        "suggestedNamespace": "applicationNames",
+        "confidence": "requested",
+        "reason": "Upload explicitly requested namespace \"applicationNames\"."
+      },
+      "originalEntry": {
+        "nl": "TEST",
+        "fr": "TEST",
+        "en": "TEST",
+        "notes": "TEST",
+        "requestedNamespace": "applicationNames"
+      },
+      "proposedEntry": {
+        "key": "applicationNames.test",
+        "nl": "TEST",
+        "fr": "TEST",
+        "en": "TEST",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "TEST"
+      }
+    }
+  ]
+}

@@ -29986,5 +29986,23 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.domain",
+    "nl": "Domein",
+    "fr": "Domaine",
+    "en": "Domain",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.registeredIp",
+    "nl": "Geregistreerd IP-adres",
+    "fr": "Adresse IP enregistrée",
+    "en": "Registered IP address",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

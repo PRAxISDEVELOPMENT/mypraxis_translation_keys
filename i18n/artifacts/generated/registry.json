@@ -5,8 +5,8 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 3256,
-    "uniqueKeys": 3256,
+    "totalEntries": 3258,
+    "uniqueKeys": 3258,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -21439,6 +21439,30 @@
         "nl": "DocuSign gegevens",
         "fr": "Détails DocuSign",
         "en": "DocuSign details"
+      }
+    },
+    {
+      "key": "common.domain",
+      "namespace": "common",
+      "leaf": "domain",
+      "segments": [
+        "common",
+        "domain"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3257
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Domein",
+        "fr": "Domaine",
+        "en": "Domain"
       }
     },
     {
@@ -44065,6 +44089,30 @@
         "nl": "Registreren",
         "fr": "S'inscrire",
         "en": "Register"
+      }
+    },
+    {
+      "key": "common.registeredIp",
+      "namespace": "common",
+      "leaf": "registeredIp",
+      "segments": [
+        "common",
+        "registeredIp"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3258
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Geregistreerd IP-adres",
+        "fr": "Adresse IP enregistrée",
+        "en": "Registered IP address"
       }
     },
     {
@@ -78894,7 +78942,7 @@
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2239
+      "keyCount": 2241
     },
     {
       "name": "confirmation",

@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-05-05T12:44:09.623Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260505124349-5mrttd.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 1,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "applicationNames.test",
+      "suggestedNamespace": "applicationNames",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"applicationNames\".",
+      "submittedEntry": {
+        "nl": "test",
+        "fr": "",
+        "en": "",
+        "requestedNamespace": "applicationNames"
+      },
+      "proposedEntry": {
+        "key": "applicationNames.test",
+        "nl": "test",
+        "fr": "",
+        "en": "",
+        "applications": [
+          "mypraxis_web"
+        ]
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

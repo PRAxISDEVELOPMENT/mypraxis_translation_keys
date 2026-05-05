@@ -29851,5 +29851,23 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.googleTranslateNLFR",
+    "nl": "Google Translate NL - FR",
+    "fr": "Google Translate NL - FR",
+    "en": "Google Translate NL - FR",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.googleTranslateNLEN",
+    "nl": "Google Translate NL - EN",
+    "fr": "Google Translate NL - EN",
+    "en": "Google Translate NL - EN",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

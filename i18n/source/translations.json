@@ -5423,7 +5423,8 @@
     "fr": "Numéro d’entreprise",
     "en": "Company registration number",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -30001,6 +30002,24 @@
     "nl": "Geregistreerd IP-adres",
     "fr": "Adresse IP enregistrée",
     "en": "Registered IP address",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.contactAndAddress",
+    "nl": "Contact en adres",
+    "fr": "Contact et adresse",
+    "en": "Contact & address",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.familyStatus",
+    "nl": "Gezinssituatie",
+    "fr": "Situation familiale",
+    "en": "Family status",
     "applications": [
       "mypraxis_web"
     ]

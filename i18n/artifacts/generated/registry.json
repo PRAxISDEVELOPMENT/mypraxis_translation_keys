@@ -5,8 +5,8 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 3258,
-    "uniqueKeys": 3258,
+    "totalEntries": 3260,
+    "uniqueKeys": 3260,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -14292,6 +14292,7 @@
         "companyRegistrationNumber"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -14884,6 +14885,30 @@
         "nl": "Contact 4de graad",
         "fr": "Contact de 4ième degré",
         "en": "Contact 4th degree"
+      }
+    },
+    {
+      "key": "common.contactAndAddress",
+      "namespace": "common",
+      "leaf": "contactAndAddress",
+      "segments": [
+        "common",
+        "contactAndAddress"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3259
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Contact en adres",
+        "fr": "Contact et adresse",
+        "en": "Contact & address"
       }
     },
     {
@@ -24678,6 +24703,30 @@
         "nl": "Gezinsinformatie",
         "fr": "Information sur la famille",
         "en": "Family information"
+      }
+    },
+    {
+      "key": "common.familyStatus",
+      "namespace": "common",
+      "leaf": "familyStatus",
+      "segments": [
+        "common",
+        "familyStatus"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3260
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Gezinssituatie",
+        "fr": "Situation familiale",
+        "en": "Family status"
       }
     },
     {
@@ -78942,7 +78991,7 @@
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2241
+      "keyCount": 2243
     },
     {
       "name": "confirmation",

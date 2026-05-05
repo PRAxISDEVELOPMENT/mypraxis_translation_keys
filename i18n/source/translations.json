@@ -13405,7 +13405,8 @@
     "fr": "Authentification multifactorielle",
     "en": "Multi-factor authentication",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {

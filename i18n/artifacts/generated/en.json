@@ -3035,7 +3035,7 @@
     "extraInfosDeleted": "Extra info(s) deleted",
     "factorOnPurchasePriceChanged": "Factor on purchase price changed",
     "facturationDataChanged": "Facturation data changed",
-    "fileSendToODOO": "File forwarded for formatting in ODOO",
+    "fileSendToODOO": "File forwarded for formatting in ODO",
     "fileUploadSucceed": "File upload succeed!",
     "furhterInstructionWereSentTo": "Further instructions were sent to {{value}}",
     "globalContactAdded": "Global contact added",

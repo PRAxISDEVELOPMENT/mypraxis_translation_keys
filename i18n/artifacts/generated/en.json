@@ -2022,6 +2022,7 @@
     "smsAndSmsToTechnicianOnGuardDuty": "SMS + SMS to technician on guard duty",
     "SMSOperatorAction": "SMS operator action",
     "sMSSend": "SMS send",
+    "smsSubBlueprint": "SMS SUB blueprint",
     "SMSType": "SMS type",
     "SMSWhenArmingSystem": "SMS when (dis)arming the system",
     "smsWithConfirmation": "SMS with confirmation",

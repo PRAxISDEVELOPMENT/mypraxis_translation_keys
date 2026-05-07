@@ -5,8 +5,8 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 3262,
-    "uniqueKeys": 3262,
+    "totalEntries": 3263,
+    "uniqueKeys": 3263,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -48982,6 +48982,30 @@
       }
     },
     {
+      "key": "common.smsSubBlueprint",
+      "namespace": "common",
+      "leaf": "smsSubBlueprint",
+      "segments": [
+        "common",
+        "smsSubBlueprint"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3263
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "SMS SUB blauwdruk",
+        "fr": "SMS SUB blueprint",
+        "en": "SMS SUB blueprint"
+      }
+    },
+    {
       "key": "common.SMSType",
       "namespace": "common",
       "leaf": "SMSType",
@@ -79040,7 +79064,7 @@
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2244
+      "keyCount": 2245
     },
     {
       "name": "confirmation",

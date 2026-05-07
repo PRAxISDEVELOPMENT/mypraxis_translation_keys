@@ -2017,6 +2017,7 @@
   "common.smsAndSmsToTechnicianOnGuardDuty",
   "common.SMSOperatorAction",
   "common.sMSSend",
+  "common.smsSubBlueprint",
   "common.SMSType",
   "common.SMSWhenArmingSystem",
   "common.smsWithConfirmation",

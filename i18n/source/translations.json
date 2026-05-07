@@ -30042,5 +30042,16 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.smsSubBlueprint",
+    "nl": "SMS SUB blauwdruk",
+    "fr": "SMS SUB blueprint",
+    "en": "SMS SUB blueprint",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]
+
+

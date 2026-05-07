@@ -2022,6 +2022,7 @@
     "smsAndSmsToTechnicianOnGuardDuty": "SMS + SMS au technicien de permanence",
     "SMSOperatorAction": "Intervention d'un opérateur PRAxIS pour un contrat SMS",
     "sMSSend": "SMS envoyé",
+    "smsSubBlueprint": "SMS SUB blueprint",
     "SMSType": "Type de SMS",
     "SMSWhenArmingSystem": "SMS lors de l'armement/désarmement du système",
     "smsWithConfirmation": "SMS avec confirmation",

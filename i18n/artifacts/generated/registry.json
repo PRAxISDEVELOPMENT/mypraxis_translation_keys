@@ -5,8 +5,8 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 3260,
-    "uniqueKeys": 3260,
+    "totalEntries": 3262,
+    "uniqueKeys": 3262,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -33019,6 +33019,30 @@
         "nl": "Maak klant aan",
         "fr": "Créer le client",
         "en": "Make client"
+      }
+    },
+    {
+      "key": "common.makeFileInODOO",
+      "namespace": "common",
+      "leaf": "makeFileInODOO",
+      "segments": [
+        "common",
+        "makeFileInODOO"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3261
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Bestand opmaken in ODOO",
+        "fr": "Mettre en forme le fichier dans ODOO",
+        "en": "Format file in ODOO"
       }
     },
     {
@@ -73144,6 +73168,30 @@
       }
     },
     {
+      "key": "success.fileSendToODOO",
+      "namespace": "success",
+      "leaf": "fileSendToODOO",
+      "segments": [
+        "success",
+        "fileSendToODOO"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3262
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Bestand doorgestuurd voor opmaak in ODOO",
+        "fr": "Fichier transmis pour mise en forme dans ODOO",
+        "en": "File forwarded for formatting in ODOO"
+      }
+    },
+    {
       "key": "success.fileUploadSucceed",
       "namespace": "success",
       "leaf": "fileUploadSucceed",
@@ -78992,7 +79040,7 @@
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2243
+      "keyCount": 2244
     },
     {
       "name": "confirmation",
@@ -79041,7 +79089,7 @@
       "label": "Succes",
       "description": "Success messages, completed state feedback, and positive confirmations.",
       "status": "active",
-      "keyCount": 234
+      "keyCount": 235
     },
     {
       "name": "warning",

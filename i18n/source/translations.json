@@ -30024,5 +30024,23 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.makeFileInODOO",
+    "nl": "Bestand opmaken in ODOO",
+    "fr": "Mettre en forme le fichier dans ODOO",
+    "en": "Format file in ODOO",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "success.fileSendToODOO",
+    "nl": "Bestand doorgestuurd voor opmaak in ODOO",
+    "fr": "Fichier transmis pour mise en forme dans ODOO",
+    "en": "File forwarded for formatting in ODOO",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

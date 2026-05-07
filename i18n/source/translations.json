@@ -30038,7 +30038,7 @@
     "key": "success.fileSendToODOO",
     "nl": "Bestand doorgestuurd voor opmaak in ODOO",
     "fr": "Fichier transmis pour mise en forme dans ODOO",
-    "en": "File forwarded for formatting in ODOO",
+    "en": "File forwarded for formatting in ODOOO",
     "applications": [
       "mypraxis_web"
     ]

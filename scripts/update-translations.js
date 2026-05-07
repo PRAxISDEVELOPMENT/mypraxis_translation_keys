@@ -37,12 +37,11 @@ function capture(command, args, options = {}) {
 }
 
 function commandExists(command) {
-  const probe = process.platform === 'win32' ? 'where' : 'command';
-  const args = process.platform === 'win32' ? [command] : ['-v', command];
+  const probe = process.platform === 'win32' ? 'where' : 'sh';
+  const args = process.platform === 'win32' ? [command] : ['-c', 'command -v "$1"', 'sh', command];
   const result = spawnSync(probe, args, {
     cwd: ROOT_DIR,
-    stdio: 'ignore',
-    shell: process.platform !== 'win32'
+    stdio: 'ignore'
   });
 
   return result.status === 0;

@@ -30141,5 +30141,23 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.activeCallAlreadyExists",
+    "nl": "Er is al een actieve oproep",
+    "fr": "Il y a déjà un appel actif",
+    "en": "There is already an active call",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.clickToCall",
+    "nl": "Klik om te bellen",
+    "fr": "Cliquez pour appeler",
+    "en": "Click to call",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

@@ -5,8 +5,8 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 3273,
-    "uniqueKeys": 3273,
+    "totalEntries": 3275,
+    "uniqueKeys": 3275,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -4140,6 +4140,30 @@
         "nl": "Activatiedatum & tijdstip",
         "fr": "Date/heure d’activation",
         "en": "Activation date/time"
+      }
+    },
+    {
+      "key": "common.activeCallAlreadyExists",
+      "namespace": "common",
+      "leaf": "activeCallAlreadyExists",
+      "segments": [
+        "common",
+        "activeCallAlreadyExists"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3274
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Er is al een actieve oproep",
+        "fr": "Il y a déjà un appel actif",
+        "en": "There is already an active call"
       }
     },
     {
@@ -12826,6 +12850,30 @@
         "nl": "Klik op de groep om uitzonderingen te beheren",
         "fr": "Cliquez sur le groupe concerné pour gérer une exception",
         "en": "Click on the group to manage exceptions"
+      }
+    },
+    {
+      "key": "common.clickToCall",
+      "namespace": "common",
+      "leaf": "clickToCall",
+      "segments": [
+        "common",
+        "clickToCall"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3275
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Klik om te bellen",
+        "fr": "Cliquez pour appeler",
+        "en": "Click to call"
       }
     },
     {
@@ -79304,7 +79352,7 @@
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2255
+      "keyCount": 2257
     },
     {
       "name": "confirmation",

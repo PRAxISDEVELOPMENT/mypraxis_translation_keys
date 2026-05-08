@@ -5,8 +5,8 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 3263,
-    "uniqueKeys": 3263,
+    "totalEntries": 3273,
+    "uniqueKeys": 3273,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -9881,6 +9881,30 @@
       }
     },
     {
+      "key": "common.callAnswered",
+      "namespace": "common",
+      "leaf": "callAnswered",
+      "segments": [
+        "common",
+        "callAnswered"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3271
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Oproep beantwoord",
+        "fr": "Appel répondu",
+        "en": "Call answered"
+      }
+    },
+    {
       "key": "common.callAt",
       "namespace": "common",
       "leaf": "callAt",
@@ -10146,6 +10170,30 @@
         "nl": "Gebeld op",
         "fr": "Appelé le",
         "en": "Called on"
+      }
+    },
+    {
+      "key": "common.callEnded",
+      "namespace": "common",
+      "leaf": "callEnded",
+      "segments": [
+        "common",
+        "callEnded"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3272
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Oproep beëindigd",
+        "fr": "Appel terminé",
+        "en": "Call ended"
       }
     },
     {
@@ -20670,6 +20718,30 @@
       }
     },
     {
+      "key": "common.deviceAvailable",
+      "namespace": "common",
+      "leaf": "deviceAvailable",
+      "segments": [
+        "common",
+        "deviceAvailable"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3269
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Toestel beschikbaar",
+        "fr": "Appareil disponible",
+        "en": "Device available"
+      }
+    },
+    {
       "key": "common.didnTFindTheDesiredCentraleDialerCommunicator",
       "namespace": "common",
       "leaf": "didnTFindTheDesiredCentraleDialerCommunicator",
@@ -29356,6 +29428,30 @@
       }
     },
     {
+      "key": "common.incomingCall",
+      "namespace": "common",
+      "leaf": "incomingCall",
+      "segments": [
+        "common",
+        "incomingCall"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3270
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Inkomende oproep",
+        "fr": "Appel entrant",
+        "en": "Incoming call"
+      }
+    },
+    {
       "key": "common.incomingCalls",
       "namespace": "common",
       "leaf": "incomingCalls",
@@ -37188,6 +37284,30 @@
       }
     },
     {
+      "key": "common.noPhoneRoleFound",
+      "namespace": "common",
+      "leaf": "noPhoneRoleFound",
+      "segments": [
+        "common",
+        "noPhoneRoleFound"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3265
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Geen telefoonrol gevonden",
+        "fr": "Aucun rôle téléphonique trouvé",
+        "en": "No phone role found"
+      }
+    },
+    {
       "key": "common.noPolling",
       "namespace": "common",
       "leaf": "noPolling",
@@ -37406,6 +37526,30 @@
       }
     },
     {
+      "key": "common.notConnected",
+      "namespace": "common",
+      "leaf": "notConnected",
+      "segments": [
+        "common",
+        "notConnected"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3267
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Niet verbonden",
+        "fr": "Non connecté",
+        "en": "Not connected"
+      }
+    },
+    {
       "key": "common.notes",
       "namespace": "common",
       "leaf": "notes",
@@ -37523,6 +37667,30 @@
         "nl": "Meldingen gerangschikt van oud naar nieuw",
         "fr": "Notifications classées par ordre chronologique, de la plus ancienne à la plus récente",
         "en": "Notifications sorted from old to new"
+      }
+    },
+    {
+      "key": "common.noUserFound",
+      "namespace": "common",
+      "leaf": "noUserFound",
+      "segments": [
+        "common",
+        "noUserFound"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3266
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Geen gebruiker gevonden",
+        "fr": "Aucun utilisateur trouvé",
+        "en": "No user found"
       }
     },
     {
@@ -41205,6 +41373,30 @@
         "nl": "Rol telefonie",
         "fr": "Rôle de la téléphonie",
         "en": "Phone role"
+      }
+    },
+    {
+      "key": "common.phoneStatus",
+      "namespace": "common",
+      "leaf": "phoneStatus",
+      "segments": [
+        "common",
+        "phoneStatus"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3264
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Status telefonie",
+        "fr": "Statut téléphonie",
+        "en": "Phone status"
       }
     },
     {
@@ -53647,6 +53839,30 @@
       }
     },
     {
+      "key": "common.unknownStatus",
+      "namespace": "common",
+      "leaf": "unknownStatus",
+      "segments": [
+        "common",
+        "unknownStatus"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3273
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Onbekende status",
+        "fr": "Statut inconnu",
+        "en": "Unknown status"
+      }
+    },
+    {
       "key": "common.unlinkAllCustomers",
       "namespace": "common",
       "leaf": "unlinkAllCustomers",
@@ -57230,6 +57446,30 @@
         "nl": "Arbeidsongeval",
         "fr": "Accident de travail",
         "en": "Work accident"
+      }
+    },
+    {
+      "key": "common.workStation",
+      "namespace": "common",
+      "leaf": "workStation",
+      "segments": [
+        "common",
+        "workStation"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3268
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Werkstation",
+        "fr": "Poste de travail",
+        "en": "Workstation"
       }
     },
     {
@@ -79064,7 +79304,7 @@
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2245
+      "keyCount": 2255
     },
     {
       "name": "confirmation",

@@ -30051,7 +30051,95 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.phoneStatus",
+    "nl": "Status telefonie",
+    "fr": "Statut téléphonie",
+    "en": "Phone status",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.noPhoneRoleFound",
+    "nl": "Geen telefoonrol gevonden",
+    "fr": "Aucun rôle téléphonique trouvé",
+    "en": "No phone role found",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.noUserFound",
+    "nl": "Geen gebruiker gevonden",
+    "fr": "Aucun utilisateur trouvé",
+    "en": "No user found",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.notConnected",
+    "nl": "Niet verbonden",
+    "fr": "Non connecté",
+    "en": "Not connected",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.workStation",
+    "nl": "Werkstation",
+    "fr": "Poste de travail",
+    "en": "Workstation",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.deviceAvailable",
+    "nl": "Toestel beschikbaar",
+    "fr": "Appareil disponible",
+    "en": "Device available",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.incomingCall",
+    "nl": "Inkomende oproep",
+    "fr": "Appel entrant",
+    "en": "Incoming call",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.callAnswered",
+    "nl": "Oproep beantwoord",
+    "fr": "Appel répondu",
+    "en": "Call answered",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.callEnded",
+    "nl": "Oproep beëindigd",
+    "fr": "Appel terminé",
+    "en": "Call ended",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.unknownStatus",
+    "nl": "Onbekende status",
+    "fr": "Statut inconnu",
+    "en": "Unknown status",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]
-
-

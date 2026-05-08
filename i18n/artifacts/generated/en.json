@@ -2878,7 +2878,7 @@
     "thisReportIsSentDailyAndIfApplicableStoredAround0900": "This report is sent daily and, if applicable, stored around 09:00.",
     "toggleAutomaticActivationOfInactiveClientsBetween20h00And06h00AsSoonAsWeReceiveExternalNotificationsAndWeHaveTheFullAddressAndAtLeast1CallNumberInTheCallList": "Enable/disable automatic activation of inactive clients between 20h00 and 06h00 as soon as we receive external notifications and we have the full address and at least 1 call number in the call list.",
     "translationProposalsAreBeingSubmitted": "Translation suggestions are being submitted",
-    "translationPullRequestIsBeingCreated": "Translation changes are being prepared.",
+    "translationPullRequestIsBeingCreated": "Translation changes are being prepared",
     "translationsAreBeingSubmitted": "Translations are being submitted",
     "translationWorkflowIsRunning": "Translations are being processed",
     "transmissionMethodIsNotSupported": "Transmission method is not supported",

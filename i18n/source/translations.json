@@ -30227,7 +30227,7 @@
     "key": "info.translationPullRequestIsBeingCreated",
     "nl": "Vertaalwijzigingen worden klaargezet",
     "fr": "Les modifications de traduction sont en cours de préparation",
-    "en": "Translation changes are being prepared.",
+    "en": "Translation changes are being prepared",
     "applications": [
       "mypraxis_web"
     ]

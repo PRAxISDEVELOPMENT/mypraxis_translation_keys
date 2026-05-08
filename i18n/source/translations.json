@@ -1607,6 +1607,15 @@
     ]
   },
   {
+    "key": "common.activeCallAlreadyExists",
+    "nl": "Er is al een actieve oproep",
+    "fr": "Il y a déjà un appel actif",
+    "en": "There is already an active call",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.activeCallInProgress",
     "nl": "Actieve oproep bezig",
     "fr": "Appel en cours",
@@ -1926,6 +1935,15 @@
     "en": "Additional info",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.additionArrangementsCanOnlyConfiguredTroughSectionObligationsOfTheContractors",
+    "nl": "Bijkomende afspraken kunnen alleen worden geconfigureerd via de sectie “Verplichtingen van de contractanten”.",
+    "fr": "Les arrangements supplémentaires ne peuvent être configurés que via la section « Obligations des contractants ».",
+    "en": "Additional arrangements can only be configured through the section “Obligations of the contractors”.",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -2646,6 +2664,15 @@
     ]
   },
   {
+    "key": "common.answered",
+    "nl": "Beantwoord",
+    "fr": "Répondu",
+    "en": "Answered",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.API",
     "nl": "API",
     "fr": "API",
@@ -3088,6 +3115,15 @@
     ]
   },
   {
+    "key": "common.available",
+    "nl": "Beschikbaar",
+    "fr": "Disponible",
+    "en": "Available",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.availableFor",
     "nl": "Beschikbaar voor",
     "fr": "Disponible pour",
@@ -3110,6 +3146,15 @@
     "nl": "In afwachting van goedkeuring",
     "fr": "En attente d’approbation",
     "en": "Awaiting approval",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.away",
+    "nl": "Afwezig",
+    "fr": "Absent",
+    "en": "Away",
     "applications": [
       "mypraxis_web"
     ]
@@ -3671,6 +3716,15 @@
     ]
   },
   {
+    "key": "common.businessTrip",
+    "nl": "Zakenreis",
+    "fr": "Voyage d'affaires",
+    "en": "Business trip",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.busNumber",
     "nl": "Busnummer",
     "fr": "Numéro de boîte",
@@ -3742,6 +3796,15 @@
     "en": "Call",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.callAnswered",
+    "nl": "Oproep beantwoord",
+    "fr": "Appel répondu",
+    "en": "Call answered",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -3848,6 +3911,15 @@
     ]
   },
   {
+    "key": "common.callEnded",
+    "nl": "Oproep beëindigd",
+    "fr": "Appel terminé",
+    "en": "Call ended",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.callInformation",
     "nl": "Oproepgegevens",
     "fr": "Information sur l'appel",
@@ -3935,6 +4007,15 @@
     "nl": "Oproepen voor persoon",
     "fr": "Appels pour la personne",
     "en": "Calls for person",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.callStatusses",
+    "nl": "Oproepstatussen",
+    "fr": "Statuts d’appel",
+    "en": "Call statuses",
     "applications": [
       "mypraxis_web"
     ]
@@ -4845,6 +4926,15 @@
     ]
   },
   {
+    "key": "common.clickToCall",
+    "nl": "Klik om te bellen",
+    "fr": "Cliquez pour appeler",
+    "en": "Click to call",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.clickToInitiateCall",
     "nl": "Klik hier om een oproep te starten",
     "fr": "Cliquez ici pour lancer un appel",
@@ -5642,6 +5732,15 @@
     "nl": "Contact 4de graad",
     "fr": "Contact de 4ième degré",
     "en": "Contact 4th degree",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.contactAndAddress",
+    "nl": "Contact en adres",
+    "fr": "Contact et adresse",
+    "en": "Contact & address",
     "applications": [
       "mypraxis_web"
     ]
@@ -7835,6 +7934,15 @@
     ]
   },
   {
+    "key": "common.deviceAvailable",
+    "nl": "Toestel beschikbaar",
+    "fr": "Appareil disponible",
+    "en": "Device available",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.didnTFindTheDesiredCentraleDialerCommunicator",
     "nl": "Gewenste centrale (kiezer/communicator) niet gevonden",
     "fr": "Impossible de trouver la centrale (transmetteur/communicateur) souhaitée.",
@@ -8055,6 +8163,15 @@
     ]
   },
   {
+    "key": "common.dnd",
+    "nl": "Niet storen",
+    "fr": "Ne pas déranger",
+    "en": "Do not disturb",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.document",
     "nl": "Document",
     "fr": "Document",
@@ -8123,6 +8240,15 @@
     "nl": "DocuSign gegevens",
     "fr": "Détails DocuSign",
     "en": "DocuSign details",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.domain",
+    "nl": "Domein",
+    "fr": "Domaine",
+    "en": "Domain",
     "applications": [
       "mypraxis_web"
     ]
@@ -8768,6 +8894,15 @@
     ]
   },
   {
+    "key": "common.ended",
+    "nl": "Beëindigd",
+    "fr": "Terminé",
+    "en": "Ended",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.endOfLife",
     "nl": "End of life",
     "fr": "Fin de vie",
@@ -9336,6 +9471,15 @@
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.familyStatus",
+    "nl": "Gezinssituatie",
+    "fr": "Situation familiale",
+    "en": "Family status",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -10278,6 +10422,24 @@
     ]
   },
   {
+    "key": "common.googleTranslateNLEN",
+    "nl": "Google Translate NL - EN",
+    "fr": "Google Translate NL - EN",
+    "en": "Google Translate NL - EN",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.googleTranslateNLFR",
+    "nl": "Google Translate NL - FR",
+    "fr": "Google Translate NL - FR",
+    "en": "Google Translate NL - FR",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.goToTickets",
     "nl": "Ga naar tickets",
     "fr": "Aller vers 'Tickets'",
@@ -10855,6 +11017,15 @@
     ]
   },
   {
+    "key": "common.idle",
+    "nl": "Inactief",
+    "fr": "Inactif",
+    "en": "Idle",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.ifACommercialActionIsActiveAtInstaller",
     "nl": "Indien er een commerciële actie actief is op installateurniveau (met betrekking tot die factuur), is dit de 'korting' die de installateur krijgt van PRAxIS",
     "fr": "Si une action commerciale est active au niveau de l’installateur (concernant cette facture), il s’agit de la 'remise' que l’installateur reçoit de PRAxIS",
@@ -10941,6 +11112,15 @@
     "nl": "Importeren of manueel",
     "fr": "Importation ou manuellement",
     "en": "Import or manual",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.incall",
+    "nl": "In gesprek",
+    "fr": "En appel",
+    "en": "In call",
     "applications": [
       "mypraxis_web"
     ]
@@ -11059,6 +11239,15 @@
     "nl": "Inkomend",
     "fr": "Entrant",
     "en": "Incoming",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.incomingCall",
+    "nl": "Inkomende oproep",
+    "fr": "Appel entrant",
+    "en": "Incoming call",
     "applications": [
       "mypraxis_web"
     ]
@@ -12392,6 +12581,15 @@
     ]
   },
   {
+    "key": "common.lunchBreak",
+    "nl": "Lunchpauze",
+    "fr": "Pause déjeuner",
+    "en": "Lunch break",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.mailToClient",
     "nl": "Mail naar klant",
     "fr": "E-mail au client",
@@ -12453,6 +12651,15 @@
     "en": "Make client",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.makeFileInODOO",
+    "nl": "Bestand opmaken in ODOO",
+    "fr": "Mettre en forme le fichier dans ODOO",
+    "en": "Format file in ODOO",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -13829,15 +14036,6 @@
     ]
   },
   {
-    "key": "common.additionArrangementsCanOnlyConfiguredTroughSectionObligationsOfTheContractors",
-    "nl": "Bijkomende afspraken kunnen alleen worden geconfigureerd via de sectie “Verplichtingen van de contractanten”.",
-    "fr": "Les arrangements supplémentaires ne peuvent être configurés que via la section « Obligations des contractants ».",
-    "en": "Additional arrangements can only be configured through the section “Obligations of the contractors”.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
     "key": "common.noAlarmPrioritySelected",
     "nl": "Geen alarmprioriteit geselecteerd",
     "fr": "Aucune priorité d'alarme sélectionnée",
@@ -14042,6 +14240,15 @@
     ]
   },
   {
+    "key": "common.noPhoneRoleFound",
+    "nl": "Geen telefoonrol gevonden",
+    "fr": "Aucun rôle téléphonique trouvé",
+    "en": "No phone role found",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.noPolling",
     "nl": "Geen polling",
     "fr": "Aucun Polling",
@@ -14125,6 +14332,15 @@
     ]
   },
   {
+    "key": "common.notConnected",
+    "nl": "Niet verbonden",
+    "fr": "Non connecté",
+    "en": "Not connected",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.notes",
     "nl": "Notities",
     "fr": "Remarques",
@@ -14165,6 +14381,24 @@
     "nl": "Meldingen gerangschikt van oud naar nieuw",
     "fr": "Notifications classées par ordre chronologique, de la plus ancienne à la plus récente",
     "en": "Notifications sorted from old to new",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.noUserFound",
+    "nl": "Geen gebruiker gevonden",
+    "fr": "Aucun utilisateur trouvé",
+    "en": "No user found",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.noUsersFound",
+    "nl": "Geen gebruikers gevonden",
+    "fr": "Aucun utilisateur trouvé",
+    "en": "No users found",
     "applications": [
       "mypraxis_web"
     ]
@@ -14536,6 +14770,15 @@
     "nl": "Offline",
     "fr": "Déconnecté",
     "en": "Offline",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.offWork",
+    "nl": "Buiten werktijd",
+    "fr": "En dehors des heures de travail",
+    "en": "Off work",
     "applications": [
       "mypraxis_web"
     ]
@@ -15554,6 +15797,15 @@
     ]
   },
   {
+    "key": "common.phoneStatus",
+    "nl": "Status telefonie",
+    "fr": "Statut téléphonie",
+    "en": "Phone status",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.photo",
     "nl": "Foto",
     "fr": "Photo",
@@ -15887,6 +16139,15 @@
     ]
   },
   {
+    "key": "common.presenceStatusses",
+    "nl": "Aanwezigheidsstatussen",
+    "fr": "Statuts de présence",
+    "en": "Presence statuses",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.preview",
     "nl": "Voorbeeld",
     "fr": "Aperçu",
@@ -16190,6 +16451,15 @@
     "nl": "Handelingen",
     "fr": "Déroulement",
     "en": "Proceedings",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.processing",
+    "nl": "Bezig met verwerken",
+    "fr": "Traitement en cours",
+    "en": "Processing",
     "applications": [
       "mypraxis_web"
     ]
@@ -16677,6 +16947,15 @@
     "nl": "Registreren",
     "fr": "S'inscrire",
     "en": "Register",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.registeredIp",
+    "nl": "Geregistreerd IP-adres",
+    "fr": "Adresse IP enregistrée",
+    "en": "Registered IP address",
     "applications": [
       "mypraxis_web"
     ]
@@ -17473,6 +17752,15 @@
     "en": "Reverse order",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.ringing",
+    "nl": "Gaat over",
+    "fr": "Sonnerie",
+    "en": "Ringing",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -18490,6 +18778,15 @@
     "nl": "SMS verzonden",
     "fr": "SMS envoyé",
     "en": "SMS send",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.smsSubBlueprint",
+    "nl": "SMS SUB blauwdruk",
+    "fr": "SMS SUB blueprint",
+    "en": "SMS SUB blueprint",
     "applications": [
       "mypraxis_web"
     ]
@@ -20256,6 +20553,15 @@
     ]
   },
   {
+    "key": "common.unknownStatus",
+    "nl": "Onbekende status",
+    "fr": "Statut inconnu",
+    "en": "Unknown status",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.unlinkAllCustomers",
     "nl": "Alle klanten ontkoppelen",
     "fr": "Dissocier tous les clients",
@@ -21622,6 +21928,24 @@
     ]
   },
   {
+    "key": "common.workStation",
+    "nl": "Werkstation",
+    "fr": "Poste de travail",
+    "en": "Workstation",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.workStations",
+    "nl": "Werkstations",
+    "fr": "Postes de travail",
+    "en": "Workstations",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.write",
     "nl": "Schrijven",
     "fr": "Écriture",
@@ -22347,7 +22671,7 @@
   },
   {
     "key": "error.crmCallCenterWasNotFound",
-    "nl": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden.",
+    "nl": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden.,",
     "fr": "[CRM] Centrale de permanence '{{callcenter_number}}' pas trouvé.",
     "en": "[CRM] Call center '{{callcenter_number}}' was not found",
     "applications": [
@@ -26126,6 +26450,42 @@
     ]
   },
   {
+    "key": "info.translationProposalsAreBeingSubmitted",
+    "nl": "Vertaalvoorstellen worden ingediend",
+    "fr": "Les propositions de traduction sont en cours d’envoi",
+    "en": "Translation suggestions are being submitted",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.translationPullRequestIsBeingCreated",
+    "nl": "Vertaalwijzigingen worden klaargezet",
+    "fr": "Les modifications de traduction sont en cours de préparation",
+    "en": "Translation changes are being prepared",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.translationsAreBeingSubmitted",
+    "nl": "Vertalingen worden ingediend",
+    "fr": "Les traductions sont en cours d’envoi",
+    "en": "Translations are being submitted",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.translationWorkflowIsRunning",
+    "nl": "Vertalingen worden verwerkt",
+    "fr": "Les traductions sont en cours de traitement",
+    "en": "Translations are being processed",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "info.transmissionMethodIsNotSupported",
     "nl": "Wijze van transmissie wordt niet ondersteund",
     "fr": "Cette méthode de transmission n'est pas prise en charge",
@@ -27661,6 +28021,15 @@
     "nl": "Facturatiegegevens gewijzigd",
     "fr": "Données de facturation modifiées",
     "en": "Facturation data changed",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "success.fileSendToODOO",
+    "nl": "Bestand doorgestuurd voor opmaak in ODOO",
+    "fr": "Fichier transmis pour mise en forme dans ODOO",
+    "en": "File forwarded for formatting in ODOO",
     "applications": [
       "mypraxis_web"
     ]
@@ -29859,375 +30228,6 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.googleTranslateNLFR",
-    "nl": "Google Translate NL - FR",
-    "fr": "Google Translate NL - FR",
-    "en": "Google Translate NL - FR",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.googleTranslateNLEN",
-    "nl": "Google Translate NL - EN",
-    "fr": "Google Translate NL - EN",
-    "en": "Google Translate NL - EN",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.noUsersFound",
-    "nl": "Geen gebruikers gevonden",
-    "fr": "Aucun utilisateur trouvé",
-    "en": "No users found",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.available",
-    "nl": "Beschikbaar",
-    "fr": "Disponible",
-    "en": "Available",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.away",
-    "nl": "Afwezig",
-    "fr": "Absent",
-    "en": "Away",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.dnd",
-    "nl": "Niet storen",
-    "fr": "Ne pas déranger",
-    "en": "Do not disturb",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.lunchBreak",
-    "nl": "Lunchpauze",
-    "fr": "Pause déjeuner",
-    "en": "Lunch break",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.businessTrip",
-    "nl": "Zakenreis",
-    "fr": "Voyage d'affaires",
-    "en": "Business trip",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.offWork",
-    "nl": "Buiten werktijd",
-    "fr": "En dehors des heures de travail",
-    "en": "Off work",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.idle",
-    "nl": "Inactief",
-    "fr": "Inactif",
-    "en": "Idle",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.ringing",
-    "nl": "Gaat over",
-    "fr": "Sonnerie",
-    "en": "Ringing",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.answered",
-    "nl": "Beantwoord",
-    "fr": "Répondu",
-    "en": "Answered",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.incall",
-    "nl": "In gesprek",
-    "fr": "En appel",
-    "en": "In call",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.ended",
-    "nl": "Beëindigd",
-    "fr": "Terminé",
-    "en": "Ended",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.domain",
-    "nl": "Domein",
-    "fr": "Domaine",
-    "en": "Domain",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.registeredIp",
-    "nl": "Geregistreerd IP-adres",
-    "fr": "Adresse IP enregistrée",
-    "en": "Registered IP address",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.contactAndAddress",
-    "nl": "Contact en adres",
-    "fr": "Contact et adresse",
-    "en": "Contact & address",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.familyStatus",
-    "nl": "Gezinssituatie",
-    "fr": "Situation familiale",
-    "en": "Family status",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.makeFileInODOO",
-    "nl": "Bestand opmaken in ODOO",
-    "fr": "Mettre en forme le fichier dans ODOO",
-    "en": "Format file in ODOO",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "success.fileSendToODOO",
-    "nl": "Bestand doorgestuurd voor opmaak in ODOO",
-    "fr": "Fichier transmis pour mise en forme dans ODOO",
-    "en": "File forwarded for formatting in ODOO",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.smsSubBlueprint",
-    "nl": "SMS SUB blauwdruk",
-    "fr": "SMS SUB blueprint",
-    "en": "SMS SUB blueprint",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.phoneStatus",
-    "nl": "Status telefonie",
-    "fr": "Statut téléphonie",
-    "en": "Phone status",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.noPhoneRoleFound",
-    "nl": "Geen telefoonrol gevonden",
-    "fr": "Aucun rôle téléphonique trouvé",
-    "en": "No phone role found",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.noUserFound",
-    "nl": "Geen gebruiker gevonden",
-    "fr": "Aucun utilisateur trouvé",
-    "en": "No user found",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.notConnected",
-    "nl": "Niet verbonden",
-    "fr": "Non connecté",
-    "en": "Not connected",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.workStation",
-    "nl": "Werkstation",
-    "fr": "Poste de travail",
-    "en": "Workstation",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.deviceAvailable",
-    "nl": "Toestel beschikbaar",
-    "fr": "Appareil disponible",
-    "en": "Device available",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.incomingCall",
-    "nl": "Inkomende oproep",
-    "fr": "Appel entrant",
-    "en": "Incoming call",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.callAnswered",
-    "nl": "Oproep beantwoord",
-    "fr": "Appel répondu",
-    "en": "Call answered",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.callEnded",
-    "nl": "Oproep beëindigd",
-    "fr": "Appel terminé",
-    "en": "Call ended",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.unknownStatus",
-    "nl": "Onbekende status",
-    "fr": "Statut inconnu",
-    "en": "Unknown status",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.activeCallAlreadyExists",
-    "nl": "Er is al een actieve oproep",
-    "fr": "Il y a déjà un appel actif",
-    "en": "There is already an active call",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.clickToCall",
-    "nl": "Klik om te bellen",
-    "fr": "Cliquez pour appeler",
-    "en": "Click to call",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.presenceStatusses",
-    "nl": "Aanwezigheidsstatussen",
-    "fr": "Statuts de présence",
-    "en": "Presence statuses",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.callStatusses",
-    "nl": "Oproepstatussen",
-    "fr": "Statuts d’appel",
-    "en": "Call statuses",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.workStations",
-    "nl": "Werkstations",
-    "fr": "Postes de travail",
-    "en": "Workstations",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.translationsAreBeingSubmitted",
-    "nl": "Vertalingen worden ingediend",
-    "fr": "Les traductions sont en cours d’envoi",
-    "en": "Translations are being submitted",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.processing",
-    "nl": "Bezig met verwerken",
-    "fr": "Traitement en cours",
-    "en": "Processing",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.translationWorkflowIsRunning",
-    "nl": "Vertalingen worden verwerkt",
-    "fr": "Les traductions sont en cours de traitement",
-    "en": "Translations are being processed",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.translationProposalsAreBeingSubmitted",
-    "nl": "Vertaalvoorstellen worden ingediend",
-    "fr": "Les propositions de traduction sont en cours d’envoi",
-    "en": "Translation suggestions are being submitted",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.translationPullRequestIsBeingCreated",
-    "nl": "Vertaalwijzigingen worden klaargezet",
-    "fr": "Les modifications de traduction sont en cours de préparation",
-    "en": "Translation changes are being prepared",
     "applications": [
       "mypraxis_web"
     ]

@@ -30159,5 +30159,32 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.presenceStatusses",
+    "nl": "Aanwezigheidsstatussen",
+    "fr": "Statuts de présence",
+    "en": "Presence statuses",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.callStatusses",
+    "nl": "Oproepstatussen",
+    "fr": "Statuts d’appel",
+    "en": "Call statuses",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.workStations",
+    "nl": "Werkstations",
+    "fr": "Postes de travail",
+    "en": "Workstations",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

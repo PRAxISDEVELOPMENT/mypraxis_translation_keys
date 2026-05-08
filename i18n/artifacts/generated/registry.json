@@ -5,8 +5,8 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 3275,
-    "uniqueKeys": 3275,
+    "totalEntries": 3278,
+    "uniqueKeys": 3278,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -10460,6 +10460,30 @@
         "nl": "Oproepen voor persoon",
         "fr": "Appels pour la personne",
         "en": "Calls for person"
+      }
+    },
+    {
+      "key": "common.callStatusses",
+      "namespace": "common",
+      "leaf": "callStatusses",
+      "segments": [
+        "common",
+        "callStatusses"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3277
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Oproepstatussen",
+        "fr": "Statuts d’appel",
+        "en": "Call statuses"
       }
     },
     {
@@ -42321,6 +42345,30 @@
       }
     },
     {
+      "key": "common.presenceStatusses",
+      "namespace": "common",
+      "leaf": "presenceStatusses",
+      "segments": [
+        "common",
+        "presenceStatusses"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3276
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Aanwezigheidsstatussen",
+        "fr": "Statuts de présence",
+        "en": "Presence statuses"
+      }
+    },
+    {
       "key": "common.preview",
       "namespace": "common",
       "leaf": "preview",
@@ -57518,6 +57566,30 @@
         "nl": "Werkstation",
         "fr": "Poste de travail",
         "en": "Workstation"
+      }
+    },
+    {
+      "key": "common.workStations",
+      "namespace": "common",
+      "leaf": "workStations",
+      "segments": [
+        "common",
+        "workStations"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3278
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Werkstations",
+        "fr": "Postes de travail",
+        "en": "Workstations"
       }
     },
     {
@@ -79352,7 +79424,7 @@
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2257
+      "keyCount": 2260
     },
     {
       "name": "confirmation",

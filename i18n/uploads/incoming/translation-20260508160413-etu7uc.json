@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "testing",
+      "fr": "testg2",
+      "en": "test 3",
+      "requestedNamespace": "applicationNames",
+      "notes": "qsdf"
+    }
+  ]
+}

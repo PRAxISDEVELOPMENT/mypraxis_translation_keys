@@ -30186,5 +30186,50 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "info.translationsAreBeingSubmitted",
+    "nl": "Vertalingen worden ingediend",
+    "fr": "Les traductions sont en cours d’envoi",
+    "en": "Translations are being submitted",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.processing",
+    "nl": "Bezig met verwerken",
+    "fr": "Traitement en cours",
+    "en": "Processing",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.translationWorkflowIsRunning",
+    "nl": "Vertalingen worden verwerkt",
+    "fr": "Les traductions sont en cours de traitement",
+    "en": "Translations are being processed",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.translationProposalsAreBeingSubmitted",
+    "nl": "Vertaalvoorstellen worden ingediend",
+    "fr": "Les propositions de traduction sont en cours d’envoi",
+    "en": "Translation suggestions are being submitted",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.translationPullRequestIsBeingCreated",
+    "nl": "Vertaalwijzigingen worden klaargezet",
+    "fr": "Les modifications de traduction sont en cours de préparation",
+    "en": "Translation changes are being prepared",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

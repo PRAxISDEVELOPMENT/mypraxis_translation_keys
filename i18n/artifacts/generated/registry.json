@@ -5,8 +5,8 @@
     "en"
   ],
   "summary": {
-    "totalEntries": 3278,
-    "uniqueKeys": 3278,
+    "totalEntries": 3283,
+    "uniqueKeys": 3283,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -43172,6 +43172,30 @@
       }
     },
     {
+      "key": "common.processing",
+      "namespace": "common",
+      "leaf": "processing",
+      "segments": [
+        "common",
+        "processing"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3280
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Bezig met verwerken",
+        "fr": "Traitement en cours",
+        "en": "Processing"
+      }
+    },
+    {
       "key": "common.professionOfWifeHusband",
       "namespace": "common",
       "leaf": "professionOfWifeHusband",
@@ -69477,6 +69501,102 @@
       }
     },
     {
+      "key": "info.translationProposalsAreBeingSubmitted",
+      "namespace": "info",
+      "leaf": "translationProposalsAreBeingSubmitted",
+      "segments": [
+        "info",
+        "translationProposalsAreBeingSubmitted"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3282
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Vertaalvoorstellen worden ingediend",
+        "fr": "Les propositions de traduction sont en cours d’envoi",
+        "en": "Translation suggestions are being submitted"
+      }
+    },
+    {
+      "key": "info.translationPullRequestIsBeingCreated",
+      "namespace": "info",
+      "leaf": "translationPullRequestIsBeingCreated",
+      "segments": [
+        "info",
+        "translationPullRequestIsBeingCreated"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3283
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Vertaalwijzigingen worden klaargezet",
+        "fr": "Les modifications de traduction sont en cours de préparation",
+        "en": "Translation changes are being prepared"
+      }
+    },
+    {
+      "key": "info.translationsAreBeingSubmitted",
+      "namespace": "info",
+      "leaf": "translationsAreBeingSubmitted",
+      "segments": [
+        "info",
+        "translationsAreBeingSubmitted"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3279
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Vertalingen worden ingediend",
+        "fr": "Les traductions sont en cours d’envoi",
+        "en": "Translations are being submitted"
+      }
+    },
+    {
+      "key": "info.translationWorkflowIsRunning",
+      "namespace": "info",
+      "leaf": "translationWorkflowIsRunning",
+      "segments": [
+        "info",
+        "translationWorkflowIsRunning"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3281
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "resolved": {
+        "nl": "Vertalingen worden verwerkt",
+        "fr": "Les traductions sont en cours de traitement",
+        "en": "Translations are being processed"
+      }
+    },
+    {
       "key": "info.transmissionMethodIsNotSupported",
       "namespace": "info",
       "leaf": "transmissionMethodIsNotSupported",
@@ -79424,7 +79544,7 @@
       "label": "Algemeen",
       "description": "Reusable UI labels, buttons, headings, and generic interface text.",
       "status": "active",
-      "keyCount": 2260
+      "keyCount": 2261
     },
     {
       "name": "confirmation",
@@ -79445,7 +79565,7 @@
       "label": "Informatie",
       "description": "Informational helper text, onboarding copy, and contextual guidance.",
       "status": "active",
-      "keyCount": 288
+      "keyCount": 292
     },
     {
       "name": "metadata",

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-05-08T16:04:37.591Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260508160413-etu7uc.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 1,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "applicationNames.test3",
+      "suggestedNamespace": "applicationNames",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"applicationNames\".",
+      "submittedEntry": {
+        "nl": "testing",
+        "fr": "testg2",
+        "en": "test 3",
+        "notes": "qsdf",
+        "requestedNamespace": "applicationNames"
+      },
+      "proposedEntry": {
+        "key": "applicationNames.test3",
+        "nl": "testing",
+        "fr": "testg2",
+        "en": "test 3",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "qsdf"
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

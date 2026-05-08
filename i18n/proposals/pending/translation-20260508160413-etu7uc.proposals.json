@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "proposalBatchId": "translation-20260508160413-etu7uc.proposals",
+  "status": "pending-review",
+  "createdAt": "2026-05-08T16:04:37.642Z",
+  "source": {
+    "uploadFile": "i18n/uploads/incoming/translation-20260508160413-etu7uc.json",
+    "reportFile": "i18n/artifacts/reports/translation-20260508160413-etu7uc.report.json",
+    "proposalCount": 1
+  },
+  "review": {
+    "required": true,
+    "instructions": "Edit the proposedEntry block for each proposal in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "proposals": [
+    {
+      "proposalId": "translation-20260508160413-etu7uc.proposal-01",
+      "source": {
+        "uploadEntryIndex": 1
+      },
+      "review": {
+        "requestedNamespace": "applicationNames",
+        "suggestedKey": "applicationNames.test3",
+        "suggestedNamespace": "applicationNames",
+        "confidence": "requested",
+        "reason": "Upload explicitly requested namespace \"applicationNames\"."
+      },
+      "originalEntry": {
+        "nl": "testing",
+        "fr": "testg2",
+        "en": "test 3",
+        "notes": "qsdf",
+        "requestedNamespace": "applicationNames"
+      },
+      "proposedEntry": {
+        "key": "applicationNames.test3",
+        "nl": "testing",
+        "fr": "testg2",
+        "en": "test 3",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "qsdf"
+      }
+    }
+  ]
+}

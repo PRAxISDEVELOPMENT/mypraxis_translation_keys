@@ -3,8 +3,11 @@ const { LOCALES } = require('../core/constants');
 const { readApplicationConfig, readNamespaceConfig } = require('../core/config-loader');
 const {
   hasOwn,
+  getLocaleStatus,
+  normalizeStatusValue,
   readSourceEntries,
   sanitizeSourceEntries,
+  sanitizeStatusMap,
   sortEntries,
   toOptionalTrimmedString
 } = require('../core/source-entries');
@@ -23,8 +26,8 @@ const {
 } = require('./proposal-review-files');
 const { getUploadText } = require('./upload-text');
 
-const DIRECT_UPDATE_ALLOWED_FIELDS = new Set(['key', ...LOCALES]);
-const PROPOSAL_ALLOWED_FIELDS = new Set([...LOCALES, 'description', 'notes', 'requestedNamespace']);
+const DIRECT_UPDATE_ALLOWED_FIELDS = new Set(['key', ...LOCALES, 'status']);
+const PROPOSAL_ALLOWED_FIELDS = new Set([...LOCALES, 'status', 'description', 'notes', 'requestedNamespace']);
 
 function getUnexpectedFields(entry, allowedFields) {
   return Object.keys(entry).filter((field) => !allowedFields.has(field));
@@ -38,11 +41,12 @@ function buildDirectUpdate(uploadEntry, existingEntry, index) {
       type: 'error',
       index,
       key: existingEntry.key,
-      reason: `Direct updates may only contain key, nl, fr, and en. Unexpected fields: ${unexpectedFields.join(', ')}.`
+      reason: `Direct updates may only contain key, nl, fr, en, and status. Unexpected fields: ${unexpectedFields.join(', ')}.`
     };
   }
 
   const changes = {};
+  const statusChanges = {};
 
   for (const locale of LOCALES) {
     if (!hasOwn(uploadEntry, locale)) {
@@ -60,12 +64,55 @@ function buildDirectUpdate(uploadEntry, existingEntry, index) {
     }
   }
 
-  if (Object.keys(changes).length === 0) {
+  if (uploadEntry.status !== undefined) {
+    if (!uploadEntry.status || typeof uploadEntry.status !== 'object' || Array.isArray(uploadEntry.status)) {
+      return {
+        type: 'error',
+        index,
+        key: existingEntry.key,
+        reason: 'Direct update status must be an object when present.'
+      };
+    }
+
+    const unexpectedStatusLocales = Object.keys(uploadEntry.status).filter((locale) => !LOCALES.includes(locale));
+
+    if (unexpectedStatusLocales.length > 0) {
+      return {
+        type: 'error',
+        index,
+        key: existingEntry.key,
+        reason: `Direct update status contains invalid locales: ${unexpectedStatusLocales.join(', ')}.`
+      };
+    }
+
+    for (const locale of LOCALES) {
+      if (!hasOwn(uploadEntry.status, locale)) {
+        continue;
+      }
+
+      const nextStatus = normalizeStatusValue(uploadEntry.status[locale]);
+
+      if (!nextStatus) {
+        return {
+          type: 'error',
+          index,
+          key: existingEntry.key,
+          reason: `Direct update status.${locale} must be approved or review-required.`
+        };
+      }
+
+      if (nextStatus !== getLocaleStatus(existingEntry, locale)) {
+        statusChanges[locale] = nextStatus;
+      }
+    }
+  }
+
+  if (Object.keys(changes).length === 0 && Object.keys(statusChanges).length === 0) {
     return {
       type: 'skipped',
       index,
       key: existingEntry.key,
-      reason: 'No locale changes were provided for the existing key.'
+      reason: 'No locale or status changes were provided for the existing key.'
     };
   }
 
@@ -75,8 +122,13 @@ function buildDirectUpdate(uploadEntry, existingEntry, index) {
     key: existingEntry.key,
     namespace: existingEntry.key.split('.')[0],
     changes,
+    statusChanges,
     current: Object.fromEntries(LOCALES.map((locale) => [locale, existingEntry[locale]])),
-    next: Object.fromEntries(LOCALES.map((locale) => [locale, changes[locale] ?? existingEntry[locale]]))
+    next: Object.fromEntries(LOCALES.map((locale) => [locale, changes[locale] ?? existingEntry[locale]])),
+    currentStatus: Object.fromEntries(LOCALES.map((locale) => [locale, getLocaleStatus(existingEntry, locale)])),
+    nextStatus: Object.fromEntries(
+      LOCALES.map((locale) => [locale, statusChanges[locale] ?? getLocaleStatus(existingEntry, locale)])
+    )
   };
 }
 
@@ -96,9 +148,11 @@ function buildProposal(uploadEntry, index, usedKeys, namespaceConfig, applicatio
     return {
       type: 'error',
       index,
-      reason: `Proposal entries may only contain nl, fr, en, description, notes, and requestedNamespace. Unexpected fields: ${unexpectedFields.join(', ')}.`
+      reason: `Proposal entries may only contain nl, fr, en, status, description, notes, and requestedNamespace. Unexpected fields: ${unexpectedFields.join(', ')}.`
     };
   }
+
+  const status = sanitizeStatusMap(uploadEntry.status);
 
   if (hasOwn(uploadEntry, 'key')) {
     return {
@@ -106,6 +160,36 @@ function buildProposal(uploadEntry, index, usedKeys, namespaceConfig, applicatio
       index,
       reason: 'Proposal entries may not contain a key. Existing keys must be sent through the direct-update path.'
     };
+  }
+
+  if (uploadEntry.status !== undefined) {
+    if (!uploadEntry.status || typeof uploadEntry.status !== 'object' || Array.isArray(uploadEntry.status)) {
+      return {
+        type: 'error',
+        index,
+        reason: 'Proposal status must be an object when present.'
+      };
+    }
+
+    const unexpectedStatusLocales = Object.keys(uploadEntry.status).filter((locale) => !LOCALES.includes(locale));
+
+    if (unexpectedStatusLocales.length > 0) {
+      return {
+        type: 'error',
+        index,
+        reason: `Proposal status contains invalid locales: ${unexpectedStatusLocales.join(', ')}.`
+      };
+    }
+
+    for (const locale of LOCALES) {
+      if (hasOwn(uploadEntry.status, locale) && !normalizeStatusValue(uploadEntry.status[locale])) {
+        return {
+          type: 'error',
+          index,
+          reason: `Proposal status.${locale} must be approved or review-required.`
+        };
+      }
+    }
   }
 
   let namespaceSuggestion;
@@ -137,6 +221,10 @@ function buildProposal(uploadEntry, index, usedKeys, namespaceConfig, applicatio
     proposedEntry.notes = uploadEntry.notes.trim();
   }
 
+  if (status) {
+    proposedEntry.status = status;
+  }
+
   return {
     type: 'proposal',
     index,
@@ -148,6 +236,7 @@ function buildProposal(uploadEntry, index, usedKeys, namespaceConfig, applicatio
       nl: toOptionalTrimmedString(uploadEntry.nl) ?? '',
       fr: toOptionalTrimmedString(uploadEntry.fr) ?? '',
       en: toOptionalTrimmedString(uploadEntry.en) ?? '',
+      ...(status ? { status } : {}),
       ...(typeof uploadEntry.description === 'string' && uploadEntry.description.trim() !== ''
         ? { description: uploadEntry.description.trim() }
         : {}),
@@ -175,6 +264,15 @@ function applyDirectUpdates(entries, directUpdates) {
 
     for (const [locale, value] of Object.entries(update.changes)) {
       entry[locale] = value;
+    }
+
+    if (Object.keys(update.statusChanges || {}).length > 0) {
+      entry.status = sanitizeStatusMap({
+        ...(entry.status && typeof entry.status === 'object' && !Array.isArray(entry.status)
+          ? entry.status
+          : {}),
+        ...update.statusChanges
+      });
     }
   }
 }

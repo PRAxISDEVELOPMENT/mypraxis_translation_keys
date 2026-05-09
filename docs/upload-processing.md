@@ -82,6 +82,7 @@ Typical examples:
 - wording changes
 - typo fixes
 - locale text improvements for an existing key
+- per-locale review status changes with `status.nl`, `status.fr`, or `status.en`
 
 ## Flow B: Proposal
 

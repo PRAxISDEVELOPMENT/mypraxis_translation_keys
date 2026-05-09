@@ -1,4 +1,8 @@
 const { KEY_SEGMENT_PATTERN, LOCALES } = require('../core/constants');
+const {
+  getLocaleStatus,
+  normalizeStatusValue
+} = require('../core/source-entries');
 
 function formatEntryLabel(index, key) {
   return `entry ${index + 1}${key ? ` (${key})` : ''}`;
@@ -178,6 +182,47 @@ function collectIssues(entries, namespaceConfig, applicationConfig) {
         entries: [formatEntryLabel(index, normalizedKey)]
       });
     }
+
+    if (entry.status !== undefined) {
+      if (!entry.status || typeof entry.status !== 'object' || Array.isArray(entry.status)) {
+        errors.push({
+          category: 'invalid-status',
+          categoryLabel: 'Invalid review status',
+          key: normalizedKey,
+          message: `Key "${normalizedKey}" must define status as an object when present.`,
+          entries: [formatEntryLabel(index, normalizedKey)]
+        });
+      } else {
+        const unexpectedStatusLocales = Object.keys(entry.status).filter((locale) => !LOCALES.includes(locale));
+
+        if (unexpectedStatusLocales.length > 0) {
+          errors.push({
+            category: 'invalid-status',
+            categoryLabel: 'Invalid review status',
+            key: normalizedKey,
+            message: `Key "${normalizedKey}" uses invalid status locales: ${unexpectedStatusLocales.join(', ')}.`,
+            entries: [formatEntryLabel(index, normalizedKey)]
+          });
+        }
+
+        for (const locale of LOCALES) {
+          if (entry.status[locale] === undefined) {
+            continue;
+          }
+
+          if (!normalizeStatusValue(entry.status[locale])) {
+            errors.push({
+              category: 'invalid-status',
+              categoryLabel: 'Invalid review status',
+              key: normalizedKey,
+              locale,
+              message: `Key "${normalizedKey}" has invalid ${locale} status "${entry.status[locale]}". Allowed values: approved, review-required.`,
+              entries: [formatEntryLabel(index, normalizedKey)]
+            });
+          }
+        }
+      }
+    }
   }
 
   for (const [key, indexes] of keyUsage.entries()) {
@@ -230,6 +275,8 @@ function buildRegistry(entries, namespaceConfig) {
         duplicateCount: 0,
         duplicateValuesDiffer: false,
         missingLocales: [],
+        status: {},
+        reviewRequiredLocales: [],
         resolved: {}
       });
     }
@@ -240,6 +287,12 @@ function buildRegistry(entries, namespaceConfig) {
     record.duplicateCount += 1;
     record.resolved = Object.fromEntries(
       LOCALES.map((locale) => [locale, getResolvedValue(entry, locale)])
+    );
+    record.status = Object.fromEntries(
+      LOCALES.map((locale) => [locale, getLocaleStatus(entry, locale)])
+    );
+    record.reviewRequiredLocales = LOCALES.filter(
+      (locale) => getLocaleStatus(entry, locale) === 'review-required'
     );
     record.applications = Array.from(
       new Set([
@@ -271,7 +324,8 @@ function buildRegistry(entries, namespaceConfig) {
           JSON.stringify({
             nl: entries[entryNumber - 1]?.nl,
             fr: entries[entryNumber - 1]?.fr,
-            en: entries[entryNumber - 1]?.en
+            en: entries[entryNumber - 1]?.en,
+            status: entries[entryNumber - 1]?.status
           })
         )
       ).size > 1;
@@ -322,7 +376,12 @@ function buildSummary(entries, registry, namespaceConfig, applicationConfig, war
       warnings: warnings.length,
       errors: errors.length,
       duplicateKeys: registry.filter((record) => record.duplicateCount > 1).length,
-      keysWithMissingLocales: registry.filter((record) => record.missingLocales.length > 0).length
+      keysWithMissingLocales: registry.filter((record) => record.missingLocales.length > 0).length,
+      keysWithReviewRequired: registry.filter((record) => record.reviewRequiredLocales.length > 0).length,
+      localeReviewsRequired: registry.reduce(
+        (total, record) => total + record.reviewRequiredLocales.length,
+        0
+      )
     },
     namespaces: namespaceCounts,
     applicationCounts,

@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { LOCALES } = require('../core/constants');
+const { LOCALES, TRANSLATION_STATUSES } = require('../core/constants');
 const { OUTPUT_DIR } = require('../core/path-config');
 const { ensureDirectory } = require('../core/json-files');
 const { buildRegistry, buildSummary, getResolvedValue } = require('./issue-analysis');
@@ -133,13 +133,19 @@ function generateArtifacts(entries, namespaceConfig, applicationConfig, warnings
     JSON.stringify(
       {
         locales: LOCALES,
+        statusOptions: TRANSLATION_STATUSES,
         summary: {
           totalEntries: entries.length,
           uniqueKeys: registry.length,
           namespaces: namespaceSummaries.length,
           applications: applicationConfig.applications.length,
           duplicateKeys: registry.filter((record) => record.duplicateCount > 1).length,
-          keysWithMissingLocales: registry.filter((record) => record.missingLocales.length > 0).length
+          keysWithMissingLocales: registry.filter((record) => record.missingLocales.length > 0).length,
+          keysWithReviewRequired: registry.filter((record) => record.reviewRequiredLocales.length > 0).length,
+          localeReviewsRequired: registry.reduce(
+            (total, record) => total + record.reviewRequiredLocales.length,
+            0
+          )
         },
         applications: applicationConfig.applications,
         keys: registry,

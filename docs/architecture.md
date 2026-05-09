@@ -26,10 +26,12 @@ Responsibility:
 - holds the authoritative translation entries
 - acts as the single human-edited source of truth
 - feeds all generated runtime artifacts
+- optionally records per-locale review status for approved source keys
 
 Rules:
 
 - edit this file when you intend to change translation content directly
+- set `status.nl`, `status.fr`, or `status.en` to `review-required` when that locale needs review
 - keep generated files in sync after changes
 
 ### 2. Configuration
@@ -79,6 +81,7 @@ Responsibility:
 - validate canonical source data
 - analyze errors and warnings
 - generate derived artifact files
+- expose review status metadata through the generated registry
 - report repository translation health
 - verify whether generated files are already in sync
 

@@ -73,7 +73,7 @@ Quick Rules
   - Keep keys unique.
   - Prefer common.* for shared UI labels.
   - Keep applications accurate per key.
-  - Keep i18n/source/translations.json limited to key, locales, and applications.
+  - Use status.nl/fr/en = review-required only when a locale still needs review.
 `);
 }
 

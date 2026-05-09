@@ -73,7 +73,7 @@ Each entry contains:
 - a stable `key`
 - locale values such as `nl`, `fr`, and `en`
 - application scope
-- optional metadata when applicable
+- optional per-locale review status metadata when applicable
 
 Humans may edit this file directly when intentionally changing canonical content.
 
@@ -85,6 +85,8 @@ Generated artifacts include:
 
 - runtime locale trees such as [i18n/artifacts/generated/nl.json](i18n/artifacts/generated/nl.json), [i18n/artifacts/generated/fr.json](i18n/artifacts/generated/fr.json), and [i18n/artifacts/generated/en.json](i18n/artifacts/generated/en.json)
 - metadata files such as [i18n/artifacts/generated/registry.json](i18n/artifacts/generated/registry.json), [i18n/artifacts/generated/summary.json](i18n/artifacts/generated/summary.json), [i18n/artifacts/generated/keys.json](i18n/artifacts/generated/keys.json), [i18n/artifacts/generated/namespaces.json](i18n/artifacts/generated/namespaces.json), and [i18n/artifacts/generated/applications.json](i18n/artifacts/generated/applications.json)
+
+`status.nl`, `status.fr`, and `status.en` may be set to `review-required` in the source when a specific locale still needs review. Omitted statuses default to `approved`. Review metadata is exposed in `registry.json`; runtime locale files remain plain translation trees.
 
 These files are deterministic output. If they differ from source, either source changed, config changed, or the build logic changed.
 

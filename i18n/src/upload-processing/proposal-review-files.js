@@ -12,7 +12,9 @@ const {
 const { runBuild } = require('../core/script-runner');
 const {
   readSourceEntries,
+  normalizeStatusValue,
   sanitizeSourceEntries,
+  sanitizeStatusMap,
   sortEntries,
   toOptionalTrimmedString
 } = require('../core/source-entries');
@@ -43,6 +45,12 @@ function normalizeSubmittedEntry(proposal) {
 
   if (requestedNamespace) {
     normalized.requestedNamespace = requestedNamespace;
+  }
+
+  const status = sanitizeStatusMap(submittedEntry.status);
+
+  if (status) {
+    normalized.status = status;
   }
 
   return normalized;
@@ -214,6 +222,34 @@ function normalizeOptionalText(value, field, fileLabel) {
   return normalized === '' ? undefined : normalized;
 }
 
+function normalizeProposedStatus(status, fileLabel) {
+  if (status === undefined) {
+    return undefined;
+  }
+
+  if (!status || typeof status !== 'object' || Array.isArray(status)) {
+    throw new Error(`Proposal object "${fileLabel}" must define proposedEntry.status as an object when present.`);
+  }
+
+  const unexpectedStatusLocales = Object.keys(status).filter((locale) => !LOCALES.includes(locale));
+
+  if (unexpectedStatusLocales.length > 0) {
+    throw new Error(
+      `Proposal object "${fileLabel}" uses invalid status locales: ${unexpectedStatusLocales.join(', ')}.`
+    );
+  }
+
+  for (const locale of LOCALES) {
+    if (status[locale] !== undefined && !normalizeStatusValue(status[locale])) {
+      throw new Error(
+        `Proposal object "${fileLabel}" must define proposedEntry.status.${locale} as approved or review-required.`
+      );
+    }
+  }
+
+  return sanitizeStatusMap(status);
+}
+
 function validateProposalNamespace(key, namespaceConfig, fileLabel) {
   const namespace = key.split('.')[0];
 
@@ -249,6 +285,12 @@ function normalizeProposedEntry(proposedEntry, namespaceConfig, applicationConfi
 
   if (notes) {
     normalizedEntry.notes = notes;
+  }
+
+  const status = normalizeProposedStatus(proposedEntry.status, fileLabel);
+
+  if (status) {
+    normalizedEntry.status = status;
   }
 
   if (proposedEntry.deprecated !== undefined) {
@@ -408,7 +450,8 @@ function applyPendingProposalFiles(options = {}) {
     applications: item.entry.applications,
     nl: item.entry.nl,
     fr: item.entry.fr,
-    en: item.entry.en
+    en: item.entry.en,
+    ...(item.entry.status ? { status: item.entry.status } : {})
   }));
 
   for (const filePath of proposalFiles) {

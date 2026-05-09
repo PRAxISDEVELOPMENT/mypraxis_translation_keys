@@ -33,6 +33,25 @@
           "en": {
             "type": "string"
           },
+          "status": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Optional per-locale review status. Use review-required to mark a locale for review, approved to clear it.",
+            "properties": {
+              "nl": {
+                "type": "string",
+                "enum": ["approved", "review-required"]
+              },
+              "fr": {
+                "type": "string",
+                "enum": ["approved", "review-required"]
+              },
+              "en": {
+                "type": "string",
+                "enum": ["approved", "review-required"]
+              }
+            }
+          },
           "description": {
             "type": "string"
           },

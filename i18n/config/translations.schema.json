@@ -34,6 +34,25 @@
           "type": "string",
           "enum": ["mypraxis_app", "mypraxis_web", "documenten", "mypraxis_data"]
         }
+      },
+      "status": {
+        "type": "object",
+        "additionalProperties": false,
+        "description": "Optional per-locale review status. Omitted locales default to approved.",
+        "properties": {
+          "nl": {
+            "type": "string",
+            "enum": ["approved", "review-required"]
+          },
+          "fr": {
+            "type": "string",
+            "enum": ["approved", "review-required"]
+          },
+          "en": {
+            "type": "string",
+            "enum": ["approved", "review-required"]
+          }
+        }
       }
     }
   }

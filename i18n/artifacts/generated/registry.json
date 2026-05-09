@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3283,
-    "uniqueKeys": 3283,
+    "totalEntries": 3288,
+    "uniqueKeys": 3288,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -48193,6 +48193,36 @@
       }
     },
     {
+      "key": "common.odooCommandSent",
+      "namespace": "common",
+      "leaf": "odooCommandSent",
+      "segments": [
+        "common",
+        "odooCommandSent"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3288
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "De opdracht is succesvol naar Odoo verzonden",
+        "fr": "La commande a été envoyée avec succès vers Odoo",
+        "en": "The command was successfully sent to Odoo"
+      }
+    },
+    {
       "key": "common.of",
       "namespace": "common",
       "leaf": "of",
@@ -62177,6 +62207,36 @@
       }
     },
     {
+      "key": "common.startAttachmentsPreparation",
+      "namespace": "common",
+      "leaf": "startAttachmentsPreparation",
+      "segments": [
+        "common",
+        "startAttachmentsPreparation"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3287
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Start opmaak bijlagen",
+        "fr": "Démarrer la préparation des annexes",
+        "en": "Start attachment preparation"
+      }
+    },
+    {
       "key": "common.startDate",
       "namespace": "common",
       "leaf": "startDate",
@@ -62294,6 +62354,36 @@
         "nl": "Startdatum & -tijdstip",
         "fr": "Date/heure de début",
         "en": "Start date/time"
+      }
+    },
+    {
+      "key": "common.startInvoicing",
+      "namespace": "common",
+      "leaf": "startInvoicing",
+      "segments": [
+        "common",
+        "startInvoicing"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3286
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Start facturatie",
+        "fr": "Démarrer la facturation",
+        "en": "Start invoicing"
       }
     },
     {
@@ -63232,6 +63322,66 @@
         "nl": "Achternaam zaakvoerder",
         "fr": "Nom du gérant",
         "en": "Surname of the director"
+      }
+    },
+    {
+      "key": "common.syncCommissionNotes",
+      "namespace": "common",
+      "leaf": "syncCommissionNotes",
+      "segments": [
+        "common",
+        "syncCommissionNotes"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3285
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Synchroniseer commissienota's",
+        "fr": "Synchroniser les notes de commission",
+        "en": "Synchronize commission notes"
+      }
+    },
+    {
+      "key": "common.syncContacts",
+      "namespace": "common",
+      "leaf": "syncContacts",
+      "segments": [
+        "common",
+        "syncContacts"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3284
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Synchroniseer contacten",
+        "fr": "Synchroniser les contacts",
+        "en": "Synchronize contacts"
       }
     },
     {
@@ -99248,7 +99398,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2261
+      "keyCount": 2266
     },
     {
       "name": "confirmation",

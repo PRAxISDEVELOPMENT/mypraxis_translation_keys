@@ -30231,5 +30231,50 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.syncContacts",
+    "nl": "Synchroniseer contacten",
+    "fr": "Synchroniser les contacts",
+    "en": "Synchronize contacts",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.syncCommissionNotes",
+    "nl": "Synchroniseer commissienota's",
+    "fr": "Synchroniser les notes de commission",
+    "en": "Synchronize commission notes",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.startInvoicing",
+    "nl": "Start facturatie",
+    "fr": "Démarrer la facturation",
+    "en": "Start invoicing",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.startAttachmentsPreparation",
+    "nl": "Start opmaak bijlagen",
+    "fr": "Démarrer la préparation des annexes",
+    "en": "Start attachment preparation",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.odooCommandSent",
+    "nl": "De opdracht is succesvol naar Odoo verzonden",
+    "fr": "La commande a été envoyée avec succès vers Odoo",
+    "en": "The command was successfully sent to Odoo",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

@@ -3296,6 +3296,8 @@
     "turnOnTheNotificationsToggleToAllowAlertsAndUpdates": "Activez le bouton des notifications afin d’autoriser les alertes et les mises à jour.",
     "walkTestUpdatesArePaused": "Les mises à jour des tests de déplacement ont été suspendues. Veuillez reprendre pour recevoir les nouvelles données",
     "warning": "Attention",
+    "warningTestingEn": "WARNING TESTING FR",
+    "warningTestingEnWithoutReview": "WARNING TESTING FR WITHOUT REVIEW",
     "warningThisClientHasLinkedCustomers": "Attention - Ce client a des clients liés.",
     "whenCustomisingTheAssignedUserAccessRightsAlwaysVerifyThatAllAvailableFieldsAreSetToTheDesiredStatusManageShowHide": "Lors de la personnalisation des droits d’accès attribués, vérifiez toujours que tous les champs disponibles sont configurés avec le statut souhaité (gérer / afficher / masquer).",
     "withoutActiveContactPersonsAValidCallListWeCannotGuaranteeProperHandlingOfAlarmNotificationsPleaseAddContactPersonsOrContactPraxisGroupNvToWorkOutATailoredProcedure": "Sans personne de contact actif / liste d’appels valide, nous ne pouvons garantir le traitement adéquat des notifications d’alarme. Veuillez ajouter des personnes de contact ou contacter PRAxIS GROUP S.A. afin d’élaborer une procédure sur mesure.",

@@ -17764,6 +17764,24 @@
     ]
   },
   {
+    "key": "common.reviewApproved",
+    "nl": "Review goedgekeurd",
+    "fr": "Revue approuvée",
+    "en": "Review approved",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.reviewRequired",
+    "nl": "Review vereist",
+    "fr": "Revue requise",
+    "en": "Review required",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.ringing",
     "nl": "Gaat over",
     "fr": "Sonnerie",
@@ -30170,6 +30188,29 @@
     ]
   },
   {
+    "key": "warning.warningTestingEn",
+    "nl": "WARNING TESTING NL",
+    "fr": "WARNING TESTING FR",
+    "en": "WARNING TESTING EN",
+    "applications": [
+      "mypraxis_web"
+    ],
+    "status": {
+      "nl": "review-required",
+      "fr": "review-required",
+      "en": "review-required"
+    }
+  },
+  {
+    "key": "warning.warningTestingEnWithoutReview",
+    "nl": "WARNING TESTING NL WITHOUT REVIEW",
+    "fr": "WARNING TESTING FR WITHOUT REVIEW",
+    "en": "WARNING TESTING EN WITHOUT REVIEW",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "warning.warningThisClientHasLinkedCustomers",
     "nl": "Waarschuwing - Deze klant heeft gelinkte klanten.",
     "fr": "Attention - Ce client a des clients liés.",
@@ -30273,24 +30314,6 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.reviewApproved",
-    "nl": "Review goedgekeurd",
-    "fr": "Revue approuvée",
-    "en": "Review approved",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.reviewRequired",
-    "nl": "Review vereist",
-    "fr": "Revue requise",
-    "en": "Review required",
     "applications": [
       "mypraxis_web"
     ]

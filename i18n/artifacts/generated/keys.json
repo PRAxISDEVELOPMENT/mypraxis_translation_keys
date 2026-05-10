@@ -3277,6 +3277,8 @@
   "warning.turnOnTheNotificationsToggleToAllowAlertsAndUpdates",
   "warning.walkTestUpdatesArePaused",
   "warning.warning",
+  "warning.warningTestingEn",
+  "warning.warningTestingEnWithoutReview",
   "warning.warningThisClientHasLinkedCustomers",
   "warning.whenCustomisingTheAssignedUserAccessRightsAlwaysVerifyThatAllAvailableFieldsAreSetToTheDesiredStatusManageShowHide",
   "warning.withoutActiveContactPersonsAValidCallListWeCannotGuaranteeProperHandlingOfAlarmNotificationsPleaseAddContactPersonsOrContactPraxisGroupNvToWorkOutATailoredProcedure",

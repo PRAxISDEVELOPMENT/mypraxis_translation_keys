@@ -1486,13 +1486,16 @@
   },
   {
     "key": "common.actionNeeded",
-    "nl": "Actie vereist55",
+    "nl": "Actie vereist",
     "fr": "Action requise",
     "en": "Action needed",
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
-    ]
+    ],
+    "status": {
+      "nl": "review-required"
+    }
   },
   {
     "key": "common.actionPraxis",

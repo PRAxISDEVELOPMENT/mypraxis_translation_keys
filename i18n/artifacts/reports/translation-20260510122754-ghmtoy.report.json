@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-05-10T12:28:03.441Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260510122754-ghmtoy.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.actionNeeded",
+      "namespace": "common",
+      "changes": {
+        "nl": "Actie vereist"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Actie vereist.",
+        "fr": "Action requise",
+        "en": "Action needed"
+      },
+      "next": {
+        "nl": "Actie vereist",
+        "fr": "Action requise",
+        "en": "Action needed"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

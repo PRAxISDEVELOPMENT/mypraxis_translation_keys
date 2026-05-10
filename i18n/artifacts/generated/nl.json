@@ -157,7 +157,7 @@
     "aClientCanOnlyBeActivatedIfPraxisHasTheRemoteMonitoringContract": "Een klant kan enkel worden geactiveerd indien PRAxIS beschikt over het telebewakingscontract.",
     "action": "Actie",
     "actionDateAndTime": "Actiedatum & -tijd",
-    "actionNeeded": "Actie vereist.",
+    "actionNeeded": "Actie vereist",
     "actionPraxis": "Actie PRAxIS",
     "actions": "Acties",
     "actionsTaken": "Ondernomen acties",

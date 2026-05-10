@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-05-10T11:38:43.602Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260510113832-7dpovv.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 1,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.testingHere",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "TESTING HIER",
+        "fr": "TESETING ICI",
+        "en": "TESTING HERE",
+        "status": {
+          "nl": "review-required",
+          "fr": "review-required"
+        },
+        "notes": "QMDKLSF QSDF \nQ\nSD\nF \n\n\nQSDF",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.testingHere",
+        "nl": "TESTING HIER",
+        "fr": "TESETING ICI",
+        "en": "TESTING HERE",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "QMDKLSF QSDF \nQ\nSD\nF \n\n\nQSDF",
+        "status": {
+          "nl": "review-required",
+          "fr": "review-required"
+        }
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

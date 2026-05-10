@@ -30194,12 +30194,7 @@
     "en": "WARNING TESTING EN",
     "applications": [
       "mypraxis_web"
-    ],
-    "status": {
-      "nl": "review-required",
-      "fr": "review-required",
-      "en": "review-required"
-    }
+    ]
   },
   {
     "key": "warning.warningTestingEnWithoutReview",

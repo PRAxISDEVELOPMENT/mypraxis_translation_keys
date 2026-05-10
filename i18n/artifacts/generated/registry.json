@@ -15,8 +15,8 @@
     "applications": 5,
     "duplicateKeys": 0,
     "keysWithMissingLocales": 0,
-    "keysWithReviewRequired": 1,
-    "localeReviewsRequired": 3
+    "keysWithReviewRequired": 0,
+    "localeReviewsRequired": 0
   },
   "applications": [
     {
@@ -99096,15 +99096,11 @@
       "duplicateValuesDiffer": false,
       "missingLocales": [],
       "status": {
-        "nl": "review-required",
-        "fr": "review-required",
-        "en": "review-required"
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
       },
-      "reviewRequiredLocales": [
-        "nl",
-        "fr",
-        "en"
-      ],
+      "reviewRequiredLocales": [],
       "resolved": {
         "nl": "WARNING TESTING NL",
         "fr": "WARNING TESTING FR",

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.actionNeeded",
+      "status": {
+        "nl": "review-required"
+      }
+    }
+  ]
+}

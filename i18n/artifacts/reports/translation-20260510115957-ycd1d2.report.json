@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-05-10T12:00:08.016Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260510115957-ycd1d2.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.actionNeeded",
+      "namespace": "common",
+      "changes": {},
+      "statusChanges": {
+        "nl": "review-required"
+      },
+      "current": {
+        "nl": "Actie vereist",
+        "fr": "Action requise",
+        "en": "Action needed"
+      },
+      "next": {
+        "nl": "Actie vereist",
+        "fr": "Action requise",
+        "en": "Action needed"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "review-required",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

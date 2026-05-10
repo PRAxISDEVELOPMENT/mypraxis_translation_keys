@@ -15,8 +15,8 @@
     "applications": 5,
     "duplicateKeys": 0,
     "keysWithMissingLocales": 0,
-    "keysWithReviewRequired": 1,
-    "localeReviewsRequired": 1
+    "keysWithReviewRequired": 0,
+    "localeReviewsRequired": 0
   },
   "applications": [
     {
@@ -4769,15 +4769,13 @@
       "duplicateValuesDiffer": false,
       "missingLocales": [],
       "status": {
-        "nl": "review-required",
+        "nl": "approved",
         "fr": "approved",
         "en": "approved"
       },
-      "reviewRequiredLocales": [
-        "nl"
-      ],
+      "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Actie vereist",
+        "nl": "Actie vereist55",
         "fr": "Action requise",
         "en": "Action needed"
       }

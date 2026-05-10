@@ -1492,10 +1492,7 @@
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
-    ],
-    "status": {
-      "nl": "review-required"
-    }
+    ]
   },
   {
     "key": "common.actionPraxis",

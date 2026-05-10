@@ -14730,6 +14730,15 @@
     ]
   },
   {
+    "key": "common.odooCommandSent",
+    "nl": "De opdracht is succesvol naar Odoo verzonden",
+    "fr": "La commande a été envoyée avec succès vers Odoo",
+    "en": "The command was successfully sent to Odoo",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.of",
     "nl": "Van",
     "fr": "De",
@@ -18991,6 +19000,15 @@
     ]
   },
   {
+    "key": "common.startAttachmentsPreparation",
+    "nl": "Start opmaak bijlagen",
+    "fr": "Démarrer la préparation des annexes",
+    "en": "Start attachment preparation",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.startDate",
     "nl": "Startdatum",
     "fr": "Date de début",
@@ -19022,6 +19040,15 @@
     "nl": "Startdatum & -tijdstip",
     "fr": "Date/heure de début",
     "en": "Start date/time",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.startInvoicing",
+    "nl": "Start facturatie",
+    "fr": "Démarrer la facturation",
+    "en": "Start invoicing",
     "applications": [
       "mypraxis_web"
     ]
@@ -19314,6 +19341,24 @@
     ]
   },
   {
+    "key": "common.syncCommissionNotes",
+    "nl": "Synchroniseer commissienota's",
+    "fr": "Synchroniser les notes de commission",
+    "en": "Synchronize commission notes",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.syncContacts",
+    "nl": "Synchroniseer contacten",
+    "fr": "Synchroniser les contacts",
+    "en": "Synchronize contacts",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.systemData",
     "nl": "Systeemgegevens",
     "fr": "Données du système",
@@ -19554,6 +19599,19 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.testingHere",
+    "nl": "TESTING HIER",
+    "fr": "TESETING ICI",
+    "en": "TESTING HERE",
+    "applications": [
+      "mypraxis_web"
+    ],
+    "status": {
+      "nl": "review-required",
+      "fr": "review-required"
+    }
   },
   {
     "key": "common.text",
@@ -30228,51 +30286,6 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.syncContacts",
-    "nl": "Synchroniseer contacten",
-    "fr": "Synchroniser les contacts",
-    "en": "Synchronize contacts",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.syncCommissionNotes",
-    "nl": "Synchroniseer commissienota's",
-    "fr": "Synchroniser les notes de commission",
-    "en": "Synchronize commission notes",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.startInvoicing",
-    "nl": "Start facturatie",
-    "fr": "Démarrer la facturation",
-    "en": "Start invoicing",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.startAttachmentsPreparation",
-    "nl": "Start opmaak bijlagen",
-    "fr": "Démarrer la préparation des annexes",
-    "en": "Start attachment preparation",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.odooCommandSent",
-    "nl": "De opdracht is succesvol naar Odoo verzonden",
-    "fr": "La commande a été envoyée avec succès vers Odoo",
-    "en": "The command was successfully sent to Odoo",
     "applications": [
       "mypraxis_web"
     ]

@@ -15,8 +15,8 @@
     "applications": 5,
     "duplicateKeys": 0,
     "keysWithMissingLocales": 0,
-    "keysWithReviewRequired": 1,
-    "localeReviewsRequired": 1
+    "keysWithReviewRequired": 0,
+    "localeReviewsRequired": 0
   },
   "applications": [
     {
@@ -64193,11 +64193,9 @@
       "status": {
         "nl": "approved",
         "fr": "approved",
-        "en": "review-required"
+        "en": "approved"
       },
-      "reviewRequiredLocales": [
-        "en"
-      ],
+      "reviewRequiredLocales": [],
       "resolved": {
         "nl": "TESTING HIER",
         "fr": "TESETING ICI",

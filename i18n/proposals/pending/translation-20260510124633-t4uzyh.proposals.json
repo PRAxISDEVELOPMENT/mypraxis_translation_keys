@@ -1,0 +1,87 @@
+{
+  "version": 2,
+  "proposalBatchId": "translation-20260510124633-t4uzyh.proposals",
+  "status": "pending-review",
+  "createdAt": "2026-05-10T12:46:48.525Z",
+  "source": {
+    "uploadFile": "i18n/uploads/incoming/translation-20260510124633-t4uzyh.json",
+    "reportFile": "i18n/artifacts/reports/translation-20260510124633-t4uzyh.report.json",
+    "proposalCount": 2
+  },
+  "review": {
+    "required": true,
+    "instructions": "Edit the proposedEntry block for each proposal in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "proposals": [
+    {
+      "proposalId": "translation-20260510124633-t4uzyh.proposal-01",
+      "source": {
+        "uploadEntryIndex": 1
+      },
+      "review": {
+        "requestedNamespace": "warning",
+        "suggestedKey": "warning.warningTestingEn",
+        "suggestedNamespace": "warning",
+        "confidence": "requested",
+        "reason": "Upload explicitly requested namespace \"warning\"."
+      },
+      "originalEntry": {
+        "nl": "WARNING TESTING NL",
+        "fr": "WARNING TESTING FR",
+        "en": "WARNING TESTING EN",
+        "notes": "DIT IS EEN NOTITIE",
+        "requestedNamespace": "warning",
+        "status": {
+          "nl": "review-required",
+          "fr": "review-required",
+          "en": "review-required"
+        }
+      },
+      "proposedEntry": {
+        "key": "warning.warningTestingEn",
+        "nl": "WARNING TESTING NL",
+        "fr": "WARNING TESTING FR",
+        "en": "WARNING TESTING EN",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "DIT IS EEN NOTITIE",
+        "status": {
+          "nl": "review-required",
+          "fr": "review-required",
+          "en": "review-required"
+        }
+      }
+    },
+    {
+      "proposalId": "translation-20260510124633-t4uzyh.proposal-02",
+      "source": {
+        "uploadEntryIndex": 2
+      },
+      "review": {
+        "requestedNamespace": "warning",
+        "suggestedKey": "warning.warningTestingEnWithoutReview",
+        "suggestedNamespace": "warning",
+        "confidence": "requested",
+        "reason": "Upload explicitly requested namespace \"warning\"."
+      },
+      "originalEntry": {
+        "nl": "WARNING TESTING NL WITHOUT REVIEW",
+        "fr": "WARNING TESTING FR WITHOUT REVIEW",
+        "en": "WARNING TESTING EN WITHOUT REVIEW",
+        "notes": "DIT IS EEN NOTITIE WITHOTU REVEIW NEEDED",
+        "requestedNamespace": "warning"
+      },
+      "proposedEntry": {
+        "key": "warning.warningTestingEnWithoutReview",
+        "nl": "WARNING TESTING NL WITHOUT REVIEW",
+        "fr": "WARNING TESTING FR WITHOUT REVIEW",
+        "en": "WARNING TESTING EN WITHOUT REVIEW",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "DIT IS EEN NOTITIE WITHOTU REVEIW NEEDED"
+      }
+    }
+  ]
+}

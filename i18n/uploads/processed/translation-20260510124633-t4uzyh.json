@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "WARNING TESTING NL",
+      "fr": "WARNING TESTING FR",
+      "en": "WARNING TESTING EN",
+      "status": {
+        "nl": "review-required",
+        "fr": "review-required",
+        "en": "review-required"
+      },
+      "requestedNamespace": "warning",
+      "notes": "DIT IS EEN NOTITIE"
+    },
+    {
+      "nl": "WARNING TESTING NL WITHOUT REVIEW",
+      "fr": "WARNING TESTING FR WITHOUT REVIEW",
+      "en": "WARNING TESTING EN WITHOUT REVIEW",
+      "requestedNamespace": "warning",
+      "notes": "DIT IS EEN NOTITIE WITHOTU REVEIW NEEDED"
+    }
+  ]
+}

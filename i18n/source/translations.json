@@ -19601,15 +19601,6 @@
     ]
   },
   {
-    "key": "common.testingHere",
-    "nl": "TESTING HIER",
-    "fr": "TESETING ICI",
-    "en": "TESTING HERE",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
     "key": "common.text",
     "nl": "Tekst",
     "fr": "Texte",

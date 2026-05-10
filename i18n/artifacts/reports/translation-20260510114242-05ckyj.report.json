@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-05-10T11:42:51.158Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260510114242-05ckyj.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.testingHere",
+      "namespace": "common",
+      "changes": {},
+      "statusChanges": {
+        "en": "review-required"
+      },
+      "current": {
+        "nl": "TESTING HIER",
+        "fr": "TESETING ICI",
+        "en": "TESTING HERE"
+      },
+      "next": {
+        "nl": "TESTING HIER",
+        "fr": "TESETING ICI",
+        "en": "TESTING HERE"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "review-required"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

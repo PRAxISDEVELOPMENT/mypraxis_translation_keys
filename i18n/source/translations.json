@@ -19607,7 +19607,10 @@
     "en": "TESTING HERE",
     "applications": [
       "mypraxis_web"
-    ]
+    ],
+    "status": {
+      "en": "review-required"
+    }
   },
   {
     "key": "common.text",

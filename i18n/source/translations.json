@@ -30276,5 +30276,23 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.reviewApproved",
+    "nl": "Review goedgekeurd",
+    "fr": "Revue approuvée",
+    "en": "Review approved",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.reviewRequired",
+    "nl": "Review vereist",
+    "fr": "Revue requise",
+    "en": "Review required",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

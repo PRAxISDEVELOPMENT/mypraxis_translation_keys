@@ -1919,6 +1919,8 @@
   "common.results",
   "common.resume",
   "common.reverseOrder",
+  "common.reviewApproved",
+  "common.reviewRequired",
   "common.ringing",
   "common.riskOfTheGood",
   "common.roleTemplate",

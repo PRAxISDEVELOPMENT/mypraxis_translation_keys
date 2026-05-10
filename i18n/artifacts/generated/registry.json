@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3288,
-    "uniqueKeys": 3288,
+    "totalEntries": 3290,
+    "uniqueKeys": 3290,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -58136,6 +58136,66 @@
       }
     },
     {
+      "key": "common.reviewApproved",
+      "namespace": "common",
+      "leaf": "reviewApproved",
+      "segments": [
+        "common",
+        "reviewApproved"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3289
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Review goedgekeurd",
+        "fr": "Revue approuvée",
+        "en": "Review approved"
+      }
+    },
+    {
+      "key": "common.reviewRequired",
+      "namespace": "common",
+      "leaf": "reviewRequired",
+      "segments": [
+        "common",
+        "reviewRequired"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3290
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Review vereist",
+        "fr": "Revue requise",
+        "en": "Review required"
+      }
+    },
+    {
       "key": "common.ringing",
       "namespace": "common",
       "leaf": "ringing",
@@ -99398,7 +99458,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2266
+      "keyCount": 2268
     },
     {
       "name": "confirmation",

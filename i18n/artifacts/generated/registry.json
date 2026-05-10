@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3292,
-    "uniqueKeys": 3292,
+    "totalEntries": 3290,
+    "uniqueKeys": 3290,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -99078,66 +99078,6 @@
       }
     },
     {
-      "key": "warning.warningTestingEn",
-      "namespace": "warning",
-      "leaf": "warningTestingEn",
-      "segments": [
-        "warning",
-        "warningTestingEn"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        3279
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "status": {
-        "nl": "approved",
-        "fr": "approved",
-        "en": "approved"
-      },
-      "reviewRequiredLocales": [],
-      "resolved": {
-        "nl": "WARNING TESTING NL",
-        "fr": "WARNING TESTING FR",
-        "en": "WARNING TESTING EN"
-      }
-    },
-    {
-      "key": "warning.warningTestingEnWithoutReview",
-      "namespace": "warning",
-      "leaf": "warningTestingEnWithoutReview",
-      "segments": [
-        "warning",
-        "warningTestingEnWithoutReview"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        3280
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "status": {
-        "nl": "approved",
-        "fr": "approved",
-        "en": "approved"
-      },
-      "reviewRequiredLocales": [],
-      "resolved": {
-        "nl": "WARNING TESTING NL WITHOUT REVIEW",
-        "fr": "WARNING TESTING FR WITHOUT REVIEW",
-        "en": "WARNING TESTING EN WITHOUT REVIEW"
-      }
-    },
-    {
       "key": "warning.warningThisClientHasLinkedCustomers",
       "namespace": "warning",
       "leaf": "warningThisClientHasLinkedCustomers",
@@ -99150,7 +99090,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3281
+        3279
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -99180,7 +99120,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3282
+        3280
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -99210,7 +99150,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3283
+        3281
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -99240,7 +99180,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3284
+        3282
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -99270,7 +99210,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3285
+        3283
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -99300,7 +99240,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3286
+        3284
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -99330,7 +99270,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3287
+        3285
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -99360,7 +99300,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3288
+        3286
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -99390,7 +99330,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3289
+        3287
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -99420,7 +99360,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3290
+        3288
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -99450,7 +99390,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3291
+        3289
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -99480,7 +99420,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3292
+        3290
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -99574,7 +99514,7 @@
       "label": "Waarschuwingen",
       "description": "Teksten die de gebruiker wijzen op aandachtspunten, mogelijke gevolgen of vereiste zorgvuldigheid.",
       "status": "active",
-      "keyCount": 126
+      "keyCount": 124
     }
   ]
 }

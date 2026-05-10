@@ -30188,24 +30188,6 @@
     ]
   },
   {
-    "key": "warning.warningTestingEn",
-    "nl": "WARNING TESTING NL",
-    "fr": "WARNING TESTING FR",
-    "en": "WARNING TESTING EN",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "warning.warningTestingEnWithoutReview",
-    "nl": "WARNING TESTING NL WITHOUT REVIEW",
-    "fr": "WARNING TESTING FR WITHOUT REVIEW",
-    "en": "WARNING TESTING EN WITHOUT REVIEW",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
     "key": "warning.warningThisClientHasLinkedCustomers",
     "nl": "Waarschuwing - Deze klant heeft gelinkte klanten.",
     "fr": "Attention - Ce client a des clients liés.",

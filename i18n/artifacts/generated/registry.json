@@ -58160,7 +58160,7 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Review goedgekeurd",
+        "nl": "Beoordeling goedgekeurd",
         "fr": "Revue approuvée",
         "en": "Review approved"
       }
@@ -58190,7 +58190,7 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Review vereist",
+        "nl": "Beoordeling vereist",
         "fr": "Revue requise",
         "en": "Review required"
       }

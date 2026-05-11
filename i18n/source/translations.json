@@ -17765,7 +17765,7 @@
   },
   {
     "key": "common.reviewApproved",
-    "nl": "Review goedgekeurd",
+    "nl": "Beoordeling goedgekeurd",
     "fr": "Revue approuvée",
     "en": "Review approved",
     "applications": [
@@ -17774,7 +17774,7 @@
   },
   {
     "key": "common.reviewRequired",
-    "nl": "Review vereist",
+    "nl": "Beoordeling vereist",
     "fr": "Revue requise",
     "en": "Review required",
     "applications": [

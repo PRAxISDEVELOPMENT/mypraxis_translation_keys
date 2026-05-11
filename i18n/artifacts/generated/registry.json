@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3290,
-    "uniqueKeys": 3290,
+    "totalEntries": 3293,
+    "uniqueKeys": 3293,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -97607,6 +97607,96 @@
       }
     },
     {
+      "key": "warning.commissionRequestCannotBeAccepted",
+      "namespace": "warning",
+      "leaf": "commissionRequestCannotBeAccepted",
+      "segments": [
+        "warning",
+        "commissionRequestCannotBeAccepted"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3291
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Dit commissieverzoek kan niet worden goedgekeurd omwille van:",
+        "fr": "Cette demande de commission ne peut pas être approuvée pour la/les raison(s) suivante(s) :",
+        "en": "This commission request cannot be approved for the following reason(s):"
+      }
+    },
+    {
+      "key": "warning.commissionRequestClientPaymentPending",
+      "namespace": "warning",
+      "leaf": "commissionRequestClientPaymentPending",
+      "segments": [
+        "warning",
+        "commissionRequestClientPaymentPending"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3292
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "De betaling van de klant werd nog niet ontvangen.",
+        "fr": "Le paiement du client n’a pas encore été reçu.",
+        "en": "The client payment has not been received yet."
+      }
+    },
+    {
+      "key": "warning.commissionRequestHasNegativeInstallerCommission",
+      "namespace": "warning",
+      "leaf": "commissionRequestHasNegativeInstallerCommission",
+      "segments": [
+        "warning",
+        "commissionRequestHasNegativeInstallerCommission"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3293
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Het commissiebedrag voor de installateur is negatief.",
+        "fr": "Le montant de la commission pour l’installateur est négatif.",
+        "en": "The installer commission amount is negative."
+      }
+    },
+    {
       "key": "warning.customCallListSwitchWarning",
       "namespace": "warning",
       "leaf": "customCallListSwitchWarning",
@@ -99514,7 +99604,7 @@
       "label": "Waarschuwingen",
       "description": "Teksten die de gebruiker wijzen op aandachtspunten, mogelijke gevolgen of vereiste zorgvuldigheid.",
       "status": "active",
-      "keyCount": 124
+      "keyCount": 127
     }
   ]
 }

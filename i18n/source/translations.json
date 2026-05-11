@@ -30294,5 +30294,32 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "warning.commissionRequestCannotBeAccepted",
+    "nl": "Dit commissieverzoek kan niet worden goedgekeurd omwille van:",
+    "fr": "Cette demande de commission ne peut pas être approuvée pour la/les raison(s) suivante(s) :",
+    "en": "This commission request cannot be approved for the following reason(s):",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "warning.commissionRequestClientPaymentPending",
+    "nl": "De betaling van de klant werd nog niet ontvangen.",
+    "fr": "Le paiement du client n’a pas encore été reçu.",
+    "en": "The client payment has not been received yet.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "warning.commissionRequestHasNegativeInstallerCommission",
+    "nl": "Het commissiebedrag voor de installateur is negatief.",
+    "fr": "Le montant de la commission pour l’installateur est négatif.",
+    "en": "The installer commission amount is negative.",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

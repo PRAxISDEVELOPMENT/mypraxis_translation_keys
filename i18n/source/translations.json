@@ -30317,7 +30317,7 @@
     "key": "warning.commissionRequestHasNegativeInstallerCommission",
     "nl": "Het commissiebedrag voor de installateur is negatief.",
     "fr": "Le montant de la commission pour l’installateur est négatif.",
-    "en": "The installer commission amount is negative.",
+    "en": "The installer commission amount is negative",
     "applications": [
       "mypraxis_web"
     ]

@@ -3249,7 +3249,7 @@
     "clientNumberHasAlreadyBeenLinkedToAnotherCustomer": "Client number: {{value}} has already been linked to another customer.",
     "commissionRequestCannotBeAccepted": "This commission request cannot be approved for the following reason(s):",
     "commissionRequestClientPaymentPending": "The client payment has not been received yet.",
-    "commissionRequestHasNegativeInstallerCommission": "The installer commission amount is negative.",
+    "commissionRequestHasNegativeInstallerCommission": "The installer commission amount is negative",
     "customCallListSwitchWarning": "You are about to switch to a custom call list. This means that the standard action pattern will be overridden, and a custom calling order will be used.",
     "customDataIsAToolMadeAvailableToTheInstallerAndIsInaccessibleToUsersWithinPraxisGroupNvTheseFieldsAreIntendedSolelyForPotentialFutureIntegrationsWithYourErpOrCrmSystemPraxisGroupNvCanNeverBeHeldResponsibleForTheInformationInTheseFieldsEitherForItsUseOrForAnyLossThereof": "CUSTOM DATA is a tool made available to the installer and is inaccessible to users within PRAxIS GROUP N.V. These fields are intended solely for potential future integrations with your ERP or CRM system. PRAxIS GROUP N.V. can never be held responsible for the information in these fields, either for its use or for any loss thereof.",
     "customerInactivated": "You are about to inactivate the customer in our software",

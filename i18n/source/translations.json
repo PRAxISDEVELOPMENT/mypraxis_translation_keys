@@ -30321,5 +30321,23 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.notLoggedIn",
+    "nl": "Niet ingelogd",
+    "fr": "Non connecté",
+    "en": "Not logged in",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.deviceUnavailable",
+    "nl": "Toestel niet beschikbaar",
+    "fr": "Appareil indisponible",
+    "en": "Device unavailable",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

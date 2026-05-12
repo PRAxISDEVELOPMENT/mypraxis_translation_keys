@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3293,
-    "uniqueKeys": 3293,
+    "totalEntries": 3295,
+    "uniqueKeys": 3295,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -25950,6 +25950,36 @@
       }
     },
     {
+      "key": "common.deviceUnavailable",
+      "namespace": "common",
+      "leaf": "deviceUnavailable",
+      "segments": [
+        "common",
+        "deviceUnavailable"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3295
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Toestel niet beschikbaar",
+        "fr": "Appareil indisponible",
+        "en": "Device unavailable"
+      }
+    },
+    {
       "key": "common.didnTFindTheDesiredCentraleDialerCommunicator",
       "namespace": "common",
       "leaf": "didnTFindTheDesiredCentraleDialerCommunicator",
@@ -47069,6 +47099,36 @@
         "nl": "Meldingen gerangschikt van oud naar nieuw",
         "fr": "Notifications classées par ordre chronologique, de la plus ancienne à la plus récente",
         "en": "Notifications sorted from old to new"
+      }
+    },
+    {
+      "key": "common.notLoggedIn",
+      "namespace": "common",
+      "leaf": "notLoggedIn",
+      "segments": [
+        "common",
+        "notLoggedIn"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3294
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Niet ingelogd",
+        "fr": "Non connecté",
+        "en": "Not logged in"
       }
     },
     {
@@ -99548,7 +99608,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2268
+      "keyCount": 2270
     },
     {
       "name": "confirmation",

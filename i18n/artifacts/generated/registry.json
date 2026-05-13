@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3295,
-    "uniqueKeys": 3295,
+    "totalEntries": 3296,
+    "uniqueKeys": 3296,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -17796,6 +17796,36 @@
         "nl": "Merk communicator",
         "fr": "Marque du communicateur",
         "en": "Communicator brand"
+      }
+    },
+    {
+      "key": "common.communicatorRequiresVideo",
+      "namespace": "common",
+      "leaf": "communicatorRequiresVideo",
+      "segments": [
+        "common",
+        "communicatorRequiresVideo"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3296
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Communicator vereist videoverificatie",
+        "fr": "Le communicateur nécessite une vérification vidéo",
+        "en": "Communicator requires video verification"
       }
     },
     {
@@ -99608,7 +99638,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2270
+      "keyCount": 2271
     },
     {
       "name": "confirmation",

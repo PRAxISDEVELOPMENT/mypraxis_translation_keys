@@ -30339,5 +30339,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.communicatorRequiresVideo",
+    "nl": "Communicator vereist videoverificatie",
+    "fr": "Le communicateur nécessite une vérification vidéo",
+    "en": "Communicator requires video verification",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

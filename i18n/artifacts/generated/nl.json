@@ -3209,7 +3209,7 @@
     "aboutToDeleteATemporaryComment": "U staat op het punt een tijdelijke commentaar te verwijderen.",
     "aboutToDeleteAUser": "U staat op het punt een gebruiker te verwijderen.",
     "aboutToDeleteBackupCustomerNumber": "U staat op het punt back-up klantnummer te verwijderen: {{value}}",
-    "aboutToDeleteCallcenter": "Je staat op het punt om wachtdienst {{value}} te verwijderen",
+    "aboutToDeleteCallcenter": "U staat op het punt om wachtdienst {{value}} te verwijderen.",
     "aboutToDeleteCallInNumber": "Je staat op het punt inbelnummer {{value}} te verwijderen.",
     "aboutToDeleteCommercialActions": "Je staat op het punt om {{value}} commerciële actie(s) te verwijderen.",
     "aboutToDeleteCommunicator": "U staat op het punt om de communicator te verwijderen: {{value}}.",

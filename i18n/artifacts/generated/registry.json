@@ -96488,7 +96488,7 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Je staat op het punt om wachtdienst {{value}} te verwijderen",
+        "nl": "U staat op het punt om wachtdienst {{value}} te verwijderen.",
         "fr": "Vous êtes sur le point de supprimer le 'Service de permanence' : {{value}}",
         "en": "You are about to delete callcenter: {{value}}"
       }

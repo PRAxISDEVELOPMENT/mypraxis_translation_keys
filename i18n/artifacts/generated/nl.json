@@ -164,6 +164,7 @@
     "actionStatus": "Actiestatus",
     "actionTaken": "Ondernomen actie",
     "activate": "Activeren",
+    "activateCallcenter": "Wachtdienst activeren",
     "activateCommercialAction": "Commerciële actie activeren",
     "activateCommercialActionForThisClient": "Activeer commerciële actie voor deze klant",
     "activateContact": "Contact activeren",
@@ -2977,6 +2978,7 @@
     "backupAdded": "Back-up toegevoegd",
     "backupCustomerNumberDeleted": "Back-up klantnummer verwijderd",
     "calendarChanged": "Kalender gewijzigd",
+    "callcenterActivated": "Wachtdienst geactiveerd",
     "callcenterCreatedSuccessfully": "Wachtdienst succesvol aangemaakt",
     "callcenterDeleted": "Wachtdienst {{value}} verwijderd",
     "callInNumberDeleted": "Inbelnummer verwijderd",
@@ -3187,6 +3189,7 @@
     "zoneTypesDeleted": "{{value}} zonetype(s) verwijderd."
   },
   "warning": {
+    "aboutToActivateCallcenter": "U staat op het punt om wachtdienst {{value}} te activeren.",
     "aboutToActivateContact": "U staat op het punt om contact {{value}} te activeren",
     "aboutToCancelThisClientTermination": "U staat op het punt om de stopzetting van deze klant te annuleren.",
     "aboutToCreateADummyAccountThisUser": "U staat op het punt een dummyaccount aan te maken voor deze gebruiker.",

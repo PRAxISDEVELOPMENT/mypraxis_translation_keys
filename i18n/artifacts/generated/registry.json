@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3296,
-    "uniqueKeys": 3296,
+    "totalEntries": 3299,
+    "uniqueKeys": 3299,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -4961,6 +4961,36 @@
         "nl": "Activeren",
         "fr": "Activer",
         "en": "Activate"
+      }
+    },
+    {
+      "key": "common.activateCallcenter",
+      "namespace": "common",
+      "leaf": "activateCallcenter",
+      "segments": [
+        "common",
+        "activateCallcenter"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3299
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Wachtdienst activeren",
+        "fr": "Activer le service de garde",
+        "en": "Activate callcenter service"
       }
     },
     {
@@ -89536,6 +89566,36 @@
       }
     },
     {
+      "key": "success.callcenterActivated",
+      "namespace": "success",
+      "leaf": "callcenterActivated",
+      "segments": [
+        "success",
+        "callcenterActivated"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3297
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Wachtdienst geactiveerd",
+        "fr": "Service de garde activé",
+        "en": "Callcenter service activated"
+      }
+    },
+    {
       "key": "success.callcenterCreatedSuccessfully",
       "namespace": "success",
       "leaf": "callcenterCreatedSuccessfully",
@@ -95804,6 +95864,36 @@
       }
     },
     {
+      "key": "warning.aboutToActivateCallcenter",
+      "namespace": "warning",
+      "leaf": "aboutToActivateCallcenter",
+      "segments": [
+        "warning",
+        "aboutToActivateCallcenter"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3298
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "U staat op het punt om wachtdienst {{value}} te activeren.",
+        "fr": "Vous êtes sur le point d’activer le service de garde {{value}}.",
+        "en": "You are about to activate callcenter service {{value}}."
+      }
+    },
+    {
       "key": "warning.aboutToActivateContact",
       "namespace": "warning",
       "leaf": "aboutToActivateContact",
@@ -99638,7 +99728,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2271
+      "keyCount": 2272
     },
     {
       "name": "confirmation",
@@ -99687,14 +99777,14 @@
       "label": "Geslaagd",
       "description": "Teksten die bevestigen dat een actie correct is uitgevoerd of succesvol is afgerond.",
       "status": "active",
-      "keyCount": 235
+      "keyCount": 236
     },
     {
       "name": "warning",
       "label": "Waarschuwingen",
       "description": "Teksten die de gebruiker wijzen op aandachtspunten, mogelijke gevolgen of vereiste zorgvuldigheid.",
       "status": "active",
-      "keyCount": 127
+      "keyCount": 128
     }
   ]
 }

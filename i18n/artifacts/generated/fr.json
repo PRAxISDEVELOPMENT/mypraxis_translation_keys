@@ -164,6 +164,7 @@
     "actionStatus": "Statut de l'action",
     "actionTaken": "Action entreprise",
     "activate": "Activer",
+    "activateCallcenter": "Activer le service de garde",
     "activateCommercialAction": "Activer l’action commerciale",
     "activateCommercialActionForThisClient": "Activer l’action commerciale pour ce client",
     "activateContact": "Activer le contact",
@@ -2977,6 +2978,7 @@
     "backupAdded": "Back-up ajoutée",
     "backupCustomerNumberDeleted": "'Numéro de client back-up' supprimé",
     "calendarChanged": "Calendrier modifié",
+    "callcenterActivated": "Service de garde activé",
     "callcenterCreatedSuccessfully": "Service de permanence téléphonique créé avec succès",
     "callcenterDeleted": "Service de permanence {{value}} supprimé",
     "callInNumberDeleted": "Numéro d’appel dédié supprimé",
@@ -3187,6 +3189,7 @@
     "zoneTypesDeleted": "{{value}} type(s) de zone supprimé(s)."
   },
   "warning": {
+    "aboutToActivateCallcenter": "Vous êtes sur le point d’activer le service de garde {{value}}.",
     "aboutToActivateContact": "Vous êtes sur le point d’activer le contact : {{value}}",
     "aboutToCancelThisClientTermination": "Vous êtes sur le point d'annuler la résiliation de ce client.",
     "aboutToCreateADummyAccountThisUser": "Vous êtes sur le point de créer un compte factice pour cet utilisateur.",

@@ -30348,5 +30348,32 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "success.callcenterActivated",
+    "nl": "Wachtdienst geactiveerd",
+    "fr": "Service de garde activé",
+    "en": "Callcenter service activated",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "warning.aboutToActivateCallcenter",
+    "nl": "U staat op het punt om wachtdienst {{value}} te activeren.",
+    "fr": "Vous êtes sur le point d’activer le service de garde {{value}}.",
+    "en": "You are about to activate callcenter service {{value}}.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.activateCallcenter",
+    "nl": "Wachtdienst activeren",
+    "fr": "Activer le service de garde",
+    "en": "Activate callcenter service",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

@@ -164,6 +164,7 @@
     "actionStatus": "Action status",
     "actionTaken": "Action taken",
     "activate": "Activate",
+    "activateCallcenter": "Activate callcenter service",
     "activateCommercialAction": "Activate commercial action",
     "activateCommercialActionForThisClient": "Activate commercial action for this client",
     "activateContact": "Activate contact",
@@ -2977,6 +2978,7 @@
     "backupAdded": "Back-up added",
     "backupCustomerNumberDeleted": "Back-up customer number deleted",
     "calendarChanged": "Calendar changed",
+    "callcenterActivated": "Callcenter service activated",
     "callcenterCreatedSuccessfully": "Callcenter created successfully",
     "callcenterDeleted": "Callcenter {{value}} deleted",
     "callInNumberDeleted": "Call-in number deleted",
@@ -3187,6 +3189,7 @@
     "zoneTypesDeleted": "{{value}} zone type(s) deleted"
   },
   "warning": {
+    "aboutToActivateCallcenter": "You are about to activate callcenter service {{value}}.",
     "aboutToActivateContact": "You are about to activate contact: {{value}}",
     "aboutToCancelThisClientTermination": "You are about to cancel this client termination.",
     "aboutToCreateADummyAccountThisUser": "You are about to create a dummy account this user.",

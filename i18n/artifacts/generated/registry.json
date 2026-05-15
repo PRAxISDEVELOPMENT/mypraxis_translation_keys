@@ -15,8 +15,8 @@
     "applications": 5,
     "duplicateKeys": 0,
     "keysWithMissingLocales": 0,
-    "keysWithReviewRequired": 1,
-    "localeReviewsRequired": 2
+    "keysWithReviewRequired": 2,
+    "localeReviewsRequired": 3
   },
   "applications": [
     {
@@ -45580,13 +45580,15 @@
       "duplicateValuesDiffer": false,
       "missingLocales": [],
       "status": {
-        "nl": "approved",
+        "nl": "review-required",
         "fr": "approved",
         "en": "approved"
       },
-      "reviewRequiredLocales": [],
+      "reviewRequiredLocales": [
+        "nl"
+      ],
       "resolved": {
-        "nl": "Nieuwe vertalingen",
+        "nl": "Nieuwe vertalingen1",
         "fr": "Nouvelles traductions",
         "en": "New translations"
       }

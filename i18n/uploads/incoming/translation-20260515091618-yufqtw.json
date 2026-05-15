@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.newTranslations",
+      "nl": "Nieuwe vertalingen",
+      "status": {
+        "nl": "approved"
+      }
+    }
+  ]
+}

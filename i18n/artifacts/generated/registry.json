@@ -74790,7 +74790,7 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden.",
+        "nl": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden.d",
         "fr": "[CRM] Centrale de permanence '{{callcenter_number}}' pas trouvé.",
         "en": "[CRM] Call center '{{callcenter_number}}' was not found"
       }

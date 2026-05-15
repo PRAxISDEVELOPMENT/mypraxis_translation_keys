@@ -2479,7 +2479,7 @@
     "contractCannotBeGeneratedBecauseThePriceDetailsAreMissing": "Het contract kan niet gegenereerd worden omdat de prijsgegevens ontbreken",
     "contractCannotBeGeneratedDueToMissingRequiredInformation": "Het contract kan niet worden gegenereerd wegens ontbrekende vereiste informatie: {{values}}",
     "contractTypeIsRequiredToGenerateTelemonitoringContract": "Er moet een Type contract gekozen worden om het telemonitoringcontract te genereren",
-    "crmCallCenterWasNotFound": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden.",
+    "crmCallCenterWasNotFound": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden.d",
     "crmClientWasNotFound": "[CRM] Klant '{{client_number}}' werd niet gevonden.",
     "crmInstallerWasNotFound": "[CRM] Installateur '{{installer_number}}' werd niet gevonden.",
     "CSVMissingHeaders": "Er ontbreken verplichte headers in de CSV",

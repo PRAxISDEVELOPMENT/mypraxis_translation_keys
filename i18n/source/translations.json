@@ -30402,5 +30402,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.noIndex",
+    "nl": "Geen index",
+    "fr": "Sans index",
+    "en": "No index",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

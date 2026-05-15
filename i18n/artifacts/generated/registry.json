@@ -15,8 +15,8 @@
     "applications": 5,
     "duplicateKeys": 0,
     "keysWithMissingLocales": 0,
-    "keysWithReviewRequired": 0,
-    "localeReviewsRequired": 0
+    "keysWithReviewRequired": 1,
+    "localeReviewsRequired": 2
   },
   "applications": [
     {
@@ -74605,10 +74605,13 @@
       "missingLocales": [],
       "status": {
         "nl": "approved",
-        "fr": "approved",
-        "en": "approved"
+        "fr": "review-required",
+        "en": "review-required"
       },
-      "reviewRequiredLocales": [],
+      "reviewRequiredLocales": [
+        "fr",
+        "en"
+      ],
       "resolved": {
         "nl": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden.",
         "fr": "[CRM] Centrale de permanence '{{callcenter_number}}' pas trouvé.",

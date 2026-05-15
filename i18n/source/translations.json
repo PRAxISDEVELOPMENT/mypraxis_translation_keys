@@ -22775,7 +22775,11 @@
     "en": "[CRM] Call center '{{callcenter_number}}' was not found",
     "applications": [
       "unknown"
-    ]
+    ],
+    "status": {
+      "fr": "review-required",
+      "en": "review-required"
+    }
   },
   {
     "key": "error.crmClientWasNotFound",

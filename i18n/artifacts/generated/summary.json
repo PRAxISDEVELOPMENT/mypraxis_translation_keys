@@ -22,8 +22,8 @@
     "errors": 0,
     "duplicateKeys": 0,
     "keysWithMissingLocales": 0,
-    "keysWithReviewRequired": 0,
-    "localeReviewsRequired": 0
+    "keysWithReviewRequired": 1,
+    "localeReviewsRequired": 2
   },
   "namespaces": {
     "applicationNames": 15,

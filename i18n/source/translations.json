@@ -30375,5 +30375,32 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.incomingCallWaitingTimes",
+    "nl": "Wachttijden inkomende oproepen",
+    "fr": "Temps d’attente des appels entrants",
+    "en": "Incoming call waiting times",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.totalWaitingTime",
+    "nl": "Totale wachttijd",
+    "fr": "Temps d’attente total",
+    "en": "Total waiting time",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.waitingTime",
+    "nl": "Wachttijd",
+    "fr": "Temps d’attente",
+    "en": "Waiting time",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

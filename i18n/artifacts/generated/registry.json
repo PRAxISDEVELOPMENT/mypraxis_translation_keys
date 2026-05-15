@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3299,
-    "uniqueKeys": 3299,
+    "totalEntries": 3302,
+    "uniqueKeys": 3302,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -36940,6 +36940,36 @@
       }
     },
     {
+      "key": "common.incomingCallWaitingTimes",
+      "namespace": "common",
+      "leaf": "incomingCallWaitingTimes",
+      "segments": [
+        "common",
+        "incomingCallWaitingTimes"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3300
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Wachttijden inkomende oproepen",
+        "fr": "Temps d’attente des appels entrants",
+        "en": "Incoming call waiting times"
+      }
+    },
+    {
       "key": "common.incomplete",
       "namespace": "common",
       "leaf": "incomplete",
@@ -66610,6 +66640,36 @@
       }
     },
     {
+      "key": "common.totalWaitingTime",
+      "namespace": "common",
+      "leaf": "totalWaitingTime",
+      "segments": [
+        "common",
+        "totalWaitingTime"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3301
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Totale wachttijd",
+        "fr": "Temps d’attente total",
+        "en": "Total waiting time"
+      }
+    },
+    {
       "key": "common.trackAndTrace",
       "namespace": "common",
       "leaf": "trackAndTrace",
@@ -71052,6 +71112,36 @@
         "nl": "Vocale test",
         "fr": "Test vocal",
         "en": "Vocal test"
+      }
+    },
+    {
+      "key": "common.waitingTime",
+      "namespace": "common",
+      "leaf": "waitingTime",
+      "segments": [
+        "common",
+        "waitingTime"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3302
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Wachttijd",
+        "fr": "Temps d’attente",
+        "en": "Waiting time"
       }
     },
     {
@@ -99728,7 +99818,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2272
+      "keyCount": 2275
     },
     {
       "name": "confirmation",

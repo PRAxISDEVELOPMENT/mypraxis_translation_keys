@@ -1552,6 +1552,15 @@
     ]
   },
   {
+    "key": "common.activateCallcenter",
+    "nl": "Wachtdienst activeren",
+    "fr": "Activer le service de garde",
+    "en": "Activate callcenter service",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.activateCommercialAction",
     "nl": "Commerciële actie activeren",
     "fr": "Activer l’action commerciale",
@@ -5462,6 +5471,15 @@
     ]
   },
   {
+    "key": "common.communicatorRequiresVideo",
+    "nl": "Communicator vereist videoverificatie",
+    "fr": "Le communicateur nécessite une vérification vidéo",
+    "en": "Communicator requires video verification",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.communicators",
     "nl": "Communicatoren",
     "fr": "Communicateurs",
@@ -7938,6 +7956,15 @@
     "nl": "Toestel beschikbaar",
     "fr": "Appareil disponible",
     "en": "Device available",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.deviceUnavailable",
+    "nl": "Toestel niet beschikbaar",
+    "fr": "Appareil indisponible",
+    "en": "Device unavailable",
     "applications": [
       "mypraxis_web"
     ]
@@ -14381,6 +14408,15 @@
     "nl": "Meldingen gerangschikt van oud naar nieuw",
     "fr": "Notifications classées par ordre chronologique, de la plus ancienne à la plus récente",
     "en": "Notifications sorted from old to new",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.notLoggedIn",
+    "nl": "Niet ingelogd",
+    "fr": "Non connecté",
+    "en": "Not logged in",
     "applications": [
       "mypraxis_web"
     ]
@@ -22739,7 +22775,10 @@
     "en": "[CRM] Call center '{{callcenter_number}}' was not found",
     "applications": [
       "unknown"
-    ]
+    ],
+    "status": {
+      "en": "review-required"
+    }
   },
   {
     "key": "error.crmClientWasNotFound",
@@ -27276,6 +27315,15 @@
     ]
   },
   {
+    "key": "success.callcenterActivated",
+    "nl": "Wachtdienst geactiveerd",
+    "fr": "Service de garde activé",
+    "en": "Callcenter service activated",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "success.callcenterCreatedSuccessfully",
     "nl": "Wachtdienst succesvol aangemaakt",
     "fr": "Service de permanence téléphonique créé avec succès",
@@ -29176,6 +29224,15 @@
     ]
   },
   {
+    "key": "warning.aboutToActivateCallcenter",
+    "nl": "U staat op het punt om wachtdienst {{value}} te activeren.",
+    "fr": "Vous êtes sur le point d’activer le service de garde {{value}}.",
+    "en": "You are about to activate callcenter service {{value}}.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "warning.aboutToActivateContact",
     "nl": "U staat op het punt om contact {{value}} te activeren",
     "fr": "Vous êtes sur le point d’activer le contact : {{value}}",
@@ -29746,6 +29803,33 @@
     ]
   },
   {
+    "key": "warning.commissionRequestCannotBeAccepted",
+    "nl": "Dit commissieverzoek kan niet worden goedgekeurd omwille van:",
+    "fr": "Cette demande de commission ne peut pas être approuvée pour la/les raison(s) suivante(s) :",
+    "en": "This commission request cannot be approved for the following reason(s):",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "warning.commissionRequestClientPaymentPending",
+    "nl": "De betaling van de klant werd nog niet ontvangen.",
+    "fr": "Le paiement du client n’a pas encore été reçu.",
+    "en": "The client payment has not been received yet.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "warning.commissionRequestHasNegativeInstallerCommission",
+    "nl": "Het commissiebedrag voor de installateur is negatief.",
+    "fr": "Le montant de la commission pour l’installateur est négatif.",
+    "en": "The installer commission amount is negative.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "warning.customCallListSwitchWarning",
     "nl": "U staat op het punt om over te schakelen naar een aangepaste bellijst. Dit betekent dat er wordt afgeweken van het standaard actiepatroon en een aangepaste belvolgorde wordt gebruikt.",
     "fr": "Vous êtes sur le point de passer à une liste d'appels personnalisée. Cela signifie que le plan d'action standard sera remplacé par une séquence d'appels personnalisée.",
@@ -30291,87 +30375,6 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "warning.commissionRequestCannotBeAccepted",
-    "nl": "Dit commissieverzoek kan niet worden goedgekeurd omwille van:",
-    "fr": "Cette demande de commission ne peut pas être approuvée pour la/les raison(s) suivante(s) :",
-    "en": "This commission request cannot be approved for the following reason(s):",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "warning.commissionRequestClientPaymentPending",
-    "nl": "De betaling van de klant werd nog niet ontvangen.",
-    "fr": "Le paiement du client n’a pas encore été reçu.",
-    "en": "The client payment has not been received yet.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "warning.commissionRequestHasNegativeInstallerCommission",
-    "nl": "Het commissiebedrag voor de installateur is negatief.",
-    "fr": "Le montant de la commission pour l’installateur est négatif.",
-    "en": "The installer commission amount is negative.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.notLoggedIn",
-    "nl": "Niet ingelogd",
-    "fr": "Non connecté",
-    "en": "Not logged in",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.deviceUnavailable",
-    "nl": "Toestel niet beschikbaar",
-    "fr": "Appareil indisponible",
-    "en": "Device unavailable",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.communicatorRequiresVideo",
-    "nl": "Communicator vereist videoverificatie",
-    "fr": "Le communicateur nécessite une vérification vidéo",
-    "en": "Communicator requires video verification",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "success.callcenterActivated",
-    "nl": "Wachtdienst geactiveerd",
-    "fr": "Service de garde activé",
-    "en": "Callcenter service activated",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "warning.aboutToActivateCallcenter",
-    "nl": "U staat op het punt om wachtdienst {{value}} te activeren.",
-    "fr": "Vous êtes sur le point d’activer le service de garde {{value}}.",
-    "en": "You are about to activate callcenter service {{value}}.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.activateCallcenter",
-    "nl": "Wachtdienst activeren",
-    "fr": "Activer le service de garde",
-    "en": "Activate callcenter service",
     "applications": [
       "mypraxis_web"
     ]

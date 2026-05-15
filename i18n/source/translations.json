@@ -13927,15 +13927,12 @@
   },
   {
     "key": "common.newTranslations",
-    "nl": "Nieuwe vertalingen1",
+    "nl": "Nieuwe vertalingen",
     "fr": "Nouvelles traductions",
     "en": "New translations",
     "applications": [
       "mypraxis_web"
-    ],
-    "status": {
-      "nl": "review-required"
-    }
+    ]
   },
   {
     "key": "common.newUser",

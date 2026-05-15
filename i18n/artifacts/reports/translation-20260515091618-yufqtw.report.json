@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-05-15T09:16:29.943Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260515091618-yufqtw.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.newTranslations",
+      "namespace": "common",
+      "changes": {
+        "nl": "Nieuwe vertalingen"
+      },
+      "statusChanges": {
+        "nl": "approved"
+      },
+      "current": {
+        "nl": "Nieuwe vertalingen1",
+        "fr": "Nouvelles traductions",
+        "en": "New translations"
+      },
+      "next": {
+        "nl": "Nieuwe vertalingen",
+        "fr": "Nouvelles traductions",
+        "en": "New translations"
+      },
+      "currentStatus": {
+        "nl": "review-required",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

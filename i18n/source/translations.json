@@ -6440,6 +6440,15 @@
     ]
   },
   {
+    "key": "common.critical",
+    "nl": "Kritiek",
+    "fr": "Critique",
+    "en": "Critical",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.crmYouDoNotHavePermissionToAccessClient",
     "nl": "[CRM] Je hebt geen toestemming om klant '{{client_number}}' te openen.",
     "fr": "[CRM] Vous n'avez pas la permission d'accéder au client '{{client_number}}'.",
@@ -14174,6 +14183,15 @@
     ]
   },
   {
+    "key": "common.noIndex",
+    "nl": "Geen index",
+    "fr": "Sans index",
+    "en": "No index",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.noIndexation",
     "nl": "Geen indexering",
     "fr": "Sans indexation",
@@ -19837,6 +19855,15 @@
     ]
   },
   {
+    "key": "common.thresholdValues",
+    "nl": "Drempelwaardes",
+    "fr": "Seuils",
+    "en": "Threshold values",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.tickedId",
     "nl": "Ticket ID",
     "fr": "Identifiant du ticket",
@@ -22797,7 +22824,7 @@
   },
   {
     "key": "error.crmCallCenterWasNotFound",
-    "nl": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden.",
+    "nl": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden.,",
     "fr": "[CRM] Centrale de permanence '{{callcenter_number}}' pas trouvé.",
     "en": "[CRM] Call center '{{callcenter_number}}' was not found",
     "applications": [
@@ -30399,33 +30426,6 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.noIndex",
-    "nl": "Geen index",
-    "fr": "Sans index",
-    "en": "No index",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.thresholdValues",
-    "nl": "Drempelwaardes",
-    "fr": "Seuils",
-    "en": "Threshold values",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.critical",
-    "nl": "Kritiek",
-    "fr": "Critique",
-    "en": "Critical",
     "applications": [
       "mypraxis_web"
     ]

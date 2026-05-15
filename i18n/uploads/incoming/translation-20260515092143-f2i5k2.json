@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "error.crmCallCenterWasNotFound",
+      "status": {
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ]
+}

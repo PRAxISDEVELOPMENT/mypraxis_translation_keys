@@ -30411,5 +30411,23 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.thresholdValues",
+    "nl": "Drempelwaardes",
+    "fr": "Seuils",
+    "en": "Threshold values",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.critical",
+    "nl": "Kritiek",
+    "fr": "Critique",
+    "en": "Critical",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

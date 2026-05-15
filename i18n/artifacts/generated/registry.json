@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3303,
-    "uniqueKeys": 3303,
+    "totalEntries": 3305,
+    "uniqueKeys": 3305,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -21000,6 +21000,36 @@
         "nl": "Creditnota’s",
         "fr": "Notes de crédit",
         "en": "Credit notes"
+      }
+    },
+    {
+      "key": "common.critical",
+      "namespace": "common",
+      "leaf": "critical",
+      "segments": [
+        "common",
+        "critical"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3305
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Kritiek",
+        "fr": "Critique",
+        "en": "Critical"
       }
     },
     {
@@ -64985,6 +65015,36 @@
       }
     },
     {
+      "key": "common.thresholdValues",
+      "namespace": "common",
+      "leaf": "thresholdValues",
+      "segments": [
+        "common",
+        "thresholdValues"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3304
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Drempelwaardes",
+        "fr": "Seuils",
+        "en": "Threshold values"
+      }
+    },
+    {
       "key": "common.tickedId",
       "namespace": "common",
       "leaf": "tickedId",
@@ -99848,7 +99908,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2276
+      "keyCount": 2278
     },
     {
       "name": "confirmation",

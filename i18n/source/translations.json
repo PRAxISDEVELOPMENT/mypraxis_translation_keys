@@ -11289,6 +11289,15 @@
     ]
   },
   {
+    "key": "common.incomingCallWaitingTimes",
+    "nl": "Wachttijden inkomende oproepen",
+    "fr": "Temps d’attente des appels entrants",
+    "en": "Incoming call waiting times",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.incomplete",
     "nl": "Onvolledig",
     "fr": "Incomplet",
@@ -20337,6 +20346,15 @@
     ]
   },
   {
+    "key": "common.totalWaitingTime",
+    "nl": "Totale wachttijd",
+    "fr": "Temps d’attente total",
+    "en": "Total waiting time",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.trackAndTrace",
     "nl": "Track en trace",
     "fr": "Track and Trace",
@@ -21695,6 +21713,15 @@
     ]
   },
   {
+    "key": "common.waitingTime",
+    "nl": "Wachttijd",
+    "fr": "Temps d’attente",
+    "en": "Waiting time",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.walktestCanOnlyBeGeneratedIf",
     "nl": "Looptesten kunnen enkel worden gegenereerd als",
     "fr": "Les tests de déplacement ne peuvent être générés que si",
@@ -22770,7 +22797,7 @@
   },
   {
     "key": "error.crmCallCenterWasNotFound",
-    "nl": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden.",
+    "nl": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden",
     "fr": "[CRM] Centrale de permanence '{{callcenter_number}}' pas trouvé.",
     "en": "[CRM] Call center '{{callcenter_number}}' was not found",
     "applications": [
@@ -30372,33 +30399,6 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.incomingCallWaitingTimes",
-    "nl": "Wachttijden inkomende oproepen",
-    "fr": "Temps d’attente des appels entrants",
-    "en": "Incoming call waiting times",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.totalWaitingTime",
-    "nl": "Totale wachttijd",
-    "fr": "Temps d’attente total",
-    "en": "Total waiting time",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.waitingTime",
-    "nl": "Wachttijd",
-    "fr": "Temps d’attente",
-    "en": "Waiting time",
     "applications": [
       "mypraxis_web"
     ]

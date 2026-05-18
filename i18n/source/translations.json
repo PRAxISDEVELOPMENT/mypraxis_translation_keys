@@ -30429,5 +30429,59 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.includeCallsWithoutContractInDailyEmail",
+    "nl": "Oproepen zonder contract opnemen in dagelijkse e-mail",
+    "fr": "Inclure les appels sans contrat dans l’e-mail quotidien",
+    "en": "Include calls without contract in daily email",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.includeCallsWithoutContract",
+    "nl": "Oproepen zonder contract opnemen",
+    "fr": "Inclure les appels sans contrat",
+    "en": "Include calls without contract",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.allowOperatorsHandleCallsWithoutContractInDailyDutyEmail",
+    "nl": "Laat operatoren oproepen zonder contract verder afhandelen en opnemen in de dagelijkse wachtdienstmail.",
+    "fr": "Permettre aux opérateurs de traiter les appels sans contrat et de les inclure dans l’e-mail quotidien de garde.",
+    "en": "Allow operators to further handle calls without contract and include them in the daily on-call email.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.operatorsMayHandleCallsWithoutContractInDailyDutyEmail",
+    "nl": "Operatoren mogen oproepen zonder contract verder afhandelen. De oproep wordt niet doorgegeven aan de technieker van wacht, maar wordt opgenomen in de dagelijkse wachtdienstmail.",
+    "fr": "Les opérateurs peuvent poursuivre le traitement des appels sans contrat. L’appel n’est pas transmis au technicien de garde, mais est inclus dans l’e-mail quotidien de garde.",
+    "en": "Operators may continue handling calls without contract. The call is not forwarded to the on-call technician, but is included in the daily on-call email.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.operatorsReceiveDefaultNoticeForCallsWithoutContract",
+    "nl": "Operatoren krijgen opnieuw de standaard melding wanneer een oproep geen contract heeft. Oproepen zonder contract worden dan niet verder afgehandeld voor de dagelijkse wachtdienstmail.",
+    "fr": "Les opérateurs reçoivent à nouveau le message standard lorsqu’un appel n’a pas de contrat. Les appels sans contrat ne sont alors plus traités pour l’e-mail quotidien de garde.",
+    "en": "Operators receive the default notice again when a call has no contract. Calls without contract are then no longer handled for the daily on-call email.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.understandCallsWithoutContractBlockedAgain",
+    "nl": "Ik begrijp dat oproepen zonder contract opnieuw geblokkeerd worden.",
+    "fr": "Je comprends que les appels sans contrat sont à nouveau bloqués.",
+    "en": "I understand that calls without contract are blocked again.",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

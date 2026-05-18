@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3305,
-    "uniqueKeys": 3305,
+    "totalEntries": 3311,
+    "uniqueKeys": 3311,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -8402,6 +8402,36 @@
         "nl": "Toegestane IP-adressen",
         "fr": "Adresses IP autorisées",
         "en": "Allowed IP addresses"
+      }
+    },
+    {
+      "key": "common.allowOperatorsHandleCallsWithoutContractInDailyDutyEmail",
+      "namespace": "common",
+      "leaf": "allowOperatorsHandleCallsWithoutContractInDailyDutyEmail",
+      "segments": [
+        "common",
+        "allowOperatorsHandleCallsWithoutContractInDailyDutyEmail"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3308
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Laat operatoren oproepen zonder contract verder afhandelen en opnemen in de dagelijkse wachtdienstmail.",
+        "fr": "Permettre aux opérateurs de traiter les appels sans contrat et de les inclure dans l’e-mail quotidien de garde.",
+        "en": "Allow operators to further handle calls without contract and include them in the daily on-call email."
       }
     },
     {
@@ -36580,6 +36610,66 @@
       }
     },
     {
+      "key": "common.includeCallsWithoutContract",
+      "namespace": "common",
+      "leaf": "includeCallsWithoutContract",
+      "segments": [
+        "common",
+        "includeCallsWithoutContract"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3307
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Oproepen zonder contract opnemen",
+        "fr": "Inclure les appels sans contrat",
+        "en": "Include calls without contract"
+      }
+    },
+    {
+      "key": "common.includeCallsWithoutContractInDailyEmail",
+      "namespace": "common",
+      "leaf": "includeCallsWithoutContractInDailyEmail",
+      "segments": [
+        "common",
+        "includeCallsWithoutContractInDailyEmail"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3306
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Oproepen zonder contract opnemen in dagelijkse e-mail",
+        "fr": "Inclure les appels sans contrat dans l’e-mail quotidien",
+        "en": "Include calls without contract in daily email"
+      }
+    },
+    {
       "key": "common.includeComments",
       "namespace": "common",
       "leaf": "includeComments",
@@ -49545,6 +49635,66 @@
         "nl": "Operatoren",
         "fr": "Opérateurs",
         "en": "Operators"
+      }
+    },
+    {
+      "key": "common.operatorsMayHandleCallsWithoutContractInDailyDutyEmail",
+      "namespace": "common",
+      "leaf": "operatorsMayHandleCallsWithoutContractInDailyDutyEmail",
+      "segments": [
+        "common",
+        "operatorsMayHandleCallsWithoutContractInDailyDutyEmail"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3309
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Operatoren mogen oproepen zonder contract verder afhandelen. De oproep wordt niet doorgegeven aan de technieker van wacht, maar wordt opgenomen in de dagelijkse wachtdienstmail.",
+        "fr": "Les opérateurs peuvent poursuivre le traitement des appels sans contrat. L’appel n’est pas transmis au technicien de garde, mais est inclus dans l’e-mail quotidien de garde.",
+        "en": "Operators may continue handling calls without contract. The call is not forwarded to the on-call technician, but is included in the daily on-call email."
+      }
+    },
+    {
+      "key": "common.operatorsReceiveDefaultNoticeForCallsWithoutContract",
+      "namespace": "common",
+      "leaf": "operatorsReceiveDefaultNoticeForCallsWithoutContract",
+      "segments": [
+        "common",
+        "operatorsReceiveDefaultNoticeForCallsWithoutContract"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3310
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Operatoren krijgen opnieuw de standaard melding wanneer een oproep geen contract heeft. Oproepen zonder contract worden dan niet verder afgehandeld voor de dagelijkse wachtdienstmail.",
+        "fr": "Les opérateurs reçoivent à nouveau le message standard lorsqu’un appel n’a pas de contrat. Les appels sans contrat ne sont alors plus traités pour l’e-mail quotidien de garde.",
+        "en": "Operators receive the default notice again when a call has no contract. Calls without contract are then no longer handled for the daily on-call email."
       }
     },
     {
@@ -67422,6 +67572,36 @@
         "nl": "Onderstrepen",
         "fr": "Souligner",
         "en": "Underline"
+      }
+    },
+    {
+      "key": "common.understandCallsWithoutContractBlockedAgain",
+      "namespace": "common",
+      "leaf": "understandCallsWithoutContractBlockedAgain",
+      "segments": [
+        "common",
+        "understandCallsWithoutContractBlockedAgain"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3311
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Ik begrijp dat oproepen zonder contract opnieuw geblokkeerd worden.",
+        "fr": "Je comprends que les appels sans contrat sont à nouveau bloqués.",
+        "en": "I understand that calls without contract are blocked again."
       }
     },
     {
@@ -99908,7 +100088,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2278
+      "keyCount": 2284
     },
     {
       "name": "confirmation",

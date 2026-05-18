@@ -1756,6 +1756,7 @@
   "common.preferences",
   "common.prefix",
   "common.preparingBoundPreview",
+  "common.presenceBasedOnSchedule",
   "common.presenceStatusses",
   "common.preview",
   "common.previewReady",

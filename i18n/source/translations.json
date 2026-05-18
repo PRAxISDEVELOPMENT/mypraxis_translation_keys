@@ -30483,5 +30483,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.presenceBasedOnSchedule",
+    "nl": "Aanwezigheid op basis van de planning",
+    "fr": "Présence basée sur le planning",
+    "en": "Presence based on the schedule",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

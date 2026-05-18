@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3311,
-    "uniqueKeys": 3311,
+    "totalEntries": 3312,
+    "uniqueKeys": 3312,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -53205,6 +53205,36 @@
       }
     },
     {
+      "key": "common.presenceBasedOnSchedule",
+      "namespace": "common",
+      "leaf": "presenceBasedOnSchedule",
+      "segments": [
+        "common",
+        "presenceBasedOnSchedule"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3312
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Aanwezigheid op basis van de planning",
+        "fr": "Présence basée sur le planning",
+        "en": "Presence based on the schedule"
+      }
+    },
+    {
       "key": "common.presenceStatusses",
       "namespace": "common",
       "leaf": "presenceStatusses",
@@ -100088,7 +100118,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2284
+      "keyCount": 2285
     },
     {
       "name": "confirmation",

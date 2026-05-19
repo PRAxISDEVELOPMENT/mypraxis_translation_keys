@@ -2359,6 +2359,7 @@
   "common.vocalBrand",
   "common.vocalSCS",
   "common.vocalTest",
+  "common.voided",
   "common.waitingTime",
   "common.walktestCanOnlyBeGeneratedIf",
   "common.walktestPaused",

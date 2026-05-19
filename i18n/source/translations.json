@@ -30492,5 +30492,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.voided",
+    "nl": "Nietig verklaard",
+    "fr": "Annulé",
+    "en": "Voided",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

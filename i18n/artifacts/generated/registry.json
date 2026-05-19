@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3312,
-    "uniqueKeys": 3312,
+    "totalEntries": 3313,
+    "uniqueKeys": 3313,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -71415,6 +71415,36 @@
       }
     },
     {
+      "key": "common.voided",
+      "namespace": "common",
+      "leaf": "voided",
+      "segments": [
+        "common",
+        "voided"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3313
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Nietig verklaard",
+        "fr": "Annulé",
+        "en": "Voided"
+      }
+    },
+    {
       "key": "common.waitingTime",
       "namespace": "common",
       "leaf": "waitingTime",
@@ -100118,7 +100148,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2285
+      "keyCount": 2286
     },
     {
       "name": "confirmation",

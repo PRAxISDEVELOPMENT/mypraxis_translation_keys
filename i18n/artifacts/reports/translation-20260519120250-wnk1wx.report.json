@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-05-19T12:03:05.585Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260519120250-wnk1wx.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "info.linkedCustomersConsistOfAtLeastTwoCustomerNumbersWithOneDesignatedAsTheMainCustomerTheseCustomersAreInvoicedTogetherFromAFinancialStandpointAndShareEitherPartialOrFullOperationalFunctionality",
+      "namespace": "info",
+      "changes": {
+        "nl": "Gelinkte klanten bestaan uit minstens twee klantnummers, waarbij één klant als hoofdklant fungeert. Deze kunnen zowel financieel samen of individueel worden gefactureerd en kunnen operationeel een gedeeltelijke of volledige werking delen. Indien de facturatie voor alle gelinkte klanten via de hoofdklant dient te gebeuren dan kunnen de gelinkte klanten geactiveerd worden zonder dat zij beschikken over een individueel PRAxIS Telebewakingscontract."
+      },
+      "statusChanges": {
+        "fr": "review-required",
+        "en": "review-required"
+      },
+      "current": {
+        "nl": "Gelinkte klanten bestaan uit minstens twee klantnummers, waarbij één klant als hoofdklant fungeert. Gelinkte klanten worden financieel samen gefactureerd en delen operationeel een gedeeltelijke of volledige werking.",
+        "fr": "Les clients liés sont sonstitués d'au moins deux numéros de client, dont l'un est désigné comme client principal. Ils sont facturés ensemble et partagent tout ou partie des fonctionnalités opérationnelles.",
+        "en": "Linked customers consist of at least two customer numbers, with one designated as the main customer. These customers are invoiced together from a financial standpoint and share either partial or full operational functionality."
+      },
+      "next": {
+        "nl": "Gelinkte klanten bestaan uit minstens twee klantnummers, waarbij één klant als hoofdklant fungeert. Deze kunnen zowel financieel samen of individueel worden gefactureerd en kunnen operationeel een gedeeltelijke of volledige werking delen. Indien de facturatie voor alle gelinkte klanten via de hoofdklant dient te gebeuren dan kunnen de gelinkte klanten geactiveerd worden zonder dat zij beschikken over een individueel PRAxIS Telebewakingscontract.",
+        "fr": "Les clients liés sont sonstitués d'au moins deux numéros de client, dont l'un est désigné comme client principal. Ils sont facturés ensemble et partagent tout ou partie des fonctionnalités opérationnelles.",
+        "en": "Linked customers consist of at least two customer numbers, with one designated as the main customer. These customers are invoiced together from a financial standpoint and share either partial or full operational functionality."
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "review-required",
+        "en": "review-required"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

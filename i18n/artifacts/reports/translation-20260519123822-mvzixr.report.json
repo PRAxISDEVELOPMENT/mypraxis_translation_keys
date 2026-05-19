@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-05-19T12:38:39.703Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260519123822-mvzixr.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.openProposals",
+      "namespace": "common",
+      "changes": {
+        "nl": "Openstaand(e) voorstel(len)",
+        "fr": "Proposition(s) en cours",
+        "en": "Pending proposal(s)"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Openstaande voorstellen",
+        "fr": "Ouvrir les propositions",
+        "en": "Open proposals"
+      },
+      "next": {
+        "nl": "Openstaand(e) voorstel(len)",
+        "fr": "Proposition(s) en cours",
+        "en": "Pending proposal(s)"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

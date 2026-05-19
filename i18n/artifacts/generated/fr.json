@@ -1636,7 +1636,7 @@
     "openDocument": "Ouvrir le document",
     "openLabel": "Ouvert : {{value}}",
     "openPr": "Ouvrir la PR",
-    "openProposals": "Ouvrir les propositions",
+    "openProposals": "Proposition(s) en cours",
     "openTickets": "Tickets ouverts",
     "openTicketsLabel": "Tickets ouverts : {{value}}",
     "openWith": "Ouvrir avec",

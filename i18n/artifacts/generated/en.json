@@ -1636,7 +1636,7 @@
     "openDocument": "Open document",
     "openLabel": "Open: {{value}}",
     "openPr": "Open PR",
-    "openProposals": "Open proposals",
+    "openProposals": "Pending proposal(s)",
     "openTickets": "Open tickets",
     "openTicketsLabel": "Open tickets: {{value}}",
     "openWith": "Open with",

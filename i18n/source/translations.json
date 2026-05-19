@@ -30501,5 +30501,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.receivedByDocusign",
+    "nl": "Ontvangen via DocuSign",
+    "fr": "Reçu via DocuSign",
+    "en": "Received by DocuSign",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

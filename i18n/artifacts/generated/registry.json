@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3313,
-    "uniqueKeys": 3313,
+    "totalEntries": 3314,
+    "uniqueKeys": 3314,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -55263,6 +55263,36 @@
       }
     },
     {
+      "key": "common.receivedByDocusign",
+      "namespace": "common",
+      "leaf": "receivedByDocusign",
+      "segments": [
+        "common",
+        "receivedByDocusign"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3314
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Ontvangen via DocuSign",
+        "fr": "Reçu via DocuSign",
+        "en": "Received by DocuSign"
+      }
+    },
+    {
       "key": "common.receivedCalls",
       "namespace": "common",
       "leaf": "receivedCalls",
@@ -100148,7 +100178,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2286
+      "keyCount": 2287
     },
     {
       "name": "confirmation",

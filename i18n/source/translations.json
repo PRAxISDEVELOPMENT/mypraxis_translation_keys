@@ -30514,5 +30514,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.newValue",
+    "nl": "Nieuwe waarde",
+    "fr": "Nouvelle valeur",
+    "en": "New value",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

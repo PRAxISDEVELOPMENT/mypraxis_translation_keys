@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.openProposals",
+      "nl": "Openstaand(e) voorstel(len)",
+      "fr": "Proposition(s) en cours",
+      "en": "Pending proposal(s)"
+    }
+  ]
+}

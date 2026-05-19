@@ -22892,10 +22892,7 @@
     "en": "[CRM] Call center '{{callcenter_number}}' was not found",
     "applications": [
       "unknown"
-    ],
-    "status": {
-      "nl": "review-required"
-    }
+    ]
   },
   {
     "key": "error.crmClientWasNotFound",

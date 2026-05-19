@@ -30076,10 +30076,7 @@
     "en": "{{count}} local change(s) not yet saved.",
     "applications": [
       "mypraxis_web"
-    ],
-    "status": {
-      "nl": "review-required"
-    }
+    ]
   },
   {
     "key": "warning.locationPermissionIsRequiredToUseYourCurrentAddress",

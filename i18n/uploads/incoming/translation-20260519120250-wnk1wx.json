@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "info.linkedCustomersConsistOfAtLeastTwoCustomerNumbersWithOneDesignatedAsTheMainCustomerTheseCustomersAreInvoicedTogetherFromAFinancialStandpointAndShareEitherPartialOrFullOperationalFunctionality",
+      "nl": "Gelinkte klanten bestaan uit minstens twee klantnummers, waarbij één klant als hoofdklant fungeert. Deze kunnen zowel financieel samen of individueel worden gefactureerd en kunnen operationeel een gedeeltelijke of volledige werking delen. Indien de facturatie voor alle gelinkte klanten via de hoofdklant dient te gebeuren dan kunnen de gelinkte klanten geactiveerd worden zonder dat zij beschikken over een individueel PRAxIS Telebewakingscontract.",
+      "status": {
+        "fr": "review-required",
+        "en": "review-required"
+      }
+    }
+  ]
+}

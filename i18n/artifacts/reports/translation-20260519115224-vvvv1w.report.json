@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-05-19T11:52:39.574Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260519115224-vvvv1w.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "warning.localChangesNotYetSaved",
+      "namespace": "warning",
+      "changes": {},
+      "statusChanges": {
+        "nl": "review-required"
+      },
+      "current": {
+        "nl": "{{count}} lokale wijziging(en) nog niet opgeslagen.",
+        "fr": "{{count}} modification(s) locale(s) pas encore enregistrée(s).",
+        "en": "{{count}} local change(s) not yet saved."
+      },
+      "next": {
+        "nl": "{{count}} lokale wijziging(en) nog niet opgeslagen.",
+        "fr": "{{count}} modification(s) locale(s) pas encore enregistrée(s).",
+        "en": "{{count}} local change(s) not yet saved."
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "review-required",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

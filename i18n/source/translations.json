@@ -16886,6 +16886,15 @@
     ]
   },
   {
+    "key": "common.receivedByDocusign",
+    "nl": "Ontvangen via DocuSign",
+    "fr": "Reçu via DocuSign",
+    "en": "Received by DocuSign",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.receivedCalls",
     "nl": "Ontvangen oproepen",
     "fr": "Appels reçus",
@@ -21800,6 +21809,15 @@
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.voided",
+    "nl": "Nietig verklaard",
+    "fr": "Annulé",
+    "en": "Voided",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -30058,7 +30076,10 @@
     "en": "{{count}} local change(s) not yet saved.",
     "applications": [
       "mypraxis_web"
-    ]
+    ],
+    "status": {
+      "nl": "review-required"
+    }
   },
   {
     "key": "warning.locationPermissionIsRequiredToUseYourCurrentAddress",
@@ -30489,24 +30510,6 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.voided",
-    "nl": "Nietig verklaard",
-    "fr": "Annulé",
-    "en": "Voided",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.receivedByDocusign",
-    "nl": "Ontvangen via DocuSign",
-    "fr": "Reçu via DocuSign",
-    "en": "Received by DocuSign",
     "applications": [
       "mypraxis_web"
     ]

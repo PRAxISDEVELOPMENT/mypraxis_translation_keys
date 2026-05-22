@@ -13989,15 +13989,6 @@
     ]
   },
   {
-    "key": "common.newValue",
-    "nl": "Nieuwe waarde",
-    "fr": "Nouvelle valeur",
-    "en": "New value",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
     "key": "common.next",
     "nl": "Volgende",
     "fr": "Suivant",
@@ -30520,6 +30511,33 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.newValue",
+    "nl": "Nieuwe waarde",
+    "fr": "Nouvelle valeur",
+    "en": "New value",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.textEmailDocusign",
+    "nl": "Begeleidende tekst e-mail DocuSign",
+    "fr": "Texte d'accompagnement de l'e-mail DocuSign",
+    "en": "Accompanying text for DocuSign email",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.last12months",
+    "nl": "Laatste 12 maanden",
+    "fr": "12 derniers mois",
+    "en": "Last 12 monthss",
     "applications": [
       "mypraxis_web"
     ]

@@ -39603,12 +39603,12 @@
       }
     },
     {
-      "key": "common.last12months",
+      "key": "common.last12Months",
       "namespace": "common",
-      "leaf": "last12months",
+      "leaf": "last12Months",
       "segments": [
         "common",
-        "last12months"
+        "last12Months"
       ],
       "applications": [
         "mypraxis_web"

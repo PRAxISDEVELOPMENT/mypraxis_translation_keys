@@ -30559,5 +30559,32 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.gdprSections",
+    "nl": "GDPR-secties",
+    "fr": "Sections GDPR",
+    "en": "GDPR sections",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.gdprSectionsNamingInstruction",
+    "nl": "Hou GDPR in de naam van elke GDPR-sectie. Zo herkent MyPRAxIS deze groep en kan ze bij de opmaak worden aan- of uitgezet.",
+    "fr": "Conservez GDPR dans le nom de chaque section GDPR. MyPRAxIS reconnaît ainsi ce groupe et peut l’activer ou le désactiver lors de la mise en page.",
+    "en": "Keep GDPR in the name of each GDPR section. This allows MyPRAxIS to recognize this group and enable or disable it during formatting.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.gdprSectionsAutoGroupingInfo",
+    "nl": "Secties met GDPR in de naam worden automatisch gegroepeerd en kunnen bij de opmaak worden aan- of uitgezet.",
+    "fr": "Les sections contenant GDPR dans leur nom sont automatiquement regroupées et peuvent être activées ou désactivées lors de la mise en page.",
+    "en": "Sections with GDPR in their name are automatically grouped and can be enabled or disabled during formatting.",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

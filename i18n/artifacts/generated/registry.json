@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3319,
-    "uniqueKeys": 3319,
+    "totalEntries": 3322,
+    "uniqueKeys": 3322,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -33428,6 +33428,96 @@
         "nl": "Nader order",
         "fr": "Avis ultérieur",
         "en": "Further notice"
+      }
+    },
+    {
+      "key": "common.gdprSections",
+      "namespace": "common",
+      "leaf": "gdprSections",
+      "segments": [
+        "common",
+        "gdprSections"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3320
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "GDPR-secties",
+        "fr": "Sections GDPR",
+        "en": "GDPR sections"
+      }
+    },
+    {
+      "key": "common.gdprSectionsAutoGroupingInfo",
+      "namespace": "common",
+      "leaf": "gdprSectionsAutoGroupingInfo",
+      "segments": [
+        "common",
+        "gdprSectionsAutoGroupingInfo"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3322
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Secties met GDPR in de naam worden automatisch gegroepeerd en kunnen bij de opmaak worden aan- of uitgezet.",
+        "fr": "Les sections contenant GDPR dans leur nom sont automatiquement regroupées et peuvent être activées ou désactivées lors de la mise en page.",
+        "en": "Sections with GDPR in their name are automatically grouped and can be enabled or disabled during formatting."
+      }
+    },
+    {
+      "key": "common.gdprSectionsNamingInstruction",
+      "namespace": "common",
+      "leaf": "gdprSectionsNamingInstruction",
+      "segments": [
+        "common",
+        "gdprSectionsNamingInstruction"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3321
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Hou GDPR in de naam van elke GDPR-sectie. Zo herkent MyPRAxIS deze groep en kan ze bij de opmaak worden aan- of uitgezet.",
+        "fr": "Conservez GDPR dans le nom de chaque section GDPR. MyPRAxIS reconnaît ainsi ce groupe et peut l’activer ou le désactiver lors de la mise en page.",
+        "en": "Keep GDPR in the name of each GDPR section. This allows MyPRAxIS to recognize this group and enable or disable it during formatting."
       }
     },
     {
@@ -100331,7 +100421,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2292
+      "keyCount": 2295
     },
     {
       "name": "confirmation",

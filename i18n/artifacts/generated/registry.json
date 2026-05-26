@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3317,
-    "uniqueKeys": 3317,
+    "totalEntries": 3319,
+    "uniqueKeys": 3319,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -62777,6 +62777,36 @@
       }
     },
     {
+      "key": "common.startCommissionNotes",
+      "namespace": "common",
+      "leaf": "startCommissionNotes",
+      "segments": [
+        "common",
+        "startCommissionNotes"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3319
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Start opmaak commissienota's",
+        "fr": "Démarrer la préparation des notes de commission",
+        "en": "Start drafting commission notes"
+      }
+    },
+    {
       "key": "common.startDate",
       "namespace": "common",
       "leaf": "startDate",
@@ -63862,6 +63892,36 @@
         "nl": "Achternaam zaakvoerder",
         "fr": "Nom du gérant",
         "en": "Surname of the director"
+      }
+    },
+    {
+      "key": "common.syncAll",
+      "namespace": "common",
+      "leaf": "syncAll",
+      "segments": [
+        "common",
+        "syncAll"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3318
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Synchroniseer alles",
+        "fr": "Synchroniser tout",
+        "en": "Synchronize all"
       }
     },
     {
@@ -100271,7 +100331,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2290
+      "keyCount": 2292
     },
     {
       "name": "confirmation",

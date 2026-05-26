@@ -30541,5 +30541,23 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.syncAll",
+    "nl": "Synchroniseer alles",
+    "fr": "Synchroniser tout",
+    "en": "Synchronize all",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.startCommissionNotes",
+    "nl": "Start opmaak commissienota's",
+    "fr": "Démarrer la préparation des notes de commission",
+    "en": "Start drafting commission notes",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

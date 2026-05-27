@@ -1959,6 +1959,7 @@
     "salesQuotation": "Devis commercial",
     "salesQuotationValidUntil": "Devis commercial valable jusqu'à",
     "salesQuoteNotAvailable": "Devis commercial (indisponible, car aucun prix de vente n'a été défini).",
+    "salesRepresentative": "Sales contact PRAxIS",
     "save": "Sauvegarder",
     "saveReportInMyPRAxIS": "Enregistrer le rapport dans MyPRAxIS",
     "saveSectionBeforeManagingAdditionalArrangementsAndItems": "Enregistrez d'abord cette section avant de gérer les arrangements supplémentaires et les éléments.",

@@ -1959,6 +1959,7 @@
     "salesQuotation": "Sales quotation",
     "salesQuotationValidUntil": "Sales quotation valid until",
     "salesQuoteNotAvailable": "Sales quote (unavailable due to no sales prices defined)",
+    "salesRepresentative": "Sales contact PRAxIS",
     "save": "Save",
     "saveReportInMyPRAxIS": "Save report in MyPRAxIS",
     "saveSectionBeforeManagingAdditionalArrangementsAndItems": "Save this section first before managing additional arrangements and items.",

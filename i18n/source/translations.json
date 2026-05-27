@@ -30586,5 +30586,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.salesRepresentative",
+    "nl": "Sales contact PRAxIS",
+    "fr": "Sales contact PRAxIS",
+    "en": "Sales contact PRAxIS",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

@@ -30595,5 +30595,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.sales",
+    "nl": "Sales",
+    "fr": "Sales",
+    "en": "Sales",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

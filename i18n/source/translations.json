@@ -30631,5 +30631,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.externalParties",
+    "nl": "Externe partijen",
+    "fr": "Parties externes",
+    "en": "External parties",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

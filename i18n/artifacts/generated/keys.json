@@ -1011,6 +1011,7 @@
   "common.extensive",
   "common.extern",
   "common.externalCalls",
+  "common.externalParties",
   "common.externalReference",
   "common.externalSystemId",
   "common.externSystemID",

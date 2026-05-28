@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3327,
-    "uniqueKeys": 3327,
+    "totalEntries": 3328,
+    "uniqueKeys": 3328,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -30679,6 +30679,36 @@
         "nl": "Externe oproepen",
         "fr": "Appels externes",
         "en": "External calls"
+      }
+    },
+    {
+      "key": "common.externalParties",
+      "namespace": "common",
+      "leaf": "externalParties",
+      "segments": [
+        "common",
+        "externalParties"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3328
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Externe partijen",
+        "fr": "Parties externes",
+        "en": "External parties"
       }
     },
     {
@@ -100571,7 +100601,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2300
+      "keyCount": 2301
     },
     {
       "name": "confirmation",

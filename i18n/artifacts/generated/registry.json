@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3326,
-    "uniqueKeys": 3326,
+    "totalEntries": 3327,
+    "uniqueKeys": 3327,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -10244,6 +10244,36 @@
         "nl": "Gemiddelde tijd",
         "fr": "Durée moyenne",
         "en": "Average time"
+      }
+    },
+    {
+      "key": "common.averageWaitingTime",
+      "namespace": "common",
+      "leaf": "averageWaitingTime",
+      "segments": [
+        "common",
+        "averageWaitingTime"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3327
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gemiddelde wachttijd",
+        "fr": "Temps d’attente moyen",
+        "en": "Average waiting time"
       }
     },
     {
@@ -100541,7 +100571,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2299
+      "keyCount": 2300
     },
     {
       "name": "confirmation",

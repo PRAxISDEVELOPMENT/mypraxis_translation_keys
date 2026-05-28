@@ -334,6 +334,7 @@
   "common.available",
   "common.availableFor",
   "common.averageTime",
+  "common.averageWaitingTime",
   "common.awaitingApproval",
   "common.away",
   "common.back",

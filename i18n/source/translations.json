@@ -30622,5 +30622,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.averageWaitingTime",
+    "nl": "Gemiddelde wachttijd",
+    "fr": "Temps d’attente moyen",
+    "en": "Average waiting time",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

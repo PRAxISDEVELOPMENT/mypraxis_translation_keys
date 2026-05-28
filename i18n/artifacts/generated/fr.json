@@ -1680,6 +1680,7 @@
     "overview": "Aperçu",
     "overviewCopiedClient": "Aperçu du client copié",
     "overviewData": "Aperçu des données",
+    "overviewIncomingCallWaitingTimes": "Aperçu des temps d’attente des appels entrants",
     "overviewNewClient": "Aperçu du nouveau client",
     "overviewOfAllNotificationsWeHaveReceivedFromYourCustomersInThePast24Hours": "Aperçu de toutes les notifications que nous avons reçues de vos clients au cours des dernières 24 heures.",
     "overviewOfReports": "Aperçu des rapports",

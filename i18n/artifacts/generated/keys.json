@@ -1675,6 +1675,7 @@
   "common.overview",
   "common.overviewCopiedClient",
   "common.overviewData",
+  "common.overviewIncomingCallWaitingTimes",
   "common.overviewNewClient",
   "common.overviewOfAllNotificationsWeHaveReceivedFromYourCustomersInThePast24Hours",
   "common.overviewOfReports",

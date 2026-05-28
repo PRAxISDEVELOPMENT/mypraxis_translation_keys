@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3325,
-    "uniqueKeys": 3325,
+    "totalEntries": 3326,
+    "uniqueKeys": 3326,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -50756,6 +50756,36 @@
       }
     },
     {
+      "key": "common.overviewIncomingCallWaitingTimes",
+      "namespace": "common",
+      "leaf": "overviewIncomingCallWaitingTimes",
+      "segments": [
+        "common",
+        "overviewIncomingCallWaitingTimes"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3326
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Overzicht wachttijden inkomende oproepen",
+        "fr": "Aperçu des temps d’attente des appels entrants",
+        "en": "Overview of incoming call waiting times"
+      }
+    },
+    {
       "key": "common.overviewNewClient",
       "namespace": "common",
       "leaf": "overviewNewClient",
@@ -100511,7 +100541,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2298
+      "keyCount": 2299
     },
     {
       "name": "confirmation",

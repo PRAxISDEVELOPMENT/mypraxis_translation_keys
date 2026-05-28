@@ -30613,5 +30613,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.overviewIncomingCallWaitingTimes",
+    "nl": "Overzicht wachttijden inkomende oproepen",
+    "fr": "Aperçu des temps d’attente des appels entrants",
+    "en": "Overview of incoming call waiting times",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

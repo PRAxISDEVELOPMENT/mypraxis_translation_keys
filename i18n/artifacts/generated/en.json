@@ -1680,6 +1680,7 @@
     "overview": "Overview",
     "overviewCopiedClient": "Overview copied client",
     "overviewData": "Overview data",
+    "overviewIncomingCallWaitingTimes": "Overview of incoming call waiting times",
     "overviewNewClient": "Overview new client",
     "overviewOfAllNotificationsWeHaveReceivedFromYourCustomersInThePast24Hours": "Overview of all notifications we have received from your customers in the past 24 hours.",
     "overviewOfReports": "Overview of reports",

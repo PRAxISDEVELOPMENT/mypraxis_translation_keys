@@ -30642,7 +30642,7 @@
     ]
   },
   {
-    "key": "common.externalPartyAdded",
+    "key": "success.externalPartyAdded",
     "nl": "Externe partij toegevoegd",
     "fr": "Partie externe ajoutée",
     "en": "External party added",
@@ -30651,7 +30651,7 @@
     ]
   },
   {
-    "key": "common.externalPartyChanged",
+    "key": "success.externalPartyChanged",
     "nl": "Externe partij gewijzigd",
     "fr": "Partie externe modifiée",
     "en": "External party changed",
@@ -30660,7 +30660,7 @@
     ]
   },
   {
-    "key": "common.externalPartyDeleted",
+    "key": "success.externalPartyDeleted",
     "nl": "Externe partij(en) verwijderd",
     "fr": "Partie(s) externe(s) supprimée(s)",
     "en": "External party/parties deleted",

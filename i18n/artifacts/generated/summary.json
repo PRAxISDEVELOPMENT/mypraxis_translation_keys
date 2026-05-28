@@ -28,14 +28,14 @@
   "namespaces": {
     "applicationNames": 15,
     "authentication": 120,
-    "common": 2304,
+    "common": 2301,
     "confirmation": 16,
     "error": 200,
     "info": 292,
     "metadata": 0,
     "notification": 16,
     "status": 4,
-    "success": 236,
+    "success": 239,
     "warning": 128
   },
   "applicationCounts": {

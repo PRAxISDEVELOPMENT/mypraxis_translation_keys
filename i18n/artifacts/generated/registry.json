@@ -30712,96 +30712,6 @@
       }
     },
     {
-      "key": "common.externalPartyAdded",
-      "namespace": "common",
-      "leaf": "externalPartyAdded",
-      "segments": [
-        "common",
-        "externalPartyAdded"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        3329
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "status": {
-        "nl": "approved",
-        "fr": "approved",
-        "en": "approved"
-      },
-      "reviewRequiredLocales": [],
-      "resolved": {
-        "nl": "Externe partij toegevoegd",
-        "fr": "Partie externe ajoutée",
-        "en": "External party added"
-      }
-    },
-    {
-      "key": "common.externalPartyChanged",
-      "namespace": "common",
-      "leaf": "externalPartyChanged",
-      "segments": [
-        "common",
-        "externalPartyChanged"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        3330
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "status": {
-        "nl": "approved",
-        "fr": "approved",
-        "en": "approved"
-      },
-      "reviewRequiredLocales": [],
-      "resolved": {
-        "nl": "Externe partij gewijzigd",
-        "fr": "Partie externe modifiée",
-        "en": "External party changed"
-      }
-    },
-    {
-      "key": "common.externalPartyDeleted",
-      "namespace": "common",
-      "leaf": "externalPartyDeleted",
-      "segments": [
-        "common",
-        "externalPartyDeleted"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        3331
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "status": {
-        "nl": "approved",
-        "fr": "approved",
-        "en": "approved"
-      },
-      "reviewRequiredLocales": [],
-      "resolved": {
-        "nl": "Externe partij(en) verwijderd",
-        "fr": "Partie(s) externe(s) supprimée(s)",
-        "en": "External party/parties deleted"
-      }
-    },
-    {
       "key": "common.externalReference",
       "namespace": "common",
       "leaf": "externalReference",
@@ -93061,6 +92971,96 @@
       }
     },
     {
+      "key": "success.externalPartyAdded",
+      "namespace": "success",
+      "leaf": "externalPartyAdded",
+      "segments": [
+        "success",
+        "externalPartyAdded"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3329
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Externe partij toegevoegd",
+        "fr": "Partie externe ajoutée",
+        "en": "External party added"
+      }
+    },
+    {
+      "key": "success.externalPartyChanged",
+      "namespace": "success",
+      "leaf": "externalPartyChanged",
+      "segments": [
+        "success",
+        "externalPartyChanged"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3330
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Externe partij gewijzigd",
+        "fr": "Partie externe modifiée",
+        "en": "External party changed"
+      }
+    },
+    {
+      "key": "success.externalPartyDeleted",
+      "namespace": "success",
+      "leaf": "externalPartyDeleted",
+      "segments": [
+        "success",
+        "externalPartyDeleted"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3331
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Externe partij(en) verwijderd",
+        "fr": "Partie(s) externe(s) supprimée(s)",
+        "en": "External party/parties deleted"
+      }
+    },
+    {
       "key": "success.extraInfoAdded",
       "namespace": "success",
       "leaf": "extraInfoAdded",
@@ -100691,7 +100691,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2304
+      "keyCount": 2301
     },
     {
       "name": "confirmation",
@@ -100740,7 +100740,7 @@
       "label": "Geslaagd",
       "description": "Teksten die bevestigen dat een actie correct is uitgevoerd of succesvol is afgerond.",
       "status": "active",
-      "keyCount": 236
+      "keyCount": 239
     },
     {
       "name": "warning",

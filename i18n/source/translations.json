@@ -30604,5 +30604,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.overviewOpenCommissions",
+    "nl": "Overzicht openstaande commissies",
+    "fr": "Aperçu des commissions en cours",
+    "en": "Overview of open commissions",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3324,
-    "uniqueKeys": 3324,
+    "totalEntries": 3325,
+    "uniqueKeys": 3325,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -50847,6 +50847,36 @@
       }
     },
     {
+      "key": "common.overviewOpenCommissions",
+      "namespace": "common",
+      "leaf": "overviewOpenCommissions",
+      "segments": [
+        "common",
+        "overviewOpenCommissions"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3325
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Overzicht openstaande commissies",
+        "fr": "Aperçu des commissions en cours",
+        "en": "Overview of open commissions"
+      }
+    },
+    {
       "key": "common.overviewReceivedZones",
       "namespace": "common",
       "leaf": "overviewReceivedZones",
@@ -100481,7 +100511,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2297
+      "keyCount": 2298
     },
     {
       "name": "confirmation",

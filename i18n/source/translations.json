@@ -30640,5 +30640,32 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.externalPartyAdded",
+    "nl": "Externe partij toegevoegd",
+    "fr": "Partie externe ajoutée",
+    "en": "External party added",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.externalPartyChanged",
+    "nl": "Externe partij gewijzigd",
+    "fr": "Partie externe modifiée",
+    "en": "External party changed",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.externalPartyDeleted",
+    "nl": "Externe partij(en) verwijderd",
+    "fr": "Partie(s) externe(s) supprimée(s)",
+    "en": "External party/parties deleted",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

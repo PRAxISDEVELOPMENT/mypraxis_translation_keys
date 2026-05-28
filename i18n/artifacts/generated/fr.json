@@ -3251,6 +3251,7 @@
     "aboutToDeleteEmailAdres": "Vous êtes sur le point de supprimer l’adresse e-mail {{value}}.",
     "aboutToDeleteEventMarkers": "Vous êtes sur le point de supprimer {{value}} marqueur(s) d'événement.",
     "aboutToDeleteExceptions": "Vous êtes sur le point de supprimer {{value}} exception(s).",
+    "aboutToDeleteExternalParties": "Vous êtes sur le point de supprimer {{value}} partie(s) externe(s).",
     "aboutToDeleteExtraInfos": "Vous êtes sur le point de supprimer {{value}} info(s) supplémentaire(s).",
     "aboutToDeleteGroups": "Vous êtes sur le point de supprimer {{value}} groupe(s)",
     "aboutToDeleteInstaller": "Vous êtes sur le point de supprimer l’installateur : {{value}}",

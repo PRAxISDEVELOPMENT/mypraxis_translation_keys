@@ -30667,5 +30667,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "warning.aboutToDeleteExternalParties",
+    "nl": "U staat op het punt om {{value}} externe partij(en) te verwijderen.",
+    "fr": "Vous êtes sur le point de supprimer {{value}} partie(s) externe(s).",
+    "en": "You are about to delete {{value}} external party/parties.",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

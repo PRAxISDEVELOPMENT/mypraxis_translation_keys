@@ -3232,6 +3232,7 @@
   "warning.aboutToDeleteEmailAdres",
   "warning.aboutToDeleteEventMarkers",
   "warning.aboutToDeleteExceptions",
+  "warning.aboutToDeleteExternalParties",
   "warning.aboutToDeleteExtraInfos",
   "warning.aboutToDeleteGroups",
   "warning.aboutToDeleteInstaller",

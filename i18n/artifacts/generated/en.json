@@ -3251,6 +3251,7 @@
     "aboutToDeleteEmailAdres": "You are about to delete e-mailadres {{value}}.",
     "aboutToDeleteEventMarkers": "You are about to delete {{value}} event marker(s).",
     "aboutToDeleteExceptions": "You are about to delete {{value}} exception(s).",
+    "aboutToDeleteExternalParties": "You are about to delete {{value}} external party/parties.",
     "aboutToDeleteExtraInfos": "You are about to delete {{value}} extra info(s).",
     "aboutToDeleteGroups": "You are about to delete {{value}} group(s)",
     "aboutToDeleteInstaller": "You are about to delete installer: {{value}}",

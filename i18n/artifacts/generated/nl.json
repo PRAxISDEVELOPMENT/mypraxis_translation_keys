@@ -3251,6 +3251,7 @@
     "aboutToDeleteEmailAdres": "U staat op het punt om het e-mailadres {{value}} te verwijderen.",
     "aboutToDeleteEventMarkers": "U staat op het punt {{value}} Melding markering(en) te verwijderen.",
     "aboutToDeleteExceptions": "U staat op het punt {{value}} uitzondering(en) te verwijderen.",
+    "aboutToDeleteExternalParties": "U staat op het punt om {{value}} externe partij(en) te verwijderen.",
     "aboutToDeleteExtraInfos": "U staat op het punt om {{value}} extra info(s) te verwijderen.",
     "aboutToDeleteGroups": "U staat op het punt om {{value}} groep(en) te verwijderen",
     "aboutToDeleteInstaller": "Je staat op het punt om installateur {{value}} te verwijderen",

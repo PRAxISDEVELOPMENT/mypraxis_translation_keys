@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3331,
-    "uniqueKeys": 3331,
+    "totalEntries": 3332,
+    "uniqueKeys": 3332,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -97727,6 +97727,36 @@
       }
     },
     {
+      "key": "warning.aboutToDeleteExternalParties",
+      "namespace": "warning",
+      "leaf": "aboutToDeleteExternalParties",
+      "segments": [
+        "warning",
+        "aboutToDeleteExternalParties"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3332
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "U staat op het punt om {{value}} externe partij(en) te verwijderen.",
+        "fr": "Vous êtes sur le point de supprimer {{value}} partie(s) externe(s).",
+        "en": "You are about to delete {{value}} external party/parties."
+      }
+    },
+    {
       "key": "warning.aboutToDeleteExtraInfos",
       "namespace": "warning",
       "leaf": "aboutToDeleteExtraInfos",
@@ -100747,7 +100777,7 @@
       "label": "Waarschuwingen",
       "description": "Teksten die de gebruiker wijzen op aandachtspunten, mogelijke gevolgen of vereiste zorgvuldigheid.",
       "status": "active",
-      "keyCount": 128
+      "keyCount": 129
     }
   ]
 }

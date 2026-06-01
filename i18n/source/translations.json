@@ -30676,5 +30676,16 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.weekdays",
+    "nl": "Weekdagen",
+    "fr": "Jours de la semaine",
+    "en": "Weekdays",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]
+
+

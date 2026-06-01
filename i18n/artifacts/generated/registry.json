@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3332,
-    "uniqueKeys": 3332,
+    "totalEntries": 3333,
+    "uniqueKeys": 3333,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -72408,6 +72408,36 @@
       }
     },
     {
+      "key": "common.weekdays",
+      "namespace": "common",
+      "leaf": "weekdays",
+      "segments": [
+        "common",
+        "weekdays"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3333
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Weekdagen",
+        "fr": "Jours de la semaine",
+        "en": "Weekdays"
+      }
+    },
+    {
       "key": "common.weekly",
       "namespace": "common",
       "leaf": "weekly",
@@ -100721,7 +100751,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2301
+      "keyCount": 2302
     },
     {
       "name": "confirmation",

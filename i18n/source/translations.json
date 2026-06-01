@@ -30685,7 +30685,95 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.busiestPeriod",
+    "nl": "Drukste periode",
+    "fr": "Période la plus chargée",
+    "en": "Busiest period",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.fridayShort",
+    "nl": "Vr",
+    "fr": "Ven",
+    "en": "Fri",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.mondayShort",
+    "nl": "Ma",
+    "fr": "Lun",
+    "en": "Mon",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.notApplicableShort",
+    "nl": "N.v.t.",
+    "fr": "N/A",
+    "en": "N/A",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.peakMoment",
+    "nl": "Piekmoment",
+    "fr": "Moment de pointe",
+    "en": "Peak moment",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.saturdayShort",
+    "nl": "Za",
+    "fr": "Sam",
+    "en": "Sat",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.sundayShort",
+    "nl": "Zo",
+    "fr": "Dim",
+    "en": "Sun",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.thursdayShort",
+    "nl": "Do",
+    "fr": "Jeu",
+    "en": "Thu",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.tuesdayShort",
+    "nl": "Di",
+    "fr": "Mar",
+    "en": "Tue",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.wednesdayShort",
+    "nl": "Wo",
+    "fr": "Mer",
+    "en": "Wed",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]
-
-

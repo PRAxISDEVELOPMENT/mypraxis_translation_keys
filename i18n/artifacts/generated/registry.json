@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3333,
-    "uniqueKeys": 3333,
+    "totalEntries": 3343,
+    "uniqueKeys": 3343,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -12150,6 +12150,36 @@
         "nl": "Bus",
         "fr": "Boîte",
         "en": "Bus"
+      }
+    },
+    {
+      "key": "common.busiestPeriod",
+      "namespace": "common",
+      "leaf": "busiestPeriod",
+      "segments": [
+        "common",
+        "busiestPeriod"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3334
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Drukste periode",
+        "fr": "Période la plus chargée",
+        "en": "Busiest period"
       }
     },
     {
@@ -33188,6 +33218,36 @@
       }
     },
     {
+      "key": "common.fridayShort",
+      "namespace": "common",
+      "leaf": "fridayShort",
+      "segments": [
+        "common",
+        "fridayShort"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3335
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Vr",
+        "fr": "Ven",
+        "en": "Fri"
+      }
+    },
+    {
       "key": "common.from",
       "namespace": "common",
       "leaf": "from",
@@ -44618,6 +44678,36 @@
       }
     },
     {
+      "key": "common.mondayShort",
+      "namespace": "common",
+      "leaf": "mondayShort",
+      "segments": [
+        "common",
+        "mondayShort"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3336
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Ma",
+        "fr": "Lun",
+        "en": "Mon"
+      }
+    },
+    {
       "key": "common.monitoringData",
       "namespace": "common",
       "leaf": "monitoringData",
@@ -47369,6 +47459,36 @@
         "nl": "Niet van toepassing",
         "fr": "Non applicable",
         "en": "Not applicable"
+      }
+    },
+    {
+      "key": "common.notApplicableShort",
+      "namespace": "common",
+      "leaf": "notApplicableShort",
+      "segments": [
+        "common",
+        "notApplicableShort"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3337
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "N.v.t.",
+        "fr": "N/A",
+        "en": "N/A"
       }
     },
     {
@@ -51568,6 +51688,36 @@
         "nl": "Betalingsvoorwaarden",
         "fr": "Conditions de paiement",
         "en": "Payment terms"
+      }
+    },
+    {
+      "key": "common.peakMoment",
+      "namespace": "common",
+      "leaf": "peakMoment",
+      "segments": [
+        "common",
+        "peakMoment"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3338
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Piekmoment",
+        "fr": "Moment de pointe",
+        "en": "Peak moment"
       }
     },
     {
@@ -59368,6 +59518,36 @@
       }
     },
     {
+      "key": "common.saturdayShort",
+      "namespace": "common",
+      "leaf": "saturdayShort",
+      "segments": [
+        "common",
+        "saturdayShort"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3339
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Za",
+        "fr": "Sam",
+        "en": "Sat"
+      }
+    },
+    {
       "key": "common.save",
       "namespace": "common",
       "leaf": "save",
@@ -63951,6 +64131,36 @@
       }
     },
     {
+      "key": "common.sundayShort",
+      "namespace": "common",
+      "leaf": "sundayShort",
+      "segments": [
+        "common",
+        "sundayShort"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3340
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Zo",
+        "fr": "Dim",
+        "en": "Sun"
+      }
+    },
+    {
       "key": "common.superscript",
       "namespace": "common",
       "leaf": "superscript",
@@ -65672,6 +65882,36 @@
         "nl": "Drempelwaardes",
         "fr": "Seuils",
         "en": "Threshold values"
+      }
+    },
+    {
+      "key": "common.thursdayShort",
+      "namespace": "common",
+      "leaf": "thursdayShort",
+      "segments": [
+        "common",
+        "thursdayShort"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3341
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Do",
+        "fr": "Jeu",
+        "en": "Thu"
       }
     },
     {
@@ -67690,6 +67930,36 @@
         "nl": "Opnieuw proberen",
         "fr": "Réessayer",
         "en": "Try again"
+      }
+    },
+    {
+      "key": "common.tuesdayShort",
+      "namespace": "common",
+      "leaf": "tuesdayShort",
+      "segments": [
+        "common",
+        "tuesdayShort"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3342
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Di",
+        "fr": "Mar",
+        "en": "Tue"
       }
     },
     {
@@ -72375,6 +72645,36 @@
         "nl": "We bevestigen de goede ontvangst van uw bericht.",
         "fr": "Nous confirmons la bonne réception de votre message.",
         "en": "We confirm the receipt of your message."
+      }
+    },
+    {
+      "key": "common.wednesdayShort",
+      "namespace": "common",
+      "leaf": "wednesdayShort",
+      "segments": [
+        "common",
+        "wednesdayShort"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3343
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Wo",
+        "fr": "Mer",
+        "en": "Wed"
       }
     },
     {
@@ -100751,7 +101051,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2302
+      "keyCount": 2312
     },
     {
       "name": "confirmation",

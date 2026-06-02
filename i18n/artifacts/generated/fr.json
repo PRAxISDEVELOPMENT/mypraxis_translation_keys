@@ -2350,7 +2350,7 @@
     "videoVerificationViaCommunicatorAndDVRNVR": "Vérification par vidéo via communicateur et DVR/NVR",
     "videoVerificationViaDVRNVR": "Vérification par vidéo via DVR/NVR",
     "videoViaCommunicator": "Vidéo via communicateur",
-    "videoViaDvr": "Vidéo via DVR",
+    "videoViaDvr": "Vidéo via DVR/NVR",
     "view": "Voir",
     "viewAddEditOrRemoveZones": "Afficher, supprimer, modifier ou ajouter des zones",
     "viewAndDownloadAllInvoicesIncludingOverdueUnpaidPaidAndCreditNotes": "ConsulConsulter ou télécharger les factures de PRAxIS (payées, impayées ou en retard de paiement) et vos avoirs.",

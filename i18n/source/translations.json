@@ -3160,6 +3160,15 @@
     ]
   },
   {
+    "key": "common.averageWaitingTime",
+    "nl": "Gemiddelde wachttijd",
+    "fr": "Temps d’attente moyen",
+    "en": "Average waiting time",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.awaitingApproval",
     "nl": "In afwachting van goedkeuring",
     "fr": "En attente d’approbation",
@@ -3729,6 +3738,15 @@
     "nl": "Bus",
     "fr": "Boîte",
     "en": "Bus",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.busiestPeriod",
+    "nl": "Drukste periode",
+    "fr": "Période la plus chargée",
+    "en": "Busiest period",
     "applications": [
       "mypraxis_web"
     ]
@@ -9369,6 +9387,15 @@
     ]
   },
   {
+    "key": "common.externalParties",
+    "nl": "Externe partijen",
+    "fr": "Parties externes",
+    "en": "External parties",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.externalReference",
     "nl": "Externe referentie, bijv. ERP-nummer, klant-ID, ...",
     "fr": "Référence externe, par exemple, un numéro d'ERP, ID client, ...",
@@ -10123,6 +10150,15 @@
     ]
   },
   {
+    "key": "common.fridayShort",
+    "nl": "Vr",
+    "fr": "Ven",
+    "en": "Fri",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.from",
     "nl": "Van",
     "fr": "De",
@@ -10213,6 +10249,33 @@
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.gdprSections",
+    "nl": "GDPR-secties",
+    "fr": "Sections GDPR",
+    "en": "GDPR sections",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.gdprSectionsAutoGroupingInfo",
+    "nl": "Secties met GDPR in de naam worden automatisch gegroepeerd en kunnen bij de opmaak worden aan- of uitgezet.",
+    "fr": "Les sections contenant GDPR dans leur nom sont automatiquement regroupées et peuvent être activées ou désactivées lors de la mise en page.",
+    "en": "Sections with GDPR in their name are automatically grouped and can be enabled or disabled during formatting.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.gdprSectionsNamingInstruction",
+    "nl": "Hou GDPR in de naam van elke GDPR-sectie. Zo herkent MyPRAxIS deze groep en kan ze bij de opmaak worden aan- of uitgezet.",
+    "fr": "Conservez GDPR dans le nom de chaque section GDPR. MyPRAxIS reconnaît ainsi ce groupe et peut l’activer ou le désactiver lors de la mise en page.",
+    "en": "Keep GDPR in the name of each GDPR section. This allows MyPRAxIS to recognize this group and enable or disable it during formatting.",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -12104,6 +12167,15 @@
     ]
   },
   {
+    "key": "common.last12Months",
+    "nl": "Laatste 12 maanden",
+    "fr": "12 derniers mois",
+    "en": "Last 12 months",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.last24Hours",
     "nl": "Laatste 24 uur",
     "fr": "Dernières 24 heures",
@@ -13579,6 +13651,15 @@
     ]
   },
   {
+    "key": "common.mondayShort",
+    "nl": "Ma",
+    "fr": "Lun",
+    "en": "Mon",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.monitoringData",
     "nl": "Monitoring gegevens",
     "fr": "Données du monitoring",
@@ -13984,6 +14065,15 @@
     "nl": "Nieuwe gebruiker?",
     "fr": "Nouvel utilisateur?",
     "en": "New user?",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.newValue",
+    "nl": "Nieuwe waarde",
+    "fr": "Nouvelle valeur",
+    "en": "New value",
     "applications": [
       "mypraxis_web"
     ]
@@ -14410,6 +14500,15 @@
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.notApplicableShort",
+    "nl": "N.v.t.",
+    "fr": "N/A",
+    "en": "N/A",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -15463,6 +15562,15 @@
     ]
   },
   {
+    "key": "common.overviewIncomingCallWaitingTimes",
+    "nl": "Overzicht wachttijden inkomende oproepen",
+    "fr": "Aperçu des temps d’attente des appels entrants",
+    "en": "Overview of incoming call waiting times",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.overviewNewClient",
     "nl": "Overzicht nieuwe klant",
     "fr": "Aperçu du nouveau client",
@@ -15488,6 +15596,15 @@
     "en": "Overview of reports",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.overviewOpenCommissions",
+    "nl": "Overzicht openstaande commissies",
+    "fr": "Aperçu des commissions en cours",
+    "en": "Overview of open commissions",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -15672,6 +15789,15 @@
     "en": "Payment terms",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.peakMoment",
+    "nl": "Piekmoment",
+    "fr": "Moment de pointe",
+    "en": "Peak moment",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -17981,6 +18107,15 @@
     ]
   },
   {
+    "key": "common.sales",
+    "nl": "Sales",
+    "fr": "Sales",
+    "en": "Sales",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.salesJournal",
     "nl": "Verkoopdagboek",
     "fr": "Journal des ventes",
@@ -18033,6 +18168,24 @@
     "en": "Sales quote (unavailable due to no sales prices defined)",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.salesRepresentative",
+    "nl": "Sales contact PRAxIS",
+    "fr": "Sales contact PRAxIS",
+    "en": "Sales contact PRAxIS",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.saturdayShort",
+    "nl": "Za",
+    "fr": "Sam",
+    "en": "Sat",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -19153,6 +19306,15 @@
     ]
   },
   {
+    "key": "common.startCommissionNotes",
+    "nl": "Start opmaak commissienota's",
+    "fr": "Démarrer la préparation des notes de commission",
+    "en": "Start drafting commission notes",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.startDate",
     "nl": "Startdatum",
     "fr": "Date de début",
@@ -19418,6 +19580,15 @@
     ]
   },
   {
+    "key": "common.sundayShort",
+    "nl": "Zo",
+    "fr": "Dim",
+    "en": "Sun",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.superscript",
     "nl": "Superscript",
     "fr": "Exposant",
@@ -19482,6 +19653,15 @@
     "en": "Surname of the director",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.syncAll",
+    "nl": "Synchroniseer alles",
+    "fr": "Synchroniser tout",
+    "en": "Synchronize all",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -19773,6 +19953,15 @@
     ]
   },
   {
+    "key": "common.textEmailDocusign",
+    "nl": "Begeleidende tekst e-mail DocuSign",
+    "fr": "Texte d'accompagnement de l'e-mail DocuSign",
+    "en": "Accompanying text for DocuSign email",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.thankYouForYourEmail",
     "nl": "Bedankt voor uw e-mail",
     "fr": "Merci pour votre e-mail",
@@ -19922,6 +20111,15 @@
     "nl": "Drempelwaardes",
     "fr": "Seuils",
     "en": "Threshold values",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.thursdayShort",
+    "nl": "Do",
+    "fr": "Jeu",
+    "en": "Thu",
     "applications": [
       "mypraxis_web"
     ]
@@ -20535,6 +20733,15 @@
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.tuesdayShort",
+    "nl": "Di",
+    "fr": "Mar",
+    "en": "Tue",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -21467,9 +21674,9 @@
   },
   {
     "key": "common.videoViaDvr",
-    "nl": "Video via DVR",
-    "fr": "Vidéo via DVR",
-    "en": "Video via DVR",
+    "nl": "Video via DVR/NVR",
+    "fr": "Vidéo via DVR/NVR",
+    "en": "Video via DVR/NVR",
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
@@ -21968,10 +22175,28 @@
     ]
   },
   {
+    "key": "common.wednesdayShort",
+    "nl": "Wo",
+    "fr": "Mer",
+    "en": "Wed",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.week",
     "nl": "Week",
     "fr": "Semaine",
     "en": "Week",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.weekdays",
+    "nl": "Weekdagen",
+    "fr": "Jours de la semaine",
+    "en": "Weekdays",
     "applications": [
       "mypraxis_web"
     ]
@@ -28219,6 +28444,33 @@
     ]
   },
   {
+    "key": "success.externalPartyAdded",
+    "nl": "Externe partij toegevoegd",
+    "fr": "Partie externe ajoutée",
+    "en": "External party added",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "success.externalPartyChanged",
+    "nl": "Externe partij gewijzigd",
+    "fr": "Partie externe modifiée",
+    "en": "External party changed",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "success.externalPartyDeleted",
+    "nl": "Externe partij(en) verwijderd",
+    "fr": "Partie(s) externe(s) supprimée(s)",
+    "en": "External party/parties deleted",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "success.extraInfoAdded",
     "nl": "Extra info toegevoegd",
     "fr": "Informations supplémentaires ajoutées",
@@ -29630,6 +29882,15 @@
     ]
   },
   {
+    "key": "warning.aboutToDeleteExternalParties",
+    "nl": "U staat op het punt om {{value}} externe partij(en) te verwijderen.",
+    "fr": "Vous êtes sur le point de supprimer {{value}} partie(s) externe(s).",
+    "en": "You are about to delete {{value}} external party/parties.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "warning.aboutToDeleteExtraInfos",
     "nl": "U staat op het punt om {{value}} extra info(s) te verwijderen.",
     "fr": "Vous êtes sur le point de supprimer {{value}} info(s) supplémentaire(s).",
@@ -30511,267 +30772,6 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.newValue",
-    "nl": "Nieuwe waarde",
-    "fr": "Nouvelle valeur",
-    "en": "New value",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.textEmailDocusign",
-    "nl": "Begeleidende tekst e-mail DocuSign",
-    "fr": "Texte d'accompagnement de l'e-mail DocuSign",
-    "en": "Accompanying text for DocuSign email",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.last12Months",
-    "nl": "Laatste 12 maanden",
-    "fr": "12 derniers mois",
-    "en": "Last 12 months",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.syncAll",
-    "nl": "Synchroniseer alles",
-    "fr": "Synchroniser tout",
-    "en": "Synchronize all",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.startCommissionNotes",
-    "nl": "Start opmaak commissienota's",
-    "fr": "Démarrer la préparation des notes de commission",
-    "en": "Start drafting commission notes",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.gdprSections",
-    "nl": "GDPR-secties",
-    "fr": "Sections GDPR",
-    "en": "GDPR sections",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.gdprSectionsNamingInstruction",
-    "nl": "Hou GDPR in de naam van elke GDPR-sectie. Zo herkent MyPRAxIS deze groep en kan ze bij de opmaak worden aan- of uitgezet.",
-    "fr": "Conservez GDPR dans le nom de chaque section GDPR. MyPRAxIS reconnaît ainsi ce groupe et peut l’activer ou le désactiver lors de la mise en page.",
-    "en": "Keep GDPR in the name of each GDPR section. This allows MyPRAxIS to recognize this group and enable or disable it during formatting.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.gdprSectionsAutoGroupingInfo",
-    "nl": "Secties met GDPR in de naam worden automatisch gegroepeerd en kunnen bij de opmaak worden aan- of uitgezet.",
-    "fr": "Les sections contenant GDPR dans leur nom sont automatiquement regroupées et peuvent être activées ou désactivées lors de la mise en page.",
-    "en": "Sections with GDPR in their name are automatically grouped and can be enabled or disabled during formatting.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.salesRepresentative",
-    "nl": "Sales contact PRAxIS",
-    "fr": "Sales contact PRAxIS",
-    "en": "Sales contact PRAxIS",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.sales",
-    "nl": "Sales",
-    "fr": "Sales",
-    "en": "Sales",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.overviewOpenCommissions",
-    "nl": "Overzicht openstaande commissies",
-    "fr": "Aperçu des commissions en cours",
-    "en": "Overview of open commissions",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.overviewIncomingCallWaitingTimes",
-    "nl": "Overzicht wachttijden inkomende oproepen",
-    "fr": "Aperçu des temps d’attente des appels entrants",
-    "en": "Overview of incoming call waiting times",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.averageWaitingTime",
-    "nl": "Gemiddelde wachttijd",
-    "fr": "Temps d’attente moyen",
-    "en": "Average waiting time",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.externalParties",
-    "nl": "Externe partijen",
-    "fr": "Parties externes",
-    "en": "External parties",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "success.externalPartyAdded",
-    "nl": "Externe partij toegevoegd",
-    "fr": "Partie externe ajoutée",
-    "en": "External party added",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "success.externalPartyChanged",
-    "nl": "Externe partij gewijzigd",
-    "fr": "Partie externe modifiée",
-    "en": "External party changed",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "success.externalPartyDeleted",
-    "nl": "Externe partij(en) verwijderd",
-    "fr": "Partie(s) externe(s) supprimée(s)",
-    "en": "External party/parties deleted",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "warning.aboutToDeleteExternalParties",
-    "nl": "U staat op het punt om {{value}} externe partij(en) te verwijderen.",
-    "fr": "Vous êtes sur le point de supprimer {{value}} partie(s) externe(s).",
-    "en": "You are about to delete {{value}} external party/parties.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.weekdays",
-    "nl": "Weekdagen",
-    "fr": "Jours de la semaine",
-    "en": "Weekdays",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.busiestPeriod",
-    "nl": "Drukste periode",
-    "fr": "Période la plus chargée",
-    "en": "Busiest period",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.fridayShort",
-    "nl": "Vr",
-    "fr": "Ven",
-    "en": "Fri",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.mondayShort",
-    "nl": "Ma",
-    "fr": "Lun",
-    "en": "Mon",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.notApplicableShort",
-    "nl": "N.v.t.",
-    "fr": "N/A",
-    "en": "N/A",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.peakMoment",
-    "nl": "Piekmoment",
-    "fr": "Moment de pointe",
-    "en": "Peak moment",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.saturdayShort",
-    "nl": "Za",
-    "fr": "Sam",
-    "en": "Sat",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.sundayShort",
-    "nl": "Zo",
-    "fr": "Dim",
-    "en": "Sun",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.thursdayShort",
-    "nl": "Do",
-    "fr": "Jeu",
-    "en": "Thu",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.tuesdayShort",
-    "nl": "Di",
-    "fr": "Mar",
-    "en": "Tue",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.wednesdayShort",
-    "nl": "Wo",
-    "fr": "Mer",
-    "en": "Wed",
     "applications": [
       "mypraxis_web"
     ]

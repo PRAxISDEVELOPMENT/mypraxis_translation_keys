@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-02T14:15:57.021Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260602141532-72giad.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.videoViaDvr",
+      "namespace": "common",
+      "changes": {
+        "nl": "Video via DVR/NVR",
+        "fr": "Vidéo via DVR/NVR",
+        "en": "Video via DVR/NVR"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Video via DVR",
+        "fr": "Vidéo via DVR",
+        "en": "Video via DVR"
+      },
+      "next": {
+        "nl": "Video via DVR/NVR",
+        "fr": "Vidéo via DVR/NVR",
+        "en": "Video via DVR/NVR"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

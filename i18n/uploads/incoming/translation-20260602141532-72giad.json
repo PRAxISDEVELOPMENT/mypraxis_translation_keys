@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.videoViaDvr",
+      "nl": "Video via DVR/NVR",
+      "fr": "Vidéo via DVR/NVR",
+      "en": "Video via DVR/NVR"
+    }
+  ]
+}

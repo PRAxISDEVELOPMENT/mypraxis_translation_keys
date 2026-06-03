@@ -1714,6 +1714,7 @@
   "common.pendingChanges",
   "common.pendingCommissions",
   "common.pendingRegistrations",
+  "common.per",
   "common.perCall",
   "common.perDay",
   "common.periodicReports",

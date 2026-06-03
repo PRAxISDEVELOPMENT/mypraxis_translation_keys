@@ -30802,5 +30802,15 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.per",
+    "nl": "Per",
+    "fr": "Par",
+    "en": "Per",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]
+

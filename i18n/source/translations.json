@@ -30775,5 +30775,23 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.averageWaitingTimePerCall",
+    "nl": "Gemiddelde wachttijd per oproep",
+    "fr": "Temps d’attente moyen par appel",
+    "en": "Average waiting time per call",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.incomingCallCount",
+    "nl": "Aantal inkomende oproepen",
+    "fr": "Nombre d’appels entrants",
+    "en": "Number of incoming calls",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

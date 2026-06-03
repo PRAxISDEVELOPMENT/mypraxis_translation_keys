@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3343,
-    "uniqueKeys": 3343,
+    "totalEntries": 3345,
+    "uniqueKeys": 3345,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -10274,6 +10274,36 @@
         "nl": "Gemiddelde wachttijd",
         "fr": "Temps d’attente moyen",
         "en": "Average waiting time"
+      }
+    },
+    {
+      "key": "common.averageWaitingTimePerCall",
+      "namespace": "common",
+      "leaf": "averageWaitingTimePerCall",
+      "segments": [
+        "common",
+        "averageWaitingTimePerCall"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3344
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gemiddelde wachttijd per oproep",
+        "fr": "Temps d’attente moyen par appel",
+        "en": "Average waiting time per call"
       }
     },
     {
@@ -37237,6 +37267,36 @@
         "nl": "Inkomende oproep",
         "fr": "Appel entrant",
         "en": "Incoming call"
+      }
+    },
+    {
+      "key": "common.incomingCallCount",
+      "namespace": "common",
+      "leaf": "incomingCallCount",
+      "segments": [
+        "common",
+        "incomingCallCount"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3345
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Aantal inkomende oproepen",
+        "fr": "Nombre d’appels entrants",
+        "en": "Number of incoming calls"
       }
     },
     {
@@ -101051,7 +101111,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2312
+      "keyCount": 2314
     },
     {
       "name": "confirmation",

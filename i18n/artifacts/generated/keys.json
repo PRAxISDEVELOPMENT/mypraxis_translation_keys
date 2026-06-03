@@ -188,6 +188,7 @@
   "common.addGlobalContacts",
   "common.addItem",
   "common.additionalAgreements",
+  "common.additionalAgreementsConfigurationInfo",
   "common.additionalArrangementAdded",
   "common.additionalArrangementChaned",
   "common.additionalArrangementDeleted",

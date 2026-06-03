@@ -193,6 +193,7 @@
     "addGlobalContacts": "Add global contacts",
     "addItem": "Add item",
     "additionalAgreements": "Additional agreement(s)",
+    "additionalAgreementsConfigurationInfo": "Additional agreements can be configured via the sections \"Obligations of the contracting parties\" or \"Execution modalities\". Use exactly one of these section names to use this functionality during contract drafting.",
     "additionalArrangementAdded": "Additional arrangement title added",
     "additionalArrangementChaned": "Additional arrangement title changed",
     "additionalArrangementDeleted": "Additional arrangement title deleted",

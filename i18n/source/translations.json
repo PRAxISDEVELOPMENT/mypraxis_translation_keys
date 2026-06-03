@@ -30793,5 +30793,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.additionalAgreementsConfigurationInfo",
+    "nl": "Bijkomende afspraken kunnen worden geconfigureerd via de secties \"Verplichtingen van de contractanten\" of \"Uitvoeringsmodaliteiten\". Gebruik exact een van deze sectienamen om deze functionaliteit tijdens de contractopmaak te kunnen gebruiken.",
+    "fr": "Des accords supplémentaires peuvent être configurés via les sections « Obligations des contractants » ou « Modalités d’exécution ». Utilisez exactement l’un de ces noms de section pour pouvoir utiliser cette fonctionnalité lors de la rédaction du contrat.",
+    "en": "Additional agreements can be configured via the sections \"Obligations of the contracting parties\" or \"Execution modalities\". Use exactly one of these section names to use this functionality during contract drafting.",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

@@ -193,6 +193,7 @@
     "addGlobalContacts": "Ajouter des contacts globaux",
     "addItem": "Ajouter un élément",
     "additionalAgreements": "Convention(s) complémentaire(s)",
+    "additionalAgreementsConfigurationInfo": "Des accords supplémentaires peuvent être configurés via les sections « Obligations des contractants » ou « Modalités d’exécution ». Utilisez exactement l’un de ces noms de section pour pouvoir utiliser cette fonctionnalité lors de la rédaction du contrat.",
     "additionalArrangementAdded": "Titre de l'arrangement supplémentaire ajouté",
     "additionalArrangementChaned": "Titre de l'arrangement supplémentaire modifié",
     "additionalArrangementDeleted": "Titre de l'arrangement supplémentaire supprimé",

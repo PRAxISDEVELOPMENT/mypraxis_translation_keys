@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3345,
-    "uniqueKeys": 3345,
+    "totalEntries": 3346,
+    "uniqueKeys": 3346,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -5837,6 +5837,36 @@
         "nl": "Bijkomende overeenkomst(en)",
         "fr": "Convention(s) complémentaire(s)",
         "en": "Additional agreement(s)"
+      }
+    },
+    {
+      "key": "common.additionalAgreementsConfigurationInfo",
+      "namespace": "common",
+      "leaf": "additionalAgreementsConfigurationInfo",
+      "segments": [
+        "common",
+        "additionalAgreementsConfigurationInfo"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3346
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bijkomende afspraken kunnen worden geconfigureerd via de secties \"Verplichtingen van de contractanten\" of \"Uitvoeringsmodaliteiten\". Gebruik exact een van deze sectienamen om deze functionaliteit tijdens de contractopmaak te kunnen gebruiken.",
+        "fr": "Des accords supplémentaires peuvent être configurés via les sections « Obligations des contractants » ou « Modalités d’exécution ». Utilisez exactement l’un de ces noms de section pour pouvoir utiliser cette fonctionnalité lors de la rédaction du contrat.",
+        "en": "Additional agreements can be configured via the sections \"Obligations of the contracting parties\" or \"Execution modalities\". Use exactly one of these section names to use this functionality during contract drafting."
       }
     },
     {
@@ -101111,7 +101141,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2314
+      "keyCount": 2315
     },
     {
       "name": "confirmation",

@@ -193,6 +193,7 @@
     "addGlobalContacts": "Globale contacten toevoegen",
     "addItem": "Item toevoegen",
     "additionalAgreements": "Bijkomende overeenkomst(en)",
+    "additionalAgreementsConfigurationInfo": "Bijkomende afspraken kunnen worden geconfigureerd via de secties \"Verplichtingen van de contractanten\" of \"Uitvoeringsmodaliteiten\". Gebruik exact een van deze sectienamen om deze functionaliteit tijdens de contractopmaak te kunnen gebruiken.",
     "additionalArrangementAdded": "Titel van aanvullende regeling toegevoegd",
     "additionalArrangementChaned": "Titel van aanvullende regeling gewijzigd",
     "additionalArrangementDeleted": "Titel van aanvullende regeling verwijderd",

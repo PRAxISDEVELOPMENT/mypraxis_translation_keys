@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3347,
-    "uniqueKeys": 3347,
+    "totalEntries": 3359,
+    "uniqueKeys": 3359,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -18036,6 +18036,66 @@
         "nl": "Communicatoren",
         "fr": "Communicateurs",
         "en": "Communicators"
+      }
+    },
+    {
+      "key": "common.companyDataViaKvkBusinessRegister",
+      "namespace": "common",
+      "leaf": "companyDataViaKvkBusinessRegister",
+      "segments": [
+        "common",
+        "companyDataViaKvkBusinessRegister"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3348
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bedrijfsgegevens via KVK Handelsregister",
+        "fr": "Données d'entreprise via le registre KVK",
+        "en": "Company data via the KVK Business Register"
+      }
+    },
+    {
+      "key": "common.companyDataViaLuxembourgBusinessRegisters",
+      "namespace": "common",
+      "leaf": "companyDataViaLuxembourgBusinessRegisters",
+      "segments": [
+        "common",
+        "companyDataViaLuxembourgBusinessRegisters"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3352
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bedrijfsgegevens via Luxembourg Business Registers",
+        "fr": "Données d'entreprise via Luxembourg Business Registers",
+        "en": "Company data via Luxembourg Business Registers"
       }
     },
     {
@@ -49757,6 +49817,36 @@
       }
     },
     {
+      "key": "common.openKvkBusinessRegister",
+      "namespace": "common",
+      "leaf": "openKvkBusinessRegister",
+      "segments": [
+        "common",
+        "openKvkBusinessRegister"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3351
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Open KVK Handelsregister",
+        "fr": "Ouvrir le registre KVK",
+        "en": "Open KVK Business Register"
+      }
+    },
+    {
       "key": "common.openLabel",
       "namespace": "common",
       "leaf": "openLabel",
@@ -49784,6 +49874,36 @@
         "nl": "Open: {{value}}",
         "fr": "Ouvert : {{value}}",
         "en": "Open: {{value}}"
+      }
+    },
+    {
+      "key": "common.openLuxembourgBusinessRegisters",
+      "namespace": "common",
+      "leaf": "openLuxembourgBusinessRegisters",
+      "segments": [
+        "common",
+        "openLuxembourgBusinessRegisters"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3355
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Open Luxembourg Business Registers",
+        "fr": "Ouvrir Luxembourg Business Registers",
+        "en": "Open Luxembourg Business Registers"
       }
     },
     {
@@ -60150,6 +60270,36 @@
       }
     },
     {
+      "key": "common.searchOfficialCompanyRegisterForSelectedCountry",
+      "namespace": "common",
+      "leaf": "searchOfficialCompanyRegisterForSelectedCountry",
+      "segments": [
+        "common",
+        "searchOfficialCompanyRegisterForSelectedCountry"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3357
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Voor dit land is er geen vaste registerlink gekoppeld. Zoek de officiële bedrijfsgegevens op in het nationale handels- of ondernemingsregister van het gekozen land.",
+        "fr": "Aucun lien fixe vers un registre n'est configuré pour ce pays. Recherchez les données officielles de l'entreprise dans le registre national du commerce ou des entreprises du pays sélectionné.",
+        "en": "No fixed register link is configured for this country. Look up the official company data in the national trade or company register of the selected country."
+      }
+    },
+    {
       "key": "common.searchOnEverything",
       "namespace": "common",
       "leaf": "searchOnEverything",
@@ -60177,6 +60327,36 @@
         "nl": "Zoeken op alles",
         "fr": "Rechercher sur tout",
         "en": "Search on everything"
+      }
+    },
+    {
+      "key": "common.searchThisInOfficialRegisterForSelectedCountry",
+      "namespace": "common",
+      "leaf": "searchThisInOfficialRegisterForSelectedCountry",
+      "segments": [
+        "common",
+        "searchThisInOfficialRegisterForSelectedCountry"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3359
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Zoek dit op via het officiële register van het gekozen land.",
+        "fr": "Recherchez ces informations via le registre officiel du pays sélectionné.",
+        "en": "Look this up via the official register of the selected country."
       }
     },
     {
@@ -69502,6 +69682,66 @@
       }
     },
     {
+      "key": "common.useCompanyDataToSearchKvkBusinessRegister",
+      "namespace": "common",
+      "leaf": "useCompanyDataToSearchKvkBusinessRegister",
+      "segments": [
+        "common",
+        "useCompanyDataToSearchKvkBusinessRegister"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3349
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gebruik het KVK-nummer, de bedrijfsnaam of het adres om officiële Nederlandse bedrijfsgegevens op te zoeken in het Handelsregister.",
+        "fr": "Utilisez le numéro KVK, le nom de l'entreprise ou l'adresse pour rechercher les données officielles d'une entreprise néerlandaise dans le registre du commerce.",
+        "en": "Use the KVK number, company name or address to look up official Dutch company data in the Business Register."
+      }
+    },
+    {
+      "key": "common.useCompanyDataToSearchLuxembourgBusinessRegisters",
+      "namespace": "common",
+      "leaf": "useCompanyDataToSearchLuxembourgBusinessRegisters",
+      "segments": [
+        "common",
+        "useCompanyDataToSearchLuxembourgBusinessRegisters"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3353
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gebruik het RCS-nummer, de bedrijfsnaam of het adres om officiële Luxemburgse bedrijfsgegevens op te zoeken via het RCS.",
+        "fr": "Utilisez le numéro RCS, le nom de l'entreprise ou l'adresse pour rechercher les données officielles d'une entreprise luxembourgeoise via le RCS.",
+        "en": "Use the RCS number, company name or address to look up official Luxembourg company data via the RCS."
+      }
+    },
+    {
       "key": "common.useDevicePasscode",
       "namespace": "common",
       "leaf": "useDevicePasscode",
@@ -70651,6 +70891,126 @@
         "nl": "Verifiëren",
         "fr": "Vérifier",
         "en": "Verify"
+      }
+    },
+    {
+      "key": "common.verifyCompanyData",
+      "namespace": "common",
+      "leaf": "verifyCompanyData",
+      "segments": [
+        "common",
+        "verifyCompanyData"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3356
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bedrijfsgegevens controleren",
+        "fr": "Vérifier les données de l'entreprise",
+        "en": "Verify company data"
+      }
+    },
+    {
+      "key": "common.verifyDutchCompanyDataInKvkBusinessRegister",
+      "namespace": "common",
+      "leaf": "verifyDutchCompanyDataInKvkBusinessRegister",
+      "segments": [
+        "common",
+        "verifyDutchCompanyDataInKvkBusinessRegister"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3350
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Controleer minstens de handelsnaam, het vestigingsadres, de rechtsvorm, de registratie/status en de beschikbare tekenbevoegde of functionarisgegevens.",
+        "fr": "Vérifiez au minimum le nom commercial, l'adresse de l'établissement, la forme juridique, l'enregistrement/le statut et les données disponibles des personnes habilitées à signer ou des responsables.",
+        "en": "Verify at least the trade name, business address, legal form, registration/status and available authorised signatory or officer details."
+      }
+    },
+    {
+      "key": "common.verifyGeneralCompanyRegisterData",
+      "namespace": "common",
+      "leaf": "verifyGeneralCompanyRegisterData",
+      "segments": [
+        "common",
+        "verifyGeneralCompanyRegisterData"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3358
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Controleer minstens het ondernemings- of registratienummer, de bedrijfsnaam, het adres, de rechtsvorm, de status en de beschikbare bestuurders- of tekenbevoegde gegevens.",
+        "fr": "Vérifiez au minimum le numéro d'entreprise ou d'enregistrement, le nom de l'entreprise, l'adresse, la forme juridique, le statut et les données disponibles des administrateurs ou des personnes habilitées à signer.",
+        "en": "Verify at least the company or registration number, company name, address, legal form, status and available director or authorised signatory details."
+      }
+    },
+    {
+      "key": "common.verifyLuxembourgCompanyDataInBusinessRegisters",
+      "namespace": "common",
+      "leaf": "verifyLuxembourgCompanyDataInBusinessRegisters",
+      "segments": [
+        "common",
+        "verifyLuxembourgCompanyDataInBusinessRegisters"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3354
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Controleer minstens de maatschappelijke naam, het adres, de rechtsvorm, de registratie/status en de beschikbare bestuurders- of mandatarisgegevens.",
+        "fr": "Vérifiez au minimum la dénomination sociale, l'adresse, la forme juridique, l'enregistrement/le statut et les données disponibles des administrateurs ou mandataires.",
+        "en": "Verify at least the legal name, address, legal form, registration/status and available director or representative details."
       }
     },
     {
@@ -101171,7 +101531,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2316
+      "keyCount": 2328
     },
     {
       "name": "confirmation",

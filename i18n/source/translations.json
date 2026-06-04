@@ -30919,5 +30919,41 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.certificate",
+    "nl": "Certificaat",
+    "fr": "Certificat",
+    "en": "Certificate",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.customPeriod",
+    "nl": "Aangepaste periode",
+    "fr": "Période personnalisée",
+    "en": "Custom period",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.statusContract",
+    "nl": "Contractstatus",
+    "fr": "Statut du contrat",
+    "en": "Contract status",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.statusCertificate",
+    "nl": "Certificaatstatus",
+    "fr": "Statut du certificat",
+    "en": "Certificate status",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

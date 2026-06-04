@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3359,
-    "uniqueKeys": 3359,
+    "totalEntries": 3363,
+    "uniqueKeys": 3363,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -13784,6 +13784,36 @@
       }
     },
     {
+      "key": "common.certificate",
+      "namespace": "common",
+      "leaf": "certificate",
+      "segments": [
+        "common",
+        "certificate"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3360
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Certificaat",
+        "fr": "Certificat",
+        "en": "Certificate"
+      }
+    },
+    {
       "key": "common.changeAlarmEvent",
       "namespace": "common",
       "leaf": "changeAlarmEvent",
@@ -22117,6 +22147,36 @@
         "nl": "Klanten waarbij hulpdiensten verwittigd werden de voorbije 72u",
         "fr": "Clients avec des alarmes prioritaires (PRIO 1) dans les dernières 72h",
         "en": "Customers with emergency alerts in the last 72h"
+      }
+    },
+    {
+      "key": "common.customPeriod",
+      "namespace": "common",
+      "leaf": "customPeriod",
+      "segments": [
+        "common",
+        "customPeriod"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3361
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Aangepaste periode",
+        "fr": "Période personnalisée",
+        "en": "Custom period"
       }
     },
     {
@@ -63888,6 +63948,66 @@
       }
     },
     {
+      "key": "common.statusCertificate",
+      "namespace": "common",
+      "leaf": "statusCertificate",
+      "segments": [
+        "common",
+        "statusCertificate"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3363
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Certificaatstatus",
+        "fr": "Statut du certificat",
+        "en": "Certificate status"
+      }
+    },
+    {
+      "key": "common.statusContract",
+      "namespace": "common",
+      "leaf": "statusContract",
+      "segments": [
+        "common",
+        "statusContract"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3362
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Contractstatus",
+        "fr": "Statut du contrat",
+        "en": "Contract status"
+      }
+    },
+    {
       "key": "common.stayUpToDateWithTheLatestNews",
       "namespace": "common",
       "leaf": "stayUpToDateWithTheLatestNews",
@@ -101531,7 +101651,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2328
+      "keyCount": 2332
     },
     {
       "name": "confirmation",

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.installerCommission",
+      "nl": "Uw commissie",
+      "fr": "Votre commission",
+      "en": "Your commission"
+    }
+  ]
+}

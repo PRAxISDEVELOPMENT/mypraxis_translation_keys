@@ -25111,11 +25111,16 @@
   {
     "key": "info.busiestPeriodInfo",
     "nl": "Drukste periode info",
-    "fr": "Info période la plus chargée",
-    "en": "Busiest period info",
+    "fr": "",
+    "en": "",
     "applications": [
       "mypraxis_web"
-    ]
+    ],
+    "status": {
+      "nl": "review-required",
+      "fr": "review-required",
+      "en": "review-required"
+    }
   },
   {
     "key": "info.byDefaultTheEmailAddressFromTheGeneralInformationIsUsedToSendTheDailyEmail",

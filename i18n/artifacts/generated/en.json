@@ -2731,7 +2731,7 @@
     "backupCentralCanOnlyBeChangedByPRAxISGROUPNV": "Back-up central (dialer/communicator) can only be changed upon request via PRAxIS GROUP N.V.",
     "basedOnCentralNotSupported": "Based on the exchange you specified (dialer/communicator) and the method of transmission, we regret to inform you that the exchange you wish to connect is currently not supported.",
     "browseAllLoggedActivities": "Browse all logged activities.",
-    "busiestPeriodInfo": "Busiest period info",
+    "busiestPeriodInfo": "",
     "byDefaultTheEmailAddressFromTheGeneralInformationIsUsedToSendTheDailyEmail": "By default, the email address from the general information is used to send the daily email.",
     "cacheUpdatedByPraxisGroupNV": "Cache updated by PRAxIS GROUP N.V.",
     "callcenterFormulaExplanation": "The on-call service formula refers to the action pattern used for contacting your contacts.",

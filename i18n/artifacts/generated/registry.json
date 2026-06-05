@@ -14,9 +14,9 @@
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 1,
-    "keysWithReviewRequired": 2,
-    "localeReviewsRequired": 5
+    "keysWithMissingLocales": 2,
+    "keysWithReviewRequired": 3,
+    "localeReviewsRequired": 8
   },
   "applications": [
     {
@@ -82318,17 +82318,24 @@
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
-      "missingLocales": [],
+      "missingLocales": [
+        "en",
+        "fr"
+      ],
       "status": {
-        "nl": "approved",
-        "fr": "approved",
-        "en": "approved"
+        "nl": "review-required",
+        "fr": "review-required",
+        "en": "review-required"
       },
-      "reviewRequiredLocales": [],
+      "reviewRequiredLocales": [
+        "nl",
+        "fr",
+        "en"
+      ],
       "resolved": {
         "nl": "Drukste periode info",
-        "fr": "Info période la plus chargée",
-        "en": "Busiest period info"
+        "fr": "",
+        "en": ""
       }
     },
     {

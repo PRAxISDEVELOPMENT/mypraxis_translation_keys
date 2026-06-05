@@ -2731,7 +2731,7 @@
     "backupCentralCanOnlyBeChangedByPRAxISGROUPNV": "Un transmetteur/communicateur de back-up ne peut être modifiée que sur demande adressée à PRAxIS GROUP S.A.",
     "basedOnCentralNotSupported": "Compte tenu des spécifications sur le communicateur (transmetteur) et du mode de transmission, nous regrettons de vous informer que la centrale que vous souhaitez connecter n'est actuellement pas supportée",
     "browseAllLoggedActivities": "Afficher l'historique complet des actions des utilisateurs",
-    "busiestPeriodInfo": "Info période la plus chargée",
+    "busiestPeriodInfo": "",
     "byDefaultTheEmailAddressFromTheGeneralInformationIsUsedToSendTheDailyEmail": "Par défaut, l'adresse e-mail dans l'information générale est utilisée pour l'envoi de l'e-mail quotidien.",
     "cacheUpdatedByPraxisGroupNV": "Mise à jour du cache par PRAxIS GROUP.",
     "callcenterFormulaExplanation": "La formule du service de permanence désigne le modèle d'action utilisé pour contacter vos contacts.",

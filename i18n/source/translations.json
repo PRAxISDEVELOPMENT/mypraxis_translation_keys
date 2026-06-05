@@ -31019,5 +31019,15 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.visualMaterialViaCameraTypeCommunicator",
+    "nl": "Weergave {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+    "fr": "Affichage {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+    "en": "{{visualMaterial}} display via {{cameraType}} ({{communicator}})",
+    "applications": [
+      "mypraxis_app",
+      "mypraxis_web"
+    ]
   }
 ]

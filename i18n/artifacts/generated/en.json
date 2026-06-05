@@ -2409,6 +2409,7 @@
     "visibleName": "Visible name",
     "visit": "Visit",
     "visualMaterialType": "Visual material type",
+    "visualMaterialViaCameraTypeCommunicator": "{{visualMaterial}} display via {{cameraType}} ({{communicator}})",
     "vocalBrand": "Vocal brand",
     "vocalSCS": "Vocal (SCS)",
     "vocalTest": "Vocal test",

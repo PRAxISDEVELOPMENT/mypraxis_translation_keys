@@ -2409,6 +2409,7 @@
     "visibleName": "Nom visible",
     "visit": "Visiter",
     "visualMaterialType": "Type d'image",
+    "visualMaterialViaCameraTypeCommunicator": "Affichage {{visualMaterial}} via {{cameraType}} ({{communicator}})",
     "vocalBrand": "Marque d'écoute à distance",
     "vocalSCS": "Écoute à distance (SCS)",
     "vocalTest": "Test vocal",

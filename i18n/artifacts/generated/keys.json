@@ -2404,6 +2404,7 @@
   "common.visibleName",
   "common.visit",
   "common.visualMaterialType",
+  "common.visualMaterialViaCameraTypeCommunicator",
   "common.vocalBrand",
   "common.vocalSCS",
   "common.vocalTest",

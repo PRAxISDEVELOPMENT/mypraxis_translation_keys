@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3369,
-    "uniqueKeys": 3369,
+    "totalEntries": 3370,
+    "uniqueKeys": 3370,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -72764,6 +72764,37 @@
       }
     },
     {
+      "key": "common.visualMaterialViaCameraTypeCommunicator",
+      "namespace": "common",
+      "leaf": "visualMaterialViaCameraTypeCommunicator",
+      "segments": [
+        "common",
+        "visualMaterialViaCameraTypeCommunicator"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3370
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Weergave {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+        "fr": "Affichage {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+        "en": "{{visualMaterial}} display via {{cameraType}} ({{communicator}})"
+      }
+    },
+    {
       "key": "common.vocalBrand",
       "namespace": "common",
       "leaf": "vocalBrand",
@@ -101845,7 +101876,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2336
+      "keyCount": 2337
     },
     {
       "name": "confirmation",

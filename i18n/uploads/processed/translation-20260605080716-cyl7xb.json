@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "Op aanvraag",
+      "fr": "Sur demande",
+      "en": "On call",
+      "requestedNamespace": "common",
+      "notes": "Indien prijs >= 9999.99 in prijslijst"
+    }
+  ]
+}

@@ -16453,9 +16453,9 @@
   },
   {
     "key": "common.praxisCommissionCost",
-    "nl": "Commissie kost PRAxIS",
-    "fr": "Coût de commission PRAxIS",
-    "en": "PRAxIS commission cost",
+    "nl": "Administratie kost facturatie",
+    "fr": "Coût de administratifs de facturation",
+    "en": "Invoice administration fee",
     "applications": [
       "mypraxis_web"
     ]

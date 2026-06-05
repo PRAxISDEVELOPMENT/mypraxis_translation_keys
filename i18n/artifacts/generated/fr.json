@@ -1783,7 +1783,7 @@
     "POST": "POST",
     "praxisClientnumber": "Numéro de client PRAxIS",
     "praxisCommercialAction": "Action commerciale PRAxIS",
-    "praxisCommissionCost": "Coût de commission PRAxIS",
+    "praxisCommissionCost": "Coût de administratifs de facturation",
     "praxisCost": "Votre prix d'achat PRAxIS",
     "praxisGroupNvHandlesTheRegistrationInTheAlineDatabase": "PRAxIS GROUP S.A. gère l’enregistrement dans la base de données 'ALINE'",
     "preferences": "Préférences",

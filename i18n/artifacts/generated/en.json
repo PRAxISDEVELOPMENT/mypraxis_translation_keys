@@ -1783,7 +1783,7 @@
     "POST": "POST",
     "praxisClientnumber": "PRAxIS clientnumber",
     "praxisCommercialAction": "PRAxIS commercial action",
-    "praxisCommissionCost": "PRAxIS commission cost",
+    "praxisCommissionCost": "Invoice administration fee",
     "praxisCost": "Your PRAxIS purchase price",
     "praxisGroupNvHandlesTheRegistrationInTheAlineDatabase": "PRAxIS GROUP N.V. handles the registration in the ALINE database",
     "preferences": "Preferences",

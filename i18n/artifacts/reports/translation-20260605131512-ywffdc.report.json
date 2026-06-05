@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-05T13:15:29.603Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260605131512-ywffdc.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.praxisCommissionCost",
+      "namespace": "common",
+      "changes": {
+        "nl": "Administratie kost facturatie",
+        "fr": "Coût de administratifs de facturation",
+        "en": "Invoice administration fee"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Commissie kost PRAxIS",
+        "fr": "Coût de commission PRAxIS",
+        "en": "PRAxIS commission cost"
+      },
+      "next": {
+        "nl": "Administratie kost facturatie",
+        "fr": "Coût de administratifs de facturation",
+        "en": "Invoice administration fee"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

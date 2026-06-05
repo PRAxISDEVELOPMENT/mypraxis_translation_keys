@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-05T08:07:35.639Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260605080716-cyl7xb.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 1,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.onCall",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "Op aanvraag",
+        "fr": "Sur demande",
+        "en": "On call",
+        "notes": "Indien prijs >= 9999.99 in prijslijst",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.onCall",
+        "nl": "Op aanvraag",
+        "fr": "Sur demande",
+        "en": "On call",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Indien prijs >= 9999.99 in prijslijst"
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

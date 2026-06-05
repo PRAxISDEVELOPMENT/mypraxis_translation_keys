@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "proposalBatchId": "translation-20260605080716-cyl7xb.proposals",
+  "status": "pending-review",
+  "createdAt": "2026-06-05T08:07:35.677Z",
+  "source": {
+    "uploadFile": "i18n/uploads/incoming/translation-20260605080716-cyl7xb.json",
+    "reportFile": "i18n/artifacts/reports/translation-20260605080716-cyl7xb.report.json",
+    "proposalCount": 1
+  },
+  "review": {
+    "required": true,
+    "instructions": "Edit the proposedEntry block for each proposal in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "proposals": [
+    {
+      "proposalId": "translation-20260605080716-cyl7xb.proposal-01",
+      "source": {
+        "uploadEntryIndex": 1
+      },
+      "review": {
+        "requestedNamespace": "common",
+        "suggestedKey": "common.onCall",
+        "suggestedNamespace": "common",
+        "confidence": "requested",
+        "reason": "Upload explicitly requested namespace \"common\"."
+      },
+      "originalEntry": {
+        "nl": "Op aanvraag",
+        "fr": "Sur demande",
+        "en": "On call",
+        "notes": "Indien prijs >= 9999.99 in prijslijst",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.onCall",
+        "nl": "Op aanvraag",
+        "fr": "Sur demande",
+        "en": "On call",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Indien prijs >= 9999.99 in prijslijst"
+      }
+    }
+  ]
+}

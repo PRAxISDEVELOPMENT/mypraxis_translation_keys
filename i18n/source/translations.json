@@ -30973,5 +30973,41 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "info.busiestPeriodInfo",
+    "nl": "Drukste periode info",
+    "fr": "Info période la plus chargée",
+    "en": "Busiest period info",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.peakMomentInfo",
+    "nl": "Piekmoment info",
+    "fr": "Info moment de pointe",
+    "en": "Peak moment info",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.displayPeriod",
+    "nl": "Weergaveperiode",
+    "fr": "Période d’affichage",
+    "en": "Display period",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.displayFrequency",
+    "nl": "Weergavefrequentie",
+    "fr": "Fréquence d’affichage",
+    "en": "Display frequency",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3365,
-    "uniqueKeys": 3365,
+    "totalEntries": 3369,
+    "uniqueKeys": 3369,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -26911,6 +26911,66 @@
         "nl": "Dispatching code",
         "fr": "Code Dispatching",
         "en": "Dispatching code"
+      }
+    },
+    {
+      "key": "common.displayFrequency",
+      "namespace": "common",
+      "leaf": "displayFrequency",
+      "segments": [
+        "common",
+        "displayFrequency"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3369
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Weergavefrequentie",
+        "fr": "Fréquence d’affichage",
+        "en": "Display frequency"
+      }
+    },
+    {
+      "key": "common.displayPeriod",
+      "namespace": "common",
+      "leaf": "displayPeriod",
+      "segments": [
+        "common",
+        "displayPeriod"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3368
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Weergaveperiode",
+        "fr": "Période d’affichage",
+        "en": "Display period"
       }
     },
     {
@@ -82242,6 +82302,36 @@
       }
     },
     {
+      "key": "info.busiestPeriodInfo",
+      "namespace": "info",
+      "leaf": "busiestPeriodInfo",
+      "segments": [
+        "info",
+        "busiestPeriodInfo"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3366
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Drukste periode info",
+        "fr": "Info période la plus chargée",
+        "en": "Busiest period info"
+      }
+    },
+    {
       "key": "info.byDefaultTheEmailAddressFromTheGeneralInformationIsUsedToSendTheDailyEmail",
       "namespace": "info",
       "leaf": "byDefaultTheEmailAddressFromTheGeneralInformationIsUsedToSendTheDailyEmail",
@@ -86453,6 +86543,36 @@
         "nl": "Gedrag van de PDF-titel",
         "fr": "Comportement du titre PDF",
         "en": "PDF title behaviour"
+      }
+    },
+    {
+      "key": "info.peakMomentInfo",
+      "namespace": "info",
+      "leaf": "peakMomentInfo",
+      "segments": [
+        "info",
+        "peakMomentInfo"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3367
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Piekmoment info",
+        "fr": "Info moment de pointe",
+        "en": "Peak moment info"
       }
     },
     {
@@ -101711,7 +101831,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2334
+      "keyCount": 2336
     },
     {
       "name": "confirmation",
@@ -101732,7 +101852,7 @@
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 292
+      "keyCount": 294
     },
     {
       "name": "metadata",

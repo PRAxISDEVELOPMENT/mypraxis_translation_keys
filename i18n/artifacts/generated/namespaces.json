@@ -21,7 +21,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2334
+      "keyCount": 2336
     },
     {
       "name": "confirmation",
@@ -42,7 +42,7 @@
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 292
+      "keyCount": 294
     },
     {
       "name": "metadata",

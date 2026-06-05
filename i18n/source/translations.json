@@ -30964,5 +30964,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.euribor",
+    "nl": "Euribor",
+    "fr": "Euribor",
+    "en": "Euribor",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

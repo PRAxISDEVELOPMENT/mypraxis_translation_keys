@@ -983,6 +983,7 @@
   "common.erpReference",
   "common.erpReferencePraxisGroupNv",
   "common.errorLoadAdditionalArrangementsForSection",
+  "common.euribor",
   "common.event",
   "common.eventReport",
   "common.events",

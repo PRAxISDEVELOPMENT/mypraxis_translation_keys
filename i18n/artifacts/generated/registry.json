@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3364,
-    "uniqueKeys": 3364,
+    "totalEntries": 3365,
+    "uniqueKeys": 3365,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -29834,6 +29834,36 @@
         "nl": "Aanvullende regelingen voor deze sectie konden niet worden geladen.",
         "fr": "Impossible de charger les arrangements supplémentaires pour cette section.",
         "en": "Failed to load additional arrangements for this section."
+      }
+    },
+    {
+      "key": "common.euribor",
+      "namespace": "common",
+      "leaf": "euribor",
+      "segments": [
+        "common",
+        "euribor"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3365
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Euribor",
+        "fr": "Euribor",
+        "en": "Euribor"
       }
     },
     {
@@ -101681,7 +101711,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2333
+      "keyCount": 2334
     },
     {
       "name": "confirmation",

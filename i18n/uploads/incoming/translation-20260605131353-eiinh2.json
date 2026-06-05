@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.praxisCost",
+      "nl": "Uw aankoopprijs PRAxIS",
+      "fr": "Votre prix d'achat PRAxIS",
+      "en": "Your PRAxIS purchase price"
+    }
+  ]
+}

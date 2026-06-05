@@ -8235,6 +8235,24 @@
     ]
   },
   {
+    "key": "common.displayFrequency",
+    "nl": "Weergavefrequentie",
+    "fr": "Fréquence d’affichage",
+    "en": "Display frequency",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.displayPeriod",
+    "nl": "Weergaveperiode",
+    "fr": "Période d’affichage",
+    "en": "Display period",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.displayPreferences",
     "nl": "Weergavevoorkeuren",
     "fr": "Préférences d’affichage",
@@ -9116,6 +9134,15 @@
     "nl": "Aanvullende regelingen voor deze sectie konden niet worden geladen.",
     "fr": "Impossible de charger les arrangements supplémentaires pour cette section.",
     "en": "Failed to load additional arrangements for this section.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.euribor",
+    "nl": "Euribor",
+    "fr": "Euribor",
+    "en": "Euribor",
     "applications": [
       "mypraxis_web"
     ]
@@ -25082,6 +25109,15 @@
     ]
   },
   {
+    "key": "info.busiestPeriodInfo",
+    "nl": "Drukste periode info",
+    "fr": "Info période la plus chargée",
+    "en": "Busiest period info",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "info.byDefaultTheEmailAddressFromTheGeneralInformationIsUsedToSendTheDailyEmail",
     "nl": "Standaard wordt het e-mailadres uit de algemene gegevens gebruikt voor het verzenden van de dagelijkse e-mail.",
     "fr": "Par défaut, l'adresse e-mail dans l'information générale est utilisée pour l'envoi de l'e-mail quotidien.",
@@ -26355,6 +26391,20 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "info.peakMomentInfo",
+    "nl": "Piekmoment info",
+    "fr": "",
+    "en": "",
+    "applications": [
+      "mypraxis_web"
+    ],
+    "status": {
+      "nl": "review-required",
+      "fr": "review-required",
+      "en": "review-required"
+    }
   },
   {
     "key": "info.permanentCommentaryCanOnlyBeAddedOrChangedUponRequestViaPraxisGroupNV",
@@ -30961,51 +31011,6 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.euribor",
-    "nl": "Euribor",
-    "fr": "Euribor",
-    "en": "Euribor",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.busiestPeriodInfo",
-    "nl": "Drukste periode info",
-    "fr": "Info période la plus chargée",
-    "en": "Busiest period info",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.peakMomentInfo",
-    "nl": "Piekmoment info",
-    "fr": "Info moment de pointe",
-    "en": "Peak moment info",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.displayPeriod",
-    "nl": "Weergaveperiode",
-    "fr": "Période d’affichage",
-    "en": "Display period",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.displayFrequency",
-    "nl": "Weergavefrequentie",
-    "fr": "Fréquence d’affichage",
-    "en": "Display frequency",
     "applications": [
       "mypraxis_web"
     ]

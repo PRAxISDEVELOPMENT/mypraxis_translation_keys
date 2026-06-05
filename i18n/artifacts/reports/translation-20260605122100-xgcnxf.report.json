@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-05T12:21:17.059Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260605122100-xgcnxf.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "info.peakMomentInfo",
+      "namespace": "info",
+      "changes": {
+        "fr": "",
+        "en": ""
+      },
+      "statusChanges": {
+        "nl": "review-required",
+        "fr": "review-required",
+        "en": "review-required"
+      },
+      "current": {
+        "nl": "Piekmoment info",
+        "fr": "Info moment de pointe",
+        "en": "Peak moment info"
+      },
+      "next": {
+        "nl": "Piekmoment info",
+        "fr": "",
+        "en": ""
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "review-required",
+        "fr": "review-required",
+        "en": "review-required"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

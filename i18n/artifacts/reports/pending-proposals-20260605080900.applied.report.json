@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "command": "apply-pending-proposals",
+  "createdAt": "2026-06-05T08:09:00.691Z",
+  "summary": {
+    "proposalFiles": 1,
+    "appliedEntries": 1
+  },
+  "applied": [
+    {
+      "proposalId": "translation-20260605080716-cyl7xb.proposal-01",
+      "proposalFile": "i18n/proposals/pending/translation-20260605080716-cyl7xb.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260605080716-cyl7xb.json",
+      "key": "common.onCall",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Op aanvraag",
+      "fr": "Sur demande",
+      "en": "On call"
+    }
+  ]
+}

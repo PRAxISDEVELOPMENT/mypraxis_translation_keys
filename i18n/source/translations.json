@@ -1819,6 +1819,15 @@
     ]
   },
   {
+    "key": "common.additionalAgreementsConfigurationInfo",
+    "nl": "Bijkomende afspraken kunnen worden geconfigureerd via de secties \"Verplichtingen van de contractanten\" of \"Uitvoeringsmodaliteiten\". Gebruik exact een van deze sectienamen om deze functionaliteit tijdens de contractopmaak te kunnen gebruiken.",
+    "fr": "Des accords supplémentaires peuvent être configurés via les sections « Obligations des contractants » ou « Modalités d’exécution ». Utilisez exactement l’un de ces noms de section pour pouvoir utiliser cette fonctionnalité lors de la rédaction du contrat.",
+    "en": "Additional agreements can be configured via the sections \"Obligations of the contracting parties\" or \"Execution modalities\". Use exactly one of these section names to use this functionality during contract drafting.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.additionalArrangementAdded",
     "nl": "Titel van aanvullende regeling toegevoegd",
     "fr": "Titre de l'arrangement supplémentaire ajouté",
@@ -3169,6 +3178,15 @@
     ]
   },
   {
+    "key": "common.averageWaitingTimePerCall",
+    "nl": "Gemiddelde wachttijd per oproep",
+    "fr": "Temps d’attente moyen par appel",
+    "en": "Average waiting time per call",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.awaitingApproval",
     "nl": "In afwachting van goedkeuring",
     "fr": "En attente d’approbation",
@@ -4219,6 +4237,15 @@
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.certificate",
+    "nl": "Certificaat",
+    "fr": "Certificat",
+    "en": "Certificate",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -5516,6 +5543,24 @@
     ]
   },
   {
+    "key": "common.companyDataViaKvkBusinessRegister",
+    "nl": "Bedrijfsgegevens via KVK Handelsregister",
+    "fr": "Données d'entreprise via le registre KVK",
+    "en": "Company data via the KVK Business Register",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.companyDataViaLuxembourgBusinessRegisters",
+    "nl": "Bedrijfsgegevens via Luxembourg Business Registers",
+    "fr": "Données d'entreprise via Luxembourg Business Registers",
+    "en": "Company data via Luxembourg Business Registers",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.companyInformation",
     "nl": "Bedrijfsinformatie",
     "fr": "Informations sur l'entreprise",
@@ -6739,6 +6784,15 @@
     "nl": "Klanten waarbij hulpdiensten verwittigd werden de voorbije 72u",
     "fr": "Clients avec des alarmes prioritaires (PRIO 1) dans les dernières 72h",
     "en": "Customers with emergency alerts in the last 72h",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.customPeriod",
+    "nl": "Aangepaste periode",
+    "fr": "Période personnalisée",
+    "en": "Custom period",
     "applications": [
       "mypraxis_web"
     ]
@@ -11379,6 +11433,15 @@
     ]
   },
   {
+    "key": "common.incomingCallCount",
+    "nl": "Aantal inkomende oproepen",
+    "fr": "Nombre d’appels entrants",
+    "en": "Number of incoming calls",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.incomingCalls",
     "nl": "Inkomende oproepen",
     "fr": "Appels entrants",
@@ -15009,6 +15072,15 @@
     ]
   },
   {
+    "key": "common.onCall",
+    "nl": "Op aanvraag",
+    "fr": "Sur demande",
+    "en": "On call",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.onCallService",
     "nl": "Wachtdienst",
     "fr": "Service de permanence",
@@ -15175,12 +15247,30 @@
     ]
   },
   {
+    "key": "common.openKvkBusinessRegister",
+    "nl": "Open KVK Handelsregister",
+    "fr": "Ouvrir le registre KVK",
+    "en": "Open KVK Business Register",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.openLabel",
     "nl": "Open: {{value}}",
     "fr": "Ouvert : {{value}}",
     "en": "Open: {{value}}",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.openLuxembourgBusinessRegisters",
+    "nl": "Open Luxembourg Business Registers",
+    "fr": "Ouvrir Luxembourg Business Registers",
+    "en": "Open Luxembourg Business Registers",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -15833,6 +15923,15 @@
     "nl": "Wachtende registraties",
     "fr": "Inscriptions en attente",
     "en": "Pending Registrations",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.per",
+    "nl": "Per",
+    "fr": "Par",
+    "en": "Per",
     "applications": [
       "mypraxis_web"
     ]
@@ -18335,12 +18434,30 @@
     ]
   },
   {
+    "key": "common.searchOfficialCompanyRegisterForSelectedCountry",
+    "nl": "Voor dit land is er geen vaste registerlink gekoppeld. Zoek de officiële bedrijfsgegevens op in het nationale handels- of ondernemingsregister van het gekozen land.",
+    "fr": "Aucun lien fixe vers un registre n'est configuré pour ce pays. Recherchez les données officielles de l'entreprise dans le registre national du commerce ou des entreprises du pays sélectionné.",
+    "en": "No fixed register link is configured for this country. Look up the official company data in the national trade or company register of the selected country.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.searchOnEverything",
     "nl": "Zoeken op alles",
     "fr": "Rechercher sur tout",
     "en": "Search on everything",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.searchThisInOfficialRegisterForSelectedCountry",
+    "nl": "Zoek dit op via het officiële register van het gekozen land.",
+    "fr": "Recherchez ces informations via le registre officiel du pays sélectionné.",
+    "en": "Look this up via the official register of the selected country.",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -19410,6 +19527,24 @@
     "nl": "Status en prioriteit",
     "fr": "Statut et priorité",
     "en": "Status & Priority",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.statusCertificate",
+    "nl": "Certificaatstatus",
+    "fr": "Statut du certificat",
+    "en": "Certificate status",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.statusContract",
+    "nl": "Contractstatus",
+    "fr": "Statut du contrat",
+    "en": "Contract status",
     "applications": [
       "mypraxis_web"
     ]
@@ -21177,6 +21312,24 @@
     ]
   },
   {
+    "key": "common.useCompanyDataToSearchKvkBusinessRegister",
+    "nl": "Gebruik het KVK-nummer, de bedrijfsnaam of het adres om officiële Nederlandse bedrijfsgegevens op te zoeken in het Handelsregister.",
+    "fr": "Utilisez le numéro KVK, le nom de l'entreprise ou l'adresse pour rechercher les données officielles d'une entreprise néerlandaise dans le registre du commerce.",
+    "en": "Use the KVK number, company name or address to look up official Dutch company data in the Business Register.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.useCompanyDataToSearchLuxembourgBusinessRegisters",
+    "nl": "Gebruik het RCS-nummer, de bedrijfsnaam of het adres om officiële Luxemburgse bedrijfsgegevens op te zoeken via het RCS.",
+    "fr": "Utilisez le numéro RCS, le nom de l'entreprise ou l'adresse pour rechercher les données officielles d'une entreprise luxembourgeoise via le RCS.",
+    "en": "Use the RCS number, company name or address to look up official Luxembourg company data via the RCS.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.useDevicePasscode",
     "nl": "Gebruik apparaatscode",
     "fr": "Utiliser le code de l'appareil",
@@ -21526,6 +21679,42 @@
     "nl": "Verifiëren",
     "fr": "Vérifier",
     "en": "Verify",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.verifyCompanyData",
+    "nl": "Bedrijfsgegevens controleren",
+    "fr": "Vérifier les données de l'entreprise",
+    "en": "Verify company data",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.verifyDutchCompanyDataInKvkBusinessRegister",
+    "nl": "Controleer minstens de handelsnaam, het vestigingsadres, de rechtsvorm, de registratie/status en de beschikbare tekenbevoegde of functionarisgegevens.",
+    "fr": "Vérifiez au minimum le nom commercial, l'adresse de l'établissement, la forme juridique, l'enregistrement/le statut et les données disponibles des personnes habilitées à signer ou des responsables.",
+    "en": "Verify at least the trade name, business address, legal form, registration/status and available authorised signatory or officer details.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.verifyGeneralCompanyRegisterData",
+    "nl": "Controleer minstens het ondernemings- of registratienummer, de bedrijfsnaam, het adres, de rechtsvorm, de status en de beschikbare bestuurders- of tekenbevoegde gegevens.",
+    "fr": "Vérifiez au minimum le numéro d'entreprise ou d'enregistrement, le nom de l'entreprise, l'adresse, la forme juridique, le statut et les données disponibles des administrateurs ou des personnes habilitées à signer.",
+    "en": "Verify at least the company or registration number, company name, address, legal form, status and available director or authorised signatory details.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.verifyLuxembourgCompanyDataInBusinessRegisters",
+    "nl": "Controleer minstens de maatschappelijke naam, het adres, de rechtsvorm, de registratie/status en de beschikbare bestuurders- of mandatarisgegevens.",
+    "fr": "Vérifiez au minimum la dénomination sociale, l'adresse, la forme juridique, l'enregistrement/le statut et les données disponibles des administrateurs ou mandataires.",
+    "en": "Verify at least the legal name, address, legal form, registration/status and available director or representative details.",
     "applications": [
       "mypraxis_web"
     ]
@@ -30772,186 +30961,6 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.averageWaitingTimePerCall",
-    "nl": "Gemiddelde wachttijd per oproep",
-    "fr": "Temps d’attente moyen par appel",
-    "en": "Average waiting time per call",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.incomingCallCount",
-    "nl": "Aantal inkomende oproepen",
-    "fr": "Nombre d’appels entrants",
-    "en": "Number of incoming calls",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.additionalAgreementsConfigurationInfo",
-    "nl": "Bijkomende afspraken kunnen worden geconfigureerd via de secties \"Verplichtingen van de contractanten\" of \"Uitvoeringsmodaliteiten\". Gebruik exact een van deze sectienamen om deze functionaliteit tijdens de contractopmaak te kunnen gebruiken.",
-    "fr": "Des accords supplémentaires peuvent être configurés via les sections « Obligations des contractants » ou « Modalités d’exécution ». Utilisez exactement l’un de ces noms de section pour pouvoir utiliser cette fonctionnalité lors de la rédaction du contrat.",
-    "en": "Additional agreements can be configured via the sections \"Obligations of the contracting parties\" or \"Execution modalities\". Use exactly one of these section names to use this functionality during contract drafting.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.per",
-    "nl": "Per",
-    "fr": "Par",
-    "en": "Per",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.companyDataViaKvkBusinessRegister",
-    "nl": "Bedrijfsgegevens via KVK Handelsregister",
-    "fr": "Données d'entreprise via le registre KVK",
-    "en": "Company data via the KVK Business Register",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.useCompanyDataToSearchKvkBusinessRegister",
-    "nl": "Gebruik het KVK-nummer, de bedrijfsnaam of het adres om officiële Nederlandse bedrijfsgegevens op te zoeken in het Handelsregister.",
-    "fr": "Utilisez le numéro KVK, le nom de l'entreprise ou l'adresse pour rechercher les données officielles d'une entreprise néerlandaise dans le registre du commerce.",
-    "en": "Use the KVK number, company name or address to look up official Dutch company data in the Business Register.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.verifyDutchCompanyDataInKvkBusinessRegister",
-    "nl": "Controleer minstens de handelsnaam, het vestigingsadres, de rechtsvorm, de registratie/status en de beschikbare tekenbevoegde of functionarisgegevens.",
-    "fr": "Vérifiez au minimum le nom commercial, l'adresse de l'établissement, la forme juridique, l'enregistrement/le statut et les données disponibles des personnes habilitées à signer ou des responsables.",
-    "en": "Verify at least the trade name, business address, legal form, registration/status and available authorised signatory or officer details.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.openKvkBusinessRegister",
-    "nl": "Open KVK Handelsregister",
-    "fr": "Ouvrir le registre KVK",
-    "en": "Open KVK Business Register",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.companyDataViaLuxembourgBusinessRegisters",
-    "nl": "Bedrijfsgegevens via Luxembourg Business Registers",
-    "fr": "Données d'entreprise via Luxembourg Business Registers",
-    "en": "Company data via Luxembourg Business Registers",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.useCompanyDataToSearchLuxembourgBusinessRegisters",
-    "nl": "Gebruik het RCS-nummer, de bedrijfsnaam of het adres om officiële Luxemburgse bedrijfsgegevens op te zoeken via het RCS.",
-    "fr": "Utilisez le numéro RCS, le nom de l'entreprise ou l'adresse pour rechercher les données officielles d'une entreprise luxembourgeoise via le RCS.",
-    "en": "Use the RCS number, company name or address to look up official Luxembourg company data via the RCS.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.verifyLuxembourgCompanyDataInBusinessRegisters",
-    "nl": "Controleer minstens de maatschappelijke naam, het adres, de rechtsvorm, de registratie/status en de beschikbare bestuurders- of mandatarisgegevens.",
-    "fr": "Vérifiez au minimum la dénomination sociale, l'adresse, la forme juridique, l'enregistrement/le statut et les données disponibles des administrateurs ou mandataires.",
-    "en": "Verify at least the legal name, address, legal form, registration/status and available director or representative details.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.openLuxembourgBusinessRegisters",
-    "nl": "Open Luxembourg Business Registers",
-    "fr": "Ouvrir Luxembourg Business Registers",
-    "en": "Open Luxembourg Business Registers",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.verifyCompanyData",
-    "nl": "Bedrijfsgegevens controleren",
-    "fr": "Vérifier les données de l'entreprise",
-    "en": "Verify company data",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.searchOfficialCompanyRegisterForSelectedCountry",
-    "nl": "Voor dit land is er geen vaste registerlink gekoppeld. Zoek de officiële bedrijfsgegevens op in het nationale handels- of ondernemingsregister van het gekozen land.",
-    "fr": "Aucun lien fixe vers un registre n'est configuré pour ce pays. Recherchez les données officielles de l'entreprise dans le registre national du commerce ou des entreprises du pays sélectionné.",
-    "en": "No fixed register link is configured for this country. Look up the official company data in the national trade or company register of the selected country.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.verifyGeneralCompanyRegisterData",
-    "nl": "Controleer minstens het ondernemings- of registratienummer, de bedrijfsnaam, het adres, de rechtsvorm, de status en de beschikbare bestuurders- of tekenbevoegde gegevens.",
-    "fr": "Vérifiez au minimum le numéro d'entreprise ou d'enregistrement, le nom de l'entreprise, l'adresse, la forme juridique, le statut et les données disponibles des administrateurs ou des personnes habilitées à signer.",
-    "en": "Verify at least the company or registration number, company name, address, legal form, status and available director or authorised signatory details.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.searchThisInOfficialRegisterForSelectedCountry",
-    "nl": "Zoek dit op via het officiële register van het gekozen land.",
-    "fr": "Recherchez ces informations via le registre officiel du pays sélectionné.",
-    "en": "Look this up via the official register of the selected country.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.certificate",
-    "nl": "Certificaat",
-    "fr": "Certificat",
-    "en": "Certificate",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.customPeriod",
-    "nl": "Aangepaste periode",
-    "fr": "Période personnalisée",
-    "en": "Custom period",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.statusContract",
-    "nl": "Contractstatus",
-    "fr": "Statut du contrat",
-    "en": "Contract status",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.statusCertificate",
-    "nl": "Certificaatstatus",
-    "fr": "Statut du certificat",
-    "en": "Certificate status",
     "applications": [
       "mypraxis_web"
     ]

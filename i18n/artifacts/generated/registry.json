@@ -53917,9 +53917,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Kost PRAxIS",
-        "fr": "Coût PRAxIS",
-        "en": "PRAxIS cost"
+        "nl": "Uw aankoopprijs PRAxIS",
+        "fr": "Votre prix d'achat PRAxIS",
+        "en": "Your PRAxIS purchase price"
       }
     },
     {

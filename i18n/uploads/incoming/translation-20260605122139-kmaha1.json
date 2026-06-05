@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "info.busiestPeriodInfo",
+      "fr": "",
+      "en": "",
+      "status": {
+        "nl": "review-required",
+        "fr": "review-required",
+        "en": "review-required"
+      }
+    }
+  ]
+}

@@ -11744,9 +11744,9 @@
   },
   {
     "key": "common.installerCommission",
-    "nl": "Commissie installateur",
-    "fr": "Commission installateur",
-    "en": "Installer commission",
+    "nl": "Uw commissie",
+    "fr": "Votre commission",
+    "en": "Your commission",
     "applications": [
       "mypraxis_web"
     ]

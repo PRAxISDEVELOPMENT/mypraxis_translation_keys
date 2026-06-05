@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-05T13:16:56.301Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260605131637-vig8nm.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.installerCommission",
+      "namespace": "common",
+      "changes": {
+        "nl": "Uw commissie",
+        "fr": "Votre commission",
+        "en": "Your commission"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Commissie installateur",
+        "fr": "Commission installateur",
+        "en": "Installer commission"
+      },
+      "next": {
+        "nl": "Uw commissie",
+        "fr": "Votre commission",
+        "en": "Your commission"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

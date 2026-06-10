@@ -31029,5 +31029,50 @@
       "mypraxis_app",
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.accountType",
+    "nl": "Type account",
+    "fr": "Type de compte",
+    "en": "Account type",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.daysUntilNextAction",
+    "nl": "Dagen tot volgende actie",
+    "fr": "Jours jusqu'à la prochaine action",
+    "en": "Days until next action",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.invoiceDueDate",
+    "nl": "Vervaldatum factuur",
+    "fr": "Date d'échéance de la facture",
+    "en": "Invoice due date",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.paymentReminders",
+    "nl": "Aanmaningen",
+    "fr": "Rappels de paiement",
+    "en": "Payment reminders",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.resolved",
+    "nl": "Voldaan",
+    "fr": "Payé",
+    "en": "Paid",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

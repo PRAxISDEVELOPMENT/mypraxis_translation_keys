@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3370,
-    "uniqueKeys": 3370,
+    "totalEntries": 3375,
+    "uniqueKeys": 3375,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -4657,6 +4657,36 @@
         "nl": "Geïmporteerde accounts",
         "fr": "Comptes importés",
         "en": "Imported accounts"
+      }
+    },
+    {
+      "key": "common.accountType",
+      "namespace": "common",
+      "leaf": "accountType",
+      "segments": [
+        "common",
+        "accountType"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3371
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Type account",
+        "fr": "Type de compte",
+        "en": "Account type"
       }
     },
     {
@@ -23117,6 +23147,36 @@
       }
     },
     {
+      "key": "common.daysUntilNextAction",
+      "namespace": "common",
+      "leaf": "daysUntilNextAction",
+      "segments": [
+        "common",
+        "daysUntilNextAction"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3372
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Dagen tot volgende actie",
+        "fr": "Jours jusqu'à la prochaine action",
+        "en": "Days until next action"
+      }
+    },
+    {
       "key": "common.deactivate",
       "namespace": "common",
       "leaf": "deactivate",
@@ -39082,6 +39142,36 @@
       }
     },
     {
+      "key": "common.invoiceDueDate",
+      "namespace": "common",
+      "leaf": "invoiceDueDate",
+      "segments": [
+        "common",
+        "invoiceDueDate"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3373
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Vervaldatum factuur",
+        "fr": "Date d'échéance de la facture",
+        "en": "Invoice due date"
+      }
+    },
+    {
       "key": "common.invoiceName",
       "namespace": "common",
       "leaf": "invoiceName",
@@ -52051,6 +52141,36 @@
       }
     },
     {
+      "key": "common.paymentReminders",
+      "namespace": "common",
+      "leaf": "paymentReminders",
+      "segments": [
+        "common",
+        "paymentReminders"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3374
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Aanmaningen",
+        "fr": "Rappels de paiement",
+        "en": "Payment reminders"
+      }
+    },
+    {
       "key": "common.paymentTerms",
       "namespace": "common",
       "leaf": "paymentTerms",
@@ -58939,6 +59059,36 @@
         "nl": "Resetten naar origineel",
         "fr": "Réinitialiser à l’original",
         "en": "Reset to original"
+      }
+    },
+    {
+      "key": "common.resolved",
+      "namespace": "common",
+      "leaf": "resolved",
+      "segments": [
+        "common",
+        "resolved"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3375
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Voldaan",
+        "fr": "Payé",
+        "en": "Paid"
       }
     },
     {
@@ -101876,7 +102026,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2337
+      "keyCount": 2342
     },
     {
       "name": "confirmation",

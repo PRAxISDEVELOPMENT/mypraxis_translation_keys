@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3378,
-    "uniqueKeys": 3378,
+    "totalEntries": 3386,
+    "uniqueKeys": 3386,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -29836,6 +29836,36 @@
       }
     },
     {
+      "key": "common.equalToPurchasePrice",
+      "namespace": "common",
+      "leaf": "equalToPurchasePrice",
+      "segments": [
+        "common",
+        "equalToPurchasePrice"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3379
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gelijk aan de aankoopprijs.",
+        "fr": "Egal au prix d'achat.",
+        "en": "Equal to the purchase price."
+      }
+    },
+    {
       "key": "common.erpInstaller",
       "namespace": "common",
       "leaf": "erpInstaller",
@@ -34879,6 +34909,36 @@
       }
     },
     {
+      "key": "common.green",
+      "namespace": "common",
+      "leaf": "green",
+      "segments": [
+        "common",
+        "green"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3380
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Groen",
+        "fr": "Vert",
+        "en": "Green"
+      }
+    },
+    {
       "key": "common.group",
       "namespace": "common",
       "leaf": "group",
@@ -35874,6 +35934,36 @@
         "nl": "Hoog",
         "fr": "Haute",
         "en": "High"
+      }
+    },
+    {
+      "key": "common.higherThanPurchasePrice",
+      "namespace": "common",
+      "leaf": "higherThanPurchasePrice",
+      "segments": [
+        "common",
+        "higherThanPurchasePrice"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3381
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Hoger dan de aankoopprijs.",
+        "fr": "Supérieur au prix d'achat.",
+        "en": "Higher than the purchase price."
       }
     },
     {
@@ -42021,6 +42111,36 @@
       }
     },
     {
+      "key": "common.lowerThanPurchasePrice",
+      "namespace": "common",
+      "leaf": "lowerThanPurchasePrice",
+      "segments": [
+        "common",
+        "lowerThanPurchasePrice"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3382
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Lager dan de aankoopprijs.",
+        "fr": "Inférieur au prix d'achat.",
+        "en": "Lower than the purchase price."
+      }
+    },
+    {
       "key": "common.lunchBreak",
       "namespace": "common",
       "leaf": "lunchBreak",
@@ -43823,6 +43943,36 @@
         "nl": "Manuele invoer",
         "fr": "Saisie manuelle",
         "en": "Manual input"
+      }
+    },
+    {
+      "key": "common.manuallyAdjustedSellingPriceComparedToPurchasePrice",
+      "namespace": "common",
+      "leaf": "manuallyAdjustedSellingPriceComparedToPurchasePrice",
+      "segments": [
+        "common",
+        "manuallyAdjustedSellingPriceComparedToPurchasePrice"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3383
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "De prijs van de geselecteerde dienst werd manueel aangepast en is:",
+        "fr": "Le prix du service sélectionné a été ajusté manuellement et est :",
+        "en": "The price of the selected service was manually adjusted and is:"
       }
     },
     {
@@ -50658,6 +50808,36 @@
       }
     },
     {
+      "key": "common.orange",
+      "namespace": "common",
+      "leaf": "orange",
+      "segments": [
+        "common",
+        "orange"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3384
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Oranje",
+        "fr": "Orange",
+        "en": "Orange"
+      }
+    },
+    {
       "key": "common.order",
       "namespace": "common",
       "leaf": "order",
@@ -56675,6 +56855,36 @@
       }
     },
     {
+      "key": "common.red",
+      "namespace": "common",
+      "leaf": "red",
+      "segments": [
+        "common",
+        "red"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3385
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Rood",
+        "fr": "Rouge",
+        "en": "Red"
+      }
+    },
+    {
       "key": "common.reference",
       "namespace": "common",
       "leaf": "reference",
@@ -61383,6 +61593,36 @@
         "nl": "Verkoopprijs",
         "fr": "Prix de vente",
         "en": "Selling price"
+      }
+    },
+    {
+      "key": "common.sellingPriceColorIndication",
+      "namespace": "common",
+      "leaf": "sellingPriceColorIndication",
+      "segments": [
+        "common",
+        "sellingPriceColorIndication"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3386
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Kleurindicatie verkoopprijs",
+        "fr": "Indication de couleur du prix de vente",
+        "en": "Selling price color indication"
       }
     },
     {
@@ -102125,7 +102365,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2342
+      "keyCount": 2350
     },
     {
       "name": "confirmation",

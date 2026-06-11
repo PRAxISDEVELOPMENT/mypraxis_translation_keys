@@ -31113,5 +31113,77 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.equalToPurchasePrice",
+    "nl": "Gelijk aan de aankoopprijs.",
+    "fr": "Egal au prix d'achat.",
+    "en": "Equal to the purchase price.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.green",
+    "nl": "Groen",
+    "fr": "Vert",
+    "en": "Green",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.higherThanPurchasePrice",
+    "nl": "Hoger dan de aankoopprijs.",
+    "fr": "Supérieur au prix d'achat.",
+    "en": "Higher than the purchase price.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.lowerThanPurchasePrice",
+    "nl": "Lager dan de aankoopprijs.",
+    "fr": "Inférieur au prix d'achat.",
+    "en": "Lower than the purchase price.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.manuallyAdjustedSellingPriceComparedToPurchasePrice",
+    "nl": "De prijs van de geselecteerde dienst werd manueel aangepast en is:",
+    "fr": "Le prix du service sélectionné a été ajusté manuellement et est :",
+    "en": "The price of the selected service was manually adjusted and is:",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.orange",
+    "nl": "Oranje",
+    "fr": "Orange",
+    "en": "Orange",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.red",
+    "nl": "Rood",
+    "fr": "Rouge",
+    "en": "Red",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.sellingPriceColorIndication",
+    "nl": "Kleurindicatie verkoopprijs",
+    "fr": "Indication de couleur du prix de vente",
+    "en": "Selling price color indication",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

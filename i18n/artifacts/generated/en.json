@@ -3283,6 +3283,7 @@
   "warning": {
     "aboutToActivateCallcenter": "You are about to activate callcenter service {{value}}.",
     "aboutToActivateContact": "You are about to activate contact: {{value}}",
+    "aboutToApprovePaymentReminder": "You are about to approve invoice {{value}}.",
     "aboutToCancelThisClientTermination": "You are about to cancel this client termination.",
     "aboutToCreateADummyAccountThisUser": "You are about to create a dummy account this user.",
     "aboutToDeactivateThisClientAreYouSureYouWantToProceed": "You are about to deactivate this client. Are you sure you want to proceed?",

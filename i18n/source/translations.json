@@ -31239,5 +31239,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "warning.aboutToApprovePaymentReminder",
+    "nl": "U staat op het punt om factuur {{value}} goed te keuren.",
+    "fr": "Vous êtes sur le point d’approuver la facture {{value}}.",
+    "en": "You are about to approve invoice {{value}}.",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

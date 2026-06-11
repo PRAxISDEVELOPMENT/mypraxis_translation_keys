@@ -3283,6 +3283,7 @@
   "warning": {
     "aboutToActivateCallcenter": "Vous êtes sur le point d’activer le service de garde {{value}}.",
     "aboutToActivateContact": "Vous êtes sur le point d’activer le contact : {{value}}",
+    "aboutToApprovePaymentReminder": "Vous êtes sur le point d’approuver la facture {{value}}.",
     "aboutToCancelThisClientTermination": "Vous êtes sur le point d'annuler la résiliation de ce client.",
     "aboutToCreateADummyAccountThisUser": "Vous êtes sur le point de créer un compte factice pour cet utilisateur.",
     "aboutToDeactivateThisClientAreYouSureYouWantToProceed": "Vous êtes sur le point de désactiver ce client. Êtes-vous sûr de vouloir continuer ?",

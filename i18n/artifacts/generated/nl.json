@@ -3283,6 +3283,7 @@
   "warning": {
     "aboutToActivateCallcenter": "U staat op het punt om wachtdienst {{value}} te activeren.",
     "aboutToActivateContact": "U staat op het punt om contact {{value}} te activeren",
+    "aboutToApprovePaymentReminder": "U staat op het punt om factuur {{value}} goed te keuren.",
     "aboutToCancelThisClientTermination": "U staat op het punt om de stopzetting van deze klant te annuleren.",
     "aboutToCreateADummyAccountThisUser": "U staat op het punt een dummyaccount aan te maken voor deze gebruiker.",
     "aboutToDeactivateThisClientAreYouSureYouWantToProceed": "U staat op het punt de klant stop te zetten. Weet u zeker dat u wil doorgaan?",

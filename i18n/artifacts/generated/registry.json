@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3392,
-    "uniqueKeys": 3392,
+    "totalEntries": 3393,
+    "uniqueKeys": 3393,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -98711,6 +98711,36 @@
       }
     },
     {
+      "key": "warning.aboutToApprovePaymentReminder",
+      "namespace": "warning",
+      "leaf": "aboutToApprovePaymentReminder",
+      "segments": [
+        "warning",
+        "aboutToApprovePaymentReminder"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3393
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "U staat op het punt om factuur {{value}} goed te keuren.",
+        "fr": "Vous êtes sur le point d’approuver la facture {{value}}.",
+        "en": "You are about to approve invoice {{value}}."
+      }
+    },
+    {
       "key": "warning.aboutToCancelThisClientTermination",
       "namespace": "warning",
       "leaf": "aboutToCancelThisClientTermination",
@@ -102601,7 +102631,7 @@
       "label": "Waarschuwingen",
       "description": "Teksten die de gebruiker wijzen op aandachtspunten, mogelijke gevolgen of vereiste zorgvuldigheid.",
       "status": "active",
-      "keyCount": 129
+      "keyCount": 130
     }
   ]
 }

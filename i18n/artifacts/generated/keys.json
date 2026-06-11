@@ -3264,6 +3264,7 @@
   "success.zoneTypesDeleted",
   "warning.aboutToActivateCallcenter",
   "warning.aboutToActivateContact",
+  "warning.aboutToApprovePaymentReminder",
   "warning.aboutToCancelThisClientTermination",
   "warning.aboutToCreateADummyAccountThisUser",
   "warning.aboutToDeactivateThisClientAreYouSureYouWantToProceed",

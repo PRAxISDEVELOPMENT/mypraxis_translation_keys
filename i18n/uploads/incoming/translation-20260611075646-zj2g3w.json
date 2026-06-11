@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "info.maintenanceInstallerChangeRequestNotice3",
+      "status": {
+        "fr": "review-required",
+        "en": "review-required"
+      }
+    },
+    {
+      "key": "info.maintenanceInstallerChangeRequestNotice1",
+      "status": {
+        "fr": "review-required",
+        "en": "review-required"
+      }
+    },
+    {
+      "key": "info.maintenanceInstallerChangeRequestNotice2",
+      "status": {
+        "fr": "review-required",
+        "en": "review-required"
+      }
+    }
+  ]
+}

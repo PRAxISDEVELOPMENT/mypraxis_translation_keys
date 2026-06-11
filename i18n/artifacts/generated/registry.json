@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3386,
-    "uniqueKeys": 3386,
+    "totalEntries": 3391,
+    "uniqueKeys": 3391,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -29866,6 +29866,36 @@
       }
     },
     {
+      "key": "common.equalToPurchasePriceFilter",
+      "namespace": "common",
+      "leaf": "equalToPurchasePriceFilter",
+      "segments": [
+        "common",
+        "equalToPurchasePriceFilter"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3388
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gelijk aan aankoopprijs",
+        "fr": "Égal au prix d'achat",
+        "en": "Equal to purchase price"
+      }
+    },
+    {
       "key": "common.erpInstaller",
       "namespace": "common",
       "leaf": "erpInstaller",
@@ -32549,6 +32579,36 @@
         "nl": "Filters",
         "fr": "Filtres",
         "en": "Filters"
+      }
+    },
+    {
+      "key": "common.filterSellingPrices",
+      "namespace": "common",
+      "leaf": "filterSellingPrices",
+      "segments": [
+        "common",
+        "filterSellingPrices"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3391
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Verkoopprijzen filteren",
+        "fr": "Filtrer les prix de vente",
+        "en": "Filter selling prices"
       }
     },
     {
@@ -35964,6 +36024,36 @@
         "nl": "Hoger dan de aankoopprijs.",
         "fr": "Supérieur au prix d'achat.",
         "en": "Higher than the purchase price."
+      }
+    },
+    {
+      "key": "common.higherThanPurchasePriceFilter",
+      "namespace": "common",
+      "leaf": "higherThanPurchasePriceFilter",
+      "segments": [
+        "common",
+        "higherThanPurchasePriceFilter"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3387
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Hoger dan aankoopprijs",
+        "fr": "Supérieur au prix d'achat",
+        "en": "Higher than purchase price"
       }
     },
     {
@@ -42138,6 +42228,36 @@
         "nl": "Lager dan de aankoopprijs.",
         "fr": "Inférieur au prix d'achat.",
         "en": "Lower than the purchase price."
+      }
+    },
+    {
+      "key": "common.lowerThanPurchasePriceFilter",
+      "namespace": "common",
+      "leaf": "lowerThanPurchasePriceFilter",
+      "segments": [
+        "common",
+        "lowerThanPurchasePriceFilter"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3389
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Lager dan aankoopprijs",
+        "fr": "Inférieur au prix d'achat",
+        "en": "Lower than purchase price"
       }
     },
     {
@@ -69192,6 +69312,36 @@
         "nl": "Geen toestemming om dit API-endpoint te benaderen.",
         "fr": "Accès non authorisé au point de jonction API.",
         "en": "Unauthorized access to API endpoint."
+      }
+    },
+    {
+      "key": "common.unchangedSellingPrice",
+      "namespace": "common",
+      "leaf": "unchangedSellingPrice",
+      "segments": [
+        "common",
+        "unchangedSellingPrice"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3390
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Onaangepast",
+        "fr": "Non modifié",
+        "en": "Unchanged"
       }
     },
     {
@@ -102365,7 +102515,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2350
+      "keyCount": 2355
     },
     {
       "name": "confirmation",

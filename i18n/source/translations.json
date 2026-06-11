@@ -31185,5 +31185,50 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.higherThanPurchasePriceFilter",
+    "nl": "Hoger dan aankoopprijs",
+    "fr": "Supérieur au prix d'achat",
+    "en": "Higher than purchase price",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.equalToPurchasePriceFilter",
+    "nl": "Gelijk aan aankoopprijs",
+    "fr": "Égal au prix d'achat",
+    "en": "Equal to purchase price",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.lowerThanPurchasePriceFilter",
+    "nl": "Lager dan aankoopprijs",
+    "fr": "Inférieur au prix d'achat",
+    "en": "Lower than purchase price",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.unchangedSellingPrice",
+    "nl": "Onaangepast",
+    "fr": "Non modifié",
+    "en": "Unchanged",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.filterSellingPrices",
+    "nl": "Verkoopprijzen filteren",
+    "fr": "Filtrer les prix de vente",
+    "en": "Filter selling prices",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

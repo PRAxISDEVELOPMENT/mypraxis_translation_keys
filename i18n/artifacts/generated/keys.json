@@ -296,6 +296,7 @@
   "common.applicationVersion",
   "common.apply",
   "common.applyIndex",
+  "common.approvalRequired",
   "common.aPrimaryOrBackupContactWasAssigned",
   "common.archivedTickets",
   "common.archiveTicket",

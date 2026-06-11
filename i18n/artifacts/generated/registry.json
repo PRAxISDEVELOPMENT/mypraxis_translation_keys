@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3391,
-    "uniqueKeys": 3391,
+    "totalEntries": 3392,
+    "uniqueKeys": 3392,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -9098,6 +9098,36 @@
         "nl": "Index toepassen",
         "fr": "Appliquer l'indice",
         "en": "Apply index"
+      }
+    },
+    {
+      "key": "common.approvalRequired",
+      "namespace": "common",
+      "leaf": "approvalRequired",
+      "segments": [
+        "common",
+        "approvalRequired"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3392
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Goedkeuring vereist",
+        "fr": "Approbation requise",
+        "en": "Approval required"
       }
     },
     {
@@ -102515,7 +102545,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2355
+      "keyCount": 2356
     },
     {
       "name": "confirmation",

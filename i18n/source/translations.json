@@ -31230,5 +31230,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.approvalRequired",
+    "nl": "Goedkeuring vereist",
+    "fr": "Approbation requise",
+    "en": "Approval required",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

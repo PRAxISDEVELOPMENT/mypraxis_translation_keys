@@ -1458,6 +1458,15 @@
     ]
   },
   {
+    "key": "common.accountType",
+    "nl": "Type account",
+    "fr": "Type de compte",
+    "en": "Account type",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.aClientCanOnlyBeActivatedIfPraxisHasTheRemoteMonitoringContract",
     "nl": "Een klant kan enkel worden geactiveerd indien PRAxIS beschikt over het telebewakingscontract.",
     "fr": "Un client ne peut être activé que si PRAxIS dispose de son contrat de télésurveillance.",
@@ -7084,6 +7093,15 @@
     ]
   },
   {
+    "key": "common.daysUntilNextAction",
+    "nl": "Dagen tot volgende actie",
+    "fr": "Jours jusqu'à la prochaine action",
+    "en": "Days until next action",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.deactivate",
     "nl": "Stopzetten",
     "fr": "arrêt",
@@ -11940,6 +11958,15 @@
     ]
   },
   {
+    "key": "common.invoiceDueDate",
+    "nl": "Vervaldatum factuur",
+    "fr": "Date d'échéance de la facture",
+    "en": "Invoice due date",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.invoiceName",
     "nl": "Factuurnaam",
     "fr": "Nom de la facture",
@@ -15900,6 +15927,15 @@
     ]
   },
   {
+    "key": "common.paymentReminders",
+    "nl": "Aanmaningen",
+    "fr": "Rappels de paiement",
+    "en": "Payment reminders",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.paymentTerms",
     "nl": "Betalingsvoorwaarden",
     "fr": "Conditions de paiement",
@@ -18000,6 +18036,15 @@
     "en": "Reset to original",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.resolved",
+    "nl": "Voldaan",
+    "fr": "Payé",
+    "en": "Paid",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -22207,6 +22252,16 @@
     ]
   },
   {
+    "key": "common.visualMaterialViaCameraTypeCommunicator",
+    "nl": "Weergave {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+    "fr": "Affichage {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+    "en": "{{visualMaterial}} display via {{cameraType}} ({{communicator}})",
+    "applications": [
+      "mypraxis_app",
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.vocalBrand",
     "nl": "Merk inluistering",
     "fr": "Marque d'écoute à distance",
@@ -26089,7 +26144,11 @@
     "en": "As an installer, you can choose to collaborate with one or more other installers to help manage the service and maintenance of your customers.",
     "applications": [
       "mypraxis_web"
-    ]
+    ],
+    "status": {
+      "fr": "review-required",
+      "en": "review-required"
+    }
   },
   {
     "key": "info.maintenanceInstallerChangeRequestNotice2",
@@ -26098,7 +26157,11 @@
     "en": "A maintenance installer can only be assigned by dispatch@praxis-group.eu, whereby the installer in question must be registered in MyPRAxIS. Installers who are not yet customers of PRAxIS Group N.V. can be registered via commercial@praxis-group.eu.",
     "applications": [
       "mypraxis_web"
-    ]
+    ],
+    "status": {
+      "fr": "review-required",
+      "en": "review-required"
+    }
   },
   {
     "key": "info.maintenanceInstallerChangeRequestNotice3",
@@ -26107,7 +26170,11 @@
     "en": "After assigning a maintenance installer, you can grant them access to all your customers via [Organisation] > [Preferences] > [Miscellaneous], or customer by customer via [Customer info] > [General details].",
     "applications": [
       "mypraxis_web"
-    ]
+    ],
+    "status": {
+      "fr": "review-required",
+      "en": "review-required"
+    }
   },
   {
     "key": "info.maintenanceInstallerLinkingDisablePrompt",
@@ -31043,61 +31110,6 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.visualMaterialViaCameraTypeCommunicator",
-    "nl": "Weergave {{visualMaterial}} via {{cameraType}} ({{communicator}})",
-    "fr": "Affichage {{visualMaterial}} via {{cameraType}} ({{communicator}})",
-    "en": "{{visualMaterial}} display via {{cameraType}} ({{communicator}})",
-    "applications": [
-      "mypraxis_app",
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.accountType",
-    "nl": "Type account",
-    "fr": "Type de compte",
-    "en": "Account type",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.daysUntilNextAction",
-    "nl": "Dagen tot volgende actie",
-    "fr": "Jours jusqu'à la prochaine action",
-    "en": "Days until next action",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.invoiceDueDate",
-    "nl": "Vervaldatum factuur",
-    "fr": "Date d'échéance de la facture",
-    "en": "Invoice due date",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.paymentReminders",
-    "nl": "Aanmaningen",
-    "fr": "Rappels de paiement",
-    "en": "Payment reminders",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.resolved",
-    "nl": "Voldaan",
-    "fr": "Payé",
-    "en": "Paid",
     "applications": [
       "mypraxis_web"
     ]

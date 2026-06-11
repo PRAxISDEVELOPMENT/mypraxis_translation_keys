@@ -26075,11 +26075,11 @@
   },
   {
     "key": "info.maintenanceInstallerChangeRequestNotice",
-    "nl": "Onderhoudsinstallateurs kunnen alleen worden toegevoegd of gewijzigd door PRAxIS GROUP N.V.",
-    "fr": "Les techniciens de maintenance ne peuvent être ajoutés ou modifiés que sur demande adressée à PRAxIS GROUP S.A.",
-    "en": "Maintenance installers can only be added or changed upon request via PRAxIS GROUP N.V.",
+    "nl": "Als installateur kan u ervoor kiezen om samen te werken met één of meerdere andere installateurs om de service en het onderhoud van uw klanten te helpen beheren.\n\nEen onderhoudsinstallateur kan enkel toegekend worden door dispatch@praxis-group.eu waarbij de installateur in kwestie in MyPRAxIS geregistreerd moet zijn. Installateurs die nog geen klant zijn bij PRAxIS Group N.V. kunnen geregistreerd worden via commercial@praxis-group.eu.\n\nNa het toewijzen van een onderhoudsinstallateur kan u deze via [Organisatie] > [Voorkeuren] > [Diverse] toegang geven tot al uw klanten of klant-per-klant via [Klantinfo] > [Algemene gegevens].",
+    "fr": "En tant qu’installateur, vous pouvez choisir de collaborer avec un ou plusieurs autres installateurs afin de vous aider à gérer le service et l’entretien de vos clients.\n\nUn installateur de maintenance ne peut être attribué que par dispatch@praxis-group.eu, l’installateur concerné devant être enregistré dans MyPRAxIS. Les installateurs qui ne sont pas encore clients de PRAxIS Group N.V. peuvent être enregistrés via commercial@praxis-group.eu.\n\nAprès l’attribution d’un installateur de maintenance, vous pouvez lui donner accès à tous vos clients via [Organisation] > [Préférences] > [Divers], ou client par client via [Infos client] > [Données générales].",
+    "en": "As an installer, you can choose to collaborate with one or more other installers to help manage the service and maintenance of your customers.\n\nA maintenance installer can only be assigned by dispatch@praxis-group.eu, whereby the installer in question must be registered in MyPRAxIS. Installers who are not yet customers of PRAxIS Group N.V. can be registered via commercial@praxis-group.eu.\n\nAfter assigning a maintenance installer, you can grant them access to all your customers via [Organisation] > [Preferences] > [Miscellaneous], or customer by customer via [Customer info] > [General details].",
     "applications": [
-      "unknown"
+      "mypraxis_web"
     ]
   },
   {

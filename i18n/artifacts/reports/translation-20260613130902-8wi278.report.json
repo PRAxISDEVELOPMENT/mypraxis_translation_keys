@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-13T13:09:25.586Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260613130902-8wi278.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 1,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.calculationOfDamagesAndInterest",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "Berekening schadevergoeding en intresten",
+        "fr": "Calcul des indemnités et des intérêts",
+        "en": "Calculation of damages and interest",
+        "notes": "Aanmaning 3 PDF",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.calculationOfDamagesAndInterest",
+        "nl": "Berekening schadevergoeding en intresten",
+        "fr": "Calcul des indemnités et des intérêts",
+        "en": "Calculation of damages and interest",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Aanmaning 3 PDF"
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

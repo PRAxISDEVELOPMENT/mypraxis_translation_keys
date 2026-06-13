@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "Verwijlinteresten",
+      "fr": "Intérêts de retard",
+      "en": "Interest on outstanding amounts",
+      "requestedNamespace": "common",
+      "notes": "Aanmaning 3 - PDF"
+    },
+    {
+      "nl": "Intrestvoet",
+      "fr": "Taux d'intérêt",
+      "en": "Interest rate",
+      "requestedNamespace": "common",
+      "notes": "Aanmaning 3 - PDF"
+    },
+    {
+      "nl": "Aantal dagen achterstal op factuurdatum",
+      "fr": "Nombre de jours de retard depuis la date de facturation",
+      "en": "Number of days overdue since the invoice date",
+      "requestedNamespace": "common",
+      "notes": "Aanmaning 3 - PDF"
+    },
+    {
+      "nl": "Totaal verschuldigde intresten",
+      "fr": "Total des intérêts dus",
+      "en": "Total interest due",
+      "requestedNamespace": "common",
+      "notes": "Aanmaning 3 - PDF"
+    },
+    {
+      "nl": "Totaal aan bijkomende kosten",
+      "fr": "Total des frais supplémentaires",
+      "en": "Total additional costs",
+      "requestedNamespace": "common",
+      "notes": "Aanmaning 3 - PDF"
+    }
+  ]
+}

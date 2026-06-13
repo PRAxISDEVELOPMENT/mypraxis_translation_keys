@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-13T13:12:39.726Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260613131223-4yntbj.json",
+  "summary": {
+    "totalEntries": 5,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 5,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.invoiceDetails",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "Factuurgegevens",
+        "fr": "Données de facturation",
+        "en": "Invoice details",
+        "notes": "Aanmaning 3 PDF",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.invoiceDetails",
+        "nl": "Factuurgegevens",
+        "fr": "Données de facturation",
+        "en": "Invoice details",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Aanmaning 3 PDF"
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 2,
+      "suggestedKey": "common.compensation",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "Schadevergoeding",
+        "fr": "Indemnisation",
+        "en": "Compensation",
+        "notes": "Aanmaning 3 PDF",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.compensation",
+        "nl": "Schadevergoeding",
+        "fr": "Indemnisation",
+        "en": "Compensation",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Aanmaning 3 PDF"
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 3,
+      "suggestedKey": "common.fixedFee",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "Vast recht",
+        "fr": "Frais fixes",
+        "en": "Fixed fee",
+        "notes": "Aanmaning 3 PDF",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.fixedFee",
+        "nl": "Vast recht",
+        "fr": "Frais fixes",
+        "en": "Fixed fee",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Aanmaning 3 PDF"
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 4,
+      "suggestedKey": "common.variableFee",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "Variabele vergoeding",
+        "fr": "Indemnisation variable",
+        "en": "Variable fee",
+        "notes": "Aanmaning 3 PDF",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.variableFee",
+        "nl": "Variabele vergoeding",
+        "fr": "Indemnisation variable",
+        "en": "Variable fee",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Aanmaning 3 PDF"
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 5,
+      "suggestedKey": "common.totalCompensation",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "Totaal schadevergoeding",
+        "fr": "Indemnisation totale",
+        "en": "Total compensation",
+        "notes": "Aanmaning 3 PDF",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.totalCompensation",
+        "nl": "Totaal schadevergoeding",
+        "fr": "Indemnisation totale",
+        "en": "Total compensation",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Aanmaning 3 PDF"
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

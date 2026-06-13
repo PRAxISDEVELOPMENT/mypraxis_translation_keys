@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "Berekening schadevergoeding en intresten",
+      "fr": "Calcul des indemnités et des intérêts",
+      "en": "Calculation of damages and interest",
+      "requestedNamespace": "common",
+      "notes": "Aanmaning 3 PDF"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-13T13:20:44.277Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260613132029-qtwhl3.json",
+  "summary": {
+    "totalEntries": 5,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 5,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.interestOnOutstandingAmounts",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "Verwijlinteresten",
+        "fr": "Intérêts de retard",
+        "en": "Interest on outstanding amounts",
+        "notes": "Aanmaning 3 - PDF",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.interestOnOutstandingAmounts",
+        "nl": "Verwijlinteresten",
+        "fr": "Intérêts de retard",
+        "en": "Interest on outstanding amounts",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Aanmaning 3 - PDF"
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 2,
+      "suggestedKey": "common.interestRate",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "Intrestvoet",
+        "fr": "Taux d'intérêt",
+        "en": "Interest rate",
+        "notes": "Aanmaning 3 - PDF",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.interestRate",
+        "nl": "Intrestvoet",
+        "fr": "Taux d'intérêt",
+        "en": "Interest rate",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Aanmaning 3 - PDF"
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 3,
+      "suggestedKey": "common.numberOfDaysOverdueSinceTheInvoiceDate",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "Aantal dagen achterstal op factuurdatum",
+        "fr": "Nombre de jours de retard depuis la date de facturation",
+        "en": "Number of days overdue since the invoice date",
+        "notes": "Aanmaning 3 - PDF",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.numberOfDaysOverdueSinceTheInvoiceDate",
+        "nl": "Aantal dagen achterstal op factuurdatum",
+        "fr": "Nombre de jours de retard depuis la date de facturation",
+        "en": "Number of days overdue since the invoice date",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Aanmaning 3 - PDF"
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 4,
+      "suggestedKey": "common.totalInterestDue",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "Totaal verschuldigde intresten",
+        "fr": "Total des intérêts dus",
+        "en": "Total interest due",
+        "notes": "Aanmaning 3 - PDF",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.totalInterestDue",
+        "nl": "Totaal verschuldigde intresten",
+        "fr": "Total des intérêts dus",
+        "en": "Total interest due",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Aanmaning 3 - PDF"
+      },
+      "reviewRequired": true
+    },
+    {
+      "type": "proposal",
+      "index": 5,
+      "suggestedKey": "common.totalAdditionalCosts",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "Totaal aan bijkomende kosten",
+        "fr": "Total des frais supplémentaires",
+        "en": "Total additional costs",
+        "notes": "Aanmaning 3 - PDF",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.totalAdditionalCosts",
+        "nl": "Totaal aan bijkomende kosten",
+        "fr": "Total des frais supplémentaires",
+        "en": "Total additional costs",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Aanmaning 3 - PDF"
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

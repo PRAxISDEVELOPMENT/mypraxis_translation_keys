@@ -2812,6 +2812,15 @@
     ]
   },
   {
+    "key": "common.approvalRequired",
+    "nl": "Goedkeuring vereist",
+    "fr": "Approbation requise",
+    "en": "Approval required",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.aPrimaryOrBackupContactWasAssigned",
     "nl": "Er werd een primair of back-up contact toegekend.",
     "fr": "Un contact principal ou suppléant a été désigné.",
@@ -3811,6 +3820,15 @@
     "nl": "Aangemaakt door",
     "fr": "Créé par",
     "en": "Created by",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.calculationOfDamagesAndInterest",
+    "nl": "Berekening schadevergoeding en intresten",
+    "fr": "Calcul des indemnités et des intérêts",
+    "en": "Calculation of damages and interest",
     "applications": [
       "mypraxis_web"
     ]
@@ -5614,6 +5632,15 @@
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.compensation",
+    "nl": "Schadevergoeding",
+    "fr": "Indemnisation",
+    "en": "Compensation",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -9120,6 +9147,24 @@
     ]
   },
   {
+    "key": "common.equalToPurchasePrice",
+    "nl": "Gelijk aan de aankoopprijs.",
+    "fr": "Egal au prix d'achat.",
+    "en": "Equal to the purchase price.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.equalToPurchasePriceFilter",
+    "nl": "Gelijk aan aankoopprijs",
+    "fr": "Égal au prix d'achat",
+    "en": "Equal to purchase price",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.erpInstaller",
     "nl": "ERP installateur",
     "fr": "L'ERP de l'installateur",
@@ -9937,6 +9982,15 @@
     ]
   },
   {
+    "key": "common.filterSellingPrices",
+    "nl": "Verkoopprijzen filteren",
+    "fr": "Filtrer les prix de vente",
+    "en": "Filter selling prices",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.finalAmountToBePaidOutToTheInstallerAsCommission",
     "nl": "Het uiteindelijke bedrag dat zal uitbetaald worden aan de installateur als commissie",
     "fr": "Le montant final qui sera versé à l’installateur comme commission",
@@ -10080,6 +10134,15 @@
     "nl": "Vaste korting",
     "fr": "Remise fixe",
     "en": "Fixed discount",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.fixedFee",
+    "nl": "Vast recht",
+    "fr": "Frais fixes",
+    "en": "Fixed fee",
     "applications": [
       "mypraxis_web"
     ]
@@ -10656,6 +10719,15 @@
     ]
   },
   {
+    "key": "common.green",
+    "nl": "Groen",
+    "fr": "Vert",
+    "en": "Green",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.group",
     "nl": "Groep",
     "fr": "Groupe",
@@ -10956,6 +11028,24 @@
     "nl": "Hoog",
     "fr": "Haute",
     "en": "High",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.higherThanPurchasePrice",
+    "nl": "Hoger dan de aankoopprijs.",
+    "fr": "Supérieur au prix d'achat.",
+    "en": "Higher than the purchase price.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.higherThanPurchasePriceFilter",
+    "nl": "Hoger dan aankoopprijs",
+    "fr": "Supérieur au prix d'achat",
+    "en": "Higher than purchase price",
     "applications": [
       "mypraxis_web"
     ]
@@ -11836,6 +11926,24 @@
     ]
   },
   {
+    "key": "common.interestOnOutstandingAmounts",
+    "nl": "Verwijlinteresten",
+    "fr": "Intérêts de retard",
+    "en": "Interest on outstanding amounts",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.interestRate",
+    "nl": "Intrestvoet",
+    "fr": "Taux d'intérêt",
+    "en": "Interest rate",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.intern",
     "nl": "Intern",
     "fr": "Interne",
@@ -11953,6 +12061,15 @@
     "nl": "Factuurdatum",
     "fr": "Date de la facture",
     "en": "Invoice date",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.invoiceDetails",
+    "nl": "Factuurgegevens",
+    "fr": "Données de facturation",
+    "en": "Invoice details",
     "applications": [
       "mypraxis_web"
     ]
@@ -12842,6 +12959,24 @@
     ]
   },
   {
+    "key": "common.lowerThanPurchasePrice",
+    "nl": "Lager dan de aankoopprijs.",
+    "fr": "Inférieur au prix d'achat.",
+    "en": "Lower than the purchase price.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.lowerThanPurchasePriceFilter",
+    "nl": "Lager dan aankoopprijs",
+    "fr": "Inférieur au prix d'achat",
+    "en": "Lower than purchase price",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.lunchBreak",
     "nl": "Lunchpauze",
     "fr": "Pause déjeuner",
@@ -13382,6 +13517,15 @@
     "nl": "Manuele invoer",
     "fr": "Saisie manuelle",
     "en": "Manual input",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.manuallyAdjustedSellingPriceComparedToPurchasePrice",
+    "nl": "De prijs van de geselecteerde dienst werd manueel aangepast en is:",
+    "fr": "Le prix du service sélectionné a été ajusté manuellement et est :",
+    "en": "The price of the selected service was manually adjusted and is:",
     "applications": [
       "mypraxis_web"
     ]
@@ -14944,6 +15088,15 @@
     ]
   },
   {
+    "key": "common.numberOfDaysOverdueSinceTheInvoiceDate",
+    "nl": "Aantal dagen achterstal op factuurdatum",
+    "fr": "Nombre de jours de retard depuis la date de facturation",
+    "en": "Number of days overdue since the invoice date",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.numberOfEPROMNumbers",
     "nl": "Aantal eprom-nummers",
     "fr": "Nombre de numéros d'EPROM",
@@ -15470,6 +15623,15 @@
     "en": "or",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.orange",
+    "nl": "Oranje",
+    "fr": "Orange",
+    "en": "Orange",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -17311,6 +17473,15 @@
     ]
   },
   {
+    "key": "common.red",
+    "nl": "Rood",
+    "fr": "Rouge",
+    "en": "Red",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.reference",
     "nl": "Referentie",
     "fr": "Référence",
@@ -18741,6 +18912,15 @@
     "nl": "Verkoopprijs",
     "fr": "Prix de vente",
     "en": "Selling price",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.sellingPriceColorIndication",
+    "nl": "Kleurindicatie verkoopprijs",
+    "fr": "Indication de couleur du prix de vente",
+    "en": "Selling price color indication",
     "applications": [
       "mypraxis_web"
     ]
@@ -20687,6 +20867,15 @@
     ]
   },
   {
+    "key": "common.totalAdditionalCosts",
+    "nl": "Totaal aan bijkomende kosten",
+    "fr": "Total des frais supplémentaires",
+    "en": "Total additional costs",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.totalAmount",
     "nl": "Totaal bedrag",
     "fr": "Montant total",
@@ -20741,6 +20930,15 @@
     ]
   },
   {
+    "key": "common.totalCompensation",
+    "nl": "Totaal schadevergoeding",
+    "fr": "Indemnisation totale",
+    "en": "Total compensation",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.totalCompletionTime",
     "nl": "Totale afhandeltijd",
     "fr": "Durée totale du traitement",
@@ -20754,6 +20952,15 @@
     "nl": "Totale duur: {{value}}",
     "fr": "Durée totale: {{value}}",
     "en": "Total duration: {{value}}",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.totalInterestDue",
+    "nl": "Totaal verschuldigde intresten",
+    "fr": "Total des intérêts dus",
+    "en": "Total interest due",
     "applications": [
       "mypraxis_web"
     ]
@@ -21041,6 +21248,15 @@
     "en": "Unauthorized access to API endpoint.",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.unchangedSellingPrice",
+    "nl": "Onaangepast",
+    "fr": "Non modifié",
+    "en": "Unchanged",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -21586,6 +21802,15 @@
     "en": "Values",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.variableFee",
+    "nl": "Variabele vergoeding",
+    "fr": "Indemnisation variable",
+    "en": "Variable fee",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -29968,6 +30193,15 @@
     ]
   },
   {
+    "key": "warning.aboutToApprovePaymentReminder",
+    "nl": "U staat op het punt om factuur {{value}} goed te keuren.",
+    "fr": "Vous êtes sur le point d’approuver la facture {{value}}.",
+    "en": "You are about to approve invoice {{value}}.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "warning.aboutToCancelThisClientTermination",
     "nl": "U staat op het punt om de stopzetting van deze klant te annuleren.",
     "fr": "Vous êtes sur le point d'annuler la résiliation de ce client.",
@@ -31110,141 +31344,6 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.equalToPurchasePrice",
-    "nl": "Gelijk aan de aankoopprijs.",
-    "fr": "Egal au prix d'achat.",
-    "en": "Equal to the purchase price.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.green",
-    "nl": "Groen",
-    "fr": "Vert",
-    "en": "Green",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.higherThanPurchasePrice",
-    "nl": "Hoger dan de aankoopprijs.",
-    "fr": "Supérieur au prix d'achat.",
-    "en": "Higher than the purchase price.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.lowerThanPurchasePrice",
-    "nl": "Lager dan de aankoopprijs.",
-    "fr": "Inférieur au prix d'achat.",
-    "en": "Lower than the purchase price.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.manuallyAdjustedSellingPriceComparedToPurchasePrice",
-    "nl": "De prijs van de geselecteerde dienst werd manueel aangepast en is:",
-    "fr": "Le prix du service sélectionné a été ajusté manuellement et est :",
-    "en": "The price of the selected service was manually adjusted and is:",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.orange",
-    "nl": "Oranje",
-    "fr": "Orange",
-    "en": "Orange",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.red",
-    "nl": "Rood",
-    "fr": "Rouge",
-    "en": "Red",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.sellingPriceColorIndication",
-    "nl": "Kleurindicatie verkoopprijs",
-    "fr": "Indication de couleur du prix de vente",
-    "en": "Selling price color indication",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.higherThanPurchasePriceFilter",
-    "nl": "Hoger dan aankoopprijs",
-    "fr": "Supérieur au prix d'achat",
-    "en": "Higher than purchase price",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.equalToPurchasePriceFilter",
-    "nl": "Gelijk aan aankoopprijs",
-    "fr": "Égal au prix d'achat",
-    "en": "Equal to purchase price",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.lowerThanPurchasePriceFilter",
-    "nl": "Lager dan aankoopprijs",
-    "fr": "Inférieur au prix d'achat",
-    "en": "Lower than purchase price",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.unchangedSellingPrice",
-    "nl": "Onaangepast",
-    "fr": "Non modifié",
-    "en": "Unchanged",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.filterSellingPrices",
-    "nl": "Verkoopprijzen filteren",
-    "fr": "Filtrer les prix de vente",
-    "en": "Filter selling prices",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.approvalRequired",
-    "nl": "Goedkeuring vereist",
-    "fr": "Approbation requise",
-    "en": "Approval required",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "warning.aboutToApprovePaymentReminder",
-    "nl": "U staat op het punt om factuur {{value}} goed te keuren.",
-    "fr": "Vous êtes sur le point d’approuver la facture {{value}}.",
-    "en": "You are about to approve invoice {{value}}.",
     "applications": [
       "mypraxis_web"
     ]

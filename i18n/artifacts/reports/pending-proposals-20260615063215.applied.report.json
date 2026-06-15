@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "command": "apply-pending-proposals",
+  "createdAt": "2026-06-15T06:32:15.358Z",
+  "summary": {
+    "proposalFiles": 3,
+    "appliedEntries": 11
+  },
+  "applied": [
+    {
+      "proposalId": "translation-20260613130902-8wi278.proposal-01",
+      "proposalFile": "i18n/proposals/pending/translation-20260613130902-8wi278.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260613130902-8wi278.json",
+      "key": "common.calculationOfDamagesAndInterest",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Berekening schadevergoeding en intresten",
+      "fr": "Calcul des indemnités et des intérêts",
+      "en": "Calculation of damages and interest"
+    },
+    {
+      "proposalId": "translation-20260613131223-4yntbj.proposal-01",
+      "proposalFile": "i18n/proposals/pending/translation-20260613131223-4yntbj.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260613131223-4yntbj.json",
+      "key": "common.invoiceDetails",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Factuurgegevens",
+      "fr": "Données de facturation",
+      "en": "Invoice details"
+    },
+    {
+      "proposalId": "translation-20260613131223-4yntbj.proposal-02",
+      "proposalFile": "i18n/proposals/pending/translation-20260613131223-4yntbj.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260613131223-4yntbj.json",
+      "key": "common.compensation",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Schadevergoeding",
+      "fr": "Indemnisation",
+      "en": "Compensation"
+    },
+    {
+      "proposalId": "translation-20260613131223-4yntbj.proposal-03",
+      "proposalFile": "i18n/proposals/pending/translation-20260613131223-4yntbj.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260613131223-4yntbj.json",
+      "key": "common.fixedFee",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Vast recht",
+      "fr": "Frais fixes",
+      "en": "Fixed fee"
+    },
+    {
+      "proposalId": "translation-20260613131223-4yntbj.proposal-04",
+      "proposalFile": "i18n/proposals/pending/translation-20260613131223-4yntbj.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260613131223-4yntbj.json",
+      "key": "common.variableFee",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Variabele vergoeding",
+      "fr": "Indemnisation variable",
+      "en": "Variable fee"
+    },
+    {
+      "proposalId": "translation-20260613131223-4yntbj.proposal-05",
+      "proposalFile": "i18n/proposals/pending/translation-20260613131223-4yntbj.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260613131223-4yntbj.json",
+      "key": "common.totalCompensation",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Totaal schadevergoeding",
+      "fr": "Indemnisation totale",
+      "en": "Total compensation"
+    },
+    {
+      "proposalId": "translation-20260613132029-qtwhl3.proposal-01",
+      "proposalFile": "i18n/proposals/pending/translation-20260613132029-qtwhl3.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260613132029-qtwhl3.json",
+      "key": "common.interestOnOutstandingAmounts",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Verwijlinteresten",
+      "fr": "Intérêts de retard",
+      "en": "Interest on outstanding amounts"
+    },
+    {
+      "proposalId": "translation-20260613132029-qtwhl3.proposal-02",
+      "proposalFile": "i18n/proposals/pending/translation-20260613132029-qtwhl3.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260613132029-qtwhl3.json",
+      "key": "common.interestRate",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Intrestvoet",
+      "fr": "Taux d'intérêt",
+      "en": "Interest rate"
+    },
+    {
+      "proposalId": "translation-20260613132029-qtwhl3.proposal-03",
+      "proposalFile": "i18n/proposals/pending/translation-20260613132029-qtwhl3.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260613132029-qtwhl3.json",
+      "key": "common.numberOfDaysOverdueSinceTheInvoiceDate",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Aantal dagen achterstal op factuurdatum",
+      "fr": "Nombre de jours de retard depuis la date de facturation",
+      "en": "Number of days overdue since the invoice date"
+    },
+    {
+      "proposalId": "translation-20260613132029-qtwhl3.proposal-04",
+      "proposalFile": "i18n/proposals/pending/translation-20260613132029-qtwhl3.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260613132029-qtwhl3.json",
+      "key": "common.totalInterestDue",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Totaal verschuldigde intresten",
+      "fr": "Total des intérêts dus",
+      "en": "Total interest due"
+    },
+    {
+      "proposalId": "translation-20260613132029-qtwhl3.proposal-05",
+      "proposalFile": "i18n/proposals/pending/translation-20260613132029-qtwhl3.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260613132029-qtwhl3.json",
+      "key": "common.totalAdditionalCosts",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Totaal aan bijkomende kosten",
+      "fr": "Total des frais supplémentaires",
+      "en": "Total additional costs"
+    }
+  ]
+}

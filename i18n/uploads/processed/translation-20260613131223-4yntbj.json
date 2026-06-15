@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "Factuurgegevens",
+      "fr": "Données de facturation",
+      "en": "Invoice details",
+      "requestedNamespace": "common",
+      "notes": "Aanmaning 3 PDF"
+    },
+    {
+      "nl": "Schadevergoeding",
+      "fr": "Indemnisation",
+      "en": "Compensation",
+      "requestedNamespace": "common",
+      "notes": "Aanmaning 3 PDF"
+    },
+    {
+      "nl": "Vast recht",
+      "fr": "Frais fixes",
+      "en": "Fixed fee",
+      "requestedNamespace": "common",
+      "notes": "Aanmaning 3 PDF"
+    },
+    {
+      "nl": "Variabele vergoeding",
+      "fr": "Indemnisation variable",
+      "en": "Variable fee",
+      "requestedNamespace": "common",
+      "notes": "Aanmaning 3 PDF"
+    },
+    {
+      "nl": "Totaal schadevergoeding",
+      "fr": "Indemnisation totale",
+      "en": "Total compensation",
+      "requestedNamespace": "common",
+      "notes": "Aanmaning 3 PDF"
+    }
+  ]
+}

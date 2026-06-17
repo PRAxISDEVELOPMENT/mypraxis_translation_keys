@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3405,
-    "uniqueKeys": 3405,
+    "totalEntries": 3406,
+    "uniqueKeys": 3406,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -57790,6 +57790,36 @@
       }
     },
     {
+      "key": "common.reloadPDF",
+      "namespace": "common",
+      "leaf": "reloadPDF",
+      "segments": [
+        "common",
+        "reloadPDF"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3406
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "PDF opnieuw genereren",
+        "fr": "Régénérer le PDF",
+        "en": "Regenerate PDF"
+      }
+    },
+    {
       "key": "common.reloadPrimaryChannel",
       "namespace": "common",
       "leaf": "reloadPrimaryChannel",
@@ -102935,7 +102965,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2368
+      "keyCount": 2369
     },
     {
       "name": "confirmation",

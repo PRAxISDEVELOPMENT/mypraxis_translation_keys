@@ -1913,6 +1913,7 @@
     "reloadForPrimaryClientNumber": "Herladen voor primair klantnummer.",
     "reloadInvoiceLines": "Factuurregels opnieuw laden",
     "reloadParameters": "Parameters herladen",
+    "reloadPDF": "PDF opnieuw genereren",
     "reloadPrimaryChannel": "Primair kanaal herladen",
     "reloadPrimaryChannelParameters": "Parameters van het primaire kanaal herladen",
     "remark": "Opmerking",

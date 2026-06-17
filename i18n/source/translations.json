@@ -31356,5 +31356,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.reloadPDF",
+    "nl": "PDF opnieuw genereren",
+    "fr": "Régénérer le PDF",
+    "en": "Regenerate PDF",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

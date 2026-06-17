@@ -1908,6 +1908,7 @@
   "common.reloadForPrimaryClientNumber",
   "common.reloadInvoiceLines",
   "common.reloadParameters",
+  "common.reloadPDF",
   "common.reloadPrimaryChannel",
   "common.reloadPrimaryChannelParameters",
   "common.remark",

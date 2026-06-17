@@ -1913,6 +1913,7 @@
     "reloadForPrimaryClientNumber": "Reload for primary client number.",
     "reloadInvoiceLines": "Reload invoice lines",
     "reloadParameters": "Reload parameters",
+    "reloadPDF": "Regenerate PDF",
     "reloadPrimaryChannel": "Reload primary channel",
     "reloadPrimaryChannelParameters": "Reload primary channel parameters",
     "remark": "Remark",

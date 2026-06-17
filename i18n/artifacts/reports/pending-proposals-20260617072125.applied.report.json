@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "command": "apply-pending-proposals",
+  "createdAt": "2026-06-17T07:21:25.155Z",
+  "summary": {
+    "proposalFiles": 1,
+    "appliedEntries": 1
+  },
+  "applied": [
+    {
+      "proposalId": "translation-20260617065640-8s3bfs.proposal-01",
+      "proposalFile": "i18n/proposals/pending/translation-20260617065640-8s3bfs.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260617065640-8s3bfs.json",
+      "key": "common.paymentReminder",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Betalingsherinnering",
+      "fr": "Rappel de paiement",
+      "en": "Payment reminder"
+    }
+  ]
+}

@@ -1739,6 +1739,7 @@
   "common.payed",
   "common.paymentDetails",
   "common.paymentReference",
+  "common.paymentReminder",
   "common.paymentReminders",
   "common.paymentTerms",
   "common.peakMoment",

@@ -16089,6 +16089,15 @@
     ]
   },
   {
+    "key": "common.paymentReminder",
+    "nl": "Betalingsherinnering",
+    "fr": "Rappel de paiement",
+    "en": "Payment reminder",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.paymentReminders",
     "nl": "Aanmaningen",
     "fr": "Rappels de paiement",

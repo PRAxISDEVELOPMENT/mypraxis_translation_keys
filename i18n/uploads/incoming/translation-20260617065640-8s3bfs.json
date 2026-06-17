@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "Betalingsherinnering",
+      "fr": "Rappel de paiement",
+      "en": "Payment reminder",
+      "requestedNamespace": "common",
+      "notes": "Facturatie applicatie"
+    }
+  ]
+}

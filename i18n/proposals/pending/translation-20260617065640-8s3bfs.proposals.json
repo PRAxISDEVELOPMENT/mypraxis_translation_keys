@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "proposalBatchId": "translation-20260617065640-8s3bfs.proposals",
+  "status": "pending-review",
+  "createdAt": "2026-06-17T06:57:03.881Z",
+  "source": {
+    "uploadFile": "i18n/uploads/incoming/translation-20260617065640-8s3bfs.json",
+    "reportFile": "i18n/artifacts/reports/translation-20260617065640-8s3bfs.report.json",
+    "proposalCount": 1
+  },
+  "review": {
+    "required": true,
+    "instructions": "Edit the proposedEntry block for each proposal in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "proposals": [
+    {
+      "proposalId": "translation-20260617065640-8s3bfs.proposal-01",
+      "source": {
+        "uploadEntryIndex": 1
+      },
+      "review": {
+        "requestedNamespace": "common",
+        "suggestedKey": "common.paymentReminder",
+        "suggestedNamespace": "common",
+        "confidence": "requested",
+        "reason": "Upload explicitly requested namespace \"common\"."
+      },
+      "originalEntry": {
+        "nl": "Betalingsherinnering",
+        "fr": "Rappel de paiement",
+        "en": "Payment reminder",
+        "notes": "Facturatie applicatie",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.paymentReminder",
+        "nl": "Betalingsherinnering",
+        "fr": "Rappel de paiement",
+        "en": "Payment reminder",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Facturatie applicatie"
+      }
+    }
+  ]
+}

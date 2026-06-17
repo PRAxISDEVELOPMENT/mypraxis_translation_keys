@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-17T06:57:03.842Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260617065640-8s3bfs.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 1,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.paymentReminder",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "Betalingsherinnering",
+        "fr": "Rappel de paiement",
+        "en": "Payment reminder",
+        "notes": "Facturatie applicatie",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.paymentReminder",
+        "nl": "Betalingsherinnering",
+        "fr": "Rappel de paiement",
+        "en": "Payment reminder",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Facturatie applicatie"
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

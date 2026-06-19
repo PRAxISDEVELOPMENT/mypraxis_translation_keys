@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.videoVerification",
+      "nl": "Beeldverificatie",
+      "fr": "Vérification par images",
+      "en": "Image verification"
+    }
+  ]
+}

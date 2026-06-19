@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-19T12:53:54.199Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260619125336-oq43xz.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.withoutVideoVerification",
+      "namespace": "common",
+      "changes": {
+        "nl": "Zonder beeldverifcatie",
+        "fr": "Sans vérification par images",
+        "en": "Without image verification"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Zonder videoverifcatie",
+        "fr": "Sans vérification par vidéo",
+        "en": "Without video verification"
+      },
+      "next": {
+        "nl": "Zonder beeldverifcatie",
+        "fr": "Sans vérification par images",
+        "en": "Without image verification"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

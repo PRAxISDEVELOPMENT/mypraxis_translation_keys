@@ -17649,6 +17649,15 @@
     ]
   },
   {
+    "key": "common.reloadPDF",
+    "nl": "PDF opnieuw genereren",
+    "fr": "Régénérer le PDF",
+    "en": "Regenerate PDF",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.reloadPrimaryChannel",
     "nl": "Primair kanaal herladen",
     "fr": "Recharger le canal principal",
@@ -22854,9 +22863,9 @@
   },
   {
     "key": "common.withoutVideoVerification",
-    "nl": "Zonder videoverifcatie",
-    "fr": "Sans vérification par vidéo",
-    "en": "Without video verification",
+    "nl": "Zonder beeldverifcatie",
+    "fr": "Sans vérification par images",
+    "en": "Without image verification",
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
@@ -31353,15 +31362,6 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.reloadPDF",
-    "nl": "PDF opnieuw genereren",
-    "fr": "Régénérer le PDF",
-    "en": "Regenerate PDF",
     "applications": [
       "mypraxis_web"
     ]

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.withoutVideoVerification",
+      "nl": "Zonder beeldverifcatie",
+      "fr": "Sans vérification par images",
+      "en": "Without image verification"
+    }
+  ]
+}

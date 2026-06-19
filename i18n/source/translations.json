@@ -22178,9 +22178,9 @@
   },
   {
     "key": "common.videoViaDvr",
-    "nl": "Video via DVR/NVR",
-    "fr": "Vidéo via DVR/NVR",
-    "en": "Video via DVR/NVR",
+    "nl": "Weergave video via DVR/NVR",
+    "fr": "Visualisation vidéo via DVR/NVR",
+    "en": "Visualisation video via DVR/NVR",
     "applications": [
       "mypraxis_web",
       "mypraxis_app"

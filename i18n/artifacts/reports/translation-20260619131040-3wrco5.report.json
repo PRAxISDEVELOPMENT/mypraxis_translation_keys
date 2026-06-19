@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-19T13:10:56.587Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260619131040-3wrco5.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.videoViaDvr",
+      "namespace": "common",
+      "changes": {
+        "nl": "Weergave video via DVR/NVR",
+        "fr": "Visualisation vidéo via DVR/NVR",
+        "en": "Visualisation video via DVR/NVR"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Video via DVR/NVR",
+        "fr": "Vidéo via DVR/NVR",
+        "en": "Video via DVR/NVR"
+      },
+      "next": {
+        "nl": "Weergave video via DVR/NVR",
+        "fr": "Visualisation vidéo via DVR/NVR",
+        "en": "Visualisation video via DVR/NVR"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

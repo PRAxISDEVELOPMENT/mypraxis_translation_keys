@@ -5553,9 +5553,9 @@
   },
   {
     "key": "common.communicatorRequiresVideo",
-    "nl": "Communicator vereist videoverificatie",
-    "fr": "Le communicateur nécessite une vérification vidéo",
-    "en": "Communicator requires video verification",
+    "nl": "Communicator vereist beeldverificatie",
+    "fr": "Le communicateur nécessite une vérification image",
+    "en": "Communicator requires image verification",
     "applications": [
       "mypraxis_web"
     ]
@@ -7259,9 +7259,9 @@
   },
   {
     "key": "common.defaultVideoVerification",
-    "nl": "Videoverificatie (Standaard)",
-    "fr": "Vérification par vidéo (Par défaut)",
-    "en": "Video Verification (Default)",
+    "nl": "Beeldverificatie (Standaard)",
+    "fr": "Vérification par image (Par défaut)",
+    "en": "Image Verification (Default)",
     "applications": [
       "unknown"
     ]
@@ -14891,9 +14891,9 @@
   },
   {
     "key": "common.noVideoVerification",
-    "nl": "Geen videoverificatie",
-    "fr": "Pas de vérification par vidéo",
-    "en": "No videoverification",
+    "nl": "Geen beeldverificatie",
+    "fr": "Pas de vérification par image",
+    "en": "No image verification",
     "applications": [
       "unknown"
     ]
@@ -18005,9 +18005,9 @@
   },
   {
     "key": "common.requestToDisableDefaultVideoVerification",
-    "nl": "Standaard videoverificatie uitschakelen",
-    "fr": "Désactiver la vérification vidéo par défaut",
-    "en": "Disable default video verification",
+    "nl": "Standaard beeldverificatie uitschakelen",
+    "fr": "Désactiver la vérification image par défaut",
+    "en": "Disable default image verification",
     "applications": [
       "unknown"
     ]
@@ -18043,9 +18043,9 @@
   },
   {
     "key": "common.requestToEnableDefaultVideoVerification",
-    "nl": "Standaard videoverificatie inschakelen",
-    "fr": "Activer la vérification vidéo par défaut",
-    "en": "Enable default video verification",
+    "nl": "Standaard beeldverificatie inschakelen",
+    "fr": "Activer la vérification image par défaut",
+    "en": "Enable default image verification",
     "applications": [
       "unknown"
     ]
@@ -18072,9 +18072,9 @@
   },
   {
     "key": "common.requestToEnableOrDisableDefaultVideoVerification",
-    "nl": "In-/uitschakelen standaard videoverificatie",
-    "fr": "Activer/désactiver la vérification vidéo par défaut",
-    "en": "Enable/disable default video verification",
+    "nl": "In-/uitschakelen standaard beeldverificatie",
+    "fr": "Activer/désactiver la vérification image par défaut",
+    "en": "Enable/disable default image verification",
     "applications": [
       "unknown"
     ]
@@ -22130,18 +22130,18 @@
   },
   {
     "key": "common.videoVerificationMethod",
-    "nl": "Videoverificatiemethode",
-    "fr": "Méthode de vérification par vidéo",
-    "en": "Video verification method",
+    "nl": "Beeldverificatiemethode",
+    "fr": "Méthode de vérification par image",
+    "en": "Image verification method",
     "applications": [
       "unknown"
     ]
   },
   {
     "key": "common.videoVerificationViaCommunicator",
-    "nl": "Videoverificatie via communicator",
-    "fr": "Vérification par vidéo via communicateur",
-    "en": "Videoverification via communicator",
+    "nl": "Beeldverificatie via communicator",
+    "fr": "Vérification par image via communicateur",
+    "en": "Image verification via communicator",
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
@@ -22149,18 +22149,18 @@
   },
   {
     "key": "common.videoVerificationViaCommunicatorAndDVRNVR",
-    "nl": "Videoverificatie via communicator en via DVR/NVR",
-    "fr": "Vérification par vidéo via communicateur et DVR/NVR",
-    "en": "Videoverification via communicator and via DVR/NVR",
+    "nl": "Beeldverificatie via communicator en via DVR/NVR",
+    "fr": "Vérification par image via communicateur et DVR/NVR",
+    "en": "Image verification via communicator and via DVR/NVR",
     "applications": [
       "unknown"
     ]
   },
   {
     "key": "common.videoVerificationViaDVRNVR",
-    "nl": "Videoverificatie via DVR/NVR",
-    "fr": "Vérification par vidéo via DVR/NVR",
-    "en": "Videoverification via DVR/NVR",
+    "nl": "Beeldverificatie via DVR/NVR",
+    "fr": "Vérification par image via DVR/NVR",
+    "en": "Image verification via DVR/NVR",
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
@@ -25269,9 +25269,9 @@
   },
   {
     "key": "info.addVideoVerificationThroughACommunicatorOrDvrNvrAndManageTheAssociatedConfigurations",
-    "nl": "Voeg videoverificatie toe via het alarmpaneel of via een DVR/NVR en beheer hun configuratie",
-    "fr": "Ajouter une vérification vidéo directement via le système d'alarme ou viaa un enregistreur vidéo numérique (DVR/NVR) et gérer leur configuration",
-    "en": "Add video verification through a communicator or DVR/NVR and manage the associated configurations.",
+    "nl": "Voeg beeldverificatie toe via het alarmpaneel of via een DVR/NVR en beheer hun configuratie",
+    "fr": "Ajouter une vérification image directement via le système d'alarme ou viaa un enregistreur vidéo numérique (DVR/NVR) et gérer leur configuration",
+    "en": "Add image verification through a communicator or DVR/NVR and manage the associated configurations.",
     "applications": [
       "mypraxis_app"
     ]
@@ -26850,9 +26850,9 @@
   },
   {
     "key": "info.requestToAddChangeOrDeleteVideoVerification",
-    "nl": "Videoverificatie toegevoegen, wijzigen of verwijderen is enkel mogelijk op verzoek via PRAxIS GROUP N.V.",
-    "fr": "La vérification vidéo ne peut être ajoutée, modifiée ou supprimée que sur demande adressée à dispatch@praxis-group.eu",
-    "en": "Video verification can only be added, changed or deleted upon request via PRAxIS GROUP N.V.",
+    "nl": "Beeldverificatie toegevoegen, wijzigen of verwijderen is enkel mogelijk op verzoek via PRAxIS GROUP N.V.",
+    "fr": "La vérification image ne peut être ajoutée, modifiée ou supprimée que sur demande adressée à dispatch@praxis-group.eu",
+    "en": "Image verification can only be added, changed or deleted upon request via PRAxIS GROUP N.V.",
     "applications": [
       "mypraxis_web"
     ]

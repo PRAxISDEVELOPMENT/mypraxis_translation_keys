@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.videoViaDvr",
+      "nl": "Weergave video via DVR/NVR",
+      "fr": "Visualisation vidéo via DVR/NVR",
+      "en": "Visualisation video via DVR/NVR"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "info.addVideoVerificationThroughACommunicatorOrDvrNvrAndManageTheAssociatedConfigurations",
+      "nl": "Voeg beeldverificatie toe via het alarmpaneel of via een DVR/NVR en beheer hun configuratie",
+      "fr": "Ajouter une vérification image directement via le système d'alarme ou viaa un enregistreur vidéo numérique (DVR/NVR) et gérer leur configuration",
+      "en": "Add image verification through a communicator or DVR/NVR and manage the associated configurations."
+    },
+    {
+      "key": "common.videoVerificationMethod",
+      "nl": "Beeldverificatiemethode",
+      "fr": "Méthode de vérification par image",
+      "en": "Image verification method"
+    },
+    {
+      "key": "common.videoVerificationViaDVRNVR",
+      "nl": "Beeldverificatie via DVR/NVR",
+      "fr": "Vérification par image via DVR/NVR",
+      "en": "Image verification via DVR/NVR"
+    },
+    {
+      "key": "common.videoVerificationViaCommunicatorAndDVRNVR",
+      "nl": "Beeldverificatie via communicator en via DVR/NVR",
+      "fr": "Vérification par image via communicateur et DVR/NVR",
+      "en": "Image verification via communicator and via DVR/NVR"
+    },
+    {
+      "key": "common.videoVerificationViaCommunicator",
+      "nl": "Beeldverificatie via communicator",
+      "fr": "Vérification par image via communicateur",
+      "en": "Image verification via communicator"
+    },
+    {
+      "key": "info.requestToAddChangeOrDeleteVideoVerification",
+      "nl": "Beeldverificatie toegevoegen, wijzigen of verwijderen is enkel mogelijk op verzoek via PRAxIS GROUP N.V.",
+      "fr": "La vérification image ne peut être ajoutée, modifiée ou supprimée que sur demande adressée à dispatch@praxis-group.eu",
+      "en": "Image verification can only be added, changed or deleted upon request via PRAxIS GROUP N.V."
+    },
+    {
+      "key": "common.defaultVideoVerification",
+      "nl": "Beeldverificatie (Standaard)",
+      "fr": "Vérification par image (Par défaut)",
+      "en": "Image Verification (Default)"
+    },
+    {
+      "key": "common.requestToDisableDefaultVideoVerification",
+      "nl": "Standaard beeldverificatie uitschakelen",
+      "fr": "Désactiver la vérification image par défaut",
+      "en": "Disable default image verification"
+    },
+    {
+      "key": "common.requestToEnableDefaultVideoVerification",
+      "nl": "Standaard beeldverificatie inschakelen",
+      "fr": "Activer la vérification image par défaut",
+      "en": "Enable default image verification"
+    },
+    {
+      "key": "common.requestToEnableOrDisableDefaultVideoVerification",
+      "nl": "In-/uitschakelen standaard beeldverificatie",
+      "fr": "Activer/désactiver la vérification image par défaut",
+      "en": "Enable/disable default image verification"
+    },
+    {
+      "key": "common.noVideoVerification",
+      "nl": "Geen beeldverificatie",
+      "fr": "Pas de vérification par image",
+      "en": "No image verification"
+    },
+    {
+      "key": "common.communicatorRequiresVideo",
+      "nl": "Communicator vereist beeldverificatie",
+      "fr": "Le communicateur nécessite une vérification image",
+      "en": "Communicator requires image verification"
+    }
+  ]
+}

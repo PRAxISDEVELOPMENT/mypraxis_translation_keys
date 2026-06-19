@@ -2400,7 +2400,7 @@
     "videoSettings": "Video settings",
     "videoSytemUsedForAuthentication": "Video system (IP camera/DVR/NVR) used for authentication",
     "videoType": "Video type",
-    "videoVerification": "Video verification",
+    "videoVerification": "Image verification",
     "videoVerificationMethod": "Video verification method",
     "videoVerificationViaCommunicator": "Videoverification via communicator",
     "videoVerificationViaCommunicatorAndDVRNVR": "Videoverification via communicator and via DVR/NVR",

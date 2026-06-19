@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-19T12:55:01.845Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260619125446-irpg3j.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.videoVerification",
+      "namespace": "common",
+      "changes": {
+        "nl": "Beeldverificatie",
+        "fr": "Vérification par images",
+        "en": "Image verification"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Videoverificatie",
+        "fr": "Vérification par vidéo",
+        "en": "Video verification"
+      },
+      "next": {
+        "nl": "Beeldverificatie",
+        "fr": "Vérification par images",
+        "en": "Image verification"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

@@ -22120,9 +22120,9 @@
   },
   {
     "key": "common.videoVerification",
-    "nl": "Videoverificatie",
-    "fr": "Vérification par vidéo",
-    "en": "Video verification",
+    "nl": "Beeldverificatie",
+    "fr": "Vérification par images",
+    "en": "Image verification",
     "applications": [
       "mypraxis_web",
       "mypraxis_app"

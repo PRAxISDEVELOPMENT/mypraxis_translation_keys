@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-22T13:26:18.344Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260622132557-a59hbb.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 1,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.creditNote",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "Creditnota",
+        "fr": "Note de credit",
+        "en": "Credit note",
+        "notes": "Facturatie",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.creditNote",
+        "nl": "Creditnota",
+        "fr": "Note de credit",
+        "en": "Credit note",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Facturatie"
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

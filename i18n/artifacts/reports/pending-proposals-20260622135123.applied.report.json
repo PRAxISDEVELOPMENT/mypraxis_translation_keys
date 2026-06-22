@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "command": "apply-pending-proposals",
+  "createdAt": "2026-06-22T13:51:23.917Z",
+  "summary": {
+    "proposalFiles": 2,
+    "appliedEntries": 2
+  },
+  "applied": [
+    {
+      "proposalId": "translation-20260622133214-b5mv3e.proposal-01",
+      "proposalFile": "i18n/proposals/pending/translation-20260622133214-b5mv3e.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260622133214-b5mv3e.json",
+      "key": "common.creditNoteNumber2",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Creditnotanummer",
+      "fr": "Numéro de note de crédit",
+      "en": "Credit note number"
+    },
+    {
+      "proposalId": "translation-20260622133605-gj1jg9.proposal-01",
+      "proposalFile": "i18n/proposals/pending/translation-20260622133605-gj1jg9.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260622133605-gj1jg9.json",
+      "key": "common.creditNoteDate",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Creditnotadatum",
+      "fr": "Date de la note de crédit",
+      "en": "Credit note date"
+    }
+  ]
+}

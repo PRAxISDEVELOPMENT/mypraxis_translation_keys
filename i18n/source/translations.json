@@ -6548,8 +6548,26 @@
     ]
   },
   {
+    "key": "common.creditNoteDate",
+    "nl": "Creditnotadatum",
+    "fr": "Date de la note de crédit",
+    "en": "Credit note date",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.creditNoteNumber",
     "nl": "Kredietnotanummer",
+    "fr": "Numéro de note de crédit",
+    "en": "Credit note number",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.creditNoteNumber2",
+    "nl": "Creditnotanummer",
     "fr": "Numéro de note de crédit",
     "en": "Credit note number",
     "applications": [

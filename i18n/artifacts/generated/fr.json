@@ -1636,7 +1636,7 @@
     "numberOfCompletionsOutside5Minutes": "Nombre de traitements d'alarme en dehors de l'intervalle de 5 minutes",
     "numberOfCompletionsWithin5Minutes": "Nombre de traitements d'alarme dans l'intervalle de 5 minutes",
     "numberOfDaysOverdue": "Nombre de jours de retard de paiement",
-    "numberOfDaysOverdueSinceTheInvoiceDate": "Nombre de jours de retard depuis la date de facturation",
+    "numberOfDaysOverdueSinceTheInvoiceDate": "Nombre de jours de retard",
     "numberOfEPROMNumbers": "Nombre de numéros d'EPROM",
     "numberOfFixedCameras": "Nombre de caméras fixes",
     "numberOfKmHomeWork": "Nombre de km parcourus entre domicile et lieu de travail",

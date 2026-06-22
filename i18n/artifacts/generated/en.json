@@ -1636,7 +1636,7 @@
     "numberOfCompletionsOutside5Minutes": "Number of completions outside 5 minutes",
     "numberOfCompletionsWithin5Minutes": "Number of completions within 5 minutes",
     "numberOfDaysOverdue": "Number of days overdue",
-    "numberOfDaysOverdueSinceTheInvoiceDate": "Number of days overdue since the invoice date",
+    "numberOfDaysOverdueSinceTheInvoiceDate": "Number of days overdue",
     "numberOfEPROMNumbers": "Number of EPROM numbers",
     "numberOfFixedCameras": "Number of fixed cameras",
     "numberOfKmHomeWork": "Number of km home- work",

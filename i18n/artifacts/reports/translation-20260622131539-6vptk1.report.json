@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-22T13:16:00.711Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260622131539-6vptk1.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.numberOfDaysOverdueSinceTheInvoiceDate",
+      "namespace": "common",
+      "changes": {
+        "nl": "Aantal dagen achterstal",
+        "fr": "Nombre de jours de retard",
+        "en": "Number of days overdue"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Aantal dagen achterstal op factuurdatum",
+        "fr": "Nombre de jours de retard depuis la date de facturation",
+        "en": "Number of days overdue since the invoice date"
+      },
+      "next": {
+        "nl": "Aantal dagen achterstal",
+        "fr": "Nombre de jours de retard",
+        "en": "Number of days overdue"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

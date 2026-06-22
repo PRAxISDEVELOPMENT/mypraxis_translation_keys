@@ -1636,7 +1636,7 @@
     "numberOfCompletionsOutside5Minutes": "Aantal afhandelingen buiten de 5 minuten",
     "numberOfCompletionsWithin5Minutes": "Aantal afhandelingen binnen de 5 minuten",
     "numberOfDaysOverdue": "Aantal dagen vervallen",
-    "numberOfDaysOverdueSinceTheInvoiceDate": "Aantal dagen achterstal op factuurdatum",
+    "numberOfDaysOverdueSinceTheInvoiceDate": "Aantal dagen achterstal",
     "numberOfEPROMNumbers": "Aantal eprom-nummers",
     "numberOfFixedCameras": "Aantal vaste camera's",
     "numberOfKmHomeWork": "Aantal km woon-werk",

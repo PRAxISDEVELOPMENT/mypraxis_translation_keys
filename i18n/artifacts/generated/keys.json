@@ -701,6 +701,7 @@
   "common.creationDateTime",
   "common.creationSheetInstaller",
   "common.creationSheetOperator",
+  "common.creditNote",
   "common.creditNoteNumber",
   "common.creditNotes",
   "common.critical",

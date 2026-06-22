@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "command": "apply-pending-proposals",
+  "createdAt": "2026-06-22T13:50:41.636Z",
+  "summary": {
+    "proposalFiles": 1,
+    "appliedEntries": 1
+  },
+  "applied": [
+    {
+      "proposalId": "translation-20260622132557-a59hbb.proposal-01",
+      "proposalFile": "i18n/proposals/pending/translation-20260622132557-a59hbb.proposals.json",
+      "sourceUploadFile": "i18n/uploads/incoming/translation-20260622132557-a59hbb.json",
+      "key": "common.creditNote",
+      "applications": [
+        "mypraxis_web"
+      ],
+      "nl": "Creditnota",
+      "fr": "Note de credit",
+      "en": "Credit note"
+    }
+  ]
+}

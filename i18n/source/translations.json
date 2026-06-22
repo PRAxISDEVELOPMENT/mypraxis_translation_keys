@@ -6539,6 +6539,15 @@
     ]
   },
   {
+    "key": "common.creditNote",
+    "nl": "Creditnota",
+    "fr": "Note de credit",
+    "en": "Credit note",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.creditNoteNumber",
     "nl": "Kredietnotanummer",
     "fr": "Numéro de note de crédit",

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.numberOfDaysOverdueSinceTheInvoiceDate",
+      "nl": "Aantal dagen achterstal",
+      "fr": "Nombre de jours de retard",
+      "en": "Number of days overdue"
+    }
+  ]
+}

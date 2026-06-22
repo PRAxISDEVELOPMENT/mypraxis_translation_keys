@@ -5699,6 +5699,15 @@
     ]
   },
   {
+    "key": "common.concerningInvoice",
+    "nl": "Betreffende factuur",
+    "fr": "Facture concernée",
+    "en": "Concerning invoice",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.confidential",
     "nl": "Confidentieel",
     "fr": "Confidentiel",

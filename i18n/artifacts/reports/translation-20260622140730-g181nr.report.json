@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-22T14:07:49.655Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260622140730-g181nr.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 1,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.concerningInvoice",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "Betreffende factuur",
+        "fr": "Facture concernée",
+        "en": "Concerning invoice",
+        "notes": "Facturatie",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.concerningInvoice",
+        "nl": "Betreffende factuur",
+        "fr": "Facture concernée",
+        "en": "Concerning invoice",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Facturatie"
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

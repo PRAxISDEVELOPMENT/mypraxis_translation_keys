@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "Betreffende factuur",
+      "fr": "Facture concernée",
+      "en": "Concerning invoice",
+      "requestedNamespace": "common",
+      "notes": "Facturatie"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "proposalBatchId": "translation-20260622133214-b5mv3e.proposals",
+  "status": "pending-review",
+  "createdAt": "2026-06-22T13:32:34.204Z",
+  "source": {
+    "uploadFile": "i18n/uploads/incoming/translation-20260622133214-b5mv3e.json",
+    "reportFile": "i18n/artifacts/reports/translation-20260622133214-b5mv3e.report.json",
+    "proposalCount": 1
+  },
+  "review": {
+    "required": true,
+    "instructions": "Edit the proposedEntry block for each proposal in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "proposals": [
+    {
+      "proposalId": "translation-20260622133214-b5mv3e.proposal-01",
+      "source": {
+        "uploadEntryIndex": 1
+      },
+      "review": {
+        "requestedNamespace": "common",
+        "suggestedKey": "common.creditNoteNumber2",
+        "suggestedNamespace": "common",
+        "confidence": "requested",
+        "reason": "Upload explicitly requested namespace \"common\"."
+      },
+      "originalEntry": {
+        "nl": "Creditnotanummer",
+        "fr": "Numéro de note de crédit",
+        "en": "Credit note number",
+        "notes": "Facturatie",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.creditNoteNumber2",
+        "nl": "Creditnotanummer",
+        "fr": "Numéro de note de crédit",
+        "en": "Credit note number",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "Facturatie"
+      }
+    }
+  ]
+}

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3406,
-    "uniqueKeys": 3406,
+    "totalEntries": 3408,
+    "uniqueKeys": 3408,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -21330,6 +21330,36 @@
         "nl": "Creatiefiche Operator",
         "fr": "Fiche de création pour un opérateur",
         "en": "Creation sheet operator"
+      }
+    },
+    {
+      "key": "common.creditNoteNumber",
+      "namespace": "common",
+      "leaf": "creditNoteNumber",
+      "segments": [
+        "common",
+        "creditNoteNumber"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3407
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Kredietnotanummer",
+        "fr": "Numéro de note de crédit",
+        "en": "Credit note number"
       }
     },
     {
@@ -60504,6 +60534,36 @@
         "nl": "Sales",
         "fr": "Sales",
         "en": "Sales"
+      }
+    },
+    {
+      "key": "common.salesInvoices",
+      "namespace": "common",
+      "leaf": "salesInvoices",
+      "segments": [
+        "common",
+        "salesInvoices"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3408
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Verkoopfacturen",
+        "fr": "Factures de vente",
+        "en": "Sales invoices"
       }
     },
     {
@@ -102965,7 +103025,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2369
+      "keyCount": 2371
     },
     {
       "name": "confirmation",

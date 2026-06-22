@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "Creditnotanummer",
+      "fr": "Numéro de note de crédit",
+      "en": "Credit note number",
+      "requestedNamespace": "common",
+      "notes": "Facturatie"
+    }
+  ]
+}

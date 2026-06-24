@@ -31419,5 +31419,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.ibanName",
+    "nl": "IBAN-naam",
+    "fr": "Nom IBAN",
+    "en": "IBAN name",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

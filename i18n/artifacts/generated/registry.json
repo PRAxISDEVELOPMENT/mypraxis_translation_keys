@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3412,
-    "uniqueKeys": 3412,
+    "totalEntries": 3413,
+    "uniqueKeys": 3413,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -36903,6 +36903,36 @@
         "nl": "IBAN",
         "fr": "IBAN",
         "en": "IBAN"
+      }
+    },
+    {
+      "key": "common.ibanName",
+      "namespace": "common",
+      "leaf": "ibanName",
+      "segments": [
+        "common",
+        "ibanName"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3413
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "IBAN-naam",
+        "fr": "Nom IBAN",
+        "en": "IBAN name"
       }
     },
     {
@@ -103145,7 +103175,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2375
+      "keyCount": 2376
     },
     {
       "name": "confirmation",

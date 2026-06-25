@@ -1794,6 +1794,7 @@
   "common.polling",
   "common.pollingErrors",
   "common.pollingfrequency",
+  "common.pollingRequired",
   "common.port",
   "common.portPolling1Min",
   "common.portPolling25Hour",

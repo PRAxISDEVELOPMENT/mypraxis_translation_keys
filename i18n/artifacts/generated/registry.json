@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3413,
-    "uniqueKeys": 3413,
+    "totalEntries": 3414,
+    "uniqueKeys": 3414,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -54340,6 +54340,36 @@
       }
     },
     {
+      "key": "common.pollingRequired",
+      "namespace": "common",
+      "leaf": "pollingRequired",
+      "segments": [
+        "common",
+        "pollingRequired"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3414
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Polling verplicht",
+        "fr": "Polling obligatoire",
+        "en": "Polling required"
+      }
+    },
+    {
       "key": "common.port",
       "namespace": "common",
       "leaf": "port",
@@ -103175,7 +103205,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2376
+      "keyCount": 2377
     },
     {
       "name": "confirmation",

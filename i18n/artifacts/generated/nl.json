@@ -1799,6 +1799,7 @@
     "polling": "Polling",
     "pollingErrors": "Pollingfouten",
     "pollingfrequency": "Pollingfrequentie",
+    "pollingRequired": "Polling verplicht",
     "port": "Poort",
     "portPolling1Min": "Poort polling 1 min",
     "portPolling25Hour": "Poort polling 25 uur",

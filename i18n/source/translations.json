@@ -20776,9 +20776,9 @@
   },
   {
     "key": "common.toggleAutomaticallyMaintenanceInstallersForCustomers",
-    "nl": "Automatisch onderhoudsinstallateurs koppelen aan klanten in-/uitschakelen",
-    "fr": "Activer/désactiver le lien automatique entre techniciens de maintenance et clients.",
-    "en": "Enable/disable automatically maintenance installers for customers",
+    "nl": "Automatisch onderhoudsinstallateurs koppelen aan alle klanten in-/uitschakelen",
+    "fr": "Activer/désactiver le lien automatique entre techniciens de maintenance et tous clients.",
+    "en": "Enable/disable automatically maintenance installers for all customers",
     "applications": [
       "mypraxis_web"
     ]

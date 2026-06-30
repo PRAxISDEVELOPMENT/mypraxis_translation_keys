@@ -2254,7 +2254,7 @@
     "toComplyWithYourBrowserSAutoplayPolicyWeNeedAQuickClickFromYou": "Afin de respecter la politique d'autoplay de votre navigateur, nous avons besoin d'un simple clic de votre part.",
     "today": "Aujourd'hui",
     "toEndClient": "Au client final",
-    "toggleAutomaticallyMaintenanceInstallersForCustomers": "Activer/désactiver le lien automatique entre techniciens de maintenance et clients.",
+    "toggleAutomaticallyMaintenanceInstallersForCustomers": "Activer/désactiver le lien automatique entre techniciens de maintenance et tous clients.",
     "toggleCallOnlyInCaseOfASuspiciousSituation": "Activer/désactiver l'appel uniquement en cas d'une situation suspecte",
     "toggleEmailToInstallerForAdditionalHandlingServices560632And633": "Activer/désactiver l’envoi d'e-mail vers l’installateur pour les traitements supplémentaires (services 560, 632 et 633)",
     "toggleEmailToInstallerWhenCreatingANewCustomer": "Activer/désactiver l’e-mail vers l’installateur à chaque configuration d’un nouveau client",

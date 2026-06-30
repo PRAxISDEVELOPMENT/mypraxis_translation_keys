@@ -2254,7 +2254,7 @@
     "toComplyWithYourBrowserSAutoplayPolicyWeNeedAQuickClickFromYou": "To comply with your browser’s autoplay policy, we need a quick click from you.",
     "today": "Today",
     "toEndClient": "To end client",
-    "toggleAutomaticallyMaintenanceInstallersForCustomers": "Enable/disable automatically maintenance installers for customers",
+    "toggleAutomaticallyMaintenanceInstallersForCustomers": "Enable/disable automatically maintenance installers for all customers",
     "toggleCallOnlyInCaseOfASuspiciousSituation": "Enable/disable call only in case of a suspicious situation",
     "toggleEmailToInstallerForAdditionalHandlingServices560632And633": "Enable/disable e-mail to installer for additional handling (services 560, 632 and 633)",
     "toggleEmailToInstallerWhenCreatingANewCustomer": "Enable/disable e-mail to installer when creating a new customer",

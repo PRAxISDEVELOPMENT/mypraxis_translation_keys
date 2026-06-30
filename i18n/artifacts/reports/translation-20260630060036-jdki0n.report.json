@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-30T06:00:52.739Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260630060036-jdki0n.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.toggleAutomaticallyMaintenanceInstallersForCustomers",
+      "namespace": "common",
+      "changes": {
+        "nl": "Automatisch onderhoudsinstallateurs koppelen aan alle klanten in-/uitschakelen",
+        "fr": "Activer/désactiver le lien automatique entre techniciens de maintenance et tous clients.",
+        "en": "Enable/disable automatically maintenance installers for all customers"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Automatisch onderhoudsinstallateurs koppelen aan klanten in-/uitschakelen",
+        "fr": "Activer/désactiver le lien automatique entre techniciens de maintenance et clients.",
+        "en": "Enable/disable automatically maintenance installers for customers"
+      },
+      "next": {
+        "nl": "Automatisch onderhoudsinstallateurs koppelen aan alle klanten in-/uitschakelen",
+        "fr": "Activer/désactiver le lien automatique entre techniciens de maintenance et tous clients.",
+        "en": "Enable/disable automatically maintenance installers for all customers"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

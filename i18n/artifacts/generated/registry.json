@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3414,
-    "uniqueKeys": 3414,
+    "totalEntries": 3416,
+    "uniqueKeys": 3416,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -18246,6 +18246,37 @@
         "nl": "Bedrijfsinformatie",
         "fr": "Informations sur l'entreprise",
         "en": "Company information"
+      }
+    },
+    {
+      "key": "common.companyInfoTextExcellis",
+      "namespace": "common",
+      "leaf": "companyInfoTextExcellis",
+      "segments": [
+        "common",
+        "companyInfoTextExcellis"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3415
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "COMPNAY INFO TEXT EXCELLIS GOES HERE",
+        "fr": "COMPNAY INFO TEXT EXCELLIS GOES HERE",
+        "en": "COMPNAY INFO TEXT EXCELLIS GOES HERE"
       }
     },
     {
@@ -46299,6 +46330,37 @@
         "nl": "Moet {{value}} hoofdletter(s) bevatten",
         "fr": "Doit avoir {{value}} lettre(s) majuscule(s)",
         "en": "Must have {{value}} uppercase letter"
+      }
+    },
+    {
+      "key": "common.MyExCELLIS",
+      "namespace": "common",
+      "leaf": "MyExCELLIS",
+      "segments": [
+        "common",
+        "MyExCELLIS"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3416
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "MyExCELLIS",
+        "fr": "MyExCELLIS",
+        "en": "MyExCELLIS"
       }
     },
     {
@@ -103205,7 +103267,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2377
+      "keyCount": 2379
     },
     {
       "name": "confirmation",

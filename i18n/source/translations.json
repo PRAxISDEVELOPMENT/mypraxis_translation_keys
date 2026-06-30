@@ -31437,5 +31437,25 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.companyInfoTextExcellis",
+    "nl": "COMPNAY INFO TEXT EXCELLIS GOES HERE",
+    "fr": "COMPNAY INFO TEXT EXCELLIS GOES HERE",
+    "en": "COMPNAY INFO TEXT EXCELLIS GOES HERE",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.MyExCELLIS",
+    "nl": "MyExCELLIS",
+    "fr": "MyExCELLIS",
+    "en": "MyExCELLIS",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
+    ]
   }
 ]

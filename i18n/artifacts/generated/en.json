@@ -1382,7 +1382,7 @@
     "linetestCheck": "Line test check",
     "lineTestFrequency": "Line test frequency",
     "link": "Link",
-    "linkAutomaticallyMaintenanceInstallersToCustomers": "Link automatically maintenance installers to customers",
+    "linkAutomaticallyMaintenanceInstallersToCustomers": "Link automatically maintenance installers to all customers",
     "linkedCustomer": "Linked customer",
     "linkedCustomers": "Linked customers",
     "linkedFields": "Linked fields",

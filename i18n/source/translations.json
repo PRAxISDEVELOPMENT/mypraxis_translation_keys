@@ -11276,6 +11276,15 @@
     ]
   },
   {
+    "key": "common.ibanName",
+    "nl": "IBAN-naam",
+    "fr": "Nom IBAN",
+    "en": "IBAN name",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.icon",
     "nl": "Icoon",
     "fr": "Icône",
@@ -12745,9 +12754,9 @@
   },
   {
     "key": "common.linkAutomaticallyMaintenanceInstallersToCustomers",
-    "nl": "Automatisch onderhoudsinstallateurs koppelen aan klanten",
-    "fr": "Lier automatiquement techniciens de maintenance aux clients",
-    "en": "Link automatically maintenance installers to customers",
+    "nl": "Automatisch onderhoudsinstallateurs koppelen aan alle klanten",
+    "fr": "Lier automatiquement techniciens de maintenance aux tous clients",
+    "en": "Link automatically maintenance installers to all customers",
     "applications": [
       "mypraxis_web"
     ]
@@ -16581,6 +16590,15 @@
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.pollingRequired",
+    "nl": "Polling verplicht",
+    "fr": "Polling obligatoire",
+    "en": "Polling required",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -31416,24 +31434,6 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.ibanName",
-    "nl": "IBAN-naam",
-    "fr": "Nom IBAN",
-    "en": "IBAN name",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.pollingRequired",
-    "nl": "Polling verplicht",
-    "fr": "Polling obligatoire",
-    "en": "Polling required",
     "applications": [
       "mypraxis_web"
     ]

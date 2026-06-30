@@ -1382,7 +1382,7 @@
     "linetestCheck": "Lijntestcontrole",
     "lineTestFrequency": "Lijntestfrequentie",
     "link": "Link",
-    "linkAutomaticallyMaintenanceInstallersToCustomers": "Automatisch onderhoudsinstallateurs koppelen aan klanten",
+    "linkAutomaticallyMaintenanceInstallersToCustomers": "Automatisch onderhoudsinstallateurs koppelen aan alle klanten",
     "linkedCustomer": "Gelinkte klant",
     "linkedCustomers": "Gelinkte klanten",
     "linkedFields": "Gekoppelde velden",

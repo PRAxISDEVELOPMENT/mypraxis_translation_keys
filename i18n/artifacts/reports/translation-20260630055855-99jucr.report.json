@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-06-30T05:59:11.851Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260630055855-99jucr.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.linkAutomaticallyMaintenanceInstallersToCustomers",
+      "namespace": "common",
+      "changes": {
+        "nl": "Automatisch onderhoudsinstallateurs koppelen aan alle klanten",
+        "fr": "Lier automatiquement techniciens de maintenance aux tous clients",
+        "en": "Link automatically maintenance installers to all customers"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Automatisch onderhoudsinstallateurs koppelen aan klanten",
+        "fr": "Lier automatiquement techniciens de maintenance aux clients",
+        "en": "Link automatically maintenance installers to customers"
+      },
+      "next": {
+        "nl": "Automatisch onderhoudsinstallateurs koppelen aan alle klanten",
+        "fr": "Lier automatiquement techniciens de maintenance aux tous clients",
+        "en": "Link automatically maintenance installers to all customers"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

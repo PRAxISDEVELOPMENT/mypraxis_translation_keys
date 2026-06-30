@@ -1382,7 +1382,7 @@
     "linetestCheck": "Vérification du test de ligne principal",
     "lineTestFrequency": "Fréquence de test de ligne",
     "link": "Lien",
-    "linkAutomaticallyMaintenanceInstallersToCustomers": "Lier automatiquement techniciens de maintenance aux clients",
+    "linkAutomaticallyMaintenanceInstallersToCustomers": "Lier automatiquement techniciens de maintenance aux tous clients",
     "linkedCustomer": "Client lié",
     "linkedCustomers": "Clients liés",
     "linkedFields": "Champs liés",

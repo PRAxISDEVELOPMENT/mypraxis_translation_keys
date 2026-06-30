@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.linkAutomaticallyMaintenanceInstallersToCustomers",
+      "nl": "Automatisch onderhoudsinstallateurs koppelen aan alle klanten",
+      "fr": "Lier automatiquement techniciens de maintenance aux tous clients",
+      "en": "Link automatically maintenance installers to all customers"
+    }
+  ]
+}

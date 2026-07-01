@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3416,
-    "uniqueKeys": 3416,
+    "totalEntries": 3420,
+    "uniqueKeys": 3420,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -8372,6 +8372,37 @@
         "nl": "Alle facturen",
         "fr": "Toutes les factures",
         "en": "All invoices"
+      }
+    },
+    {
+      "key": "common.allInvoicesDescription",
+      "namespace": "common",
+      "leaf": "allInvoicesDescription",
+      "segments": [
+        "common",
+        "allInvoicesDescription"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3420
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Raadpleeg al uw facturen",
+        "fr": "Consultez toutes vos factures",
+        "en": "View all your invoices"
       }
     },
     {
@@ -31101,6 +31132,37 @@
       }
     },
     {
+      "key": "common.expiredInvoicesDescription",
+      "namespace": "common",
+      "leaf": "expiredInvoicesDescription",
+      "segments": [
+        "common",
+        "expiredInvoicesDescription"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3417
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Raadpleeg uw vervallen facturen",
+        "fr": "Consultez vos factures échues",
+        "en": "View your expired invoices"
+      }
+    },
+    {
       "key": "common.expirerdInvoices",
       "namespace": "common",
       "leaf": "expirerdInvoices",
@@ -52469,6 +52531,37 @@
       }
     },
     {
+      "key": "common.paidInvoicesDescription",
+      "namespace": "common",
+      "leaf": "paidInvoicesDescription",
+      "segments": [
+        "common",
+        "paidInvoicesDescription"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3419
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Raadpleeg uw betaalde facturen",
+        "fr": "Consultez vos factures payées",
+        "en": "View your paid invoices"
+      }
+    },
+    {
       "key": "common.paidNumber",
       "namespace": "common",
       "leaf": "paidNumber",
@@ -70246,6 +70339,37 @@
         "nl": "Niet-vervallen facturen",
         "fr": "Factures non échues",
         "en": "Unexpired invoices"
+      }
+    },
+    {
+      "key": "common.unexpiredInvoicesDescription",
+      "namespace": "common",
+      "leaf": "unexpiredInvoicesDescription",
+      "segments": [
+        "common",
+        "unexpiredInvoicesDescription"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3418
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Raadpleeg uw niet-vervallen facturen",
+        "fr": "Consultez vos factures non échues",
+        "en": "View your unexpired invoices"
       }
     },
     {
@@ -103267,7 +103391,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2379
+      "keyCount": 2383
     },
     {
       "name": "confirmation",

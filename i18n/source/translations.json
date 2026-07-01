@@ -31457,5 +31457,45 @@
       "mypraxis_web",
       "mypraxis_app"
     ]
+  },
+  {
+    "key": "common.expiredInvoicesDescription",
+    "nl": "Raadpleeg uw vervallen facturen",
+    "fr": "Consultez vos factures échues",
+    "en": "View your expired invoices",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.unexpiredInvoicesDescription",
+    "nl": "Raadpleeg uw niet-vervallen facturen",
+    "fr": "Consultez vos factures non échues",
+    "en": "View your unexpired invoices",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.paidInvoicesDescription",
+    "nl": "Raadpleeg uw betaalde facturen",
+    "fr": "Consultez vos factures payées",
+    "en": "View your paid invoices",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.allInvoicesDescription",
+    "nl": "Raadpleeg al uw facturen",
+    "fr": "Consultez toutes vos factures",
+    "en": "View all your invoices",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
+    ]
   }
 ]

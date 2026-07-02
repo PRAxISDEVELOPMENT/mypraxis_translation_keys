@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.consumptionIndex",
+      "nl": "Consumptie index"
+    }
+  ]
+}

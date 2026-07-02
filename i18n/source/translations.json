@@ -2590,6 +2590,16 @@
     ]
   },
   {
+    "key": "common.allInvoicesDescription",
+    "nl": "Raadpleeg al uw facturen",
+    "fr": "Consultez toutes vos factures",
+    "en": "View all your invoices",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
+    ]
+  },
+  {
     "key": "common.allNewClients",
     "nl": "Alle nieuwe klanten",
     "fr": "Tous les nouveaux clients",
@@ -5597,6 +5607,16 @@
     ]
   },
   {
+    "key": "common.companyInfoTextExcellis",
+    "nl": "COMPNAY INFO TEXT EXCELLIS GOES HERE",
+    "fr": "COMPNAY INFO TEXT EXCELLIS GOES HERE",
+    "en": "COMPNAY INFO TEXT EXCELLIS GOES HERE",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
+    ]
+  },
+  {
     "key": "common.companyLicensedInfoText",
     "nl": "Onderneming vergund voor het exploiteren van een Bewakingsonderneming, met het ondernemingsnummer 0478.243.652.",
     "fr": "Entreprise agréée pour l'exploitation d'une société de Gardiennage, et enregistré dans la BCE sous le numéro 0478.243.652.",
@@ -5837,7 +5857,7 @@
   },
   {
     "key": "common.consumptionIndex",
-    "nl": "Consumtie index",
+    "nl": "Consumptie index",
     "fr": "Indice de consommation",
     "en": "Consumption index",
     "applications": [
@@ -9487,6 +9507,16 @@
     "nl": "Vervallen creditnota's",
     "fr": "Notes de crédit échues",
     "en": "Expired credit notes",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.expiredInvoicesDescription",
+    "nl": "Raadpleeg uw vervallen facturen",
+    "fr": "Consultez vos factures échues",
+    "en": "View your expired invoices",
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
@@ -14141,6 +14171,16 @@
     ]
   },
   {
+    "key": "common.MyExCELLIS",
+    "nl": "MyExCELLIS",
+    "fr": "MyExCELLIS",
+    "en": "MyExCELLIS",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
+    ]
+  },
+  {
     "key": "common.MyPRAxIS",
     "nl": "MyPRAxIS",
     "fr": "MyPRAxIS",
@@ -16001,6 +16041,16 @@
     "en": "Paid invoices",
     "applications": [
       "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.paidInvoicesDescription",
+    "nl": "Raadpleeg uw betaalde facturen",
+    "fr": "Consultez vos factures payées",
+    "en": "View your paid invoices",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -21409,6 +21459,16 @@
     "nl": "Niet-vervallen facturen",
     "fr": "Factures non échues",
     "en": "Unexpired invoices",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.unexpiredInvoicesDescription",
+    "nl": "Raadpleeg uw niet-vervallen facturen",
+    "fr": "Consultez vos factures non échues",
+    "en": "View your unexpired invoices",
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
@@ -31436,66 +31496,6 @@
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
     "applications": [
       "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.companyInfoTextExcellis",
-    "nl": "COMPNAY INFO TEXT EXCELLIS GOES HERE",
-    "fr": "COMPNAY INFO TEXT EXCELLIS GOES HERE",
-    "en": "COMPNAY INFO TEXT EXCELLIS GOES HERE",
-    "applications": [
-      "mypraxis_web",
-      "mypraxis_app"
-    ]
-  },
-  {
-    "key": "common.MyExCELLIS",
-    "nl": "MyExCELLIS",
-    "fr": "MyExCELLIS",
-    "en": "MyExCELLIS",
-    "applications": [
-      "mypraxis_web",
-      "mypraxis_app"
-    ]
-  },
-  {
-    "key": "common.expiredInvoicesDescription",
-    "nl": "Raadpleeg uw vervallen facturen",
-    "fr": "Consultez vos factures échues",
-    "en": "View your expired invoices",
-    "applications": [
-      "mypraxis_web",
-      "mypraxis_app"
-    ]
-  },
-  {
-    "key": "common.unexpiredInvoicesDescription",
-    "nl": "Raadpleeg uw niet-vervallen facturen",
-    "fr": "Consultez vos factures non échues",
-    "en": "View your unexpired invoices",
-    "applications": [
-      "mypraxis_web",
-      "mypraxis_app"
-    ]
-  },
-  {
-    "key": "common.paidInvoicesDescription",
-    "nl": "Raadpleeg uw betaalde facturen",
-    "fr": "Consultez vos factures payées",
-    "en": "View your paid invoices",
-    "applications": [
-      "mypraxis_web",
-      "mypraxis_app"
-    ]
-  },
-  {
-    "key": "common.allInvoicesDescription",
-    "nl": "Raadpleeg al uw facturen",
-    "fr": "Consultez toutes vos factures",
-    "en": "View all your invoices",
-    "applications": [
-      "mypraxis_web",
-      "mypraxis_app"
     ]
   }
 ]

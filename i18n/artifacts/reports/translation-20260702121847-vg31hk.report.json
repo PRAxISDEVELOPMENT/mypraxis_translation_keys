@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-07-02T12:19:04.103Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260702121847-vg31hk.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.consumptionIndex",
+      "namespace": "common",
+      "changes": {
+        "nl": "Consumptie index"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Consumtie index",
+        "fr": "Indice de consommation",
+        "en": "Consumption index"
+      },
+      "next": {
+        "nl": "Consumptie index",
+        "fr": "Indice de consommation",
+        "en": "Consumption index"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

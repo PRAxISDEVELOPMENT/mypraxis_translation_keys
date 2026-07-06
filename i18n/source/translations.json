@@ -31497,5 +31497,59 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.statusChanged",
+    "nl": "Status gewijzigd",
+    "fr": "Statut modifié",
+    "en": "Status changed",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "authentication.loggedOut",
+    "nl": "Uitgelogd",
+    "fr": "Déconnecté",
+    "en": "Logged out",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.deleted",
+    "nl": "Verwijderd",
+    "fr": "Supprimé",
+    "en": "Deleted",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.duress",
+    "nl": "Dwang",
+    "fr": "Contrainte",
+    "en": "Duress",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.logout",
+    "nl": "Uitloggen",
+    "fr": "Déconnexion",
+    "en": "Logout",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.new",
+    "nl": "Nieuw",
+    "fr": "Nouveau",
+    "en": "New",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3420,
-    "uniqueKeys": 3420,
+    "totalEntries": 3426,
+    "uniqueKeys": 3426,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -2073,6 +2073,36 @@
         "nl": "Ongeldige verificatie-ID.",
         "fr": "ID de vérification invalide.",
         "en": "Invalid verification ID."
+      }
+    },
+    {
+      "key": "authentication.loggedOut",
+      "namespace": "authentication",
+      "leaf": "loggedOut",
+      "segments": [
+        "authentication",
+        "loggedOut"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3422
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Uitgelogd",
+        "fr": "Déconnecté",
+        "en": "Logged out"
       }
     },
     {
@@ -24745,6 +24775,36 @@
       }
     },
     {
+      "key": "common.deleted",
+      "namespace": "common",
+      "leaf": "deleted",
+      "segments": [
+        "common",
+        "deleted"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3423
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Verwijderd",
+        "fr": "Supprimé",
+        "en": "Deleted"
+      }
+    },
+    {
       "key": "common.deleteDailyEmailAddress",
       "namespace": "common",
       "leaf": "deleteDailyEmailAddress",
@@ -28206,6 +28266,36 @@
         "nl": "Duur",
         "fr": "Durée",
         "en": "Duration"
+      }
+    },
+    {
+      "key": "common.duress",
+      "namespace": "common",
+      "leaf": "duress",
+      "segments": [
+        "common",
+        "duress"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3424
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Dwang",
+        "fr": "Contrainte",
+        "en": "Duress"
       }
     },
     {
@@ -42594,6 +42684,36 @@
       }
     },
     {
+      "key": "common.logout",
+      "namespace": "common",
+      "leaf": "logout",
+      "segments": [
+        "common",
+        "logout"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3425
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Uitloggen",
+        "fr": "Déconnexion",
+        "en": "Logout"
+      }
+    },
+    {
       "key": "common.logs",
       "namespace": "common",
       "leaf": "logs",
@@ -46940,6 +47060,36 @@
         "nl": "Navigeer naar installateur - organisatie",
         "fr": "Accéder à l'installateur - organisation",
         "en": "Navigate to installer - organisation"
+      }
+    },
+    {
+      "key": "common.new",
+      "namespace": "common",
+      "leaf": "new",
+      "segments": [
+        "common",
+        "new"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3426
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Nieuw",
+        "fr": "Nouveau",
+        "en": "New"
       }
     },
     {
@@ -65300,6 +65450,36 @@
         "nl": "Certificaatstatus",
         "fr": "Statut du certificat",
         "en": "Certificate status"
+      }
+    },
+    {
+      "key": "common.statusChanged",
+      "namespace": "common",
+      "leaf": "statusChanged",
+      "segments": [
+        "common",
+        "statusChanged"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3421
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Status gewijzigd",
+        "fr": "Statut modifié",
+        "en": "Status changed"
       }
     },
     {
@@ -103384,14 +103564,14 @@
       "label": "Authenticatie",
       "description": "Teksten die betrekking hebben op identiteit, toegang en beveiligde gebruikerssessies.",
       "status": "active",
-      "keyCount": 120
+      "keyCount": 121
     },
     {
       "name": "common",
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2383
+      "keyCount": 2388
     },
     {
       "name": "confirmation",

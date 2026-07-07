@@ -549,6 +549,7 @@
   "common.clientConnections",
   "common.clientCreatedStatus",
   "common.clientDetails",
+  "common.clientDoesntUseEmail",
   "common.clientHasMaintenanceContract",
   "common.clientInfo",
   "common.clientIP",

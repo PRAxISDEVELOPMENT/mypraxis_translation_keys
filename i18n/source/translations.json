@@ -31560,5 +31560,15 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.clientDoesntUseEmail",
+    "nl": "Klant gebruikt geen e-mail",
+    "fr": "Le client n’utilise pas l’e-mail",
+    "en": "Client does not use email",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
+    ]
   }
 ]

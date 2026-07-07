@@ -554,6 +554,7 @@
     "clientConnections": "Connexions client",
     "clientCreatedStatus": "Client créé",
     "clientDetails": "Détails du client",
+    "clientDoesntUseEmail": "Le client n’utilise pas l’e-mail",
     "clientHasMaintenanceContract": "Le client a (oui = 1 ou non = 0) un contrat d'entretien",
     "clientInfo": "Info sur le client",
     "clientIP": "Adresse IP du client",

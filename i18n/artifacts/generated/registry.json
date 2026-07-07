@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3427,
-    "uniqueKeys": 3427,
+    "totalEntries": 3428,
+    "uniqueKeys": 3428,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -16733,6 +16733,37 @@
         "nl": "Klantdetails",
         "fr": "Détails du client",
         "en": "Client details"
+      }
+    },
+    {
+      "key": "common.clientDoesntUseEmail",
+      "namespace": "common",
+      "leaf": "clientDoesntUseEmail",
+      "segments": [
+        "common",
+        "clientDoesntUseEmail"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3428
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Klant gebruikt geen e-mail",
+        "fr": "Le client n’utilise pas l’e-mail",
+        "en": "Client does not use email"
       }
     },
     {
@@ -103601,7 +103632,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2389
+      "keyCount": 2390
     },
     {
       "name": "confirmation",

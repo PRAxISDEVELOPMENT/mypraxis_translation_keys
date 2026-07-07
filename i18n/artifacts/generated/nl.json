@@ -554,6 +554,7 @@
     "clientConnections": "Klanten connecties",
     "clientCreatedStatus": "Aangemaakte klant",
     "clientDetails": "Klantdetails",
+    "clientDoesntUseEmail": "Klant gebruikt geen e-mail",
     "clientHasMaintenanceContract": "Klant heeft onderhoudscontract (waarde 0 of 1)",
     "clientInfo": "Klantinfo",
     "clientIP": "IP-adres klant",

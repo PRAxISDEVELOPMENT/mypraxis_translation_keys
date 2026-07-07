@@ -31551,5 +31551,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.updateAvailableInstallAndRestart",
+    "nl": "Update beschikbaar. Installeer en herstart de applicatie.",
+    "fr": "Mise à jour disponible. Installez et redémarrez l’application.",
+    "en": "Update available. Install and restart the application.",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3426,
-    "uniqueKeys": 3426,
+    "totalEntries": 3427,
+    "uniqueKeys": 3427,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -71157,6 +71157,36 @@
       }
     },
     {
+      "key": "common.updateAvailableInstallAndRestart",
+      "namespace": "common",
+      "leaf": "updateAvailableInstallAndRestart",
+      "segments": [
+        "common",
+        "updateAvailableInstallAndRestart"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3427
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Update beschikbaar. Installeer en herstart de applicatie.",
+        "fr": "Mise à jour disponible. Installez et redémarrez l’application.",
+        "en": "Update available. Install and restart the application."
+      }
+    },
+    {
       "key": "common.updatingPreview",
       "namespace": "common",
       "leaf": "updatingPreview",
@@ -103571,7 +103601,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2388
+      "keyCount": 2389
     },
     {
       "name": "confirmation",

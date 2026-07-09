@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3429,
-    "uniqueKeys": 3429,
+    "totalEntries": 3430,
+    "uniqueKeys": 3430,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -30919,6 +30919,36 @@
         "nl": "Om de 6 uur",
         "fr": "Chaque 6 heures",
         "en": "Every 6 hours"
+      }
+    },
+    {
+      "key": "common.excellisEmployees",
+      "namespace": "common",
+      "leaf": "excellisEmployees",
+      "segments": [
+        "common",
+        "excellisEmployees"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3430
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Excellis medewerkers",
+        "fr": "Collaborateurs Excellis",
+        "en": "Excellis employees"
       }
     },
     {
@@ -103662,7 +103692,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2391
+      "keyCount": 2392
     },
     {
       "name": "confirmation",

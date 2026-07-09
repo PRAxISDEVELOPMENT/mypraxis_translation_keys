@@ -31579,5 +31579,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.excellisEmployees",
+    "nl": "Excellis medewerkers",
+    "fr": "Collaborateurs Excellis",
+    "en": "Excellis employees",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

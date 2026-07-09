@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3428,
-    "uniqueKeys": 3428,
+    "totalEntries": 3429,
+    "uniqueKeys": 3429,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -74211,6 +74211,36 @@
       }
     },
     {
+      "key": "common.visibleForExcellisEmployees",
+      "namespace": "common",
+      "leaf": "visibleForExcellisEmployees",
+      "segments": [
+        "common",
+        "visibleForExcellisEmployees"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3429
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Zichtbaar voor Excellis medewerkers",
+        "fr": "Visible pour les collaborateurs Excellis",
+        "en": "Visible for Excellis employees"
+      }
+    },
+    {
       "key": "common.visibleForExternalUse",
       "namespace": "common",
       "leaf": "visibleForExternalUse",
@@ -103632,7 +103662,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2390
+      "keyCount": 2391
     },
     {
       "name": "confirmation",

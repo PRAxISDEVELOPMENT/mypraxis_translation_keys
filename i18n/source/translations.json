@@ -31570,5 +31570,14 @@
       "mypraxis_web",
       "mypraxis_app"
     ]
+  },
+  {
+    "key": "common.visibleForExcellisEmployees",
+    "nl": "Zichtbaar voor Excellis medewerkers",
+    "fr": "Visible pour les collaborateurs Excellis",
+    "en": "Visible for Excellis employees",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

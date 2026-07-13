@@ -32003,5 +32003,32 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.exportDesktopSupportLogs",
+    "nl": "Desktop supportlogs exporteren",
+    "fr": "Exporter les logs support desktop",
+    "en": "Export desktop support logs",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "success.desktopSupportLogsExported",
+    "nl": "Desktop supportlogs werden geëxporteerd.",
+    "fr": "Les logs support desktop ont été exportés.",
+    "en": "Desktop support logs were exported.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "error.desktopSupportLogsExportFailed",
+    "nl": "Desktop supportlogs konden niet geëxporteerd worden.",
+    "fr": "Les logs support desktop n’ont pas pu être exportés.",
+    "en": "Desktop support logs could not be exported.",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

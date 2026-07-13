@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3476,
-    "uniqueKeys": 3476,
+    "totalEntries": 3479,
+    "uniqueKeys": 3479,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -31702,6 +31702,36 @@
         "nl": "Exporteer",
         "fr": "Exporter",
         "en": "Export"
+      }
+    },
+    {
+      "key": "common.exportDesktopSupportLogs",
+      "namespace": "common",
+      "leaf": "exportDesktopSupportLogs",
+      "segments": [
+        "common",
+        "exportDesktopSupportLogs"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3477
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktop supportlogs exporteren",
+        "fr": "Exporter les logs support desktop",
+        "en": "Export desktop support logs"
       }
     },
     {
@@ -79665,6 +79695,36 @@
       }
     },
     {
+      "key": "error.desktopSupportLogsExportFailed",
+      "namespace": "error",
+      "leaf": "desktopSupportLogsExportFailed",
+      "segments": [
+        "error",
+        "desktopSupportLogsExportFailed"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3479
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktop supportlogs konden niet geëxporteerd worden.",
+        "fr": "Les logs support desktop n’ont pas pu être exportés.",
+        "en": "Desktop support logs could not be exported."
+      }
+    },
+    {
       "key": "error.desktopUpdateInstallFailed",
       "namespace": "error",
       "leaf": "desktopUpdateInstallFailed",
@@ -96600,6 +96660,36 @@
       }
     },
     {
+      "key": "success.desktopSupportLogsExported",
+      "namespace": "success",
+      "leaf": "desktopSupportLogsExported",
+      "segments": [
+        "success",
+        "desktopSupportLogsExported"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3478
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktop supportlogs werden geëxporteerd.",
+        "fr": "Les logs support desktop ont été exportés.",
+        "en": "Desktop support logs were exported."
+      }
+    },
+    {
       "key": "success.divisionChanged",
       "namespace": "success",
       "leaf": "divisionChanged",
@@ -105073,7 +105163,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2431
+      "keyCount": 2432
     },
     {
       "name": "confirmation",
@@ -105087,7 +105177,7 @@
       "label": "Fouten",
       "description": "Teksten voor situaties waarin een actie niet kan worden voltooid of onverwacht mislukt.",
       "status": "active",
-      "keyCount": 203
+      "keyCount": 204
     },
     {
       "name": "info",
@@ -105122,7 +105212,7 @@
       "label": "Geslaagd",
       "description": "Teksten die bevestigen dat een actie correct is uitgevoerd of succesvol is afgerond.",
       "status": "active",
-      "keyCount": 239
+      "keyCount": 240
     },
     {
       "name": "warning",

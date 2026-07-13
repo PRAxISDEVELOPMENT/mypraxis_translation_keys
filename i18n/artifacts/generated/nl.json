@@ -2732,6 +2732,7 @@
     "parameterMustBeExactlyCharactersLong": "Parameter '{{param}}' moet exact {{fixed_length}} tekens lang zijn.",
     "parameterMustBeOneOfTheFollowingValues": "Parameter '{{param}}' moet één van de volgende waarden bevatten: {{fixed_items}}.",
     "previewCouldNotBePrepared": "Voorbeeld kon niet worden voorbereid",
+    "profitFolderOpenFailed": "De Profit map kon niet geopend worden.",
     "providedUuidMustBeAValidUuid": "De opgegeven UUID moet een geldige UUID zijn",
     "pushNotificationPermissionNotGranted": "Toestemming voor pushmeldingen niet verleend",
     "queryParameterMustBeANumericValue": "Queryparameter '{{param}}' moet een numerieke waarde zijn.",

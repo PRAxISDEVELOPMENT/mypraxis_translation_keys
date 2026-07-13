@@ -31885,5 +31885,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "error.profitFolderOpenFailed",
+    "nl": "De Profit map kon niet geopend worden.",
+    "fr": "Le dossier Profit n’a pas pu être ouvert.",
+    "en": "The Profit folder could not be opened.",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

@@ -35,7 +35,7 @@
       "label": "Fouten",
       "description": "Teksten voor situaties waarin een actie niet kan worden voltooid of onverwacht mislukt.",
       "status": "active",
-      "keyCount": 202
+      "keyCount": 203
     },
     {
       "name": "info",

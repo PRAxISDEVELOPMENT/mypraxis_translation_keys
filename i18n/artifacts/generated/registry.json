@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3463,
-    "uniqueKeys": 3463,
+    "totalEntries": 3464,
+    "uniqueKeys": 3464,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -82376,6 +82376,36 @@
       }
     },
     {
+      "key": "error.profitFolderOpenFailed",
+      "namespace": "error",
+      "leaf": "profitFolderOpenFailed",
+      "segments": [
+        "error",
+        "profitFolderOpenFailed"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3464
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "De Profit map kon niet geopend worden.",
+        "fr": "Le dossier Profit n’a pas pu être ouvert.",
+        "en": "The Profit folder could not be opened."
+      }
+    },
+    {
       "key": "error.providedUuidMustBeAValidUuid",
       "namespace": "error",
       "leaf": "providedUuidMustBeAValidUuid",
@@ -104696,7 +104726,7 @@
       "label": "Fouten",
       "description": "Teksten voor situaties waarin een actie niet kan worden voltooid of onverwacht mislukt.",
       "status": "active",
-      "keyCount": 202
+      "keyCount": 203
     },
     {
       "name": "info",

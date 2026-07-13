@@ -2723,6 +2723,7 @@
   "error.parameterMustBeExactlyCharactersLong",
   "error.parameterMustBeOneOfTheFollowingValues",
   "error.previewCouldNotBePrepared",
+  "error.profitFolderOpenFailed",
   "error.providedUuidMustBeAValidUuid",
   "error.pushNotificationPermissionNotGranted",
   "error.queryParameterMustBeANumericValue",

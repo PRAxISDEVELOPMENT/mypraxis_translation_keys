@@ -2732,6 +2732,7 @@
     "parameterMustBeExactlyCharactersLong": "Paramètre '{{param}}' doit avoir exactement {{fixed_length}} caractères.",
     "parameterMustBeOneOfTheFollowingValues": "Paramètre '{{param}}' doit avoir une des valeurs suivantes: {{fixed_items}}. ",
     "previewCouldNotBePrepared": "L'aperçu n'a pas pu être préparé",
+    "profitFolderOpenFailed": "Le dossier Profit n’a pas pu être ouvert.",
     "providedUuidMustBeAValidUuid": "L'UUID fourni doit être un UUID valide",
     "pushNotificationPermissionNotGranted": "Autorisation de notification push non accordée",
     "queryParameterMustBeANumericValue": "Query paramètre '{{param}}' doit être une valeur numerique.",

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3464,
-    "uniqueKeys": 3464,
+    "totalEntries": 3467,
+    "uniqueKeys": 3467,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -26431,6 +26431,36 @@
       }
     },
     {
+      "key": "common.desktopApp",
+      "namespace": "common",
+      "leaf": "desktopApp",
+      "segments": [
+        "common",
+        "desktopApp"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3467
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktop app",
+        "fr": "Application desktop",
+        "en": "Desktop app"
+      }
+    },
+    {
       "key": "common.desktopDiagnostics",
       "namespace": "common",
       "leaf": "desktopDiagnostics",
@@ -51442,6 +51472,36 @@
       }
     },
     {
+      "key": "common.openApp",
+      "namespace": "common",
+      "leaf": "openApp",
+      "segments": [
+        "common",
+        "openApp"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3465
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "App openen",
+        "fr": "Ouvrir l’application",
+        "en": "Open app"
+      }
+    },
+    {
       "key": "common.openDetails",
       "namespace": "common",
       "leaf": "openDetails",
@@ -57485,6 +57545,36 @@
         "nl": "Vragen",
         "fr": "Questions",
         "en": "Questions"
+      }
+    },
+    {
+      "key": "common.quit",
+      "namespace": "common",
+      "leaf": "quit",
+      "segments": [
+        "common",
+        "quit"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3466
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Afsluiten",
+        "fr": "Quitter",
+        "en": "Quit"
       }
     },
     {
@@ -104712,7 +104802,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2419
+      "keyCount": 2422
     },
     {
       "name": "confirmation",

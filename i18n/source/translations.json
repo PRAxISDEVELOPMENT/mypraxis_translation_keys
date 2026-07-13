@@ -31894,5 +31894,32 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.openApp",
+    "nl": "App openen",
+    "fr": "Ouvrir l’application",
+    "en": "Open app",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.quit",
+    "nl": "Afsluiten",
+    "fr": "Quitter",
+    "en": "Quit",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopApp",
+    "nl": "Desktop app",
+    "fr": "Application desktop",
+    "en": "Desktop app",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

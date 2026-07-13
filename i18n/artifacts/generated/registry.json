@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3467,
-    "uniqueKeys": 3467,
+    "totalEntries": 3468,
+    "uniqueKeys": 3468,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -54489,6 +54489,37 @@
       }
     },
     {
+      "key": "common.personnel",
+      "namespace": "common",
+      "leaf": "personnel",
+      "segments": [
+        "common",
+        "personnel"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3468
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Personeel",
+        "fr": "Personnel",
+        "en": "Personnel"
+      }
+    },
+    {
       "key": "common.personnelFile",
       "namespace": "common",
       "leaf": "personnelFile",
@@ -104802,7 +104833,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2422
+      "keyCount": 2423
     },
     {
       "name": "confirmation",

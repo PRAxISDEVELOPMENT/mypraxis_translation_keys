@@ -31921,5 +31921,15 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.personnel",
+    "nl": "Personeel",
+    "fr": "Personnel",
+    "en": "Personnel",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
+    ]
   }
 ]

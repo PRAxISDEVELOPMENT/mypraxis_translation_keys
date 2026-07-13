@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3430,
-    "uniqueKeys": 3430,
+    "totalEntries": 3463,
+    "uniqueKeys": 3463,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -9192,6 +9192,36 @@
       }
     },
     {
+      "key": "common.appVersion",
+      "namespace": "common",
+      "leaf": "appVersion",
+      "segments": [
+        "common",
+        "appVersion"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3448
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Appversie",
+        "fr": "Version de l’application",
+        "en": "App version"
+      }
+    },
+    {
       "key": "common.aPrimaryOrBackupContactWasAssigned",
       "namespace": "common",
       "leaf": "aPrimaryOrBackupContactWasAssigned",
@@ -9219,6 +9249,36 @@
         "nl": "Er werd een primair of back-up contact toegekend.",
         "fr": "Un contact principal ou suppléant a été désigné.",
         "en": "A primary or back-up contact was assigned."
+      }
+    },
+    {
+      "key": "common.architecture",
+      "namespace": "common",
+      "leaf": "architecture",
+      "segments": [
+        "common",
+        "architecture"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3453
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Architectuur",
+        "fr": "Architecture",
+        "en": "Architecture"
       }
     },
     {
@@ -26371,6 +26431,126 @@
       }
     },
     {
+      "key": "common.desktopDiagnostics",
+      "namespace": "common",
+      "leaf": "desktopDiagnostics",
+      "segments": [
+        "common",
+        "desktopDiagnostics"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3458
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktopdiagnose",
+        "fr": "Diagnostic desktop",
+        "en": "Desktop diagnostics"
+      }
+    },
+    {
+      "key": "common.desktopInformationLoading",
+      "namespace": "common",
+      "leaf": "desktopInformationLoading",
+      "segments": [
+        "common",
+        "desktopInformationLoading"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3459
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktopinformatie laden...",
+        "fr": "Chargement des informations desktop...",
+        "en": "Loading desktop information..."
+      }
+    },
+    {
+      "key": "common.desktopTestUpdates",
+      "namespace": "common",
+      "leaf": "desktopTestUpdates",
+      "segments": [
+        "common",
+        "desktopTestUpdates"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3462
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktop test updates",
+        "fr": "Mises à jour de test desktop",
+        "en": "Desktop test updates"
+      }
+    },
+    {
+      "key": "common.desktopUpdate",
+      "namespace": "common",
+      "leaf": "desktopUpdate",
+      "segments": [
+        "common",
+        "desktopUpdate"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3441
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktop update",
+        "fr": "Mise à jour desktop",
+        "en": "Desktop update"
+      }
+    },
+    {
       "key": "common.desRequired",
       "namespace": "common",
       "leaf": "desRequired",
@@ -31132,6 +31312,36 @@
       }
     },
     {
+      "key": "common.executableExtension",
+      "namespace": "common",
+      "leaf": "executableExtension",
+      "segments": [
+        "common",
+        "executableExtension"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3455
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Executable-extensie",
+        "fr": "Extension exécutable",
+        "en": "Executable extension"
+      }
+    },
+    {
       "key": "common.existingCustomers",
       "namespace": "common",
       "leaf": "existingCustomers",
@@ -35333,6 +35543,36 @@
       }
     },
     {
+      "key": "common.globalShortcut",
+      "namespace": "common",
+      "leaf": "globalShortcut",
+      "segments": [
+        "common",
+        "globalShortcut"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3457
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Globale sneltoets",
+        "fr": "Raccourci global",
+        "en": "Global shortcut"
+      }
+    },
+    {
       "key": "common.globalUse",
       "namespace": "common",
       "leaf": "globalUse",
@@ -36720,6 +36960,36 @@
         "nl": "Host",
         "fr": "Hôte",
         "en": "Host"
+      }
+    },
+    {
+      "key": "common.hostname",
+      "namespace": "common",
+      "leaf": "hostname",
+      "segments": [
+        "common",
+        "hostname"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3454
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Hostnaam",
+        "fr": "Nom d’hôte",
+        "en": "Hostname"
       }
     },
     {
@@ -38982,6 +39252,36 @@
         "nl": "Tabel invoegen",
         "fr": "Insérer un tableau",
         "en": "Insert table"
+      }
+    },
+    {
+      "key": "common.installAndRestart",
+      "namespace": "common",
+      "leaf": "installAndRestart",
+      "segments": [
+        "common",
+        "installAndRestart"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3440
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Installeren en herstarten",
+        "fr": "Installer et redémarrer",
+        "en": "Install and restart"
       }
     },
     {
@@ -41896,6 +42196,36 @@
       }
     },
     {
+      "key": "common.lineEnding",
+      "namespace": "common",
+      "leaf": "lineEnding",
+      "segments": [
+        "common",
+        "lineEnding"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3456
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Line ending",
+        "fr": "Fin de ligne",
+        "en": "Line ending"
+      }
+    },
+    {
       "key": "common.linetestCheck",
       "namespace": "common",
       "leaf": "linetestCheck",
@@ -42470,6 +42800,66 @@
         "nl": "Live events",
         "fr": "Événements en direct",
         "en": "Live events"
+      }
+    },
+    {
+      "key": "common.liveUpdatesActive",
+      "namespace": "common",
+      "leaf": "liveUpdatesActive",
+      "segments": [
+        "common",
+        "liveUpdatesActive"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3461
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Live updates actief",
+        "fr": "Mises à jour live actives",
+        "en": "Live updates active"
+      }
+    },
+    {
+      "key": "common.liveVersion",
+      "namespace": "common",
+      "leaf": "liveVersion",
+      "segments": [
+        "common",
+        "liveVersion"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3432
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "live versie",
+        "fr": "version de production",
+        "en": "live version"
       }
     },
     {
@@ -51925,6 +52315,36 @@
       }
     },
     {
+      "key": "common.osFamily",
+      "namespace": "common",
+      "leaf": "osFamily",
+      "segments": [
+        "common",
+        "osFamily"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3452
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "OS-familie",
+        "fr": "Famille d’OS",
+        "en": "OS family"
+      }
+    },
+    {
       "key": "common.osirisReceiver",
       "namespace": "common",
       "leaf": "osirisReceiver",
@@ -51952,6 +52372,66 @@
         "nl": "Osiris ontvanger",
         "fr": "Récepteur Osiris",
         "en": "Osiris receiver"
+      }
+    },
+    {
+      "key": "common.osType",
+      "namespace": "common",
+      "leaf": "osType",
+      "segments": [
+        "common",
+        "osType"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3450
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "OS-type",
+        "fr": "Type d’OS",
+        "en": "OS type"
+      }
+    },
+    {
+      "key": "common.osVersion",
+      "namespace": "common",
+      "leaf": "osVersion",
+      "segments": [
+        "common",
+        "osVersion"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3451
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "OS-versie",
+        "fr": "Version de l’OS",
+        "en": "OS version"
       }
     },
     {
@@ -66481,6 +66961,36 @@
       }
     },
     {
+      "key": "common.systemManagement",
+      "namespace": "common",
+      "leaf": "systemManagement",
+      "segments": [
+        "common",
+        "systemManagement"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3447
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Systeembeheer",
+        "fr": "Gestion système",
+        "en": "System management"
+      }
+    },
+    {
       "key": "common.systemWithListeningIn",
       "namespace": "common",
       "leaf": "systemWithListeningIn",
@@ -67236,6 +67746,66 @@
         "nl": "Testklant",
         "fr": "Client de test",
         "en": "Test client"
+      }
+    },
+    {
+      "key": "common.testUpdatesActive",
+      "namespace": "common",
+      "leaf": "testUpdatesActive",
+      "segments": [
+        "common",
+        "testUpdatesActive"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3460
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Test updates actief",
+        "fr": "Mises à jour de test actives",
+        "en": "Test updates active"
+      }
+    },
+    {
+      "key": "common.testVersion",
+      "namespace": "common",
+      "leaf": "testVersion",
+      "segments": [
+        "common",
+        "testVersion"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3431
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "testversie",
+        "fr": "version de test",
+        "en": "test version"
       }
     },
     {
@@ -71248,6 +71818,216 @@
       }
     },
     {
+      "key": "common.updateChannel",
+      "namespace": "common",
+      "leaf": "updateChannel",
+      "segments": [
+        "common",
+        "updateChannel"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3449
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Updatekanaal",
+        "fr": "Canal de mise à jour",
+        "en": "Update channel"
+      }
+    },
+    {
+      "key": "common.updateDownloading",
+      "namespace": "common",
+      "leaf": "updateDownloading",
+      "segments": [
+        "common",
+        "updateDownloading"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3437
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Update downloaden...",
+        "fr": "Téléchargement de la mise à jour...",
+        "en": "Downloading update..."
+      }
+    },
+    {
+      "key": "common.updateDownloadingWithPercent",
+      "namespace": "common",
+      "leaf": "updateDownloadingWithPercent",
+      "segments": [
+        "common",
+        "updateDownloadingWithPercent"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3436
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Update downloaden... {{percent}}%",
+        "fr": "Téléchargement de la mise à jour... {{percent}}%",
+        "en": "Downloading update... {{percent}}%"
+      }
+    },
+    {
+      "key": "common.updateInstalledRestartingApp",
+      "namespace": "common",
+      "leaf": "updateInstalledRestartingApp",
+      "segments": [
+        "common",
+        "updateInstalledRestartingApp"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3435
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Update geïnstalleerd. App herstarten...",
+        "fr": "Mise à jour installée. Redémarrage de l’application...",
+        "en": "Update installed. Restarting app..."
+      }
+    },
+    {
+      "key": "common.updateInstalling",
+      "namespace": "common",
+      "leaf": "updateInstalling",
+      "segments": [
+        "common",
+        "updateInstalling"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3434
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Update installeren...",
+        "fr": "Installation de la mise à jour...",
+        "en": "Installing update..."
+      }
+    },
+    {
+      "key": "common.updatePreparing",
+      "namespace": "common",
+      "leaf": "updatePreparing",
+      "segments": [
+        "common",
+        "updatePreparing"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3433
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Update voorbereiden...",
+        "fr": "Préparation de la mise à jour...",
+        "en": "Preparing update..."
+      }
+    },
+    {
+      "key": "common.updateSource",
+      "namespace": "common",
+      "leaf": "updateSource",
+      "segments": [
+        "common",
+        "updateSource"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3446
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Updatebron",
+        "fr": "Source de mise à jour",
+        "en": "Update source"
+      }
+    },
+    {
       "key": "common.updatingPreview",
       "namespace": "common",
       "leaf": "updatingPreview",
@@ -73396,6 +74176,36 @@
         "nl": "Weergave video via DVR/NVR",
         "fr": "Visualisation vidéo via DVR/NVR",
         "en": "Visualisation video via DVR/NVR"
+      }
+    },
+    {
+      "key": "common.videoWall",
+      "namespace": "common",
+      "leaf": "videoWall",
+      "segments": [
+        "common",
+        "videoWall"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3463
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Videowall",
+        "fr": "Mur vidéo",
+        "en": "Video wall"
       }
     },
     {
@@ -78494,6 +79304,36 @@
       }
     },
     {
+      "key": "error.desktopUpdateInstallFailed",
+      "namespace": "error",
+      "leaf": "desktopUpdateInstallFailed",
+      "segments": [
+        "error",
+        "desktopUpdateInstallFailed"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3439
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktop update installeren is mislukt.",
+        "fr": "L’installation de la mise à jour desktop a échoué.",
+        "en": "Desktop update installation failed."
+      }
+    },
+    {
       "key": "error.endDateAndTimeCannotBeBeforeStartDateAndTime",
       "namespace": "error",
       "leaf": "endDateAndTimeCannotBeBeforeStartDateAndTime",
@@ -82500,6 +83340,36 @@
         "nl": "Onverwachte fout bij camerapermissie",
         "fr": "Erreur inattendue de permission caméra",
         "en": "Unexpected camera permission error"
+      }
+    },
+    {
+      "key": "error.updateCheckFailedFolderUnavailable",
+      "namespace": "error",
+      "leaf": "updateCheckFailedFolderUnavailable",
+      "segments": [
+        "error",
+        "updateCheckFailedFolderUnavailable"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3442
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Updatecontrole mislukt. Controleer of de updatefolder bereikbaar is.",
+        "fr": "La vérification de la mise à jour a échoué. Vérifiez si le dossier de mise à jour est accessible.",
+        "en": "Update check failed. Check whether the update folder is reachable."
       }
     },
     {
@@ -87650,6 +88520,36 @@
       }
     },
     {
+      "key": "info.newDesktopUpdateAvailable",
+      "namespace": "info",
+      "leaf": "newDesktopUpdateAvailable",
+      "segments": [
+        "info",
+        "newDesktopUpdateAvailable"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3444
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Nieuwe desktop update beschikbaar: versie",
+        "fr": "Nouvelle mise à jour desktop disponible : version",
+        "en": "New desktop update available: version"
+      }
+    },
+    {
       "key": "info.noAdditionalInfoFound",
       "namespace": "info",
       "leaf": "noAdditionalInfoFound",
@@ -87797,6 +88697,36 @@
         "nl": "Er zijn groepen gedefinieerd, maar er zijn geen klanten toegewezen aan de desbetreffende groep(en)",
         "fr": "Des groupes ont été définis mais aucun client n'a été attribué au(x) groupe(s) correpondant(s).",
         "en": "Groups were defined but no customers were assigned to the respective group(s)"
+      }
+    },
+    {
+      "key": "info.noDesktopUpdateFoundForChannel",
+      "namespace": "info",
+      "leaf": "noDesktopUpdateFoundForChannel",
+      "segments": [
+        "info",
+        "noDesktopUpdateFoundForChannel"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3443
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Geen nieuwe desktop update gevonden voor de {{channelLabel}}.",
+        "fr": "Aucune nouvelle mise à jour desktop trouvée pour la {{channelLabel}}.",
+        "en": "No new desktop update found for the {{channelLabel}}."
       }
     },
     {
@@ -89855,6 +90785,36 @@
         "nl": "Er staan momenteel nog meerdere regels in test. Door op deze knop te drukken, wordt het volledige systeem uit testmodus gehaald.",
         "fr": "Plusieurs zones sont actuellement encore en test. En appuyant sur ce bouton, l’ensemble du système sera mis hors test.",
         "en": "There are currently several components still in test. By pressing this button, the entire system will be taken out of test mode."
+      }
+    },
+    {
+      "key": "info.testVersionUpdateSource",
+      "namespace": "info",
+      "leaf": "testVersionUpdateSource",
+      "segments": [
+        "info",
+        "testVersionUpdateSource"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3445
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Dit is de testversie. De update komt uit de testfolder.",
+        "fr": "Ceci est la version de test. La mise à jour provient du dossier de test.",
+        "en": "This is the test version. The update comes from the test folder."
       }
     },
     {
@@ -102442,6 +103402,36 @@
       }
     },
     {
+      "key": "warning.noUpdateFoundToInstall",
+      "namespace": "warning",
+      "leaf": "noUpdateFoundToInstall",
+      "segments": [
+        "warning",
+        "noUpdateFoundToInstall"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3438
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Geen update gevonden om te installeren.",
+        "fr": "Aucune mise à jour trouvée à installer.",
+        "en": "No update found to install."
+      }
+    },
+    {
       "key": "warning.oneOrMoreFieldsContainErrors",
       "namespace": "warning",
       "leaf": "oneOrMoreFieldsContainErrors",
@@ -103692,7 +104682,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2392
+      "keyCount": 2419
     },
     {
       "name": "confirmation",
@@ -103706,14 +104696,14 @@
       "label": "Fouten",
       "description": "Teksten voor situaties waarin een actie niet kan worden voltooid of onverwacht mislukt.",
       "status": "active",
-      "keyCount": 200
+      "keyCount": 202
     },
     {
       "name": "info",
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 297
+      "keyCount": 300
     },
     {
       "name": "metadata",
@@ -103748,7 +104738,7 @@
       "label": "Waarschuwingen",
       "description": "Teksten die de gebruiker wijzen op aandachtspunten, mogelijke gevolgen of vereiste zorgvuldigheid.",
       "status": "active",
-      "keyCount": 130
+      "keyCount": 131
     }
   ]
 }

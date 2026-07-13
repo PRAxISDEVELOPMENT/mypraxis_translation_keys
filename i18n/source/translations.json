@@ -31588,5 +31588,302 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.testVersion",
+    "nl": "testversie",
+    "fr": "version de test",
+    "en": "test version",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.liveVersion",
+    "nl": "live versie",
+    "fr": "version de production",
+    "en": "live version",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updatePreparing",
+    "nl": "Update voorbereiden...",
+    "fr": "Préparation de la mise à jour...",
+    "en": "Preparing update...",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updateInstalling",
+    "nl": "Update installeren...",
+    "fr": "Installation de la mise à jour...",
+    "en": "Installing update...",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updateInstalledRestartingApp",
+    "nl": "Update geïnstalleerd. App herstarten...",
+    "fr": "Mise à jour installée. Redémarrage de l’application...",
+    "en": "Update installed. Restarting app...",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updateDownloadingWithPercent",
+    "nl": "Update downloaden... {{percent}}%",
+    "fr": "Téléchargement de la mise à jour... {{percent}}%",
+    "en": "Downloading update... {{percent}}%",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updateDownloading",
+    "nl": "Update downloaden...",
+    "fr": "Téléchargement de la mise à jour...",
+    "en": "Downloading update...",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "warning.noUpdateFoundToInstall",
+    "nl": "Geen update gevonden om te installeren.",
+    "fr": "Aucune mise à jour trouvée à installer.",
+    "en": "No update found to install.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "error.desktopUpdateInstallFailed",
+    "nl": "Desktop update installeren is mislukt.",
+    "fr": "L’installation de la mise à jour desktop a échoué.",
+    "en": "Desktop update installation failed.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.installAndRestart",
+    "nl": "Installeren en herstarten",
+    "fr": "Installer et redémarrer",
+    "en": "Install and restart",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopUpdate",
+    "nl": "Desktop update",
+    "fr": "Mise à jour desktop",
+    "en": "Desktop update",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "error.updateCheckFailedFolderUnavailable",
+    "nl": "Updatecontrole mislukt. Controleer of de updatefolder bereikbaar is.",
+    "fr": "La vérification de la mise à jour a échoué. Vérifiez si le dossier de mise à jour est accessible.",
+    "en": "Update check failed. Check whether the update folder is reachable.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.noDesktopUpdateFoundForChannel",
+    "nl": "Geen nieuwe desktop update gevonden voor de {{channelLabel}}.",
+    "fr": "Aucune nouvelle mise à jour desktop trouvée pour la {{channelLabel}}.",
+    "en": "No new desktop update found for the {{channelLabel}}.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.newDesktopUpdateAvailable",
+    "nl": "Nieuwe desktop update beschikbaar: versie",
+    "fr": "Nouvelle mise à jour desktop disponible : version",
+    "en": "New desktop update available: version",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.testVersionUpdateSource",
+    "nl": "Dit is de testversie. De update komt uit de testfolder.",
+    "fr": "Ceci est la version de test. La mise à jour provient du dossier de test.",
+    "en": "This is the test version. The update comes from the test folder.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updateSource",
+    "nl": "Updatebron",
+    "fr": "Source de mise à jour",
+    "en": "Update source",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.systemManagement",
+    "nl": "Systeembeheer",
+    "fr": "Gestion système",
+    "en": "System management",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.appVersion",
+    "nl": "Appversie",
+    "fr": "Version de l’application",
+    "en": "App version",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updateChannel",
+    "nl": "Updatekanaal",
+    "fr": "Canal de mise à jour",
+    "en": "Update channel",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.osType",
+    "nl": "OS-type",
+    "fr": "Type d’OS",
+    "en": "OS type",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.osVersion",
+    "nl": "OS-versie",
+    "fr": "Version de l’OS",
+    "en": "OS version",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.osFamily",
+    "nl": "OS-familie",
+    "fr": "Famille d’OS",
+    "en": "OS family",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.architecture",
+    "nl": "Architectuur",
+    "fr": "Architecture",
+    "en": "Architecture",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.hostname",
+    "nl": "Hostnaam",
+    "fr": "Nom d’hôte",
+    "en": "Hostname",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.executableExtension",
+    "nl": "Executable-extensie",
+    "fr": "Extension exécutable",
+    "en": "Executable extension",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.lineEnding",
+    "nl": "Line ending",
+    "fr": "Fin de ligne",
+    "en": "Line ending",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.globalShortcut",
+    "nl": "Globale sneltoets",
+    "fr": "Raccourci global",
+    "en": "Global shortcut",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopDiagnostics",
+    "nl": "Desktopdiagnose",
+    "fr": "Diagnostic desktop",
+    "en": "Desktop diagnostics",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopInformationLoading",
+    "nl": "Desktopinformatie laden...",
+    "fr": "Chargement des informations desktop...",
+    "en": "Loading desktop information...",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.testUpdatesActive",
+    "nl": "Test updates actief",
+    "fr": "Mises à jour de test actives",
+    "en": "Test updates active",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.liveUpdatesActive",
+    "nl": "Live updates actief",
+    "fr": "Mises à jour live actives",
+    "en": "Live updates active",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopTestUpdates",
+    "nl": "Desktop test updates",
+    "fr": "Mises à jour de test desktop",
+    "en": "Desktop test updates",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.videoWall",
+    "nl": "Videowall",
+    "fr": "Mur vidéo",
+    "en": "Video wall",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

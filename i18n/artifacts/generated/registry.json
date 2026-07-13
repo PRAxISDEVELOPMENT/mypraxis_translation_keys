@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3479,
-    "uniqueKeys": 3479,
+    "totalEntries": 3492,
+    "uniqueKeys": 3492,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -16102,6 +16102,36 @@
       }
     },
     {
+      "key": "common.chooseDesktopProfitRoot",
+      "namespace": "common",
+      "leaf": "chooseDesktopProfitRoot",
+      "segments": [
+        "common",
+        "chooseDesktopProfitRoot"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3488
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktop Profit root kiezen",
+        "fr": "Choisir le dossier racine Profit desktop",
+        "en": "Choose desktop Profit root"
+      }
+    },
+    {
       "key": "common.chooseProceedToHearNewEventAlerts",
       "namespace": "common",
       "leaf": "chooseProceedToHearNewEventAlerts",
@@ -28449,6 +28479,36 @@
       }
     },
     {
+      "key": "common.downloadLocation",
+      "namespace": "common",
+      "leaf": "downloadLocation",
+      "segments": [
+        "common",
+        "downloadLocation"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3482
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Downloadlocatie",
+        "fr": "Emplacement de téléchargement",
+        "en": "Download location"
+      }
+    },
+    {
       "key": "common.downloadPdf",
       "namespace": "common",
       "leaf": "downloadPdf",
@@ -38173,6 +38233,36 @@
       }
     },
     {
+      "key": "common.inactive",
+      "namespace": "common",
+      "leaf": "inactive",
+      "segments": [
+        "common",
+        "inactive"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3484
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Inactief",
+        "fr": "Inactif",
+        "en": "Inactive"
+      }
+    },
+    {
       "key": "common.incall",
       "namespace": "common",
       "leaf": "incall",
@@ -41102,6 +41192,36 @@
         "nl": "Sleutel",
         "fr": "Clé",
         "en": "Key"
+      }
+    },
+    {
+      "key": "common.keyboardShortcuts",
+      "namespace": "common",
+      "leaf": "keyboardShortcuts",
+      "segments": [
+        "common",
+        "keyboardShortcuts"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3483
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Sneltoetsen",
+        "fr": "Raccourcis clavier",
+        "en": "Keyboard shortcuts"
       }
     },
     {
@@ -51952,6 +52072,36 @@
       }
     },
     {
+      "key": "common.openWindows",
+      "namespace": "common",
+      "leaf": "openWindows",
+      "segments": [
+        "common",
+        "openWindows"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3486
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Open vensters",
+        "fr": "Fenêtres ouvertes",
+        "en": "Open windows"
+      }
+    },
+    {
       "key": "common.openWith",
       "namespace": "common",
       "leaf": "openWith",
@@ -61049,6 +61199,66 @@
       }
     },
     {
+      "key": "common.resetDesktopDownloadLocation",
+      "namespace": "common",
+      "leaf": "resetDesktopDownloadLocation",
+      "segments": [
+        "common",
+        "resetDesktopDownloadLocation"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3487
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktop downloadlocatie resetten",
+        "fr": "Réinitialiser l’emplacement de téléchargement desktop",
+        "en": "Reset desktop download location"
+      }
+    },
+    {
+      "key": "common.resetDesktopProfitRoots",
+      "namespace": "common",
+      "leaf": "resetDesktopProfitRoots",
+      "segments": [
+        "common",
+        "resetDesktopProfitRoots"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3489
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktop Profit roots resetten",
+        "fr": "Réinitialiser les dossiers racines Profit desktop",
+        "en": "Reset desktop Profit roots"
+      }
+    },
+    {
       "key": "common.resetToOriginal",
       "namespace": "common",
       "leaf": "resetToOriginal",
@@ -64247,6 +64457,36 @@
         "nl": "Dienstwissel",
         "fr": "Échange de poste",
         "en": "Shift swap"
+      }
+    },
+    {
+      "key": "common.shortcutCoverage",
+      "namespace": "common",
+      "leaf": "shortcutCoverage",
+      "segments": [
+        "common",
+        "shortcutCoverage"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3485
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Sneltoetsdekking",
+        "fr": "Couverture des raccourcis",
+        "en": "Shortcut coverage"
       }
     },
     {
@@ -72269,6 +72509,36 @@
       }
     },
     {
+      "key": "common.updateEndpoint",
+      "namespace": "common",
+      "leaf": "updateEndpoint",
+      "segments": [
+        "common",
+        "updateEndpoint"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3480
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Update endpoint",
+        "fr": "Endpoint de mise à jour",
+        "en": "Update endpoint"
+      }
+    },
+    {
       "key": "common.updateInstalledRestartingApp",
       "namespace": "common",
       "leaf": "updateInstalledRestartingApp",
@@ -72356,6 +72626,36 @@
         "nl": "Update voorbereiden...",
         "fr": "Préparation de la mise à jour...",
         "en": "Preparing update..."
+      }
+    },
+    {
+      "key": "common.updaterPlatformKey",
+      "namespace": "common",
+      "leaf": "updaterPlatformKey",
+      "segments": [
+        "common",
+        "updaterPlatformKey"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3481
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Updater platform key",
+        "fr": "Clé plateforme updater",
+        "en": "Updater platform key"
       }
     },
     {
@@ -96660,6 +96960,96 @@
       }
     },
     {
+      "key": "success.desktopDownloadLocationReset",
+      "namespace": "success",
+      "leaf": "desktopDownloadLocationReset",
+      "segments": [
+        "success",
+        "desktopDownloadLocationReset"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3490
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktop downloadlocatie werd gereset.",
+        "fr": "L’emplacement de téléchargement desktop a été réinitialisé.",
+        "en": "Desktop download location was reset."
+      }
+    },
+    {
+      "key": "success.desktopProfitRootChanged",
+      "namespace": "success",
+      "leaf": "desktopProfitRootChanged",
+      "segments": [
+        "success",
+        "desktopProfitRootChanged"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3492
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktop Profit root werd aangepast.",
+        "fr": "Le dossier racine Profit desktop a été modifié.",
+        "en": "Desktop Profit root was changed."
+      }
+    },
+    {
+      "key": "success.desktopProfitRootsReset",
+      "namespace": "success",
+      "leaf": "desktopProfitRootsReset",
+      "segments": [
+        "success",
+        "desktopProfitRootsReset"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3491
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktop Profit roots werden gereset.",
+        "fr": "Les dossiers racines Profit desktop ont été réinitialisés.",
+        "en": "Desktop Profit roots were reset."
+      }
+    },
+    {
       "key": "success.desktopSupportLogsExported",
       "namespace": "success",
       "leaf": "desktopSupportLogsExported",
@@ -105163,7 +105553,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2432
+      "keyCount": 2442
     },
     {
       "name": "confirmation",
@@ -105212,7 +105602,7 @@
       "label": "Geslaagd",
       "description": "Teksten die bevestigen dat een actie correct is uitgevoerd of succesvol is afgerond.",
       "status": "active",
-      "keyCount": 240
+      "keyCount": 243
     },
     {
       "name": "warning",

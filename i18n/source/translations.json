@@ -32030,5 +32030,122 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.updateEndpoint",
+    "nl": "Update endpoint",
+    "fr": "Endpoint de mise à jour",
+    "en": "Update endpoint",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updaterPlatformKey",
+    "nl": "Updater platform key",
+    "fr": "Clé plateforme updater",
+    "en": "Updater platform key",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.downloadLocation",
+    "nl": "Downloadlocatie",
+    "fr": "Emplacement de téléchargement",
+    "en": "Download location",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.keyboardShortcuts",
+    "nl": "Sneltoetsen",
+    "fr": "Raccourcis clavier",
+    "en": "Keyboard shortcuts",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.inactive",
+    "nl": "Inactief",
+    "fr": "Inactif",
+    "en": "Inactive",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.shortcutCoverage",
+    "nl": "Sneltoetsdekking",
+    "fr": "Couverture des raccourcis",
+    "en": "Shortcut coverage",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.openWindows",
+    "nl": "Open vensters",
+    "fr": "Fenêtres ouvertes",
+    "en": "Open windows",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.resetDesktopDownloadLocation",
+    "nl": "Desktop downloadlocatie resetten",
+    "fr": "Réinitialiser l’emplacement de téléchargement desktop",
+    "en": "Reset desktop download location",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.chooseDesktopProfitRoot",
+    "nl": "Desktop Profit root kiezen",
+    "fr": "Choisir le dossier racine Profit desktop",
+    "en": "Choose desktop Profit root",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.resetDesktopProfitRoots",
+    "nl": "Desktop Profit roots resetten",
+    "fr": "Réinitialiser les dossiers racines Profit desktop",
+    "en": "Reset desktop Profit roots",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "success.desktopDownloadLocationReset",
+    "nl": "Desktop downloadlocatie werd gereset.",
+    "fr": "L’emplacement de téléchargement desktop a été réinitialisé.",
+    "en": "Desktop download location was reset.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "success.desktopProfitRootsReset",
+    "nl": "Desktop Profit roots werden gereset.",
+    "fr": "Les dossiers racines Profit desktop ont été réinitialisés.",
+    "en": "Desktop Profit roots were reset.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "success.desktopProfitRootChanged",
+    "nl": "Desktop Profit root werd aangepast.",
+    "fr": "Le dossier racine Profit desktop a été modifié.",
+    "en": "Desktop Profit root was changed.",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

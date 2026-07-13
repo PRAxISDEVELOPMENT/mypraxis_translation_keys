@@ -31931,5 +31931,77 @@
       "mypraxis_web",
       "mypraxis_app"
     ]
+  },
+  {
+    "key": "common.desktopRuntime",
+    "nl": "Desktopruntime",
+    "fr": "Runtime desktop",
+    "en": "Desktop runtime",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.active",
+    "nl": "Actief",
+    "fr": "Actif",
+    "en": "Active",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.upToDate",
+    "nl": "Up-to-date",
+    "fr": "À jour",
+    "en": "Up to date",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.lastUpdateStatus",
+    "nl": "Laatste updatestatus",
+    "fr": "Dernier statut de mise à jour",
+    "en": "Last update status",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.lastUpdateCheck",
+    "nl": "Laatste updatecontrole",
+    "fr": "Dernière vérification de mise à jour",
+    "en": "Last update check",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.store",
+    "nl": "Opslag",
+    "fr": "Stockage",
+    "en": "Storage",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.nativeNotifications",
+    "nl": "Native meldingen",
+    "fr": "Notifications natives",
+    "en": "Native notifications",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.profitRoots",
+    "nl": "Profit mappen",
+    "fr": "Dossiers Profit",
+    "en": "Profit folders",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

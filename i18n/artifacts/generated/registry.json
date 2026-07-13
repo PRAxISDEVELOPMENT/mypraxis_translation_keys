@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3468,
-    "uniqueKeys": 3468,
+    "totalEntries": 3476,
+    "uniqueKeys": 3476,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -5232,6 +5232,36 @@
         "nl": "Activatiedatum & tijdstip",
         "fr": "Date/heure d’activation",
         "en": "Activation date/time"
+      }
+    },
+    {
+      "key": "common.active",
+      "namespace": "common",
+      "leaf": "active",
+      "segments": [
+        "common",
+        "active"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3470
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Actief",
+        "fr": "Actif",
+        "en": "Active"
       }
     },
     {
@@ -26521,6 +26551,36 @@
       }
     },
     {
+      "key": "common.desktopRuntime",
+      "namespace": "common",
+      "leaf": "desktopRuntime",
+      "segments": [
+        "common",
+        "desktopRuntime"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3469
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktopruntime",
+        "fr": "Runtime desktop",
+        "en": "Desktop runtime"
+      }
+    },
+    {
       "key": "common.desktopTestUpdates",
       "namespace": "common",
       "leaf": "desktopTestUpdates",
@@ -41894,6 +41954,66 @@
       }
     },
     {
+      "key": "common.lastUpdateCheck",
+      "namespace": "common",
+      "leaf": "lastUpdateCheck",
+      "segments": [
+        "common",
+        "lastUpdateCheck"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3473
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Laatste updatecontrole",
+        "fr": "Dernière vérification de mise à jour",
+        "en": "Last update check"
+      }
+    },
+    {
+      "key": "common.lastUpdateStatus",
+      "namespace": "common",
+      "leaf": "lastUpdateStatus",
+      "segments": [
+        "common",
+        "lastUpdateStatus"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3472
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Laatste updatestatus",
+        "fr": "Dernier statut de mise à jour",
+        "en": "Last update status"
+      }
+    },
+    {
       "key": "common.lastWeek",
       "namespace": "common",
       "leaf": "lastWeek",
@@ -47329,6 +47449,36 @@
         "nl": "Rijksregisternummer",
         "fr": "Numéro d'enregistrement national",
         "en": "National register number"
+      }
+    },
+    {
+      "key": "common.nativeNotifications",
+      "namespace": "common",
+      "leaf": "nativeNotifications",
+      "segments": [
+        "common",
+        "nativeNotifications"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3475
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Native meldingen",
+        "fr": "Notifications natives",
+        "en": "Native notifications"
       }
     },
     {
@@ -57095,6 +57245,36 @@
       }
     },
     {
+      "key": "common.profitRoots",
+      "namespace": "common",
+      "leaf": "profitRoots",
+      "segments": [
+        "common",
+        "profitRoots"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3476
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Profit mappen",
+        "fr": "Dossiers Profit",
+        "en": "Profit folders"
+      }
+    },
+    {
       "key": "common.proposal",
       "namespace": "common",
       "leaf": "proposal",
@@ -66265,6 +66445,36 @@
       }
     },
     {
+      "key": "common.store",
+      "namespace": "common",
+      "leaf": "store",
+      "segments": [
+        "common",
+        "store"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3474
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Opslag",
+        "fr": "Stockage",
+        "en": "Storage"
+      }
+    },
+    {
       "key": "common.storeNumber",
       "namespace": "common",
       "leaf": "storeNumber",
@@ -72387,6 +72597,36 @@
         "nl": "T.e.m.",
         "fr": "Jusqu'à et y compris",
         "en": "Up to and including"
+      }
+    },
+    {
+      "key": "common.upToDate",
+      "namespace": "common",
+      "leaf": "upToDate",
+      "segments": [
+        "common",
+        "upToDate"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3471
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Up-to-date",
+        "fr": "À jour",
+        "en": "Up to date"
       }
     },
     {
@@ -104833,7 +105073,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2423
+      "keyCount": 2431
     },
     {
       "name": "confirmation",

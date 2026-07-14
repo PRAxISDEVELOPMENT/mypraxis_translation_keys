@@ -5608,9 +5608,9 @@
   },
   {
     "key": "common.companyInfoTextExcellis",
-    "nl": "COMPNAY INFO TEXT EXCELLIS GOES HERE",
-    "fr": "COMPNAY INFO TEXT EXCELLIS GOES HERE",
-    "en": "COMPNAY INFO TEXT EXCELLIS GOES HERE",
+    "nl": "Professionele dienstverlener gespecialiseerd in wachtdiensten, permanentie en telefonische oproepverwerking.",
+    "fr": "Prestataire de services professionnel spécialisé dans les services de garde, la permanence et le traitement des appels téléphoniques.",
+    "en": "Professional service provider specializing in on-call services, permanent availability, and telephone call handling.",
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
@@ -32144,6 +32144,15 @@
     "nl": "Desktop Profit root werd aangepast.",
     "fr": "Le dossier racine Profit desktop a été modifié.",
     "en": "Desktop Profit root was changed.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.onlinePortalApplicationInfoExcellis",
+    "nl": "Online portaal voor het raadplegen en beheren van wachtdiensten en oproepcentrales bij ExCELLIS.",
+    "fr": "Portail en ligne pour consulter et gérer les services de garde et les centrales d’appels chez ExCELLIS.",
+    "en": "Online portal for consulting and managing on-call services and call centres at ExCELLIS.",
     "applications": [
       "mypraxis_web"
     ]

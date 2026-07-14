@@ -32156,5 +32156,59 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.app",
+    "nl": "App",
+    "fr": "Application",
+    "en": "App",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.error",
+    "nl": "Fout",
+    "fr": "Erreur",
+    "en": "Error",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.live",
+    "nl": "Live",
+    "fr": "Live",
+    "en": "Live",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.locale",
+    "nl": "Taal/regio",
+    "fr": "Langue/région",
+    "en": "Locale",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.platform",
+    "nl": "Platform",
+    "fr": "Plateforme",
+    "en": "Platform",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.test",
+    "nl": "Test",
+    "fr": "Test",
+    "en": "Test",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

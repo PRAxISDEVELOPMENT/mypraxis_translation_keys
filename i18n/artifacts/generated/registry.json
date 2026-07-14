@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3493,
-    "uniqueKeys": 3493,
+    "totalEntries": 3499,
+    "uniqueKeys": 3499,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -9037,6 +9037,36 @@
         "nl": "API versie",
         "fr": "Version API",
         "en": "API version"
+      }
+    },
+    {
+      "key": "common.app",
+      "namespace": "common",
+      "leaf": "app",
+      "segments": [
+        "common",
+        "app"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3494
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "App",
+        "fr": "Application",
+        "en": "App"
       }
     },
     {
@@ -30740,6 +30770,36 @@
       }
     },
     {
+      "key": "common.error",
+      "namespace": "common",
+      "leaf": "error",
+      "segments": [
+        "common",
+        "error"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3495
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Fout",
+        "fr": "Erreur",
+        "en": "Error"
+      }
+    },
+    {
       "key": "common.errorLoadAdditionalArrangementsForSection",
       "namespace": "common",
       "leaf": "errorLoadAdditionalArrangementsForSection",
@@ -43042,6 +43102,36 @@
       }
     },
     {
+      "key": "common.live",
+      "namespace": "common",
+      "leaf": "live",
+      "segments": [
+        "common",
+        "live"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3496
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Live",
+        "fr": "Live",
+        "en": "Live"
+      }
+    },
+    {
       "key": "common.liveAutolog",
       "namespace": "common",
       "leaf": "liveAutolog",
@@ -43221,6 +43311,36 @@
         "nl": "Lokale wijzigingen",
         "fr": "Modifications locales",
         "en": "Local changes"
+      }
+    },
+    {
+      "key": "common.locale",
+      "namespace": "common",
+      "leaf": "locale",
+      "segments": [
+        "common",
+        "locale"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3497
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Taal/regio",
+        "fr": "Langue/région",
+        "en": "Locale"
       }
     },
     {
@@ -55421,6 +55541,36 @@
         "nl": "Gepland",
         "fr": "Plannifié",
         "en": "Planned"
+      }
+    },
+    {
+      "key": "common.platform",
+      "namespace": "common",
+      "leaf": "platform",
+      "segments": [
+        "common",
+        "platform"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3498
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Platform",
+        "fr": "Plateforme",
+        "en": "Platform"
       }
     },
     {
@@ -68317,6 +68467,36 @@
         "nl": "Stopzetting aangevraagd op",
         "fr": "Résiliation demandée le",
         "en": "Termination requested on"
+      }
+    },
+    {
+      "key": "common.test",
+      "namespace": "common",
+      "leaf": "test",
+      "segments": [
+        "common",
+        "test"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3499
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Test",
+        "fr": "Test",
+        "en": "Test"
       }
     },
     {
@@ -105583,7 +105763,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2442
+      "keyCount": 2448
     },
     {
       "name": "confirmation",

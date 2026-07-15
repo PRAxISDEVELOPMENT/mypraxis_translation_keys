@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3499,
-    "uniqueKeys": 3499,
+    "totalEntries": 3511,
+    "uniqueKeys": 3511,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -16101,6 +16101,36 @@
       }
     },
     {
+      "key": "common.checking",
+      "namespace": "common",
+      "leaf": "checking",
+      "segments": [
+        "common",
+        "checking"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3507
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Controleren",
+        "fr": "Vérification",
+        "en": "Checking"
+      }
+    },
+    {
       "key": "common.children",
       "namespace": "common",
       "leaf": "children",
@@ -16159,6 +16189,36 @@
         "nl": "Desktop Profit root kiezen",
         "fr": "Choisir le dossier racine Profit desktop",
         "en": "Choose desktop Profit root"
+      }
+    },
+    {
+      "key": "common.chooseDeviceAndDownloadApp",
+      "namespace": "common",
+      "leaf": "chooseDeviceAndDownloadApp",
+      "segments": [
+        "common",
+        "chooseDeviceAndDownloadApp"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3502
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Kies je toestel en download de juiste desktop app.",
+        "fr": "Choisissez votre appareil et téléchargez la bonne application de bureau.",
+        "en": "Choose your device and download the correct desktop app."
       }
     },
     {
@@ -26551,6 +26611,66 @@
       }
     },
     {
+      "key": "common.desktopAppsDownload",
+      "namespace": "common",
+      "leaf": "desktopAppsDownload",
+      "segments": [
+        "common",
+        "desktopAppsDownload"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3500
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktop apps downloaden",
+        "fr": "Télécharger les applications de bureau",
+        "en": "Download desktop apps"
+      }
+    },
+    {
+      "key": "common.desktopAppTitle",
+      "namespace": "common",
+      "leaf": "desktopAppTitle",
+      "segments": [
+        "common",
+        "desktopAppTitle"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3501
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "{{productName}} desktop app",
+        "fr": "Application de bureau {{productName}}",
+        "en": "{{productName}} desktop app"
+      }
+    },
+    {
       "key": "common.desktopDiagnostics",
       "namespace": "common",
       "leaf": "desktopDiagnostics",
@@ -28479,6 +28599,36 @@
       }
     },
     {
+      "key": "common.downloadForPlatform",
+      "namespace": "common",
+      "leaf": "downloadForPlatform",
+      "segments": [
+        "common",
+        "downloadForPlatform"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3511
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "{{productName}} downloaden voor {{platform}}",
+        "fr": "Télécharger {{productName}} pour {{platform}}",
+        "en": "Download {{productName}} for {{platform}}"
+      }
+    },
+    {
       "key": "common.downloading",
       "namespace": "common",
       "leaf": "downloading",
@@ -28566,6 +28716,36 @@
         "nl": "Download PDF",
         "fr": "Télécharger en PDF",
         "en": "Download PDF"
+      }
+    },
+    {
+      "key": "common.downloadsNotPublished",
+      "namespace": "common",
+      "leaf": "downloadsNotPublished",
+      "segments": [
+        "common",
+        "downloadsNotPublished"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3508
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "De downloads zijn nog niet gepubliceerd.",
+        "fr": "Les téléchargements ne sont pas encore publiés.",
+        "en": "The downloads have not been published yet."
       }
     },
     {
@@ -39738,6 +39918,36 @@
       }
     },
     {
+      "key": "common.installerAvailable",
+      "namespace": "common",
+      "leaf": "installerAvailable",
+      "segments": [
+        "common",
+        "installerAvailable"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3504
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "{{count}} installer beschikbaar",
+        "fr": "{{count}} installateur disponible",
+        "en": "{{count}} installer available"
+      }
+    },
+    {
       "key": "common.installerBaseId",
       "namespace": "common",
       "leaf": "installerBaseId",
@@ -39977,6 +40187,36 @@
         "nl": "Installateurs",
         "fr": "Installateurs",
         "en": "Installers"
+      }
+    },
+    {
+      "key": "common.installersAvailable",
+      "namespace": "common",
+      "leaf": "installersAvailable",
+      "segments": [
+        "common",
+        "installersAvailable"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3505
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "{{count}} installers beschikbaar",
+        "fr": "{{count}} installateurs disponibles",
+        "en": "{{count}} installers available"
       }
     },
     {
@@ -43341,6 +43581,36 @@
         "nl": "Taal/regio",
         "fr": "Langue/région",
         "en": "Locale"
+      }
+    },
+    {
+      "key": "common.localTestModeShowsAllApps",
+      "namespace": "common",
+      "leaf": "localTestModeShowsAllApps",
+      "segments": [
+        "common",
+        "localTestModeShowsAllApps"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3503
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Lokale testmodus: alle desktop apps worden getoond.",
+        "fr": "Mode de test local : toutes les applications de bureau sont affichées.",
+        "en": "Local test mode: all desktop apps are shown."
       }
     },
     {
@@ -49714,6 +49984,36 @@
         "nl": "N.v.t.",
         "fr": "N/A",
         "en": "N/A"
+      }
+    },
+    {
+      "key": "common.notAvailable",
+      "namespace": "common",
+      "leaf": "notAvailable",
+      "segments": [
+        "common",
+        "notAvailable"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3510
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Niet beschikbaar",
+        "fr": "Non disponible",
+        "en": "Not available"
       }
     },
     {
@@ -58929,6 +59229,36 @@
         "nl": "Ontvangers",
         "fr": "Destinataires",
         "en": "Recipients"
+      }
+    },
+    {
+      "key": "common.recommended",
+      "namespace": "common",
+      "leaf": "recommended",
+      "segments": [
+        "common",
+        "recommended"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3509
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Aanbevolen",
+        "fr": "Recommandé",
+        "en": "Recommended"
       }
     },
     {
@@ -77036,6 +77366,36 @@
         "nl": "Echtgenoot/echtgenote gehandicapt?",
         "fr": "Conjoint oui ou non handicapé?",
         "en": "Wife/husband disabled?"
+      }
+    },
+    {
+      "key": "common.windowsAndMacos",
+      "namespace": "common",
+      "leaf": "windowsAndMacos",
+      "segments": [
+        "common",
+        "windowsAndMacos"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3506
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Windows en macOS",
+        "fr": "Windows et macOS",
+        "en": "Windows and macOS"
       }
     },
     {
@@ -105763,7 +106123,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2448
+      "keyCount": 2460
     },
     {
       "name": "confirmation",

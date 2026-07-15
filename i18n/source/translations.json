@@ -32210,5 +32210,113 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.desktopAppsDownload",
+    "nl": "Desktop apps downloaden",
+    "fr": "Télécharger les applications de bureau",
+    "en": "Download desktop apps",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopAppTitle",
+    "nl": "{{productName}} desktop app",
+    "fr": "Application de bureau {{productName}}",
+    "en": "{{productName}} desktop app",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.chooseDeviceAndDownloadApp",
+    "nl": "Kies je toestel en download de juiste desktop app.",
+    "fr": "Choisissez votre appareil et téléchargez la bonne application de bureau.",
+    "en": "Choose your device and download the correct desktop app.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.localTestModeShowsAllApps",
+    "nl": "Lokale testmodus: alle desktop apps worden getoond.",
+    "fr": "Mode de test local : toutes les applications de bureau sont affichées.",
+    "en": "Local test mode: all desktop apps are shown.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.installerAvailable",
+    "nl": "{{count}} installer beschikbaar",
+    "fr": "{{count}} installateur disponible",
+    "en": "{{count}} installer available",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.installersAvailable",
+    "nl": "{{count}} installers beschikbaar",
+    "fr": "{{count}} installateurs disponibles",
+    "en": "{{count}} installers available",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.windowsAndMacos",
+    "nl": "Windows en macOS",
+    "fr": "Windows et macOS",
+    "en": "Windows and macOS",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.checking",
+    "nl": "Controleren",
+    "fr": "Vérification",
+    "en": "Checking",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.downloadsNotPublished",
+    "nl": "De downloads zijn nog niet gepubliceerd.",
+    "fr": "Les téléchargements ne sont pas encore publiés.",
+    "en": "The downloads have not been published yet.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.recommended",
+    "nl": "Aanbevolen",
+    "fr": "Recommandé",
+    "en": "Recommended",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.notAvailable",
+    "nl": "Niet beschikbaar",
+    "fr": "Non disponible",
+    "en": "Not available",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.downloadForPlatform",
+    "nl": "{{productName}} downloaden voor {{platform}}",
+    "fr": "Télécharger {{productName}} pour {{platform}}",
+    "en": "Download {{productName}} for {{platform}}",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

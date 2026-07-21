@@ -32318,5 +32318,59 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.desktopUpdateAvailable",
+    "nl": "Desktopupdate beschikbaar",
+    "fr": "Mise à jour de l’application de bureau disponible",
+    "en": "Desktop update available",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopUpdateInstalling",
+    "nl": "Desktopupdate wordt geïnstalleerd",
+    "fr": "Installation de la mise à jour de l’application de bureau",
+    "en": "Installing desktop update",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.installed",
+    "nl": "Geïnstalleerd",
+    "fr": "Installé",
+    "en": "Installed",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.desktopAppRestartsAutomaticallyAfterUpdate",
+    "nl": "De desktopapp wordt na de update automatisch opnieuw opgestart.",
+    "fr": "L’application de bureau redémarrera automatiquement après la mise à jour.",
+    "en": "The desktop app will restart automatically after the update.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.desktopUpdateInstallsAutomatically",
+    "nl": "De desktopupdate wordt automatisch geïnstalleerd.",
+    "fr": "La mise à jour de l’application de bureau sera installée automatiquement.",
+    "en": "The desktop update will be installed automatically.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.noDesktopUpdateFound",
+    "nl": "Geen desktopupdate gevonden.",
+    "fr": "Aucune mise à jour de l’application de bureau trouvée.",
+    "en": "No desktop update found.",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

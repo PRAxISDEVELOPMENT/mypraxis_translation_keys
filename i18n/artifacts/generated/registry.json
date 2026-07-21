@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3511,
-    "uniqueKeys": 3511,
+    "totalEntries": 3517,
+    "uniqueKeys": 3517,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -26821,6 +26821,66 @@
       }
     },
     {
+      "key": "common.desktopUpdateAvailable",
+      "namespace": "common",
+      "leaf": "desktopUpdateAvailable",
+      "segments": [
+        "common",
+        "desktopUpdateAvailable"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3512
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktopupdate beschikbaar",
+        "fr": "Mise à jour de l’application de bureau disponible",
+        "en": "Desktop update available"
+      }
+    },
+    {
+      "key": "common.desktopUpdateInstalling",
+      "namespace": "common",
+      "leaf": "desktopUpdateInstalling",
+      "segments": [
+        "common",
+        "desktopUpdateInstalling"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3513
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Desktopupdate wordt geïnstalleerd",
+        "fr": "Installation de la mise à jour de l’application de bureau",
+        "en": "Installing desktop update"
+      }
+    },
+    {
       "key": "common.desRequired",
       "namespace": "common",
       "leaf": "desRequired",
@@ -39824,6 +39884,36 @@
         "nl": "Installatiegegevens",
         "fr": "Données d'installation",
         "en": "Installation data"
+      }
+    },
+    {
+      "key": "common.installed",
+      "namespace": "common",
+      "leaf": "installed",
+      "segments": [
+        "common",
+        "installed"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3514
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Geïnstalleerd",
+        "fr": "Installé",
+        "en": "Installed"
       }
     },
     {
@@ -87453,6 +87543,66 @@
       }
     },
     {
+      "key": "info.desktopAppRestartsAutomaticallyAfterUpdate",
+      "namespace": "info",
+      "leaf": "desktopAppRestartsAutomaticallyAfterUpdate",
+      "segments": [
+        "info",
+        "desktopAppRestartsAutomaticallyAfterUpdate"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3515
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "De desktopapp wordt na de update automatisch opnieuw opgestart.",
+        "fr": "L’application de bureau redémarrera automatiquement après la mise à jour.",
+        "en": "The desktop app will restart automatically after the update."
+      }
+    },
+    {
+      "key": "info.desktopUpdateInstallsAutomatically",
+      "namespace": "info",
+      "leaf": "desktopUpdateInstallsAutomatically",
+      "segments": [
+        "info",
+        "desktopUpdateInstallsAutomatically"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3516
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "De desktopupdate wordt automatisch geïnstalleerd.",
+        "fr": "La mise à jour de l’application de bureau sera installée automatiquement.",
+        "en": "The desktop update will be installed automatically."
+      }
+    },
+    {
       "key": "info.disableAutomaticallySaveReportsExcelInMyPRAxIS",
       "namespace": "info",
       "leaf": "disableAutomaticallySaveReportsExcelInMyPRAxIS",
@@ -89988,6 +90138,36 @@
         "nl": "Er zijn groepen gedefinieerd, maar er zijn geen klanten toegewezen aan de desbetreffende groep(en)",
         "fr": "Des groupes ont été définis mais aucun client n'a été attribué au(x) groupe(s) correpondant(s).",
         "en": "Groups were defined but no customers were assigned to the respective group(s)"
+      }
+    },
+    {
+      "key": "info.noDesktopUpdateFound",
+      "namespace": "info",
+      "leaf": "noDesktopUpdateFound",
+      "segments": [
+        "info",
+        "noDesktopUpdateFound"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3517
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Geen desktopupdate gevonden.",
+        "fr": "Aucune mise à jour de l’application de bureau trouvée.",
+        "en": "No desktop update found."
       }
     },
     {
@@ -106123,7 +106303,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2460
+      "keyCount": 2463
     },
     {
       "name": "confirmation",
@@ -106144,7 +106324,7 @@
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 301
+      "keyCount": 304
     },
     {
       "name": "metadata",

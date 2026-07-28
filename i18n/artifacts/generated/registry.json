@@ -73147,6 +73147,7 @@
         "updateAvailableInstallAndRestart"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",

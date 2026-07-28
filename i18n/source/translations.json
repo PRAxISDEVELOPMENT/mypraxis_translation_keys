@@ -31558,7 +31558,8 @@
     "fr": "Mise à jour disponible. Installez et redémarrez l’application.",
     "en": "Update available. Install and restart the application.",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {

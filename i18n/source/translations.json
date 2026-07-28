@@ -27681,15 +27681,6 @@
     ]
   },
   {
-    "key": "info.updateReadyRestartMessage",
-    "nl": "De update staat klaar. De applicatie wordt kort opnieuw gestart om deze toe te passen.",
-    "fr": "La mise à jour est prête. L’application redémarrera brièvement pour l’appliquer.",
-    "en": "The update is ready. The application will briefly restart to apply it.",
-    "applications": [
-      "mypraxis_app"
-    ]
-  },
-  {
     "key": "info.uponReceiptOurAdministrationFinancePraxisGroupEuWillHandleTheTerminationRequestAndProvideFeedbackToOurMutualCustomer",
     "nl": "Na ontvangst zal onze administratie (finance@praxis-group.eu) de aanvraag tot stopzetting behartigen en het verdere verloop aan onze gemeenschappelijke klant terugkoppelen.",
     "fr": "Après réception, notre service administratif (finance@praxis-group.eu) traitera la demande de résiliation et informera notre client commun de la suite de la procédure.",
@@ -31568,6 +31559,15 @@
     "en": "Update available. Install and restart the application.",
     "applications": [
       "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updateReadyRestartMessage",
+    "nl": "Een nieuwe update is gedownload en klaar om te installeren. Kies '{{updateAction}}' om de applicatie opnieuw op te starten en de update toe te passen, of '{{laterAction}}' om dit uit te stellen.",
+    "fr": "Une nouvelle mise à jour a été téléchargée et est prête à être installée. Choisissez « {{updateAction}} » pour redémarrer l’application et l’appliquer, ou « {{laterAction}} » pour reporter l’installation.",
+    "en": "A new update has been downloaded and is ready to install. Choose '{{updateAction}}' to restart the application and apply the update, or '{{laterAction}}' to postpone it.",
+    "applications": [
+      "mypraxis_app"
     ]
   },
   {

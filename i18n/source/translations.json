@@ -31563,9 +31563,18 @@
   },
   {
     "key": "common.updateReadyRestartMessage",
-    "nl": "Een nieuwe update is gedownload en klaar om te installeren. Kies '{{updateAction}}' om de applicatie opnieuw op te starten en de update toe te passen, of '{{laterAction}}' om dit uit te stellen.",
-    "fr": "Une nouvelle mise à jour a été téléchargée et est prête à être installée. Choisissez « {{updateAction}} » pour redémarrer l’application et l’appliquer, ou « {{laterAction}} » pour reporter l’installation.",
-    "en": "A new update has been downloaded and is ready to install. Choose '{{updateAction}}' to restart the application and apply the update, or '{{laterAction}}' to postpone it.",
+    "nl": "De update is gedownload en klaar om te installeren. Kies ‘{{updateAction}}’ om de app opnieuw op te starten en de update toe te passen. Kies ‘{{laterAction}}’ om dit uit te stellen.",
+    "fr": "La mise à jour a été téléchargée et est prête à être installée. Choisissez « {{updateAction}} » pour redémarrer l’application et appliquer la mise à jour. Choisissez « {{laterAction}} » pour reporter l’installation.",
+    "en": "The update has been downloaded and is ready to install. Choose ‘{{updateAction}}’ to restart the application and apply the update. Choose ‘{{laterAction}}’ to postpone it.",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.storeUpdateAvailableMessage",
+    "nl": "Er is een nieuwe versie van MyPRAxIS beschikbaar in {{storeName}}. Kies ‘{{updateAction}}’ om {{storeName}} te openen en de nieuwste versie te installeren. Kies ‘{{laterAction}}’ om dit uit te stellen.",
+    "fr": "Une nouvelle version de MyPRAxIS est disponible dans {{storeName}}. Choisissez « {{updateAction}} » pour ouvrir {{storeName}} et installer la dernière version. Choisissez « {{laterAction}} » pour reporter l’installation.",
+    "en": "A new version of MyPRAxIS is available in {{storeName}}. Choose ‘{{updateAction}}’ to open {{storeName}} and install the latest version. Choose ‘{{laterAction}}’ to postpone it.",
     "applications": [
       "mypraxis_app"
     ]
@@ -31988,8 +31997,8 @@
   },
   {
     "key": "common.lastStoreUpdateCheck",
-    "nl": "Laatste controle op store-updates",
-    "fr": "Dernière vérification des mises à jour du store",
+    "nl": "Laatste controle op store-update",
+    "fr": "Dernière vérification de la mise à jour du store",
     "en": "Last store update check",
     "applications": [
       "mypraxis_app"
@@ -31997,8 +32006,8 @@
   },
   {
     "key": "common.lastOtaUpdateCheck",
-    "nl": "Laatste controle op OTA-updates",
-    "fr": "Dernière vérification des mises à jour OTA",
+    "nl": "Laatste controle op OTA-update",
+    "fr": "Dernière vérification de la mise à jour OTA",
     "en": "Last OTA update check",
     "applications": [
       "mypraxis_app"

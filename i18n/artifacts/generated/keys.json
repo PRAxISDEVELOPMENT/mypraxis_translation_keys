@@ -2229,6 +2229,7 @@
   "common.stopClientImmediately",
   "common.store",
   "common.storeNumber",
+  "common.storeUpdateAvailableMessage",
   "common.street",
   "common.streetName",
   "common.strikethrough",

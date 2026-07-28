@@ -15,8 +15,8 @@
     "unknown"
   ],
   "totals": {
-    "sourceEntries": 3522,
-    "uniqueKeys": 3522,
+    "sourceEntries": 3523,
+    "uniqueKeys": 3523,
     "namespaces": 11,
     "warnings": 4,
     "errors": 0,
@@ -31,7 +31,7 @@
     "common": 2468,
     "confirmation": 16,
     "error": 204,
-    "info": 304,
+    "info": 305,
     "metadata": 0,
     "notification": 16,
     "status": 4,

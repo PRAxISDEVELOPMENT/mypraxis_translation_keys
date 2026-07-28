@@ -3096,6 +3096,7 @@
   "info.translationWorkflowIsRunning",
   "info.transmissionMethodIsNotSupported",
   "info.updateAvailable",
+  "info.updateReadyRestartMessage",
   "info.uponReceiptOurAdministrationFinancePraxisGroupEuWillHandleTheTerminationRequestAndProvideFeedbackToOurMutualCustomer",
   "info.uponReceiptOurAdministrationFinancePraxisGroupEuWillHandleYourTerminationRequestAndInformYouOfTheFurtherProcedure",
   "info.userDoesNotYetHaveAnAccountForTheApplicationAccountRequestsCanOnlyBeMadeViaTheWebPortal",

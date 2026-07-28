@@ -27681,6 +27681,15 @@
     ]
   },
   {
+    "key": "info.updateReadyRestartMessage",
+    "nl": "De update staat klaar. De applicatie wordt kort opnieuw gestart om deze toe te passen.",
+    "fr": "La mise à jour est prête. L’application redémarrera brièvement pour l’appliquer.",
+    "en": "The update is ready. The application will briefly restart to apply it.",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
     "key": "info.uponReceiptOurAdministrationFinancePraxisGroupEuWillHandleTheTerminationRequestAndProvideFeedbackToOurMutualCustomer",
     "nl": "Na ontvangst zal onze administratie (finance@praxis-group.eu) de aanvraag tot stopzetting behartigen en het verdere verloop aan onze gemeenschappelijke klant terugkoppelen.",
     "fr": "Après réception, notre service administratif (finance@praxis-group.eu) traitera la demande de résiliation et informera notre client commun de la suite de la procédure.",
@@ -31558,8 +31567,7 @@
     "fr": "Mise à jour disponible. Installez et redémarrez l’application.",
     "en": "Update available. Install and restart the application.",
     "applications": [
-      "mypraxis_web",
-      "mypraxis_app"
+      "mypraxis_web"
     ]
   },
   {

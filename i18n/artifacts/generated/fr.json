@@ -3107,6 +3107,7 @@
     "translationWorkflowIsRunning": "Les traductions sont en cours de traitement",
     "transmissionMethodIsNotSupported": "Cette méthode de transmission n'est pas prise en charge",
     "updateAvailable": "Mise à jour disponible",
+    "updateReadyRestartMessage": "La mise à jour est prête. L’application redémarrera brièvement pour l’appliquer.",
     "uponReceiptOurAdministrationFinancePraxisGroupEuWillHandleTheTerminationRequestAndProvideFeedbackToOurMutualCustomer": "Après réception, notre service administratif (finance@praxis-group.eu) traitera la demande de résiliation et informera notre client commun de la suite de la procédure.",
     "uponReceiptOurAdministrationFinancePraxisGroupEuWillHandleYourTerminationRequestAndInformYouOfTheFurtherProcedure": "Après réception, notre service administratif (finance@praxis-group.eu) traitera votre demande de résiliation et vous informera de la suite de la procédure.",
     "userDoesNotYetHaveAnAccountForTheApplicationAccountRequestsCanOnlyBeMadeViaTheWebPortal": "Cet utilisateur n’a pas encore de compte pour l’application. Les demandes de compte ne peuvent être effectuées que via le portail web.",

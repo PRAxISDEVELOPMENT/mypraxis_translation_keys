@@ -32381,5 +32381,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.filterOnZoneType",
+    "nl": "Filteren op zone",
+    "fr": "Filtrer par zone",
+    "en": "Filter by zone",
+    "applications": [
+      "mypraxis_app"
+    ]
   }
 ]

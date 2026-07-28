@@ -1112,6 +1112,7 @@
   "common.filterOnPriority",
   "common.filterOnStatus",
   "common.filterOnType",
+  "common.filterOnZoneType",
   "common.filters",
   "common.filterSellingPrices",
   "common.finalAmountToBePaidOutToTheInstallerAsCommission",

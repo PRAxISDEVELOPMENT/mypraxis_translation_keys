@@ -31978,6 +31978,33 @@
     ]
   },
   {
+    "key": "common.lastStoreUpdateCheck",
+    "nl": "Laatste controle op store-updates",
+    "fr": "Dernière vérification des mises à jour du store",
+    "en": "Last store update check",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.lastOtaUpdateCheck",
+    "nl": "Laatste controle op OTA-updates",
+    "fr": "Dernière vérification des mises à jour OTA",
+    "en": "Last OTA update check",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.notCheckedYet",
+    "nl": "Nog niet gecontroleerd",
+    "fr": "Pas encore vérifié",
+    "en": "Not checked yet",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
     "key": "common.store",
     "nl": "Opslag",
     "fr": "Stockage",

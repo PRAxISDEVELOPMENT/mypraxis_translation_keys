@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3519,
-    "uniqueKeys": 3519,
+    "totalEntries": 3522,
+    "uniqueKeys": 3522,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -9052,7 +9052,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3494
+        3497
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -16113,7 +16113,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3507
+        3510
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -16174,7 +16174,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3488
+        3491
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -16204,7 +16204,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3502
+        3505
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -26623,7 +26623,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3500
+        3503
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -26653,7 +26653,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3501
+        3504
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -26833,7 +26833,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3512
+        3515
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -26863,7 +26863,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3513
+        3516
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -28671,7 +28671,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3511
+        3514
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -28731,7 +28731,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3482
+        3485
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -28791,7 +28791,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3508
+        3511
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -31022,7 +31022,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3495
+        3498
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -32077,7 +32077,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3477
+        3480
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -33738,7 +33738,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3519
+        3522
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -38575,7 +38575,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3484
+        3487
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -39929,7 +39929,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3514
+        3517
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -40050,7 +40050,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3504
+        3507
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -40322,7 +40322,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3505
+        3508
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -41627,7 +41627,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3483
+        3486
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -42371,6 +42371,36 @@
       }
     },
     {
+      "key": "common.lastOtaUpdateCheck",
+      "namespace": "common",
+      "leaf": "lastOtaUpdateCheck",
+      "segments": [
+        "common",
+        "lastOtaUpdateCheck"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3475
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Laatste controle op OTA-updates",
+        "fr": "Dernière vérification des mises à jour OTA",
+        "en": "Last OTA update check"
+      }
+    },
+    {
       "key": "common.lastPollingReceived",
       "namespace": "common",
       "leaf": "lastPollingReceived",
@@ -42491,6 +42521,36 @@
         "nl": "Laatste signaal ontvangen",
         "fr": "Dernier signal reçu",
         "en": "Last signal received"
+      }
+    },
+    {
+      "key": "common.lastStoreUpdateCheck",
+      "namespace": "common",
+      "leaf": "lastStoreUpdateCheck",
+      "segments": [
+        "common",
+        "lastStoreUpdateCheck"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3474
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Laatste controle op store-updates",
+        "fr": "Dernière vérification des mises à jour du store",
+        "en": "Last store update check"
       }
     },
     {
@@ -43474,7 +43534,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3496
+        3499
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -43686,7 +43746,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3497
+        3500
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -43716,7 +43776,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3503
+        3506
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -48124,7 +48184,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3475
+        3478
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -50119,7 +50179,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3510
+        3513
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -50134,6 +50194,36 @@
         "nl": "Niet beschikbaar",
         "fr": "Non disponible",
         "en": "Not available"
+      }
+    },
+    {
+      "key": "common.notCheckedYet",
+      "namespace": "common",
+      "leaf": "notCheckedYet",
+      "segments": [
+        "common",
+        "notCheckedYet"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3476
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Nog niet gecontroleerd",
+        "fr": "Pas encore vérifié",
+        "en": "Not checked yet"
       }
     },
     {
@@ -52624,7 +52714,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3486
+        3489
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -55976,7 +56066,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3498
+        3501
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -58007,7 +58097,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3476
+        3479
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -59364,7 +59454,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3509
+        3512
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -61811,7 +61901,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3487
+        3490
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -61841,7 +61931,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3489
+        3492
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -65072,7 +65162,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3485
+        3488
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -67327,7 +67417,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3474
+        3477
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -68054,7 +68144,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3518
+        3521
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -68962,7 +69052,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3499
+        3502
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -73181,7 +73271,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3480
+        3483
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -73301,7 +73391,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3481
+        3484
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -77531,7 +77621,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3506
+        3509
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -80697,7 +80787,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3479
+        3482
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -87615,7 +87705,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3515
+        3518
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -87645,7 +87735,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3516
+        3519
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -90213,7 +90303,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3517
+        3520
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -90423,7 +90513,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3493
+        3496
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -97782,7 +97872,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3490
+        3493
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -97812,7 +97902,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3492
+        3495
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -97842,7 +97932,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3491
+        3494
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -97872,7 +97962,7 @@
       ],
       "namespaceStatus": "active",
       "sourceEntries": [
-        3478
+        3481
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
@@ -106363,7 +106453,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2465
+      "keyCount": 2468
     },
     {
       "name": "confirmation",

@@ -638,6 +638,15 @@
     ]
   },
   {
+    "key": "authentication.loggedOut",
+    "nl": "Uitgelogd",
+    "fr": "Déconnecté",
+    "en": "Logged out",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "authentication.login",
     "nl": "Aanmelden",
     "fr": "Se connecter",
@@ -1620,6 +1629,15 @@
     "nl": "Activatiedatum & tijdstip",
     "fr": "Date/heure d’activation",
     "en": "Activation date/time",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.active",
+    "nl": "Actief",
+    "fr": "Actif",
+    "en": "Active",
     "applications": [
       "mypraxis_web"
     ]
@@ -2775,6 +2793,15 @@
     ]
   },
   {
+    "key": "common.app",
+    "nl": "App",
+    "fr": "Application",
+    "en": "App",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.application",
     "nl": "Applicatie",
     "fr": "Application",
@@ -2831,10 +2858,28 @@
     ]
   },
   {
+    "key": "common.appVersion",
+    "nl": "Appversie",
+    "fr": "Version de l’application",
+    "en": "App version",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.aPrimaryOrBackupContactWasAssigned",
     "nl": "Er werd een primair of back-up contact toegekend.",
     "fr": "Un contact principal ou suppléant a été désigné.",
     "en": "A primary or back-up contact was assigned.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.architecture",
+    "nl": "Architectuur",
+    "fr": "Architecture",
+    "en": "Architecture",
     "applications": [
       "mypraxis_web"
     ]
@@ -4895,6 +4940,15 @@
     ]
   },
   {
+    "key": "common.checking",
+    "nl": "Controleren",
+    "fr": "Vérification",
+    "en": "Checking",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.children",
     "nl": "Kinderen",
     "fr": "Enfants",
@@ -4902,6 +4956,24 @@
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.chooseDesktopProfitRoot",
+    "nl": "Desktop Profit root kiezen",
+    "fr": "Choisir le dossier racine Profit desktop",
+    "en": "Choose desktop Profit root",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.chooseDeviceAndDownloadApp",
+    "nl": "Kies je toestel en download de juiste desktop app.",
+    "fr": "Choisissez votre appareil et téléchargez la bonne application de bureau.",
+    "en": "Choose your device and download the correct desktop app.",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -5122,6 +5194,16 @@
     "en": "Client details",
     "applications": [
       "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.clientDoesntUseEmail",
+    "nl": "Klant gebruikt geen e-mail",
+    "fr": "Le client n’utilise pas l’e-mail",
+    "en": "Client does not use email",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -7578,6 +7660,15 @@
     ]
   },
   {
+    "key": "common.deleted",
+    "nl": "Verwijderd",
+    "fr": "Supprimé",
+    "en": "Deleted",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.deleteDailyEmailAddress",
     "nl": "Dagelijks e-mailadres verwijderen",
     "fr": "Supprimer l'adresse pour l'envoi de l'e-mail quotidien",
@@ -8039,6 +8130,96 @@
     "en": "Deselect all",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.desktopApp",
+    "nl": "Desktop app",
+    "fr": "Application desktop",
+    "en": "Desktop app",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopAppsDownload",
+    "nl": "Desktop apps downloaden",
+    "fr": "Télécharger les applications de bureau",
+    "en": "Download desktop apps",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopAppTitle",
+    "nl": "{{productName}} desktop app",
+    "fr": "Application de bureau {{productName}}",
+    "en": "{{productName}} desktop app",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopDiagnostics",
+    "nl": "Desktopdiagnose",
+    "fr": "Diagnostic desktop",
+    "en": "Desktop diagnostics",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopInformationLoading",
+    "nl": "Desktopinformatie laden...",
+    "fr": "Chargement des informations desktop...",
+    "en": "Loading desktop information...",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopRuntime",
+    "nl": "Desktopruntime",
+    "fr": "Runtime desktop",
+    "en": "Desktop runtime",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopTestUpdates",
+    "nl": "Desktop test updates",
+    "fr": "Mises à jour de test desktop",
+    "en": "Desktop test updates",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopUpdate",
+    "nl": "Desktop update",
+    "fr": "Mise à jour desktop",
+    "en": "Desktop update",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopUpdateAvailable",
+    "nl": "Desktopupdate beschikbaar",
+    "fr": "Mise à jour de l’application de bureau disponible",
+    "en": "Desktop update available",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.desktopUpdateInstalling",
+    "nl": "Desktopupdate wordt geïnstalleerd",
+    "fr": "Installation de la mise à jour de l’application de bureau",
+    "en": "Installing desktop update",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -8581,6 +8762,15 @@
     ]
   },
   {
+    "key": "common.downloadForPlatform",
+    "nl": "{{productName}} downloaden voor {{platform}}",
+    "fr": "Télécharger {{productName}} pour {{platform}}",
+    "en": "Download {{productName}} for {{platform}}",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.downloading",
     "nl": "Downloaden",
     "fr": "Téléchargement",
@@ -8590,10 +8780,28 @@
     ]
   },
   {
+    "key": "common.downloadLocation",
+    "nl": "Downloadlocatie",
+    "fr": "Emplacement de téléchargement",
+    "en": "Download location",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.downloadPdf",
     "nl": "Download PDF",
     "fr": "Télécharger en PDF",
     "en": "Download PDF",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.downloadsNotPublished",
+    "nl": "De downloads zijn nog niet gepubliceerd.",
+    "fr": "Les téléchargements ne sont pas encore publiés.",
+    "en": "The downloads have not been published yet.",
     "applications": [
       "mypraxis_web"
     ]
@@ -8624,6 +8832,15 @@
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.duress",
+    "nl": "Dwang",
+    "fr": "Contrainte",
+    "en": "Duress",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -9258,6 +9475,15 @@
     ]
   },
   {
+    "key": "common.error",
+    "nl": "Fout",
+    "fr": "Erreur",
+    "en": "Error",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.errorLoadAdditionalArrangementsForSection",
     "nl": "Aanvullende regelingen voor deze sectie konden niet worden geladen.",
     "fr": "Impossible de charger les arrangements supplémentaires pour cette section.",
@@ -9413,6 +9639,15 @@
     ]
   },
   {
+    "key": "common.excellisEmployees",
+    "nl": "Excellis medewerkers",
+    "fr": "Collaborateurs Excellis",
+    "en": "Excellis employees",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.exceptionFound",
     "nl": "Uitzondering gevonden",
     "fr": "Exception détectée",
@@ -9462,6 +9697,15 @@
     "nl": "Exclusief alarmtype",
     "fr": "Type d'alarme exclusif",
     "en": "Exclusive alarm type",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.executableExtension",
+    "nl": "Executable-extensie",
+    "fr": "Extension exécutable",
+    "en": "Executable extension",
     "applications": [
       "mypraxis_web"
     ]
@@ -9548,6 +9792,15 @@
     "en": "Export",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.exportDesktopSupportLogs",
+    "nl": "Desktop supportlogs exporteren",
+    "fr": "Exporter les logs support desktop",
+    "en": "Export desktop support logs",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -10045,6 +10298,15 @@
     "en": "Filter on type",
     "applications": [
       "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.filterOnZoneType",
+    "nl": "Filteren op zone",
+    "fr": "Filtrer par zone",
+    "en": "Filter by zone",
+    "applications": [
+      "mypraxis_app"
     ]
   },
   {
@@ -10749,6 +11011,15 @@
     ]
   },
   {
+    "key": "common.globalShortcut",
+    "nl": "Globale sneltoets",
+    "fr": "Raccourci global",
+    "en": "Global shortcut",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.globalUse",
     "nl": "Globaal gebruik",
     "fr": "Utilisation globale",
@@ -11173,6 +11444,15 @@
     ]
   },
   {
+    "key": "common.hostname",
+    "nl": "Hostnaam",
+    "fr": "Nom d’hôte",
+    "en": "Hostname",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.hour",
     "nl": "Uur",
     "fr": "Heure",
@@ -11493,6 +11773,15 @@
     "nl": "Importeren of manueel",
     "fr": "Importation ou manuellement",
     "en": "Import or manual",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.inactive",
+    "nl": "Inactief",
+    "fr": "Inactif",
+    "en": "Inactive",
     "applications": [
       "mypraxis_web"
     ]
@@ -11860,6 +12149,15 @@
     ]
   },
   {
+    "key": "common.installAndRestart",
+    "nl": "Installeren en herstarten",
+    "fr": "Installer et redémarrer",
+    "en": "Install and restart",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.installation",
     "nl": "Installatie",
     "fr": "Installation",
@@ -11889,6 +12187,15 @@
     ]
   },
   {
+    "key": "common.installed",
+    "nl": "Geïnstalleerd",
+    "fr": "Installé",
+    "en": "Installed",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.installedSystemAtCustomer",
     "nl": "Dit is het bij de klant geïnstalleerd systeem.",
     "fr": "Voici le système installé chez le client",
@@ -11914,6 +12221,15 @@
     "en": "Installer Acces",
     "applications": [
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.installerAvailable",
+    "nl": "{{count}} installer beschikbaar",
+    "fr": "{{count}} installateur disponible",
+    "en": "{{count}} installer available",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -11986,6 +12302,15 @@
     "nl": "Installateurs",
     "fr": "Installateurs",
     "en": "Installers",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.installersAvailable",
+    "nl": "{{count}} installers beschikbaar",
+    "fr": "{{count}} installateurs disponibles",
+    "en": "{{count}} installers available",
     "applications": [
       "mypraxis_web"
     ]
@@ -12384,6 +12709,15 @@
     ]
   },
   {
+    "key": "common.keyboardShortcuts",
+    "nl": "Sneltoetsen",
+    "fr": "Raccourcis clavier",
+    "en": "Keyboard shortcuts",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.keywords",
     "nl": "Trefwoorden",
     "fr": "Mots-clés",
@@ -12606,6 +12940,15 @@
     ]
   },
   {
+    "key": "common.lastOtaUpdateCheck",
+    "nl": "Laatste controle op OTA-update",
+    "fr": "Dernière vérification de la mise à jour OTA",
+    "en": "Last OTA update check",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
     "key": "common.lastPollingReceived",
     "nl": "Laatste polling ontvangen",
     "fr": "Dernier polling reçu le",
@@ -12645,10 +12988,37 @@
     ]
   },
   {
+    "key": "common.lastStoreUpdateCheck",
+    "nl": "Laatste controle op store-update",
+    "fr": "Dernière vérification de la mise à jour du store",
+    "en": "Last store update check",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
     "key": "common.lastUpdate",
     "nl": "Laatste update",
     "fr": "Dernière mise à jour",
     "en": "Last update",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.lastUpdateCheck",
+    "nl": "Laatste updatecontrole",
+    "fr": "Dernière vérification de mise à jour",
+    "en": "Last update check",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.lastUpdateStatus",
+    "nl": "Laatste updatestatus",
+    "fr": "Dernier statut de mise à jour",
+    "en": "Last update status",
     "applications": [
       "mypraxis_web"
     ]
@@ -12752,6 +13122,15 @@
     "en": "Linecards",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.lineEnding",
+    "nl": "Line ending",
+    "fr": "Fin de ligne",
+    "en": "Line ending",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -12914,6 +13293,15 @@
     ]
   },
   {
+    "key": "common.live",
+    "nl": "Live",
+    "fr": "Live",
+    "en": "Live",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.liveAutolog",
     "nl": "Live autolog",
     "fr": "Autolog en direct",
@@ -12928,6 +13316,24 @@
     "nl": "Live events",
     "fr": "Événements en direct",
     "en": "Live events",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.liveUpdatesActive",
+    "nl": "Live updates actief",
+    "fr": "Mises à jour live actives",
+    "en": "Live updates active",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.liveVersion",
+    "nl": "live versie",
+    "fr": "version de production",
+    "en": "live version",
     "applications": [
       "mypraxis_web"
     ]
@@ -12949,6 +13355,24 @@
     "en": "Local changes",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.locale",
+    "nl": "Taal/regio",
+    "fr": "Langue/région",
+    "en": "Locale",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.localTestModeShowsAllApps",
+    "nl": "Lokale testmodus: alle desktop apps worden getoond.",
+    "fr": "Mode de test local : toutes les applications de bureau sont affichées.",
+    "en": "Local test mode: all desktop apps are shown.",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -13011,6 +13435,15 @@
     "nl": "Logo installateur",
     "fr": "Logo de l'installateur",
     "en": "Logo installer",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.logout",
+    "nl": "Uitloggen",
+    "fr": "Déconnexion",
+    "en": "Logout",
     "applications": [
       "mypraxis_web"
     ]
@@ -14276,6 +14709,15 @@
     ]
   },
   {
+    "key": "common.nativeNotifications",
+    "nl": "Native meldingen",
+    "fr": "Notifications natives",
+    "en": "Native notifications",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.natureOfTheGood",
     "nl": "Aard van het goed",
     "fr": "Nature du bien",
@@ -14336,6 +14778,15 @@
     "nl": "Navigeer naar installateur - organisatie",
     "fr": "Accéder à l'installateur - organisation",
     "en": "Navigate to installer - organisation",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.new",
+    "nl": "Nieuw",
+    "fr": "Nouveau",
+    "en": "New",
     "applications": [
       "mypraxis_web"
     ]
@@ -14864,6 +15315,24 @@
     "en": "N/A",
     "applications": [
       "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.notAvailable",
+    "nl": "Niet beschikbaar",
+    "fr": "Non disponible",
+    "en": "Not available",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.notCheckedYet",
+    "nl": "Nog niet gecontroleerd",
+    "fr": "Pas encore vérifié",
+    "en": "Not checked yet",
+    "applications": [
+      "mypraxis_app"
     ]
   },
   {
@@ -15530,6 +15999,15 @@
     ]
   },
   {
+    "key": "common.openApp",
+    "nl": "App openen",
+    "fr": "Ouvrir l’application",
+    "en": "Open app",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.openDetails",
     "nl": "Open details",
     "fr": "Voir les détails",
@@ -15606,6 +16084,15 @@
     "nl": "Open tickets: {{value}}",
     "fr": "Tickets ouverts : {{value}}",
     "en": "Open tickets: {{value}}",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.openWindows",
+    "nl": "Open vensters",
+    "fr": "Fenêtres ouvertes",
+    "en": "Open windows",
     "applications": [
       "mypraxis_web"
     ]
@@ -15794,12 +16281,39 @@
     ]
   },
   {
+    "key": "common.osFamily",
+    "nl": "OS-familie",
+    "fr": "Famille d’OS",
+    "en": "OS family",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.osirisReceiver",
     "nl": "Osiris ontvanger",
     "fr": "Récepteur Osiris",
     "en": "Osiris receiver",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.osType",
+    "nl": "OS-type",
+    "fr": "Type d’OS",
+    "en": "OS type",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.osVersion",
+    "nl": "OS-versie",
+    "fr": "Version de l’OS",
+    "en": "OS version",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -16411,6 +16925,16 @@
     ]
   },
   {
+    "key": "common.personnel",
+    "nl": "Personeel",
+    "fr": "Personnel",
+    "en": "Personnel",
+    "applications": [
+      "mypraxis_web",
+      "mypraxis_app"
+    ]
+  },
+  {
     "key": "common.personnelFile",
     "nl": "Personeelsfiche",
     "fr": "Dossier du personnel",
@@ -16583,6 +17107,15 @@
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.platform",
+    "nl": "Platform",
+    "fr": "Plateforme",
+    "en": "Platform",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -17201,6 +17734,15 @@
     ]
   },
   {
+    "key": "common.profitRoots",
+    "nl": "Profit mappen",
+    "fr": "Dossiers Profit",
+    "en": "Profit folders",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.proposal",
     "nl": "Voorstel",
     "fr": "Proposition",
@@ -17344,6 +17886,15 @@
     "nl": "Vragen",
     "fr": "Questions",
     "en": "Questions",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.quit",
+    "nl": "Afsluiten",
+    "fr": "Quitter",
+    "en": "Quit",
     "applications": [
       "mypraxis_web"
     ]
@@ -17590,6 +18141,15 @@
     "nl": "Ontvangers",
     "fr": "Destinataires",
     "en": "Recipients",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.recommended",
+    "nl": "Aanbevolen",
+    "fr": "Recommandé",
+    "en": "Recommended",
     "applications": [
       "mypraxis_web"
     ]
@@ -18329,6 +18889,24 @@
     "en": "Reset default value",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.resetDesktopDownloadLocation",
+    "nl": "Desktop downloadlocatie resetten",
+    "fr": "Réinitialiser l’emplacement de téléchargement desktop",
+    "en": "Reset desktop download location",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.resetDesktopProfitRoots",
+    "nl": "Desktop Profit roots resetten",
+    "fr": "Réinitialiser les dossiers racines Profit desktop",
+    "en": "Reset desktop Profit roots",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -19307,6 +19885,15 @@
     ]
   },
   {
+    "key": "common.shortcutCoverage",
+    "nl": "Sneltoetsdekking",
+    "fr": "Couverture des raccourcis",
+    "en": "Shortcut coverage",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.shortSiaCode4Digits",
     "nl": "Verkorte SIA-code (4 cijfers)",
     "fr": "Code SIA court (4 chiffres)",
@@ -19933,6 +20520,15 @@
     ]
   },
   {
+    "key": "common.statusChanged",
+    "nl": "Status gewijzigd",
+    "fr": "Statut modifié",
+    "en": "Status changed",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.statusContract",
     "nl": "Contractstatus",
     "fr": "Statut du contrat",
@@ -19969,12 +20565,30 @@
     ]
   },
   {
+    "key": "common.store",
+    "nl": "Opslag",
+    "fr": "Stockage",
+    "en": "Storage",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.storeNumber",
     "nl": "Winkelnummer",
     "fr": "Numéro de magasin",
     "en": "Store number",
     "applications": [
       "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.storeUpdateAvailableMessage",
+    "nl": "Er is een nieuwe versie van MyPRAxIS beschikbaar in {{storeName}}. Kies ‘{{updateAction}}’ om {{storeName}} te openen en de nieuwste versie te installeren. Kies ‘{{laterAction}}’ om dit uit te stellen.",
+    "fr": "Une nouvelle version de MyPRAxIS est disponible dans {{storeName}}. Choisissez « {{updateAction}} » pour ouvrir {{storeName}} et installer la dernière version. Choisissez « {{laterAction}} » pour reporter l’installation.",
+    "en": "A new version of MyPRAxIS is available in {{storeName}}. Choose ‘{{updateAction}}’ to open {{storeName}} and install the latest version. Choose ‘{{laterAction}}’ to postpone it.",
+    "applications": [
+      "mypraxis_app"
     ]
   },
   {
@@ -20183,6 +20797,15 @@
     ]
   },
   {
+    "key": "common.switchingToAlternativeApi",
+    "nl": "Overschakelen naar alternatieve API",
+    "fr": "Basculement vers l’API alternative",
+    "en": "Switching to alternative API",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.syncAll",
     "nl": "Synchroniseer alles",
     "fr": "Synchroniser tout",
@@ -20216,6 +20839,15 @@
     "en": "System data",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "common.systemManagement",
+    "nl": "Systeembeheer",
+    "fr": "Gestion système",
+    "en": "System management",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -20443,10 +21075,37 @@
     ]
   },
   {
+    "key": "common.test",
+    "nl": "Test",
+    "fr": "Test",
+    "en": "Test",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.testClient",
     "nl": "Testklant",
     "fr": "Client de test",
     "en": "Test client",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.testUpdatesActive",
+    "nl": "Test updates actief",
+    "fr": "Mises à jour de test actives",
+    "en": "Test updates active",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.testVersion",
+    "nl": "testversie",
+    "fr": "version de test",
+    "en": "test version",
     "applications": [
       "mypraxis_web"
     ]
@@ -21659,6 +22318,105 @@
     ]
   },
   {
+    "key": "common.updateAvailableInstallAndRestart",
+    "nl": "Update beschikbaar. Installeer en herstart de applicatie.",
+    "fr": "Mise à jour disponible. Installez et redémarrez l’application.",
+    "en": "Update available. Install and restart the application.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updateChannel",
+    "nl": "Updatekanaal",
+    "fr": "Canal de mise à jour",
+    "en": "Update channel",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updateDownloading",
+    "nl": "Update downloaden...",
+    "fr": "Téléchargement de la mise à jour...",
+    "en": "Downloading update...",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updateDownloadingWithPercent",
+    "nl": "Update downloaden... {{percent}}%",
+    "fr": "Téléchargement de la mise à jour... {{percent}}%",
+    "en": "Downloading update... {{percent}}%",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updateEndpoint",
+    "nl": "Update endpoint",
+    "fr": "Endpoint de mise à jour",
+    "en": "Update endpoint",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updateInstalledRestartingApp",
+    "nl": "Update geïnstalleerd. App herstarten...",
+    "fr": "Mise à jour installée. Redémarrage de l’application...",
+    "en": "Update installed. Restarting app...",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updateInstalling",
+    "nl": "Update installeren...",
+    "fr": "Installation de la mise à jour...",
+    "en": "Installing update...",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updatePreparing",
+    "nl": "Update voorbereiden...",
+    "fr": "Préparation de la mise à jour...",
+    "en": "Preparing update...",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updateReadyRestartMessage",
+    "nl": "De update is gedownload en klaar om te installeren. Kies ‘{{updateAction}}’ om de app opnieuw op te starten en de update toe te passen. Kies ‘{{laterAction}}’ om dit uit te stellen.",
+    "fr": "La mise à jour a été téléchargée et est prête à être installée. Choisissez « {{updateAction}} » pour redémarrer l’application et appliquer la mise à jour. Choisissez « {{laterAction}} » pour reporter l’installation.",
+    "en": "The update has been downloaded and is ready to install. Choose ‘{{updateAction}}’ to restart the application and apply the update. Choose ‘{{laterAction}}’ to postpone it.",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.updaterPlatformKey",
+    "nl": "Updater platform key",
+    "fr": "Clé plateforme updater",
+    "en": "Updater platform key",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.updateSource",
+    "nl": "Updatebron",
+    "fr": "Source de mise à jour",
+    "en": "Update source",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "common.updatingPreview",
     "nl": "Voorbeeld wordt bijgewerkt",
     "fr": "Mise à jour de l’aperçu",
@@ -21729,6 +22487,15 @@
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.upToDate",
+    "nl": "Up-to-date",
+    "fr": "À jour",
+    "en": "Up to date",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -22310,12 +23077,21 @@
   },
   {
     "key": "common.videoViaDvr",
-    "nl": "Weergave video via DVR/NVR",
-    "fr": "Visualisation vidéo via DVR/NVR",
-    "en": "Visualisation video via DVR/NVR",
+    "nl": "Bekijken live video via DVR/NVR",
+    "fr": "Consulter vidéo en direct via DVR/NVR",
+    "en": "View live video via DVR/NVR",
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.videoWall",
+    "nl": "Videowall",
+    "fr": "Mur vidéo",
+    "en": "Video wall",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -22570,6 +23346,15 @@
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.visibleForExcellisEmployees",
+    "nl": "Zichtbaar voor Excellis medewerkers",
+    "fr": "Visible pour les collaborateurs Excellis",
+    "en": "Visible for Excellis employees",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -22901,6 +23686,15 @@
     "applications": [
       "mypraxis_web",
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.windowsAndMacos",
+    "nl": "Windows en macOS",
+    "fr": "Windows et macOS",
+    "en": "Windows and macOS",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -23856,6 +24650,24 @@
     ]
   },
   {
+    "key": "error.desktopSupportLogsExportFailed",
+    "nl": "Desktop supportlogs konden niet geëxporteerd worden.",
+    "fr": "Les logs support desktop n’ont pas pu être exportés.",
+    "en": "Desktop support logs could not be exported.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "error.desktopUpdateInstallFailed",
+    "nl": "Desktop update installeren is mislukt.",
+    "fr": "L’installation de la mise à jour desktop a échoué.",
+    "en": "Desktop update installation failed.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "error.endDateAndTimeCannotBeBeforeStartDateAndTime",
     "nl": "Einddatum & -tijdstip mogen niet vóór startdatum & -tijdstip liggen",
     "fr": "La date et l'heure de fin ne peuvent pas être anterieures à la date et l'heure de début",
@@ -24777,6 +25589,15 @@
     ]
   },
   {
+    "key": "error.profitFolderOpenFailed",
+    "nl": "De Profit map kon niet geopend worden.",
+    "fr": "Le dossier Profit n’a pas pu être ouvert.",
+    "en": "The Profit folder could not be opened.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "error.providedUuidMustBeAValidUuid",
     "nl": "De opgegeven UUID moet een geldige UUID zijn",
     "fr": "L'UUID fourni doit être un UUID valide",
@@ -25069,6 +25890,15 @@
     "en": "Unexpected camera permission error",
     "applications": [
       "unknown"
+    ]
+  },
+  {
+    "key": "error.updateCheckFailedFolderUnavailable",
+    "nl": "Updatecontrole mislukt. Controleer of de updatefolder bereikbaar is.",
+    "fr": "La vérification de la mise à jour a échoué. Vérifiez si le dossier de mise à jour est accessible.",
+    "en": "Update check failed. Check whether the update folder is reachable.",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -25927,6 +26757,24 @@
     ]
   },
   {
+    "key": "info.desktopAppRestartsAutomaticallyAfterUpdate",
+    "nl": "De desktopapp wordt na de update automatisch opnieuw opgestart.",
+    "fr": "L’application de bureau redémarrera automatiquement après la mise à jour.",
+    "en": "The desktop app will restart automatically after the update.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.desktopUpdateInstallsAutomatically",
+    "nl": "De desktopupdate wordt automatisch geïnstalleerd.",
+    "fr": "La mise à jour de l’application de bureau sera installée automatiquement.",
+    "en": "The desktop update will be installed automatically.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "info.disableAutomaticallySaveReportsExcelInMyPRAxIS",
     "nl": "Om het automatisch opslaan van rapporten (Excel) in MyPRAxIS uit te schakelen, vink het onderstaande vakje aan ter bevestiging.",
     "fr": "Pour désactiver l'enregistrement automatique des rapports (Excel) dans MyPRAxIS, cochez la case ci-dessous pour confirmer votre consentement.",
@@ -26651,6 +27499,15 @@
     ]
   },
   {
+    "key": "info.newDesktopUpdateAvailable",
+    "nl": "Nieuwe desktop update beschikbaar: versie",
+    "fr": "Nouvelle mise à jour desktop disponible : version",
+    "en": "New desktop update available: version",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "info.noAdditionalInfoFound",
     "nl": "Geen aanvullende info gevonden",
     "fr": "Aucune information supplémentaire disponible",
@@ -26696,6 +27553,24 @@
     ]
   },
   {
+    "key": "info.noDesktopUpdateFound",
+    "nl": "Geen desktopupdate gevonden.",
+    "fr": "Aucune mise à jour de l’application de bureau trouvée.",
+    "en": "No desktop update found.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.noDesktopUpdateFoundForChannel",
+    "nl": "Geen nieuwe desktop update gevonden voor de {{channelLabel}}.",
+    "fr": "Aucune nouvelle mise à jour desktop trouvée pour la {{channelLabel}}.",
+    "en": "No new desktop update found for the {{channelLabel}}.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "info.noEmailForThisClient",
     "nl": "Geen e-mailadres beschikbaar voor deze cliënt.",
     "fr": "Aucune adresse e-mail disponible pour ce client.",
@@ -26736,6 +27611,15 @@
     "nl": "Online portaal, voor het raadplegen en het beheer van de administratieve documenten, de gegevens van uw klanten, en hun rapporten, historieken en live alarmmeldingen, bij PRAxIS GROUP.",
     "fr": "Portail en ligne, pour la consultation et/ou la gestion des documents administratifs, des données de vos clients, et leurs rapports, historiques et notifications d’alarmes en temps réel, chez PRAxIS GROUP",
     "en": "Online portal for viewing and managing administrative documents, your clients data, and their reports, histories, and live alarm notifications, at PRAxIS GROUP.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.onlinePortalApplicationInfoExcellis",
+    "nl": "Online portaal voor het raadplegen en beheren van wachtdiensten en oproepcentrales bij ExCELLIS.",
+    "fr": "Portail en ligne pour consulter et gérer les services de garde et les centrales d’appels chez ExCELLIS.",
+    "en": "Online portal for consulting and managing on-call services and call centres at ExCELLIS.",
     "applications": [
       "mypraxis_web"
     ]
@@ -27321,6 +28205,15 @@
     "en": "There are currently several components still in test. By pressing this button, the entire system will be taken out of test mode.",
     "applications": [
       "mypraxis_app"
+    ]
+  },
+  {
+    "key": "info.testVersionUpdateSource",
+    "nl": "Dit is de testversie. De update komt uit de testfolder.",
+    "fr": "Ceci est la version de test. La mise à jour provient du dossier de test.",
+    "en": "This is the test version. The update comes from the test folder.",
+    "applications": [
+      "mypraxis_web"
     ]
   },
   {
@@ -28951,6 +29844,42 @@
     "nl": "{{value}} alarm event(s) verwijderd",
     "fr": "{{value}} événement(s) d'alarme supprimé(s)",
     "en": "{{value}} alarm event(s) deleted",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "success.desktopDownloadLocationReset",
+    "nl": "Desktop downloadlocatie werd gereset.",
+    "fr": "L’emplacement de téléchargement desktop a été réinitialisé.",
+    "en": "Desktop download location was reset.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "success.desktopProfitRootChanged",
+    "nl": "Desktop Profit root werd aangepast.",
+    "fr": "Le dossier racine Profit desktop a été modifié.",
+    "en": "Desktop Profit root was changed.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "success.desktopProfitRootsReset",
+    "nl": "Desktop Profit roots werden gereset.",
+    "fr": "Les dossiers racines Profit desktop ont été réinitialisés.",
+    "en": "Desktop Profit roots were reset.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "success.desktopSupportLogsExported",
+    "nl": "Desktop supportlogs werden geëxporteerd.",
+    "fr": "Les logs support desktop ont été exportés.",
+    "en": "Desktop support logs were exported.",
     "applications": [
       "mypraxis_web"
     ]
@@ -31130,6 +32059,15 @@
     ]
   },
   {
+    "key": "warning.noUpdateFoundToInstall",
+    "nl": "Geen update gevonden om te installeren.",
+    "fr": "Aucune mise à jour trouvée à installer.",
+    "en": "No update found to install.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "warning.oneOrMoreFieldsContainErrors",
     "nl": "Een of meer velden bevatten fouten.",
     "fr": "Un ou plusieurs champs contiennent des erreurs.",
@@ -31496,944 +32434,6 @@
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
     "applications": [
       "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.statusChanged",
-    "nl": "Status gewijzigd",
-    "fr": "Statut modifié",
-    "en": "Status changed",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "authentication.loggedOut",
-    "nl": "Uitgelogd",
-    "fr": "Déconnecté",
-    "en": "Logged out",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.deleted",
-    "nl": "Verwijderd",
-    "fr": "Supprimé",
-    "en": "Deleted",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.duress",
-    "nl": "Dwang",
-    "fr": "Contrainte",
-    "en": "Duress",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.logout",
-    "nl": "Uitloggen",
-    "fr": "Déconnexion",
-    "en": "Logout",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.new",
-    "nl": "Nieuw",
-    "fr": "Nouveau",
-    "en": "New",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.updateAvailableInstallAndRestart",
-    "nl": "Update beschikbaar. Installeer en herstart de applicatie.",
-    "fr": "Mise à jour disponible. Installez et redémarrez l’application.",
-    "en": "Update available. Install and restart the application.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.updateReadyRestartMessage",
-    "nl": "De update is gedownload en klaar om te installeren. Kies ‘{{updateAction}}’ om de app opnieuw op te starten en de update toe te passen. Kies ‘{{laterAction}}’ om dit uit te stellen.",
-    "fr": "La mise à jour a été téléchargée et est prête à être installée. Choisissez « {{updateAction}} » pour redémarrer l’application et appliquer la mise à jour. Choisissez « {{laterAction}} » pour reporter l’installation.",
-    "en": "The update has been downloaded and is ready to install. Choose ‘{{updateAction}}’ to restart the application and apply the update. Choose ‘{{laterAction}}’ to postpone it.",
-    "applications": [
-      "mypraxis_app"
-    ]
-  },
-  {
-    "key": "common.storeUpdateAvailableMessage",
-    "nl": "Er is een nieuwe versie van MyPRAxIS beschikbaar in {{storeName}}. Kies ‘{{updateAction}}’ om {{storeName}} te openen en de nieuwste versie te installeren. Kies ‘{{laterAction}}’ om dit uit te stellen.",
-    "fr": "Une nouvelle version de MyPRAxIS est disponible dans {{storeName}}. Choisissez « {{updateAction}} » pour ouvrir {{storeName}} et installer la dernière version. Choisissez « {{laterAction}} » pour reporter l’installation.",
-    "en": "A new version of MyPRAxIS is available in {{storeName}}. Choose ‘{{updateAction}}’ to open {{storeName}} and install the latest version. Choose ‘{{laterAction}}’ to postpone it.",
-    "applications": [
-      "mypraxis_app"
-    ]
-  },
-  {
-    "key": "common.clientDoesntUseEmail",
-    "nl": "Klant gebruikt geen e-mail",
-    "fr": "Le client n’utilise pas l’e-mail",
-    "en": "Client does not use email",
-    "applications": [
-      "mypraxis_web",
-      "mypraxis_app"
-    ]
-  },
-  {
-    "key": "common.visibleForExcellisEmployees",
-    "nl": "Zichtbaar voor Excellis medewerkers",
-    "fr": "Visible pour les collaborateurs Excellis",
-    "en": "Visible for Excellis employees",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.excellisEmployees",
-    "nl": "Excellis medewerkers",
-    "fr": "Collaborateurs Excellis",
-    "en": "Excellis employees",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.testVersion",
-    "nl": "testversie",
-    "fr": "version de test",
-    "en": "test version",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.liveVersion",
-    "nl": "live versie",
-    "fr": "version de production",
-    "en": "live version",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.updatePreparing",
-    "nl": "Update voorbereiden...",
-    "fr": "Préparation de la mise à jour...",
-    "en": "Preparing update...",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.updateInstalling",
-    "nl": "Update installeren...",
-    "fr": "Installation de la mise à jour...",
-    "en": "Installing update...",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.updateInstalledRestartingApp",
-    "nl": "Update geïnstalleerd. App herstarten...",
-    "fr": "Mise à jour installée. Redémarrage de l’application...",
-    "en": "Update installed. Restarting app...",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.updateDownloadingWithPercent",
-    "nl": "Update downloaden... {{percent}}%",
-    "fr": "Téléchargement de la mise à jour... {{percent}}%",
-    "en": "Downloading update... {{percent}}%",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.updateDownloading",
-    "nl": "Update downloaden...",
-    "fr": "Téléchargement de la mise à jour...",
-    "en": "Downloading update...",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "warning.noUpdateFoundToInstall",
-    "nl": "Geen update gevonden om te installeren.",
-    "fr": "Aucune mise à jour trouvée à installer.",
-    "en": "No update found to install.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "error.desktopUpdateInstallFailed",
-    "nl": "Desktop update installeren is mislukt.",
-    "fr": "L’installation de la mise à jour desktop a échoué.",
-    "en": "Desktop update installation failed.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.installAndRestart",
-    "nl": "Installeren en herstarten",
-    "fr": "Installer et redémarrer",
-    "en": "Install and restart",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.desktopUpdate",
-    "nl": "Desktop update",
-    "fr": "Mise à jour desktop",
-    "en": "Desktop update",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "error.updateCheckFailedFolderUnavailable",
-    "nl": "Updatecontrole mislukt. Controleer of de updatefolder bereikbaar is.",
-    "fr": "La vérification de la mise à jour a échoué. Vérifiez si le dossier de mise à jour est accessible.",
-    "en": "Update check failed. Check whether the update folder is reachable.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.noDesktopUpdateFoundForChannel",
-    "nl": "Geen nieuwe desktop update gevonden voor de {{channelLabel}}.",
-    "fr": "Aucune nouvelle mise à jour desktop trouvée pour la {{channelLabel}}.",
-    "en": "No new desktop update found for the {{channelLabel}}.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.newDesktopUpdateAvailable",
-    "nl": "Nieuwe desktop update beschikbaar: versie",
-    "fr": "Nouvelle mise à jour desktop disponible : version",
-    "en": "New desktop update available: version",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.testVersionUpdateSource",
-    "nl": "Dit is de testversie. De update komt uit de testfolder.",
-    "fr": "Ceci est la version de test. La mise à jour provient du dossier de test.",
-    "en": "This is the test version. The update comes from the test folder.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.updateSource",
-    "nl": "Updatebron",
-    "fr": "Source de mise à jour",
-    "en": "Update source",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.systemManagement",
-    "nl": "Systeembeheer",
-    "fr": "Gestion système",
-    "en": "System management",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.appVersion",
-    "nl": "Appversie",
-    "fr": "Version de l’application",
-    "en": "App version",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.updateChannel",
-    "nl": "Updatekanaal",
-    "fr": "Canal de mise à jour",
-    "en": "Update channel",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.osType",
-    "nl": "OS-type",
-    "fr": "Type d’OS",
-    "en": "OS type",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.osVersion",
-    "nl": "OS-versie",
-    "fr": "Version de l’OS",
-    "en": "OS version",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.osFamily",
-    "nl": "OS-familie",
-    "fr": "Famille d’OS",
-    "en": "OS family",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.architecture",
-    "nl": "Architectuur",
-    "fr": "Architecture",
-    "en": "Architecture",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.hostname",
-    "nl": "Hostnaam",
-    "fr": "Nom d’hôte",
-    "en": "Hostname",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.executableExtension",
-    "nl": "Executable-extensie",
-    "fr": "Extension exécutable",
-    "en": "Executable extension",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.lineEnding",
-    "nl": "Line ending",
-    "fr": "Fin de ligne",
-    "en": "Line ending",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.globalShortcut",
-    "nl": "Globale sneltoets",
-    "fr": "Raccourci global",
-    "en": "Global shortcut",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.desktopDiagnostics",
-    "nl": "Desktopdiagnose",
-    "fr": "Diagnostic desktop",
-    "en": "Desktop diagnostics",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.desktopInformationLoading",
-    "nl": "Desktopinformatie laden...",
-    "fr": "Chargement des informations desktop...",
-    "en": "Loading desktop information...",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.testUpdatesActive",
-    "nl": "Test updates actief",
-    "fr": "Mises à jour de test actives",
-    "en": "Test updates active",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.liveUpdatesActive",
-    "nl": "Live updates actief",
-    "fr": "Mises à jour live actives",
-    "en": "Live updates active",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.desktopTestUpdates",
-    "nl": "Desktop test updates",
-    "fr": "Mises à jour de test desktop",
-    "en": "Desktop test updates",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.videoWall",
-    "nl": "Videowall",
-    "fr": "Mur vidéo",
-    "en": "Video wall",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "error.profitFolderOpenFailed",
-    "nl": "De Profit map kon niet geopend worden.",
-    "fr": "Le dossier Profit n’a pas pu être ouvert.",
-    "en": "The Profit folder could not be opened.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.openApp",
-    "nl": "App openen",
-    "fr": "Ouvrir l’application",
-    "en": "Open app",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.quit",
-    "nl": "Afsluiten",
-    "fr": "Quitter",
-    "en": "Quit",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.desktopApp",
-    "nl": "Desktop app",
-    "fr": "Application desktop",
-    "en": "Desktop app",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.personnel",
-    "nl": "Personeel",
-    "fr": "Personnel",
-    "en": "Personnel",
-    "applications": [
-      "mypraxis_web",
-      "mypraxis_app"
-    ]
-  },
-  {
-    "key": "common.desktopRuntime",
-    "nl": "Desktopruntime",
-    "fr": "Runtime desktop",
-    "en": "Desktop runtime",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.active",
-    "nl": "Actief",
-    "fr": "Actif",
-    "en": "Active",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.upToDate",
-    "nl": "Up-to-date",
-    "fr": "À jour",
-    "en": "Up to date",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.lastUpdateStatus",
-    "nl": "Laatste updatestatus",
-    "fr": "Dernier statut de mise à jour",
-    "en": "Last update status",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.lastUpdateCheck",
-    "nl": "Laatste updatecontrole",
-    "fr": "Dernière vérification de mise à jour",
-    "en": "Last update check",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.lastStoreUpdateCheck",
-    "nl": "Laatste controle op store-update",
-    "fr": "Dernière vérification de la mise à jour du store",
-    "en": "Last store update check",
-    "applications": [
-      "mypraxis_app"
-    ]
-  },
-  {
-    "key": "common.lastOtaUpdateCheck",
-    "nl": "Laatste controle op OTA-update",
-    "fr": "Dernière vérification de la mise à jour OTA",
-    "en": "Last OTA update check",
-    "applications": [
-      "mypraxis_app"
-    ]
-  },
-  {
-    "key": "common.notCheckedYet",
-    "nl": "Nog niet gecontroleerd",
-    "fr": "Pas encore vérifié",
-    "en": "Not checked yet",
-    "applications": [
-      "mypraxis_app"
-    ]
-  },
-  {
-    "key": "common.store",
-    "nl": "Opslag",
-    "fr": "Stockage",
-    "en": "Storage",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.nativeNotifications",
-    "nl": "Native meldingen",
-    "fr": "Notifications natives",
-    "en": "Native notifications",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.profitRoots",
-    "nl": "Profit mappen",
-    "fr": "Dossiers Profit",
-    "en": "Profit folders",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.exportDesktopSupportLogs",
-    "nl": "Desktop supportlogs exporteren",
-    "fr": "Exporter les logs support desktop",
-    "en": "Export desktop support logs",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "success.desktopSupportLogsExported",
-    "nl": "Desktop supportlogs werden geëxporteerd.",
-    "fr": "Les logs support desktop ont été exportés.",
-    "en": "Desktop support logs were exported.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "error.desktopSupportLogsExportFailed",
-    "nl": "Desktop supportlogs konden niet geëxporteerd worden.",
-    "fr": "Les logs support desktop n’ont pas pu être exportés.",
-    "en": "Desktop support logs could not be exported.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.updateEndpoint",
-    "nl": "Update endpoint",
-    "fr": "Endpoint de mise à jour",
-    "en": "Update endpoint",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.updaterPlatformKey",
-    "nl": "Updater platform key",
-    "fr": "Clé plateforme updater",
-    "en": "Updater platform key",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.downloadLocation",
-    "nl": "Downloadlocatie",
-    "fr": "Emplacement de téléchargement",
-    "en": "Download location",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.keyboardShortcuts",
-    "nl": "Sneltoetsen",
-    "fr": "Raccourcis clavier",
-    "en": "Keyboard shortcuts",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.inactive",
-    "nl": "Inactief",
-    "fr": "Inactif",
-    "en": "Inactive",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.shortcutCoverage",
-    "nl": "Sneltoetsdekking",
-    "fr": "Couverture des raccourcis",
-    "en": "Shortcut coverage",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.openWindows",
-    "nl": "Open vensters",
-    "fr": "Fenêtres ouvertes",
-    "en": "Open windows",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.resetDesktopDownloadLocation",
-    "nl": "Desktop downloadlocatie resetten",
-    "fr": "Réinitialiser l’emplacement de téléchargement desktop",
-    "en": "Reset desktop download location",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.chooseDesktopProfitRoot",
-    "nl": "Desktop Profit root kiezen",
-    "fr": "Choisir le dossier racine Profit desktop",
-    "en": "Choose desktop Profit root",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.resetDesktopProfitRoots",
-    "nl": "Desktop Profit roots resetten",
-    "fr": "Réinitialiser les dossiers racines Profit desktop",
-    "en": "Reset desktop Profit roots",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "success.desktopDownloadLocationReset",
-    "nl": "Desktop downloadlocatie werd gereset.",
-    "fr": "L’emplacement de téléchargement desktop a été réinitialisé.",
-    "en": "Desktop download location was reset.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "success.desktopProfitRootsReset",
-    "nl": "Desktop Profit roots werden gereset.",
-    "fr": "Les dossiers racines Profit desktop ont été réinitialisés.",
-    "en": "Desktop Profit roots were reset.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "success.desktopProfitRootChanged",
-    "nl": "Desktop Profit root werd aangepast.",
-    "fr": "Le dossier racine Profit desktop a été modifié.",
-    "en": "Desktop Profit root was changed.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.onlinePortalApplicationInfoExcellis",
-    "nl": "Online portaal voor het raadplegen en beheren van wachtdiensten en oproepcentrales bij ExCELLIS.",
-    "fr": "Portail en ligne pour consulter et gérer les services de garde et les centrales d’appels chez ExCELLIS.",
-    "en": "Online portal for consulting and managing on-call services and call centres at ExCELLIS.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.app",
-    "nl": "App",
-    "fr": "Application",
-    "en": "App",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.error",
-    "nl": "Fout",
-    "fr": "Erreur",
-    "en": "Error",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.live",
-    "nl": "Live",
-    "fr": "Live",
-    "en": "Live",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.locale",
-    "nl": "Taal/regio",
-    "fr": "Langue/région",
-    "en": "Locale",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.platform",
-    "nl": "Platform",
-    "fr": "Plateforme",
-    "en": "Platform",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.test",
-    "nl": "Test",
-    "fr": "Test",
-    "en": "Test",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.desktopAppsDownload",
-    "nl": "Desktop apps downloaden",
-    "fr": "Télécharger les applications de bureau",
-    "en": "Download desktop apps",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.desktopAppTitle",
-    "nl": "{{productName}} desktop app",
-    "fr": "Application de bureau {{productName}}",
-    "en": "{{productName}} desktop app",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.chooseDeviceAndDownloadApp",
-    "nl": "Kies je toestel en download de juiste desktop app.",
-    "fr": "Choisissez votre appareil et téléchargez la bonne application de bureau.",
-    "en": "Choose your device and download the correct desktop app.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.localTestModeShowsAllApps",
-    "nl": "Lokale testmodus: alle desktop apps worden getoond.",
-    "fr": "Mode de test local : toutes les applications de bureau sont affichées.",
-    "en": "Local test mode: all desktop apps are shown.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.installerAvailable",
-    "nl": "{{count}} installer beschikbaar",
-    "fr": "{{count}} installateur disponible",
-    "en": "{{count}} installer available",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.installersAvailable",
-    "nl": "{{count}} installers beschikbaar",
-    "fr": "{{count}} installateurs disponibles",
-    "en": "{{count}} installers available",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.windowsAndMacos",
-    "nl": "Windows en macOS",
-    "fr": "Windows et macOS",
-    "en": "Windows and macOS",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.checking",
-    "nl": "Controleren",
-    "fr": "Vérification",
-    "en": "Checking",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.downloadsNotPublished",
-    "nl": "De downloads zijn nog niet gepubliceerd.",
-    "fr": "Les téléchargements ne sont pas encore publiés.",
-    "en": "The downloads have not been published yet.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.recommended",
-    "nl": "Aanbevolen",
-    "fr": "Recommandé",
-    "en": "Recommended",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.notAvailable",
-    "nl": "Niet beschikbaar",
-    "fr": "Non disponible",
-    "en": "Not available",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.downloadForPlatform",
-    "nl": "{{productName}} downloaden voor {{platform}}",
-    "fr": "Télécharger {{productName}} pour {{platform}}",
-    "en": "Download {{productName}} for {{platform}}",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.desktopUpdateAvailable",
-    "nl": "Desktopupdate beschikbaar",
-    "fr": "Mise à jour de l’application de bureau disponible",
-    "en": "Desktop update available",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.desktopUpdateInstalling",
-    "nl": "Desktopupdate wordt geïnstalleerd",
-    "fr": "Installation de la mise à jour de l’application de bureau",
-    "en": "Installing desktop update",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.installed",
-    "nl": "Geïnstalleerd",
-    "fr": "Installé",
-    "en": "Installed",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.desktopAppRestartsAutomaticallyAfterUpdate",
-    "nl": "De desktopapp wordt na de update automatisch opnieuw opgestart.",
-    "fr": "L’application de bureau redémarrera automatiquement après la mise à jour.",
-    "en": "The desktop app will restart automatically after the update.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.desktopUpdateInstallsAutomatically",
-    "nl": "De desktopupdate wordt automatisch geïnstalleerd.",
-    "fr": "La mise à jour de l’application de bureau sera installée automatiquement.",
-    "en": "The desktop update will be installed automatically.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.noDesktopUpdateFound",
-    "nl": "Geen desktopupdate gevonden.",
-    "fr": "Aucune mise à jour de l’application de bureau trouvée.",
-    "en": "No desktop update found.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.switchingToAlternativeApi",
-    "nl": "Overschakelen naar alternatieve API",
-    "fr": "Basculement vers l’API alternative",
-    "en": "Switching to alternative API",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "common.filterOnZoneType",
-    "nl": "Filteren op zone",
-    "fr": "Filtrer par zone",
-    "en": "Filter by zone",
-    "applications": [
-      "mypraxis_app"
     ]
   }
 ]

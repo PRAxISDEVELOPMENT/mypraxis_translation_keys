@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.visualMaterialViaCameraTypeCommunicator",
+      "nl": "Bekijken {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+      "fr": "Consulter {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+      "en": "View {{visualMaterial}} via {{cameraType}} ({{communicator}})"
+    },
+    {
+      "key": "common.videoclip",
+      "fr": "Clip vidéo",
+      "en": "Video clip"
+    }
+  ]
+}

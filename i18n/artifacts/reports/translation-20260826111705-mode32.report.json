@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-08-26T11:17:24.948Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260826111705-mode32.json",
+  "summary": {
+    "totalEntries": 2,
+    "directUpdates": 2,
+    "appliedDirectUpdates": 2,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.visualMaterialViaCameraTypeCommunicator",
+      "namespace": "common",
+      "changes": {
+        "nl": "Bekijken {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+        "fr": "Consulter {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+        "en": "View {{visualMaterial}} via {{cameraType}} ({{communicator}})"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Weergave {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+        "fr": "Affichage {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+        "en": "{{visualMaterial}} display via {{cameraType}} ({{communicator}})"
+      },
+      "next": {
+        "nl": "Bekijken {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+        "fr": "Consulter {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+        "en": "View {{visualMaterial}} via {{cameraType}} ({{communicator}})"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    },
+    {
+      "type": "directUpdate",
+      "index": 2,
+      "key": "common.videoclip",
+      "namespace": "common",
+      "changes": {
+        "fr": "Clip vidéo",
+        "en": "Video clip"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Videoclip",
+        "fr": "Clip Vidéo",
+        "en": "Videoclip"
+      },
+      "next": {
+        "nl": "Videoclip",
+        "fr": "Clip vidéo",
+        "en": "Video clip"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

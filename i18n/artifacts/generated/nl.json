@@ -2542,7 +2542,7 @@
     "visibleName": "Zichtbare naam",
     "visit": "Bezoek",
     "visualMaterialType": "Type beeldmateriaal",
-    "visualMaterialViaCameraTypeCommunicator": "Weergave {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+    "visualMaterialViaCameraTypeCommunicator": "Bekijken {{visualMaterial}} via {{cameraType}} ({{communicator}})",
     "vocalBrand": "Merk inluistering",
     "vocalSCS": "Inluistering (SCS)",
     "vocalTest": "Vocale test",

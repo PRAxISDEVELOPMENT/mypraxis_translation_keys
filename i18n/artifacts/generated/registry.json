@@ -75309,8 +75309,8 @@
       "reviewRequiredLocales": [],
       "resolved": {
         "nl": "Videoclip",
-        "fr": "Clip Vidéo",
-        "en": "Videoclip"
+        "fr": "Clip vidéo",
+        "en": "Video clip"
       }
     },
     {
@@ -76787,9 +76787,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Weergave {{visualMaterial}} via {{cameraType}} ({{communicator}})",
-        "fr": "Affichage {{visualMaterial}} via {{cameraType}} ({{communicator}})",
-        "en": "{{visualMaterial}} display via {{cameraType}} ({{communicator}})"
+        "nl": "Bekijken {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+        "fr": "Consulter {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+        "en": "View {{visualMaterial}} via {{cameraType}} ({{communicator}})"
       }
     },
     {

@@ -22965,8 +22965,8 @@
   {
     "key": "common.videoclip",
     "nl": "Videoclip",
-    "fr": "Clip Vidéo",
-    "en": "Videoclip",
+    "fr": "Clip vidéo",
+    "en": "Video clip",
     "applications": [
       "mypraxis_web"
     ]
@@ -23413,9 +23413,9 @@
   },
   {
     "key": "common.visualMaterialViaCameraTypeCommunicator",
-    "nl": "Weergave {{visualMaterial}} via {{cameraType}} ({{communicator}})",
-    "fr": "Affichage {{visualMaterial}} via {{cameraType}} ({{communicator}})",
-    "en": "{{visualMaterial}} display via {{cameraType}} ({{communicator}})",
+    "nl": "Bekijken {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+    "fr": "Consulter {{visualMaterial}} via {{cameraType}} ({{communicator}})",
+    "en": "View {{visualMaterial}} via {{cameraType}} ({{communicator}})",
     "applications": [
       "mypraxis_app",
       "mypraxis_web"

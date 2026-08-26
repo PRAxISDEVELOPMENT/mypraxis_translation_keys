@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-08-26T11:20:45.106Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260826112028-txh9tj.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.videoViaDvr",
+      "namespace": "common",
+      "changes": {
+        "nl": "Bekijken live video via DVR/NVR",
+        "fr": "Consulter vidéo en direct via DVR/NVR",
+        "en": "View live video via DVR/NVR"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Weergave video via DVR/NVR",
+        "fr": "Consulter vidéo via DVR/NVR",
+        "en": "View video via DVR/NVR"
+      },
+      "next": {
+        "nl": "Bekijken live video via DVR/NVR",
+        "fr": "Consulter vidéo en direct via DVR/NVR",
+        "en": "View live video via DVR/NVR"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

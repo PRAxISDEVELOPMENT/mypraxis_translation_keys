@@ -32453,5 +32453,14 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "info.pleaseForwardTheMessageBelowToTheSenderAndThenClickContinue",
+    "nl": "Gelieve onderstaand antwoord door te geven aan de afzender en daarna op Doorgaan te klikken",
+    "fr": "Veuillez transmettre la réponse ci-dessous à l’expéditeur, puis cliquer sur Continuer",
+    "en": "Please forward the answer below to the sender and then click Continue",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

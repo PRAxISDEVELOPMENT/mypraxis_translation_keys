@@ -3024,6 +3024,7 @@
     "permanentCommentaryCanOnlyBeAddedOrChangedUponRequestViaPraxisGroupNV": "Le commentaire permanent ne peut être ajouté ou modifié que sur demande adressée à PRAxIS GROUP N.V.",
     "pleaseContactPraxisGroupNvOrYourSystemAdministratorForMoreInformation": "Veuillez contacter PRAxIS GROUP N.V. ou votre administrateur système pour plus d’informations.",
     "pleaseForwardTheMessageBelowToTheSender": "Veuillez transmettre le message ci-dessous à son expéditeur",
+    "pleaseForwardTheMessageBelowToTheSenderAndThenClickContinue": "Veuillez transmettre la réponse ci-dessous à l’expéditeur, puis cliquer sur Continuer",
     "pleaseNoteThatTheZoneDescriptionTransmittedViaSiaLevel3AlwaysTakesPriorityOverTheManuallyEnteredDescriptionAndWillBeCommunicatedAsSuchDuringAlarmHandling": "À noter que la description de zone transmise via SIA Level 3 a toujours priorité sur la description ajoutée manuellement et qu'elle sera communique comme telle lors du traitement des alarmes.",
     "pleasePutTheCustomerOnHoldAndConfirmThisToTheInstaller": "Veuillez mettre le client 'on hold' (en attente) et confirmez-le à l’installateur.",
     "pleaseReportAnyIssuesEncounteredWhilePerformingActionNeededAtTheEndOfYourShiftTo": "Veuillez signaler tout problème rencontré lors de l’exécution d’Action Requise à la fin de votre shift à",

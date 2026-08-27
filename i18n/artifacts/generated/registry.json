@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3526,
-    "uniqueKeys": 3526,
+    "totalEntries": 3527,
+    "uniqueKeys": 3527,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -91138,6 +91138,36 @@
       }
     },
     {
+      "key": "info.pleaseForwardTheMessageBelowToTheSenderAndThenClickContinue",
+      "namespace": "info",
+      "leaf": "pleaseForwardTheMessageBelowToTheSenderAndThenClickContinue",
+      "segments": [
+        "info",
+        "pleaseForwardTheMessageBelowToTheSenderAndThenClickContinue"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3527
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gelieve onderstaand antwoord door te geven aan de afzender en daarna op Doorgaan te klikken",
+        "fr": "Veuillez transmettre la réponse ci-dessous à l’expéditeur, puis cliquer sur Continuer",
+        "en": "Please forward the answer below to the sender and then click Continue"
+      }
+    },
+    {
       "key": "info.pleaseNoteThatTheZoneDescriptionTransmittedViaSiaLevel3AlwaysTakesPriorityOverTheManuallyEnteredDescriptionAndWillBeCommunicatedAsSuchDuringAlarmHandling",
       "namespace": "info",
       "leaf": "pleaseNoteThatTheZoneDescriptionTransmittedViaSiaLevel3AlwaysTakesPriorityOverTheManuallyEnteredDescriptionAndWillBeCommunicatedAsSuchDuringAlarmHandling",
@@ -106594,7 +106624,7 @@
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 306
+      "keyCount": 307
     },
     {
       "name": "metadata",

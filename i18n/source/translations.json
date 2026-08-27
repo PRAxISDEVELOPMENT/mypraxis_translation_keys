@@ -32435,5 +32435,23 @@
     "applications": [
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "info.terminationOnlyTakesEffectAfterSignalTransmissionHasStopped",
+    "nl": "Volgens de Algemene voorwaarden van het telebewakingscontract (art. 3.C. laatste paragraaf) zal de opzegging (van een abonnement) in ieder geval slechts in kunnen gaan nadat de stopzetting van het doorsturen van eender welk signaal door het systeem van de klant door PRAxIS vastgesteld werd. Het verder doorsturen van eender welk signaal door dat systeem schort de opzegging van de overeenkomst, ook voor consumenten in de strikte zin van het woord, op.",
+    "fr": "Conformément aux conditions générales du contrat de télésurveillance (art. 3.C., dernier paragraphe) la résiliation ne pourra en tout état de cause prendre effet qu'après que PRAxIS aura constaté l'arrêt de la transmission de tout signal par le système du client. La poursuite de la transmission de tout signal par ce système suspend la résiliation du contrat, y compris pour les consommateurs au sens strict du terme.",
+    "en": "In accordance with the General Terms and Conditions of the alarm monitoring contract (Article 3.C., final paragraph), the termination shall in any event only take effect after PRAxIS has established that the customer's system has stopped transmitting all signals. The continued transmission of any signal by that system suspends the termination of the contract, including for consumers in the strict sense of the term.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.sevenDaySignalMonitoringAfterSubscriptionEndDate",
+    "nl": "Bij de stopzetting van een abonnement, zal na de vastgelegde einddatum een termijn van 7 dagen starten, tijdens dewelke actief zal gecontroleerd worden of op het epromnummer nog enig signaal gedetecteerd wordt. Als dit het geval is zal het epromnummer de status “terug actief voor facturatie” krijgen en terug in uw maandelijks overzicht van (voor facturatie) actieve epromnummers opgenomen worden.",
+    "fr": "En cas de résiliation d'un abonnement, un délai de 7 jours commencera à courir après la date de fin fixée, pendant lequel il sera activement vérifié si un signal est encore détecté sur le numéro d'EPROM. Si tel est le cas, le numéro d'EPROM se verra attribuer le statut « à nouveau actif pour la facturation » et sera réintégré dans votre relevé mensuel des numéros d'EPROM actifs (pour la facturation).",
+    "en": "In the event of the termination of a subscription, a period of 7 days will begin after the specified end date, during which active checks will be carried out to determine whether any signal is still being detected on the EPROM number. If this is the case, the EPROM number will be assigned the status “active again for billing” and will be reinstated in your monthly statement of EPROM numbers active (for billing purposes).",
+    "applications": [
+      "mypraxis_web"
+    ]
   }
 ]

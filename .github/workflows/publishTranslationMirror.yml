@@ -32,7 +32,7 @@ jobs:
   sync:
     name: Verify And Refresh Translation CDN Mirror
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
 
     steps:
       - name: Checkout Translation Repository

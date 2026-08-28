@@ -15,9 +15,10 @@ const CDN_BASE_URL = `https://cdn.jsdelivr.net/gh/${REPOSITORY}@${BRANCH}/i18n/a
 const PURGE_BASE_URL = `https://purge.jsdelivr.net/gh/${REPOSITORY}@${BRANCH}/i18n/artifacts/generated`;
 const REQUEST_TIMEOUT_MS = 15_000;
 const ORIGIN_ATTEMPTS = 12;
-const CDN_ATTEMPTS = 12;
+const CDN_REFRESH_ATTEMPTS = 4;
 const RETRY_DELAY_MS = 5_000;
-const PURGE_PROPAGATION_DELAY_MS = 5_000;
+const PURGE_PROPAGATION_DELAY_MS = 15_000;
+const PURGE_RETRY_DELAY_MS = 30_000;
 
 function sleep(milliseconds) {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
@@ -118,6 +119,38 @@ async function purge(url) {
   return result.id;
 }
 
+async function refreshCdn(cdnUrl, purgeUrl, expectedContent, label) {
+  let lastError;
+
+  // A purge can reach every edge successfully while jsDelivr's mutable branch
+  // snapshot is still stale. The first request then caches that stale refill
+  // again, so GET-only retries cannot recover. Purge again between checks to
+  // force a new branch resolution instead of repeatedly hitting the bad refill.
+  for (let attempt = 1; attempt <= CDN_REFRESH_ATTEMPTS; attempt += 1) {
+    const purgeId = await purge(purgeUrl);
+    console.log(`  ${label} purge ${attempt}/${CDN_REFRESH_ATTEMPTS} completed (${purgeId}).`);
+
+    await sleep(PURGE_PROPAGATION_DELAY_MS);
+
+    try {
+      await waitForMatchingContent(cdnUrl, expectedContent, 1, label);
+      return;
+    } catch (error) {
+      lastError = error;
+    }
+
+    if (attempt < CDN_REFRESH_ATTEMPTS) {
+      console.log(
+        `  ${label} is still stale after purge ${attempt}/${CDN_REFRESH_ATTEMPTS}: ${lastError.message}`
+      );
+      console.log(`  Waiting before the next purge to let the branch snapshot propagate...`);
+      await sleep(PURGE_RETRY_DELAY_MS);
+    }
+  }
+
+  throw lastError;
+}
+
 async function syncLanguage(language) {
   const filename = `${language}.json`;
   const localPath = path.join(GENERATED_DIR, filename);
@@ -142,12 +175,7 @@ async function syncLanguage(language) {
     console.log(`  jsDelivr ${filename} needs refresh: ${error.message}`);
   }
 
-  const purgeId = await purge(purgeUrl);
-  console.log(`  jsDelivr ${filename} purge completed (${purgeId}).`);
-
-  await sleep(PURGE_PROPAGATION_DELAY_MS);
-
-  await waitForMatchingContent(cdnUrl, localContent, CDN_ATTEMPTS, `jsDelivr ${filename}`);
+  await refreshCdn(cdnUrl, purgeUrl, localContent, `jsDelivr ${filename}`);
   console.log(`  jsDelivr ${filename} refreshed and verified.`);
 }
 

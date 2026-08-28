@@ -1,9 +1,9 @@
 [
   {
     "key": "applicationNames.mypraxisApp",
-    "nl": "MyPRAxIS App",
-    "fr": "MyPRAxIS App",
-    "en": "MyPRAxIS App",
+    "nl": "MyPRAxIS APP",
+    "fr": "MyPRAxIS APP",
+    "en": "MyPRAxIS APP",
     "applications": [
       "mypraxis_web",
       "mypraxis_app"

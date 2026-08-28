@@ -1,344 +1,128 @@
-# MyPRAxIS Translation Keys
+# MyPRAxIS Translation Platform
 
-[![Validate And Build Translation Artifacts](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/buildTranslations.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/buildTranslations.yml)
-[![Process Translation Editor Uploads](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/processTranslationUploads.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/processTranslationUploads.yml)
-[![Open Translation Proposal Pull Request](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/openTranslationProposalPr.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/openTranslationProposalPr.yml)
+[![Validate & Build](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/buildTranslations.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/buildTranslations.yml)
+[![Process Uploads](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/processTranslationUploads.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/processTranslationUploads.yml)
+[![Proposal Review](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/openTranslationProposalPr.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/openTranslationProposalPr.yml)
+[![CDN Mirror](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/publishTranslationMirror.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/publishTranslationMirror.yml)
 
-Central repository for MyPRAxIS translation content, validation rules, generated runtime artifacts, upload processing, and proposal automation.
+Eén centrale, gecontroleerde bron voor alle Nederlandse, Franse en Engelse
+MyPRAxIS-vertalingen — van wijziging en review tot runtime-publicatie voor web
+en mobiele applicaties.
 
 > [!IMPORTANT]
-> The canonical source of truth is [i18n/source/translations.json](i18n/source/translations.json).
-> Files under [i18n/artifacts/generated/](i18n/artifacts/generated/) are generated output and must not be edited manually.
+> [i18n/source/translations.json](i18n/source/translations.json) is altijd de
+> enige bron van waarheid. Bestanden in
+> [i18n/artifacts/generated/](i18n/artifacts/generated/) worden automatisch
+> gegenereerd en mogen nooit handmatig worden aangepast.
 
-## Quick Start For Maintainers
+## In één minuut
 
-For the normal local maintainer flow:
-
-```bash
-npm install
-npm run update
-```
-
-That command path is intended to work from macOS, Linux, Windows `cmd.exe`, and PowerShell.
-
-## Overview
-
-This repository exists to make translation changes:
-
-- traceable
-- validated
-- reproducible
-- safe to automate
-- easy to review
-
-It does five jobs:
-
-1. stores the canonical translation entries
-2. validates translation structure and configuration
-3. generates runtime-ready locale and metadata artifacts
-4. processes editor or frontend upload payloads
-5. routes new keys into a reviewable proposal flow
-
-The main operating rule is simple:
-
-- existing keys may be updated directly
-- new keys must go through the proposal path
-
-That split keeps copy changes fast while preventing unreviewed key and namespace drift.
-
-## Start Here
-
-If you only need orientation, use this table first.
-
-| I want to... | Read... |
+| Onderdeel | Antwoord |
 | --- | --- |
-| understand the repository quickly | [How It Works](#how-it-works) |
-| find the important files and directories | [Repository Layout](#repository-layout) |
-| run the right command | [Command Guide](#command-guide) |
-| copy a ready-to-use client i18n setup | [Client Templates](#client-templates) |
-| understand upload routing and proposal behavior | [Upload Processing](#upload-processing) |
-| understand GitHub Actions automation | [Automation](#automation) |
-| get deeper implementation detail | [Detailed Documentation](#detailed-documentation) |
+| Ondersteunde talen | Nederlands (`nl`), Frans (`fr`) en Engels (`en`) |
+| Centrale bron | [i18n/source/translations.json](i18n/source/translations.json) |
+| Runtime-bestanden | `nl.json`, `fr.json` en `en.json` |
+| Primaire runtime-host | jsDelivr CDN |
+| Originele host | GitHub Raw |
+| Bestaande key wijzigen | Automatisch verwerkt |
+| Nieuwe key toevoegen | Altijd via een handmatig gecontroleerde proposal-PR |
+| Normale lokale opdracht | `npm run update` |
+| Gegenereerde bestanden bewerken | Nooit |
 
-## How It Works
-
-The repository has one canonical source file and several derived or operational layers around it.
-
-### 1. Canonical Source
-
-[i18n/source/translations.json](i18n/source/translations.json) is the only authoritative translation dataset.
-
-Each entry contains:
-
-- a stable `key`
-- locale values such as `nl`, `fr`, and `en`
-- application scope
-- optional per-locale review status metadata when applicable
-
-Humans may edit this file directly when intentionally changing canonical content.
-
-### 2. Validation And Build
-
-The build system reads the canonical source, validates it against repository rules, and writes derived artifacts into [i18n/artifacts/generated/](i18n/artifacts/generated/).
-
-Generated artifacts include:
-
-- runtime locale trees such as [i18n/artifacts/generated/nl.json](i18n/artifacts/generated/nl.json), [i18n/artifacts/generated/fr.json](i18n/artifacts/generated/fr.json), and [i18n/artifacts/generated/en.json](i18n/artifacts/generated/en.json)
-- metadata files such as [i18n/artifacts/generated/registry.json](i18n/artifacts/generated/registry.json), [i18n/artifacts/generated/summary.json](i18n/artifacts/generated/summary.json), [i18n/artifacts/generated/keys.json](i18n/artifacts/generated/keys.json), [i18n/artifacts/generated/namespaces.json](i18n/artifacts/generated/namespaces.json), and [i18n/artifacts/generated/applications.json](i18n/artifacts/generated/applications.json)
-
-`status.nl`, `status.fr`, and `status.en` may be set to `review-required` in the source when a specific locale still needs review. Omitted statuses default to `approved`. Review metadata is exposed in `registry.json`; runtime locale files remain plain translation trees.
-
-These files are deterministic output. If they differ from source, either source changed, config changed, or the build logic changed.
-
-### 3. Upload Processing
-
-Apps or editors can submit JSON payloads into the upload flow instead of editing the source file manually.
-
-The upload processor classifies each entry into one of these paths:
-
-- direct update
-  Used for existing keys. Safe changes can be merged directly into `translations.json`.
-- proposal
-  Used for new keys. A reviewable proposal object is created and later reviewed through the proposal workflow.
-- skipped
-  Used when the payload does not actually change anything.
-- error
-  Used when the payload is structurally invalid or violates repository rules.
-
-### 4. Proposal Review Layer
-
-New keys are not written straight into the canonical source. They first become proposal objects in [i18n/proposals/pending/](i18n/proposals/pending/), where reviewers can inspect and edit them before merge.
-
-After approved proposal objects are applied on `main`, they are archived into [i18n/proposals/processed/](i18n/proposals/processed/).
-
-### 5. Operational State
-
-Uploads themselves are workflow state, not canonical business data.
-
-- [i18n/uploads/incoming/](i18n/uploads/incoming/) is the inbox
-- [i18n/uploads/processed/](i18n/uploads/processed/) is the archive
-- [i18n/artifacts/reports/](i18n/artifacts/reports/) contains processing and routing reports
-
-## Core Rules
-
-These are the rules that matter most when working in this repository.
-
-- edit [i18n/source/translations.json](i18n/source/translations.json) when you want to change canonical content directly
-- do not edit files in [i18n/artifacts/generated/](i18n/artifacts/generated/) by hand
-- keep source, generated artifacts, and workflow state separate
-- use existing keys for direct updates
-- send new keys through the proposal path
-- update docs when repository behavior changes
-
-## Repository Layout
+De belangrijkste regel:
 
 ```text
-i18n/
-├── artifacts/
-│   ├── generated/            # derived runtime and metadata files
-│   └── reports/              # routing, prepare, and proposal reports
-├── bin/                      # CLI entry points
-├── config/                   # namespaces, applications, and schemas
-├── proposals/
-│   ├── pending/              # reviewable proposal objects
-│   └── processed/            # archived approved proposal objects
-├── source/                   # canonical translation source
-├── src/
-│   ├── core/                 # shared helpers
-│   ├── translation-build/    # validation and artifact generation
-│   └── upload-processing/    # upload analysis, routing, and proposal logic
-└── uploads/
-    ├── incoming/             # upload inbox
-    └── processed/            # archived upload payloads
-
-docs/                         # deeper reference guides
-templates/                    # copy-ready JS and TS client i18n examples
-scripts/                      # local helper scripts
-.github/workflows/            # CI and automation behavior
+Bestaande key  → automatische update
+Nieuwe key     → voorstel → menselijke controle → merge → publicatie
 ```
 
-## Important Files
+## Snel naar de juiste taak
 
-| File or Directory | Purpose |
+| Ik wil... | Ga naar... |
 | --- | --- |
-| [i18n/source/translations.json](i18n/source/translations.json) | canonical translation source |
-| [i18n/config/namespaces.json](i18n/config/namespaces.json) | allowed namespaces and defaults |
-| [i18n/config/applications.json](i18n/config/applications.json) | allowed application identifiers |
-| [i18n/config/upload.schema.json](i18n/config/upload.schema.json) | upload payload contract |
-| [i18n/bin/build-translations.js](i18n/bin/build-translations.js) | build and validation entry point |
-| [i18n/bin/process-upload.js](i18n/bin/process-upload.js) | single upload preparation and proposal application |
-| [i18n/bin/process-upload-inbox.js](i18n/bin/process-upload-inbox.js) | inbox processing for direct and proposal modes |
-| [i18n/bin/route-upload-batches.js](i18n/bin/route-upload-batches.js) | mixed-batch router |
-| [i18n/bin/simulate-upload.js](i18n/bin/simulate-upload.js) | local upload simulation helper |
-| [i18n/src/translation-build/](i18n/src/translation-build/) | translation validation and generation logic |
-| [i18n/src/upload-processing/](i18n/src/upload-processing/) | upload classification, routing, and proposal logic |
-| [i18n/artifacts/reports/](i18n/artifacts/reports/) | prepare, routing, and apply reports |
-| [templates/](templates/) | copy-ready JS and TS client integration examples |
+| een bestaande vertaling aanpassen | [Bestaande key wijzigen](#route-a-bestaande-key-wijzigen-vanuit-een-applicatie) |
+| een nieuwe vertaling/key toevoegen | [Nieuwe key toevoegen](#route-b-nieuwe-key-toevoegen-vanuit-een-applicatie) |
+| rechtstreeks in deze repository werken | [Handmatig onderhouden](#route-d-handmatig-onderhouden-in-deze-repository) |
+| een applicatie naar de CDN migreren | [Applicaties aanpassen](#wat-moet-in-de-applicaties-worden-aangepast) |
+| begrijpen wat GitHub Actions doet | [Automatisering](#github-actions-en-verantwoordelijkheden) |
+| een probleem onderzoeken | [Troubleshooting](#troubleshooting) |
+| alle commando's bekijken | [Commandoreferentie](#commandoreferentie) |
+| dieper in de techniek duiken | [Verdiepende documentatie](#verdiepende-documentatie) |
 
-## Requirements And Setup
-
-Requirements:
-
-- Node.js 20 or newer
-- npm
-- Git
-- optionally `gh` for some maintainer workflows
-
-The local npm workflows are intended to work from macOS, Linux, Windows `cmd.exe`, and PowerShell.
-You should not need Git Bash just to run repository tooling.
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Recommended first checks:
-
-```bash
-npm run tooling:check-syntax
-npm run translations:check
-```
-
-## Fastest Local Flow
-
-For most maintainers and direct source edits, the intended local workflow is:
-
-```bash
-npm install
-npm run update
-```
-
-`npm run update` does this:
-
-1. builds translations locally
-2. asks for a commit message
-3. stages current changes
-4. commits and pushes the current branch
-5. on `main`, waits for the relevant GitHub Actions run when `gh` is installed and authenticated
-6. syncs the local branch back to the latest remote state when appropriate
-
-If `gh` is not installed or not authenticated correctly, the command still works.
-It simply skips the GitHub Actions wait step.
-
-## Command Guide
-
-### Translation Build Commands
-
-| Command | What it does |
-| --- | --- |
-| `npm run translations:build` | validates source and rewrites generated artifacts |
-| `npm run translations:check` | fails if generated artifacts are out of sync |
-| `npm run translations:report` | prints a detailed translation health report |
-| `npm run translations:validate` | runs stricter validation mode |
-| `npm run translations:list-namespaces` | prints configured namespaces |
-| `npm run translations:help` | shows CLI help |
-
-### Upload Commands
-
-| Command | What it does |
-| --- | --- |
-| `npm run uploads:prepare -- --input <file>` | classifies one upload file into direct updates, proposals, skips, and errors |
-| `npm run uploads:prepare -- --input <file> --apply-direct` | applies safe direct updates to source immediately |
-| `npm run uploads:route` | splits mixed upload batches into direct-only and proposal-only subsets |
-| `npm run uploads:process-inbox -- --mode direct` | processes direct-update inbox files |
-| `npm run uploads:process-inbox -- --mode proposal` | turns proposal uploads into reviewable proposal object files |
-| `npm run uploads:apply-proposals -- --input <report-file>` | applies proposal entries from a prepare report |
-| `npm run proposals:apply-pending` | applies reviewed proposal object files from `i18n/proposals/pending/` |
-| `npm run uploads:simulate -- ...` | simulates upload behavior locally |
-| `npm run uploads:help` | shows upload CLI help |
-
-### Tooling And Helper Commands
-
-| Command | What it does |
-| --- | --- |
-| `npm run tooling:check-syntax` | syntax-checks the Node tooling files |
-| `npm run help` | shows build help |
-| `npm run update` | cross-platform helper workflow that builds, commits, pushes, optionally waits for automation, and syncs |
-
-## Build And Validation Flow
-
-This is the simplest path in the repository.
+## Het volledige systeem
 
 ```mermaid
-flowchart LR
-    A[i18n/source/translations.json] --> B[Validation]
-    B --> C[Artifact generation]
-    C --> D[i18n/artifacts/generated/*.json]
+flowchart TD
+    APP[Applicatie of translation editor] --> UPLOAD[Upload JSON in incoming]
+    MAINTAINER[Maintainer] --> SOURCE[Canonical translations.json]
+    UPLOAD --> ROUTER{Bestaande key?}
+    ROUTER -- Ja --> DIRECT[Directe update]
+    ROUTER -- Nee --> PROPOSAL[Proposal branch + PR]
+    ROUTER -- Gemengd --> SPLIT[Automatisch splitsen]
+    SPLIT --> DIRECT
+    SPLIT --> PROPOSAL
+    PROPOSAL --> REVIEW[Menselijke controle]
+    REVIEW -->|Goedgekeurd en gemerged| SOURCE
+    DIRECT --> SOURCE
+    SOURCE --> VALIDATE[Validatie]
+    VALIDATE --> BUILD[Artifact build]
+    BUILD --> LOCALES[en.json · fr.json · nl.json]
+    LOCALES --> RAW[GitHub Raw origin]
+    RAW --> CDN[jsDelivr CDN mirror]
+    CDN --> CONSUMERS[Web- en mobiele applicaties]
 ```
 
-Typical local workflow:
+Dit ontwerp combineert twee doelen:
 
-1. edit [i18n/source/translations.json](i18n/source/translations.json)
-2. run `npm run translations:build`
-3. inspect the generated changes
-4. run `npm run translations:check`
+- wijzigingen aan bestaande teksten moeten snel en automatisch kunnen landen
+- nieuwe keys, namespaces en toepassingsscope moeten eerst door een mens worden
+  gecontroleerd
 
-## Client Templates
+## Welke route wordt wanneer gebruikt?
 
-If you need to consume these translations from a web app or Expo app, use the ready-to-copy examples in [templates/](templates/).
+| Situatie | Automatisch? | Menselijke review? | Resultaat |
+| --- | --- | --- | --- |
+| Applicatie wijzigt bestaande key | Ja | Nee | Bron en runtime-JSON worden bijgewerkt |
+| Applicatie stelt nieuwe key voor | Gedeeltelijk | Ja | Proposal-PR wordt geopend |
+| Upload bevat bestaand én nieuw | Ja | Alleen nieuwe entries | Batch wordt automatisch gesplitst |
+| Maintainer wijzigt bronbestand | Build en publicatie | Normale code-review indien van toepassing | Nieuwe runtime-artifacts |
+| Alleen reviewstatus verandert | Ja | Volgens teamproces | Registry/status wordt opnieuw opgebouwd |
+| Generated bestand wordt handmatig gewijzigd | Geblokkeerd door sync-check | Niet toegestaan | Build moet het bestand herstellen |
 
-They are aligned with the current repository output:
+## Route A: bestaande key wijzigen vanuit een applicatie
 
-- they load `en`, `fr`, and `nl`
-- they fetch from `i18n/artifacts/generated/{{lng}}.json`
-- they keep missing translations visible as `(missing key) your.key`
-- they keep `moment` synchronized with the active language
-
-Raw GitHub URL pattern:
-
-```text
-https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated/{{lng}}.json
-```
-
-Available template files:
-
-- [templates/javascript/web/i18n.js](templates/javascript/web/i18n.js)
-- [templates/javascript/expo/i18n.js](templates/javascript/expo/i18n.js)
-- [templates/typescript/web/i18n.ts](templates/typescript/web/i18n.ts)
-- [templates/typescript/expo/i18n.ts](templates/typescript/expo/i18n.ts)
-
-## Upload Processing
-
-Uploads exist so editors or applications can submit translation changes as JSON payloads.
-
-### Upload Payload Shape
-
-The payload contract is defined in [i18n/config/upload.schema.json](i18n/config/upload.schema.json).
-
-Example:
+Een upload-entry met een bestaande `key` is een directe update.
 
 ```json
 {
   "version": 1,
-  "source": "frontend-editor",
+  "source": "mypraxis-web-editor",
   "entries": [
     {
       "key": "common.save",
-      "nl": "Opslaan"
-    },
-    {
-      "en": "New button",
-      "nl": "Nieuwe knop"
+      "nl": "Opslaan",
+      "fr": "Enregistrer",
+      "en": "Save"
     }
   ]
 }
 ```
 
-### How Entries Are Classified
+De automatische flow:
 
-#### Existing key with `key`
+1. De applicatie commit het uploadbestand in `i18n/uploads/incoming/` op `main`.
+2. GitHub Actions herkent dat `common.save` al bestaat.
+3. Alleen werkelijk gewijzigde locale-waarden worden toegepast.
+4. `translations.json` wordt bijgewerkt.
+5. `en.json`, `fr.json` en `nl.json` worden opnieuw gegenereerd.
+6. De resultaten worden naar `main` gepusht.
+7. De CDN-mirror wordt onmiddellijk gecontroleerd en indien nodig vernieuwd.
 
-If an entry contains a valid existing `key`, it is treated as a direct update candidate.
+> [!NOTE]
+> Een expliciete lege string wist alleen die locale. Een ontbrekend veld laat
+> de bestaande waarde ongemoeid.
 
-Behavior:
-
-- only the locale fields that are present are considered
-- if a present locale value differs from the current source value, it becomes a direct update
-- if a present locale value is an explicit empty string, that locale is cleared
-- if no present locale value changes anything, the entry is marked as skipped
-
-Example:
+Voorbeeld: alleen de Franse tekst wissen:
 
 ```json
 {
@@ -347,174 +131,449 @@ Example:
 }
 ```
 
-That means: keep the same key, clear the French value.
+## Route B: nieuwe key toevoegen vanuit een applicatie
 
-#### Entry without `key`
+Een upload-entry zonder `key` is altijd een voorstel voor een nieuwe key.
 
-If an entry has no `key`, it is treated as a proposal candidate for a new translation key.
-
-The system then:
-
-1. derives a suggested key and namespace
-2. writes a prepare report
-3. queues a reviewable proposal object instead of editing the canonical source immediately
-
-### Upload Flow Overview
-
-```mermaid
-flowchart TD
-    A[Incoming upload JSON] --> B{Existing key present?}
-    B -- Yes --> C[Direct update path]
-    B -- No --> D[Proposal path]
-    C --> E[Update source data]
-    D --> F[Generate reviewable proposal objects]
-    E --> G[Rebuild generated artifacts]
-    F --> H[Review in proposal PR]
-    H --> I[Apply approved proposals on main]
+```json
+{
+  "version": 1,
+  "source": "mypraxis-app-editor",
+  "entries": [
+    {
+      "nl": "Nieuwe afspraak maken",
+      "fr": "Créer un nouveau rendez-vous",
+      "en": "Create a new appointment",
+      "description": "Primaire knop op het afsprakenoverzicht",
+      "requestedNamespace": "common"
+    }
+  ]
+}
 ```
 
-### Mixed Batch Routing
+De gecontroleerde flow:
 
-Some payloads contain both existing-key edits and new-key proposals. Those batches are split automatically.
+1. De upload wordt herkend als nieuwe-keyvoorstel.
+2. Het systeem stelt een key en namespace voor.
+3. Er wordt een `translation_proposals/**` branch gemaakt.
+4. GitHub opent automatisch een proposal-PR.
+5. Een medewerker controleert minimaal:
 
-```mermaid
-flowchart TD
-    A[Mixed upload file] --> B[Route upload batches]
-    B --> C[Direct-only subset]
-    B --> D[Proposal-only subset]
-    C --> E[Process direct inbox]
-    D --> F[Queue proposal objects]
+   - de voorgestelde key
+   - de namespace
+   - `nl`, `fr` en `en`
+   - de applicatiescope
+   - beschrijving en notities
+6. De proposal-JSON mag in de PR worden verbeterd.
+7. Na goedkeuring wordt de PR gemerged.
+8. De build verwerkt het goedgekeurde voorstel in `translations.json`.
+9. De runtime-JSON en CDN-mirror worden automatisch vernieuwd.
+
+> [!CAUTION]
+> Voeg een nieuwe key nooit rechtstreeks vanuit een applicatie toe aan
+> `translations.json`. De proposal-PR is de verplichte kwaliteitscontrole.
+
+## Route C: gemengde upload
+
+Eén upload mag bestaande én nieuwe entries bevatten. De router splitst die
+automatisch:
+
+```text
+Gemengde upload
+├── entries met bestaande key → direct verwerken
+└── entries zonder key        → proposal-PR
 ```
 
-### Reports
+De bestaande wijzigingen hoeven dus niet te wachten op de review van nieuwe
+keys.
 
-Processing reports are written into [i18n/artifacts/reports/](i18n/artifacts/reports/).
+## Route D: handmatig onderhouden in deze repository
 
-These reports are the first place to inspect when you need to answer questions like:
+Gebruik deze route wanneer een maintainer bewust rechtstreeks de centrale bron
+wijzigt.
 
-- why was this upload skipped
-- why did this entry become a proposal
-- which direct updates were applied
-- which proposal objects were created or applied
+### Eerste installatie
 
-## Automation
+Vereisten:
 
-The repository uses GitHub Actions to keep translation workflows predictable.
+- Node.js 20 of nieuwer
+- npm
+- Git
+- optioneel: GitHub CLI (`gh`) om workflowruns automatisch te volgen
 
-### Main Workflows
+```bash
+npm install
+```
 
-| Workflow | Purpose |
-| --- | --- |
-| [.github/workflows/buildTranslations.yml](.github/workflows/buildTranslations.yml) | validates source and generated artifacts |
-| [.github/workflows/processTranslationUploads.yml](.github/workflows/processTranslationUploads.yml) | routes and processes uploaded payloads |
-| [.github/workflows/openTranslationProposalPr.yml](.github/workflows/openTranslationProposalPr.yml) | opens or updates proposal PRs |
+### Aanbevolen dagelijkse flow
 
-### Branch Behavior
+```bash
+npm run update
+```
 
-- pushes to `main` can process direct updates and route proposal uploads
-- proposal work happens on `translation_proposals/**` branches
-- approved proposal objects are later applied back onto `main`
+Deze helper:
 
-## Common Workflows
+1. bouwt de vertalingen lokaal
+2. vraagt om een commitbericht
+3. staget en commit de wijzigingen
+4. pusht de huidige branch
+5. wacht op de relevante GitHub Action wanneer `gh` beschikbaar is
+6. synchroniseert de lokale branch opnieuw
 
-### Update Existing Translation Content Directly
-
-Use this when you intentionally edit the canonical source.
+### Handmatige variant
 
 ```bash
 npm run translations:build
 npm run translations:check
 ```
 
-Change:
+Controleer daarna altijd zowel de bronwijziging als de gegenereerde diff.
 
-- [i18n/source/translations.json](i18n/source/translations.json)
+## Wat moet in de applicaties worden aangepast?
 
-Inspect:
+Alle applicaties die nu rechtstreeks van GitHub Raw laden, moeten overschakelen
+naar de jsDelivr-URL.
 
-- [i18n/artifacts/generated/](i18n/artifacts/generated/)
+### Oude URL
 
-### Debug Why An Upload Did Not Change Source
+```text
+https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated/{{lng}}.json
+```
 
-Inspect in this order:
+### Nieuwe primaire URL
 
-1. [i18n/artifacts/reports/](i18n/artifacts/reports/)
-2. [i18n/uploads/incoming/](i18n/uploads/incoming/) or [i18n/uploads/processed/](i18n/uploads/processed/)
-3. [i18n/proposals/pending/](i18n/proposals/pending/) if the upload created a new-key proposal
+```text
+https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated/{{lng}}.json
+```
 
-Most common causes:
+Voorbeelden:
 
-- the payload used no `key`, so the entry became a proposal
-- the payload reused an existing key but did not actually change any locale value
-- the payload sent stale frontend state
-- the payload violated the upload schema or repository rules
+```text
+https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated/nl.json
+https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated/fr.json
+https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated/en.json
+```
 
-### Change Upload Logic
+Kopieer indien gewenst een bestaand voorbeeld:
 
-Start here:
+| Platform | JavaScript | TypeScript |
+| --- | --- | --- |
+| React web | [template](templates/javascript/web/i18n.js) | [template](templates/typescript/web/i18n.ts) |
+| Expo / React Native | [template](templates/javascript/expo/i18n.js) | [template](templates/typescript/expo/i18n.ts) |
 
-- [i18n/src/upload-processing/](i18n/src/upload-processing/)
-- [docs/upload-processing.md](docs/upload-processing.md)
-- [.github/workflows/processTranslationUploads.yml](.github/workflows/processTranslationUploads.yml)
+> [!WARNING]
+> De templates gebruiken jsDelivr als primaire bron, maar implementeren nog
+> geen automatische netwerkfallback of persistente lokale cache. Voor maximale
+> beschikbaarheid hoort iedere productieapp de laatst succesvolle response
+> lokaal te bewaren. GitHub Raw kan daarnaast als secundair endpoint dienen.
 
-### Change Validation Or Artifact Generation
+Aanbevolen runtimevolgorde voor productieapplicaties:
 
-Start here:
+```text
+1. jsDelivr CDN
+2. GitHub Raw wanneer een expliciete endpoint-fallback is geïmplementeerd
+3. laatst succesvol lokaal gecachte vertaling
+4. meegeleverde basisvertaling voor een eerste offline start
+```
 
-- [i18n/src/translation-build/](i18n/src/translation-build/)
-- [docs/architecture.md](docs/architecture.md)
+Taalfallback en netwerkfallback zijn niet hetzelfde:
+
+- `fallbackLng: false` maakt ontbrekende keys zichtbaar tijdens ontwikkeling
+- endpoint/cache-fallback houdt vertalingen beschikbaar tijdens een storing
+
+## CDN-publicatie en beschikbaarheid
+
+jsDelivr is een publieke CDN-mirror voor bestanden uit deze openbare
+GitHub-repository. Er is geen jsDelivr-account, API-token, repository secret of
+betaalmethode nodig.
+
+### Wanneer wordt de mirror vernieuwd?
+
+| Trigger | Doel |
+| --- | --- |
+| Wijziging aan `en.json`, `fr.json` of `nl.json` op `main` | Onmiddellijk publiceren |
+| Iedere zes uur, op minuut 23 UTC | Gemiste of mislukte refresh herstellen |
+| Handmatige GitHub Actions-run | Onderhoud of diagnose |
+
+De zesuurs-run is dus geen publicatievertraging. Een normale wijziging activeert
+de mirror onmiddellijk.
+
+### Veilige refreshvolgorde
+
+```mermaid
+flowchart TD
+    START[Mirror workflow start] --> SYNC{Artifacts gelijk aan bron?}
+    SYNC -- Nee --> STOP[Stop zonder CDN te wijzigen]
+    SYNC -- Ja --> RAW{GitHub Raw bevat exact dezelfde checksum?}
+    RAW -- Nee --> KEEP[Behoud laatste goede CDN-kopie]
+    RAW -- Ja --> CDN{jsDelivr checksum gelijk?}
+    CDN -- Ja --> DONE[Klaar]
+    CDN -- Nee --> PURGE[Verwijder alleen verouderde CDN-cache]
+    PURGE --> WARM[Haal nieuwe kopie op]
+    WARM --> VERIFY[Valideer JSON en checksum]
+    VERIFY --> DONE
+```
+
+De controles lopen voor `en`, `fr` en `nl` onafhankelijk. Een probleem met één
+taal verhindert niet dat de andere talen worden gecontroleerd.
+
+### Wat gebeurt bij een storing?
+
+| Storing | Gedrag |
+| --- | --- |
+| GitHub Raw tijdelijk offline | De bestaande jsDelivr-kopie wordt niet verwijderd |
+| GitHub Actions tijdelijk offline | De laatst gepubliceerde CDN-kopie blijft staan |
+| jsDelivr tijdelijk offline | GitHub Raw blijft beschikbaar als secundaire bron, mits de app die fallback implementeert |
+| Beide endpoints offline | Alleen lokale/app-bundled fallback kan de UI beschikbaar houden |
+
+## Datamodel
+
+Een canonical translation-entry ziet er zo uit:
+
+```json
+{
+  "key": "common.save",
+  "nl": "Opslaan",
+  "fr": "Enregistrer",
+  "en": "Save",
+  "applications": ["mypraxis_web", "mypraxis_app"],
+  "status": {
+    "fr": "review-required"
+  }
+}
+```
+
+| Veld | Betekenis |
+| --- | --- |
+| `key` | Unieke dot-notation key, bijvoorbeeld `common.save` |
+| `nl`, `fr`, `en` | Tekst per taal |
+| `applications` | Applicaties waarin de key wordt gebruikt |
+| `status` | Optionele reviewstatus per locale |
+
+Toegestane reviewstatussen:
+
+- `approved`
+- `review-required`
+
+Als een locale niet in `status` staat, geldt standaard `approved`.
+
+Toegestane applicatiescopes:
+
+- `mypraxis_app`
+- `mypraxis_web`
+- `documenten`
+- `mypraxis_data`
+
+De standaardnamespace is `common`. De volledige actieve lijst is:
+`applicationNames`, `authentication`, `common`, `confirmation`, `error`,
+`info`, `metadata`, `notification`, `status`, `success` en `warning`. Beheer
+deze lijsten uitsluitend via [i18n/config/](i18n/config/).
+
+## Gegenereerde artifacts
+
+De build produceert runtime- en metadatafiles in
+[i18n/artifacts/generated/](i18n/artifacts/generated/).
+
+| Bestand | Gebruik |
+| --- | --- |
+| `nl.json` | Nederlandse runtimevertalingen |
+| `fr.json` | Franse runtimevertalingen |
+| `en.json` | Engelse runtimevertalingen |
+| `registry.json` | Volledige registry met reviewmetadata |
+| `summary.json` | Gezondheids- en tellingsoverzicht |
+| `keys.json` | Overzicht van alle keys |
+| `namespaces.json` | Gegenereerde namespace-informatie |
+| `applications.json` | Gegenereerde applicatie-informatie |
+
+Runtime locale-files bevatten alleen de vertaalboom. Reviewstatussen worden niet
+in de zichtbare vertaalwaarde gemengd; daarvoor dient `registry.json`.
+
+## Repositorystructuur
+
+```text
+.
+├── .github/workflows/              # GitHub Actions
+├── docs/                           # verdiepende handleidingen
+├── i18n/
+│   ├── artifacts/
+│   │   ├── generated/              # automatisch gegenereerde runtime-output
+│   │   └── reports/                # analyse- en verwerkingsrapporten
+│   ├── bin/                        # CLI-entrypoints
+│   ├── config/                     # schemas, namespaces en applicaties
+│   ├── proposals/
+│   │   ├── pending/                # te reviewen proposal-objecten
+│   │   └── processed/              # toegepaste proposal-objecten
+│   ├── source/
+│   │   └── translations.json       # enige bron van waarheid
+│   ├── src/
+│   │   ├── core/                   # gedeelde hulpmiddelen
+│   │   ├── translation-build/      # validatie en artifactgeneratie
+│   │   └── upload-processing/      # routing, direct updates en proposals
+│   └── uploads/
+│       ├── incoming/               # nieuwe uploadqueue
+│       └── processed/              # verwerkte uploadarchive
+├── scripts/                        # lokale helpers en mirrorcontrole
+└── templates/                      # web- en Expo-integratievoorbeelden
+```
+
+## Belangrijkste bestanden
+
+| Bestand of map | Verantwoordelijkheid |
+| --- | --- |
+| [i18n/source/translations.json](i18n/source/translations.json) | Canonical vertalingen |
+| [i18n/config/translations.schema.json](i18n/config/translations.schema.json) | Contract van de centrale bron |
+| [i18n/config/upload.schema.json](i18n/config/upload.schema.json) | Contract van applicatie-uploads |
+| [i18n/config/namespaces.json](i18n/config/namespaces.json) | Toegestane namespaces |
+| [i18n/config/applications.json](i18n/config/applications.json) | Bekende applicaties |
+| [i18n/bin/build-translations.js](i18n/bin/build-translations.js) | Build- en validatie-entrypoint |
+| [i18n/src/translation-build/](i18n/src/translation-build/) | Implementatie van validatie/generatie |
+| [i18n/src/upload-processing/](i18n/src/upload-processing/) | Implementatie van uploadrouting |
+| [scripts/sync-translation-mirror.js](scripts/sync-translation-mirror.js) | Veilige GitHub/jsDelivr-synccontrole |
+| [templates/](templates/) | Copy-ready clientconfiguraties |
+
+## GitHub Actions en verantwoordelijkheden
+
+| Workflow | Start wanneer | Verantwoordelijkheid |
+| --- | --- | --- |
+| [Validate And Build](.github/workflows/buildTranslations.yml) | PR of relevante push naar `main` | Bron valideren, proposals toepassen en artifacts bouwen |
+| [Process Uploads](.github/workflows/processTranslationUploads.yml) | Upload in `incoming/` | Directe updates verwerken en nieuwe entries routeren |
+| [Open Proposal PR](.github/workflows/openTranslationProposalPr.yml) | Proposal-branch verandert | Reviewbare PR openen of bijwerken |
+| [Publish CDN Mirror](.github/workflows/publishTranslationMirror.yml) | Locale-artifact verandert, planning of handmatig | jsDelivr controleren en veilig vernieuwen |
+
+Branchmodel:
+
+```text
+main                         → canonical integratie en directe updates
+translation_proposals/**     → tijdelijke reviewbranches voor nieuwe keys
+```
+
+## Commandoreferentie
+
+### Normale opdrachten
+
+| Command | Doel |
+| --- | --- |
+| `npm install` | Projectafhankelijkheden installeren |
+| `npm run update` | Bouwen, committen, pushen, workflow volgen en synchroniseren |
+| `npm run tooling:check-syntax` | Syntax van alle Node-tooling controleren |
+| `npm run translations:build` | Bron valideren en artifacts opnieuw genereren |
+| `npm run translations:check` | Controleren of artifacts met de bron overeenkomen |
+| `npm run translations:validate` | Strikte validatie; warnings laten de opdracht falen |
+| `npm run translations:report` | Uitgebreid gezondheidsrapport tonen |
+| `npm run translations:list-namespaces` | Beschikbare namespaces tonen |
+| `npm run translations:help` | Alle translation-buildopties tonen |
+| `npm run help` | Verkorte alias voor de buildhelp |
+
+### Upload- en diagnoseopdrachten
+
+| Command | Doel |
+| --- | --- |
+| `npm run uploads:prepare -- --input <file>` | Upload analyseren zonder automatisch alles toe te passen |
+| `npm run uploads:prepare -- --input <file> --apply-direct` | Geldige bestaande-keyupdates toepassen |
+| `npm run uploads:route` | Gemengde batches splitsen |
+| `npm run uploads:process-inbox -- --mode direct` | Direct-updatequeue verwerken |
+| `npm run uploads:process-inbox -- --mode proposal` | Proposal-objecten genereren |
+| `npm run uploads:apply-proposals -- --input <report>` | Proposals uit één preparerapport toepassen |
+| `npm run proposals:apply-pending` | Goedgekeurde proposal-objecten toepassen |
+| `npm run uploads:simulate -- ...` | Uploadgedrag lokaal simuleren |
+| `npm run uploads:help` | Upload-CLI-help tonen |
+| `npm run uploads:route:help` | Routeropties tonen |
+| `npm run uploads:process-inbox:help` | Inboxprocessoropties tonen |
+| `npm run uploads:simulate:help` | Simulatieopties tonen |
+
+Voorbeelden:
+
+```bash
+# Bestaande key simuleren
+npm run uploads:simulate -- edit --key common.save --fr "Enregistrer"
+
+# Nieuwe key simuleren
+npm run uploads:simulate -- new --nl "Nieuwe knop" --fr "Nouveau bouton" --en "New button"
+
+# Nieuwe key met gewenste namespace simuleren
+npm run uploads:simulate -- new --nl "Nieuwe uitleg" --requested-namespace info
+```
+
+Simulaties zijn standaard dry runs. Gebruik alleen bewust `--apply` wanneer het
+resultaat lokaal moet worden geschreven.
+
+## Reviewchecklist voor nieuwe keys
+
+Controleer voor het mergen van een proposal-PR:
+
+- [ ] De key is duidelijk, stabiel en correct gespeld.
+- [ ] De namespace past bij de functie van de tekst.
+- [ ] Nederlands, Frans en Engels zijn inhoudelijk gelijkwaardig.
+- [ ] Variabelen/placeholders zijn in alle talen behouden.
+- [ ] HTML of formattering is alleen aanwezig wanneer dat bewust nodig is.
+- [ ] De applicatiescope is correct.
+- [ ] Beschrijving en notities geven voldoende context.
+- [ ] Alle verplichte GitHub Actions zijn groen.
+- [ ] De diff bevat geen handmatige wijzigingen aan generated artifacts.
 
 ## Troubleshooting
 
-### Generated Files Changed Unexpectedly
+| Probleem | Waarschijnlijke oorzaak | Wat controleren? |
+| --- | --- | --- |
+| Upload verandert niets | Waarden zijn identiek of entry is overgeslagen | `i18n/artifacts/reports/` |
+| Nieuwe key staat niet in `translations.json` | Wacht nog op proposal-review | `i18n/proposals/pending/` en open PR's |
+| Generated files zijn out of sync | Bron/config veranderde zonder build | `npm run translations:build` en daarna `translations:check` |
+| CDN-workflow faalt vóór purge | GitHub Raw heeft de nieuwe checksum nog niet | Run later opnieuw; oude CDN-kopie blijft behouden |
+| Eén taal loopt achter | Alleen dat locale-artifact of CDN-object faalde | Logregels met `en.json`, `fr.json` of `nl.json` |
+| App toont oude tekst | App/browsercache of app gebruikt nog GitHub Raw | Controleer loadPath, netwerkrequest en lokale cache |
+| App toont missing key | Key/locale ontbreekt of verkeerde namespace | Generated locale-file en gebruikte i18n-key |
+| Proposal-PR verschijnt niet | Proposal branch/workflow of payload ongeldig | Actions-run en routingrapport |
 
-Run:
+Onderzoek een uploadprobleem altijd in deze volgorde:
 
-```bash
-npm run translations:build
-npm run translations:check
-```
+1. [i18n/artifacts/reports/](i18n/artifacts/reports/)
+2. [i18n/uploads/incoming/](i18n/uploads/incoming/) of
+   [i18n/uploads/processed/](i18n/uploads/processed/)
+3. [i18n/proposals/pending/](i18n/proposals/pending/) voor nieuwe keys
+4. de relevante run onder de GitHub Actions-tab
 
-Then inspect:
+## Niet doen
 
-- [i18n/source/translations.json](i18n/source/translations.json)
-- [i18n/config/](i18n/config/)
-- [i18n/src/translation-build/](i18n/src/translation-build/)
+- Bewerk nooit `i18n/artifacts/generated/*.json` met de hand.
+- Omzeil nooit de proposal-route voor een nieuwe key.
+- Commit nooit tokens, wachtwoorden of andere secrets.
+- Behandel `uploads/` niet als canonical businessdata; het is workflowstatus.
+- Verander schemas, namespaces of applicatiescope niet zonder de impact te
+  controleren.
+- Verwijder geen rapporten of proposal-objecten om een fout te verbergen.
 
-### Upload Was Processed But Nothing Updated
+## Verdiepende documentatie
 
-Inspect the corresponding file in [i18n/artifacts/reports/](i18n/artifacts/reports/).
-
-Typical explanations:
-
-- the entry was `skipped`
-- the payload created a proposal instead of a direct update
-- the locale values were identical to the current source values
-
-### New Key Did Not Appear In `translations.json`
-
-That is usually expected. New keys are proposal candidates first, not direct writes. Check:
-
-- [i18n/proposals/pending/](i18n/proposals/pending/)
-- [i18n/proposals/processed/](i18n/proposals/processed/)
-- [docs/upload-processing.md](docs/upload-processing.md)
-
-## Detailed Documentation
-
-The root README is the fastest orientation layer. Deeper guides live in [docs/](docs/).
-
-| Document | Purpose |
+| Document | Onderwerp |
 | --- | --- |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | contributor onboarding and working rules |
-| [docs/README.md](docs/README.md) | documentation index |
-| [docs/architecture.md](docs/architecture.md) | system boundaries and ownership |
-| [docs/upload-processing.md](docs/upload-processing.md) | upload routing, direct updates, proposals, and reports |
-| [docs/github-automation.md](docs/github-automation.md) | GitHub Actions and proposal branch behavior |
-| [docs/maintainer-workflow.md](docs/maintainer-workflow.md) | everyday maintainer workflow and troubleshooting |
-| [templates/README.md](templates/README.md) | client integration templates for JS, TS, web, and Expo |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Bijdragen, werkregels en PR-verwachtingen |
+| [docs/README.md](docs/README.md) | Volledige documentatie-index |
+| [docs/architecture.md](docs/architecture.md) | Architectuur en verantwoordelijkheidsgrenzen |
+| [docs/upload-processing.md](docs/upload-processing.md) | Uploads, routing, direct updates en proposals |
+| [docs/github-automation.md](docs/github-automation.md) | Alle GitHub Actions en branches |
+| [docs/maintainer-workflow.md](docs/maintainer-workflow.md) | Dagelijkse maintainerflow |
+| [templates/README.md](templates/README.md) | Web- en Expo-clientintegratie |
 
-## Short Version
+## Waarom deze distributieaanpak?
 
-If you only remember one sentence, remember this:
+De relevante opties zijn afgewogen:
 
-This repository keeps one canonical translation source, validates it, derives runtime artifacts from it, and routes uploaded changes either into safe direct updates or into reviewed proposal workflows for new keys.
+| Optie | Voordeel | Waarom niet als hoofdoplossing? |
+| --- | --- | --- |
+| Alleen GitHub Raw | Zeer eenvoudig | GitHub wordt een single point of failure |
+| Vertalingen alleen in app bundelen | Volledig offline | Nieuwe teksten vereisen een app-release |
+| Eigen FTP/SFTP-server | Volledige controle | Serverbeheer, monitoring, HTTPS en beschikbaarheid nodig |
+| Betaalde object storage/CDN | Professionele controle en SLA-opties | Account, configuratie en betaalgegevens nodig |
+| GitHub Pages | Eenvoudig binnen GitHub | Blijft afhankelijk van hetzelfde platform |
+| jsDelivr + GitHub + app-cache | Live, gratis, weinig beheer en meerdere lagen | App-cache/fallback moet per applicatie worden afgewerkt |
+
+Binnen de huidige voorwaarden — live updates, geen betaalgegevens, geen eigen
+serverbeheer en publieke JSON — is jsDelivr als mirror de beste pragmatische
+keuze. Het is bewust geen enige bron: GitHub blijft origin en productieapps horen
+een lokale fallback te behouden.
+
+## De ene zin om te onthouden
+
+> Deze repository bewaart één gecontroleerde vertaalbron, verwerkt bestaande
+> keys automatisch, laat nieuwe keys eerst door mensen goedkeuren en publiceert
+> daarna veilige runtime-JSON via GitHub en jsDelivr.

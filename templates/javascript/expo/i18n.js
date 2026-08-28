@@ -25,7 +25,7 @@ export const i18nReady = i18n
     backend: {
       queryStringParams: { v: Date.now() },
       loadPath:
-        'https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated/{{lng}}.json'
+        'https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated/{{lng}}.json'
     }
   })
   .then(() => {

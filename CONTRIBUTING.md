@@ -132,6 +132,7 @@ Start in:
 - [.github/workflows/buildTranslations.yml](.github/workflows/buildTranslations.yml)
 - [.github/workflows/processTranslationUploads.yml](.github/workflows/processTranslationUploads.yml)
 - [.github/workflows/openTranslationProposalPr.yml](.github/workflows/openTranslationProposalPr.yml)
+- [.github/workflows/publishTranslationMirror.yml](.github/workflows/publishTranslationMirror.yml)
 
 Also read:
 

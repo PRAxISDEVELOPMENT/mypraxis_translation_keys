@@ -160,6 +160,24 @@ Responsibility:
 
 These directories describe workflow state, not canonical content.
 
+### 10. Runtime Distribution
+
+Locations:
+
+- [../.github/workflows/publishTranslationMirror.yml](../.github/workflows/publishTranslationMirror.yml)
+- [../scripts/sync-translation-mirror.js](../scripts/sync-translation-mirror.js)
+
+Responsibility:
+
+- verify that generated locale artifacts still match the canonical source
+- verify that GitHub Raw exposes the exact replacement object
+- keep the jsDelivr copies of `en.json`, `fr.json`, and `nl.json` current
+- preserve the last good CDN copy when the GitHub origin is unavailable
+
+The CDN is a distribution layer, not a source-of-truth layer. Applications may
+add their own endpoint and local-cache fallbacks without changing canonical
+translation ownership.
+
 ## Architectural Boundaries
 
 The repository works because these boundaries stay clean:
@@ -183,6 +201,9 @@ i18n/source/translations.json
   -> issue analysis
   -> artifact generation
   -> i18n/artifacts/generated/*.json
+  -> GitHub Raw origin
+  -> jsDelivr CDN mirror
+  -> consuming applications
 ```
 
 ### Upload Side

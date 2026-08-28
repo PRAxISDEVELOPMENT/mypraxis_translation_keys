@@ -4,11 +4,12 @@ This document explains what the repository automation does and when it runs.
 
 ## Automation Goals
 
-GitHub Actions exist here to do three jobs:
+GitHub Actions exist here to do four jobs:
 
 - validate translation changes
 - keep generated artifacts synchronized on `main`
 - turn new translation proposals into reviewable pull requests
+- keep the public runtime CDN mirror synchronized and verified
 
 ## Workflow Inventory
 
@@ -17,6 +18,7 @@ GitHub Actions exist here to do three jobs:
 | build and validation | [../.github/workflows/buildTranslations.yml](../.github/workflows/buildTranslations.yml) | validate source changes and regenerate artifacts on `main` |
 | upload processing | [../.github/workflows/processTranslationUploads.yml](../.github/workflows/processTranslationUploads.yml) | route incoming upload files and process direct/proposal paths |
 | proposal PR automation | [../.github/workflows/openTranslationProposalPr.yml](../.github/workflows/openTranslationProposalPr.yml) | open or update PRs for proposal branches |
+| CDN mirror publication | [../.github/workflows/publishTranslationMirror.yml](../.github/workflows/publishTranslationMirror.yml) | verify and refresh the jsDelivr runtime locale mirror |
 
 ## Workflow 1: Validate And Build Translation Artifacts
 
@@ -71,6 +73,34 @@ Behavior:
 - summarizes the exact objects that will be added
 - opens or updates a pull request targeting `main`
 - applies labels, assignees, and reviewer routing
+
+## Workflow 4: Publish Translation CDN Mirror
+
+File:
+
+- [../.github/workflows/publishTranslationMirror.yml](../.github/workflows/publishTranslationMirror.yml)
+
+Behavior:
+
+- runs immediately when `en.json`, `fr.json`, or `nl.json` changes on `main`
+- runs every six hours as a self-healing verification
+- supports a manual run from the GitHub Actions interface
+- verifies that generated artifacts match the canonical source before publication
+- verifies that GitHub Raw has the exact replacement before purging a stale CDN object
+- checks all supported locale files even if one locale fails
+- refreshes jsDelivr only when its checksum differs from the generated artifact
+
+Both upload routes end at the same publication trigger:
+
+1. Existing-key updates are processed directly on `main`, rebuild the runtime
+   locale files, and therefore trigger the CDN mirror immediately.
+2. New keys are placed in a proposal PR. After manual review and merge, the
+   build workflow applies the approved proposal, rebuilds the runtime locale
+   files, and triggers the CDN mirror.
+
+The scheduled run is not the normal publication path. Its purpose is to repair
+a missed or temporarily failed CDN refresh. The workflow never purges the last
+good CDN object when GitHub Raw cannot first prove that the replacement exists.
 
 ## Proposal PR Behavior
 

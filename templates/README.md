@@ -10,16 +10,22 @@ This repository publishes three runtime locale files:
 - `fr.json`
 - `nl.json`
 
-Raw GitHub URL pattern:
+Primary jsDelivr CDN URL pattern:
 
 ```text
-https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated/{{lng}}.json
+https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated/{{lng}}.json
 ```
 
 Example:
 
 ```text
-https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated/nl.json
+https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated/nl.json
+```
+
+GitHub Raw remains the origin and can be used as a secondary endpoint:
+
+```text
+https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated/{{lng}}.json
 ```
 
 ## Included Templates
@@ -36,11 +42,17 @@ https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/ma
 All templates are aligned with the current repository output and assumptions:
 
 - they load `en`, `fr`, and `nl`
-- they read from `i18n/artifacts/generated/{{lng}}.json`
+- they read from the jsDelivr mirror of `i18n/artifacts/generated/{{lng}}.json`
 - they normalize detected locales to language-only values such as `nl` or `fr`
 - they keep `fallbackLng: false` so missing translations stay visible
 - they render missing translations as `(missing key) your.key.here`
 - they keep `moment` in sync with the active app language
+
+The repository refreshes and verifies the jsDelivr copy after generated locale
+files change and every six hours. Production applications should additionally
+cache the last successful response locally. A local cache lets an already used
+language remain available if both jsDelivr and GitHub are temporarily
+unreachable.
 
 ## Package Notes
 

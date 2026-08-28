@@ -24,7 +24,7 @@ If someone is new to the repository, this order works best:
 | how to consume the generated locale files in an app | [../templates/README.md](../templates/README.md) |
 | how the system is split into source, config, logic, artifacts, and uploads | [architecture.md](architecture.md) |
 | how app/editor uploads are classified and processed | [upload-processing.md](upload-processing.md) |
-| how GitHub Actions and proposal PRs behave | [github-automation.md](github-automation.md) |
+| how GitHub Actions, proposal PRs, and CDN publication behave | [github-automation.md](github-automation.md) |
 | how to work in this repo as a maintainer | [maintainer-workflow.md](maintainer-workflow.md) |
 
 ## Documentation Map
@@ -49,7 +49,8 @@ If someone is new to the repository, this order works best:
   Explains the direct-update path, proposal path, mixed-batch routing, review-object files, inbox behavior, and report output.
 
 - [github-automation.md](github-automation.md)
-  Explains what each GitHub workflow does, which branches trigger which jobs, and how proposal PRs are created.
+  Explains what each GitHub workflow does, which branches trigger which jobs,
+  how proposal PRs are created, and how the runtime CDN mirror is refreshed.
 
 - [maintainer-workflow.md](maintainer-workflow.md)
   Explains everyday tasks, local validation, commit flow, sync behavior, and troubleshooting.

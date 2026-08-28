@@ -1,0 +1,52 @@
+#
+# Keeps the public jsDelivr mirror aligned with the generated runtime locales.
+# Generated-file pushes refresh the mirror immediately. Scheduled and manual
+# runs repair a missed refresh without purging a healthy copy during an origin
+# outage.
+#
+
+name: Publish Translation CDN Mirror
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'i18n/artifacts/generated/en.json'
+      - 'i18n/artifacts/generated/fr.json'
+      - 'i18n/artifacts/generated/nl.json'
+      - 'scripts/sync-translation-mirror.js'
+      - '.github/workflows/publishTranslationMirror.yml'
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: translation-cdn-mirror
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    name: Verify And Refresh Translation CDN Mirror
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout Translation Repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set Up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Verify Generated Artifacts Are In Sync
+        run: npm run translations:check
+
+      - name: Verify And Refresh jsDelivr Mirror
+        run: node scripts/sync-translation-mirror.js

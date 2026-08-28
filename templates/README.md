@@ -48,11 +48,28 @@ All templates are aligned with the current repository output and assumptions:
 - they render missing translations as `(missing key) your.key.here`
 - they keep `moment` in sync with the active app language
 
+The browser React and Expo templates additionally:
+
+- fall back from jsDelivr to GitHub Raw after a failed request, invalid JSON,
+  or a five-second timeout
+- notify React when refreshed resources are loaded
+- export `reloadI18nResources` for an immediate refresh after an application
+  has successfully changed translations
+- bypass the browser HTTP cache while still adding a version parameter for
+  explicit refreshes
+
+The browser React templates also refresh preloaded translations every five
+minutes through `i18next-http-backend`. The Expo templates intentionally do not
+poll in the background; call `reloadI18nResources` after an app-initiated
+translation update or from the app's own foreground/resume flow.
+
 The repository refreshes and verifies the jsDelivr copy after generated locale
-files change and every six hours. Production applications should additionally
-cache the last successful response locally. A local cache lets an already used
-language remain available if both jsDelivr and GitHub are temporarily
-unreachable.
+files change and every six hours. The six-hour workflow repairs missed mirror
+updates; it is not the normal publication delay.
+
+Production applications that must survive a cold start while both remote
+endpoints are unavailable should also keep a local last-known-good or bundled
+translation file.
 
 ## Package Notes
 

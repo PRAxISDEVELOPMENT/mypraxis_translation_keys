@@ -17,17 +17,17 @@ en mobiele applicaties.
 
 ## In één minuut
 
-| Onderdeel | Antwoord |
-| --- | --- |
-| Ondersteunde talen | Nederlands (`nl`), Frans (`fr`) en Engels (`en`) |
-| Centrale bron | [i18n/source/translations.json](i18n/source/translations.json) |
-| Runtime-bestanden | `nl.json`, `fr.json` en `en.json` |
-| Primaire runtime-host | jsDelivr CDN |
-| Originele host | GitHub Raw |
-| Bestaande key wijzigen | Automatisch verwerkt |
-| Nieuwe key toevoegen | Altijd via een handmatig gecontroleerde proposal-PR |
-| Normale lokale opdracht | `npm run update` |
-| Gegenereerde bestanden bewerken | Nooit |
+| Onderdeel                       | Antwoord                                                       |
+| ------------------------------- | -------------------------------------------------------------- |
+| Ondersteunde talen              | Nederlands (`nl`), Frans (`fr`) en Engels (`en`)               |
+| Centrale bron                   | [i18n/source/translations.json](i18n/source/translations.json) |
+| Runtime-bestanden               | `nl.json`, `fr.json` en `en.json`                              |
+| Primaire runtime-host           | jsDelivr CDN                                                   |
+| Originele host                  | GitHub Raw                                                     |
+| Bestaande key wijzigen          | Automatisch verwerkt                                           |
+| Nieuwe key toevoegen            | Altijd via een handmatig gecontroleerde proposal-PR            |
+| Normale lokale opdracht         | `npm run update`                                               |
+| Gegenereerde bestanden bewerken | Nooit                                                          |
 
 De belangrijkste regel:
 
@@ -38,16 +38,16 @@ Nieuwe key     → voorstel → menselijke controle → merge → publicatie
 
 ## Snel naar de juiste taak
 
-| Ik wil... | Ga naar... |
-| --- | --- |
-| een bestaande vertaling aanpassen | [Bestaande key wijzigen](#route-a-bestaande-key-wijzigen-vanuit-een-applicatie) |
-| een nieuwe vertaling/key toevoegen | [Nieuwe key toevoegen](#route-b-nieuwe-key-toevoegen-vanuit-een-applicatie) |
-| rechtstreeks in deze repository werken | [Handmatig onderhouden](#route-d-handmatig-onderhouden-in-deze-repository) |
-| een applicatie naar de CDN migreren | [Applicaties aanpassen](#wat-moet-in-de-applicaties-worden-aangepast) |
-| begrijpen wat GitHub Actions doet | [Automatisering](#github-actions-en-verantwoordelijkheden) |
-| een probleem onderzoeken | [Troubleshooting](#troubleshooting) |
-| alle commando's bekijken | [Commandoreferentie](#commandoreferentie) |
-| dieper in de techniek duiken | [Verdiepende documentatie](#verdiepende-documentatie) |
+| Ik wil...                              | Ga naar...                                                                      |
+| -------------------------------------- | ------------------------------------------------------------------------------- |
+| een bestaande vertaling aanpassen      | [Bestaande key wijzigen](#route-a-bestaande-key-wijzigen-vanuit-een-applicatie) |
+| een nieuwe vertaling/key toevoegen     | [Nieuwe key toevoegen](#route-b-nieuwe-key-toevoegen-vanuit-een-applicatie)     |
+| rechtstreeks in deze repository werken | [Handmatig onderhouden](#route-d-handmatig-onderhouden-in-deze-repository)      |
+| een applicatie naar de CDN migreren    | [Applicaties aanpassen](#wat-moet-in-de-applicaties-worden-aangepast)           |
+| begrijpen wat GitHub Actions doet      | [Automatisering](#github-actions-en-verantwoordelijkheden)                      |
+| een probleem onderzoeken               | [Troubleshooting](#troubleshooting)                                             |
+| alle commando's bekijken               | [Commandoreferentie](#commandoreferentie)                                       |
+| dieper in de techniek duiken           | [Verdiepende documentatie](#verdiepende-documentatie)                           |
 
 ## Het volledige systeem
 
@@ -80,14 +80,14 @@ Dit ontwerp combineert twee doelen:
 
 ## Welke route wordt wanneer gebruikt?
 
-| Situatie | Automatisch? | Menselijke review? | Resultaat |
-| --- | --- | --- | --- |
-| Applicatie wijzigt bestaande key | Ja | Nee | Bron en runtime-JSON worden bijgewerkt |
-| Applicatie stelt nieuwe key voor | Gedeeltelijk | Ja | Proposal-PR wordt geopend |
-| Upload bevat bestaand én nieuw | Ja | Alleen nieuwe entries | Batch wordt automatisch gesplitst |
-| Maintainer wijzigt bronbestand | Build en publicatie | Normale code-review indien van toepassing | Nieuwe runtime-artifacts |
-| Alleen reviewstatus verandert | Ja | Volgens teamproces | Registry/status wordt opnieuw opgebouwd |
-| Generated bestand wordt handmatig gewijzigd | Geblokkeerd door sync-check | Niet toegestaan | Build moet het bestand herstellen |
+| Situatie                                    | Automatisch?                | Menselijke review?                        | Resultaat                               |
+| ------------------------------------------- | --------------------------- | ----------------------------------------- | --------------------------------------- |
+| Applicatie wijzigt bestaande key            | Ja                          | Nee                                       | Bron en runtime-JSON worden bijgewerkt  |
+| Applicatie stelt nieuwe key voor            | Gedeeltelijk                | Ja                                        | Proposal-PR wordt geopend               |
+| Upload bevat bestaand én nieuw              | Ja                          | Alleen nieuwe entries                     | Batch wordt automatisch gesplitst       |
+| Maintainer wijzigt bronbestand              | Build en publicatie         | Normale code-review indien van toepassing | Nieuwe runtime-artifacts                |
+| Alleen reviewstatus verandert               | Ja                          | Volgens teamproces                        | Registry/status wordt opnieuw opgebouwd |
+| Generated bestand wordt handmatig gewijzigd | Geblokkeerd door sync-check | Niet toegestaan                           | Build moet het bestand herstellen       |
 
 ## Route A: bestaande key wijzigen vanuit een applicatie
 
@@ -158,12 +158,12 @@ De gecontroleerde flow:
 3. Er wordt een `translation_proposals/**` branch gemaakt.
 4. GitHub opent automatisch een proposal-PR.
 5. Een medewerker controleert minimaal:
-
    - de voorgestelde key
    - de namespace
    - `nl`, `fr` en `en`
    - de applicatiescope
    - beschrijving en notities
+
 6. De proposal-JSON mag in de PR worden verbeterd.
 7. Na goedkeuring wordt de PR gemerged.
 8. De build verwerkt het goedgekeurde voorstel in `translations.json`.
@@ -231,8 +231,9 @@ Controleer daarna altijd zowel de bronwijziging als de gegenereerde diff.
 
 ## Wat moet in de applicaties worden aangepast?
 
-Alle applicaties die nu rechtstreeks van GitHub Raw laden, moeten overschakelen
-naar de jsDelivr-URL.
+Applicaties gebruiken jsDelivr als primaire runtimebron. De React-webintegratie
+gebruikt GitHub Raw als automatische tweede bron wanneer jsDelivr niet
+bereikbaar is, een foutstatus teruggeeft of ongeldige JSON levert.
 
 ### Oude URL
 
@@ -256,22 +257,75 @@ https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18
 
 Kopieer indien gewenst een bestaand voorbeeld:
 
-| Platform | JavaScript | TypeScript |
-| --- | --- | --- |
-| React web | [template](templates/javascript/web/i18n.js) | [template](templates/typescript/web/i18n.ts) |
+| Platform            | JavaScript                                    | TypeScript                                    |
+| ------------------- | --------------------------------------------- | --------------------------------------------- |
+| React web           | [template](templates/javascript/web/i18n.js)  | [template](templates/typescript/web/i18n.ts)  |
 | Expo / React Native | [template](templates/javascript/expo/i18n.js) | [template](templates/typescript/expo/i18n.ts) |
 
+### Gedrag van de React-webintegratie
+
+De JavaScript- en TypeScript-webtemplates zijn afgestemd op de actuele
+MyPRAxIS-webimplementatie:
+
+| Onderdeel                   | Gedrag                                                                    |
+| --------------------------- | ------------------------------------------------------------------------- |
+| Primaire bron               | jsDelivr CDN                                                              |
+| Netwerkfallback             | GitHub Raw                                                                |
+| Timeout per bron            | 5 seconden                                                                |
+| Responsecontrole            | HTTP-status én geldige JSON                                               |
+| Automatische controle       | Iedere 5 minuten via `reloadInterval`                                     |
+| React-update                | Componenten reageren op `languageChanged` en `loaded`                     |
+| Browsercache                | Requests gebruiken `cache: 'no-store'`                                   |
+| Directe applicatiewijziging | Roep `reloadI18nResources(['en', 'nl', 'fr'])` aan na succesvolle verwerking |
+
+### Gedrag van de Expo-integratie
+
+De Expo-templates gebruiken dezelfde primaire bron, GitHub-fallback, timeout,
+JSON-validatie, cache-busting en `reloadI18nResources`-helper. Alleen de
+automatische vijfminuten-polling ontbreekt bewust. Roep de reloadhelper aan na
+een geslaagde wijziging vanuit de app en eventueel vanuit de bestaande
+foreground/resumeflow.
+
+De bronvolgorde staat bewust in één lijst:
+
+```js
+const TRANSLATION_SOURCES = [
+  'https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated',
+  'https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated'
+];
+```
+
+De eerste bereikbare bron met een succesvolle HTTP-status en geldige JSON wordt
+gebruikt. Een fout op jsDelivr schakelt dus automatisch door naar GitHub Raw.
+
+### Wanneer ziet een gebruiker een wijziging?
+
+| Wijziging                                        | React web                                              | Expo / React Native                                  |
+| ------------------------------------------------ | ------------------------------------------------------ | ---------------------------------------------------- |
+| Vanuit de applicatie, na geslaagde GitHub Action | Meteen via `reloadI18nResources`                        | Meteen via `reloadI18nResources`                     |
+| Rechtstreeks in deze repository                  | Uiterlijk bij de volgende controle van 5 minuten       | Bij volgende start of expliciete reload              |
+| App of pagina opnieuw gestart                    | Tijdens de initiële i18next-load                       | Tijdens de initiële i18next-load                     |
+
+De zesuurlijkse mirrorworkflow is alleen een herstelcontrole en veroorzaakt
+geen wachttijd van zes uur voor normale wijzigingen.
+
+> [!IMPORTANT]
+> `reloadInterval` is polling, geen realtime push. i18next ontvangt geen event
+> van GitHub wanneer een bestand wijzigt. Daarom gebruikt de webapp daarnaast
+> een expliciete reload na een wijziging die zij zelf heeft gestart. De
+> Expo-template gebruikt bewust geen achtergrondpolling; koppel de geëxporteerde
+> reloadhelper aan de bestaande update- of foregroundflow van de app.
+
 > [!WARNING]
-> De templates gebruiken jsDelivr als primaire bron, maar implementeren nog
-> geen automatische netwerkfallback of persistente lokale cache. Voor maximale
-> beschikbaarheid hoort iedere productieapp de laatst succesvolle response
-> lokaal te bewaren. GitHub Raw kan daarnaast als secundair endpoint dienen.
+> Geen enkele remote fallback helpt bij een koude start wanneer zowel jsDelivr
+> als GitHub offline zijn; daarvoor blijft een lokale of meegeleverde
+> basisvertaling nodig.
 
 Aanbevolen runtimevolgorde voor productieapplicaties:
 
 ```text
 1. jsDelivr CDN
-2. GitHub Raw wanneer een expliciete endpoint-fallback is geïmplementeerd
+2. GitHub Raw
 3. laatst succesvol lokaal gecachte vertaling
 4. meegeleverde basisvertaling voor een eerste offline start
 ```
@@ -289,11 +343,11 @@ betaalmethode nodig.
 
 ### Wanneer wordt de mirror vernieuwd?
 
-| Trigger | Doel |
-| --- | --- |
-| Wijziging aan `en.json`, `fr.json` of `nl.json` op `main` | Onmiddellijk publiceren |
-| Iedere zes uur, op minuut 23 UTC | Gemiste of mislukte refresh herstellen |
-| Handmatige GitHub Actions-run | Onderhoud of diagnose |
+| Trigger                                                   | Doel                                   |
+| --------------------------------------------------------- | -------------------------------------- |
+| Wijziging aan `en.json`, `fr.json` of `nl.json` op `main` | Onmiddellijk publiceren                |
+| Iedere zes uur, op minuut 23 UTC                          | Gemiste of mislukte refresh herstellen |
+| Handmatige GitHub Actions-run                             | Onderhoud of diagnose                  |
 
 De zesuurs-run is dus geen publicatievertraging. Een normale wijziging activeert
 de mirror onmiddellijk.
@@ -319,12 +373,12 @@ taal verhindert niet dat de andere talen worden gecontroleerd.
 
 ### Wat gebeurt bij een storing?
 
-| Storing | Gedrag |
-| --- | --- |
-| GitHub Raw tijdelijk offline | De bestaande jsDelivr-kopie wordt niet verwijderd |
-| GitHub Actions tijdelijk offline | De laatst gepubliceerde CDN-kopie blijft staan |
-| jsDelivr tijdelijk offline | GitHub Raw blijft beschikbaar als secundaire bron, mits de app die fallback implementeert |
-| Beide endpoints offline | Alleen lokale/app-bundled fallback kan de UI beschikbaar houden |
+| Storing                          | Gedrag                                                                                    |
+| -------------------------------- | ----------------------------------------------------------------------------------------- |
+| GitHub Raw tijdelijk offline     | De bestaande jsDelivr-kopie wordt niet verwijderd                                         |
+| GitHub Actions tijdelijk offline | De laatst gepubliceerde CDN-kopie blijft staan                                            |
+| jsDelivr tijdelijk offline       | GitHub Raw blijft beschikbaar als secundaire bron, mits de app die fallback implementeert |
+| Beide endpoints offline          | Alleen lokale/app-bundled fallback kan de UI beschikbaar houden                           |
 
 ## Datamodel
 
@@ -343,12 +397,12 @@ Een canonical translation-entry ziet er zo uit:
 }
 ```
 
-| Veld | Betekenis |
-| --- | --- |
-| `key` | Unieke dot-notation key, bijvoorbeeld `common.save` |
-| `nl`, `fr`, `en` | Tekst per taal |
-| `applications` | Applicaties waarin de key wordt gebruikt |
-| `status` | Optionele reviewstatus per locale |
+| Veld             | Betekenis                                           |
+| ---------------- | --------------------------------------------------- |
+| `key`            | Unieke dot-notation key, bijvoorbeeld `common.save` |
+| `nl`, `fr`, `en` | Tekst per taal                                      |
+| `applications`   | Applicaties waarin de key wordt gebruikt            |
+| `status`         | Optionele reviewstatus per locale                   |
 
 Toegestane reviewstatussen:
 
@@ -374,16 +428,16 @@ deze lijsten uitsluitend via [i18n/config/](i18n/config/).
 De build produceert runtime- en metadatafiles in
 [i18n/artifacts/generated/](i18n/artifacts/generated/).
 
-| Bestand | Gebruik |
-| --- | --- |
-| `nl.json` | Nederlandse runtimevertalingen |
-| `fr.json` | Franse runtimevertalingen |
-| `en.json` | Engelse runtimevertalingen |
-| `registry.json` | Volledige registry met reviewmetadata |
-| `summary.json` | Gezondheids- en tellingsoverzicht |
-| `keys.json` | Overzicht van alle keys |
-| `namespaces.json` | Gegenereerde namespace-informatie |
-| `applications.json` | Gegenereerde applicatie-informatie |
+| Bestand             | Gebruik                               |
+| ------------------- | ------------------------------------- |
+| `nl.json`           | Nederlandse runtimevertalingen        |
+| `fr.json`           | Franse runtimevertalingen             |
+| `en.json`           | Engelse runtimevertalingen            |
+| `registry.json`     | Volledige registry met reviewmetadata |
+| `summary.json`      | Gezondheids- en tellingsoverzicht     |
+| `keys.json`         | Overzicht van alle keys               |
+| `namespaces.json`   | Gegenereerde namespace-informatie     |
+| `applications.json` | Gegenereerde applicatie-informatie    |
 
 Runtime locale-files bevatten alleen de vertaalboom. Reviewstatussen worden niet
 in de zichtbare vertaalwaarde gemengd; daarvoor dient `registry.json`.
@@ -418,27 +472,27 @@ in de zichtbare vertaalwaarde gemengd; daarvoor dient `registry.json`.
 
 ## Belangrijkste bestanden
 
-| Bestand of map | Verantwoordelijkheid |
-| --- | --- |
-| [i18n/source/translations.json](i18n/source/translations.json) | Canonical vertalingen |
-| [i18n/config/translations.schema.json](i18n/config/translations.schema.json) | Contract van de centrale bron |
-| [i18n/config/upload.schema.json](i18n/config/upload.schema.json) | Contract van applicatie-uploads |
-| [i18n/config/namespaces.json](i18n/config/namespaces.json) | Toegestane namespaces |
-| [i18n/config/applications.json](i18n/config/applications.json) | Bekende applicaties |
-| [i18n/bin/build-translations.js](i18n/bin/build-translations.js) | Build- en validatie-entrypoint |
-| [i18n/src/translation-build/](i18n/src/translation-build/) | Implementatie van validatie/generatie |
-| [i18n/src/upload-processing/](i18n/src/upload-processing/) | Implementatie van uploadrouting |
-| [scripts/sync-translation-mirror.js](scripts/sync-translation-mirror.js) | Veilige GitHub/jsDelivr-synccontrole |
-| [templates/](templates/) | Copy-ready clientconfiguraties |
+| Bestand of map                                                               | Verantwoordelijkheid                  |
+| ---------------------------------------------------------------------------- | ------------------------------------- |
+| [i18n/source/translations.json](i18n/source/translations.json)               | Canonical vertalingen                 |
+| [i18n/config/translations.schema.json](i18n/config/translations.schema.json) | Contract van de centrale bron         |
+| [i18n/config/upload.schema.json](i18n/config/upload.schema.json)             | Contract van applicatie-uploads       |
+| [i18n/config/namespaces.json](i18n/config/namespaces.json)                   | Toegestane namespaces                 |
+| [i18n/config/applications.json](i18n/config/applications.json)               | Bekende applicaties                   |
+| [i18n/bin/build-translations.js](i18n/bin/build-translations.js)             | Build- en validatie-entrypoint        |
+| [i18n/src/translation-build/](i18n/src/translation-build/)                   | Implementatie van validatie/generatie |
+| [i18n/src/upload-processing/](i18n/src/upload-processing/)                   | Implementatie van uploadrouting       |
+| [scripts/sync-translation-mirror.js](scripts/sync-translation-mirror.js)     | Veilige GitHub/jsDelivr-synccontrole  |
+| [templates/](templates/)                                                     | Copy-ready clientconfiguraties        |
 
 ## GitHub Actions en verantwoordelijkheden
 
-| Workflow | Start wanneer | Verantwoordelijkheid |
-| --- | --- | --- |
-| [Validate And Build](.github/workflows/buildTranslations.yml) | PR of relevante push naar `main` | Bron valideren, proposals toepassen en artifacts bouwen |
-| [Process Uploads](.github/workflows/processTranslationUploads.yml) | Upload in `incoming/` | Directe updates verwerken en nieuwe entries routeren |
-| [Open Proposal PR](.github/workflows/openTranslationProposalPr.yml) | Proposal-branch verandert | Reviewbare PR openen of bijwerken |
-| [Publish CDN Mirror](.github/workflows/publishTranslationMirror.yml) | Locale-artifact verandert, planning of handmatig | jsDelivr controleren en veilig vernieuwen |
+| Workflow                                                             | Start wanneer                                    | Verantwoordelijkheid                                    |
+| -------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------- |
+| [Validate And Build](.github/workflows/buildTranslations.yml)        | PR of relevante push naar `main`                 | Bron valideren, proposals toepassen en artifacts bouwen |
+| [Process Uploads](.github/workflows/processTranslationUploads.yml)   | Upload in `incoming/`                            | Directe updates verwerken en nieuwe entries routeren    |
+| [Open Proposal PR](.github/workflows/openTranslationProposalPr.yml)  | Proposal-branch verandert                        | Reviewbare PR openen of bijwerken                       |
+| [Publish CDN Mirror](.github/workflows/publishTranslationMirror.yml) | Locale-artifact verandert, planning of handmatig | jsDelivr controleren en veilig vernieuwen               |
 
 Branchmodel:
 
@@ -451,35 +505,35 @@ translation_proposals/**     → tijdelijke reviewbranches voor nieuwe keys
 
 ### Normale opdrachten
 
-| Command | Doel |
-| --- | --- |
-| `npm install` | Projectafhankelijkheden installeren |
-| `npm run update` | Bouwen, committen, pushen, workflow volgen en synchroniseren |
-| `npm run tooling:check-syntax` | Syntax van alle Node-tooling controleren |
-| `npm run translations:build` | Bron valideren en artifacts opnieuw genereren |
-| `npm run translations:check` | Controleren of artifacts met de bron overeenkomen |
-| `npm run translations:validate` | Strikte validatie; warnings laten de opdracht falen |
-| `npm run translations:report` | Uitgebreid gezondheidsrapport tonen |
-| `npm run translations:list-namespaces` | Beschikbare namespaces tonen |
-| `npm run translations:help` | Alle translation-buildopties tonen |
-| `npm run help` | Verkorte alias voor de buildhelp |
+| Command                                | Doel                                                         |
+| -------------------------------------- | ------------------------------------------------------------ |
+| `npm install`                          | Projectafhankelijkheden installeren                          |
+| `npm run update`                       | Bouwen, committen, pushen, workflow volgen en synchroniseren |
+| `npm run tooling:check-syntax`         | Syntax van alle Node-tooling controleren                     |
+| `npm run translations:build`           | Bron valideren en artifacts opnieuw genereren                |
+| `npm run translations:check`           | Controleren of artifacts met de bron overeenkomen            |
+| `npm run translations:validate`        | Strikte validatie; warnings laten de opdracht falen          |
+| `npm run translations:report`          | Uitgebreid gezondheidsrapport tonen                          |
+| `npm run translations:list-namespaces` | Beschikbare namespaces tonen                                 |
+| `npm run translations:help`            | Alle translation-buildopties tonen                           |
+| `npm run help`                         | Verkorte alias voor de buildhelp                             |
 
 ### Upload- en diagnoseopdrachten
 
-| Command | Doel |
-| --- | --- |
-| `npm run uploads:prepare -- --input <file>` | Upload analyseren zonder automatisch alles toe te passen |
-| `npm run uploads:prepare -- --input <file> --apply-direct` | Geldige bestaande-keyupdates toepassen |
-| `npm run uploads:route` | Gemengde batches splitsen |
-| `npm run uploads:process-inbox -- --mode direct` | Direct-updatequeue verwerken |
-| `npm run uploads:process-inbox -- --mode proposal` | Proposal-objecten genereren |
-| `npm run uploads:apply-proposals -- --input <report>` | Proposals uit één preparerapport toepassen |
-| `npm run proposals:apply-pending` | Goedgekeurde proposal-objecten toepassen |
-| `npm run uploads:simulate -- ...` | Uploadgedrag lokaal simuleren |
-| `npm run uploads:help` | Upload-CLI-help tonen |
-| `npm run uploads:route:help` | Routeropties tonen |
-| `npm run uploads:process-inbox:help` | Inboxprocessoropties tonen |
-| `npm run uploads:simulate:help` | Simulatieopties tonen |
+| Command                                                    | Doel                                                     |
+| ---------------------------------------------------------- | -------------------------------------------------------- |
+| `npm run uploads:prepare -- --input <file>`                | Upload analyseren zonder automatisch alles toe te passen |
+| `npm run uploads:prepare -- --input <file> --apply-direct` | Geldige bestaande-keyupdates toepassen                   |
+| `npm run uploads:route`                                    | Gemengde batches splitsen                                |
+| `npm run uploads:process-inbox -- --mode direct`           | Direct-updatequeue verwerken                             |
+| `npm run uploads:process-inbox -- --mode proposal`         | Proposal-objecten genereren                              |
+| `npm run uploads:apply-proposals -- --input <report>`      | Proposals uit één preparerapport toepassen               |
+| `npm run proposals:apply-pending`                          | Goedgekeurde proposal-objecten toepassen                 |
+| `npm run uploads:simulate -- ...`                          | Uploadgedrag lokaal simuleren                            |
+| `npm run uploads:help`                                     | Upload-CLI-help tonen                                    |
+| `npm run uploads:route:help`                               | Routeropties tonen                                       |
+| `npm run uploads:process-inbox:help`                       | Inboxprocessoropties tonen                               |
+| `npm run uploads:simulate:help`                            | Simulatieopties tonen                                    |
 
 Voorbeelden:
 
@@ -513,16 +567,16 @@ Controleer voor het mergen van een proposal-PR:
 
 ## Troubleshooting
 
-| Probleem | Waarschijnlijke oorzaak | Wat controleren? |
-| --- | --- | --- |
-| Upload verandert niets | Waarden zijn identiek of entry is overgeslagen | `i18n/artifacts/reports/` |
-| Nieuwe key staat niet in `translations.json` | Wacht nog op proposal-review | `i18n/proposals/pending/` en open PR's |
-| Generated files zijn out of sync | Bron/config veranderde zonder build | `npm run translations:build` en daarna `translations:check` |
-| CDN-workflow faalt vóór purge | GitHub Raw heeft de nieuwe checksum nog niet | Run later opnieuw; oude CDN-kopie blijft behouden |
-| Eén taal loopt achter | Alleen dat locale-artifact of CDN-object faalde | Logregels met `en.json`, `fr.json` of `nl.json` |
-| App toont oude tekst | App/browsercache of app gebruikt nog GitHub Raw | Controleer loadPath, netwerkrequest en lokale cache |
-| App toont missing key | Key/locale ontbreekt of verkeerde namespace | Generated locale-file en gebruikte i18n-key |
-| Proposal-PR verschijnt niet | Proposal branch/workflow of payload ongeldig | Actions-run en routingrapport |
+| Probleem                                     | Waarschijnlijke oorzaak                         | Wat controleren?                                            |
+| -------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------- |
+| Upload verandert niets                       | Waarden zijn identiek of entry is overgeslagen  | `i18n/artifacts/reports/`                                   |
+| Nieuwe key staat niet in `translations.json` | Wacht nog op proposal-review                    | `i18n/proposals/pending/` en open PR's                      |
+| Generated files zijn out of sync             | Bron/config veranderde zonder build             | `npm run translations:build` en daarna `translations:check` |
+| CDN-workflow faalt vóór purge                | GitHub Raw heeft de nieuwe checksum nog niet    | Run later opnieuw; oude CDN-kopie blijft behouden           |
+| Eén taal loopt achter                        | Alleen dat locale-artifact of CDN-object faalde | Logregels met `en.json`, `fr.json` of `nl.json`             |
+| App toont oude tekst                         | App/browsercache of app gebruikt nog GitHub Raw | Controleer loadPath, netwerkrequest en lokale cache         |
+| App toont missing key                        | Key/locale ontbreekt of verkeerde namespace     | Generated locale-file en gebruikte i18n-key                 |
+| Proposal-PR verschijnt niet                  | Proposal branch/workflow of payload ongeldig    | Actions-run en routingrapport                               |
 
 Onderzoek een uploadprobleem altijd in deze volgorde:
 
@@ -544,28 +598,28 @@ Onderzoek een uploadprobleem altijd in deze volgorde:
 
 ## Verdiepende documentatie
 
-| Document | Onderwerp |
-| --- | --- |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Bijdragen, werkregels en PR-verwachtingen |
-| [docs/README.md](docs/README.md) | Volledige documentatie-index |
-| [docs/architecture.md](docs/architecture.md) | Architectuur en verantwoordelijkheidsgrenzen |
-| [docs/upload-processing.md](docs/upload-processing.md) | Uploads, routing, direct updates en proposals |
-| [docs/github-automation.md](docs/github-automation.md) | Alle GitHub Actions en branches |
-| [docs/maintainer-workflow.md](docs/maintainer-workflow.md) | Dagelijkse maintainerflow |
-| [templates/README.md](templates/README.md) | Web- en Expo-clientintegratie |
+| Document                                                   | Onderwerp                                     |
+| ---------------------------------------------------------- | --------------------------------------------- |
+| [CONTRIBUTING.md](CONTRIBUTING.md)                         | Bijdragen, werkregels en PR-verwachtingen     |
+| [docs/README.md](docs/README.md)                           | Volledige documentatie-index                  |
+| [docs/architecture.md](docs/architecture.md)               | Architectuur en verantwoordelijkheidsgrenzen  |
+| [docs/upload-processing.md](docs/upload-processing.md)     | Uploads, routing, direct updates en proposals |
+| [docs/github-automation.md](docs/github-automation.md)     | Alle GitHub Actions en branches               |
+| [docs/maintainer-workflow.md](docs/maintainer-workflow.md) | Dagelijkse maintainerflow                     |
+| [templates/README.md](templates/README.md)                 | Web- en Expo-clientintegratie                 |
 
 ## Waarom deze distributieaanpak?
 
 De relevante opties zijn afgewogen:
 
-| Optie | Voordeel | Waarom niet als hoofdoplossing? |
-| --- | --- | --- |
-| Alleen GitHub Raw | Zeer eenvoudig | GitHub wordt een single point of failure |
-| Vertalingen alleen in app bundelen | Volledig offline | Nieuwe teksten vereisen een app-release |
-| Eigen FTP/SFTP-server | Volledige controle | Serverbeheer, monitoring, HTTPS en beschikbaarheid nodig |
-| Betaalde object storage/CDN | Professionele controle en SLA-opties | Account, configuratie en betaalgegevens nodig |
-| GitHub Pages | Eenvoudig binnen GitHub | Blijft afhankelijk van hetzelfde platform |
-| jsDelivr + GitHub + app-cache | Live, gratis, weinig beheer en meerdere lagen | App-cache/fallback moet per applicatie worden afgewerkt |
+| Optie                              | Voordeel                                      | Waarom niet als hoofdoplossing?                          |
+| ---------------------------------- | --------------------------------------------- | -------------------------------------------------------- |
+| Alleen GitHub Raw                  | Zeer eenvoudig                                | GitHub wordt een single point of failure                 |
+| Vertalingen alleen in app bundelen | Volledig offline                              | Nieuwe teksten vereisen een app-release                  |
+| Eigen FTP/SFTP-server              | Volledige controle                            | Serverbeheer, monitoring, HTTPS en beschikbaarheid nodig |
+| Betaalde object storage/CDN        | Professionele controle en SLA-opties          | Account, configuratie en betaalgegevens nodig            |
+| GitHub Pages                       | Eenvoudig binnen GitHub                       | Blijft afhankelijk van hetzelfde platform                |
+| jsDelivr + GitHub + app-cache      | Live, gratis, weinig beheer en meerdere lagen | App-cache/fallback moet per applicatie worden afgewerkt  |
 
 Binnen de huidige voorwaarden — live updates, geen betaalgegevens, geen eigen
 serverbeheer en publieke JSON — is jsDelivr als mirror de beste pragmatische

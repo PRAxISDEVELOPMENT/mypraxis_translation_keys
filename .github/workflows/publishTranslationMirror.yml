@@ -26,7 +26,7 @@ permissions:
 
 concurrency:
   group: translation-cdn-mirror
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   sync:

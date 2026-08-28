@@ -37,8 +37,6 @@ jobs:
     steps:
       - name: Checkout Translation Repository
         uses: actions/checkout@v4
-        with:
-          ref: main
 
       - name: Set Up Node.js
         uses: actions/setup-node@v4

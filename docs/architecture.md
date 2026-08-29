@@ -170,9 +170,9 @@ Locations:
 Responsibility:
 
 - verify that generated locale artifacts still match the canonical source
-- verify GitHub Raw at the exact workflow commit SHA
-- verify jsDelivr at that same immutable commit SHA
-- reject mixed-version or mutable-branch runtime URLs
+- prepare the three locale files for Cloudflare Pages
+- verify GitHub Raw and Cloudflare Pages byte for byte
+- keep Cloudflare as distribution layer and GitHub as source of truth
 
 The CDN is a distribution layer, not a source-of-truth layer. Applications may
 add their own endpoint and local-cache fallbacks without changing canonical
@@ -201,8 +201,9 @@ i18n/source/translations.json
   -> issue analysis
   -> artifact generation
   -> i18n/artifacts/generated/*.json
-  -> immutable Git commit SHA
-  -> GitHub Raw and jsDelivr on the same SHA
+  -> commit to GitHub main
+  -> atomic Cloudflare Pages deployment
+  -> fixed CDN URLs with GitHub Raw fallback
   -> consuming applications
 ```
 

@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-const { execFileSync } = require('child_process');
 const fs = require('fs/promises');
 const path = require('path');
 
@@ -8,27 +7,13 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 const LANGUAGES = ['en', 'fr', 'nl'];
 const REPOSITORY = 'PRAxISDEVELOPMENT/mypraxis_translation_keys';
 const GENERATED_DIR = path.join(ROOT_DIR, 'i18n', 'artifacts', 'generated');
-const COMMIT = resolveCommit();
-const RAW_BASE_URL = `https://raw.githubusercontent.com/${REPOSITORY}/${COMMIT}/i18n/artifacts/generated`;
-const CDN_BASE_URL = `https://cdn.jsdelivr.net/gh/${REPOSITORY}@${COMMIT}/i18n/artifacts/generated`;
+const RAW_BASE_URL = `https://raw.githubusercontent.com/${REPOSITORY}/main/i18n/artifacts/generated`;
+const CDN_BASE_URL = String(
+  process.env.TRANSLATION_CDN_BASE_URL || 'https://mypraxis-translations.pages.dev'
+).replace(/\/+$/, '');
 const REQUEST_TIMEOUT_MS = 15_000;
-const AVAILABILITY_ATTEMPTS = 12;
-const RETRY_DELAY_MS = 5_000;
-
-function resolveCommit() {
-  const commit =
-    process.env.GITHUB_SHA ||
-    execFileSync('git', ['rev-parse', 'HEAD'], {
-      cwd: ROOT_DIR,
-      encoding: 'utf8'
-    }).trim();
-
-  if (!/^[a-f0-9]{40}$/i.test(commit)) {
-    throw new Error(`Expected a full Git commit SHA, received "${commit}".`);
-  }
-
-  return commit.toLowerCase();
-}
+const AVAILABILITY_ATTEMPTS = 30;
+const RETRY_DELAY_MS = 10_000;
 
 function sleep(milliseconds) {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
@@ -58,84 +43,73 @@ async function fetchContent(url) {
   return Buffer.from(await response.arrayBuffer());
 }
 
-async function waitForMatchingContent(url, expectedContent, attempts, label) {
-  let lastError;
+async function readExpectedFiles() {
+  return Promise.all(
+    LANGUAGES.map(async (language) => {
+      const filename = `${language}.json`;
+      const content = await fs.readFile(path.join(GENERATED_DIR, filename));
 
-  for (let attempt = 1; attempt <= attempts; attempt += 1) {
-    try {
-      const content = await fetchContent(url);
-      assertValidJson(content, label);
+      assertValidJson(content, filename);
+      return { filename, content };
+    })
+  );
+}
 
-      if (content.equals(expectedContent)) {
-        return content;
+async function findMismatches(baseUrl, expectedFiles, label) {
+  const results = await Promise.all(
+    expectedFiles.map(async ({ filename, content: expectedContent }) => {
+      try {
+        const remoteContent = await fetchContent(`${baseUrl}/${filename}`);
+
+        assertValidJson(remoteContent, `${label} ${filename}`);
+
+        return remoteContent.equals(expectedContent)
+          ? null
+          : `${label} ${filename} does not exactly match the repository file`;
+      } catch (error) {
+        return `${label} ${filename}: ${error.message}`;
       }
+    })
+  );
 
-      lastError = new Error(`${label} does not exactly match the repository file.`);
-    } catch (error) {
-      lastError = error;
+  return results.filter(Boolean);
+}
+
+async function waitForMirror(baseUrl, expectedFiles, label) {
+  let mismatches = [];
+
+  for (let attempt = 1; attempt <= AVAILABILITY_ATTEMPTS; attempt += 1) {
+    mismatches = await findMismatches(baseUrl, expectedFiles, label);
+
+    if (mismatches.length === 0) {
+      console.log(`${label} matches en.json, fr.json and nl.json exactly.`);
+      return;
     }
 
-    if (attempt < attempts) {
-      console.log(`  ${label} not current yet (attempt ${attempt}/${attempts}); retrying...`);
+    if (attempt < AVAILABILITY_ATTEMPTS) {
+      console.log(
+        `${label} is not current yet (attempt ${attempt}/${AVAILABILITY_ATTEMPTS}); retrying...`
+      );
       await sleep(RETRY_DELAY_MS);
     }
   }
 
-  throw lastError;
-}
-
-async function syncLanguage(language) {
-  const filename = `${language}.json`;
-  const localPath = path.join(GENERATED_DIR, filename);
-  const localContent = await fs.readFile(localPath);
-  const rawUrl = `${RAW_BASE_URL}/${filename}`;
-  const cdnUrl = `${CDN_BASE_URL}/${filename}`;
-
-  assertValidJson(localContent, localPath);
-  console.log(`\n${filename}: checking exact file contents.`);
-
-  await waitForMatchingContent(
-    rawUrl,
-    localContent,
-    AVAILABILITY_ATTEMPTS,
-    `GitHub Raw ${filename}`
-  );
-  console.log(`  GitHub Raw ${filename} matches commit ${COMMIT.slice(0, 12)}.`);
-
-  await waitForMatchingContent(
-    cdnUrl,
-    localContent,
-    AVAILABILITY_ATTEMPTS,
-    `jsDelivr ${filename}`
-  );
-  console.log(`  jsDelivr ${filename} matches the same immutable commit.`);
+  throw new Error(mismatches.join('\n'));
 }
 
 async function main() {
-  console.log(`Verifying immutable translation files for commit ${COMMIT}.`);
+  const expectedFiles = await readExpectedFiles();
 
-  const failures = [];
+  console.log('Verifying GitHub Raw and the Cloudflare Pages CDN.');
+  console.log(`Cloudflare base URL: ${CDN_BASE_URL}`);
 
-  for (const language of LANGUAGES) {
-    try {
-      await syncLanguage(language);
-    } catch (error) {
-      failures.push({ language, error });
-    }
-  }
+  await waitForMirror(RAW_BASE_URL, expectedFiles, 'GitHub Raw');
+  await waitForMirror(CDN_BASE_URL, expectedFiles, 'Cloudflare Pages');
 
-  if (failures.length > 0) {
-    for (const { language, error } of failures) {
-      console.error(`\n${language}.json failed: ${error.message}`);
-    }
-
-    throw new Error(`${failures.length} immutable translation check(s) failed.`);
-  }
-
-  console.log('\nGitHub Raw and jsDelivr match the immutable commit exactly.');
+  console.log('GitHub Raw and Cloudflare Pages contain the exact generated locale bytes.');
 }
 
 main().catch((error) => {
-  console.error(`\nImmutable translation verification failed: ${error.message}`);
+  console.error(`Translation CDN verification failed:\n${error.message}`);
   process.exit(1);
 });

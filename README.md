@@ -3,7 +3,7 @@
 [![Validate & Build](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/buildTranslations.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/buildTranslations.yml)
 [![Process Uploads](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/processTranslationUploads.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/processTranslationUploads.yml)
 [![Proposal Review](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/openTranslationProposalPr.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/openTranslationProposalPr.yml)
-[![Immutable CDN](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/publishTranslationMirror.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/publishTranslationMirror.yml)
+[![Cloudflare CDN](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/publishTranslationMirror.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/publishTranslationMirror.yml)
 
 Eén centrale, gecontroleerde bron voor alle Nederlandse, Franse en Engelse
 MyPRAxIS-vertalingen — van wijziging en review tot runtime-publicatie voor web
@@ -22,9 +22,9 @@ en mobiele applicaties.
 | Ondersteunde talen              | Nederlands (`nl`), Frans (`fr`) en Engels (`en`)               |
 | Centrale bron                   | [i18n/source/translations.json](i18n/source/translations.json) |
 | Runtime-bestanden               | `nl.json`, `fr.json` en `en.json`                              |
-| Primaire runtime-host           | jsDelivr CDN                                                   |
-| Originele host                  | GitHub Raw                                                     |
-| Versie-identiteit               | Eén volledige Git commit-SHA voor beide hosts                  |
+| Primaire runtime-host           | Cloudflare Pages CDN                                           |
+| Fallback-host                   | GitHub Raw                                                     |
+| Vaste CDN-basis-URL             | `https://mypraxis-translations.pages.dev`                      |
 | Bestaande key wijzigen          | Automatisch verwerkt                                           |
 | Nieuwe key toevoegen            | Altijd via een handmatig gecontroleerde proposal-PR            |
 | Normale lokale opdracht         | `npm run update`                                               |
@@ -45,6 +45,7 @@ Nieuwe key     → voorstel → menselijke controle → merge → publicatie
 | een nieuwe vertaling/key toevoegen     | [Nieuwe key toevoegen](#route-b-nieuwe-key-toevoegen-vanuit-een-applicatie)     |
 | rechtstreeks in deze repository werken | [Handmatig onderhouden](#route-d-handmatig-onderhouden-in-deze-repository)      |
 | een applicatie naar de CDN migreren    | [Applicaties aanpassen](#wat-moet-in-de-applicaties-worden-aangepast)           |
+| Cloudflare eenmalig configureren       | [Cloudflare Pages setup](docs/cloudflare-pages.md)                              |
 | begrijpen wat GitHub Actions doet      | [Automatisering](#github-actions-en-verantwoordelijkheden)                      |
 | een probleem onderzoeken               | [Troubleshooting](#troubleshooting)                                             |
 | alle commando's bekijken               | [Commandoreferentie](#commandoreferentie)                                       |
@@ -68,9 +69,9 @@ flowchart TD
     SOURCE --> VALIDATE[Validatie]
     VALIDATE --> BUILD[Artifact build]
     BUILD --> LOCALES[en.json · fr.json · nl.json]
-    LOCALES --> COMMIT[Immutable Git commit SHA]
-    COMMIT --> RAW[GitHub Raw op SHA]
-    COMMIT --> CDN[jsDelivr op dezelfde SHA]
+    LOCALES --> COMMIT[Commit naar main]
+    COMMIT --> RAW[GitHub Raw]
+    COMMIT --> CDN[Cloudflare Pages deployment]
     RAW --> CONSUMERS[Web- en mobiele applicaties]
     CDN --> CONSUMERS
 ```
@@ -119,7 +120,7 @@ De automatische flow:
 4. `translations.json` wordt bijgewerkt.
 5. `en.json`, `fr.json` en `nl.json` worden opnieuw gegenereerd.
 6. De resultaten worden naar `main` gepusht.
-7. GitHub Raw en jsDelivr worden op dezelfde immutable commit-SHA gecontroleerd.
+7. Cloudflare Pages deployt de locale-bestanden en de workflow controleert Cloudflare en GitHub Raw byte voor byte.
 
 > [!NOTE]
 > Een expliciete lege string wist alleen die locale. Een ontbrekend veld laat
@@ -170,7 +171,7 @@ De gecontroleerde flow:
 6. De proposal-JSON mag in de PR worden verbeterd.
 7. Na goedkeuring wordt de PR gemerged.
 8. De build verwerkt het goedgekeurde voorstel in `translations.json`.
-9. De runtime-JSON wordt via dezelfde immutable SHA op GitHub en jsDelivr beschikbaar.
+9. De runtime-JSON wordt via vaste Cloudflare-URLs beschikbaar, met GitHub Raw als fallback.
 
 > [!CAUTION]
 > Voeg een nieuwe key nooit rechtstreeks vanuit een applicatie toe aan
@@ -234,32 +235,29 @@ Controleer daarna altijd zowel de bronwijziging als de gegenereerde diff.
 
 ## Wat moet in de applicaties worden aangepast?
 
-Applicaties resolven eerst `main` naar één volledige commit-SHA via de publieke
-GitHub ref API. Daarna gebruiken ze jsDelivr als primaire runtimebron en GitHub
-Raw als automatische tweede bron, allebei vastgezet op exact diezelfde SHA.
+Applicaties gebruiken Cloudflare Pages als primaire runtimebron en GitHub Raw
+als automatische tweede bron. De Cloudflare-URL blijft bij iedere publicatie
+hetzelfde.
 
-### Oude URL
-
-```text
-https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated/{{lng}}.json
-```
-
-### Nieuwe immutable primaire URL
+### Primaire CDN-URL
 
 ```text
-https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@<commit-sha>/i18n/artifacts/generated/{{lng}}.json
+https://mypraxis-translations.pages.dev/{{lng}}.json
 ```
 
 Voorbeelden:
 
 ```text
-https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@5ad48951e3bd6b5e53aa6c44a85d7d0882df4b1a/i18n/artifacts/generated/nl.json
-https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/5ad48951e3bd6b5e53aa6c44a85d7d0882df4b1a/i18n/artifacts/generated/nl.json
+https://mypraxis-translations.pages.dev/en.json
+https://mypraxis-translations.pages.dev/fr.json
+https://mypraxis-translations.pages.dev/nl.json
 ```
 
-> [!CAUTION]
-> Gebruik nooit `@main` in een jsDelivr runtime-URL. Een mutable branch-snapshot
-> kan achterlopen en kan daardoor niet byte-voor-byte worden gegarandeerd.
+GitHub Raw blijft de netwerkfallback:
+
+```text
+https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated/{{lng}}.json
+```
 
 Kopieer indien gewenst een bestaand voorbeeld:
 
@@ -275,9 +273,8 @@ MyPRAxIS-webimplementatie:
 
 | Onderdeel                   | Gedrag                                                                    |
 | --------------------------- | ------------------------------------------------------------------------- |
-| Primaire bron               | jsDelivr CDN                                                              |
-| Netwerkfallback             | GitHub Raw op dezelfde commit-SHA                                         |
-| Versieresolutie             | GitHub `git/ref/heads/main` API                                            |
+| Primaire bron               | Cloudflare Pages CDN                                                       |
+| Netwerkfallback             | GitHub Raw op `main`                                                       |
 | Timeout per bron            | 5 seconden                                                                |
 | Responsecontrole            | HTTP-status én geldige JSON                                               |
 | Automatische controle       | Iedere 5 minuten via `reloadInterval`                                     |
@@ -287,24 +284,23 @@ MyPRAxIS-webimplementatie:
 
 ### Gedrag van de Expo-integratie
 
-De Expo-templates gebruiken dezelfde SHA-resolutie, primaire bron,
-GitHub-fallback, timeout, JSON-validatie en `reloadI18nResources`-helper. Alleen de
+De Expo-templates gebruiken dezelfde primaire bron, GitHub-fallback, timeout,
+JSON-validatie en `reloadI18nResources`-helper. Alleen de
 automatische vijfminuten-polling ontbreekt bewust. Roep de reloadhelper aan na
 een geslaagde wijziging vanuit de app en eventueel vanuit de bestaande
 foreground/resumeflow.
 
-De bronvolgorde wordt pas na SHA-resolutie opgebouwd:
+De bronvolgorde is vast:
 
 ```js
-const getTranslationSources = (commit) => [
-  `https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@${commit}/i18n/artifacts/generated`,
-  `https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/${commit}/i18n/artifacts/generated`
+const TRANSLATION_SOURCES = [
+  'https://mypraxis-translations.pages.dev',
+  'https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated'
 ];
 ```
 
 De eerste bereikbare bron met een succesvolle HTTP-status en geldige JSON wordt
-gebruikt. Een fout op jsDelivr schakelt dus automatisch door naar GitHub Raw,
-zonder ooit bestanden uit verschillende commits te mengen.
+gebruikt. Een fout op Cloudflare schakelt dus automatisch door naar GitHub Raw.
 
 ### Wanneer ziet een gebruiker een wijziging?
 
@@ -314,7 +310,7 @@ zonder ooit bestanden uit verschillende commits te mengen.
 | Rechtstreeks in deze repository                  | Uiterlijk bij de volgende controle van 5 minuten       | Bij volgende start of expliciete reload              |
 | App of pagina opnieuw gestart                    | Tijdens de initiële i18next-load                       | Tijdens de initiële i18next-load                     |
 
-Clients ontdekken de huidige SHA bij het laden, bij de webcontrole of bij een
+Clients laden de vaste URL bij het starten, bij de webcontrole of bij een
 expliciete reload. Daarvoor is geen periodieke CDN-workflow nodig.
 
 > [!IMPORTANT]
@@ -325,15 +321,15 @@ expliciete reload. Daarvoor is geen periodieke CDN-workflow nodig.
 > reloadhelper aan de bestaande update- of foregroundflow van de app.
 
 > [!WARNING]
-> Geen enkele remote fallback helpt bij een koude start wanneer zowel jsDelivr
+> Geen enkele remote fallback helpt bij een koude start wanneer zowel Cloudflare
 > als GitHub offline zijn; daarvoor blijft een lokale of meegeleverde
 > basisvertaling nodig.
 
 Aanbevolen runtimevolgorde voor productieapplicaties:
 
 ```text
-1. jsDelivr CDN
-2. GitHub Raw op dezelfde immutable SHA
+1. Cloudflare Pages CDN
+2. GitHub Raw
 3. laatst succesvol lokaal gecachte vertaling
 4. meegeleverde basisvertaling voor een eerste offline start
 ```
@@ -343,17 +339,17 @@ Taalfallback en netwerkfallback zijn niet hetzelfde:
 - `fallbackLng: false` maakt ontbrekende keys zichtbaar tijdens ontwikkeling
 - endpoint/cache-fallback houdt vertalingen beschikbaar tijdens een storing
 
-## Immutable CDN-publicatie en beschikbaarheid
+## Cloudflare CDN-publicatie en beschikbaarheid
 
-jsDelivr leest bestanden uit deze openbare GitHub-repository. Elke runtime-URL
-bevat een volledige commit-SHA. Daardoor is de URL immutable: dezelfde URL kan
-nooit later naar andere bytes verwijzen en heeft geen purge nodig.
+Cloudflare Pages is via de GitHub-integratie aan deze repository gekoppeld. Bij
+een relevante commit bouwt Cloudflare een nieuwe, atomische deployment uit
+`.cloudflare-pages/`. De publieke URLs blijven altijd hetzelfde.
 
 ### Wanneer wordt de integriteit gecontroleerd?
 
 | Trigger                                                   | Doel                                                    |
 | --------------------------------------------------------- | ------------------------------------------------------- |
-| Wijziging aan `en.json`, `fr.json` of `nl.json` op `main` | Exacte commit op GitHub Raw en jsDelivr verifiëren      |
+| Wijziging aan `en.json`, `fr.json` of `nl.json` op `main` | GitHub Raw en Cloudflare Pages exact verifiëren         |
 | Handmatige GitHub Actions-run                             | Onderhoud of diagnose                                   |
 
 ### Veilige verificatievolgorde
@@ -362,25 +358,24 @@ nooit later naar andere bytes verwijzen en heeft geen purge nodig.
 flowchart TD
     START[Workflow start] --> SYNC{Artifacts gelijk aan bron?}
     SYNC -- Nee --> STOP[Stop: repository is intern inconsistent]
-    SYNC -- Ja --> SHA[Neem exacte workflow commit-SHA]
-    SHA --> RAW[Download GitHub Raw op SHA]
-    SHA --> CDN[Download jsDelivr op dezelfde SHA]
+    SYNC -- Ja --> RAW[Download GitHub Raw op main]
+    RAW --> CDN[Wacht op Cloudflare Pages deployment]
     RAW --> VERIFY[Valideer JSON en exacte bytes]
     CDN --> VERIFY
-    VERIFY --> DONE[Beide hosts zijn byte-voor-byte gelijk]
+    VERIFY --> DONE[Beide hosts zijn byte voor byte gelijk]
 ```
 
-De workflow schrijft of purget niets extern. Een mismatch kan daardoor niet
-worden verborgen door opnieuw dezelfde mutable cache te vullen.
+De workflow schrijft of purget niets extern. Cloudflare Pages voert de
+deployment uit; de workflow wacht maximaal vijf minuten en controleert daarna
+alle drie bestanden exact.
 
 ### Wat gebeurt bij een storing?
 
 | Storing                          | Gedrag                                                                                         |
 | -------------------------------- | ---------------------------------------------------------------------------------------------- |
-| GitHub ref API tijdelijk offline | Een actieve app behoudt de reeds geladen resources; een cold start heeft een lokale fallback nodig |
-| GitHub Raw tijdelijk offline     | jsDelivr blijft beschikbaar op dezelfde commit-SHA                                             |
-| GitHub Actions tijdelijk offline | Bestaande immutable URLs blijven ongewijzigd beschikbaar                                       |
-| jsDelivr tijdelijk offline       | GitHub Raw blijft beschikbaar op dezelfde commit-SHA                                           |
+| GitHub Raw tijdelijk offline     | Cloudflare blijft de laatste succesvolle deployment aanbieden                                  |
+| GitHub Actions tijdelijk offline | Bestaande Cloudflare-URLs blijven beschikbaar                                                   |
+| Cloudflare tijdelijk offline     | De app probeert GitHub Raw                                                                      |
 | Beide endpoints offline          | Alleen lokale/app-bundled fallback kan de UI beschikbaar houden                                |
 
 ## Datamodel
@@ -469,7 +464,7 @@ in de zichtbare vertaalwaarde gemengd; daarvoor dient `registry.json`.
 │   └── uploads/
 │       ├── incoming/               # nieuwe uploadqueue
 │       └── processed/              # verwerkte uploadarchive
-├── scripts/                        # lokale helpers en immutable CDN-controle
+├── scripts/                        # lokale helpers en Cloudflare CDN-controle
 └── templates/                      # web- en Expo-integratievoorbeelden
 ```
 
@@ -485,7 +480,8 @@ in de zichtbare vertaalwaarde gemengd; daarvoor dient `registry.json`.
 | [i18n/bin/build-translations.js](i18n/bin/build-translations.js)             | Build- en validatie-entrypoint        |
 | [i18n/src/translation-build/](i18n/src/translation-build/)                   | Implementatie van validatie/generatie |
 | [i18n/src/upload-processing/](i18n/src/upload-processing/)                   | Implementatie van uploadrouting       |
-| [scripts/sync-translation-mirror.js](scripts/sync-translation-mirror.js)     | Immutable GitHub/jsDelivr-check       |
+| [scripts/prepare-cloudflare-pages.js](scripts/prepare-cloudflare-pages.js)   | Bouwt de statische Cloudflare-output  |
+| [scripts/sync-translation-mirror.js](scripts/sync-translation-mirror.js)     | GitHub/Cloudflare-bytecontrole        |
 | [templates/](templates/)                                                     | Copy-ready clientconfiguraties        |
 
 ## GitHub Actions en verantwoordelijkheden
@@ -495,7 +491,7 @@ in de zichtbare vertaalwaarde gemengd; daarvoor dient `registry.json`.
 | [Validate And Build](.github/workflows/buildTranslations.yml)        | PR of relevante push naar `main`                 | Bron valideren, proposals toepassen en artifacts bouwen |
 | [Process Uploads](.github/workflows/processTranslationUploads.yml)   | Upload in `incoming/`                            | Directe updates verwerken en nieuwe entries routeren    |
 | [Open Proposal PR](.github/workflows/openTranslationProposalPr.yml)  | Proposal-branch verandert                        | Reviewbare PR openen of bijwerken                       |
-| [Verify Immutable CDN](.github/workflows/publishTranslationMirror.yml) | Locale-artifact verandert of handmatig | Raw en jsDelivr op dezelfde commit-SHA verifiëren       |
+| [Verify Cloudflare CDN](.github/workflows/publishTranslationMirror.yml) | Locale-artifact verandert of handmatig | Raw en Cloudflare Pages exact verifiëren                |
 
 Branchmodel:
 
@@ -515,6 +511,7 @@ translation_proposals/**     → tijdelijke reviewbranches voor nieuwe keys
 | `npm run tooling:check-syntax`         | Syntax van alle Node-tooling controleren                     |
 | `npm run translations:build`           | Bron valideren en artifacts opnieuw genereren                |
 | `npm run translations:check`           | Controleren of artifacts met de bron overeenkomen            |
+| `npm run translations:prepare-cdn`     | Cloudflare Pages-output lokaal voorbereiden                   |
 | `npm run translations:validate`        | Strikte validatie; warnings laten de opdracht falen          |
 | `npm run translations:report`          | Uitgebreid gezondheidsrapport tonen                          |
 | `npm run translations:list-namespaces` | Beschikbare namespaces tonen                                 |
@@ -575,9 +572,9 @@ Controleer voor het mergen van een proposal-PR:
 | Upload verandert niets                       | Waarden zijn identiek of entry is overgeslagen  | `i18n/artifacts/reports/`                                   |
 | Nieuwe key staat niet in `translations.json` | Wacht nog op proposal-review                    | `i18n/proposals/pending/` en open PR's                      |
 | Generated files zijn out of sync             | Bron/config veranderde zonder build             | `npm run translations:build` en daarna `translations:check` |
-| Immutable CDN-workflow faalt                 | Raw of jsDelivr heeft de commit nog niet beschikbaar | Logregels met commit-SHA en locale controleren          |
-| Eén taal faalt                               | Alleen dat immutable locale-object is niet beschikbaar | Logregels met `en.json`, `fr.json` of `nl.json`       |
-| App toont oude tekst                         | App gebruikt nog `@main` of resolveert geen nieuwe SHA | Controleer ref-request, SHA in URL en reloadflow       |
+| Cloudflare CDN-workflow faalt                | Deployment loopt nog, faalde of project-URL klopt niet | Cloudflare deployment en `TRANSLATION_CDN_BASE_URL`    |
+| Eén taal faalt                               | Alleen dat CDN-bestand wijkt af                       | Cloudflare deployment-output en workflowlog            |
+| App toont oude tekst                         | Deployment loopt nog of app heeft niet herladen       | Cloudflare status en reloadflow                        |
 | App toont missing key                        | Key/locale ontbreekt of verkeerde namespace     | Generated locale-file en gebruikte i18n-key                 |
 | Proposal-PR verschijnt niet                  | Proposal branch/workflow of payload ongeldig    | Actions-run en routingrapport                               |
 
@@ -620,18 +617,19 @@ De relevante opties zijn afgewogen:
 | Alleen GitHub Raw                  | Zeer eenvoudig                                | GitHub wordt een single point of failure                 |
 | Vertalingen alleen in app bundelen | Volledig offline                              | Nieuwe teksten vereisen een app-release                  |
 | Eigen FTP/SFTP-server              | Volledige controle                            | Serverbeheer, monitoring, HTTPS en beschikbaarheid nodig |
+| Cloudflare Pages                   | Vaste URL, onafhankelijk CDN en gratis static hosting | Eenmalige GitHub-koppeling nodig                   |
 | Betaalde object storage/CDN        | Professionele controle en SLA-opties          | Account, configuratie en betaalgegevens nodig            |
 | GitHub Pages                       | Eenvoudig binnen GitHub                       | Blijft afhankelijk van hetzelfde platform                |
 | jsDelivr `@main` + purge           | Eenvoudige vaste URL                           | Mutable snapshots en purge-throttling zijn niet exact    |
-| jsDelivr op SHA + GitHub op SHA    | Immutable en byte-voor-byte verifieerbaar      | Client moet eerst de huidige GitHub SHA resolven          |
+| jsDelivr op SHA + GitHub op SHA    | Immutable en byte-voor-byte verifieerbaar      | Geen vaste URL; client moet eerst de SHA resolven         |
 
-Binnen de huidige voorwaarden — live updates, geen betaalgegevens, geen eigen
-serverbeheer en publieke JSON — is jsDelivr op immutable commit-SHA samen met
-GitHub Raw op diezelfde SHA de beste pragmatische keuze. GitHub blijft origin en
-productieapps horen een lokale fallback te behouden.
+Binnen de huidige voorwaarden — vaste URLs, geen eigen serverbeheer en publieke
+JSON — is Cloudflare Pages de primaire CDN-laag. GitHub blijft de bron en Raw
+blijft de netwerkfallback. Productieapps horen daarnaast een lokale fallback te
+behouden voor een volledige netwerkstoring.
 
 ## De ene zin om te onthouden
 
 > Deze repository bewaart één gecontroleerde vertaalbron, verwerkt bestaande
 > keys automatisch, laat nieuwe keys eerst door mensen goedkeuren en publiceert
-> daarna exact dezelfde immutable runtime-JSON via GitHub en jsDelivr.
+> daarna dezelfde runtime-JSON via vaste Cloudflare-URLs met GitHub Raw als fallback.

@@ -9,7 +9,7 @@ GitHub Actions exist here to do four jobs:
 - validate translation changes
 - keep generated artifacts synchronized on `main`
 - turn new translation proposals into reviewable pull requests
-- verify immutable runtime files on GitHub Raw and jsDelivr
+- verify runtime files on GitHub Raw and Cloudflare Pages
 
 ## Workflow Inventory
 
@@ -18,7 +18,7 @@ GitHub Actions exist here to do four jobs:
 | build and validation | [../.github/workflows/buildTranslations.yml](../.github/workflows/buildTranslations.yml) | validate source changes and regenerate artifacts on `main` |
 | upload processing | [../.github/workflows/processTranslationUploads.yml](../.github/workflows/processTranslationUploads.yml) | route incoming upload files and process direct/proposal paths |
 | proposal PR automation | [../.github/workflows/openTranslationProposalPr.yml](../.github/workflows/openTranslationProposalPr.yml) | open or update PRs for proposal branches |
-| immutable CDN verification | [../.github/workflows/publishTranslationMirror.yml](../.github/workflows/publishTranslationMirror.yml) | verify Raw and jsDelivr bytes at one commit SHA |
+| Cloudflare CDN verification | [../.github/workflows/publishTranslationMirror.yml](../.github/workflows/publishTranslationMirror.yml) | verify Raw and Cloudflare Pages bytes |
 
 ## Workflow 1: Validate And Build Translation Artifacts
 
@@ -74,7 +74,7 @@ Behavior:
 - opens or updates a pull request targeting `main`
 - applies labels, assignees, and reviewer routing
 
-## Workflow 4: Verify Immutable Translation CDN
+## Workflow 4: Verify Cloudflare Translation CDN
 
 File:
 
@@ -85,20 +85,21 @@ Behavior:
 - runs immediately when `en.json`, `fr.json`, or `nl.json` changes on `main`
 - supports a manual run from the GitHub Actions interface
 - verifies that generated artifacts match the canonical source
-- uses the exact workflow commit SHA for GitHub Raw and jsDelivr
+- prepares the exact three-file Cloudflare Pages output locally
+- waits for the Cloudflare GitHub integration to deploy the commit
 - checks all supported locale files even if one locale fails
-- compares valid JSON and exact file bytes without any cache purge
+- compares valid JSON and exact file bytes on GitHub Raw and Cloudflare Pages
 
 Both upload routes end at the same publication trigger:
 
 1. Existing-key updates are processed directly on `main`, rebuild the runtime
-   locale files, and therefore trigger immutable CDN verification immediately.
+   locale files, and therefore trigger Cloudflare CDN verification immediately.
 2. New keys are placed in a proposal PR. After manual review and merge, the
    build workflow applies the approved proposal, rebuilds the runtime locale
-   files, and triggers immutable CDN verification.
+   files, and triggers Cloudflare CDN verification.
 
-Immutable commit URLs are permanent. Applications resolve `main` to a SHA and
-never request jsDelivr's mutable `@main` URL.
+Cloudflare deploys the locale files atomically and keeps the public URLs fixed.
+Applications use Cloudflare first and GitHub Raw only as a network fallback.
 
 ## Proposal PR Behavior
 
@@ -115,6 +116,10 @@ Repository variables used:
 - `TRANSLATION_PROPOSAL_REVIEWERS`
 - `TRANSLATION_PROPOSAL_TEAM_REVIEWERS`
 - `TRANSLATION_PROPOSAL_ASSIGNEES`
+- `TRANSLATION_CDN_BASE_URL`
+  fixed Cloudflare Pages base URL used by CDN verification
+- `CLOUDFLARE_PAGES_CONFIGURED`
+  set to `true` only after the three production URLs are available
 
 ## Recommended Repository Setup
 

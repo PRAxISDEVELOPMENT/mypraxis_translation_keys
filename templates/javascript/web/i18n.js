@@ -9,70 +9,12 @@ import 'moment/locale/nl';
 const PRELOAD_LANGUAGES = ['en', 'nl', 'fr'];
 const TRANSLATION_REQUEST_TIMEOUT_MS = 5000;
 const TRANSLATION_RELOAD_INTERVAL_MS = 5 * 60 * 1000;
-const REPOSITORY = 'PRAxISDEVELOPMENT/mypraxis_translation_keys';
-const TRANSLATION_PATH = 'i18n/artifacts/generated';
-const TRANSLATION_LOAD_BASE = 'https://translations.invalid';
-const GITHUB_MAIN_REF_URL = `https://api.github.com/repos/${REPOSITORY}/git/ref/heads/main`;
-let resolvedCommit;
-let resolvedCommitAt = 0;
-let commitRequest;
-
-const fetchJsonWithTimeout = async (url) => {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), TRANSLATION_REQUEST_TIMEOUT_MS);
-
-  try {
-    const response = await fetch(url, {
-      cache: 'no-store',
-      signal: controller.signal
-    });
-
-    if (!response.ok) {
-      throw new Error(`Request failed: ${response.status}`);
-    }
-
-    return await response.json();
-  } finally {
-    clearTimeout(timeout);
-  }
-};
-
-const resolveTranslationCommit = async ({ force = false } = {}) => {
-  const commitIsFresh =
-    resolvedCommit && Date.now() - resolvedCommitAt < TRANSLATION_RELOAD_INTERVAL_MS;
-
-  if (!force && commitIsFresh) {
-    return resolvedCommit;
-  }
-
-  if (!force && commitRequest) {
-    return commitRequest;
-  }
-
-  commitRequest = (async () => {
-    const payload = await fetchJsonWithTimeout(GITHUB_MAIN_REF_URL);
-    const commit = payload?.object?.sha;
-
-    if (!/^[a-f0-9]{40}$/i.test(commit || '')) {
-      throw new Error('GitHub did not return a valid translation commit SHA.');
-    }
-
-    resolvedCommit = commit.toLowerCase();
-    resolvedCommitAt = Date.now();
-
-    return resolvedCommit;
-  })();
-
-  try {
-    return await commitRequest;
-  } finally {
-    commitRequest = undefined;
-  }
-};
-
-const getTranslationSources = (commit) => [
-  `https://cdn.jsdelivr.net/gh/${REPOSITORY}@${commit}/${TRANSLATION_PATH}`,
-  `https://raw.githubusercontent.com/${REPOSITORY}/${commit}/${TRANSLATION_PATH}`
+const TRANSLATION_CDN_BASE_URL = 'https://mypraxis-translations.pages.dev';
+const GITHUB_RAW_BASE_URL =
+  'https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated';
+const TRANSLATION_SOURCES = [
+  TRANSLATION_CDN_BASE_URL,
+  GITHUB_RAW_BASE_URL
 ];
 
 const getTranslationFilename = (url) => {
@@ -117,9 +59,8 @@ const loadTranslationsWithFallback = async (_options, url, _payload, callback) =
 
   try {
     const filename = getTranslationFilename(url);
-    const commit = await resolveTranslationCommit();
 
-    for (const source of getTranslationSources(commit)) {
+    for (const source of TRANSLATION_SOURCES) {
       try {
         const translation = await fetchTranslation(`${source}/${filename}`);
 
@@ -159,7 +100,7 @@ export const i18nReady = i18n
     },
     backend: {
       reloadInterval: TRANSLATION_RELOAD_INTERVAL_MS,
-      loadPath: `${TRANSLATION_LOAD_BASE}/{{lng}}.json`,
+      loadPath: `${TRANSLATION_CDN_BASE_URL}/{{lng}}.json`,
       request: loadTranslationsWithFallback
     }
   })
@@ -205,7 +146,6 @@ export const reloadI18nResources = async (languages = []) => {
     )
   );
 
-  await resolveTranslationCommit({ force: true });
   await i18n.reloadResources(normalizedLanguages);
 
   if (activeLanguage) {

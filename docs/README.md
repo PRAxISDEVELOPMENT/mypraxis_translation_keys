@@ -14,6 +14,7 @@ If someone is new to the repository, this order works best:
 3. [upload-processing.md](upload-processing.md)
 4. [github-automation.md](github-automation.md)
 5. [maintainer-workflow.md](maintainer-workflow.md)
+6. [cloudflare-pages.md](cloudflare-pages.md)
 
 ## Which Document Should I Read?
 
@@ -25,6 +26,7 @@ If someone is new to the repository, this order works best:
 | how the system is split into source, config, logic, artifacts, and uploads | [architecture.md](architecture.md) |
 | how app/editor uploads are classified and processed | [upload-processing.md](upload-processing.md) |
 | how GitHub Actions, proposal PRs, and CDN publication behave | [github-automation.md](github-automation.md) |
+| how to configure the fixed Cloudflare CDN URLs | [cloudflare-pages.md](cloudflare-pages.md) |
 | how to work in this repo as a maintainer | [maintainer-workflow.md](maintainer-workflow.md) |
 
 ## Documentation Map
@@ -50,10 +52,13 @@ If someone is new to the repository, this order works best:
 
 - [github-automation.md](github-automation.md)
   Explains what each GitHub workflow does, which branches trigger which jobs,
-  how proposal PRs are created, and how immutable runtime CDN files are verified.
+  how proposal PRs are created, and how Cloudflare runtime files are verified.
 
 - [maintainer-workflow.md](maintainer-workflow.md)
   Explains everyday tasks, local validation, commit flow, sync behavior, and troubleshooting.
+
+- [cloudflare-pages.md](cloudflare-pages.md)
+  Contains the one-time Cloudflare Pages setup and final verification steps.
 
 ## Stable Shortcuts
 

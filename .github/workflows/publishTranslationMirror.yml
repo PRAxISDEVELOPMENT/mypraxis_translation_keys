@@ -1,10 +1,10 @@
 #
-# Verifies that GitHub Raw and jsDelivr serve the exact generated locale bytes
-# for the same immutable Git commit. Mutable branch URLs and cache purges are
-# intentionally not used.
+# Cloudflare Pages deploys the generated locale files through its GitHub
+# integration. This workflow waits for that deployment and verifies that the
+# fixed CDN URLs contain the exact bytes committed to main.
 #
 
-name: Verify Immutable Translation CDN
+name: Verify Cloudflare Translation CDN
 
 on:
   push:
@@ -14,7 +14,9 @@ on:
       - 'i18n/artifacts/generated/en.json'
       - 'i18n/artifacts/generated/fr.json'
       - 'i18n/artifacts/generated/nl.json'
+      - 'scripts/prepare-cloudflare-pages.js'
       - 'scripts/sync-translation-mirror.js'
+      - 'package.json'
       - '.github/workflows/publishTranslationMirror.yml'
   workflow_dispatch:
 
@@ -25,11 +27,15 @@ concurrency:
   group: translation-cdn-mirror
   cancel-in-progress: true
 
+env:
+  TRANSLATION_CDN_BASE_URL: ${{ vars.TRANSLATION_CDN_BASE_URL || 'https://mypraxis-translations.pages.dev' }}
+
 jobs:
   sync:
-    name: Verify Immutable Translation Files
+    name: Verify Published Translation Files
+    if: github.event_name == 'workflow_dispatch' || vars.CLOUDFLARE_PAGES_CONFIGURED == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
 
     steps:
       - name: Checkout Translation Repository
@@ -43,5 +49,8 @@ jobs:
       - name: Verify Generated Artifacts Are In Sync
         run: npm run translations:check
 
-      - name: Verify GitHub Raw And jsDelivr At Commit SHA
+      - name: Prepare Cloudflare Pages Output
+        run: npm run translations:prepare-cdn
+
+      - name: Verify GitHub Raw And Cloudflare Pages
         run: node scripts/sync-translation-mirror.js

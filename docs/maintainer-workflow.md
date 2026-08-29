@@ -159,15 +159,16 @@ Use this shortcut:
 - shared utility code: [../i18n/src/core/](../i18n/src/core/)
 - command wrappers: [../i18n/bin/](../i18n/bin/)
 
-### Immutable CDN verification fails
+### Cloudflare CDN verification fails
 
-1. Open the `Verify Immutable Translation CDN` workflow in GitHub Actions.
+1. Open the `Verify Cloudflare Translation CDN` workflow in GitHub Actions.
 2. Check the log for the affected `en.json`, `fr.json`, or `nl.json` comparison.
 3. Confirm that `npm run translations:check` succeeds on `main`.
-4. Re-run the workflow manually after a temporary GitHub Raw or jsDelivr issue.
+4. Confirm that the matching Cloudflare Pages deployment succeeded.
+5. Re-run the workflow manually after a temporary GitHub Raw or Cloudflare issue.
 
-The workflow never purges jsDelivr. It verifies both hosts at one immutable
-commit SHA. Confirm that the logged SHA matches the checked-out workflow commit.
+The workflow waits for the fixed Cloudflare URL and compares all three files
+byte for byte with the checked-out generated artifacts.
 
 ## Recommended Reading For Maintainers
 

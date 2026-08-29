@@ -159,16 +159,15 @@ Use this shortcut:
 - shared utility code: [../i18n/src/core/](../i18n/src/core/)
 - command wrappers: [../i18n/bin/](../i18n/bin/)
 
-### CDN mirror is not current
+### Immutable CDN verification fails
 
-1. Open the `Publish Translation CDN Mirror` workflow in GitHub Actions.
-2. Check the log for the affected `en.json`, `fr.json`, or `nl.json` checksum.
+1. Open the `Verify Immutable Translation CDN` workflow in GitHub Actions.
+2. Check the log for the affected `en.json`, `fr.json`, or `nl.json` comparison.
 3. Confirm that `npm run translations:check` succeeds on `main`.
 4. Re-run the workflow manually after a temporary GitHub Raw or jsDelivr issue.
 
-The workflow intentionally does not purge jsDelivr unless GitHub Raw first
-serves the exact replacement file. A failed origin check therefore preserves
-the last good CDN copy.
+The workflow never purges jsDelivr. It verifies both hosts at one immutable
+commit SHA. Confirm that the logged SHA matches the checked-out workflow commit.
 
 ## Recommended Reading For Maintainers
 

@@ -1,35 +1,37 @@
 #!/usr/bin/env node
 
-const crypto = require('crypto');
+const { execFileSync } = require('child_process');
 const fs = require('fs/promises');
 const path = require('path');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 const LANGUAGES = ['en', 'fr', 'nl'];
 const REPOSITORY = 'PRAxISDEVELOPMENT/mypraxis_translation_keys';
-const BRANCH = 'main';
-const COMMIT = process.env.GITHUB_SHA || BRANCH;
 const GENERATED_DIR = path.join(ROOT_DIR, 'i18n', 'artifacts', 'generated');
+const COMMIT = resolveCommit();
 const RAW_BASE_URL = `https://raw.githubusercontent.com/${REPOSITORY}/${COMMIT}/i18n/artifacts/generated`;
-const CDN_BASE_URL = `https://cdn.jsdelivr.net/gh/${REPOSITORY}@${BRANCH}/i18n/artifacts/generated`;
-const PURGE_BASE_URL = `https://purge.jsdelivr.net/gh/${REPOSITORY}@${BRANCH}/i18n/artifacts/generated`;
+const CDN_BASE_URL = `https://cdn.jsdelivr.net/gh/${REPOSITORY}@${COMMIT}/i18n/artifacts/generated`;
 const REQUEST_TIMEOUT_MS = 15_000;
-const ORIGIN_ATTEMPTS = 12;
-const CDN_REFRESH_ATTEMPTS = 4;
+const AVAILABILITY_ATTEMPTS = 12;
 const RETRY_DELAY_MS = 5_000;
-const PURGE_PROPAGATION_DELAY_MS = 15_000;
-const PURGE_RETRY_DELAY_MS = 30_000;
+
+function resolveCommit() {
+  const commit =
+    process.env.GITHUB_SHA ||
+    execFileSync('git', ['rev-parse', 'HEAD'], {
+      cwd: ROOT_DIR,
+      encoding: 'utf8'
+    }).trim();
+
+  if (!/^[a-f0-9]{40}$/i.test(commit)) {
+    throw new Error(`Expected a full Git commit SHA, received "${commit}".`);
+  }
+
+  return commit.toLowerCase();
+}
 
 function sleep(milliseconds) {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
-}
-
-function checksum(content) {
-  return crypto.createHash('sha256').update(content).digest('hex');
-}
-
-function shortChecksum(content) {
-  return checksum(content).slice(0, 12);
 }
 
 function assertValidJson(content, label) {
@@ -64,13 +66,11 @@ async function waitForMatchingContent(url, expectedContent, attempts, label) {
       const content = await fetchContent(url);
       assertValidJson(content, label);
 
-      if (checksum(content) === checksum(expectedContent)) {
+      if (content.equals(expectedContent)) {
         return content;
       }
 
-      lastError = new Error(
-        `${label} has checksum ${shortChecksum(content)} instead of ${shortChecksum(expectedContent)}`
-      );
+      lastError = new Error(`${label} does not exactly match the repository file.`);
     } catch (error) {
       lastError = error;
     }
@@ -84,108 +84,38 @@ async function waitForMatchingContent(url, expectedContent, attempts, label) {
   throw lastError;
 }
 
-async function purge(url) {
-  const response = await fetch(url, {
-    headers: {
-      accept: 'application/json'
-    },
-    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS)
-  });
-
-  if (!response.ok) {
-    throw new Error(`${url} returned HTTP ${response.status}`);
-  }
-
-  const result = await response.json();
-  const pathname = new URL(url).pathname;
-  const pathResult = result.paths?.[pathname];
-
-  if (result.status !== 'finished' || !pathResult) {
-    throw new Error(`${url} returned an unexpected purge response`);
-  }
-
-  if (pathResult.throttled) {
-    throw new Error(`${url} was throttled by jsDelivr`);
-  }
-
-  const failedProviders = Object.entries(pathResult.providers || {})
-    .filter(([, succeeded]) => !succeeded)
-    .map(([provider]) => provider);
-
-  if (failedProviders.length > 0) {
-    throw new Error(`${url} failed for provider(s): ${failedProviders.join(', ')}`);
-  }
-
-  return result.id;
-}
-
-async function refreshCdn(cdnUrl, purgeUrl, expectedContent, label) {
-  let lastError;
-
-  // A purge can reach every edge successfully while jsDelivr's mutable branch
-  // snapshot is still stale. The first request then caches that stale refill
-  // again, so GET-only retries cannot recover. Purge again between checks to
-  // force a new branch resolution instead of repeatedly hitting the bad refill.
-  for (let attempt = 1; attempt <= CDN_REFRESH_ATTEMPTS; attempt += 1) {
-    const purgeId = await purge(purgeUrl);
-    console.log(`  ${label} purge ${attempt}/${CDN_REFRESH_ATTEMPTS} completed (${purgeId}).`);
-
-    await sleep(PURGE_PROPAGATION_DELAY_MS);
-
-    try {
-      await waitForMatchingContent(cdnUrl, expectedContent, 1, label);
-      return;
-    } catch (error) {
-      lastError = error;
-    }
-
-    if (attempt < CDN_REFRESH_ATTEMPTS) {
-      console.log(
-        `  ${label} is still stale after purge ${attempt}/${CDN_REFRESH_ATTEMPTS}: ${lastError.message}`
-      );
-      console.log(`  Waiting before the next purge to let the branch snapshot propagate...`);
-      await sleep(PURGE_RETRY_DELAY_MS);
-    }
-  }
-
-  throw lastError;
-}
-
 async function syncLanguage(language) {
   const filename = `${language}.json`;
   const localPath = path.join(GENERATED_DIR, filename);
   const localContent = await fs.readFile(localPath);
   const rawUrl = `${RAW_BASE_URL}/${filename}`;
   const cdnUrl = `${CDN_BASE_URL}/${filename}`;
-  const purgeUrl = `${PURGE_BASE_URL}/${filename}`;
 
   assertValidJson(localContent, localPath);
-  console.log(`\n${filename}: local checksum ${shortChecksum(localContent)}`);
+  console.log(`\n${filename}: checking exact file contents.`);
 
-  // Never purge jsDelivr until GitHub Raw proves that the replacement object is
-  // available. This preserves the last good CDN copy during an origin outage.
-  await waitForMatchingContent(rawUrl, localContent, ORIGIN_ATTEMPTS, `GitHub Raw ${filename}`);
-  console.log(`  GitHub Raw ${filename} is current.`);
+  await waitForMatchingContent(
+    rawUrl,
+    localContent,
+    AVAILABILITY_ATTEMPTS,
+    `GitHub Raw ${filename}`
+  );
+  console.log(`  GitHub Raw ${filename} matches commit ${COMMIT.slice(0, 12)}.`);
 
-  try {
-    await waitForMatchingContent(cdnUrl, localContent, 1, `jsDelivr ${filename}`);
-    console.log(`  jsDelivr ${filename} is already current.`);
-    return;
-  } catch (error) {
-    console.log(`  jsDelivr ${filename} needs refresh: ${error.message}`);
-  }
-
-  await refreshCdn(cdnUrl, purgeUrl, localContent, `jsDelivr ${filename}`);
-  console.log(`  jsDelivr ${filename} refreshed and verified.`);
+  await waitForMatchingContent(
+    cdnUrl,
+    localContent,
+    AVAILABILITY_ATTEMPTS,
+    `jsDelivr ${filename}`
+  );
+  console.log(`  jsDelivr ${filename} matches the same immutable commit.`);
 }
 
 async function main() {
-  console.log('Verifying generated translation files against GitHub Raw and jsDelivr.');
+  console.log(`Verifying immutable translation files for commit ${COMMIT}.`);
 
   const failures = [];
 
-  // Keep purge requests sequential to avoid jsDelivr rate limits and let each
-  // provider finish propagating one locale before the next purge starts.
   for (const language of LANGUAGES) {
     try {
       await syncLanguage(language);
@@ -199,13 +129,13 @@ async function main() {
       console.error(`\n${language}.json failed: ${error.message}`);
     }
 
-    throw new Error(`${failures.length} translation mirror check(s) failed.`);
+    throw new Error(`${failures.length} immutable translation check(s) failed.`);
   }
 
-  console.log('\nTranslation CDN mirror is current.');
+  console.log('\nGitHub Raw and jsDelivr match the immutable commit exactly.');
 }
 
 main().catch((error) => {
-  console.error(`\nTranslation CDN mirror sync failed: ${error.message}`);
+  console.error(`\nImmutable translation verification failed: ${error.message}`);
   process.exit(1);
 });

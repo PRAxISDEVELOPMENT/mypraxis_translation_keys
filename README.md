@@ -3,7 +3,7 @@
 [![Validate & Build](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/buildTranslations.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/buildTranslations.yml)
 [![Process Uploads](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/processTranslationUploads.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/processTranslationUploads.yml)
 [![Proposal Review](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/openTranslationProposalPr.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/openTranslationProposalPr.yml)
-[![CDN Mirror](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/publishTranslationMirror.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/publishTranslationMirror.yml)
+[![Immutable CDN](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/publishTranslationMirror.yml/badge.svg)](https://github.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/actions/workflows/publishTranslationMirror.yml)
 
 Eén centrale, gecontroleerde bron voor alle Nederlandse, Franse en Engelse
 MyPRAxIS-vertalingen — van wijziging en review tot runtime-publicatie voor web
@@ -24,6 +24,7 @@ en mobiele applicaties.
 | Runtime-bestanden               | `nl.json`, `fr.json` en `en.json`                              |
 | Primaire runtime-host           | jsDelivr CDN                                                   |
 | Originele host                  | GitHub Raw                                                     |
+| Versie-identiteit               | Eén volledige Git commit-SHA voor beide hosts                  |
 | Bestaande key wijzigen          | Automatisch verwerkt                                           |
 | Nieuwe key toevoegen            | Altijd via een handmatig gecontroleerde proposal-PR            |
 | Normale lokale opdracht         | `npm run update`                                               |
@@ -67,9 +68,11 @@ flowchart TD
     SOURCE --> VALIDATE[Validatie]
     VALIDATE --> BUILD[Artifact build]
     BUILD --> LOCALES[en.json · fr.json · nl.json]
-    LOCALES --> RAW[GitHub Raw origin]
-    RAW --> CDN[jsDelivr CDN mirror]
-    CDN --> CONSUMERS[Web- en mobiele applicaties]
+    LOCALES --> COMMIT[Immutable Git commit SHA]
+    COMMIT --> RAW[GitHub Raw op SHA]
+    COMMIT --> CDN[jsDelivr op dezelfde SHA]
+    RAW --> CONSUMERS[Web- en mobiele applicaties]
+    CDN --> CONSUMERS
 ```
 
 Dit ontwerp combineert twee doelen:
@@ -116,7 +119,7 @@ De automatische flow:
 4. `translations.json` wordt bijgewerkt.
 5. `en.json`, `fr.json` en `nl.json` worden opnieuw gegenereerd.
 6. De resultaten worden naar `main` gepusht.
-7. De CDN-mirror wordt onmiddellijk gecontroleerd en indien nodig vernieuwd.
+7. GitHub Raw en jsDelivr worden op dezelfde immutable commit-SHA gecontroleerd.
 
 > [!NOTE]
 > Een expliciete lege string wist alleen die locale. Een ontbrekend veld laat
@@ -167,7 +170,7 @@ De gecontroleerde flow:
 6. De proposal-JSON mag in de PR worden verbeterd.
 7. Na goedkeuring wordt de PR gemerged.
 8. De build verwerkt het goedgekeurde voorstel in `translations.json`.
-9. De runtime-JSON en CDN-mirror worden automatisch vernieuwd.
+9. De runtime-JSON wordt via dezelfde immutable SHA op GitHub en jsDelivr beschikbaar.
 
 > [!CAUTION]
 > Voeg een nieuwe key nooit rechtstreeks vanuit een applicatie toe aan
@@ -231,9 +234,9 @@ Controleer daarna altijd zowel de bronwijziging als de gegenereerde diff.
 
 ## Wat moet in de applicaties worden aangepast?
 
-Applicaties gebruiken jsDelivr als primaire runtimebron. De React-webintegratie
-gebruikt GitHub Raw als automatische tweede bron wanneer jsDelivr niet
-bereikbaar is, een foutstatus teruggeeft of ongeldige JSON levert.
+Applicaties resolven eerst `main` naar één volledige commit-SHA via de publieke
+GitHub ref API. Daarna gebruiken ze jsDelivr als primaire runtimebron en GitHub
+Raw als automatische tweede bron, allebei vastgezet op exact diezelfde SHA.
 
 ### Oude URL
 
@@ -241,19 +244,22 @@ bereikbaar is, een foutstatus teruggeeft of ongeldige JSON levert.
 https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated/{{lng}}.json
 ```
 
-### Nieuwe primaire URL
+### Nieuwe immutable primaire URL
 
 ```text
-https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated/{{lng}}.json
+https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@<commit-sha>/i18n/artifacts/generated/{{lng}}.json
 ```
 
 Voorbeelden:
 
 ```text
-https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated/nl.json
-https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated/fr.json
-https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated/en.json
+https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@5ad48951e3bd6b5e53aa6c44a85d7d0882df4b1a/i18n/artifacts/generated/nl.json
+https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/5ad48951e3bd6b5e53aa6c44a85d7d0882df4b1a/i18n/artifacts/generated/nl.json
 ```
+
+> [!CAUTION]
+> Gebruik nooit `@main` in een jsDelivr runtime-URL. Een mutable branch-snapshot
+> kan achterlopen en kan daardoor niet byte-voor-byte worden gegarandeerd.
 
 Kopieer indien gewenst een bestaand voorbeeld:
 
@@ -270,7 +276,8 @@ MyPRAxIS-webimplementatie:
 | Onderdeel                   | Gedrag                                                                    |
 | --------------------------- | ------------------------------------------------------------------------- |
 | Primaire bron               | jsDelivr CDN                                                              |
-| Netwerkfallback             | GitHub Raw                                                                |
+| Netwerkfallback             | GitHub Raw op dezelfde commit-SHA                                         |
+| Versieresolutie             | GitHub `git/ref/heads/main` API                                            |
 | Timeout per bron            | 5 seconden                                                                |
 | Responsecontrole            | HTTP-status én geldige JSON                                               |
 | Automatische controle       | Iedere 5 minuten via `reloadInterval`                                     |
@@ -280,23 +287,24 @@ MyPRAxIS-webimplementatie:
 
 ### Gedrag van de Expo-integratie
 
-De Expo-templates gebruiken dezelfde primaire bron, GitHub-fallback, timeout,
-JSON-validatie, cache-busting en `reloadI18nResources`-helper. Alleen de
+De Expo-templates gebruiken dezelfde SHA-resolutie, primaire bron,
+GitHub-fallback, timeout, JSON-validatie en `reloadI18nResources`-helper. Alleen de
 automatische vijfminuten-polling ontbreekt bewust. Roep de reloadhelper aan na
 een geslaagde wijziging vanuit de app en eventueel vanuit de bestaande
 foreground/resumeflow.
 
-De bronvolgorde staat bewust in één lijst:
+De bronvolgorde wordt pas na SHA-resolutie opgebouwd:
 
 ```js
-const TRANSLATION_SOURCES = [
-  'https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated',
-  'https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated'
+const getTranslationSources = (commit) => [
+  `https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@${commit}/i18n/artifacts/generated`,
+  `https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/${commit}/i18n/artifacts/generated`
 ];
 ```
 
 De eerste bereikbare bron met een succesvolle HTTP-status en geldige JSON wordt
-gebruikt. Een fout op jsDelivr schakelt dus automatisch door naar GitHub Raw.
+gebruikt. Een fout op jsDelivr schakelt dus automatisch door naar GitHub Raw,
+zonder ooit bestanden uit verschillende commits te mengen.
 
 ### Wanneer ziet een gebruiker een wijziging?
 
@@ -306,8 +314,8 @@ gebruikt. Een fout op jsDelivr schakelt dus automatisch door naar GitHub Raw.
 | Rechtstreeks in deze repository                  | Uiterlijk bij de volgende controle van 5 minuten       | Bij volgende start of expliciete reload              |
 | App of pagina opnieuw gestart                    | Tijdens de initiële i18next-load                       | Tijdens de initiële i18next-load                     |
 
-De zesuurlijkse mirrorworkflow is alleen een herstelcontrole en veroorzaakt
-geen wachttijd van zes uur voor normale wijzigingen.
+Clients ontdekken de huidige SHA bij het laden, bij de webcontrole of bij een
+expliciete reload. Daarvoor is geen periodieke CDN-workflow nodig.
 
 > [!IMPORTANT]
 > `reloadInterval` is polling, geen realtime push. i18next ontvangt geen event
@@ -325,7 +333,7 @@ Aanbevolen runtimevolgorde voor productieapplicaties:
 
 ```text
 1. jsDelivr CDN
-2. GitHub Raw
+2. GitHub Raw op dezelfde immutable SHA
 3. laatst succesvol lokaal gecachte vertaling
 4. meegeleverde basisvertaling voor een eerste offline start
 ```
@@ -335,50 +343,45 @@ Taalfallback en netwerkfallback zijn niet hetzelfde:
 - `fallbackLng: false` maakt ontbrekende keys zichtbaar tijdens ontwikkeling
 - endpoint/cache-fallback houdt vertalingen beschikbaar tijdens een storing
 
-## CDN-publicatie en beschikbaarheid
+## Immutable CDN-publicatie en beschikbaarheid
 
-jsDelivr is een publieke CDN-mirror voor bestanden uit deze openbare
-GitHub-repository. Er is geen jsDelivr-account, API-token, repository secret of
-betaalmethode nodig.
+jsDelivr leest bestanden uit deze openbare GitHub-repository. Elke runtime-URL
+bevat een volledige commit-SHA. Daardoor is de URL immutable: dezelfde URL kan
+nooit later naar andere bytes verwijzen en heeft geen purge nodig.
 
-### Wanneer wordt de mirror vernieuwd?
+### Wanneer wordt de integriteit gecontroleerd?
 
-| Trigger                                                   | Doel                                   |
-| --------------------------------------------------------- | -------------------------------------- |
-| Wijziging aan `en.json`, `fr.json` of `nl.json` op `main` | Onmiddellijk publiceren                |
-| Iedere zes uur, op minuut 23 UTC                          | Gemiste of mislukte refresh herstellen |
-| Handmatige GitHub Actions-run                             | Onderhoud of diagnose                  |
+| Trigger                                                   | Doel                                                    |
+| --------------------------------------------------------- | ------------------------------------------------------- |
+| Wijziging aan `en.json`, `fr.json` of `nl.json` op `main` | Exacte commit op GitHub Raw en jsDelivr verifiëren      |
+| Handmatige GitHub Actions-run                             | Onderhoud of diagnose                                   |
 
-De zesuurs-run is dus geen publicatievertraging. Een normale wijziging activeert
-de mirror onmiddellijk.
-
-### Veilige refreshvolgorde
+### Veilige verificatievolgorde
 
 ```mermaid
 flowchart TD
-    START[Mirror workflow start] --> SYNC{Artifacts gelijk aan bron?}
-    SYNC -- Nee --> STOP[Stop zonder CDN te wijzigen]
-    SYNC -- Ja --> RAW{GitHub Raw bevat exact dezelfde checksum?}
-    RAW -- Nee --> KEEP[Behoud laatste goede CDN-kopie]
-    RAW -- Ja --> CDN{jsDelivr checksum gelijk?}
-    CDN -- Ja --> DONE[Klaar]
-    CDN -- Nee --> PURGE[Verwijder alleen verouderde CDN-cache]
-    PURGE --> WARM[Haal nieuwe kopie op]
-    WARM --> VERIFY[Valideer JSON en checksum]
-    VERIFY --> DONE
+    START[Workflow start] --> SYNC{Artifacts gelijk aan bron?}
+    SYNC -- Nee --> STOP[Stop: repository is intern inconsistent]
+    SYNC -- Ja --> SHA[Neem exacte workflow commit-SHA]
+    SHA --> RAW[Download GitHub Raw op SHA]
+    SHA --> CDN[Download jsDelivr op dezelfde SHA]
+    RAW --> VERIFY[Valideer JSON en exacte bytes]
+    CDN --> VERIFY
+    VERIFY --> DONE[Beide hosts zijn byte-voor-byte gelijk]
 ```
 
-De controles lopen voor `en`, `fr` en `nl` onafhankelijk. Een probleem met één
-taal verhindert niet dat de andere talen worden gecontroleerd.
+De workflow schrijft of purget niets extern. Een mismatch kan daardoor niet
+worden verborgen door opnieuw dezelfde mutable cache te vullen.
 
 ### Wat gebeurt bij een storing?
 
-| Storing                          | Gedrag                                                                                    |
-| -------------------------------- | ----------------------------------------------------------------------------------------- |
-| GitHub Raw tijdelijk offline     | De bestaande jsDelivr-kopie wordt niet verwijderd                                         |
-| GitHub Actions tijdelijk offline | De laatst gepubliceerde CDN-kopie blijft staan                                            |
-| jsDelivr tijdelijk offline       | GitHub Raw blijft beschikbaar als secundaire bron, mits de app die fallback implementeert |
-| Beide endpoints offline          | Alleen lokale/app-bundled fallback kan de UI beschikbaar houden                           |
+| Storing                          | Gedrag                                                                                         |
+| -------------------------------- | ---------------------------------------------------------------------------------------------- |
+| GitHub ref API tijdelijk offline | Een actieve app behoudt de reeds geladen resources; een cold start heeft een lokale fallback nodig |
+| GitHub Raw tijdelijk offline     | jsDelivr blijft beschikbaar op dezelfde commit-SHA                                             |
+| GitHub Actions tijdelijk offline | Bestaande immutable URLs blijven ongewijzigd beschikbaar                                       |
+| jsDelivr tijdelijk offline       | GitHub Raw blijft beschikbaar op dezelfde commit-SHA                                           |
+| Beide endpoints offline          | Alleen lokale/app-bundled fallback kan de UI beschikbaar houden                                |
 
 ## Datamodel
 
@@ -466,7 +469,7 @@ in de zichtbare vertaalwaarde gemengd; daarvoor dient `registry.json`.
 │   └── uploads/
 │       ├── incoming/               # nieuwe uploadqueue
 │       └── processed/              # verwerkte uploadarchive
-├── scripts/                        # lokale helpers en mirrorcontrole
+├── scripts/                        # lokale helpers en immutable CDN-controle
 └── templates/                      # web- en Expo-integratievoorbeelden
 ```
 
@@ -482,7 +485,7 @@ in de zichtbare vertaalwaarde gemengd; daarvoor dient `registry.json`.
 | [i18n/bin/build-translations.js](i18n/bin/build-translations.js)             | Build- en validatie-entrypoint        |
 | [i18n/src/translation-build/](i18n/src/translation-build/)                   | Implementatie van validatie/generatie |
 | [i18n/src/upload-processing/](i18n/src/upload-processing/)                   | Implementatie van uploadrouting       |
-| [scripts/sync-translation-mirror.js](scripts/sync-translation-mirror.js)     | Veilige GitHub/jsDelivr-synccontrole  |
+| [scripts/sync-translation-mirror.js](scripts/sync-translation-mirror.js)     | Immutable GitHub/jsDelivr-check       |
 | [templates/](templates/)                                                     | Copy-ready clientconfiguraties        |
 
 ## GitHub Actions en verantwoordelijkheden
@@ -492,7 +495,7 @@ in de zichtbare vertaalwaarde gemengd; daarvoor dient `registry.json`.
 | [Validate And Build](.github/workflows/buildTranslations.yml)        | PR of relevante push naar `main`                 | Bron valideren, proposals toepassen en artifacts bouwen |
 | [Process Uploads](.github/workflows/processTranslationUploads.yml)   | Upload in `incoming/`                            | Directe updates verwerken en nieuwe entries routeren    |
 | [Open Proposal PR](.github/workflows/openTranslationProposalPr.yml)  | Proposal-branch verandert                        | Reviewbare PR openen of bijwerken                       |
-| [Publish CDN Mirror](.github/workflows/publishTranslationMirror.yml) | Locale-artifact verandert, planning of handmatig | jsDelivr controleren en veilig vernieuwen               |
+| [Verify Immutable CDN](.github/workflows/publishTranslationMirror.yml) | Locale-artifact verandert of handmatig | Raw en jsDelivr op dezelfde commit-SHA verifiëren       |
 
 Branchmodel:
 
@@ -572,9 +575,9 @@ Controleer voor het mergen van een proposal-PR:
 | Upload verandert niets                       | Waarden zijn identiek of entry is overgeslagen  | `i18n/artifacts/reports/`                                   |
 | Nieuwe key staat niet in `translations.json` | Wacht nog op proposal-review                    | `i18n/proposals/pending/` en open PR's                      |
 | Generated files zijn out of sync             | Bron/config veranderde zonder build             | `npm run translations:build` en daarna `translations:check` |
-| CDN-workflow faalt vóór purge                | GitHub Raw heeft de nieuwe checksum nog niet    | Run later opnieuw; oude CDN-kopie blijft behouden           |
-| Eén taal loopt achter                        | Alleen dat locale-artifact of CDN-object faalde | Logregels met `en.json`, `fr.json` of `nl.json`             |
-| App toont oude tekst                         | App/browsercache of app gebruikt nog GitHub Raw | Controleer loadPath, netwerkrequest en lokale cache         |
+| Immutable CDN-workflow faalt                 | Raw of jsDelivr heeft de commit nog niet beschikbaar | Logregels met commit-SHA en locale controleren          |
+| Eén taal faalt                               | Alleen dat immutable locale-object is niet beschikbaar | Logregels met `en.json`, `fr.json` of `nl.json`       |
+| App toont oude tekst                         | App gebruikt nog `@main` of resolveert geen nieuwe SHA | Controleer ref-request, SHA in URL en reloadflow       |
 | App toont missing key                        | Key/locale ontbreekt of verkeerde namespace     | Generated locale-file en gebruikte i18n-key                 |
 | Proposal-PR verschijnt niet                  | Proposal branch/workflow of payload ongeldig    | Actions-run en routingrapport                               |
 
@@ -619,15 +622,16 @@ De relevante opties zijn afgewogen:
 | Eigen FTP/SFTP-server              | Volledige controle                            | Serverbeheer, monitoring, HTTPS en beschikbaarheid nodig |
 | Betaalde object storage/CDN        | Professionele controle en SLA-opties          | Account, configuratie en betaalgegevens nodig            |
 | GitHub Pages                       | Eenvoudig binnen GitHub                       | Blijft afhankelijk van hetzelfde platform                |
-| jsDelivr + GitHub + app-cache      | Live, gratis, weinig beheer en meerdere lagen | App-cache/fallback moet per applicatie worden afgewerkt  |
+| jsDelivr `@main` + purge           | Eenvoudige vaste URL                           | Mutable snapshots en purge-throttling zijn niet exact    |
+| jsDelivr op SHA + GitHub op SHA    | Immutable en byte-voor-byte verifieerbaar      | Client moet eerst de huidige GitHub SHA resolven          |
 
 Binnen de huidige voorwaarden — live updates, geen betaalgegevens, geen eigen
-serverbeheer en publieke JSON — is jsDelivr als mirror de beste pragmatische
-keuze. Het is bewust geen enige bron: GitHub blijft origin en productieapps horen
-een lokale fallback te behouden.
+serverbeheer en publieke JSON — is jsDelivr op immutable commit-SHA samen met
+GitHub Raw op diezelfde SHA de beste pragmatische keuze. GitHub blijft origin en
+productieapps horen een lokale fallback te behouden.
 
 ## De ene zin om te onthouden
 
 > Deze repository bewaart één gecontroleerde vertaalbron, verwerkt bestaande
 > keys automatisch, laat nieuwe keys eerst door mensen goedkeuren en publiceert
-> daarna veilige runtime-JSON via GitHub en jsDelivr.
+> daarna exact dezelfde immutable runtime-JSON via GitHub en jsDelivr.

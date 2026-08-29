@@ -9,18 +9,17 @@ import 'moment/locale/nl';
 const PRELOAD_LANGUAGES = ['en', 'nl', 'fr'] as const;
 const TRANSLATION_REQUEST_TIMEOUT_MS = 5000;
 const TRANSLATION_RELOAD_INTERVAL_MS = 5 * 60 * 1000;
-const TRANSLATION_SOURCES = [
-  'https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated',
-  'https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated'
-] as const;
+const REPOSITORY = 'PRAxISDEVELOPMENT/mypraxis_translation_keys';
+const TRANSLATION_PATH = 'i18n/artifacts/generated';
+const TRANSLATION_LOAD_BASE = 'https://translations.invalid';
+const GITHUB_MAIN_REF_URL = `https://api.github.com/repos/${REPOSITORY}/git/ref/heads/main`;
+let resolvedCommit: string | undefined;
+let resolvedCommitAt = 0;
+let commitRequest: Promise<string> | undefined;
 
 type TranslationResponse = {
   status: number;
   data: string;
-};
-
-type TranslationRequestOptions = {
-  queryStringParams?: Record<string, string | number>;
 };
 
 type TranslationRequestCallback = (
@@ -28,54 +27,129 @@ type TranslationRequestCallback = (
   response: TranslationResponse | null
 ) => void;
 
-const fetchTranslation = async (
-  url: string,
-  version?: string | number
-): Promise<TranslationResponse> => {
-  const requestUrl = new URL(url);
+const fetchJsonWithTimeout = async (url: string): Promise<unknown> => {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), TRANSLATION_REQUEST_TIMEOUT_MS);
 
-  if (version) {
-    requestUrl.searchParams.set('v', String(version));
+  try {
+    const response = await fetch(url, {
+      cache: 'no-store',
+      signal: controller.signal
+    });
+
+    if (!response.ok) {
+      throw new Error(`Request failed: ${response.status}`);
+    }
+
+    return await response.json();
+  } finally {
+    clearTimeout(timeout);
+  }
+};
+
+const resolveTranslationCommit = async (
+  { force = false }: { force?: boolean } = {}
+): Promise<string> => {
+  const commitIsFresh =
+    resolvedCommit && Date.now() - resolvedCommitAt < TRANSLATION_RELOAD_INTERVAL_MS;
+
+  if (!force && commitIsFresh) {
+    return resolvedCommit;
   }
 
-  const response = await fetch(requestUrl, {
-    cache: 'no-store',
-    signal: AbortSignal.timeout(TRANSLATION_REQUEST_TIMEOUT_MS)
-  });
-
-  if (!response.ok) {
-    throw new Error(`Translation request failed: ${response.status}`);
+  if (!force && commitRequest) {
+    return commitRequest;
   }
 
-  const data = await response.text();
+  commitRequest = (async () => {
+    const payload = (await fetchJsonWithTimeout(GITHUB_MAIN_REF_URL)) as {
+      object?: { sha?: unknown };
+    };
+    const commit = payload.object?.sha;
 
-  JSON.parse(data);
+    if (typeof commit !== 'string' || !/^[a-f0-9]{40}$/i.test(commit)) {
+      throw new Error('GitHub did not return a valid translation commit SHA.');
+    }
 
-  return {
-    status: response.status,
-    data
-  };
+    resolvedCommit = commit.toLowerCase();
+    resolvedCommitAt = Date.now();
+
+    return resolvedCommit;
+  })();
+
+  try {
+    return await commitRequest;
+  } finally {
+    commitRequest = undefined;
+  }
+};
+
+const getTranslationSources = (commit: string): readonly string[] => [
+  `https://cdn.jsdelivr.net/gh/${REPOSITORY}@${commit}/${TRANSLATION_PATH}`,
+  `https://raw.githubusercontent.com/${REPOSITORY}/${commit}/${TRANSLATION_PATH}`
+];
+
+const getTranslationFilename = (url: string): string => {
+  const filename = new URL(url).pathname.split('/').pop();
+
+  if (!PRELOAD_LANGUAGES.some((language) => filename === `${language}.json`)) {
+    throw new Error(`Unexpected translation filename: ${filename || 'missing'}`);
+  }
+
+  return filename;
+};
+
+const fetchTranslation = async (url: string): Promise<TranslationResponse> => {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), TRANSLATION_REQUEST_TIMEOUT_MS);
+
+  try {
+    const response = await fetch(url, {
+      cache: 'no-store',
+      signal: controller.signal
+    });
+
+    if (!response.ok) {
+      throw new Error(`Translation request failed: ${response.status}`);
+    }
+
+    const data = await response.text();
+
+    JSON.parse(data);
+
+    return {
+      status: response.status,
+      data
+    };
+  } finally {
+    clearTimeout(timeout);
+  }
 };
 
 const loadTranslationsWithFallback = async (
-  options: TranslationRequestOptions,
+  _options: unknown,
   url: string,
   _payload: unknown,
   callback: TranslationRequestCallback
 ): Promise<void> => {
-  const version = options?.queryStringParams?.v;
   let lastError: Error | undefined;
 
-  for (const source of TRANSLATION_SOURCES) {
-    try {
-      const sourceUrl = url.replace(TRANSLATION_SOURCES[0], source);
-      const translation = await fetchTranslation(sourceUrl, version);
+  try {
+    const filename = getTranslationFilename(url);
+    const commit = await resolveTranslationCommit();
 
-      callback(null, translation);
-      return;
-    } catch (error) {
-      lastError = error instanceof Error ? error : new Error(String(error));
+    for (const source of getTranslationSources(commit)) {
+      try {
+        const translation = await fetchTranslation(`${source}/${filename}`);
+
+        callback(null, translation);
+        return;
+      } catch (error) {
+        lastError = error instanceof Error ? error : new Error(String(error));
+      }
     }
+  } catch (error) {
+    lastError = error instanceof Error ? error : new Error(String(error));
   }
 
   callback(lastError || new Error('Translations could not be loaded'), null);
@@ -104,8 +178,7 @@ export const i18nReady: Promise<void> = i18n
     },
     backend: {
       reloadInterval: TRANSLATION_RELOAD_INTERVAL_MS,
-      queryStringParams: { v: Date.now() },
-      loadPath: `${TRANSLATION_SOURCES[0]}/{{lng}}.json`,
+      loadPath: `${TRANSLATION_LOAD_BASE}/{{lng}}.json`,
       request: loadTranslationsWithFallback
     }
   })
@@ -136,9 +209,6 @@ i18n.on('languageChanged', (language: string) => {
 export const reloadI18nResources = async (languages: readonly string[] = []): Promise<void> => {
   await i18nReady;
 
-  const backendOptions = i18n.services?.backendConnector?.backend?.options as
-    | TranslationRequestOptions
-    | undefined;
   const activeLanguage = String(i18n.resolvedLanguage || i18n.language || 'nl')
     .split('-')[0]
     .trim();
@@ -154,13 +224,7 @@ export const reloadI18nResources = async (languages: readonly string[] = []): Pr
     )
   );
 
-  if (backendOptions) {
-    backendOptions.queryStringParams = {
-      ...(backendOptions.queryStringParams || {}),
-      v: Date.now()
-    };
-  }
-
+  await resolveTranslationCommit({ force: true });
   await i18n.reloadResources(normalizedLanguages);
 
   if (activeLanguage) {

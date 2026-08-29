@@ -50,7 +50,7 @@ If someone is new to the repository, this order works best:
 
 - [github-automation.md](github-automation.md)
   Explains what each GitHub workflow does, which branches trigger which jobs,
-  how proposal PRs are created, and how the runtime CDN mirror is refreshed.
+  how proposal PRs are created, and how immutable runtime CDN files are verified.
 
 - [maintainer-workflow.md](maintainer-workflow.md)
   Explains everyday tasks, local validation, commit flow, sync behavior, and troubleshooting.

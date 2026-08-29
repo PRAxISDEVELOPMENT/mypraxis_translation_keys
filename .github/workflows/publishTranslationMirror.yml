@@ -1,11 +1,10 @@
 #
-# Keeps the public jsDelivr mirror aligned with the generated runtime locales.
-# Generated-file pushes refresh the mirror immediately. Scheduled and manual
-# runs repair a missed refresh without purging a healthy copy during an origin
-# outage.
+# Verifies that GitHub Raw and jsDelivr serve the exact generated locale bytes
+# for the same immutable Git commit. Mutable branch URLs and cache purges are
+# intentionally not used.
 #
 
-name: Publish Translation CDN Mirror
+name: Verify Immutable Translation CDN
 
 on:
   push:
@@ -17,8 +16,6 @@ on:
       - 'i18n/artifacts/generated/nl.json'
       - 'scripts/sync-translation-mirror.js'
       - '.github/workflows/publishTranslationMirror.yml'
-  schedule:
-    - cron: '23 */6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -26,13 +23,13 @@ permissions:
 
 concurrency:
   group: translation-cdn-mirror
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   sync:
-    name: Verify And Refresh Translation CDN Mirror
+    name: Verify Immutable Translation Files
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 10
 
     steps:
       - name: Checkout Translation Repository
@@ -46,5 +43,5 @@ jobs:
       - name: Verify Generated Artifacts Are In Sync
         run: npm run translations:check
 
-      - name: Verify And Refresh jsDelivr Mirror
+      - name: Verify GitHub Raw And jsDelivr At Commit SHA
         run: node scripts/sync-translation-mirror.js

@@ -5,7 +5,7 @@ const path = require('path');
 const { spawnSync } = require('child_process');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
-const TARGET_DIRS = ['i18n/bin', 'i18n/src', 'scripts'];
+const TARGET_DIRS = ['i18n/bin', 'i18n/src', 'scripts', 'templates/javascript'];
 
 function collectJsFiles(dirPath) {
   const entries = fs.readdirSync(dirPath, { withFileTypes: true });

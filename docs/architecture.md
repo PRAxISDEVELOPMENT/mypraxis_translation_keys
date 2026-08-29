@@ -170,9 +170,9 @@ Locations:
 Responsibility:
 
 - verify that generated locale artifacts still match the canonical source
-- verify that GitHub Raw exposes the exact replacement object
-- keep the jsDelivr copies of `en.json`, `fr.json`, and `nl.json` current
-- preserve the last good CDN copy when the GitHub origin is unavailable
+- verify GitHub Raw at the exact workflow commit SHA
+- verify jsDelivr at that same immutable commit SHA
+- reject mixed-version or mutable-branch runtime URLs
 
 The CDN is a distribution layer, not a source-of-truth layer. Applications may
 add their own endpoint and local-cache fallbacks without changing canonical
@@ -201,8 +201,8 @@ i18n/source/translations.json
   -> issue analysis
   -> artifact generation
   -> i18n/artifacts/generated/*.json
-  -> GitHub Raw origin
-  -> jsDelivr CDN mirror
+  -> immutable Git commit SHA
+  -> GitHub Raw and jsDelivr on the same SHA
   -> consuming applications
 ```
 

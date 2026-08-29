@@ -8,24 +8,88 @@ import 'moment/locale/nl';
 
 const PRELOAD_LANGUAGES = ['en', 'nl', 'fr'];
 const TRANSLATION_REQUEST_TIMEOUT_MS = 5000;
-const TRANSLATION_SOURCES = [
-  'https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated',
-  'https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated'
+const REPOSITORY = 'PRAxISDEVELOPMENT/mypraxis_translation_keys';
+const TRANSLATION_PATH = 'i18n/artifacts/generated';
+const TRANSLATION_LOAD_BASE = 'https://translations.invalid';
+const GITHUB_MAIN_REF_URL = `https://api.github.com/repos/${REPOSITORY}/git/ref/heads/main`;
+let resolvedCommit;
+let commitRequest;
+
+const fetchJsonWithTimeout = async (url) => {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), TRANSLATION_REQUEST_TIMEOUT_MS);
+
+  try {
+    const response = await fetch(url, {
+      cache: 'no-store',
+      signal: controller.signal
+    });
+
+    if (!response.ok) {
+      throw new Error(`Request failed: ${response.status}`);
+    }
+
+    return await response.json();
+  } finally {
+    clearTimeout(timeout);
+  }
+};
+
+const resolveTranslationCommit = async ({ force = false } = {}) => {
+  if (!force && resolvedCommit) {
+    return resolvedCommit;
+  }
+
+  if (!force && commitRequest) {
+    return commitRequest;
+  }
+
+  commitRequest = (async () => {
+    const payload = await fetchJsonWithTimeout(GITHUB_MAIN_REF_URL);
+    const commit = payload?.object?.sha;
+
+    if (!/^[a-f0-9]{40}$/i.test(commit || '')) {
+      throw new Error('GitHub did not return a valid translation commit SHA.');
+    }
+
+    resolvedCommit = commit.toLowerCase();
+
+    return resolvedCommit;
+  })();
+
+  try {
+    return await commitRequest;
+  } finally {
+    commitRequest = undefined;
+  }
+};
+
+const getTranslationSources = (commit) => [
+  `https://cdn.jsdelivr.net/gh/${REPOSITORY}@${commit}/${TRANSLATION_PATH}`,
+  `https://raw.githubusercontent.com/${REPOSITORY}/${commit}/${TRANSLATION_PATH}`
 ];
-let translationVersion = Date.now();
+
+const getTranslationFilename = (url) => {
+  const filename = new URL(url).pathname.split('/').pop();
+
+  if (!PRELOAD_LANGUAGES.some((language) => filename === `${language}.json`)) {
+    throw new Error(`Unexpected translation filename: ${filename || 'missing'}`);
+  }
+
+  return filename;
+};
 
 const fetchTranslationWithFallback = async (url, options = {}) => {
+  const filename = getTranslationFilename(url);
+  const commit = await resolveTranslationCommit();
   let lastError;
 
-  for (const source of TRANSLATION_SOURCES) {
+  for (const source of getTranslationSources(commit)) {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), TRANSLATION_REQUEST_TIMEOUT_MS);
 
     try {
-      const requestUrl = new URL(url.replace(TRANSLATION_SOURCES[0], source));
-      requestUrl.searchParams.set('v', translationVersion);
-
-      const response = await fetch(requestUrl, {
+      const response = await fetch(`${source}/${filename}`, {
         ...options,
         cache: 'no-store',
         signal: controller.signal
@@ -66,7 +130,7 @@ export const i18nReady = i18n
       bindI18n: 'languageChanged loaded'
     },
     backend: {
-      loadPath: `${TRANSLATION_SOURCES[0]}/{{lng}}.json`,
+      loadPath: `${TRANSLATION_LOAD_BASE}/{{lng}}.json`,
       fetch: fetchTranslationWithFallback
     }
   })
@@ -102,7 +166,7 @@ export const reloadI18nResources = async (languages = []) => {
     )
   );
 
-  translationVersion = Date.now();
+  await resolveTranslationCommit({ force: true });
   await i18n.reloadResources(normalizedLanguages);
 
   if (activeLanguage) {

@@ -10,23 +10,29 @@ This repository publishes three runtime locale files:
 - `fr.json`
 - `nl.json`
 
-Primary jsDelivr CDN URL pattern:
+The templates first resolve the current `main` commit through the public GitHub
+ref API and then use that full commit SHA in both runtime URLs.
+
+Immutable jsDelivr CDN URL pattern:
 
 ```text
-https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated/{{lng}}.json
+https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@<commit-sha>/i18n/artifacts/generated/{{lng}}.json
 ```
 
 Example:
 
 ```text
-https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@main/i18n/artifacts/generated/nl.json
+https://cdn.jsdelivr.net/gh/PRAxISDEVELOPMENT/mypraxis_translation_keys@5ad48951e3bd6b5e53aa6c44a85d7d0882df4b1a/i18n/artifacts/generated/nl.json
 ```
 
-GitHub Raw remains the origin and can be used as a secondary endpoint:
+GitHub Raw uses the exact same commit as the secondary endpoint:
 
 ```text
-https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated/{{lng}}.json
+https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/<commit-sha>/i18n/artifacts/generated/{{lng}}.json
 ```
+
+Do not replace `<commit-sha>` with `main`. Mutable jsDelivr branch URLs may
+serve an older branch snapshot and cannot guarantee byte-for-byte consistency.
 
 ## Included Templates
 
@@ -42,7 +48,9 @@ https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/ma
 All templates are aligned with the current repository output and assumptions:
 
 - they load `en`, `fr`, and `nl`
-- they read from the jsDelivr mirror of `i18n/artifacts/generated/{{lng}}.json`
+- they resolve `main` to one validated 40-character Git commit SHA
+- they read from the immutable jsDelivr copy of `i18n/artifacts/generated/{{lng}}.json`
+- they use that same SHA for the GitHub Raw fallback, so sources never mix versions
 - they normalize detected locales to language-only values such as `nl` or `fr`
 - they keep `fallbackLng: false` so missing translations stay visible
 - they render missing translations as `(missing key) your.key.here`
@@ -55,17 +63,16 @@ The browser React and Expo templates additionally:
 - notify React when refreshed resources are loaded
 - export `reloadI18nResources` for an immediate refresh after an application
   has successfully changed translations
-- bypass the browser HTTP cache while still adding a version parameter for
-  explicit refreshes
+- bypass the client HTTP cache when resolving the current GitHub commit
 
 The browser React templates also refresh preloaded translations every five
 minutes through `i18next-http-backend`. The Expo templates intentionally do not
 poll in the background; call `reloadI18nResources` after an app-initiated
 translation update or from the app's own foreground/resume flow.
 
-The repository refreshes and verifies the jsDelivr copy after generated locale
-files change and every six hours. The six-hour workflow repairs missed mirror
-updates; it is not the normal publication delay.
+The repository verifies after generated locale changes that GitHub Raw and
+jsDelivr return identical bytes for the same immutable commit. The workflow
+never purges a mutable CDN cache.
 
 Production applications that must survive a cold start while both remote
 endpoints are unavailable should also keep a local last-known-good or bundled

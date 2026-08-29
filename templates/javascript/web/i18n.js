@@ -9,7 +9,8 @@ import 'moment/locale/nl';
 const PRELOAD_LANGUAGES = ['en', 'nl', 'fr'];
 const TRANSLATION_REQUEST_TIMEOUT_MS = 5000;
 const TRANSLATION_RELOAD_INTERVAL_MS = 5 * 60 * 1000;
-const TRANSLATION_CDN_BASE_URL = 'https://mypraxis-translations.pages.dev';
+const TRANSLATION_CDN_BASE_URL =
+  'https://praxis-translations.development-3e6.workers.dev';
 const GITHUB_RAW_BASE_URL =
   'https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated';
 const TRANSLATION_SOURCES = [

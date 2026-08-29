@@ -5,7 +5,7 @@ const path = require('path');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 const GENERATED_DIR = path.join(ROOT_DIR, 'i18n', 'artifacts', 'generated');
-const OUTPUT_DIR = path.join(ROOT_DIR, '.cloudflare-pages');
+const OUTPUT_DIR = path.join(ROOT_DIR, '.cloudflare-assets');
 const LOCALE_FILES = ['en.json', 'fr.json', 'nl.json'];
 const HEADERS = `/*.json
   Access-Control-Allow-Origin: *
@@ -25,14 +25,14 @@ async function main() {
 
     JSON.parse(content.toString('utf8'));
     await fs.writeFile(destinationPath, content);
-    console.log(`Prepared ${filename} for Cloudflare Pages.`);
+    console.log(`Prepared ${filename} for Cloudflare Workers.`);
   }
 
   await fs.writeFile(path.join(OUTPUT_DIR, '_headers'), HEADERS, 'utf8');
-  console.log(`Cloudflare Pages output is ready in ${path.relative(ROOT_DIR, OUTPUT_DIR)}.`);
+  console.log(`Cloudflare assets are ready in ${path.relative(ROOT_DIR, OUTPUT_DIR)}.`);
 }
 
 main().catch((error) => {
-  console.error(`Could not prepare Cloudflare Pages output: ${error.message}`);
+  console.error(`Could not prepare Cloudflare assets: ${error.message}`);
   process.exit(1);
 });

@@ -170,8 +170,8 @@ Locations:
 Responsibility:
 
 - verify that generated locale artifacts still match the canonical source
-- prepare the three locale files for Cloudflare Pages
-- verify GitHub Raw and Cloudflare Pages byte for byte
+- prepare the three locale files as Cloudflare static assets
+- verify GitHub Raw and Cloudflare Workers byte for byte
 - keep Cloudflare as distribution layer and GitHub as source of truth
 
 The CDN is a distribution layer, not a source-of-truth layer. Applications may
@@ -202,7 +202,7 @@ i18n/source/translations.json
   -> artifact generation
   -> i18n/artifacts/generated/*.json
   -> commit to GitHub main
-  -> atomic Cloudflare Pages deployment
+  -> atomic Cloudflare Workers static asset deployment
   -> fixed CDN URLs with GitHub Raw fallback
   -> consuming applications
 ```

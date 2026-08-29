@@ -1,5 +1,5 @@
 #
-# Cloudflare Pages deploys the generated locale files through its GitHub
+# Cloudflare Workers deploys the generated locale files through its GitHub
 # integration. This workflow waits for that deployment and verifies that the
 # fixed CDN URLs contain the exact bytes committed to main.
 #
@@ -14,9 +14,10 @@ on:
       - 'i18n/artifacts/generated/en.json'
       - 'i18n/artifacts/generated/fr.json'
       - 'i18n/artifacts/generated/nl.json'
-      - 'scripts/prepare-cloudflare-pages.js'
+      - 'scripts/prepare-cloudflare-assets.js'
       - 'scripts/sync-translation-mirror.js'
       - 'package.json'
+      - 'wrangler.jsonc'
       - '.github/workflows/publishTranslationMirror.yml'
   workflow_dispatch:
 
@@ -28,12 +29,12 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  TRANSLATION_CDN_BASE_URL: ${{ vars.TRANSLATION_CDN_BASE_URL || 'https://mypraxis-translations.pages.dev' }}
+  TRANSLATION_CDN_BASE_URL: ${{ vars.TRANSLATION_CDN_BASE_URL || 'https://praxis-translations.development-3e6.workers.dev' }}
 
 jobs:
   sync:
     name: Verify Published Translation Files
-    if: github.event_name == 'workflow_dispatch' || vars.CLOUDFLARE_PAGES_CONFIGURED == 'true'
+    if: github.event_name == 'workflow_dispatch' || vars.CLOUDFLARE_WORKER_CONFIGURED == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 12
 
@@ -49,8 +50,8 @@ jobs:
       - name: Verify Generated Artifacts Are In Sync
         run: npm run translations:check
 
-      - name: Prepare Cloudflare Pages Output
+      - name: Prepare Cloudflare Static Assets
         run: npm run translations:prepare-cdn
 
-      - name: Verify GitHub Raw And Cloudflare Pages
+      - name: Verify GitHub Raw And Cloudflare Workers
         run: node scripts/sync-translation-mirror.js

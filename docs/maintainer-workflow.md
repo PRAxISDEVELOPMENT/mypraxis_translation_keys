@@ -164,7 +164,7 @@ Use this shortcut:
 1. Open the `Verify Cloudflare Translation CDN` workflow in GitHub Actions.
 2. Check the log for the affected `en.json`, `fr.json`, or `nl.json` comparison.
 3. Confirm that `npm run translations:check` succeeds on `main`.
-4. Confirm that the matching Cloudflare Pages deployment succeeded.
+4. Confirm that the matching Cloudflare Workers deployment succeeded.
 5. Re-run the workflow manually after a temporary GitHub Raw or Cloudflare issue.
 
 The workflow waits for the fixed Cloudflare URL and compares all three files

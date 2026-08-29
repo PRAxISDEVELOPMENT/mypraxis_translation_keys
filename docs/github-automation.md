@@ -9,7 +9,7 @@ GitHub Actions exist here to do four jobs:
 - validate translation changes
 - keep generated artifacts synchronized on `main`
 - turn new translation proposals into reviewable pull requests
-- verify runtime files on GitHub Raw and Cloudflare Pages
+- verify runtime files on GitHub Raw and Cloudflare Workers
 
 ## Workflow Inventory
 
@@ -18,7 +18,7 @@ GitHub Actions exist here to do four jobs:
 | build and validation | [../.github/workflows/buildTranslations.yml](../.github/workflows/buildTranslations.yml) | validate source changes and regenerate artifacts on `main` |
 | upload processing | [../.github/workflows/processTranslationUploads.yml](../.github/workflows/processTranslationUploads.yml) | route incoming upload files and process direct/proposal paths |
 | proposal PR automation | [../.github/workflows/openTranslationProposalPr.yml](../.github/workflows/openTranslationProposalPr.yml) | open or update PRs for proposal branches |
-| Cloudflare CDN verification | [../.github/workflows/publishTranslationMirror.yml](../.github/workflows/publishTranslationMirror.yml) | verify Raw and Cloudflare Pages bytes |
+| Cloudflare CDN verification | [../.github/workflows/publishTranslationMirror.yml](../.github/workflows/publishTranslationMirror.yml) | verify Raw and Cloudflare Workers bytes |
 
 ## Workflow 1: Validate And Build Translation Artifacts
 
@@ -85,10 +85,10 @@ Behavior:
 - runs immediately when `en.json`, `fr.json`, or `nl.json` changes on `main`
 - supports a manual run from the GitHub Actions interface
 - verifies that generated artifacts match the canonical source
-- prepares the exact three-file Cloudflare Pages output locally
+- prepares the exact three-file Cloudflare static asset output locally
 - waits for the Cloudflare GitHub integration to deploy the commit
 - checks all supported locale files even if one locale fails
-- compares valid JSON and exact file bytes on GitHub Raw and Cloudflare Pages
+- compares valid JSON and exact file bytes on GitHub Raw and Cloudflare Workers
 
 Both upload routes end at the same publication trigger:
 
@@ -98,7 +98,7 @@ Both upload routes end at the same publication trigger:
    build workflow applies the approved proposal, rebuilds the runtime locale
    files, and triggers Cloudflare CDN verification.
 
-Cloudflare deploys the locale files atomically and keeps the public URLs fixed.
+Cloudflare Workers deploys the locale files atomically and keeps the public URLs fixed.
 Applications use Cloudflare first and GitHub Raw only as a network fallback.
 
 ## Proposal PR Behavior
@@ -117,8 +117,8 @@ Repository variables used:
 - `TRANSLATION_PROPOSAL_TEAM_REVIEWERS`
 - `TRANSLATION_PROPOSAL_ASSIGNEES`
 - `TRANSLATION_CDN_BASE_URL`
-  fixed Cloudflare Pages base URL used by CDN verification
-- `CLOUDFLARE_PAGES_CONFIGURED`
+  fixed Cloudflare Workers base URL used by CDN verification
+- `CLOUDFLARE_WORKER_CONFIGURED`
   set to `true` only after the three production URLs are available
 
 ## Recommended Repository Setup

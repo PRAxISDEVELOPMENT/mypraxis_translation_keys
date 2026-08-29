@@ -9,7 +9,8 @@ const REPOSITORY = 'PRAxISDEVELOPMENT/mypraxis_translation_keys';
 const GENERATED_DIR = path.join(ROOT_DIR, 'i18n', 'artifacts', 'generated');
 const RAW_BASE_URL = `https://raw.githubusercontent.com/${REPOSITORY}/main/i18n/artifacts/generated`;
 const CDN_BASE_URL = String(
-  process.env.TRANSLATION_CDN_BASE_URL || 'https://mypraxis-translations.pages.dev'
+  process.env.TRANSLATION_CDN_BASE_URL ||
+    'https://praxis-translations.development-3e6.workers.dev'
 ).replace(/\/+$/, '');
 const REQUEST_TIMEOUT_MS = 15_000;
 const AVAILABILITY_ATTEMPTS = 30;
@@ -100,13 +101,13 @@ async function waitForMirror(baseUrl, expectedFiles, label) {
 async function main() {
   const expectedFiles = await readExpectedFiles();
 
-  console.log('Verifying GitHub Raw and the Cloudflare Pages CDN.');
+  console.log('Verifying GitHub Raw and the Cloudflare Workers CDN.');
   console.log(`Cloudflare base URL: ${CDN_BASE_URL}`);
 
   await waitForMirror(RAW_BASE_URL, expectedFiles, 'GitHub Raw');
-  await waitForMirror(CDN_BASE_URL, expectedFiles, 'Cloudflare Pages');
+  await waitForMirror(CDN_BASE_URL, expectedFiles, 'Cloudflare Workers');
 
-  console.log('GitHub Raw and Cloudflare Pages contain the exact generated locale bytes.');
+  console.log('GitHub Raw and Cloudflare Workers contain the exact generated locale bytes.');
 }
 
 main().catch((error) => {

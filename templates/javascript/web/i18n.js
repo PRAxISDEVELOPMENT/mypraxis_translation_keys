@@ -8,11 +8,13 @@ import 'moment/locale/nl';
 
 const PRELOAD_LANGUAGES = ['en', 'nl', 'fr'];
 const TRANSLATION_REQUEST_TIMEOUT_MS = 5000;
-const TRANSLATION_RELOAD_INTERVAL_MS = 5 * 60 * 1000;
+
 const TRANSLATION_CDN_BASE_URL =
   'https://praxis-translations.development-3e6.workers.dev';
+
 const GITHUB_RAW_BASE_URL =
   'https://raw.githubusercontent.com/PRAxISDEVELOPMENT/mypraxis_translation_keys/main/i18n/artifacts/generated';
+
 const TRANSLATION_SOURCES = [
   TRANSLATION_CDN_BASE_URL,
   GITHUB_RAW_BASE_URL
@@ -62,12 +64,21 @@ const loadTranslationsWithFallback = async (_options, url, _payload, callback) =
     const filename = getTranslationFilename(url);
 
     for (const source of TRANSLATION_SOURCES) {
+      const translationUrl = `${source}/${filename}`;
+
+      console.info(`[i18n] Trying translation source: ${translationUrl}`);
+
       try {
-        const translation = await fetchTranslation(`${source}/${filename}`);
+        const translation = await fetchTranslation(translationUrl);
+
+        console.info(
+          `[i18n] Loaded translations from: ${translationUrl} (HTTP ${translation.status})`
+        );
 
         callback(null, translation);
         return;
       } catch (error) {
+        console.warn(`[i18n] Translation source failed: ${translationUrl}`, error);
         lastError = error;
       }
     }
@@ -100,7 +111,7 @@ export const i18nReady = i18n
       caches: []
     },
     backend: {
-      reloadInterval: TRANSLATION_RELOAD_INTERVAL_MS,
+      reloadInterval: false,
       loadPath: `${TRANSLATION_CDN_BASE_URL}/{{lng}}.json`,
       request: loadTranslationsWithFallback
     }

@@ -277,7 +277,7 @@ MyPRAxIS-webimplementatie:
 | Netwerkfallback             | GitHub Raw op `main`                                                       |
 | Timeout per bron            | 5 seconden                                                                |
 | Responsecontrole            | HTTP-status én geldige JSON                                               |
-| Automatische controle       | Iedere 5 minuten via `reloadInterval`                                     |
+| Automatische achtergrondpolling | Uitgeschakeld (`reloadInterval: false`)                               |
 | React-update                | Componenten reageren op `languageChanged` en `loaded`                     |
 | Browsercache                | Requests gebruiken `cache: 'no-cache'` zodat ETags hergebruikt kunnen worden |
 | Directe applicatiewijziging | Roep `reloadI18nResources(['en', 'nl', 'fr'])` aan na succesvolle verwerking |
@@ -285,10 +285,9 @@ MyPRAxIS-webimplementatie:
 ### Gedrag van de Expo-integratie
 
 De Expo-templates gebruiken dezelfde primaire bron, GitHub-fallback, timeout,
-JSON-validatie en `reloadI18nResources`-helper. Alleen de
-automatische vijfminuten-polling ontbreekt bewust. Roep de reloadhelper aan na
-een geslaagde wijziging vanuit de app en eventueel vanuit de bestaande
-foreground/resumeflow.
+JSON-validatie, logging en `reloadI18nResources`-helper. Geen enkele template
+pollt automatisch op de achtergrond. Roep de reloadhelper aan na een geslaagde
+wijziging vanuit de app en eventueel vanuit de bestaande foreground/resumeflow.
 
 De bronvolgorde is vast:
 
@@ -307,19 +306,18 @@ gebruikt. Een fout op Cloudflare schakelt dus automatisch door naar GitHub Raw.
 | Wijziging                                        | React web                                              | Expo / React Native                                  |
 | ------------------------------------------------ | ------------------------------------------------------ | ---------------------------------------------------- |
 | Vanuit de applicatie, na geslaagde GitHub Action | Meteen via `reloadI18nResources`                        | Meteen via `reloadI18nResources`                     |
-| Rechtstreeks in deze repository                  | Uiterlijk bij de volgende controle van 5 minuten       | Bij volgende start of expliciete reload              |
+| Rechtstreeks in deze repository                  | Bij volgende start of expliciete reload                | Bij volgende start of expliciete reload              |
 | App of pagina opnieuw gestart                    | Tijdens de initiële i18next-load                       | Tijdens de initiële i18next-load                     |
 
-Clients laden de vaste URL bij het starten, bij de webcontrole of bij een
-expliciete reload. De periodieke CDN-workflow staat hier los van: die controleert
+Clients laden de vaste URL bij het starten of bij een expliciete reload. De
+periodieke CDN-workflow staat hier los van: die controleert
 alleen de publicatie-integriteit en pusht geen vertalingen naar clients.
 
 > [!IMPORTANT]
-> `reloadInterval` is polling, geen realtime push. i18next ontvangt geen event
-> van GitHub wanneer een bestand wijzigt. Daarom gebruikt de webapp daarnaast
-> een expliciete reload na een wijziging die zij zelf heeft gestart. De
-> Expo-template gebruikt bewust geen achtergrondpolling; koppel de geëxporteerde
-> reloadhelper aan de bestaande update- of foregroundflow van de app.
+> i18next ontvangt geen realtime event wanneer een bestand wijzigt. Daarom is
+> achtergrondpolling uitgeschakeld en gebruikt iedere applicatie een expliciete
+> reload na een wijziging die zij zelf heeft gestart. Koppel de geëxporteerde
+> reloadhelper waar nodig aan de bestaande update- of foregroundflow.
 
 > [!WARNING]
 > Geen enkele remote fallback helpt bij een koude start wanneer zowel Cloudflare

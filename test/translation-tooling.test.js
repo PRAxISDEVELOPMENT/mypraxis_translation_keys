@@ -183,3 +183,29 @@ test('direct-update and proposal upload simulations complete as dry runs', () =>
     assert.match(result.stdout, /Dry run:\s+yes/);
   }
 });
+
+test('all client templates use the same CDN fallback, logging, and refresh policy', () => {
+  const templatePaths = [
+    'templates/javascript/web/i18n.js',
+    'templates/typescript/web/i18n.ts',
+    'templates/javascript/expo/i18n.js',
+    'templates/typescript/expo/i18n.ts'
+  ];
+
+  for (const templatePath of templatePaths) {
+    const content = fs.readFileSync(path.join(ROOT_DIR, templatePath), 'utf8');
+
+    assert.match(content, /praxis-translations\.development-3e6\.workers\.dev/);
+    assert.match(content, /raw\.githubusercontent\.com/);
+    assert.match(content, /cache: 'no-cache'/);
+    assert.match(content, /Trying translation source/);
+    assert.match(content, /Loaded translations from/);
+    assert.match(content, /Translation source failed/);
+    assert.doesNotMatch(content, /5 \* 60 \* 1000/);
+  }
+
+  for (const templatePath of templatePaths.filter((templatePath) => templatePath.includes('/web/'))) {
+    const content = fs.readFileSync(path.join(ROOT_DIR, templatePath), 'utf8');
+    assert.match(content, /reloadInterval: false/);
+  }
+});

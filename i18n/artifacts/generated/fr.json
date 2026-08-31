@@ -2672,7 +2672,7 @@
     "contractCannotBeGeneratedBecauseThePriceDetailsAreMissing": "Le contrat ne peut pas être généré car les détails de prix manquent.",
     "contractCannotBeGeneratedDueToMissingRequiredInformation": "Le contrat ne peut pas être généré en raison d’informations requises manquantes : {{values}}",
     "contractTypeIsRequiredToGenerateTelemonitoringContract": "Il faut choisir un 'type de contrat' pour pouvoir générer votre contrat de télésurveillance",
-    "crmCallCenterWasNotFound": "[CRM] Centrale de permanence '{{callcenter_number}}' pas trouvé...",
+    "crmCallCenterWasNotFound": "[CRM] Centrale de permanence '{{callcenter_number}}' pas trouvé.",
     "crmClientWasNotFound": "[CRM] Client '{{client_number}}' pas trouvé.",
     "crmInstallerWasNotFound": "[CRM] Installateur '{{installer_number}}' pas trouvé.",
     "CSVMissingHeaders": "Le CSV manque des en-têtes obligatoires",

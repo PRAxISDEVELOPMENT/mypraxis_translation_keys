@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-08-31T10:06:18.019Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20260831100602-o0iu76.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "error.crmCallCenterWasNotFound",
+      "namespace": "error",
+      "changes": {
+        "nl": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden.",
+        "fr": "[CRM] Centrale de permanence '{{callcenter_number}}' pas trouvé.",
+        "en": "[CRM] Call center '{{callcenter_number}}' was not found."
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden...",
+        "fr": "[CRM] Centrale de permanence '{{callcenter_number}}' pas trouvé...",
+        "en": "[CRM] Call center '{{callcenter_number}}' was not found..."
+      },
+      "next": {
+        "nl": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden.",
+        "fr": "[CRM] Centrale de permanence '{{callcenter_number}}' pas trouvé.",
+        "en": "[CRM] Call center '{{callcenter_number}}' was not found."
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

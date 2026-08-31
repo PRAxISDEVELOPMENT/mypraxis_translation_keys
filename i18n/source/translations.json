@@ -24570,9 +24570,9 @@
   },
   {
     "key": "error.crmCallCenterWasNotFound",
-    "nl": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden.",
-    "fr": "[CRM] Centrale de permanence '{{callcenter_number}}' pas trouvé.",
-    "en": "[CRM] Call center '{{callcenter_number}}' was not found.",
+    "nl": "[CRM] Callcenter '{{callcenter_number}}' werd niet gevonden...",
+    "fr": "[CRM] Centrale de permanence '{{callcenter_number}}' pas trouvé...",
+    "en": "[CRM] Call center '{{callcenter_number}}' was not found...",
     "applications": [
       "unknown"
     ]
@@ -27792,6 +27792,15 @@
     ]
   },
   {
+    "key": "info.pleaseForwardTheMessageBelowToTheSenderAndThenClickContinue",
+    "nl": "Gelieve onderstaand antwoord door te geven aan de afzender en daarna op Doorgaan te klikken",
+    "fr": "Veuillez transmettre la réponse ci-dessous à l’expéditeur, puis cliquer sur Continuer",
+    "en": "Please forward the answer below to the sender and then click Continue",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "info.pleaseNoteThatTheZoneDescriptionTransmittedViaSiaLevel3AlwaysTakesPriorityOverTheManuallyEnteredDescriptionAndWillBeCommunicatedAsSuchDuringAlarmHandling",
     "nl": "Let wel - de zoneomschrijving via SIA LEVEL 3 krijgt altijd prioriteit op de manueel ingegeven zoneomschrijving en zal ook zo gecommuniceerd worden bij alarmafhandelingen.",
     "fr": "À noter que la description de zone transmise via SIA Level 3 a toujours priorité sur la description ajoutée manuellement et qu'elle sera communique comme telle lors du traitement des alarmes.",
@@ -28107,6 +28116,15 @@
     ]
   },
   {
+    "key": "info.sevenDaySignalMonitoringAfterSubscriptionEndDate",
+    "nl": "Bij de stopzetting van een abonnement, zal na de vastgelegde einddatum een termijn van 7 dagen starten, tijdens dewelke actief zal gecontroleerd worden of op het epromnummer nog enig signaal gedetecteerd wordt. Als dit het geval is zal het epromnummer de status “terug actief voor facturatie” krijgen en terug in uw maandelijks overzicht van (voor facturatie) actieve epromnummers opgenomen worden.",
+    "fr": "En cas de résiliation d'un abonnement, un délai de 7 jours commencera à courir après la date de fin fixée, pendant lequel il sera activement vérifié si un signal est encore détecté sur le numéro d'EPROM. Si tel est le cas, le numéro d'EPROM se verra attribuer le statut « à nouveau actif pour la facturation » et sera réintégré dans votre relevé mensuel des numéros d'EPROM actifs (pour la facturation).",
+    "en": "In the event of the termination of a subscription, a period of 7 days will begin after the specified end date, during which active checks will be carried out to determine whether any signal is still being detected on the EPROM number. If this is the case, the EPROM number will be assigned the status “active again for billing” and will be reinstated in your monthly statement of EPROM numbers active (for billing purposes).",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
     "key": "info.SiaLevel3InfoText",
     "nl": "Volgens onze gegevens stuurt het alarmpaneel de zoneteksten automatisch door (SIA NIVEAU 3). Hierdoor kunnen zones niet handmatig worden toegevoegd of gewijzigd.",
     "fr": "Basé sur les données dont nous disposons, ce panneau d'alarme transmet automatiquement les descriptions de zone (NIVEAU SIA 3). Par conséquent, il est impossible d'ajouter ou de modifier ici manuellement les desciptions de zone.",
@@ -28184,6 +28202,15 @@
     "nl": "Tijdelijke commentaar kan enkel worden toegevoegd of gewijzigd door PRAxIS GROUP N.V.",
     "fr": "Le commentaire temporaire ne peut être ajouté ou modifié que sur demande addressée à PRAxIS GROUP S.A.",
     "en": "Temporary comment can only be added or changed upon request via PRAxIS GROUP N.V.",
+    "applications": [
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "info.terminationOnlyTakesEffectAfterSignalTransmissionHasStopped",
+    "nl": "Volgens de Algemene voorwaarden van het telebewakingscontract (art. 3.C. laatste paragraaf) zal de opzegging (van een abonnement) in ieder geval slechts in kunnen gaan nadat de stopzetting van het doorsturen van eender welk signaal door het systeem van de klant door PRAxIS vastgesteld werd. Het verder doorsturen van eender welk signaal door dat systeem schort de opzegging van de overeenkomst, ook voor consumenten in de strikte zin van het woord, op.",
+    "fr": "Conformément aux conditions générales du contrat de télésurveillance (art. 3.C., dernier paragraphe) la résiliation ne pourra en tout état de cause prendre effet qu'après que PRAxIS aura constaté l'arrêt de la transmission de tout signal par le système du client. La poursuite de la transmission de tout signal par ce système suspend la résiliation du contrat, y compris pour les consommateurs au sens strict du terme.",
+    "en": "In accordance with the General Terms and Conditions of the alarm monitoring contract (Article 3.C., final paragraph), the termination shall in any event only take effect after PRAxIS has established that the customer's system has stopped transmitting all signals. The continued transmission of any signal by that system suspends the termination of the contract, including for consumers in the strict sense of the term.",
     "applications": [
       "mypraxis_web"
     ]
@@ -32432,33 +32459,6 @@
     "nl": "U heeft niet de juiste rechten om dit onderdeel te bekijken. Neem contact op met uw beheerder van het blok installateur voor meer informatie.",
     "fr": "Vous ne disposez pas des autorisations nécessaires pour consulter cette section. Veuillez contacter l’administrateur de la partie 'Installateur' pour plus d’informations.",
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.terminationOnlyTakesEffectAfterSignalTransmissionHasStopped",
-    "nl": "Volgens de Algemene voorwaarden van het telebewakingscontract (art. 3.C. laatste paragraaf) zal de opzegging (van een abonnement) in ieder geval slechts in kunnen gaan nadat de stopzetting van het doorsturen van eender welk signaal door het systeem van de klant door PRAxIS vastgesteld werd. Het verder doorsturen van eender welk signaal door dat systeem schort de opzegging van de overeenkomst, ook voor consumenten in de strikte zin van het woord, op.",
-    "fr": "Conformément aux conditions générales du contrat de télésurveillance (art. 3.C., dernier paragraphe) la résiliation ne pourra en tout état de cause prendre effet qu'après que PRAxIS aura constaté l'arrêt de la transmission de tout signal par le système du client. La poursuite de la transmission de tout signal par ce système suspend la résiliation du contrat, y compris pour les consommateurs au sens strict du terme.",
-    "en": "In accordance with the General Terms and Conditions of the alarm monitoring contract (Article 3.C., final paragraph), the termination shall in any event only take effect after PRAxIS has established that the customer's system has stopped transmitting all signals. The continued transmission of any signal by that system suspends the termination of the contract, including for consumers in the strict sense of the term.",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.sevenDaySignalMonitoringAfterSubscriptionEndDate",
-    "nl": "Bij de stopzetting van een abonnement, zal na de vastgelegde einddatum een termijn van 7 dagen starten, tijdens dewelke actief zal gecontroleerd worden of op het epromnummer nog enig signaal gedetecteerd wordt. Als dit het geval is zal het epromnummer de status “terug actief voor facturatie” krijgen en terug in uw maandelijks overzicht van (voor facturatie) actieve epromnummers opgenomen worden.",
-    "fr": "En cas de résiliation d'un abonnement, un délai de 7 jours commencera à courir après la date de fin fixée, pendant lequel il sera activement vérifié si un signal est encore détecté sur le numéro d'EPROM. Si tel est le cas, le numéro d'EPROM se verra attribuer le statut « à nouveau actif pour la facturation » et sera réintégré dans votre relevé mensuel des numéros d'EPROM actifs (pour la facturation).",
-    "en": "In the event of the termination of a subscription, a period of 7 days will begin after the specified end date, during which active checks will be carried out to determine whether any signal is still being detected on the EPROM number. If this is the case, the EPROM number will be assigned the status “active again for billing” and will be reinstated in your monthly statement of EPROM numbers active (for billing purposes).",
-    "applications": [
-      "mypraxis_web"
-    ]
-  },
-  {
-    "key": "info.pleaseForwardTheMessageBelowToTheSenderAndThenClickContinue",
-    "nl": "Gelieve onderstaand antwoord door te geven aan de afzender en daarna op Doorgaan te klikken",
-    "fr": "Veuillez transmettre la réponse ci-dessous à l’expéditeur, puis cliquer sur Continuer",
-    "en": "Please forward the answer below to the sender and then click Continue",
     "applications": [
       "mypraxis_web"
     ]

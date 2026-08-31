@@ -27,32 +27,39 @@ function parseSimulateUploadArgs(argv) {
 
     const flag = token.slice(2);
     const next = argv[index + 1];
+    const requireValue = () => {
+      if (!next || next.startsWith('--')) {
+        throw new Error(`Option "--${flag}" requires a value.`);
+      }
+
+      return next;
+    };
 
     switch (flag) {
       case 'key':
-        result.key = next;
+        result.key = requireValue();
         index += 1;
         break;
       case 'nl':
       case 'fr':
       case 'en':
-        result[flag] = next;
+        result[flag] = requireValue();
         index += 1;
         break;
       case 'description':
-        result.description = next;
+        result.description = requireValue();
         index += 1;
         break;
       case 'notes':
-        result.notes = next;
+        result.notes = requireValue();
         index += 1;
         break;
       case 'requested-namespace':
-        result.requestedNamespace = next;
+        result.requestedNamespace = requireValue();
         index += 1;
         break;
       case 'source':
-        result.source = next;
+        result.source = requireValue();
         index += 1;
         break;
       case 'apply':
@@ -71,6 +78,11 @@ function parseSimulateUploadArgs(argv) {
   }
 
   result.command = result._[0] || '';
+
+  if (result._.length > 1) {
+    throw new Error(`Unexpected positional argument "${result._[1]}".`);
+  }
+
   return result;
 }
 

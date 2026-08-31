@@ -2,9 +2,15 @@
   "json.schemas": [
     {
       "fileMatch": [
-        "/i18n/translations.json"
+        "/i18n/source/translations.json"
       ],
-      "url": "./i18n/translations.schema.json"
+      "url": "./i18n/config/translations.schema.json"
+    },
+    {
+      "fileMatch": [
+        "/i18n/uploads/incoming/*.json"
+      ],
+      "url": "./i18n/config/upload.schema.json"
     }
   ]
 }

@@ -28,8 +28,8 @@ File:
 
 Behavior:
 
-- on pull requests, it validates syntax, validates pending proposal objects, validates source data, and checks whether generated artifacts are in sync
-- on pushes to `main`, it applies approved proposal objects, regenerates generated artifacts, and commits the result back when needed
+- on pull requests, it runs regression tests, validates syntax and pending proposal objects, validates source data without writing, and checks whether committed artifacts are in sync
+- on pushes to `main`, it applies approved proposal objects, regenerates generated artifacts, runs regression tests, and commits the result back when needed
 
 Important consequence:
 
@@ -83,12 +83,17 @@ File:
 Behavior:
 
 - runs immediately when `en.json`, `fr.json`, or `nl.json` changes on `main`
+- runs every six hours to detect drift that was not noticed during publication
 - supports a manual run from the GitHub Actions interface
 - verifies that generated artifacts match the canonical source
 - prepares the exact three-file Cloudflare static asset output locally
 - waits for the Cloudflare GitHub integration to deploy the commit
 - checks all supported locale files even if one locale fails
 - compares valid JSON and exact file bytes on GitHub Raw and Cloudflare Workers
+
+The scheduled verification is detection, not deployment. Cloudflare's GitHub
+integration performs deployments and keeps the previous successful deployment
+online if a new build fails.
 
 Both upload routes end at the same publication trigger:
 

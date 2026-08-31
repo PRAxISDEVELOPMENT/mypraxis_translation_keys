@@ -45,7 +45,7 @@ If you mix those responsibilities, the repository becomes harder to trust.
 
 Requirements:
 
-- Node.js 20 or newer
+- Node.js 24 or newer
 - npm
 - Git
 - optionally `gh` if you use the helper workflow that watches Actions runs
@@ -143,10 +143,11 @@ Also read:
 | Command                                            | Purpose                                                                                                    |
 | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | `npm run tooling:check-syntax`                     | syntax-check all Node tooling files                                                                        |
+| `npm test`                                         | run translation tooling regression tests                                                                   |
 | `npm run translations:build`                       | validate source and regenerate generated artifacts                                                         |
 | `npm run translations:check`                       | confirm generated output is in sync                                                                        |
 | `npm run translations:report`                      | print the detailed validation report                                                                       |
-| `npm run translations:validate`                    | run strict validation                                                                                      |
+| `npm run translations:validate`                    | run strict read-only validation                                                                            |
 | `npm run uploads:prepare -- --input <file>`        | analyze one upload file                                                                                    |
 | `npm run uploads:route`                            | split mixed upload batches                                                                                 |
 | `npm run uploads:process-inbox -- --mode direct`   | process direct-update inbox files                                                                          |

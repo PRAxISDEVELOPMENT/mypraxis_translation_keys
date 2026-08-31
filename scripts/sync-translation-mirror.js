@@ -104,8 +104,10 @@ async function main() {
   console.log('Verifying GitHub Raw and the Cloudflare Workers CDN.');
   console.log(`Cloudflare base URL: ${CDN_BASE_URL}`);
 
-  await waitForMirror(RAW_BASE_URL, expectedFiles, 'GitHub Raw');
-  await waitForMirror(CDN_BASE_URL, expectedFiles, 'Cloudflare Workers');
+  await Promise.all([
+    waitForMirror(RAW_BASE_URL, expectedFiles, 'GitHub Raw'),
+    waitForMirror(CDN_BASE_URL, expectedFiles, 'Cloudflare Workers')
+  ]);
 
   console.log('GitHub Raw and Cloudflare Workers contain the exact generated locale bytes.');
 }

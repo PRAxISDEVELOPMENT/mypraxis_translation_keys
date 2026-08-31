@@ -30,6 +30,8 @@ Before pushing, the safest local check is:
 
 ```bash
 npm run tooling:check-syntax
+npm test
+npm run translations:validate
 npm run translations:check
 ```
 
@@ -53,10 +55,9 @@ Use this when you want to reproduce the automation path locally.
 
 ## The Guided Push Helper
 
-The repository includes:
+The repository uses the cross-platform helper:
 
 - [../scripts/update-translations.js](../scripts/update-translations.js)
-- [../scripts/update-translations.sh](../scripts/update-translations.sh)
 
 Run it with:
 
@@ -70,9 +71,9 @@ You should not need Git Bash just to use the repository helper commands.
 What it does:
 
 1. builds translations locally
-2. asks for a commit message
-3. stages all current changes
-4. commits and pushes the current branch
+2. shows every current change and asks for confirmation
+3. asks for a commit message
+4. stages the confirmed changes, commits, and pushes the current branch
 5. on `main`, optionally waits for relevant GitHub Actions when `gh` is installed and authenticated
 6. pulls the latest remote state back locally when appropriate
 

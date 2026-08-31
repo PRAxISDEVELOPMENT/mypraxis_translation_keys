@@ -38,7 +38,7 @@ const fetchTranslationWithFallback = async (url, options = {}) => {
     try {
       const response = await fetch(`${source}/${filename}`, {
         ...options,
-        cache: 'no-store',
+        cache: 'no-cache',
         signal: controller.signal
       });
 
@@ -81,11 +81,11 @@ export const i18nReady = i18n
       fetch: fetchTranslationWithFallback
     }
   })
-  .then(() => {
+  .then(async () => {
     const shortLang = i18n.language.split('-')[0];
 
     if (i18n.language !== shortLang) {
-      i18n.changeLanguage(shortLang);
+      await i18n.changeLanguage(shortLang);
     }
 
     moment.locale(shortLang);

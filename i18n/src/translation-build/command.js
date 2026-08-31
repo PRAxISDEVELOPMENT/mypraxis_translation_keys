@@ -62,6 +62,11 @@ function runBuildTranslationsCommand(argv = process.argv.slice(2)) {
     return;
   }
 
+  if (options.validate) {
+    console.log('Translation source validation passed.');
+    return;
+  }
+
   const artifacts = generateArtifacts(
     entries,
     namespaceConfig,

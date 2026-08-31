@@ -200,7 +200,7 @@ wijzigt.
 
 Vereisten:
 
-- Node.js 20 of nieuwer
+- Node.js 24 of nieuwer
 - npm
 - Git
 - optioneel: GitHub CLI (`gh`) om workflowruns automatisch te volgen
@@ -279,7 +279,7 @@ MyPRAxIS-webimplementatie:
 | Responsecontrole            | HTTP-status én geldige JSON                                               |
 | Automatische controle       | Iedere 5 minuten via `reloadInterval`                                     |
 | React-update                | Componenten reageren op `languageChanged` en `loaded`                     |
-| Browsercache                | Requests gebruiken `cache: 'no-store'`                                   |
+| Browsercache                | Requests gebruiken `cache: 'no-cache'` zodat ETags hergebruikt kunnen worden |
 | Directe applicatiewijziging | Roep `reloadI18nResources(['en', 'nl', 'fr'])` aan na succesvolle verwerking |
 
 ### Gedrag van de Expo-integratie
@@ -311,7 +311,8 @@ gebruikt. Een fout op Cloudflare schakelt dus automatisch door naar GitHub Raw.
 | App of pagina opnieuw gestart                    | Tijdens de initiële i18next-load                       | Tijdens de initiële i18next-load                     |
 
 Clients laden de vaste URL bij het starten, bij de webcontrole of bij een
-expliciete reload. Daarvoor is geen periodieke CDN-workflow nodig.
+expliciete reload. De periodieke CDN-workflow staat hier los van: die controleert
+alleen de publicatie-integriteit en pusht geen vertalingen naar clients.
 
 > [!IMPORTANT]
 > `reloadInterval` is polling, geen realtime push. i18next ontvangt geen event
@@ -351,6 +352,7 @@ een relevante commit bouwt Cloudflare een nieuwe, atomische deployment uit
 | --------------------------------------------------------- | ------------------------------------------------------- |
 | Wijziging aan `en.json`, `fr.json` of `nl.json` op `main` | GitHub Raw en Cloudflare Workers exact verifiëren       |
 | Handmatige GitHub Actions-run                             | Onderhoud of diagnose                                   |
+| Iedere zes uur (`17 */6 * * *`)                           | Eventuele onopgemerkte afwijkingen detecteren           |
 
 ### Veilige verificatievolgorde
 
@@ -465,6 +467,7 @@ in de zichtbare vertaalwaarde gemengd; daarvoor dient `registry.json`.
 │       ├── incoming/               # nieuwe uploadqueue
 │       └── processed/              # verwerkte uploadarchive
 ├── scripts/                        # lokale helpers en Cloudflare CDN-controle
+├── test/                           # regressietests voor translation tooling
 └── templates/                      # web- en Expo-integratievoorbeelden
 ```
 
@@ -507,12 +510,14 @@ translation_proposals/**     → tijdelijke reviewbranches voor nieuwe keys
 | Command                                | Doel                                                         |
 | -------------------------------------- | ------------------------------------------------------------ |
 | `npm install`                          | Projectafhankelijkheden installeren                          |
+| `npm test`                             | Regressietests voor build-, schema- en uploadflows draaien   |
 | `npm run update`                       | Bouwen, committen, pushen, workflow volgen en synchroniseren |
 | `npm run tooling:check-syntax`         | Syntax van alle Node-tooling controleren                     |
 | `npm run translations:build`           | Bron valideren en artifacts opnieuw genereren                |
 | `npm run translations:check`           | Controleren of artifacts met de bron overeenkomen            |
 | `npm run translations:prepare-cdn`     | Cloudflare static assets lokaal voorbereiden                  |
-| `npm run translations:validate`        | Strikte validatie; warnings laten de opdracht falen          |
+| `npm run translations:deploy-cdn`      | Cloudflare deployen met de vastgepinde Wrangler-versie        |
+| `npm run translations:validate`        | Read-only validatie; warnings laten de opdracht falen         |
 | `npm run translations:report`          | Uitgebreid gezondheidsrapport tonen                          |
 | `npm run translations:list-namespaces` | Beschikbare namespaces tonen                                 |
 | `npm run translations:help`            | Alle translation-buildopties tonen                           |
@@ -620,8 +625,6 @@ De relevante opties zijn afgewogen:
 | Cloudflare Workers                 | Vaste URL, onafhankelijk CDN en gratis static hosting | Eenmalige GitHub-koppeling nodig                   |
 | Betaalde object storage/CDN        | Professionele controle en SLA-opties          | Account, configuratie en betaalgegevens nodig            |
 | GitHub Pages                       | Eenvoudig binnen GitHub                       | Blijft afhankelijk van hetzelfde platform                |
-| jsDelivr `@main` + purge           | Eenvoudige vaste URL                           | Mutable snapshots en purge-throttling zijn niet exact    |
-| jsDelivr op SHA + GitHub op SHA    | Immutable en byte-voor-byte verifieerbaar      | Geen vaste URL; client moet eerst de SHA resolven         |
 
 Binnen de huidige voorwaarden — vaste URLs, geen eigen serverbeheer en publieke
 JSON — is Cloudflare Workers de primaire CDN-laag. GitHub blijft de bron en Raw

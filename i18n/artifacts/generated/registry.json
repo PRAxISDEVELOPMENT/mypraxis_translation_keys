@@ -14,7 +14,7 @@
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 2,
+    "keysWithMissingLocales": 0,
     "keysWithReviewRequired": 6,
     "localeReviewsRequired": 14
   },
@@ -86497,10 +86497,7 @@
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
-      "missingLocales": [
-        "en",
-        "fr"
-      ],
+      "missingLocales": [],
       "status": {
         "nl": "review-required",
         "fr": "review-required",
@@ -86513,8 +86510,8 @@
       ],
       "resolved": {
         "nl": "Drukste periode info",
-        "fr": "",
-        "en": ""
+        "fr": "Informations sur la période la plus chargée",
+        "en": "Busiest period information"
       }
     },
     {
@@ -91027,10 +91024,7 @@
       ],
       "duplicateCount": 1,
       "duplicateValuesDiffer": false,
-      "missingLocales": [
-        "en",
-        "fr"
-      ],
+      "missingLocales": [],
       "status": {
         "nl": "review-required",
         "fr": "review-required",
@@ -91043,8 +91037,8 @@
       ],
       "resolved": {
         "nl": "Piekmoment info",
-        "fr": "",
-        "en": ""
+        "fr": "Informations sur le moment de pointe",
+        "en": "Peak moment information"
       }
     },
     {

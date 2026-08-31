@@ -44,7 +44,7 @@ const fetchTranslation = async (url: string): Promise<TranslationResponse> => {
 
   try {
     const response = await fetch(url, {
-      cache: 'no-store',
+      cache: 'no-cache',
       signal: controller.signal
     });
 

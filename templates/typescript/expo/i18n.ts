@@ -41,7 +41,7 @@ const fetchTranslationWithFallback = async (
     try {
       const response = await fetch(`${source}/${filename}`, {
         ...options,
-        cache: 'no-store',
+        cache: 'no-cache',
         signal: controller.signal
       });
 

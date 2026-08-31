@@ -16,27 +16,34 @@ function parseRouteUploadBatchesArgs(argv) {
     const token = argv[index];
 
     if (!token.startsWith('--')) {
-      continue;
+      throw new Error(`Unexpected positional argument "${token}".`);
     }
 
     const flag = token.slice(2);
     const next = argv[index + 1];
+    const requireValue = () => {
+      if (!next || next.startsWith('--')) {
+        throw new Error(`Option "--${flag}" requires a value.`);
+      }
+
+      return next;
+    };
 
     switch (flag) {
       case 'input-dir':
-        result.inputDir = path.resolve(next);
+        result.inputDir = path.resolve(requireValue());
         index += 1;
         break;
       case 'direct-dir':
-        result.directDir = path.resolve(next);
+        result.directDir = path.resolve(requireValue());
         index += 1;
         break;
       case 'proposal-dir':
-        result.proposalDir = path.resolve(next);
+        result.proposalDir = path.resolve(requireValue());
         index += 1;
         break;
       case 'reports-dir':
-        result.reportsDir = path.resolve(next);
+        result.reportsDir = path.resolve(requireValue());
         index += 1;
         break;
       case 'help':

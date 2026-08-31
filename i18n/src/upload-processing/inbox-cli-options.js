@@ -21,31 +21,38 @@ function parseProcessUploadInboxArgs(argv) {
     const token = argv[index];
 
     if (!token.startsWith('--')) {
-      continue;
+      throw new Error(`Unexpected positional argument "${token}".`);
     }
 
     const flag = token.slice(2);
     const next = argv[index + 1];
+    const requireValue = () => {
+      if (!next || next.startsWith('--')) {
+        throw new Error(`Option "--${flag}" requires a value.`);
+      }
+
+      return next;
+    };
 
     switch (flag) {
       case 'mode':
-        result.mode = next;
+        result.mode = requireValue();
         index += 1;
         break;
       case 'uploads-dir':
-        result.uploadsDir = path.resolve(next);
+        result.uploadsDir = path.resolve(requireValue());
         index += 1;
         break;
       case 'reports-dir':
-        result.reportsDir = path.resolve(next);
+        result.reportsDir = path.resolve(requireValue());
         index += 1;
         break;
       case 'processed-dir':
-        result.processedDir = path.resolve(next);
+        result.processedDir = path.resolve(requireValue());
         index += 1;
         break;
       case 'proposals-dir':
-        result.proposalsDir = path.resolve(next);
+        result.proposalsDir = path.resolve(requireValue());
         index += 1;
         break;
       case 'no-build':

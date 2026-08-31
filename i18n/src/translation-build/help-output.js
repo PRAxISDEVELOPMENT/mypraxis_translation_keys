@@ -27,7 +27,7 @@ Translation Commands
     Verify that generated files are already in sync.
 
   npm run translations:validate
-    Fail if warnings or errors exist.
+    Validate without writing files. Fail if warnings or errors exist.
 
   npm run translations:report
     Print a health summary with namespace counts, duplicates, and missing locales.

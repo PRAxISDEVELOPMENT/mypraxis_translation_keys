@@ -17,6 +17,7 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - 'scripts/**'
+      - 'test/**'
       - '.github/workflows/buildTranslations.yml'
       - '.github/workflows/processTranslationUploads.yml'
   push:
@@ -31,6 +32,7 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - 'scripts/**'
+      - 'test/**'
       - '.github/workflows/buildTranslations.yml'
       - '.github/workflows/processTranslationUploads.yml'
   workflow_dispatch:
@@ -53,21 +55,25 @@ jobs:
 
     steps:
       - name: Checkout Translation Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set Up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 24
+          package-manager-cache: false
 
       - name: Validate Translation Tooling Syntax
         run: npm run tooling:check-syntax
+
+      - name: Run Translation Tooling Tests
+        run: npm test
 
       - name: Validate Pending Proposal Review Objects
         run: node i18n/bin/process-upload.js apply-pending-proposals --input-dir i18n/proposals/pending --dry-run --no-build
 
       - name: Validate Translation Source
-        run: node i18n/bin/build-translations.js
+        run: npm run translations:validate
 
       - name: Verify Generated Artifacts Are In Sync
         run: node i18n/bin/build-translations.js --check
@@ -79,14 +85,15 @@ jobs:
 
     steps:
       - name: Checkout Translation Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Set Up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 24
+          package-manager-cache: false
 
       - name: Validate Translation Tooling Syntax
         run: npm run tooling:check-syntax
@@ -101,6 +108,9 @@ jobs:
 
       - name: Regenerate Translation Artifacts
         run: node i18n/bin/build-translations.js
+
+      - name: Run Translation Tooling Tests
+        run: npm test
 
       - name: Commit Regenerated Artifacts
         run: |

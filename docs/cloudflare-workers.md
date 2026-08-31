@@ -26,7 +26,7 @@ First push the repository changes containing `wrangler.jsonc` and
    | --- | --- |
    | Project name | `praxis-translations` |
    | Build command | `npm run translations:check && npm run translations:prepare-cdn` |
-   | Deploy command | `npx wrangler deploy` |
+   | Deploy command | `npm run translations:deploy-cdn` |
    | Builds for non-production branches | disabled |
    | Protect with Cloudflare Access | disabled |
 
@@ -37,6 +37,9 @@ First push the repository changes containing `wrangler.jsonc` and
 Wrangler reads `wrangler.jsonc` and deploys `.cloudflare-assets/` as one static
 asset deployment. `_headers` enables cross-origin reads and forces clients to
 revalidate JSON instead of keeping an old browser-cache copy.
+
+The repository pins Wrangler in the deploy script so a future Wrangler release
+cannot unexpectedly change an otherwise identical deployment.
 
 ## GitHub Verification Setup
 
@@ -62,6 +65,9 @@ same bytes for `en.json`, `fr.json`, and `nl.json`.
    for byte.
 6. Applications load Cloudflare first and GitHub Raw only after a Cloudflare
    request failure, timeout, or invalid JSON response.
+
+The verification also runs every six hours. That scheduled run detects drift;
+Cloudflare's GitHub integration remains responsible for deployments.
 
 The previous successful deployment stays online when a new build fails. A short
 deployment interval after a GitHub commit is unavoidable; the verification

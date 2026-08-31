@@ -18,10 +18,10 @@
     "sourceEntries": 3527,
     "uniqueKeys": 3527,
     "namespaces": 11,
-    "warnings": 4,
+    "warnings": 0,
     "errors": 0,
     "duplicateKeys": 0,
-    "keysWithMissingLocales": 2,
+    "keysWithMissingLocales": 0,
     "keysWithReviewRequired": 6,
     "localeReviewsRequired": 14
   },
@@ -45,8 +45,6 @@
     "mypraxis_web": 2647,
     "unknown": 698
   },
-  "warningCounts": {
-    "Missing locale values": 4
-  },
+  "warningCounts": {},
   "errorCounts": {}
 }

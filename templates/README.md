@@ -59,7 +59,7 @@ The browser React and Expo templates additionally:
 - notify React when refreshed resources are loaded
 - export `reloadI18nResources` for an immediate refresh after an application
   has successfully changed translations
-- bypass the client HTTP cache when resolving the current GitHub commit
+- revalidate through the client HTTP cache so ETags can avoid unnecessary full downloads
 
 The browser React templates also refresh preloaded translations every five
 minutes through `i18next-http-backend`. The Expo templates intentionally do not

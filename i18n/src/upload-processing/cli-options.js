@@ -16,30 +16,37 @@ function parseProcessUploadArgs(argv) {
 
     const flag = token.slice(2);
     const next = argv[index + 1];
+    const requireValue = () => {
+      if (!next || next.startsWith('--')) {
+        throw new Error(`Option "--${flag}" requires a value.`);
+      }
+
+      return next;
+    };
 
     switch (flag) {
       case 'input':
-        result.input = next;
+        result.input = requireValue();
         index += 1;
         break;
       case 'report':
-        result.report = next;
+        result.report = requireValue();
         index += 1;
         break;
       case 'input-dir':
-        result.inputDir = next;
+        result.inputDir = requireValue();
         index += 1;
         break;
       case 'output-dir':
-        result.outputDir = next;
+        result.outputDir = requireValue();
         index += 1;
         break;
       case 'processed-dir':
-        result.processedDir = next;
+        result.processedDir = requireValue();
         index += 1;
         break;
       case 'reports-dir':
-        result.reportsDir = next;
+        result.reportsDir = requireValue();
         index += 1;
         break;
       case 'apply-direct':
@@ -58,6 +65,10 @@ function parseProcessUploadArgs(argv) {
       default:
         throw new Error(`Unknown option "--${flag}".`);
     }
+  }
+
+  if (result._.length > 1) {
+    throw new Error(`Unexpected positional argument "${result._[1]}".`);
   }
 
   return result;

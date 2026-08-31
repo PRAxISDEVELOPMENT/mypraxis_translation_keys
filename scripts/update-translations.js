@@ -8,6 +8,19 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 const POLL_INTERVAL = Number(process.env.POLL_INTERVAL || 5);
 const MAX_WAIT_SECONDS = Number(process.env.MAX_WAIT_SECONDS || 300);
 const WORKFLOW_FILE = process.env.WORKFLOW_FILE || 'buildTranslations.yml';
+const BUILD_WORKFLOW_PATHS = [
+  'i18n/source/translations.json',
+  'i18n/config/',
+  'i18n/bin/',
+  'i18n/src/',
+  'i18n/proposals/pending/',
+  'package.json',
+  'package-lock.json',
+  'scripts/',
+  'test/',
+  '.github/workflows/buildTranslations.yml',
+  '.github/workflows/processTranslationUploads.yml'
+];
 
 function run(command, args, options = {}) {
   const result = spawnSync(command, args, {
@@ -48,30 +61,27 @@ function commandExists(command) {
 }
 
 function sleep(seconds) {
-  const end = Date.now() + seconds * 1000;
+  return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
+}
 
-  while (Date.now() < end) {
-    // Busy wait is acceptable here because this helper is short-lived and interactive.
-  }
+function touchesBuildWorkflowPaths(changedPaths) {
+  return changedPaths.some((changedPath) =>
+    BUILD_WORKFLOW_PATHS.some((workflowPath) =>
+      workflowPath.endsWith('/')
+        ? changedPath.startsWith(workflowPath)
+        : changedPath === workflowPath
+    )
+  );
 }
 
 function commitTouchesBuildWorkflowPaths() {
   const changedPathsOutput = capture('git', ['diff-tree', '--no-commit-id', '--name-only', '-r', 'HEAD']);
   const changedPaths = changedPathsOutput ? changedPathsOutput.split(/\r?\n/).filter(Boolean) : [];
 
-  return changedPaths.some((changedPath) => {
-    return (
-      changedPath === 'i18n/source/translations.json' ||
-      changedPath.startsWith('i18n/config/') ||
-      changedPath.startsWith('i18n/bin/') ||
-      changedPath.startsWith('i18n/src/') ||
-      changedPath === '.github/workflows/buildTranslations.yml' ||
-      changedPath === '.github/workflows/processTranslationUploads.yml'
-    );
-  });
+  return touchesBuildWorkflowPaths(changedPaths);
 }
 
-function waitForGithubActions(targetSha) {
+async function waitForGithubActions(targetSha) {
   if (!commandExists('gh')) {
     console.log('GitHub CLI not found. Skipping workflow wait.');
     return false;
@@ -117,7 +127,7 @@ function waitForGithubActions(targetSha) {
     }
 
     process.stdout.write(`\rWaiting for workflow registration... ${String(elapsed).padStart(3, '0')}s`);
-    sleep(POLL_INTERVAL);
+    await sleep(POLL_INTERVAL);
     elapsed += POLL_INTERVAL;
   }
 
@@ -126,35 +136,58 @@ function waitForGithubActions(targetSha) {
   return false;
 }
 
-async function readCommitMessage() {
+async function askQuestion(prompt) {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
   });
 
   return new Promise((resolve) => {
-    rl.question('Commit message: ', (answer) => {
+    rl.question(prompt, (answer) => {
       rl.close();
       resolve(answer.trim());
     });
   });
 }
 
+async function confirmChanges(statusOutput) {
+  console.log('\nThe following changes will be staged and committed:');
+  console.log(statusOutput);
+  const answer = (await askQuestion('\nContinue? [y/N] ')).toLowerCase();
+  return answer === 'y' || answer === 'yes';
+}
+
 async function main() {
   const currentBranch = capture('git', ['rev-parse', '--abbrev-ref', 'HEAD']);
+
+  if (!currentBranch || currentBranch === 'HEAD') {
+    throw new Error('Cannot update from a detached HEAD. Check out a branch first.');
+  }
 
   console.log('\n==> Step 1/5: Building translations locally');
   run(process.execPath, ['i18n/bin/build-translations.js']);
 
+  const statusOutput = capture('git', ['status', '--short']);
+
+  if (!statusOutput) {
+    console.log('No changes to commit.');
+    return;
+  }
+
+  if (!(await confirmChanges(statusOutput))) {
+    console.log('Cancelled without staging, committing, or pushing.');
+    return;
+  }
+
   console.log('\n==> Step 2/5: Enter commit message');
-  const message = await readCommitMessage();
+  const message = await askQuestion('Commit message: ');
 
   if (!message) {
     console.log('No commit message filled in.');
     process.exit(1);
   }
 
-  run('git', ['add', '.']);
+  run('git', ['add', '--all']);
 
   const cachedDiff = run('git', ['diff', '--cached', '--quiet'], { allowFailure: true });
   if (cachedDiff.status === 0) {
@@ -171,7 +204,7 @@ async function main() {
   console.log('\n==> Step 4/5: Waiting for automation');
   const shouldWaitForWorkflow = currentBranch === 'main' && commitTouchesBuildWorkflowPaths();
 
-  if (shouldWaitForWorkflow && waitForGithubActions(pushedSha)) {
+  if (shouldWaitForWorkflow && (await waitForGithubActions(pushedSha))) {
     console.log('GitHub Actions completed successfully.');
   } else if (shouldWaitForWorkflow) {
     console.log('Continuing without confirmed workflow completion.');
@@ -196,7 +229,13 @@ async function main() {
   console.log('Ready.');
 }
 
-main().catch((error) => {
-  console.error(error.message);
-  process.exit(1);
-});
+if (require.main === module) {
+  main().catch((error) => {
+    console.error(error.message);
+    process.exit(1);
+  });
+}
+
+module.exports = {
+  touchesBuildWorkflowPaths
+};

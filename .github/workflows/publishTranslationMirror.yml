@@ -20,6 +20,8 @@ on:
       - 'wrangler.jsonc'
       - '.github/workflows/publishTranslationMirror.yml'
   workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
 
 permissions:
   contents: read
@@ -40,15 +42,19 @@ jobs:
 
     steps:
       - name: Checkout Translation Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set Up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 24
+          package-manager-cache: false
 
       - name: Verify Generated Artifacts Are In Sync
         run: npm run translations:check
+
+      - name: Run Translation Tooling Tests
+        run: npm test
 
       - name: Prepare Cloudflare Static Assets
         run: npm run translations:prepare-cdn

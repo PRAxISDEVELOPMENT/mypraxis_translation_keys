@@ -26371,8 +26371,8 @@
   {
     "key": "info.busiestPeriodInfo",
     "nl": "Drukste periode info",
-    "fr": "",
-    "en": "",
+    "fr": "Informations sur la période la plus chargée",
+    "en": "Busiest period information",
     "applications": [
       "mypraxis_web"
     ],
@@ -27753,8 +27753,8 @@
   {
     "key": "info.peakMomentInfo",
     "nl": "Piekmoment info",
-    "fr": "",
-    "en": "",
+    "fr": "Informations sur le moment de pointe",
+    "en": "Peak moment information",
     "applications": [
       "mypraxis_web"
     ],

@@ -1,10 +1,11 @@
 import * as Localization from 'expo-localization';
 import i18n from 'i18next';
 import FetchBackend from 'i18next-fetch-backend';
-import { initReactI18next } from 'react-i18next';
 import moment from 'moment';
-import 'moment/locale/fr';
-import 'moment/locale/nl';
+import { initReactI18next } from 'react-i18next';
+
+require('moment/locale/fr');
+require('moment/locale/nl');
 
 const PRELOAD_LANGUAGES = ['en', 'nl', 'fr'];
 const TRANSLATION_REQUEST_TIMEOUT_MS = 5000;
@@ -23,7 +24,10 @@ const TRANSLATION_SOURCES = [
 const getTranslationFilename = (url) => {
   const filename = new URL(url).pathname.split('/').pop();
 
-  if (!PRELOAD_LANGUAGES.some((language) => filename === `${language}.json`)) {
+  if (
+    !filename ||
+    !PRELOAD_LANGUAGES.some((language) => filename === `${language}.json`)
+  ) {
     throw new Error(`Unexpected translation filename: ${filename || 'missing'}`);
   }
 
@@ -52,7 +56,11 @@ const fetchTranslationWithFallback = async (url, options = {}) => {
         throw new Error(`Translation request failed: ${response.status}`);
       }
 
-      JSON.parse(await response.clone().text());
+      const translations = JSON.parse(await response.clone().text());
+
+      if (!translations || typeof translations !== 'object' || Array.isArray(translations)) {
+        throw new Error('Translation response must be a JSON object');
+      }
 
       console.info(
         `[i18n] Loaded translations from: ${translationUrl} (HTTP ${response.status})`
@@ -74,7 +82,8 @@ export const i18nReady = i18n
   .use(FetchBackend)
   .use(initReactI18next)
   .init({
-    fallbackLng: false,
+    fallbackLng: 'en',
+    supportedLngs: PRELOAD_LANGUAGES,
     returnNull: false,
     saveMissing: false,
     lng: Localization.getLocales()[0]?.languageCode || 'en',

@@ -48,8 +48,9 @@ All templates are aligned with the current repository output and assumptions:
 - they read from the fixed Cloudflare Workers URL first
 - they fall back to GitHub Raw on `main` when Cloudflare is unavailable
 - they normalize detected locales to language-only values such as `nl` or `fr`
-- they keep `fallbackLng: false` so missing translations stay visible
-- they render missing translations as `(missing key) your.key.here`
+- they fall back to English when a translation is unavailable
+- they restrict runtime languages to `en`, `fr`, and `nl`
+- they render missing translations as `[missing key: your.key.here]`
 - they keep `moment` in sync with the active app language
 
 The browser React and Expo templates additionally:
@@ -90,13 +91,8 @@ Install the packages used by the Expo templates:
 npm install i18next react-i18next i18next-fetch-backend expo-localization moment
 ```
 
-## Important Tradeoff
+## Missing Translations
 
-The templates intentionally do not fall back from `nl` or `fr` to `en`.
-
-That means:
-
-- if a key is missing, your app will show `(missing key) your.key`
-- if a locale value is empty or missing, you will notice it immediately
-
-That is usually the right behavior when you want translation problems to stay visible during development and QA.
+The templates fall back from `nl` or `fr` to `en`. If a key is also missing in
+English, the app shows `[missing key: your.key]` so the problem remains visible
+during development and QA.

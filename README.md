@@ -335,7 +335,8 @@ Aanbevolen runtimevolgorde voor productieapplicaties:
 
 Taalfallback en netwerkfallback zijn niet hetzelfde:
 
-- `fallbackLng: false` maakt ontbrekende keys zichtbaar tijdens ontwikkeling
+- `fallbackLng: 'en'` gebruikt Engels wanneer een Nederlandse of Franse vertaling ontbreekt
+- `parseMissingKeyHandler` maakt een key die ook in het Engels ontbreekt zichtbaar
 - endpoint/cache-fallback houdt vertalingen beschikbaar tijdens een storing
 
 ## Cloudflare CDN-publicatie en beschikbaarheid

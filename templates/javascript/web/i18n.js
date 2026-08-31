@@ -94,7 +94,8 @@ export const i18nReady = i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: false,
+    fallbackLng: 'en',
+    supportedLngs: PRELOAD_LANGUAGES,
     returnNull: false,
     saveMissing: false,
     load: 'languageOnly',

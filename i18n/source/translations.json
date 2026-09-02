@@ -1426,7 +1426,8 @@
     "fr": "Compte",
     "en": "Account",
     "applications": [
-      "unknown"
+      "unknown",
+      "mypraxis_app"
     ]
   },
   {
@@ -4945,7 +4946,8 @@
     "fr": "Vérification",
     "en": "Checking",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -8440,7 +8442,8 @@
     "fr": "Désactivé",
     "en": "Disabled",
     "applications": [
-      "unknown"
+      "unknown",
+      "mypraxis_app"
     ]
   },
   {
@@ -8776,7 +8779,8 @@
     "fr": "Téléchargement",
     "en": "Downloading",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -11683,7 +11687,8 @@
     "fr": "Inactif",
     "en": "Idle",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -13011,7 +13016,8 @@
     "fr": "Dernière vérification de mise à jour",
     "en": "Last update check",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -13363,7 +13369,8 @@
     "fr": "Langue/région",
     "en": "Locale",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -15323,7 +15330,8 @@
     "fr": "Non disponible",
     "en": "Not available",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -16313,7 +16321,8 @@
     "fr": "Version de l’OS",
     "en": "OS version",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -18436,7 +18445,8 @@
     "fr": "Rapport généré le",
     "en": "Report generated on",
     "applications": [
-      "unknown"
+      "unknown",
+      "mypraxis_app"
     ]
   },
   {
@@ -21907,7 +21917,8 @@
     "fr": "Traductions",
     "en": "Translations",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -22332,7 +22343,8 @@
     "fr": "Canal de mise à jour",
     "en": "Update channel",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -22413,7 +22425,8 @@
     "fr": "Source de mise à jour",
     "en": "Update source",
     "applications": [
-      "mypraxis_web"
+      "mypraxis_web",
+      "mypraxis_app"
     ]
   },
   {
@@ -32461,6 +32474,699 @@
     "en": "You do not have the correct permissions to view this section. Please contact your administrator of the installer block for more information.",
     "applications": [
       "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.diagnostics",
+    "nl": "Diagnose",
+    "fr": "Diagnostic",
+    "en": "Diagnostics",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.diagnosticsDescription",
+    "nl": "Verzamel relevante technische informatie voor een snelle en gerichte analyse.",
+    "fr": "Rassemblez les informations techniques pertinentes pour une analyse rapide et ciblée.",
+    "en": "Collect relevant technical information for a fast and focused analysis.",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.appAndDevice",
+    "nl": "App en toestel",
+    "fr": "Application et appareil",
+    "en": "App and device",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.appAndDeviceSubtitle",
+    "nl": "Appversie, toestel, iOS en vertalingen",
+    "fr": "Version, appareil, iOS et traductions",
+    "en": "App version, device, iOS, and translations",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.appAndDeviceDescription",
+    "nl": "Controleer de actieve appversie, het toestel en de vertaalstatus.",
+    "fr": "Vérifiez la version active, l’appareil et l’état des traductions.",
+    "en": "Review the active app version, device, and translation status.",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.updates",
+    "nl": "Updates",
+    "fr": "Mises à jour",
+    "en": "Updates",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.updatesSubtitle",
+    "nl": "Actieve OTA-versie en updategezondheid",
+    "fr": "Version OTA active et état des mises à jour",
+    "en": "Active OTA version and update health",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.updatesDescription",
+    "nl": "Controleer welke OTA-update actief is en of de update correct is gestart.",
+    "fr": "Vérifiez la mise à jour OTA active et si elle a démarré correctement.",
+    "en": "Review the active OTA update and whether it started correctly.",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.accountAndAccess",
+    "nl": "Account en toegang",
+    "fr": "Compte et accès",
+    "en": "Account and access",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.accountAndAccessSubtitle",
+    "nl": "Account en berekende toegang per menu",
+    "fr": "Compte et accès calculé par menu",
+    "en": "Account and calculated access per menu",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.accountAndAccessDescription",
+    "nl": "Controleer de accountidentiteit en de berekende toegang per hoofdmenu.",
+    "fr": "Vérifiez l’identité du compte et l’accès calculé pour chaque menu principal.",
+    "en": "Review the account identity and calculated access for each main menu.",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.diagnosticReport",
+    "nl": "Diagnoseverslag",
+    "fr": "Rapport de diagnostic",
+    "en": "Diagnostic report",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.copyDiagnostics",
+    "nl": "Diagnoseverslag kopiëren",
+    "fr": "Copier le rapport de diagnostic",
+    "en": "Copy diagnostic report",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.reportCopied",
+    "nl": "Diagnoseverslag gekopieerd",
+    "fr": "Rapport de diagnostic copié",
+    "en": "Diagnostic report copied",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.reportTitle",
+    "nl": "MYPRAXIS DIAGNOSEVERSLAG",
+    "fr": "RAPPORT DE DIAGNOSTIC MYPRAXIS",
+    "en": "MYPRAXIS DIAGNOSTIC REPORT",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.reportPurpose",
+    "nl": "Technische informatie voor analyse door MyPRAxIS Support.",
+    "fr": "Informations techniques destinées à l’analyse par le support MyPRAxIS.",
+    "en": "Technical information for analysis by MyPRAxIS Support.",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.diagnosticSummary",
+    "nl": "Samenvatting",
+    "fr": "Résumé",
+    "en": "Summary",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.reportFooter",
+    "nl": "Bezorg dit volledige verslag aan MyPRAxIS Support.",
+    "fr": "Transmettez ce rapport complet au support MyPRAxIS.",
+    "en": "Send this complete report to MyPRAxIS Support.",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.reportPrivacy",
+    "nl": "Dit verslag bevat geen wachtwoorden, tokens of API-sleutels.",
+    "fr": "Ce rapport ne contient aucun mot de passe, jeton ou clé API.",
+    "en": "This report contains no passwords, tokens, or API keys.",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.device",
+    "nl": "Toestel",
+    "fr": "Appareil",
+    "en": "Device",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.currentUpdate",
+    "nl": "Actieve update",
+    "fr": "Mise à jour active",
+    "en": "Active update",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.updateActivity",
+    "nl": "Updateactiviteit",
+    "fr": "Activité de mise à jour",
+    "en": "Update activity",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.recoveryAndErrors",
+    "nl": "Herstel en fouten",
+    "fr": "Récupération et erreurs",
+    "en": "Recovery and errors",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.build",
+    "nl": "Build",
+    "fr": "Build",
+    "en": "Build",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.applicationId",
+    "nl": "Bundle-ID",
+    "fr": "Identifiant de bundle",
+    "en": "Bundle ID",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.environment",
+    "nl": "API-omgeving",
+    "fr": "Environnement API",
+    "en": "API environment",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.executionEnvironment",
+    "nl": "Uitvoeringsomgeving",
+    "fr": "Environnement d’exécution",
+    "en": "Execution environment",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.debugMode",
+    "nl": "Ontwikkelmodus",
+    "fr": "Mode développement",
+    "en": "Development mode",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.iosReleaseType",
+    "nl": "iOS-distributie",
+    "fr": "Distribution iOS",
+    "en": "iOS distribution",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.executionBare",
+    "nl": "Native project",
+    "fr": "Projet natif",
+    "en": "Native project",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.executionStandalone",
+    "nl": "Productiebuild",
+    "fr": "Build de production",
+    "en": "Production build",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.executionStoreClient",
+    "nl": "Expo Go of development build",
+    "fr": "Expo Go ou build de développement",
+    "en": "Expo Go or development build",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.releaseEnterprise",
+    "nl": "Enterprise",
+    "fr": "Entreprise",
+    "en": "Enterprise",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.releaseDevelopment",
+    "nl": "Development",
+    "fr": "Développement",
+    "en": "Development",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.releaseAdHoc",
+    "nl": "Ad hoc",
+    "fr": "Ad hoc",
+    "en": "Ad hoc",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.releaseAppStore",
+    "nl": "App Store of TestFlight",
+    "fr": "App Store ou TestFlight",
+    "en": "App Store or TestFlight",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.expoSdk",
+    "nl": "Expo SDK",
+    "fr": "Expo SDK",
+    "en": "Expo SDK",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.reactNative",
+    "nl": "React Native",
+    "fr": "React Native",
+    "en": "React Native",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.modelId",
+    "nl": "Hardwaremodel",
+    "fr": "Modèle matériel",
+    "en": "Hardware model",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.physicalEnvironment",
+    "nl": "Apparaatomgeving",
+    "fr": "Environnement de l’appareil",
+    "en": "Device environment",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.deviceType",
+    "nl": "Toesteltype",
+    "fr": "Type d’appareil",
+    "en": "Device type",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.devicePhone",
+    "nl": "Telefoon",
+    "fr": "Téléphone",
+    "en": "Phone",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.deviceTablet",
+    "nl": "Tablet",
+    "fr": "Tablette",
+    "en": "Tablet",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.deviceDesktop",
+    "nl": "Computer",
+    "fr": "Ordinateur",
+    "en": "Computer",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.deviceTv",
+    "nl": "Televisie",
+    "fr": "Télévision",
+    "en": "Television",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.operatingSystem",
+    "nl": "Besturingssysteem",
+    "fr": "Système d’exploitation",
+    "en": "Operating system",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.osBuild",
+    "nl": "OS-build",
+    "fr": "Build OS",
+    "en": "OS build",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.reduceMotion",
+    "nl": "Verminder beweging",
+    "fr": "Réduire les animations",
+    "en": "Reduce motion",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.translationEngine",
+    "nl": "Vertaalmodule gestart",
+    "fr": "Moteur de traduction démarré",
+    "en": "Translation engine started",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.translationsLoaded",
+    "nl": "Vertalingen geladen",
+    "fr": "Traductions chargées",
+    "en": "Translations loaded",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.updatesEnabled",
+    "nl": "OTA-updates ingeschakeld",
+    "fr": "Mises à jour OTA activées",
+    "en": "OTA updates enabled",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.runtime",
+    "nl": "Runtime",
+    "fr": "Runtime",
+    "en": "Runtime",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.updateId",
+    "nl": "Update-ID",
+    "fr": "ID de mise à jour",
+    "en": "Update ID",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.publishedAt",
+    "nl": "Gepubliceerd op",
+    "fr": "Publiée le",
+    "en": "Published at",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.automaticCheck",
+    "nl": "Automatische controle",
+    "fr": "Vérification automatique",
+    "en": "Automatic check",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.startupProcedure",
+    "nl": "Opstartprocedure actief",
+    "fr": "Procédure de démarrage active",
+    "en": "Startup procedure active",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.updateCheckOnLoad",
+    "nl": "Bij iedere opstart",
+    "fr": "À chaque démarrage",
+    "en": "At every launch",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.updateCheckOnRecovery",
+    "nl": "Alleen bij foutherstel",
+    "fr": "Uniquement après une erreur",
+    "en": "Only during error recovery",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.updateCheckOnWifi",
+    "nl": "Bij opstart via wifi",
+    "fr": "Au démarrage via Wi-Fi",
+    "en": "At launch over Wi-Fi",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.updatePending",
+    "nl": "Update klaar voor herstart",
+    "fr": "Mise à jour prête au redémarrage",
+    "en": "Update ready to restart",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.restartCount",
+    "nl": "JS-herstarts sinds appstart",
+    "fr": "Redémarrages JS depuis le lancement",
+    "en": "JS restarts since app launch",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.launchDuration",
+    "nl": "Opstartduur updatesysteem",
+    "fr": "Démarrage du système de mise à jour",
+    "en": "Update system launch duration",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.emergencyLaunch",
+    "nl": "Noodherstel actief",
+    "fr": "Récupération d’urgence active",
+    "en": "Emergency recovery active",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.emergencyLaunchReason",
+    "nl": "Reden noodherstel",
+    "fr": "Raison de la récupération d’urgence",
+    "en": "Emergency recovery reason",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.errorCount",
+    "nl": "OTA-logfouten in 24 uur",
+    "fr": "Erreurs du journal OTA sur 24 heures",
+    "en": "OTA log errors in 24 hours",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.checkError",
+    "nl": "Fout bij updatecontrole",
+    "fr": "Erreur de vérification",
+    "en": "Update check error",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.downloadError",
+    "nl": "Fout bij downloaden",
+    "fr": "Erreur de téléchargement",
+    "en": "Download error",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.latestError",
+    "nl": "Laatste OTA-logfout",
+    "fr": "Dernière erreur du journal OTA",
+    "en": "Latest OTA log error",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.accountStatus",
+    "nl": "Accountgegevens",
+    "fr": "Données du compte",
+    "en": "Account data",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.visibleItems",
+    "nl": "Zichtbare menu-items",
+    "fr": "Éléments de menu visibles",
+    "en": "Visible menu items",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.installerMenuItems",
+    "nl": "Zichtbare Installer-items",
+    "fr": "Éléments Installateur visibles",
+    "en": "Visible Installer items",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.administrationMenuItems",
+    "nl": "Zichtbare Administratie-items",
+    "fr": "Éléments Administration visibles",
+    "en": "Visible Administration items",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.guardDutyMenuItems",
+    "nl": "Zichtbare Meldkamer-items",
+    "fr": "Éléments Centre d’appels visibles",
+    "en": "Visible Guard room items",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.physicalDevice",
+    "nl": "Fysiek toestel",
+    "fr": "Appareil physique",
+    "en": "Physical device",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.simulator",
+    "nl": "Simulator",
+    "fr": "Simulateur",
+    "en": "Simulator",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.noErrors",
+    "nl": "Geen fouten",
+    "fr": "Aucune erreur",
+    "en": "No errors",
+    "applications": [
+      "mypraxis_app"
+    ]
+  },
+  {
+    "key": "common.restarting",
+    "nl": "Herstarten",
+    "fr": "Redémarrage",
+    "en": "Restarting",
+    "applications": [
+      "mypraxis_app"
     ]
   }
 ]

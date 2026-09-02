@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3527,
-    "uniqueKeys": 3527,
+    "totalEntries": 3604,
+    "uniqueKeys": 3604,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -4547,6 +4547,7 @@
         "account"
       ],
       "applications": [
+        "mypraxis_app",
         "unknown"
       ],
       "namespaceStatus": "active",
@@ -4566,6 +4567,96 @@
         "nl": "Account",
         "fr": "Compte",
         "en": "Account"
+      }
+    },
+    {
+      "key": "common.accountAndAccess",
+      "namespace": "common",
+      "leaf": "accountAndAccess",
+      "segments": [
+        "common",
+        "accountAndAccess"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3536
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Account en toegang",
+        "fr": "Compte et accès",
+        "en": "Account and access"
+      }
+    },
+    {
+      "key": "common.accountAndAccessDescription",
+      "namespace": "common",
+      "leaf": "accountAndAccessDescription",
+      "segments": [
+        "common",
+        "accountAndAccessDescription"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3538
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Controleer de accountidentiteit en de berekende toegang per hoofdmenu.",
+        "fr": "Vérifiez l’identité du compte et l’accès calculé pour chaque menu principal.",
+        "en": "Review the account identity and calculated access for each main menu."
+      }
+    },
+    {
+      "key": "common.accountAndAccessSubtitle",
+      "namespace": "common",
+      "leaf": "accountAndAccessSubtitle",
+      "segments": [
+        "common",
+        "accountAndAccessSubtitle"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3537
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Account en berekende toegang per menu",
+        "fr": "Compte et accès calculé par menu",
+        "en": "Account and calculated access per menu"
       }
     },
     {
@@ -4687,6 +4778,36 @@
         "nl": "Geïmporteerde accounts",
         "fr": "Comptes importés",
         "en": "Imported accounts"
+      }
+    },
+    {
+      "key": "common.accountStatus",
+      "namespace": "common",
+      "leaf": "accountStatus",
+      "segments": [
+        "common",
+        "accountStatus"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3596
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Accountgegevens",
+        "fr": "Données du compte",
+        "en": "Account data"
       }
     },
     {
@@ -6957,6 +7078,36 @@
       }
     },
     {
+      "key": "common.administrationMenuItems",
+      "namespace": "common",
+      "leaf": "administrationMenuItems",
+      "segments": [
+        "common",
+        "administrationMenuItems"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3599
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Zichtbare Administratie-items",
+        "fr": "Éléments Administration visibles",
+        "en": "Visible Administration items"
+      }
+    },
+    {
       "key": "common.administrativeData",
       "namespace": "common",
       "leaf": "administrativeData",
@@ -9070,6 +9221,96 @@
       }
     },
     {
+      "key": "common.appAndDevice",
+      "namespace": "common",
+      "leaf": "appAndDevice",
+      "segments": [
+        "common",
+        "appAndDevice"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3530
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "App en toestel",
+        "fr": "Application et appareil",
+        "en": "App and device"
+      }
+    },
+    {
+      "key": "common.appAndDeviceDescription",
+      "namespace": "common",
+      "leaf": "appAndDeviceDescription",
+      "segments": [
+        "common",
+        "appAndDeviceDescription"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3532
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Controleer de actieve appversie, het toestel en de vertaalstatus.",
+        "fr": "Vérifiez la version active, l’appareil et l’état des traductions.",
+        "en": "Review the active app version, device, and translation status."
+      }
+    },
+    {
+      "key": "common.appAndDeviceSubtitle",
+      "namespace": "common",
+      "leaf": "appAndDeviceSubtitle",
+      "segments": [
+        "common",
+        "appAndDeviceSubtitle"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3531
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Appversie, toestel, iOS en vertalingen",
+        "fr": "Version, appareil, iOS et traductions",
+        "en": "App version, device, iOS, and translations"
+      }
+    },
+    {
       "key": "common.application",
       "namespace": "common",
       "leaf": "application",
@@ -9128,6 +9369,36 @@
         "nl": "Applicatiegegevens geladen",
         "fr": "Données de l'application chargées",
         "en": "Application data loaded"
+      }
+    },
+    {
+      "key": "common.applicationId",
+      "namespace": "common",
+      "leaf": "applicationId",
+      "segments": [
+        "common",
+        "applicationId"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3552
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bundle-ID",
+        "fr": "Identifiant de bundle",
+        "en": "Bundle ID"
       }
     },
     {
@@ -10304,6 +10575,36 @@
         "nl": "Automatisch algemene e-mailadressen in-/uitschakelen voor dagelijkse e-mail",
         "fr": "Activer/désactiver automatiquement les adresses e-mail générales pour l'envoi des e-mails quotidiens",
         "en": "Automatically enable/disable general email addresses for daily mail"
+      }
+    },
+    {
+      "key": "common.automaticCheck",
+      "namespace": "common",
+      "leaf": "automaticCheck",
+      "segments": [
+        "common",
+        "automaticCheck"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3582
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Automatische controle",
+        "fr": "Vérification automatique",
+        "en": "Automatic check"
       }
     },
     {
@@ -12391,6 +12692,36 @@
         "nl": "Zoek en/of download documenten volgens categorie",
         "fr": "Rechercher et/ou télécharger des documents par catégorie.",
         "en": "Browse and download documents per category."
+      }
+    },
+    {
+      "key": "common.build",
+      "namespace": "common",
+      "leaf": "build",
+      "segments": [
+        "common",
+        "build"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3551
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Build",
+        "fr": "Build",
+        "en": "Build"
       }
     },
     {
@@ -16101,6 +16432,36 @@
       }
     },
     {
+      "key": "common.checkError",
+      "namespace": "common",
+      "leaf": "checkError",
+      "segments": [
+        "common",
+        "checkError"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3593
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Fout bij updatecontrole",
+        "fr": "Erreur de vérification",
+        "en": "Update check error"
+      }
+    },
+    {
       "key": "common.checking",
       "namespace": "common",
       "leaf": "checking",
@@ -16109,6 +16470,7 @@
         "checking"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -20819,6 +21181,36 @@
       }
     },
     {
+      "key": "common.copyDiagnostics",
+      "namespace": "common",
+      "leaf": "copyDiagnostics",
+      "segments": [
+        "common",
+        "copyDiagnostics"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3540
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Diagnoseverslag kopiëren",
+        "fr": "Copier le rapport de diagnostic",
+        "en": "Copy diagnostic report"
+      }
+    },
+    {
       "key": "common.copyFromType",
       "namespace": "common",
       "leaf": "copyFromType",
@@ -22235,6 +22627,36 @@
         "nl": "Huidig geselecteerde klant",
         "fr": "Client sélectionné actuellement",
         "en": "Current selected client"
+      }
+    },
+    {
+      "key": "common.currentUpdate",
+      "namespace": "common",
+      "leaf": "currentUpdate",
+      "segments": [
+        "common",
+        "currentUpdate"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3548
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Actieve update",
+        "fr": "Mise à jour active",
+        "en": "Active update"
       }
     },
     {
@@ -23927,6 +24349,36 @@
         "nl": "Beste",
         "fr": "Bonjour",
         "en": "Dear"
+      }
+    },
+    {
+      "key": "common.debugMode",
+      "namespace": "common",
+      "leaf": "debugMode",
+      "segments": [
+        "common",
+        "debugMode"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3555
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Ontwikkelmodus",
+        "fr": "Mode développement",
+        "en": "Development mode"
       }
     },
     {
@@ -27243,6 +27695,36 @@
       }
     },
     {
+      "key": "common.device",
+      "namespace": "common",
+      "leaf": "device",
+      "segments": [
+        "common",
+        "device"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3547
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Toestel",
+        "fr": "Appareil",
+        "en": "Device"
+      }
+    },
+    {
       "key": "common.deviceAvailable",
       "namespace": "common",
       "leaf": "deviceAvailable",
@@ -27273,6 +27755,156 @@
       }
     },
     {
+      "key": "common.deviceDesktop",
+      "namespace": "common",
+      "leaf": "deviceDesktop",
+      "segments": [
+        "common",
+        "deviceDesktop"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3571
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Computer",
+        "fr": "Ordinateur",
+        "en": "Computer"
+      }
+    },
+    {
+      "key": "common.devicePhone",
+      "namespace": "common",
+      "leaf": "devicePhone",
+      "segments": [
+        "common",
+        "devicePhone"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3569
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Telefoon",
+        "fr": "Téléphone",
+        "en": "Phone"
+      }
+    },
+    {
+      "key": "common.deviceTablet",
+      "namespace": "common",
+      "leaf": "deviceTablet",
+      "segments": [
+        "common",
+        "deviceTablet"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3570
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Tablet",
+        "fr": "Tablette",
+        "en": "Tablet"
+      }
+    },
+    {
+      "key": "common.deviceTv",
+      "namespace": "common",
+      "leaf": "deviceTv",
+      "segments": [
+        "common",
+        "deviceTv"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3572
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Televisie",
+        "fr": "Télévision",
+        "en": "Television"
+      }
+    },
+    {
+      "key": "common.deviceType",
+      "namespace": "common",
+      "leaf": "deviceType",
+      "segments": [
+        "common",
+        "deviceType"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3568
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Toesteltype",
+        "fr": "Type d’appareil",
+        "en": "Device type"
+      }
+    },
+    {
       "key": "common.deviceUnavailable",
       "namespace": "common",
       "leaf": "deviceUnavailable",
@@ -27300,6 +27932,126 @@
         "nl": "Toestel niet beschikbaar",
         "fr": "Appareil indisponible",
         "en": "Device unavailable"
+      }
+    },
+    {
+      "key": "common.diagnosticReport",
+      "namespace": "common",
+      "leaf": "diagnosticReport",
+      "segments": [
+        "common",
+        "diagnosticReport"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3539
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Diagnoseverslag",
+        "fr": "Rapport de diagnostic",
+        "en": "Diagnostic report"
+      }
+    },
+    {
+      "key": "common.diagnostics",
+      "namespace": "common",
+      "leaf": "diagnostics",
+      "segments": [
+        "common",
+        "diagnostics"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3528
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Diagnose",
+        "fr": "Diagnostic",
+        "en": "Diagnostics"
+      }
+    },
+    {
+      "key": "common.diagnosticsDescription",
+      "namespace": "common",
+      "leaf": "diagnosticsDescription",
+      "segments": [
+        "common",
+        "diagnosticsDescription"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3529
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Verzamel relevante technische informatie voor een snelle en gerichte analyse.",
+        "fr": "Rassemblez les informations techniques pertinentes pour une analyse rapide et ciblée.",
+        "en": "Collect relevant technical information for a fast and focused analysis."
+      }
+    },
+    {
+      "key": "common.diagnosticSummary",
+      "namespace": "common",
+      "leaf": "diagnosticSummary",
+      "segments": [
+        "common",
+        "diagnosticSummary"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3544
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Samenvatting",
+        "fr": "Résumé",
+        "en": "Summary"
       }
     },
     {
@@ -27584,6 +28336,7 @@
         "disabled"
       ],
       "applications": [
+        "mypraxis_app",
         "unknown"
       ],
       "namespaceStatus": "active",
@@ -28599,6 +29352,36 @@
       }
     },
     {
+      "key": "common.downloadError",
+      "namespace": "common",
+      "leaf": "downloadError",
+      "segments": [
+        "common",
+        "downloadError"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3594
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Fout bij downloaden",
+        "fr": "Erreur de téléchargement",
+        "en": "Download error"
+      }
+    },
+    {
       "key": "common.downloadExcel",
       "namespace": "common",
       "leaf": "downloadExcel",
@@ -28697,6 +29480,7 @@
         "downloading"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -29743,6 +30527,66 @@
         "nl": "Noodoproep agent",
         "fr": "Agent pour des appels d’urgence",
         "en": "Emergency call agent"
+      }
+    },
+    {
+      "key": "common.emergencyLaunch",
+      "namespace": "common",
+      "leaf": "emergencyLaunch",
+      "segments": [
+        "common",
+        "emergencyLaunch"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3590
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Noodherstel actief",
+        "fr": "Récupération d’urgence active",
+        "en": "Emergency recovery active"
+      }
+    },
+    {
+      "key": "common.emergencyLaunchReason",
+      "namespace": "common",
+      "leaf": "emergencyLaunchReason",
+      "segments": [
+        "common",
+        "emergencyLaunchReason"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3591
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Reden noodherstel",
+        "fr": "Raison de la récupération d’urgence",
+        "en": "Emergency recovery reason"
       }
     },
     {
@@ -30828,6 +31672,36 @@
       }
     },
     {
+      "key": "common.environment",
+      "namespace": "common",
+      "leaf": "environment",
+      "segments": [
+        "common",
+        "environment"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3553
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "API-omgeving",
+        "fr": "Environnement API",
+        "en": "API environment"
+      }
+    },
+    {
       "key": "common.eprom",
       "namespace": "common",
       "leaf": "eprom",
@@ -31037,6 +31911,36 @@
         "nl": "Fout",
         "fr": "Erreur",
         "en": "Error"
+      }
+    },
+    {
+      "key": "common.errorCount",
+      "namespace": "common",
+      "leaf": "errorCount",
+      "segments": [
+        "common",
+        "errorCount"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3592
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "OTA-logfouten in 24 uur",
+        "fr": "Erreurs du journal OTA sur 24 heures",
+        "en": "OTA log errors in 24 hours"
       }
     },
     {
@@ -31792,6 +32696,126 @@
       }
     },
     {
+      "key": "common.executionBare",
+      "namespace": "common",
+      "leaf": "executionBare",
+      "segments": [
+        "common",
+        "executionBare"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3557
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Native project",
+        "fr": "Projet natif",
+        "en": "Native project"
+      }
+    },
+    {
+      "key": "common.executionEnvironment",
+      "namespace": "common",
+      "leaf": "executionEnvironment",
+      "segments": [
+        "common",
+        "executionEnvironment"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3554
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Uitvoeringsomgeving",
+        "fr": "Environnement d’exécution",
+        "en": "Execution environment"
+      }
+    },
+    {
+      "key": "common.executionStandalone",
+      "namespace": "common",
+      "leaf": "executionStandalone",
+      "segments": [
+        "common",
+        "executionStandalone"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3558
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Productiebuild",
+        "fr": "Build de production",
+        "en": "Production build"
+      }
+    },
+    {
+      "key": "common.executionStoreClient",
+      "namespace": "common",
+      "leaf": "executionStoreClient",
+      "segments": [
+        "common",
+        "executionStoreClient"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3559
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Expo Go of development build",
+        "fr": "Expo Go ou build de développement",
+        "en": "Expo Go or development build"
+      }
+    },
+    {
       "key": "common.existingCustomers",
       "namespace": "common",
       "leaf": "existingCustomers",
@@ -32122,6 +33146,36 @@
         "nl": "Exports",
         "fr": "Exports",
         "en": "Exports"
+      }
+    },
+    {
+      "key": "common.expoSdk",
+      "namespace": "common",
+      "leaf": "expoSdk",
+      "segments": [
+        "common",
+        "expoSdk"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3564
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Expo SDK",
+        "fr": "Expo SDK",
+        "en": "Expo SDK"
       }
     },
     {
@@ -36505,6 +37559,36 @@
       }
     },
     {
+      "key": "common.guardDutyMenuItems",
+      "namespace": "common",
+      "leaf": "guardDutyMenuItems",
+      "segments": [
+        "common",
+        "guardDutyMenuItems"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3600
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Zichtbare Meldkamer-items",
+        "fr": "Éléments Centre d’appels visibles",
+        "en": "Visible Guard room items"
+      }
+    },
+    {
       "key": "common.guardDutyUsesCalendar",
       "namespace": "common",
       "leaf": "guardDutyUsesCalendar",
@@ -38240,6 +39324,7 @@
         "idle"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -40219,6 +41304,36 @@
       }
     },
     {
+      "key": "common.installerMenuItems",
+      "namespace": "common",
+      "leaf": "installerMenuItems",
+      "segments": [
+        "common",
+        "installerMenuItems"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3598
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Zichtbare Installer-items",
+        "fr": "Éléments Installateur visibles",
+        "en": "Visible Installer items"
+      }
+    },
+    {
       "key": "common.installerName",
       "namespace": "common",
       "leaf": "installerName",
@@ -41126,6 +42241,36 @@
         "nl": "Facturatiegegevens",
         "fr": "Données de facturation",
         "en": "Invoicing data"
+      }
+    },
+    {
+      "key": "common.iosReleaseType",
+      "namespace": "common",
+      "leaf": "iosReleaseType",
+      "segments": [
+        "common",
+        "iosReleaseType"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3556
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "iOS-distributie",
+        "fr": "Distribution iOS",
+        "en": "iOS distribution"
       }
     },
     {
@@ -42592,6 +43737,7 @@
         "lastUpdateCheck"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -42734,6 +43880,36 @@
       }
     },
     {
+      "key": "common.latestError",
+      "namespace": "common",
+      "leaf": "latestError",
+      "segments": [
+        "common",
+        "latestError"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3595
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Laatste OTA-logfout",
+        "fr": "Dernière erreur du journal OTA",
+        "en": "Latest OTA log error"
+      }
+    },
+    {
       "key": "common.latitude",
       "namespace": "common",
       "leaf": "latitude",
@@ -42762,6 +43938,36 @@
         "nl": "Breedtegraad",
         "fr": "Latitude",
         "en": "Latitude"
+      }
+    },
+    {
+      "key": "common.launchDuration",
+      "namespace": "common",
+      "leaf": "launchDuration",
+      "segments": [
+        "common",
+        "launchDuration"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3589
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Opstartduur updatesysteem",
+        "fr": "Démarrage du système de mise à jour",
+        "en": "Update system launch duration"
       }
     },
     {
@@ -43742,6 +44948,7 @@
         "locale"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -47080,6 +48287,36 @@
       }
     },
     {
+      "key": "common.modelId",
+      "namespace": "common",
+      "leaf": "modelId",
+      "segments": [
+        "common",
+        "modelId"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3566
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Hardwaremodel",
+        "fr": "Modèle matériel",
+        "en": "Hardware model"
+      }
+    },
+    {
       "key": "common.modeOfTransmission",
       "namespace": "common",
       "leaf": "modeOfTransmission",
@@ -49411,6 +50648,36 @@
       }
     },
     {
+      "key": "common.noErrors",
+      "namespace": "common",
+      "leaf": "noErrors",
+      "segments": [
+        "common",
+        "noErrors"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3603
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Geen fouten",
+        "fr": "Aucune erreur",
+        "en": "No errors"
+      }
+    },
+    {
       "key": "common.noFilterSelected",
       "namespace": "common",
       "leaf": "noFilterSelected",
@@ -50175,6 +51442,7 @@
         "notAvailable"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -52762,6 +54030,36 @@
       }
     },
     {
+      "key": "common.operatingSystem",
+      "namespace": "common",
+      "leaf": "operatingSystem",
+      "segments": [
+        "common",
+        "operatingSystem"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3573
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Besturingssysteem",
+        "fr": "Système d’exploitation",
+        "en": "Operating system"
+      }
+    },
+    {
       "key": "common.operations",
       "namespace": "common",
       "leaf": "operations",
@@ -53335,6 +54633,36 @@
       }
     },
     {
+      "key": "common.osBuild",
+      "namespace": "common",
+      "leaf": "osBuild",
+      "segments": [
+        "common",
+        "osBuild"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3574
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "OS-build",
+        "fr": "Build OS",
+        "en": "OS build"
+      }
+    },
+    {
       "key": "common.osFamily",
       "namespace": "common",
       "leaf": "osFamily",
@@ -53433,6 +54761,7 @@
         "osVersion"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -55750,6 +57079,66 @@
         "nl": "Foto",
         "fr": "Photo",
         "en": "Photo"
+      }
+    },
+    {
+      "key": "common.physicalDevice",
+      "namespace": "common",
+      "leaf": "physicalDevice",
+      "segments": [
+        "common",
+        "physicalDevice"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3601
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Fysiek toestel",
+        "fr": "Appareil physique",
+        "en": "Physical device"
+      }
+    },
+    {
+      "key": "common.physicalEnvironment",
+      "namespace": "common",
+      "leaf": "physicalEnvironment",
+      "segments": [
+        "common",
+        "physicalEnvironment"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3567
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Apparaatomgeving",
+        "fr": "Environnement de l’appareil",
+        "en": "Device environment"
       }
     },
     {
@@ -58419,6 +59808,36 @@
       }
     },
     {
+      "key": "common.publishedAt",
+      "namespace": "common",
+      "leaf": "publishedAt",
+      "segments": [
+        "common",
+        "publishedAt"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3581
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gepubliceerd op",
+        "fr": "Publiée le",
+        "en": "Published at"
+      }
+    },
+    {
       "key": "common.purchasePrice",
       "namespace": "common",
       "leaf": "purchasePrice",
@@ -58777,6 +60196,36 @@
         "nl": "Klant heractiveren",
         "fr": "Réactiver le client",
         "en": "Reactivate customer"
+      }
+    },
+    {
+      "key": "common.reactNative",
+      "namespace": "common",
+      "leaf": "reactNative",
+      "segments": [
+        "common",
+        "reactNative"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3565
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "React Native",
+        "fr": "React Native",
+        "en": "React Native"
       }
     },
     {
@@ -59472,6 +60921,36 @@
       }
     },
     {
+      "key": "common.recoveryAndErrors",
+      "namespace": "common",
+      "leaf": "recoveryAndErrors",
+      "segments": [
+        "common",
+        "recoveryAndErrors"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3550
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Herstel en fouten",
+        "fr": "Récupération et erreurs",
+        "en": "Recovery and errors"
+      }
+    },
+    {
       "key": "common.red",
       "namespace": "common",
       "leaf": "red",
@@ -59499,6 +60978,36 @@
         "nl": "Rood",
         "fr": "Rouge",
         "en": "Red"
+      }
+    },
+    {
+      "key": "common.reduceMotion",
+      "namespace": "common",
+      "leaf": "reduceMotion",
+      "segments": [
+        "common",
+        "reduceMotion"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3575
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Verminder beweging",
+        "fr": "Réduire les animations",
+        "en": "Reduce motion"
       }
     },
     {
@@ -59770,6 +61279,126 @@
         "nl": "Gebruiker registreren",
         "fr": "Enregistrer l'utilisateur",
         "en": "Register user"
+      }
+    },
+    {
+      "key": "common.releaseAdHoc",
+      "namespace": "common",
+      "leaf": "releaseAdHoc",
+      "segments": [
+        "common",
+        "releaseAdHoc"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3562
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Ad hoc",
+        "fr": "Ad hoc",
+        "en": "Ad hoc"
+      }
+    },
+    {
+      "key": "common.releaseAppStore",
+      "namespace": "common",
+      "leaf": "releaseAppStore",
+      "segments": [
+        "common",
+        "releaseAppStore"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3563
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "App Store of TestFlight",
+        "fr": "App Store ou TestFlight",
+        "en": "App Store or TestFlight"
+      }
+    },
+    {
+      "key": "common.releaseDevelopment",
+      "namespace": "common",
+      "leaf": "releaseDevelopment",
+      "segments": [
+        "common",
+        "releaseDevelopment"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3561
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Development",
+        "fr": "Développement",
+        "en": "Development"
+      }
+    },
+    {
+      "key": "common.releaseEnterprise",
+      "namespace": "common",
+      "leaf": "releaseEnterprise",
+      "segments": [
+        "common",
+        "releaseEnterprise"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3560
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Enterprise",
+        "fr": "Entreprise",
+        "en": "Enterprise"
       }
     },
     {
@@ -60348,6 +61977,66 @@
       }
     },
     {
+      "key": "common.reportCopied",
+      "namespace": "common",
+      "leaf": "reportCopied",
+      "segments": [
+        "common",
+        "reportCopied"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3541
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Diagnoseverslag gekopieerd",
+        "fr": "Rapport de diagnostic copié",
+        "en": "Diagnostic report copied"
+      }
+    },
+    {
+      "key": "common.reportFooter",
+      "namespace": "common",
+      "leaf": "reportFooter",
+      "segments": [
+        "common",
+        "reportFooter"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3545
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bezorg dit volledige verslag aan MyPRAxIS Support.",
+        "fr": "Transmettez ce rapport complet au support MyPRAxIS.",
+        "en": "Send this complete report to MyPRAxIS Support."
+      }
+    },
+    {
       "key": "common.reportFormat",
       "namespace": "common",
       "leaf": "reportFormat",
@@ -60386,6 +62075,7 @@
         "reportGeneratedOn"
       ],
       "applications": [
+        "mypraxis_app",
         "unknown"
       ],
       "namespaceStatus": "active",
@@ -60528,6 +62218,66 @@
       }
     },
     {
+      "key": "common.reportPrivacy",
+      "namespace": "common",
+      "leaf": "reportPrivacy",
+      "segments": [
+        "common",
+        "reportPrivacy"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3546
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Dit verslag bevat geen wachtwoorden, tokens of API-sleutels.",
+        "fr": "Ce rapport ne contient aucun mot de passe, jeton ou clé API.",
+        "en": "This report contains no passwords, tokens, or API keys."
+      }
+    },
+    {
+      "key": "common.reportPurpose",
+      "namespace": "common",
+      "leaf": "reportPurpose",
+      "segments": [
+        "common",
+        "reportPurpose"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3543
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Technische informatie voor analyse door MyPRAxIS Support.",
+        "fr": "Informations techniques destinées à l’analyse par le support MyPRAxIS.",
+        "en": "Technical information for analysis by MyPRAxIS Support."
+      }
+    },
+    {
       "key": "common.reports",
       "namespace": "common",
       "leaf": "reports",
@@ -60616,6 +62366,36 @@
         "nl": "Rapportsubtype",
         "fr": "Sous-type de rapport",
         "en": "Report subtype"
+      }
+    },
+    {
+      "key": "common.reportTitle",
+      "namespace": "common",
+      "leaf": "reportTitle",
+      "segments": [
+        "common",
+        "reportTitle"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3542
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "MYPRAXIS DIAGNOSEVERSLAG",
+        "fr": "RAPPORT DE DIAGNOSTIC MYPRAXIS",
+        "en": "MYPRAXIS DIAGNOSTIC REPORT"
       }
     },
     {
@@ -62159,6 +63939,66 @@
       }
     },
     {
+      "key": "common.restartCount",
+      "namespace": "common",
+      "leaf": "restartCount",
+      "segments": [
+        "common",
+        "restartCount"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3588
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "JS-herstarts sinds appstart",
+        "fr": "Redémarrages JS depuis le lancement",
+        "en": "JS restarts since app launch"
+      }
+    },
+    {
+      "key": "common.restarting",
+      "namespace": "common",
+      "leaf": "restarting",
+      "segments": [
+        "common",
+        "restarting"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3604
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Herstarten",
+        "fr": "Redémarrage",
+        "en": "Restarting"
+      }
+    },
+    {
       "key": "common.restOfTheMonth",
       "namespace": "common",
       "leaf": "restOfTheMonth",
@@ -62761,6 +64601,36 @@
         "nl": "Rubrieken",
         "fr": "Rubriques",
         "en": "Rubrics"
+      }
+    },
+    {
+      "key": "common.runtime",
+      "namespace": "common",
+      "leaf": "runtime",
+      "segments": [
+        "common",
+        "runtime"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3579
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Runtime",
+        "fr": "Runtime",
+        "en": "Runtime"
       }
     },
     {
@@ -65873,6 +67743,36 @@
       }
     },
     {
+      "key": "common.simulator",
+      "namespace": "common",
+      "leaf": "simulator",
+      "segments": [
+        "common",
+        "simulator"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3602
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Simulator",
+        "fr": "Simulateur",
+        "en": "Simulator"
+      }
+    },
+    {
       "key": "common.singleText",
       "namespace": "common",
       "leaf": "singleText",
@@ -67101,6 +69001,36 @@
         "nl": "Starttijd",
         "fr": "Heure de début",
         "en": "Start time"
+      }
+    },
+    {
+      "key": "common.startupProcedure",
+      "namespace": "common",
+      "leaf": "startupProcedure",
+      "segments": [
+        "common",
+        "startupProcedure"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3583
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Opstartprocedure actief",
+        "fr": "Procédure de démarrage active",
+        "en": "Startup procedure active"
       }
     },
     {
@@ -71778,6 +73708,36 @@
       }
     },
     {
+      "key": "common.translationEngine",
+      "namespace": "common",
+      "leaf": "translationEngine",
+      "segments": [
+        "common",
+        "translationEngine"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3576
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Vertaalmodule gestart",
+        "fr": "Moteur de traduction démarré",
+        "en": "Translation engine started"
+      }
+    },
+    {
       "key": "common.translationProposal",
       "namespace": "common",
       "leaf": "translationProposal",
@@ -71816,6 +73776,7 @@
         "translations"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -71865,6 +73826,36 @@
         "nl": "Vertaling(en)",
         "fr": "Traduction(s)",
         "en": "Translation(s)"
+      }
+    },
+    {
+      "key": "common.translationsLoaded",
+      "namespace": "common",
+      "leaf": "translationsLoaded",
+      "segments": [
+        "common",
+        "translationsLoaded"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3577
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Vertalingen geladen",
+        "fr": "Traductions chargées",
+        "en": "Translations loaded"
       }
     },
     {
@@ -73169,6 +75160,36 @@
       }
     },
     {
+      "key": "common.updateActivity",
+      "namespace": "common",
+      "leaf": "updateActivity",
+      "segments": [
+        "common",
+        "updateActivity"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3549
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Updateactiviteit",
+        "fr": "Activité de mise à jour",
+        "en": "Update activity"
+      }
+    },
+    {
       "key": "common.updateAvailableInstallAndRestart",
       "namespace": "common",
       "leaf": "updateAvailableInstallAndRestart",
@@ -73207,6 +75228,7 @@
         "updateChannel"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -73226,6 +75248,96 @@
         "nl": "Updatekanaal",
         "fr": "Canal de mise à jour",
         "en": "Update channel"
+      }
+    },
+    {
+      "key": "common.updateCheckOnLoad",
+      "namespace": "common",
+      "leaf": "updateCheckOnLoad",
+      "segments": [
+        "common",
+        "updateCheckOnLoad"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3584
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bij iedere opstart",
+        "fr": "À chaque démarrage",
+        "en": "At every launch"
+      }
+    },
+    {
+      "key": "common.updateCheckOnRecovery",
+      "namespace": "common",
+      "leaf": "updateCheckOnRecovery",
+      "segments": [
+        "common",
+        "updateCheckOnRecovery"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3585
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Alleen bij foutherstel",
+        "fr": "Uniquement après une erreur",
+        "en": "Only during error recovery"
+      }
+    },
+    {
+      "key": "common.updateCheckOnWifi",
+      "namespace": "common",
+      "leaf": "updateCheckOnWifi",
+      "segments": [
+        "common",
+        "updateCheckOnWifi"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3586
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bij opstart via wifi",
+        "fr": "Au démarrage via Wi-Fi",
+        "en": "At launch over Wi-Fi"
       }
     },
     {
@@ -73319,6 +75431,36 @@
       }
     },
     {
+      "key": "common.updateId",
+      "namespace": "common",
+      "leaf": "updateId",
+      "segments": [
+        "common",
+        "updateId"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3580
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Update-ID",
+        "fr": "ID de mise à jour",
+        "en": "Update ID"
+      }
+    },
+    {
       "key": "common.updateInstalledRestartingApp",
       "namespace": "common",
       "leaf": "updateInstalledRestartingApp",
@@ -73376,6 +75518,36 @@
         "nl": "Update installeren...",
         "fr": "Installation de la mise à jour...",
         "en": "Installing update..."
+      }
+    },
+    {
+      "key": "common.updatePending",
+      "namespace": "common",
+      "leaf": "updatePending",
+      "segments": [
+        "common",
+        "updatePending"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3587
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Update klaar voor herstart",
+        "fr": "Mise à jour prête au redémarrage",
+        "en": "Update ready to restart"
       }
     },
     {
@@ -73469,6 +75641,96 @@
       }
     },
     {
+      "key": "common.updates",
+      "namespace": "common",
+      "leaf": "updates",
+      "segments": [
+        "common",
+        "updates"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3533
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Updates",
+        "fr": "Mises à jour",
+        "en": "Updates"
+      }
+    },
+    {
+      "key": "common.updatesDescription",
+      "namespace": "common",
+      "leaf": "updatesDescription",
+      "segments": [
+        "common",
+        "updatesDescription"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3535
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Controleer welke OTA-update actief is en of de update correct is gestart.",
+        "fr": "Vérifiez la mise à jour OTA active et si elle a démarré correctement.",
+        "en": "Review the active OTA update and whether it started correctly."
+      }
+    },
+    {
+      "key": "common.updatesEnabled",
+      "namespace": "common",
+      "leaf": "updatesEnabled",
+      "segments": [
+        "common",
+        "updatesEnabled"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3578
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "OTA-updates ingeschakeld",
+        "fr": "Mises à jour OTA activées",
+        "en": "OTA updates enabled"
+      }
+    },
+    {
       "key": "common.updateSource",
       "namespace": "common",
       "leaf": "updateSource",
@@ -73477,6 +75739,7 @@
         "updateSource"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -73496,6 +75759,36 @@
         "nl": "Updatebron",
         "fr": "Source de mise à jour",
         "en": "Update source"
+      }
+    },
+    {
+      "key": "common.updatesSubtitle",
+      "namespace": "common",
+      "leaf": "updatesSubtitle",
+      "segments": [
+        "common",
+        "updatesSubtitle"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3534
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Actieve OTA-versie en updategezondheid",
+        "fr": "Version OTA active et état des mises à jour",
+        "en": "Active OTA version and update health"
       }
     },
     {
@@ -76669,6 +78962,36 @@
         "nl": "Zichtbaar in prijslijst",
         "fr": "Visible dans la liste de prix",
         "en": "Visible in pricelist"
+      }
+    },
+    {
+      "key": "common.visibleItems",
+      "namespace": "common",
+      "leaf": "visibleItems",
+      "segments": [
+        "common",
+        "visibleItems"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3597
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Zichtbare menu-items",
+        "fr": "Éléments de menu visibles",
+        "en": "Visible menu items"
       }
     },
     {
@@ -106597,7 +108920,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2470
+      "keyCount": 2547
     },
     {
       "name": "confirmation",

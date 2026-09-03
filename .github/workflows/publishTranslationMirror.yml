@@ -31,7 +31,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  TRANSLATION_CDN_BASE_URL: ${{ vars.TRANSLATION_CDN_BASE_URL || 'https://praxis-translations.development-3e6.workers.dev' }}
+  TRANSLATION_CDN_BASE_URL: ${{ vars.TRANSLATION_CDN_BASE_URL || 'https://workers.dev' }}
 
 jobs:
   sync:
@@ -58,6 +58,9 @@ jobs:
 
       - name: Prepare Cloudflare Static Assets
         run: npm run translations:prepare-cdn
+
+      - name: Wait For Cloudflare CDN Propagation
+        run: sleep 60
 
       - name: Verify GitHub Raw And Cloudflare Workers
         run: node scripts/sync-translation-mirror.js

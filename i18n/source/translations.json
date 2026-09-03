@@ -33170,13 +33170,13 @@
     ]
   },
   {
-    "key": "common.camera",
+    "key": "common.cameraTest",
     "nl": "Camera",
     "fr": "Caméra",
     "en": "Camera",
     "applications": [
-      "mypraxis_web",
-      "mypraxis_app"
+      "mypraxis_app",
+      "mypraxis_web"
     ]
   }
 ]

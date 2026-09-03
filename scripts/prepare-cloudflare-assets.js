@@ -10,6 +10,7 @@ const LOCALE_FILES = ['en.json', 'fr.json', 'nl.json'];
 const HEADERS = `/*.json
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: no-store
   Content-Type: application/json; charset=utf-8
   X-Content-Type-Options: nosniff
 `;

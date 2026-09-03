@@ -33168,5 +33168,15 @@
     "applications": [
       "mypraxis_app"
     ]
+  },
+  {
+    "key": "common.camera",
+    "nl": "Camera",
+    "fr": "Caméra",
+    "en": "Camera",
+    "applications": [
+      "mypraxis_app",
+      "mypraxis_web"
+    ]
   }
 ]

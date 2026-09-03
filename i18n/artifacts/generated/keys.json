@@ -453,6 +453,7 @@
   "common.callsBilled",
   "common.callsForPerson",
   "common.callStatusses",
+  "common.camera",
   "common.cameraPermissionDenied",
   "common.cameras",
   "common.cameraType",

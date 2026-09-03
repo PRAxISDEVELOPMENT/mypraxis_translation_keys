@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3604,
-    "uniqueKeys": 3604,
+    "totalEntries": 3605,
+    "uniqueKeys": 3605,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -13840,6 +13840,37 @@
         "nl": "Oproepstatussen",
         "fr": "Statuts d’appel",
         "en": "Call statuses"
+      }
+    },
+    {
+      "key": "common.camera",
+      "namespace": "common",
+      "leaf": "camera",
+      "segments": [
+        "common",
+        "camera"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3605
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Camera",
+        "fr": "Caméra",
+        "en": "Camera"
       }
     },
     {
@@ -108920,7 +108951,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2547
+      "keyCount": 2548
     },
     {
       "name": "confirmation",

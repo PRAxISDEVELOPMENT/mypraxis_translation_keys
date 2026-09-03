@@ -13,7 +13,7 @@ const CDN_BASE_URL = String(
     'https://praxis-translations.development-3e6.workers.dev'
 ).replace(/\/+$/, '');
 const REQUEST_TIMEOUT_MS = 15_000;
-const AVAILABILITY_ATTEMPTS = 30;
+const AVAILABILITY_ATTEMPTS = 60;
 const RETRY_DELAY_MS = 10_000;
 
 function sleep(milliseconds) {

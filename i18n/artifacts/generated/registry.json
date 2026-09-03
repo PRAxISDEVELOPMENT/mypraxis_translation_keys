@@ -13843,6 +13843,37 @@
       }
     },
     {
+      "key": "common.camera",
+      "namespace": "common",
+      "leaf": "camera",
+      "segments": [
+        "common",
+        "camera"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3605
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Camera",
+        "fr": "Caméra",
+        "en": "Camera"
+      }
+    },
+    {
       "key": "common.cameraPermissionDenied",
       "namespace": "common",
       "leaf": "cameraPermissionDenied",
@@ -13900,37 +13931,6 @@
         "nl": "Camera's",
         "fr": "Caméras",
         "en": "Cameras"
-      }
-    },
-    {
-      "key": "common.cameraTest",
-      "namespace": "common",
-      "leaf": "cameraTest",
-      "segments": [
-        "common",
-        "cameraTest"
-      ],
-      "applications": [
-        "mypraxis_app",
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        3605
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "status": {
-        "nl": "approved",
-        "fr": "approved",
-        "en": "approved"
-      },
-      "reviewRequiredLocales": [],
-      "resolved": {
-        "nl": "Camera",
-        "fr": "Caméra",
-        "en": "Camera"
       }
     },
     {

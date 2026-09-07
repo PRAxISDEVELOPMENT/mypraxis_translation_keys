@@ -1674,6 +1674,7 @@
   "common.noDataEnteredYet",
   "common.noEndpointsMatchYourSearch",
   "common.noErrors",
+  "common.noExternalPollingReceived",
   "common.noFilterSelected",
   "common.noFollowUp",
   "common.noIndex",

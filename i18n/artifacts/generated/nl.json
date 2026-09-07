@@ -1679,6 +1679,7 @@
     "noDataEnteredYet": "Nog geen gegevens ingevoerd",
     "noEndpointsMatchYourSearch": "Geen endpoints komen overeen met je zoekopdracht",
     "noErrors": "Geen fouten",
+    "noExternalPollingReceived": "Nog geen externe pollingen ontvangen",
     "noFilterSelected": "Geen filter geselecteerd",
     "noFollowUp": "Geen opvolging",
     "noIndex": "Geen index",

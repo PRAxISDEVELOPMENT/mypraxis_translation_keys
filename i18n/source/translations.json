@@ -33188,5 +33188,15 @@
       "mypraxis_app",
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.noExternalPollingReceived",
+    "nl": "Nog geen externe pollingen ontvangen",
+    "fr": "Aucune polling externe reçue",
+    "en": "No external polling received",
+    "applications": [
+      "mypraxis_app",
+      "mypraxis_web"
+    ]
   }
 ]

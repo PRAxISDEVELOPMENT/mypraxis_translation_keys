@@ -1679,6 +1679,7 @@
     "noDataEnteredYet": "No data entered yet",
     "noEndpointsMatchYourSearch": "No endpoints match your search",
     "noErrors": "No errors",
+    "noExternalPollingReceived": "No external polling received",
     "noFilterSelected": "No filter selected",
     "noFollowUp": "No follow-up",
     "noIndex": "No index",

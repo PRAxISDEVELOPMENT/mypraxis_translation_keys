@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3606,
-    "uniqueKeys": 3606,
+    "totalEntries": 3607,
+    "uniqueKeys": 3607,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -50706,6 +50706,37 @@
         "nl": "Geen fouten",
         "fr": "Aucune erreur",
         "en": "No errors"
+      }
+    },
+    {
+      "key": "common.noExternalPollingReceived",
+      "namespace": "common",
+      "leaf": "noExternalPollingReceived",
+      "segments": [
+        "common",
+        "noExternalPollingReceived"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3607
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Nog geen externe pollingen ontvangen",
+        "fr": "Aucune polling externe reçue",
+        "en": "No external polling received"
       }
     },
     {
@@ -108982,7 +109013,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2548
+      "keyCount": 2549
     },
     {
       "name": "confirmation",

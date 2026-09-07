@@ -3126,6 +3126,7 @@
     "requestToEnableEmailToEndClientForAdditionalHandling": "Vous êtes sur le point d'activer l'envoi d'e-mails de notification au client final concernant les traitements d'alarme supplémentaires.",
     "requestToEnableEmailToInstallerForAdditionalHandling": "Vous êtes sur le point d'activer l'envoi d'e-mails de notification à l'installateur concernant les traitements d'alarme supplémentaires.",
     "reviewReceivedPollingSignals": "Analyser les signaux de Polling reçus",
+    "riscoPollingInfo": "Les signaux de polling de ce type de système RISCO ne nous parviennent pas dans un format correct et ne peuvent donc pas être affichés ici. Notre récepteur peut uniquement déterminer le nombre de signaux de polling envoyés par le système au cours de la journée précédente (de 00:00 à 23:59). Vous trouverez ce nombre sous [Informations client] > [Données de l’installation].",
     "safePlace": "Nous pouvons vous emmener vers un endroit sûr !",
     "searchingIsOnlyPossibleIfAutologIsPaused": "La recherche n’est possible que si l’autolog est en pause.",
     "seeYou": "À bientôt!",

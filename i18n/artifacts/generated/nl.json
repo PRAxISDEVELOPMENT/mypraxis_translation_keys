@@ -3126,6 +3126,7 @@
     "requestToEnableEmailToEndClientForAdditionalHandling": "U staat op het punt om de verwittigingsemail met betrekking tot extra alarmafhandelingen voor de eindklant in te schakelen.",
     "requestToEnableEmailToInstallerForAdditionalHandling": "U staat op het punt om de verwittigingsmail naar de installateur met betrekking tot de extra afhandelingen in te schakelen.",
     "reviewReceivedPollingSignals": "Analyseer de ontvangen Pollingsignalen",
+    "riscoPollingInfo": "Van dit type RISCO systeem ontvangen wij de polling signalen niet in een correct formaat waardoor deze hier niet weergegeven kunnen worden. Wij kunnen in de ontvanger enkel detecteren hoeveel pollingsignalen het systeem de voorbije dag (00:00 - 23:59) heeft doorgestuurd. Dit aantal kan u terugvinden via [Klantinfo] > [Installatiegegevens].",
     "safePlace": "We kunnen u naar een veilige plaats brengen!",
     "searchingIsOnlyPossibleIfAutologIsPaused": "Zoeken is enkel mogelijk indien autolog is gepauzeerd.",
     "seeYou": "Tot ziens!",

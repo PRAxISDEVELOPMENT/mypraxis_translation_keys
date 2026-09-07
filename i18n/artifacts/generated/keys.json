@@ -3115,6 +3115,7 @@
   "info.requestToEnableEmailToEndClientForAdditionalHandling",
   "info.requestToEnableEmailToInstallerForAdditionalHandling",
   "info.reviewReceivedPollingSignals",
+  "info.riscoPollingInfo",
   "info.safePlace",
   "info.searchingIsOnlyPossibleIfAutologIsPaused",
   "info.seeYou",

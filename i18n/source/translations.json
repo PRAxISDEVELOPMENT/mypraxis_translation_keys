@@ -33178,5 +33178,15 @@
       "mypraxis_app",
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "info.riscoPollingInfo",
+    "nl": "Van dit type RISCO systeem ontvangen wij de polling signalen niet in een correct formaat waardoor deze hier niet weergegeven kunnen worden. Wij kunnen in de ontvanger enkel detecteren hoeveel pollingsignalen het systeem de voorbije dag (00:00 - 23:59) heeft doorgestuurd. Dit aantal kan u terugvinden via [Klantinfo] > [Installatiegegevens].",
+    "fr": "Les signaux de polling de ce type de système RISCO ne nous parviennent pas dans un format correct et ne peuvent donc pas être affichés ici. Notre récepteur peut uniquement déterminer le nombre de signaux de polling envoyés par le système au cours de la journée précédente (de 00:00 à 23:59). Vous trouverez ce nombre sous [Informations client] > [Données de l’installation].",
+    "en": "Polling signals from this type of RISCO system are not received in the correct format and therefore cannot be displayed here. Our receiver can only determine how many polling signals the system sent during the previous day (00:00–23:59). You can find this count under [Customer info] > [Installation details].",
+    "applications": [
+      "mypraxis_app",
+      "mypraxis_web"
+    ]
   }
 ]

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3611,
-    "uniqueKeys": 3611,
+    "totalEntries": 3616,
+    "uniqueKeys": 3616,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -88899,6 +88899,36 @@
       }
     },
     {
+      "key": "info.awaitingFurtherFollowUpFromYourInstallerRegardingThisSubscription",
+      "namespace": "info",
+      "leaf": "awaitingFurtherFollowUpFromYourInstallerRegardingThisSubscription",
+      "segments": [
+        "info",
+        "awaitingFurtherFollowUpFromYourInstallerRegardingThisSubscription"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3616
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "In afwachting van de verdere opvolging en informatie via uw alarminstallateur m.b.t. dit abonnement, tekenen wij,",
+        "fr": "Dans l’attente du suivi et des informations complémentaires de votre installateur d’alarme concernant cet abonnement, nous vous prions d’agréer nos salutations distinguées,",
+        "en": "Pending further follow-up and information from your alarm installer regarding this subscription, we remain, yours sincerely,"
+      }
+    },
+    {
       "key": "info.backupCentralCanOnlyBeChangedByPRAxISGROUPNV",
       "namespace": "info",
       "leaf": "backupCentralCanOnlyBeChangedByPRAxISGROUPNV",
@@ -89833,6 +89863,36 @@
         "nl": "Raadpleeg alarmmeldingen, ontvangen Pollingsignalen en de historiek van de gebruikersacties",
         "fr": "Consulter les notifications d'alarme, les signaux 'Polling' reçus et l'historique des actions des utilisateurs",
         "en": "Consult alarm notifications, received polling signals, and audit trail records."
+      }
+    },
+    {
+      "key": "info.contactYourInstallerToArrangeTerminationAndStopSignalTransmission",
+      "namespace": "info",
+      "leaf": "contactYourInstallerToArrangeTerminationAndStopSignalTransmission",
+      "segments": [
+        "info",
+        "contactYourInstallerToArrangeTerminationAndStopSignalTransmission"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3614
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "U neemt dus best per kerende persoonlijk contact op met uw alarminstallateur om deze stopzetting te behartigen en in te plannen. Na de datum van stopzetting mag het systeem immers geen meldingen meer doorsturen naar de ontvangers van PRAxIS GROUP, anders wordt de stopzetting van het abonnement uitgesteld en loopt de facturatie van uw abonnement verder.",
+        "fr": "Nous vous conseillons donc de prendre personnellement contact sans délai avec votre installateur d’alarme afin d’organiser et de planifier cette résiliation. Après la date de résiliation, le système ne peut plus transmettre de signaux aux récepteurs de PRAxIS GROUP. Dans le cas contraire, la résiliation de l’abonnement sera reportée et la facturation de votre abonnement se poursuivra.",
+        "en": "We therefore advise you to contact your alarm installer personally without delay to arrange and schedule this termination. After the termination date, the system must no longer transmit signals to the PRAxIS GROUP receivers. Otherwise, termination of the subscription will be postponed and billing for your subscription will continue."
       }
     },
     {
@@ -92584,6 +92644,36 @@
         "nl": "Er kan maximaal één voertuig tegelijk worden toegevoegd.",
         "fr": "Un seul véhicule peut être ajouté à la fois.",
         "en": "A maximum of one vehicle can be added at any time."
+      }
+    },
+    {
+      "key": "info.monitoringContractTerminationMustBeRequestedFromYourInstaller",
+      "namespace": "info",
+      "leaf": "monitoringContractTerminationMustBeRequestedFromYourInstaller",
+      "segments": [
+        "info",
+        "monitoringContractTerminationMustBeRequestedFromYourInstaller"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3613
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Wij voeren dit abonnement van telebewaking (of afstandsbewaking) uit in opdracht van uw vergund alarminstallateur {{installerName}} die de titularis van dit contract is en aan wie u in rechte uw verzoek tot stopzetting moet richten. Bovendien is er contractueel bepaald dat u dit verzoek per aangetekend schrijven moet richten aan uw alarminstallateur.",
+        "fr": "Nous assurons cet abonnement de télésurveillance (ou de surveillance à distance) pour le compte de votre installateur d’alarme agréé {{installerName}}, qui est le titulaire de ce contrat et auquel vous devez légalement adresser votre demande de résiliation. Le contrat prévoit en outre que vous devez adresser cette demande à votre installateur d’alarme par lettre recommandée.",
+        "en": "We provide this alarm monitoring (or remote monitoring) subscription on behalf of your licensed alarm installer {{installerName}}, who is the holder of this contract and to whom you must legally address your termination request. The contract also stipulates that you must send this request to your alarm installer by registered letter."
       }
     },
     {
@@ -95967,6 +96057,36 @@
       }
     },
     {
+      "key": "info.thisEmailConfirmsTheTerminationProcedureAndIsNotFinalAcceptance",
+      "namespace": "info",
+      "leaf": "thisEmailConfirmsTheTerminationProcedureAndIsNotFinalAcceptance",
+      "segments": [
+        "info",
+        "thisEmailConfirmsTheTerminationProcedureAndIsNotFinalAcceptance"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3615
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Deze e-mail geldt als bevestiging van de te volgen procedure tot stopzetting van uw abonnement en uitdrukkelijk niet als definitieve aanvaarding van de stopzetting van het abonnement, aangezien PRAxIS GROUP niet de titularis van uw overeenkomst is.",
+        "fr": "Cet e-mail confirme la procédure à suivre pour résilier votre abonnement et ne constitue expressément pas une acceptation définitive de la résiliation de l’abonnement, PRAxIS GROUP n’étant pas le titulaire de votre contrat.",
+        "en": "This email confirms the procedure to follow to terminate your subscription and expressly does not constitute final acceptance of the termination of the subscription, as PRAxIS GROUP is not the holder of your agreement."
+      }
+    },
+    {
       "key": "info.thisFactorIsAppliedToAllPurchasePrices",
       "namespace": "info",
       "leaf": "thisFactorIsAppliedToAllPurchasePrices",
@@ -96807,6 +96927,36 @@
         "nl": "Looptesten kunnen alleen worden gegenereerd als de klant zich in volledige test of volledige vocale test bevindt",
         "fr": "Les tests de déplacement ne peuvent être générés que si le client est en test complet ou en test vocal complet",
         "en": "Walk tests can only be generated if the customer is in full test or full vocal test"
+      }
+    },
+    {
+      "key": "info.weAcknowledgeYourSubscriptionTerminationRequest",
+      "namespace": "info",
+      "leaf": "weAcknowledgeYourSubscriptionTerminationRequest",
+      "segments": [
+        "info",
+        "weAcknowledgeYourSubscriptionTerminationRequest"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3612
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Wij nemen nota van uw verzoek dd. {{requestDate}} tot stopzetting van uw abonnement bij {{installationName}} op onze alarmcentrale PRAxIS GROUP.",
+        "fr": "Nous prenons note de votre demande du {{requestDate}} visant à résilier votre abonnement pour {{installationName}} auprès de notre centrale d’alarme PRAxIS GROUP.",
+        "en": "We acknowledge your request dated {{requestDate}} to terminate your subscription for {{installationName}} with our PRAxIS GROUP alarm monitoring centre."
       }
     },
     {
@@ -109158,7 +109308,7 @@
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 308
+      "keyCount": 313
     },
     {
       "name": "metadata",

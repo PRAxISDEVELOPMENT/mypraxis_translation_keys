@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3608,
-    "uniqueKeys": 3608,
+    "totalEntries": 3611,
+    "uniqueKeys": 3611,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -12541,6 +12541,99 @@
         "nl": "Niet naar zones",
         "fr": "Uniquement le 'Blueprint'.",
         "en": "Blueprint only"
+      }
+    },
+    {
+      "key": "common.blueprintSmsWithOperatorAction",
+      "namespace": "common",
+      "leaf": "blueprintSmsWithOperatorAction",
+      "segments": [
+        "common",
+        "blueprintSmsWithOperatorAction"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3610
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "SMS met operatoractie (zonder ACK)",
+        "fr": "SMS avec intervention de l’opérateur (sans ACK)",
+        "en": "SMS with operator action (without ACK)"
+      }
+    },
+    {
+      "key": "common.blueprintSmsWithoutOperatorAction",
+      "namespace": "common",
+      "leaf": "blueprintSmsWithoutOperatorAction",
+      "segments": [
+        "common",
+        "blueprintSmsWithoutOperatorAction"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3611
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "SMS zonder operatoractie (zonder ACK)",
+        "fr": "SMS sans intervention de l’opérateur (sans ACK)",
+        "en": "SMS without operator action (without ACK)"
+      }
+    },
+    {
+      "key": "common.blueprintStandard",
+      "namespace": "common",
+      "leaf": "blueprintStandard",
+      "segments": [
+        "common",
+        "blueprintStandard"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3609
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Standaard CID/SI/RSI",
+        "fr": "CID/SI/RSI standard",
+        "en": "Standard CID/SI/RSI"
       }
     },
     {
@@ -109044,7 +109137,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2550
+      "keyCount": 2553
     },
     {
       "name": "confirmation",

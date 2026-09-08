@@ -33208,5 +33208,35 @@
       "mypraxis_app",
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.blueprintStandard",
+    "nl": "Standaard CID/SI/RSI",
+    "fr": "CID/SI/RSI standard",
+    "en": "Standard CID/SI/RSI",
+    "applications": [
+      "mypraxis_app",
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.blueprintSmsWithOperatorAction",
+    "nl": "SMS met operatoractie (zonder ACK)",
+    "fr": "SMS avec intervention de l’opérateur (sans ACK)",
+    "en": "SMS with operator action (without ACK)",
+    "applications": [
+      "mypraxis_app",
+      "mypraxis_web"
+    ]
+  },
+  {
+    "key": "common.blueprintSmsWithoutOperatorAction",
+    "nl": "SMS zonder operatoractie (zonder ACK)",
+    "fr": "SMS sans intervention de l’opérateur (sans ACK)",
+    "en": "SMS without operator action (without ACK)",
+    "applications": [
+      "mypraxis_app",
+      "mypraxis_web"
+    ]
   }
 ]

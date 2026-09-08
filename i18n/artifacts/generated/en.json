@@ -1680,6 +1680,7 @@
     "noEndpointsMatchYourSearch": "No endpoints match your search",
     "noErrors": "No errors",
     "noExternalPollingReceived": "No external polling received",
+    "noExternalSignalReceived": "No external notifications received yet",
     "noFilterSelected": "No filter selected",
     "noFollowUp": "No follow-up",
     "noIndex": "No index",

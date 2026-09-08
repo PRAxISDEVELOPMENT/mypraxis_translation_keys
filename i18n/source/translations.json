@@ -33198,5 +33198,15 @@
       "mypraxis_app",
       "mypraxis_web"
     ]
+  },
+  {
+    "key": "common.noExternalSignalReceived",
+    "nl": "Nog geen externe meldingen ontvangen",
+    "fr": "Aucun signalement externe reçu pour le moment",
+    "en": "No external notifications received yet",
+    "applications": [
+      "mypraxis_app",
+      "mypraxis_web"
+    ]
   }
 ]

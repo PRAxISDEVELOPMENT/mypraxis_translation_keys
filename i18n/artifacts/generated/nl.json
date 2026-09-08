@@ -1680,6 +1680,7 @@
     "noEndpointsMatchYourSearch": "Geen endpoints komen overeen met je zoekopdracht",
     "noErrors": "Geen fouten",
     "noExternalPollingReceived": "Nog geen externe pollingen ontvangen",
+    "noExternalSignalReceived": "Nog geen externe meldingen ontvangen",
     "noFilterSelected": "Geen filter geselecteerd",
     "noFollowUp": "Geen opvolging",
     "noIndex": "Geen index",

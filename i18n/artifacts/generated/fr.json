@@ -417,7 +417,7 @@
     "blueprintOnly": "Uniquement le 'Blueprint'.",
     "blueprintSmsWithOperatorAction": "SMS avec intervention de l’opérateur (sans ACK)",
     "blueprintSmsWithoutOperatorAction": "SMS sans intervention de l’opérateur (sans ACK)",
-    "blueprintStandard": "CID/SI/RSI standard",
+    "blueprintStandard": "CID/SIA/RSI standard",
     "body": "Corps",
     "bold": "Caractères gras",
     "brand": "Marque",

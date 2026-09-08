@@ -417,7 +417,7 @@
     "blueprintOnly": "Niet naar zones",
     "blueprintSmsWithOperatorAction": "SMS met operatoractie (zonder ACK)",
     "blueprintSmsWithoutOperatorAction": "SMS zonder operatoractie (zonder ACK)",
-    "blueprintStandard": "Standaard CID/SI/RSI",
+    "blueprintStandard": "Standaard CID/SIA/RSI",
     "body": "Body",
     "bold": "Vet",
     "brand": "Merk",

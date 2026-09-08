@@ -33211,9 +33211,9 @@
   },
   {
     "key": "common.blueprintStandard",
-    "nl": "Standaard CID/SI/RSI",
-    "fr": "CID/SI/RSI standard",
-    "en": "Standard CID/SI/RSI",
+    "nl": "Standaard CID/SIA/RSI",
+    "fr": "CID/SIA/RSI standard",
+    "en": "Standard CID/SIA/RSI",
     "applications": [
       "mypraxis_app",
       "mypraxis_web"

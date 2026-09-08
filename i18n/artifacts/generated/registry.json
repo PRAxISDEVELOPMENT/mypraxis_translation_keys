@@ -12631,9 +12631,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Standaard CID/SI/RSI",
-        "fr": "CID/SI/RSI standard",
-        "en": "Standard CID/SI/RSI"
+        "nl": "Standaard CID/SIA/RSI",
+        "fr": "CID/SIA/RSI standard",
+        "en": "Standard CID/SIA/RSI"
       }
     },
     {

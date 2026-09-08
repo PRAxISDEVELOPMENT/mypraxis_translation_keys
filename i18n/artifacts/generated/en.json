@@ -417,7 +417,7 @@
     "blueprintOnly": "Blueprint only",
     "blueprintSmsWithOperatorAction": "SMS with operator action (without ACK)",
     "blueprintSmsWithoutOperatorAction": "SMS without operator action (without ACK)",
-    "blueprintStandard": "Standard CID/SI/RSI",
+    "blueprintStandard": "Standard CID/SIA/RSI",
     "body": "Body",
     "bold": "Bold",
     "brand": "Brand",

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3616,
-    "uniqueKeys": 3616,
+    "totalEntries": 3620,
+    "uniqueKeys": 3620,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -19582,6 +19582,36 @@
       }
     },
     {
+      "key": "common.connectionEnabled",
+      "namespace": "common",
+      "leaf": "connectionEnabled",
+      "segments": [
+        "common",
+        "connectionEnabled"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3617
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Verbinding ingeschakeld",
+        "fr": "Connexion activée",
+        "en": "Connection enabled"
+      }
+    },
+    {
       "key": "common.connectionMethodWithDVRNVR",
       "namespace": "common",
       "leaf": "connectionMethodWithDVRNVR",
@@ -38107,6 +38137,36 @@
       }
     },
     {
+      "key": "common.heartbeatCheck",
+      "namespace": "common",
+      "leaf": "heartbeatCheck",
+      "segments": [
+        "common",
+        "heartbeatCheck"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3618
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Heartbeat controle",
+        "fr": "Contrôle du heartbeat",
+        "en": "Heartbeat check"
+      }
+    },
+    {
       "key": "common.heartbeatEPROM",
       "namespace": "common",
       "leaf": "heartbeatEPROM",
@@ -43484,6 +43544,66 @@
         "nl": "Laatst geraadpleegd",
         "fr": "Dernière consultation",
         "en": "Last consulted"
+      }
+    },
+    {
+      "key": "common.lastExternalNotification",
+      "namespace": "common",
+      "leaf": "lastExternalNotification",
+      "segments": [
+        "common",
+        "lastExternalNotification"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3620
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Laatste externe melding",
+        "fr": "Dernière notification externe",
+        "en": "Last external notification"
+      }
+    },
+    {
+      "key": "common.lastHeartbeat",
+      "namespace": "common",
+      "leaf": "lastHeartbeat",
+      "segments": [
+        "common",
+        "lastHeartbeat"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3619
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Laatste heartbeat",
+        "fr": "Dernier heartbeat",
+        "en": "Last heartbeat"
       }
     },
     {
@@ -109287,7 +109407,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2553
+      "keyCount": 2557
     },
     {
       "name": "confirmation",

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3620,
-    "uniqueKeys": 3620,
+    "totalEntries": 3622,
+    "uniqueKeys": 3622,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -19519,6 +19519,36 @@
         "nl": "Bevestigen",
         "fr": "Confirmer",
         "en": "Confirm"
+      }
+    },
+    {
+      "key": "common.confirmationRequestedAdjustmentCompleted",
+      "namespace": "common",
+      "leaf": "confirmationRequestedAdjustmentCompleted",
+      "segments": [
+        "common",
+        "confirmationRequestedAdjustmentCompleted"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3621
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Ter bevestiging delen wij u mee dat de gevraagde aanpassing werd uitgevoerd.",
+        "fr": "À titre de confirmation, nous vous informons que la modification demandée a été effectuée.",
+        "en": "For confirmation, we inform you that the requested adjustment has been completed."
       }
     },
     {
@@ -93851,6 +93881,36 @@
       }
     },
     {
+      "key": "info.pleaseForwardTheMessageBelowToTheSenderAndCommercialCCThenClickContinue",
+      "namespace": "info",
+      "leaf": "pleaseForwardTheMessageBelowToTheSenderAndCommercialCCThenClickContinue",
+      "segments": [
+        "info",
+        "pleaseForwardTheMessageBelowToTheSenderAndCommercialCCThenClickContinue"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3622
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gelieve onderstaand antwoord naar de afzender te sturen, met commercial@praxis-group.eu in CC. Klik daarna op Doorgaan:",
+        "fr": "Veuillez transmettre la réponse ci-dessous à l’expéditeur, avec commercial@praxis-group.eu en copie. Cliquez ensuite sur Continuer :",
+        "en": "Please forward the response below to the sender, with commercial@praxis-group.eu in CC. Then click Continue:"
+      }
+    },
+    {
       "key": "info.pleaseForwardTheMessageBelowToTheSenderAndThenClickContinue",
       "namespace": "info",
       "leaf": "pleaseForwardTheMessageBelowToTheSenderAndThenClickContinue",
@@ -109407,7 +109467,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2557
+      "keyCount": 2558
     },
     {
       "name": "confirmation",
@@ -109428,7 +109488,7 @@
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 313
+      "keyCount": 314
     },
     {
       "name": "metadata",

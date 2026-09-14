@@ -25364,5 +25364,19 @@
     "fr": "Dernière notification externe",
     "en": "Last external notification",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.confirmationRequestedAdjustmentCompleted",
+    "nl": "Ter bevestiging delen wij u mee dat de gevraagde aanpassing werd uitgevoerd.",
+    "fr": "À titre de confirmation, nous vous informons que la modification demandée a été effectuée.",
+    "en": "For confirmation, we inform you that the requested adjustment has been completed.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "info.pleaseForwardTheMessageBelowToTheSenderAndCommercialCCThenClickContinue",
+    "nl": "Gelieve onderstaand antwoord naar de afzender te sturen, met commercial@praxis-group.eu in CC. Klik daarna op Doorgaan:",
+    "fr": "Veuillez transmettre la réponse ci-dessous à l’expéditeur, avec commercial@praxis-group.eu en copie. Cliquez ensuite sur Continuer :",
+    "en": "Please forward the response below to the sender, with commercial@praxis-group.eu in CC. Then click Continue:",
+    "applications": ["mypraxis_web"]
   }
 ]

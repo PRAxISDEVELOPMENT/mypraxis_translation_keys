@@ -25392,5 +25392,19 @@
     "fr": "Attention: les traductions sont générées automatiquement via Google Translate et peuvent donc contenir des erreurs.",
     "en": "Please note: translations are generated automatically using Google Translate and may therefore contain errors.",
     "applications": ["mypraxis_app", "mypraxis_web"]
+  },
+  {
+    "key": "common.permCommentInfo",
+    "nl": "Bekijk de permanente commentaar die voor deze klant beschikbaar is.",
+    "fr": "Consultez le commentaire permanent disponible pour ce client.",
+    "en": "View the permanent comment available for this customer.",
+    "applications": ["mypraxis_app"]
+  },
+  {
+    "key": "common.extrInfoDescription",
+    "nl": "Bekijk externe informatie die tijdelijk voor deze klant beschikbaar is.",
+    "fr": "Consultez de l'information externe temporairement disponible pour ce client.",
+    "en": "View external information temporarily available for this customer.",
+    "applications": ["mypraxis_app"]
   }
 ]

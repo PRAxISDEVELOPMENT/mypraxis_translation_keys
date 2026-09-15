@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3624,
-    "uniqueKeys": 3624,
+    "totalEntries": 3626,
+    "uniqueKeys": 3626,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -33878,6 +33878,36 @@
       }
     },
     {
+      "key": "common.extrInfoDescription",
+      "namespace": "common",
+      "leaf": "extrInfoDescription",
+      "segments": [
+        "common",
+        "extrInfoDescription"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3626
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bekijk externe informatie die tijdelijk voor deze klant beschikbaar is.",
+        "fr": "Consultez de l'information externe temporairement disponible pour ce client.",
+        "en": "View external information temporarily available for this customer."
+      }
+    },
+    {
       "key": "common.factorOnPurchasePrice",
       "namespace": "common",
       "leaf": "factorOnPurchasePrice",
@@ -56930,6 +56960,36 @@
         "nl": "Permanente melding",
         "fr": "Notification permanente",
         "en": "Permanent notification"
+      }
+    },
+    {
+      "key": "common.permCommentInfo",
+      "namespace": "common",
+      "leaf": "permCommentInfo",
+      "segments": [
+        "common",
+        "permCommentInfo"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3625
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bekijk de permanente commentaar die voor deze klant beschikbaar is.",
+        "fr": "Consultez le commentaire permanent disponible pour ce client.",
+        "en": "View the permanent comment available for this customer."
       }
     },
     {
@@ -109529,7 +109589,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2558
+      "keyCount": 2560
     },
     {
       "name": "confirmation",

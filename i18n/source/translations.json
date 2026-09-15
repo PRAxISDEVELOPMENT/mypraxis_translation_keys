@@ -25389,7 +25389,7 @@
   {
     "key": "info.translationsAreAutomaticallyGeneratedViaGoogleTranslateAndMayContainErrors",
     "nl": "Let op: de vertalingen worden automatisch gegenereerd via Google Translate en kunnen daardoor fouten bevatten.",
-    "fr": "Attention : les traductions sont générées automatiquement via Google Translate et peuvent donc contenir des erreurs.",
+    "fr": "Attention: les traductions sont générées automatiquement via Google Translate et peuvent donc contenir des erreurs.",
     "en": "Please note: translations are generated automatically using Google Translate and may therefore contain errors.",
     "applications": ["mypraxis_app", "mypraxis_web"]
   }

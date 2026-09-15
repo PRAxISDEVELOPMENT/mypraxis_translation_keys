@@ -3203,7 +3203,7 @@
     "toggleAutomaticActivationOfInactiveClientsBetween20h00And06h00AsSoonAsWeReceiveExternalNotificationsAndWeHaveTheFullAddressAndAtLeast1CallNumberInTheCallList": "Activer ou désactiver l’activation automatique des clients inactifs entre 20h00 et 06h00 dès la réception de notifications externes et lorsque l’adresse complète ainsi qu’au moins un numéro d’appel sont disponibles dans la liste d’appels.",
     "translationProposalsAreBeingSubmitted": "Les propositions de traduction sont en cours d’envoi",
     "translationPullRequestIsBeingCreated": "Les modifications de traduction sont en cours de préparation",
-    "translationsAreAutomaticallyGeneratedViaGoogleTranslateAndMayContainErrors": "Attention : les traductions sont générées automatiquement via Google Translate et peuvent donc contenir des erreurs.",
+    "translationsAreAutomaticallyGeneratedViaGoogleTranslateAndMayContainErrors": "Attention: les traductions sont générées automatiquement via Google Translate et peuvent donc contenir des erreurs.",
     "translationsAreBeingSubmitted": "Les traductions sont en cours d’envoi",
     "translationWorkflowIsRunning": "Les traductions sont en cours de traitement",
     "transmissionMethodIsNotSupported": "Cette méthode de transmission n'est pas prise en charge",

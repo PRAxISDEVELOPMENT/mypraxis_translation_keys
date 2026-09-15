@@ -25378,5 +25378,19 @@
     "fr": "Veuillez transmettre la réponse ci-dessous à l’expéditeur, avec commercial@praxis-group.eu en copie. Cliquez ensuite sur Continuer :",
     "en": "Please forward the response below to the sender, with commercial@praxis-group.eu in CC. Then click Continue:",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "info.instructionsCanBePassedOnVia",
+    "nl": "Instructies kunnen worden doorgegeven via",
+    "fr": "Les instructions peuvent être transmises via",
+    "en": "Instructions can be communicated via",
+    "applications": ["mypraxis_app", "mypraxis_web"]
+  },
+  {
+    "key": "info.translationsAreAutomaticallyGeneratedViaGoogleTranslateAndMayContainErrors",
+    "nl": "Let op: de vertalingen worden automatisch gegenereerd via Google Translate en kunnen daardoor fouten bevatten.",
+    "fr": "Attention : les traductions sont générées automatiquement via Google Translate et peuvent donc contenir des erreurs.",
+    "en": "Please note: translations are generated automatically using Google Translate and may therefore contain errors.",
+    "applications": ["mypraxis_app", "mypraxis_web"]
   }
 ]

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3622,
-    "uniqueKeys": 3622,
+    "totalEntries": 3624,
+    "uniqueKeys": 3624,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -92274,6 +92274,37 @@
       }
     },
     {
+      "key": "info.instructionsCanBePassedOnVia",
+      "namespace": "info",
+      "leaf": "instructionsCanBePassedOnVia",
+      "segments": [
+        "info",
+        "instructionsCanBePassedOnVia"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3623
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Instructies kunnen worden doorgegeven via",
+        "fr": "Les instructions peuvent être transmises via",
+        "en": "Instructions can be communicated via"
+      }
+    },
+    {
       "key": "info.itRemainsPossibleHoweverToManuallyAddOrModifyZoneDescriptions",
       "namespace": "info",
       "leaf": "itRemainsPossibleHoweverToManuallyAddOrModifyZoneDescriptions",
@@ -96505,6 +96536,37 @@
         "nl": "Vertaalwijzigingen worden klaargezet",
         "fr": "Les modifications de traduction sont en cours de préparation",
         "en": "Translation changes are being prepared"
+      }
+    },
+    {
+      "key": "info.translationsAreAutomaticallyGeneratedViaGoogleTranslateAndMayContainErrors",
+      "namespace": "info",
+      "leaf": "translationsAreAutomaticallyGeneratedViaGoogleTranslateAndMayContainErrors",
+      "segments": [
+        "info",
+        "translationsAreAutomaticallyGeneratedViaGoogleTranslateAndMayContainErrors"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3624
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Let op: de vertalingen worden automatisch gegenereerd via Google Translate en kunnen daardoor fouten bevatten.",
+        "fr": "Attention : les traductions sont générées automatiquement via Google Translate et peuvent donc contenir des erreurs.",
+        "en": "Please note: translations are generated automatically using Google Translate and may therefore contain errors."
       }
     },
     {
@@ -109488,7 +109550,7 @@
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 314
+      "keyCount": 316
     },
     {
       "name": "metadata",

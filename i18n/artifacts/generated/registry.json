@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3626,
-    "uniqueKeys": 3626,
+    "totalEntries": 3627,
+    "uniqueKeys": 3627,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -71155,6 +71155,36 @@
       }
     },
     {
+      "key": "common.tempCommentInfo",
+      "namespace": "common",
+      "leaf": "tempCommentInfo",
+      "segments": [
+        "common",
+        "tempCommentInfo"
+      ],
+      "applications": [
+        "mypraxis_app"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3627
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bekijk de tijdelijke commentaar die voor deze klant beschikbaar is.",
+        "fr": "ConsuConsultez le commentaire temporaire disponible pour ce client.",
+        "en": "View the temporary comment available for this customer."
+      }
+    },
+    {
       "key": "common.templates",
       "namespace": "common",
       "leaf": "templates",
@@ -109589,7 +109619,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2560
+      "keyCount": 2561
     },
     {
       "name": "confirmation",

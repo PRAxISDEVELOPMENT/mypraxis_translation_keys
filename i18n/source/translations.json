@@ -25406,5 +25406,12 @@
     "fr": "Consultez de l'information externe temporairement disponible pour ce client.",
     "en": "View external information temporarily available for this customer.",
     "applications": ["mypraxis_app"]
+  },
+  {
+    "key": "common.tempCommentInfo",
+    "nl": "Bekijk de tijdelijke commentaar die voor deze klant beschikbaar is.",
+    "fr": "ConsuConsultez le commentaire temporaire disponible pour ce client.",
+    "en": "View the temporary comment available for this customer.",
+    "applications": ["mypraxis_app"]
   }
 ]

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3627,
-    "uniqueKeys": 3627,
+    "totalEntries": 3630,
+    "uniqueKeys": 3630,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -19670,6 +19670,66 @@
         "nl": "Wijze van verbinding met DVR/NVR",
         "fr": "Méthode de connexion avec DVR/NVR",
         "en": "Connection method with DVR/NVR"
+      }
+    },
+    {
+      "key": "common.connectionRestartFailed",
+      "namespace": "common",
+      "leaf": "connectionRestartFailed",
+      "segments": [
+        "common",
+        "connectionRestartFailed"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3630
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Kon de verbinding niet herstarten.",
+        "fr": "Impossible de redémarrer la connexion.",
+        "en": "Could not restart the connection."
+      }
+    },
+    {
+      "key": "common.connectionRestarting",
+      "namespace": "common",
+      "leaf": "connectionRestarting",
+      "segments": [
+        "common",
+        "connectionRestarting"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3629
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Verbinding wordt herstart...",
+        "fr": "La connexion redémarre...",
+        "en": "Connection is restarting..."
       }
     },
     {
@@ -64332,6 +64392,36 @@
         "nl": "Opnieuw opstarten",
         "fr": "Redémarrer",
         "en": "Restart"
+      }
+    },
+    {
+      "key": "common.restartConnection",
+      "namespace": "common",
+      "leaf": "restartConnection",
+      "segments": [
+        "common",
+        "restartConnection"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3628
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Verbinding herstarten",
+        "fr": "Redémarrer la connexion",
+        "en": "Restart connection"
       }
     },
     {
@@ -109619,7 +109709,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2561
+      "keyCount": 2564
     },
     {
       "name": "confirmation",

@@ -1,7 +1,7 @@
 {
-  "sourceFile": "i18n/source/translations.json",
-  "namespaceFile": "i18n/config/namespaces.json",
-  "applicationFile": "i18n/config/applications.json",
+  "sourceFile": "i18n\\source\\translations.json",
+  "namespaceFile": "i18n\\config\\namespaces.json",
+  "applicationFile": "i18n\\config\\applications.json",
   "locales": [
     "nl",
     "fr",
@@ -15,8 +15,8 @@
     "unknown"
   ],
   "totals": {
-    "sourceEntries": 3627,
-    "uniqueKeys": 3627,
+    "sourceEntries": 3630,
+    "uniqueKeys": 3630,
     "namespaces": 11,
     "warnings": 0,
     "errors": 0,
@@ -28,7 +28,7 @@
   "namespaces": {
     "applicationNames": 15,
     "authentication": 121,
-    "common": 2561,
+    "common": 2564,
     "confirmation": 16,
     "error": 204,
     "info": 316,
@@ -42,7 +42,7 @@
     "documenten": 0,
     "mypraxis_app": 979,
     "mypraxis_data": 0,
-    "mypraxis_web": 2667,
+    "mypraxis_web": 2670,
     "unknown": 698
   },
   "warningCounts": {},

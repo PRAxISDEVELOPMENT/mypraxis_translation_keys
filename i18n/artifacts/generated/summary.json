@@ -1,7 +1,7 @@
 {
-  "sourceFile": "i18n\\source\\translations.json",
-  "namespaceFile": "i18n\\config\\namespaces.json",
-  "applicationFile": "i18n\\config\\applications.json",
+  "sourceFile": "i18n/source/translations.json",
+  "namespaceFile": "i18n/config/namespaces.json",
+  "applicationFile": "i18n/config/applications.json",
   "locales": [
     "nl",
     "fr",

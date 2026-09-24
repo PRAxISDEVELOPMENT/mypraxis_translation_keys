@@ -158,6 +158,7 @@
   "common.aClientCanOnlyBeActivatedIfPraxisHasTheRemoteMonitoringContract",
   "common.action",
   "common.actionDateAndTime",
+  "common.actionInFunctionOfVideo",
   "common.actionNeeded",
   "common.actionPraxis",
   "common.actions",

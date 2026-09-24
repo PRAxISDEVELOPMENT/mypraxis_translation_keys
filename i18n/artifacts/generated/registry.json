@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3630,
-    "uniqueKeys": 3630,
+    "totalEntries": 3631,
+    "uniqueKeys": 3631,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -4928,6 +4928,36 @@
         "nl": "Actiedatum & -tijd",
         "fr": "Date et heure de l'action",
         "en": "Action date & time"
+      }
+    },
+    {
+      "key": "common.actionInFunctionOfVideo",
+      "namespace": "common",
+      "leaf": "actionInFunctionOfVideo",
+      "segments": [
+        "common",
+        "actionInFunctionOfVideo"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3631
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Actie in functie van beelden",
+        "fr": "Action en fonction des images",
+        "en": "Action based on footage"
       }
     },
     {
@@ -109709,7 +109739,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2564
+      "keyCount": 2565
     },
     {
       "name": "confirmation",

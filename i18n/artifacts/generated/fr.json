@@ -163,6 +163,7 @@
     "aClientCanOnlyBeActivatedIfPraxisHasTheRemoteMonitoringContract": "Un client ne peut être activé que si PRAxIS dispose de son contrat de télésurveillance.",
     "action": "Action",
     "actionDateAndTime": "Date et heure de l'action",
+    "actionInFunctionOfVideo": "Action en fonction des images",
     "actionNeeded": "Action requise",
     "actionPraxis": "Action par PRAxIS",
     "actions": "Actions",

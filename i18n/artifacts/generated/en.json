@@ -163,6 +163,7 @@
     "aClientCanOnlyBeActivatedIfPraxisHasTheRemoteMonitoringContract": "A client can only be activated if PRAxIS has the remote monitoring contract.",
     "action": "Action",
     "actionDateAndTime": "Action date & time",
+    "actionInFunctionOfVideo": "Action based on footage",
     "actionNeeded": "Action needed",
     "actionPraxis": "Action PRAxIS",
     "actions": "Actions",

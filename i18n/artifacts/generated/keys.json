@@ -2214,6 +2214,7 @@
   "common.sendEmailToUser",
   "common.sendEmailWhenNoResults",
   "common.sendOn",
+  "common.sendSignalsViaVPN",
   "common.sendToCustomer",
   "common.sendToDocusign",
   "common.sendToPraxis",

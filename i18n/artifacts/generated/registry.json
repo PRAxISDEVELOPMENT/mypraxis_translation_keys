@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3633,
-    "uniqueKeys": 3633,
+    "totalEntries": 3634,
+    "uniqueKeys": 3634,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -67022,6 +67022,37 @@
       }
     },
     {
+      "key": "common.sendSignalsViaVPN",
+      "namespace": "common",
+      "leaf": "sendSignalsViaVPN",
+      "segments": [
+        "common",
+        "sendSignalsViaVPN"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3634
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Signalen versturen via VPN",
+        "fr": "Envoyer des signaux via VPN",
+        "en": "Send signals via VPN"
+      }
+    },
+    {
       "key": "common.sendToCustomer",
       "namespace": "common",
       "leaf": "sendToCustomer",
@@ -109801,7 +109832,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2567
+      "keyCount": 2568
     },
     {
       "name": "confirmation",

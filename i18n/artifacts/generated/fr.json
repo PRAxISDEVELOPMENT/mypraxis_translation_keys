@@ -2219,6 +2219,7 @@
     "sendEmailToUser": "Envoyer un e-mail à l'utilisateur",
     "sendEmailWhenNoResults": "Envoyer un e-mail en cas d'absence de résultats",
     "sendOn": "Envoyé le",
+    "sendSignalsViaVPN": "Envoyer des signaux via VPN",
     "sendToCustomer": "Envoyé au client",
     "sendToDocusign": "Envoyer à DocuSign",
     "sendToPraxis": "Envoyé à PRAxIS",

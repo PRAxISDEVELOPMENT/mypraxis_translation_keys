@@ -2047,6 +2047,7 @@
   "common.reload",
   "common.reloadBackupChannel",
   "common.reloadBackupChannelParameters",
+  "common.reloadCache",
   "common.reloadFacturationData",
   "common.reloadForBackupClientNumber",
   "common.reloadForPrimaryClientNumber",

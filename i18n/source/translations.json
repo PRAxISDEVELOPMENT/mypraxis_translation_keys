@@ -25441,5 +25441,12 @@
     "fr": "Action en fonction des images",
     "en": "Action based on footage",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.reloadCache",
+    "nl": "Cache herladen",
+    "fr": "Recharger le cache",
+    "en": "Reload cache",
+    "applications": ["mypraxis_web"]
   }
 ]

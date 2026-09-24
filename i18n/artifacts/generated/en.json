@@ -2052,6 +2052,7 @@
     "reload": "Reload",
     "reloadBackupChannel": "Reload back-up channel",
     "reloadBackupChannelParameters": "Reload back-up channel parameters",
+    "reloadCache": "Reload cache",
     "reloadFacturationData": "Reload facturation data",
     "reloadForBackupClientNumber": "Reload for backup client number.",
     "reloadForPrimaryClientNumber": "Reload for primary client number.",

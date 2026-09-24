@@ -2052,6 +2052,7 @@
     "reload": "Herladen",
     "reloadBackupChannel": "Back-upkanaal herladen",
     "reloadBackupChannelParameters": "Parameters van het back-upkanaal herladen",
+    "reloadCache": "Cache herladen",
     "reloadFacturationData": "Facturatiegegevens opnieuw laden",
     "reloadForBackupClientNumber": "Herladen voor back-up klantnummer.",
     "reloadForPrimaryClientNumber": "Herladen voor primair klantnummer.",

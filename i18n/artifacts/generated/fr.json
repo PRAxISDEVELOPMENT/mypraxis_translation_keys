@@ -2052,6 +2052,7 @@
     "reload": "Recharger",
     "reloadBackupChannel": "Recharger le canal de secours",
     "reloadBackupChannelParameters": "Recharger les paramètres du canal de secours",
+    "reloadCache": "Recharger le cache",
     "reloadFacturationData": "Recharger les données de facturation",
     "reloadForBackupClientNumber": "Recharger pour le numéro client de secours.",
     "reloadForPrimaryClientNumber": "Recharger pour le numéro client principal.",

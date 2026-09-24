@@ -599,6 +599,7 @@
     "clientStatus": "Klantstatus",
     "clientsWithCompletions": "Klanten met afhandelingen",
     "clientUnpaid": "Klant niet betaald",
+    "clientUsesVPNConnection": "Signalen van de klant worden via een VPN-verbinding verstuurd",
     "close": "Sluiten",
     "closeDetails": "Sluit details",
     "closureRequestCarrefour": "Sluitingsaanvraag Carrefour",

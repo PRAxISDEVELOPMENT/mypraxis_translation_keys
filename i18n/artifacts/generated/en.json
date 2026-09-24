@@ -599,6 +599,7 @@
     "clientStatus": "Client status",
     "clientsWithCompletions": "Clients with completions",
     "clientUnpaid": "Client unpaid",
+    "clientUsesVPNConnection": "Client signals are transmitted via a VPN connection",
     "close": "Close",
     "closeDetails": "Close details",
     "closureRequestCarrefour": "Closure request Carrefour",

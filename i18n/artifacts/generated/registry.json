@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3632,
-    "uniqueKeys": 3632,
+    "totalEntries": 3633,
+    "uniqueKeys": 3633,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -18098,6 +18098,37 @@
         "nl": "Klant niet betaald",
         "fr": "Client non payé",
         "en": "Client unpaid"
+      }
+    },
+    {
+      "key": "common.clientUsesVPNConnection",
+      "namespace": "common",
+      "leaf": "clientUsesVPNConnection",
+      "segments": [
+        "common",
+        "clientUsesVPNConnection"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3633
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Signalen van de klant worden via een VPN-verbinding verstuurd",
+        "fr": "Les signaux du client sont transmis via une connexion VPN",
+        "en": "Client signals are transmitted via a VPN connection"
       }
     },
     {
@@ -61987,6 +62018,7 @@
         "reloadCache"
       ],
       "applications": [
+        "mypraxis_app",
         "mypraxis_web"
       ],
       "namespaceStatus": "active",
@@ -109769,7 +109801,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2566
+      "keyCount": 2567
     },
     {
       "name": "confirmation",

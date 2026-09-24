@@ -599,6 +599,7 @@
     "clientStatus": "Statut du client",
     "clientsWithCompletions": "Clients avec traitements d'alarme",
     "clientUnpaid": "Client non payé",
+    "clientUsesVPNConnection": "Les signaux du client sont transmis via une connexion VPN",
     "close": "Fermer",
     "closeDetails": "Fermer les détails",
     "closureRequestCarrefour": "Demande de fermeture Carrefour",

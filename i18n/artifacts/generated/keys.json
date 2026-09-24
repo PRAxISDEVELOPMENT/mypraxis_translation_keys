@@ -594,6 +594,7 @@
   "common.clientStatus",
   "common.clientsWithCompletions",
   "common.clientUnpaid",
+  "common.clientUsesVPNConnection",
   "common.close",
   "common.closeDetails",
   "common.closureRequestCarrefour",

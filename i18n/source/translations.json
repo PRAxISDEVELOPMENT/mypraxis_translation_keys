@@ -25447,6 +25447,13 @@
     "nl": "Cache herladen",
     "fr": "Recharger le cache",
     "en": "Reload cache",
-    "applications": ["mypraxis_web"]
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.clientUsesVPNConnection",
+    "nl": "Signalen van de klant worden via een VPN-verbinding verstuurd",
+    "fr": "Les signaux du client sont transmis via une connexion VPN",
+    "en": "Client signals are transmitted via a VPN connection",
+    "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

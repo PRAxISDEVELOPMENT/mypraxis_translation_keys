@@ -1194,7 +1194,7 @@
     "forgotPassword": "Mot de passe oublié?",
     "formula": "Formule",
     "forTheAttentionOfTheFinanceDepartment": "À l’attention du service financier",
-    "freeAfterHoursForActiveClients": "Gratuit en dehors des heures de bureau pour les clients actifs",
+    "freeAfterHoursForActiveClients": "Appels entrants après les heures de bureau (Off = entièrement gratuits / On = uniquement gratuits pour les clients actifs affiliés)",
     "freeMonthsConditional": "Mois gratuits (sous condition(s))",
     "freeMonthsGuaranteed": "Mois gratuits (garantis)",
     "freeNumber": "Numéro d'appel gratuit",

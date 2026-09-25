@@ -36075,9 +36075,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Gratis buiten kantooruren voor actieve klanten",
-        "fr": "Gratuit en dehors des heures de bureau pour les clients actifs",
-        "en": "Free after hours for active clients"
+        "nl": "Inkomende oproepen na kantooruren (Uit = volledig gratis / Aan = enkel gratis voor aangesloten active klanten)",
+        "fr": "Appels entrants après les heures de bureau (Off = entièrement gratuits / On = uniquement gratuits pour les clients actifs affiliés)",
+        "en": "Incoming calls after office hours (Off = completely free / On = only free for affiliated active clients)"
       }
     },
     {

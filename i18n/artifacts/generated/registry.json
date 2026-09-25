@@ -36075,7 +36075,7 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Inkomende oproepen na kantooruren (Uit = volledig gratis / Aan = enkel gratis voor aangesloten active klanten)",
+        "nl": "Inkomende oproepen na kantooruren (Uit = volledig gratis / Aan = enkel gratis voor aangesloten actieve klanten)",
         "fr": "Appels entrants après les heures de bureau (Off = entièrement gratuits / On = uniquement gratuits pour les clients actifs affiliés)",
         "en": "Incoming calls after office hours (Off = completely free / On = only free for affiliated active clients)"
       }

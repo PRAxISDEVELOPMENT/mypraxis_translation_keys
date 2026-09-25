@@ -67022,12 +67022,12 @@
       }
     },
     {
-      "key": "common.sendSignalsViaVPN",
+      "key": "common.sendSingalsViaVPN",
       "namespace": "common",
-      "leaf": "sendSignalsViaVPN",
+      "leaf": "sendSingalsViaVPN",
       "segments": [
         "common",
-        "sendSignalsViaVPN"
+        "sendSingalsViaVPN"
       ],
       "applications": [
         "mypraxis_app",

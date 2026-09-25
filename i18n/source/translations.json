@@ -25457,7 +25457,7 @@
     "applications": ["mypraxis_web", "mypraxis_app"]
   },
   {
-    "key": "common.sendSignalsViaVPN",
+    "key": "common.sendSingalsViaVPN",
     "nl": "Signalen versturen via VPN",
     "fr": "Envoyer des signaux via VPN",
     "en": "Send signals via VPN",

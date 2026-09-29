@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-09-29T11:26:48.627Z",
+  "inputFile": "i18n/uploads/incoming/translation-20260929112634-iiuta4.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 0,
+    "appliedDirectUpdates": 0,
+    "proposals": 1,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [],
+  "proposals": [
+    {
+      "type": "proposal",
+      "index": 1,
+      "suggestedKey": "common.testgeoff",
+      "suggestedNamespace": "common",
+      "confidence": "requested",
+      "reason": "Upload explicitly requested namespace \"common\".",
+      "submittedEntry": {
+        "nl": "TESTGEOFF",
+        "fr": "TESTGEOFF",
+        "en": "TESTGEOFF",
+        "notes": "DIT IS EEN TEST",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.testgeoff",
+        "nl": "TESTGEOFF",
+        "fr": "TESTGEOFF",
+        "en": "TESTGEOFF",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "notes": "DIT IS EEN TEST"
+      },
+      "reviewRequired": true
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

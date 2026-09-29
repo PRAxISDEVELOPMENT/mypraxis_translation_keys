@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3645,
-    "uniqueKeys": 3645,
+    "totalEntries": 3651,
+    "uniqueKeys": 3651,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -41974,6 +41974,68 @@
       }
     },
     {
+      "key": "common.integrationToken",
+      "namespace": "common",
+      "leaf": "integrationToken",
+      "segments": [
+        "common",
+        "integrationToken"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3646
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Integratietoken",
+        "fr": "Jeton d’intégration",
+        "en": "Integration token"
+      }
+    },
+    {
+      "key": "common.integrationTokenRegisteredDescription",
+      "namespace": "common",
+      "leaf": "integrationTokenRegisteredDescription",
+      "segments": [
+        "common",
+        "integrationTokenRegisteredDescription"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3647
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Voor deze integratie werd een token geregistreerd.",
+        "fr": "Un jeton a été enregistré pour cette intégration.",
+        "en": "A token has been registered for this integration."
+      }
+    },
+    {
       "key": "common.integrationTokenRequiredDescription",
       "namespace": "common",
       "leaf": "integrationTokenRequiredDescription",
@@ -61921,6 +61983,37 @@
         "nl": "Geregistreerd IP-adres",
         "fr": "Adresse IP enregistrée",
         "en": "Registered IP address"
+      }
+    },
+    {
+      "key": "common.registeredTokens",
+      "namespace": "common",
+      "leaf": "registeredTokens",
+      "segments": [
+        "common",
+        "registeredTokens"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3648
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Geregistreerde tokens",
+        "fr": "Jetons enregistrés",
+        "en": "Registered tokens"
       }
     },
     {
@@ -90899,6 +90992,37 @@
       }
     },
     {
+      "key": "info.copyIntegrationToken",
+      "namespace": "info",
+      "leaf": "copyIntegrationToken",
+      "segments": [
+        "info",
+        "copyIntegrationToken"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3649
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Kopieer onderstaande token en bewaar deze op een veilige plaats.",
+        "fr": "Copiez le jeton ci-dessous et conservez-le dans un endroit sécurisé.",
+        "en": "Copy the token below and store it in a secure location."
+      }
+    },
+    {
       "key": "info.cSLModulesMustBeOrderedVia",
       "namespace": "info",
       "leaf": "cSLModulesMustBeOrderedVia",
@@ -103084,6 +103208,37 @@
       }
     },
     {
+      "key": "success.integrationTokenCreated",
+      "namespace": "success",
+      "leaf": "integrationTokenCreated",
+      "segments": [
+        "success",
+        "integrationTokenCreated"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3650
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "De integratietoken voor {{value}} werd succesvol aangemaakt.",
+        "fr": "Le jeton d’intégration pour {{value}} a été créé avec succès.",
+        "en": "The integration token for {{value}} was created successfully."
+      }
+    },
+    {
       "key": "success.invitationSuccessfullySentTo",
       "namespace": "success",
       "leaf": "invitationSuccessfullySentTo",
@@ -110063,6 +110218,37 @@
       }
     },
     {
+      "key": "warning.youAreAboutToDeleteIntegrationToken",
+      "namespace": "warning",
+      "leaf": "youAreAboutToDeleteIntegrationToken",
+      "segments": [
+        "warning",
+        "youAreAboutToDeleteIntegrationToken"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3651
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "U staat op het punt de integratietoken voor {{value}} te verwijderen.",
+        "fr": "Vous êtes sur le point de supprimer le jeton d’intégration pour {{value}}.",
+        "en": "You are about to delete the integration token for {{value}}."
+      }
+    },
+    {
       "key": "warning.youAreAboutToDeleteOperator",
       "namespace": "warning",
       "leaf": "youAreAboutToDeleteOperator",
@@ -110173,7 +110359,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2577
+      "keyCount": 2580
     },
     {
       "name": "confirmation",
@@ -110194,7 +110380,7 @@
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 316
+      "keyCount": 317
     },
     {
       "name": "metadata",
@@ -110222,14 +110408,14 @@
       "label": "Geslaagd",
       "description": "Teksten die bevestigen dat een actie correct is uitgevoerd of succesvol is afgerond.",
       "status": "active",
-      "keyCount": 245
+      "keyCount": 246
     },
     {
       "name": "warning",
       "label": "Waarschuwingen",
       "description": "Teksten die de gebruiker wijzen op aandachtspunten, mogelijke gevolgen of vereiste zorgvuldigheid.",
       "status": "active",
-      "keyCount": 131
+      "keyCount": 132
     }
   ]
 }

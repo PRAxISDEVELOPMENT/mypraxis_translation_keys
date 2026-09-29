@@ -25539,5 +25539,47 @@
     "fr": "Cette liaison est en cours de développement et sera bientôt disponible.",
     "en": "This integration is under development and will be available soon.",
     "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.integrationToken",
+    "nl": "Integratietoken",
+    "fr": "Jeton d’intégration",
+    "en": "Integration token",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.integrationTokenRegisteredDescription",
+    "nl": "Voor deze integratie werd een token geregistreerd.",
+    "fr": "Un jeton a été enregistré pour cette intégration.",
+    "en": "A token has been registered for this integration.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.registeredTokens",
+    "nl": "Geregistreerde tokens",
+    "fr": "Jetons enregistrés",
+    "en": "Registered tokens",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "info.copyIntegrationToken",
+    "nl": "Kopieer onderstaande token en bewaar deze op een veilige plaats.",
+    "fr": "Copiez le jeton ci-dessous et conservez-le dans un endroit sécurisé.",
+    "en": "Copy the token below and store it in a secure location.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "success.integrationTokenCreated",
+    "nl": "De integratietoken voor {{value}} werd succesvol aangemaakt.",
+    "fr": "Le jeton d’intégration pour {{value}} a été créé avec succès.",
+    "en": "The integration token for {{value}} was created successfully.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "warning.youAreAboutToDeleteIntegrationToken",
+    "nl": "U staat op het punt de integratietoken voor {{value}} te verwijderen.",
+    "fr": "Vous êtes sur le point de supprimer le jeton d’intégration pour {{value}}.",
+    "en": "You are about to delete the integration token for {{value}}.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

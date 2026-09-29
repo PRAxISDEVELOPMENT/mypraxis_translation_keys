@@ -21,7 +21,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2577
+      "keyCount": 2580
     },
     {
       "name": "confirmation",
@@ -42,7 +42,7 @@
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 316
+      "keyCount": 317
     },
     {
       "name": "metadata",
@@ -70,14 +70,14 @@
       "label": "Geslaagd",
       "description": "Teksten die bevestigen dat een actie correct is uitgevoerd of succesvol is afgerond.",
       "status": "active",
-      "keyCount": 245
+      "keyCount": 246
     },
     {
       "name": "warning",
       "label": "Waarschuwingen",
       "description": "Teksten die de gebruiker wijzen op aandachtspunten, mogelijke gevolgen of vereiste zorgvuldigheid.",
       "status": "active",
-      "keyCount": 131
+      "keyCount": 132
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "nl": "TESTGEOFF",
+      "fr": "TESTGEOFF",
+      "en": "TESTGEOFF",
+      "requestedNamespace": "common",
+      "notes": "DIT IS EEN TEST"
+    }
+  ]
+}

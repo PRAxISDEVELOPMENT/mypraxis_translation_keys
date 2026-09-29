@@ -1478,6 +1478,7 @@
     "latitude": "Latitude",
     "launchDuration": "Démarrage du système de mise à jour",
     "layouts": "Mise en page",
+    "leaveEmptyToAutomaticallyAssignAnEpromNumber": "Laissez ce champ vide pour attribuer automatiquement un numéro EPROM. La saisie manuelle doit contenir exactement 4 ou 6 chiffres.",
     "leavingPost": "Abandon de son poste",
     "legallyCohabiting": "Cohabitation légale",
     "legallySeparated": "Légalement séparé",

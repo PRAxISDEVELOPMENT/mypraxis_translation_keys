@@ -1473,6 +1473,7 @@
   "common.latitude",
   "common.launchDuration",
   "common.layouts",
+  "common.leaveEmptyToAutomaticallyAssignAnEpromNumber",
   "common.leavingPost",
   "common.legallyCohabiting",
   "common.legallySeparated",

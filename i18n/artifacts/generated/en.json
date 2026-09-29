@@ -1478,6 +1478,7 @@
     "latitude": "Latitude",
     "launchDuration": "Update system launch duration",
     "layouts": "Layouts",
+    "leaveEmptyToAutomaticallyAssignAnEpromNumber": "Leave this field empty to assign an EPROM number automatically. Manual entries must contain exactly 4 or 6 digits.",
     "leavingPost": "Leaving post",
     "legallyCohabiting": "Legally cohabiting",
     "legallySeparated": "Legally separated",

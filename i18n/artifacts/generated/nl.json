@@ -1478,6 +1478,7 @@
     "latitude": "Breedtegraad",
     "launchDuration": "Opstartduur updatesysteem",
     "layouts": "Opmaak",
+    "leaveEmptyToAutomaticallyAssignAnEpromNumber": "Laat dit veld leeg om automatisch een EPROM-nummer toe te kennen. Bij handmatige invoer zijn exact 4 of 6 cijfers vereist.",
     "leavingPost": "Postverlating",
     "legallyCohabiting": "Wettelijk samenwonend",
     "legallySeparated": "Wettelijk gescheiden",

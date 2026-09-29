@@ -25581,5 +25581,12 @@
     "fr": "Vous êtes sur le point de supprimer le jeton d’intégration pour {{value}}.",
     "en": "You are about to delete the integration token for {{value}}.",
     "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.leaveEmptyToAutomaticallyAssignAnEpromNumber",
+    "nl": "Laat dit veld leeg om automatisch een EPROM-nummer toe te kennen. Bij handmatige invoer zijn exact 4 of 6 cijfers vereist.",
+    "fr": "Laissez ce champ vide pour attribuer automatiquement un numéro EPROM. La saisie manuelle doit contenir exactement 4 ou 6 chiffres.",
+    "en": "Leave this field empty to assign an EPROM number automatically. Manual entries must contain exactly 4 or 6 digits.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

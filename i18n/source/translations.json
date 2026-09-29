@@ -25462,5 +25462,12 @@
     "fr": "Envoyer des signaux via VPN",
     "en": "Send signals via VPN",
     "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.integrations",
+    "nl": "Integraties",
+    "fr": "Intégrations",
+    "en": "Integrations",
+    "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3635,
-    "uniqueKeys": 3635,
+    "totalEntries": 3642,
+    "uniqueKeys": 3642,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -26761,6 +26761,37 @@
         "nl": "Ticket verwijderen",
         "fr": "Supprimer le ticket",
         "en": "Delete ticket"
+      }
+    },
+    {
+      "key": "common.deleteToken",
+      "namespace": "common",
+      "leaf": "deleteToken",
+      "segments": [
+        "common",
+        "deleteToken"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3636
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Token verwijderen",
+        "fr": "Supprimer le jeton",
+        "en": "Delete token"
       }
     },
     {
@@ -63885,6 +63916,37 @@
       }
     },
     {
+      "key": "common.requestToken",
+      "namespace": "common",
+      "leaf": "requestToken",
+      "segments": [
+        "common",
+        "requestToken"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3637
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Token aanvragen",
+        "fr": "Demander un jeton",
+        "en": "Request token"
+      }
+    },
+    {
       "key": "common.requestWalktests",
       "namespace": "common",
       "leaf": "requestWalktests",
@@ -73415,6 +73477,68 @@
       }
     },
     {
+      "key": "common.tokenNotRegistered",
+      "namespace": "common",
+      "leaf": "tokenNotRegistered",
+      "segments": [
+        "common",
+        "tokenNotRegistered"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3639
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Token nog niet geregistreerd",
+        "fr": "Jeton pas encore enregistré",
+        "en": "Token not yet registered"
+      }
+    },
+    {
+      "key": "common.tokenRegistered",
+      "namespace": "common",
+      "leaf": "tokenRegistered",
+      "segments": [
+        "common",
+        "tokenRegistered"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3638
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Token geregistreerd",
+        "fr": "Jeton enregistré",
+        "en": "Token registered"
+      }
+    },
+    {
       "key": "common.tooltip",
       "namespace": "common",
       "leaf": "tooltip",
@@ -75010,6 +75134,37 @@
         "nl": "Niet gedefinieerd",
         "fr": "Indéfini",
         "en": "Undefined"
+      }
+    },
+    {
+      "key": "common.underConstruction",
+      "namespace": "common",
+      "leaf": "underConstruction",
+      "segments": [
+        "common",
+        "underConstruction"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3640
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "In opbouw",
+        "fr": "En construction",
+        "en": "Under construction"
       }
     },
     {
@@ -105033,6 +105188,68 @@
       }
     },
     {
+      "key": "success.tokenCreated",
+      "namespace": "success",
+      "leaf": "tokenCreated",
+      "segments": [
+        "success",
+        "tokenCreated"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3641
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Token aangemaakt",
+        "fr": "Jeton créé",
+        "en": "Token created"
+      }
+    },
+    {
+      "key": "success.tokenDeleted",
+      "namespace": "success",
+      "leaf": "tokenDeleted",
+      "segments": [
+        "success",
+        "tokenDeleted"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3642
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Token verwijderd",
+        "fr": "Jeton supprimé",
+        "en": "Token deleted"
+      }
+    },
+    {
       "key": "success.translationCompleted",
       "namespace": "success",
       "leaf": "translationCompleted",
@@ -109863,7 +110080,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2569
+      "keyCount": 2574
     },
     {
       "name": "confirmation",
@@ -109912,7 +110129,7 @@
       "label": "Geslaagd",
       "description": "Teksten die bevestigen dat een actie correct is uitgevoerd of succesvol is afgerond.",
       "status": "active",
-      "keyCount": 243
+      "keyCount": 245
     },
     {
       "name": "warning",

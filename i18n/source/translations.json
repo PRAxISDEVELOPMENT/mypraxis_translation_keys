@@ -25469,5 +25469,54 @@
     "fr": "Intégrations",
     "en": "Integrations",
     "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.deleteToken",
+    "nl": "Token verwijderen",
+    "fr": "Supprimer le jeton",
+    "en": "Delete token",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.requestToken",
+    "nl": "Token aanvragen",
+    "fr": "Demander un jeton",
+    "en": "Request token",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.tokenRegistered",
+    "nl": "Token geregistreerd",
+    "fr": "Jeton enregistré",
+    "en": "Token registered",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.tokenNotRegistered",
+    "nl": "Token nog niet geregistreerd",
+    "fr": "Jeton pas encore enregistré",
+    "en": "Token not yet registered",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.underConstruction",
+    "nl": "In opbouw",
+    "fr": "En construction",
+    "en": "Under construction",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "success.tokenCreated",
+    "nl": "Token aangemaakt",
+    "fr": "Jeton créé",
+    "en": "Token created",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "success.tokenDeleted",
+    "nl": "Token verwijderd",
+    "fr": "Jeton supprimé",
+    "en": "Token deleted",
+    "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

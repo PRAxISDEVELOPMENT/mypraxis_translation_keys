@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3642,
-    "uniqueKeys": 3642,
+    "totalEntries": 3645,
+    "uniqueKeys": 3645,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -41912,6 +41912,37 @@
       }
     },
     {
+      "key": "common.integrationInDevelopmentDescription",
+      "namespace": "common",
+      "leaf": "integrationInDevelopmentDescription",
+      "segments": [
+        "common",
+        "integrationInDevelopmentDescription"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3645
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Deze koppeling wordt momenteel gebouwd en is binnenkort beschikbaar.",
+        "fr": "Cette liaison est en cours de développement et sera bientôt disponible.",
+        "en": "This integration is under development and will be available soon."
+      }
+    },
+    {
       "key": "common.integrations",
       "namespace": "common",
       "leaf": "integrations",
@@ -41940,6 +41971,68 @@
         "nl": "Integraties",
         "fr": "Intégrations",
         "en": "Integrations"
+      }
+    },
+    {
+      "key": "common.integrationTokenRequiredDescription",
+      "namespace": "common",
+      "leaf": "integrationTokenRequiredDescription",
+      "segments": [
+        "common",
+        "integrationTokenRequiredDescription"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3643
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Er is een geldig token vereist om deze integratie te activeren.",
+        "fr": "Un jeton valide is requis pour activer cette intégration.",
+        "en": "A valid token is required to activate this integration."
+      }
+    },
+    {
+      "key": "common.integrationUnavailableTitle",
+      "namespace": "common",
+      "leaf": "integrationUnavailableTitle",
+      "segments": [
+        "common",
+        "integrationUnavailableTitle"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3644
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Integratie niet beschikbaar",
+        "fr": "Intégration indisponible",
+        "en": "Integration unavailable"
       }
     },
     {
@@ -110080,7 +110173,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2574
+      "keyCount": 2577
     },
     {
       "name": "confirmation",

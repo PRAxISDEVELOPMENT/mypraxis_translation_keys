@@ -25518,5 +25518,26 @@
     "fr": "Jeton supprimé",
     "en": "Token deleted",
     "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.integrationTokenRequiredDescription",
+    "nl": "Er is een geldig token vereist om deze integratie te activeren.",
+    "fr": "Un jeton valide is requis pour activer cette intégration.",
+    "en": "A valid token is required to activate this integration.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.integrationUnavailableTitle",
+    "nl": "Integratie niet beschikbaar",
+    "fr": "Intégration indisponible",
+    "en": "Integration unavailable",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.integrationInDevelopmentDescription",
+    "nl": "Deze koppeling wordt momenteel gebouwd en is binnenkort beschikbaar.",
+    "fr": "Cette liaison est en cours de développement et sera bientôt disponible.",
+    "en": "This integration is under development and will be available soon.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3652,
-    "uniqueKeys": 3652,
+    "totalEntries": 3655,
+    "uniqueKeys": 3655,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -19371,6 +19371,37 @@
       }
     },
     {
+      "key": "common.completedBy",
+      "namespace": "common",
+      "leaf": "completedBy",
+      "segments": [
+        "common",
+        "completedBy"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3653
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Afgehandeld door",
+        "fr": "Clôturé par",
+        "en": "Completed by"
+      }
+    },
+    {
       "key": "common.completions",
       "namespace": "common",
       "leaf": "completions",
@@ -38015,6 +38046,37 @@
       }
     },
     {
+      "key": "common.handledBy",
+      "namespace": "common",
+      "leaf": "handledBy",
+      "segments": [
+        "common",
+        "handledBy"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3654
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Behandeld door",
+        "fr": "Traité par",
+        "en": "Handled by"
+      }
+    },
+    {
       "key": "common.handling",
       "namespace": "common",
       "leaf": "handling",
@@ -54883,6 +54945,37 @@
         "nl": "Commentaar operator",
         "fr": "Commentaire de l'opérateur PRAxIS",
         "en": "Operator comment"
+      }
+    },
+    {
+      "key": "common.operatorNoLongerEmployed",
+      "namespace": "common",
+      "leaf": "operatorNoLongerEmployed",
+      "segments": [
+        "common",
+        "operatorNoLongerEmployed"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3655
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Operator niet meer in dienst",
+        "fr": "Opérateur ne faisant plus partie du personnel",
+        "en": "Operator no longer employed"
       }
     },
     {
@@ -110390,7 +110483,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2581
+      "keyCount": 2584
     },
     {
       "name": "confirmation",

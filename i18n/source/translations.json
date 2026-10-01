@@ -25609,5 +25609,47 @@
     "fr": "Opérateur ne faisant plus partie du personnel",
     "en": "Operator no longer employed",
     "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.applicantNotInList",
+    "nl": "Aanvrager niet in de lijst",
+    "fr": "Demandeur absent de la liste",
+    "en": "Requester not in the list",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.mediaSelectedCount",
+    "nl": "{{count}} geselecteerd",
+    "fr": "{{count}} sélectionné(s)",
+    "en": "{{count}} selected",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.selectContactPerson",
+    "nl": "Contactpersoon selecteren",
+    "fr": "Sélectionner un contact",
+    "en": "Select contact",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.selectEmailAddresses",
+    "nl": "E-mailadressen selecteren",
+    "fr": "Sélectionner les adresses e-mail",
+    "en": "Select email addresses",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.selectMediaItem",
+    "nl": "Dit bestand selecteren",
+    "fr": "Sélectionner ce fichier",
+    "en": "Select this file",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.sendMedia",
+    "nl": "Beelden versturen",
+    "fr": "Envoyer les médias",
+    "en": "Send media",
+    "applications": ["mypraxis_web"]
   }
 ]

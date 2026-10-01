@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3655,
-    "uniqueKeys": 3655,
+    "totalEntries": 3661,
+    "uniqueKeys": 3661,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -9338,6 +9338,36 @@
         "nl": "Appversie, toestel, iOS en vertalingen",
         "fr": "Version, appareil, iOS et traductions",
         "en": "App version, device, iOS, and translations"
+      }
+    },
+    {
+      "key": "common.applicantNotInList",
+      "namespace": "common",
+      "leaf": "applicantNotInList",
+      "segments": [
+        "common",
+        "applicantNotInList"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3656
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Aanvrager niet in de lijst",
+        "fr": "Demandeur absent de la liste",
+        "en": "Requester not in the list"
       }
     },
     {
@@ -48386,6 +48416,36 @@
       }
     },
     {
+      "key": "common.mediaSelectedCount",
+      "namespace": "common",
+      "leaf": "mediaSelectedCount",
+      "segments": [
+        "common",
+        "mediaSelectedCount"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3657
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "{{count}} geselecteerd",
+        "fr": "{{count}} sélectionné(s)",
+        "en": "{{count}} selected"
+      }
+    },
+    {
       "key": "common.medicalHelpNeeded",
       "namespace": "common",
       "leaf": "medicalHelpNeeded",
@@ -66792,6 +66852,36 @@
       }
     },
     {
+      "key": "common.selectContactPerson",
+      "namespace": "common",
+      "leaf": "selectContactPerson",
+      "segments": [
+        "common",
+        "selectContactPerson"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3658
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Contactpersoon selecteren",
+        "fr": "Sélectionner un contact",
+        "en": "Select contact"
+      }
+    },
+    {
       "key": "common.selectContractType",
       "namespace": "common",
       "leaf": "selectContractType",
@@ -66974,6 +67064,36 @@
       }
     },
     {
+      "key": "common.selectEmailAddresses",
+      "namespace": "common",
+      "leaf": "selectEmailAddresses",
+      "segments": [
+        "common",
+        "selectEmailAddresses"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3659
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "E-mailadressen selecteren",
+        "fr": "Sélectionner les adresses e-mail",
+        "en": "Select email addresses"
+      }
+    },
+    {
       "key": "common.selectFile",
       "namespace": "common",
       "leaf": "selectFile",
@@ -67121,6 +67241,36 @@
         "nl": "Media selecteren",
         "fr": "Sélectionner média",
         "en": "Select media"
+      }
+    },
+    {
+      "key": "common.selectMediaItem",
+      "namespace": "common",
+      "leaf": "selectMediaItem",
+      "segments": [
+        "common",
+        "selectMediaItem"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3660
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Dit bestand selecteren",
+        "fr": "Sélectionner ce fichier",
+        "en": "Select this file"
       }
     },
     {
@@ -67392,6 +67542,36 @@
         "nl": "E-mail versturen indien geen resultaten",
         "fr": "Envoyer un e-mail en cas d'absence de résultats",
         "en": "Send e-mail if no results"
+      }
+    },
+    {
+      "key": "common.sendMedia",
+      "namespace": "common",
+      "leaf": "sendMedia",
+      "segments": [
+        "common",
+        "sendMedia"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3661
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Beelden versturen",
+        "fr": "Envoyer les médias",
+        "en": "Send media"
       }
     },
     {
@@ -110483,7 +110663,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2584
+      "keyCount": 2590
     },
     {
       "name": "confirmation",

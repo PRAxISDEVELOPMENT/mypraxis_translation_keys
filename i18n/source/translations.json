@@ -25641,5 +25641,222 @@
     "fr": "Envoyer les médias",
     "en": "Send media",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsOfWhichManual",
+    "nl": "Waarvan handmatig",
+    "fr": "Dont manuels",
+    "en": "Of which manual",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsInboxVariation",
+    "nl": "Schommeling in openstaande e-mails",
+    "fr": "Variation du nombre d’e-mails en attente",
+    "en": "Variation in open emails",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsLegendMinimumOpen",
+    "nl": "Laagste aantal",
+    "fr": "Nombre minimum",
+    "en": "Lowest count",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsLegendMaximumOpen",
+    "nl": "Hoogste aantal",
+    "fr": "Nombre maximum",
+    "en": "Highest count",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsOpenLastInBlock",
+    "nl": "Laatste meting binnen dit tijdsblok",
+    "fr": "Dernière mesure dans ce créneau",
+    "en": "Latest measurement within this time block",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsOpenLastInfo",
+    "nl": "Toont hoeveel inkomende e-mails bij de laatste beschikbare meting in de geselecteerde periode nog openstonden in de dispatch-inbox.",
+    "fr": "Indique combien d’e-mails entrants étaient encore en attente dans la boîte dispatch lors de la dernière mesure disponible sur la période sélectionnée.",
+    "en": "Shows how many incoming emails were still open in the dispatch inbox at the latest available measurement within the selected period.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsPeakAndLastInbox",
+    "nl": "Hoogste aantal · laatste meting",
+    "fr": "Nombre maximum · dernière mesure",
+    "en": "Highest count · latest measurement",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsPeakAndLastInboxInfo",
+    "nl": "Het hoogste aantal in de inbox en de laatste meting vallen in hetzelfde tijdsblok. Daarom staan de details hier één keer. Gelijke aantallen betekenen dat de metingen binnen dit blok geen verschil tonen. Dit kan ook voorkomen als er maar één meting beschikbaar is.",
+    "fr": "Le nombre le plus élevé dans la boîte et la dernière mesure concernent le même créneau. Les détails sont donc affichés une seule fois. Des valeurs identiques indiquent que les mesures ne montrent aucune variation dans ce créneau. Cela peut aussi arriver lorsqu’une seule mesure est disponible.",
+    "en": "The highest inbox count and the latest measurement fall within the same time block, so the details appear once. Equal counts mean the measurements show no variation within this block. This can also happen when only one measurement is available.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsLegendReceived",
+    "nl": "Ontvangen",
+    "fr": "Reçus",
+    "en": "Received",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsBusiestPeriod",
+    "nl": "Drukste e-mailperiode",
+    "fr": "Période d’e-mails la plus chargée",
+    "en": "Busiest email period",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsPeakMoment",
+    "nl": "Piekmoment e-mailverkeer",
+    "fr": "Pic du trafic des e-mails",
+    "en": "Email traffic peak",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsPeakInbox",
+    "nl": "Grootste aantal openstaande e-mails",
+    "fr": "Nombre le plus élevé d’e-mails en attente",
+    "en": "Highest number of open emails",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsLastSnapshot",
+    "nl": "Laatste meting",
+    "fr": "Dernière mesure",
+    "en": "Latest measurement",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsBusiestPeriodInfo",
+    "nl": "Toont minstens twee opeenvolgende tijdsblokken met meer e-mails dan het gemiddelde per tijdsblok binnen de geselecteerde gegevens. De periode met het hoogste totale aantal e-mails wordt gekozen. Ontbrekende tijdsblokken onderbreken de periode.",
+    "fr": "Indique au moins deux créneaux consécutifs avec plus d’e-mails que la moyenne par créneau dans les données sélectionnées. La période ayant le total le plus élevé est retenue. Les créneaux manquants interrompent la période.",
+    "en": "Shows at least two consecutive time blocks with more emails than the average per block in the selected data. The period with the highest total is selected. Missing time blocks interrupt the period.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsPeakMomentInfo",
+    "nl": "Toont het tijdsblok met het hoogste totale aantal ontvangen en verzonden e-mails. Automatische mails maken deel uit van het verzonden aantal en worden niet dubbel geteld.",
+    "fr": "Indique le créneau avec le plus grand nombre total d’e-mails reçus et envoyés. Les e-mails automatiques sont inclus dans les envois et ne sont pas comptés deux fois.",
+    "en": "Shows the time block with the highest total number of received and sent emails. Automated emails are included in sent emails and are not counted twice.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsPeakInboxInfo",
+    "nl": "Toont het tijdsblok waarin het hoogste aantal openstaande inkomende e-mails in de dispatch-inbox is gemeten. De details gelden voor dit tijdsblok. Zijn alle aantallen gelijk, dan tonen de metingen binnen dit blok geen verschil. Dit kan ook voorkomen als er maar één meting beschikbaar is.",
+    "fr": "Indique le créneau durant lequel le nombre le plus élevé d’e-mails entrants en attente a été mesuré dans la boîte dispatch. Les détails concernent ce créneau. Des valeurs identiques indiquent que les mesures ne montrent aucune variation. Cela peut aussi arriver lorsqu’une seule mesure est disponible.",
+    "en": "Shows the time block with the highest recorded count of open incoming emails in the dispatch inbox. Details apply to this block. Equal counts mean the measurements show no variation. This can also happen when only one measurement is available.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsLastSnapshotInfo",
+    "nl": "Toont het laatste tijdsblok met een beschikbare inboxmeting. Het laagste, hoogste en gemiddelde aantal gelden voor dit tijdsblok. Het aantal bij de laatste meting is de laatst gevonden waarde binnen dit blok. Gelijke aantallen kunnen betekenen dat er geen verschil is gemeten of dat er maar één meting beschikbaar is.",
+    "fr": "Indique le dernier créneau avec une mesure disponible de la boîte. Les nombres minimum, maximum et moyen concernent ce créneau. Le dernier nombre est la dernière valeur mesurée dans ce créneau. Des valeurs identiques peuvent indiquer une absence de variation mesurée ou une seule mesure disponible.",
+    "en": "Shows the latest time block with an available inbox measurement. The lowest, highest and average counts apply to this block. The last count is the latest recorded value within this block. Equal counts can mean no measured variation or only one available measurement.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailWorkload",
+    "nl": "E-maildrukte",
+    "fr": "Charge des e-mails",
+    "en": "Email workload",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailTraffic",
+    "nl": "E-mailverkeer",
+    "fr": "Trafic des e-mails",
+    "en": "Email traffic",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.openIncomingEmails",
+    "nl": "Openstaande inkomende e-mails",
+    "fr": "E-mails entrants en attente",
+    "en": "Open incoming emails",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsTotal",
+    "nl": "Totaal ontvangen en verzonden",
+    "fr": "Total reçus et envoyés",
+    "en": "Total received and sent",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsReceived",
+    "nl": "Ontvangen e-mails",
+    "fr": "E-mails reçus",
+    "en": "Received emails",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsSent",
+    "nl": "Verzonden e-mails",
+    "fr": "E-mails envoyés",
+    "en": "Sent emails",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsManuallySent",
+    "nl": "Handmatig verzonden",
+    "fr": "Envoyés manuellement",
+    "en": "Manually sent",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsAutomaticallySent",
+    "nl": "Automatisch verzonden",
+    "fr": "Envoyés automatiquement",
+    "en": "Automatically sent",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsOfWhichAutomated",
+    "nl": "Waarvan automatisch",
+    "fr": "Dont automatiques",
+    "en": "Of which automated",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsOpenAverage",
+    "nl": "Gemiddeld aantal in de inbox",
+    "fr": "Nombre moyen dans la boîte",
+    "en": "Average inbox count",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsOpenMinimum",
+    "nl": "Laagste aantal in de inbox",
+    "fr": "Nombre minimum dans la boîte",
+    "en": "Lowest inbox count",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsOpenMaximum",
+    "nl": "Hoogste aantal in de inbox",
+    "fr": "Nombre maximum dans la boîte",
+    "en": "Highest inbox count",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailsOpenLast",
+    "nl": "Aantal bij de laatste meting",
+    "fr": "Nombre à la dernière mesure",
+    "en": "Count at the latest measurement",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.emailCount",
+    "nl": "Aantal e-mails",
+    "fr": "Nombre d’e-mails",
+    "en": "Number of emails",
+    "applications": ["mypraxis_web"]
   }
 ]

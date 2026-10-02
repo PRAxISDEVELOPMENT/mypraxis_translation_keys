@@ -15,8 +15,8 @@
     "applications": 5,
     "duplicateKeys": 0,
     "keysWithMissingLocales": 0,
-    "keysWithReviewRequired": 6,
-    "localeReviewsRequired": 14
+    "keysWithReviewRequired": 4,
+    "localeReviewsRequired": 8
   },
   "applications": [
     {
@@ -90167,19 +90167,15 @@
       "duplicateValuesDiffer": false,
       "missingLocales": [],
       "status": {
-        "nl": "review-required",
-        "fr": "review-required",
-        "en": "review-required"
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
       },
-      "reviewRequiredLocales": [
-        "nl",
-        "fr",
-        "en"
-      ],
+      "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Drukste periode info",
-        "fr": "Informations sur la période la plus chargée",
-        "en": "Busiest period information"
+        "nl": "Toont de aaneengesloten periode met de hoogste drukte binnen de geselecteerde gegevens. Hiervoor vergelijken we de totale wachttijd per tijdsblok met de ingestelde drempelwaarden. Minstens twee opeenvolgende tijdsblokken moeten de waarschuwingsdrempel bereiken. Periodes met kritieke drukte krijgen voorrang, gevolgd door de hoogste totale wachttijd. Als geen geschikte periode wordt gevonden, zoeken we naar opeenvolgende blokken met een wachttijd of aantal oproepen op of boven het gemiddelde.",
+        "fr": "Affiche la période continue présentant la charge la plus élevée parmi les données sélectionnées. Pour cela, nous comparons le temps d’attente total de chaque intervalle aux seuils configurés. Au moins deux intervalles consécutifs doivent atteindre le seuil d’avertissement. Les périodes présentant une charge critique sont prioritaires, puis celles dont le temps d’attente total est le plus élevé. Si aucune période ne répond à ces critères, nous recherchons des intervalles consécutifs dont le temps d’attente ou le nombre d’appels est supérieur ou égal à la moyenne.",
+        "en": "Shows the continuous period with the highest workload within the selected data. To determine this, we compare the total waiting time in each time block with the configured thresholds. At least two consecutive time blocks must reach the warning threshold. Periods with a critical workload take priority, followed by those with the highest total waiting time. If no period meets these criteria, we look for consecutive blocks where the waiting time or number of calls is at or above the average."
       }
     },
     {
@@ -94816,19 +94812,15 @@
       "duplicateValuesDiffer": false,
       "missingLocales": [],
       "status": {
-        "nl": "review-required",
-        "fr": "review-required",
-        "en": "review-required"
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
       },
-      "reviewRequiredLocales": [
-        "nl",
-        "fr",
-        "en"
-      ],
+      "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Piekmoment info",
-        "fr": "Informations sur le moment de pointe",
-        "en": "Peak moment information"
+        "nl": "Toont het tijdsblok met de hoogste totale wachttijd binnen de geselecteerde gegevens. Hiervoor tellen we de wachttijden van alle meegenomen oproepen binnen elk tijdsblok op. Bij een gelijke totale wachttijd krijgt het blok met de meeste oproepen voorrang. Is ook dat aantal gelijk, dan kiezen we het blok met de hoogste gemiddelde wachttijd per oproep. De gekozen weergavefrequentie bepaalt de duur van het tijdsblok. De berekening houdt rekening met de geselecteerde periode, filters en oproepprioriteiten.",
+        "fr": "Affiche l’intervalle présentant le temps d’attente total le plus élevé parmi les données sélectionnées. Pour cela, nous additionnons les temps d’attente de tous les appels pris en compte dans chaque intervalle. En cas d’égalité, l’intervalle comportant le plus d’appels est prioritaire. Si le nombre d’appels est également identique, nous choisissons l’intervalle présentant le temps d’attente moyen par appel le plus élevé. La fréquence d’affichage choisie détermine la durée de l’intervalle. Le calcul tient compte de la période, des filtres et des priorités d’appel sélectionnés.",
+        "en": "Shows the time block with the highest total waiting time within the selected data. To determine this, we add up the waiting times of all included calls in each time block. If the total waiting time is equal, the block with the most calls takes priority. If the number of calls is also equal, we select the block with the highest average waiting time per call. The selected display frequency determines the duration of the time block. The calculation takes into account the selected period, filters and call priorities."
       }
     },
     {

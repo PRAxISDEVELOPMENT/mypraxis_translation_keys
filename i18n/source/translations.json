@@ -25868,7 +25868,7 @@
   },
   {
     "key": "common.queues",
-    "nl": "Wachtrijen.",
+    "nl": "Wachtrijen",
     "fr": "Files d’attente",
     "en": "Queues",
     "applications": ["mypraxis_web"]

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3692,
-    "uniqueKeys": 3692,
+    "totalEntries": 3693,
+    "uniqueKeys": 3693,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -57480,6 +57480,37 @@
       }
     },
     {
+      "key": "common.panelUserCode",
+      "namespace": "common",
+      "leaf": "panelUserCode",
+      "segments": [
+        "common",
+        "panelUserCode"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3693
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gebruikersnummer klavier (alarmsysteem)",
+        "fr": "Numéro utilisateur du clavier (système d’alarme)",
+        "en": "Keypad user number (alarm system)"
+      }
+    },
+    {
       "key": "common.parameterIsTooLongMaximumCharacters",
       "namespace": "common",
       "leaf": "parameterIsTooLongMaximumCharacters",
@@ -111585,7 +111616,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2621
+      "keyCount": 2622
     },
     {
       "name": "confirmation",

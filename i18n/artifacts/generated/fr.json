@@ -1903,6 +1903,7 @@
     "paidInvoicesDescription": "Consultez vos factures payées",
     "paidNumber": "Numéro d'appel payant",
     "paidOn": "Payé le",
+    "panelUserCode": "Numéro utilisateur du clavier (système d’alarme)",
     "parameterIsTooLongMaximumCharacters": "Paramètre '{{param}}': est trop long (maximum {{max_size}} characters).",
     "parameterIsTooShortMinimumCharacters": "Paramètre '{{param}}': est trop court (minimum {{min_size}} characters).",
     "partially": "Partiellement",

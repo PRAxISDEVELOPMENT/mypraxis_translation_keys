@@ -25858,5 +25858,12 @@
     "fr": "Nombre d’e-mails",
     "en": "Number of emails",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.panelUserCode",
+    "nl": "Gebruikersnummer klavier (alarmsysteem)",
+    "fr": "Numéro utilisateur du clavier (système d’alarme)",
+    "en": "Keypad user number (alarm system)",
+    "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

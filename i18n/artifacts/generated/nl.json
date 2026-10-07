@@ -1903,6 +1903,7 @@
     "paidInvoicesDescription": "Raadpleeg uw betaalde facturen",
     "paidNumber": "Betalend oproepnummer",
     "paidOn": "Betaald op",
+    "panelUserCode": "Gebruikersnummer klavier (alarmsysteem)",
     "parameterIsTooLongMaximumCharacters": "Parameter '{{param}}' is te lang (maximum {{max_size}} tekens).",
     "parameterIsTooShortMinimumCharacters": "Parameter '{{param}}' is te kort (minimum {{min_size}} tekens).",
     "partially": "Gedeeltelijk",

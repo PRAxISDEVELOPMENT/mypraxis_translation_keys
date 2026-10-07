@@ -25865,5 +25865,54 @@
     "fr": "Numéro utilisateur du clavier (système d’alarme)",
     "en": "Keypad user number (alarm system)",
     "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.queues",
+    "nl": "Wachtrijen",
+    "fr": "Files d’attente",
+    "en": "Queues",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.changeTemplate",
+    "nl": "Template wijzigen",
+    "fr": "Modifier le modèle",
+    "en": "Edit template",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.deleteTemplate",
+    "nl": "Template verwijderen",
+    "fr": "Supprimer le modèle",
+    "en": "Delete template",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "success.templateAdded",
+    "nl": "Template toegevoegd",
+    "fr": "Modèle ajouté",
+    "en": "Template added",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "success.templateChanged",
+    "nl": "Template gewijzigd",
+    "fr": "Modèle modifié",
+    "en": "Template updated",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "success.templateDeleted",
+    "nl": "Template verwijderd",
+    "fr": "Modèle supprimé",
+    "en": "Template deleted",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "warning.aboutToDeleteTemplates",
+    "nl": "Je staat op het punt {{value}} template(s) te verwijderen.",
+    "fr": "Vous êtes sur le point de supprimer {{value}} modèle(s).",
+    "en": "You are about to delete {{value}} template(s).",
+    "applications": ["mypraxis_web"]
   }
 ]

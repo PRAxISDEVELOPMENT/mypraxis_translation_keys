@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3693,
-    "uniqueKeys": 3693,
+    "totalEntries": 3700,
+    "uniqueKeys": 3700,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -16193,6 +16193,36 @@
       }
     },
     {
+      "key": "common.changeTemplate",
+      "namespace": "common",
+      "leaf": "changeTemplate",
+      "segments": [
+        "common",
+        "changeTemplate"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3695
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Template wijzigen",
+        "fr": "Modifier le modèle",
+        "en": "Edit template"
+      }
+    },
+    {
       "key": "common.changeTemporaryCallList",
       "namespace": "common",
       "leaf": "changeTemporaryCallList",
@@ -26702,6 +26732,36 @@
         "nl": "Dienst verwijderen",
         "fr": "Supprimer le service",
         "en": "Delete service"
+      }
+    },
+    {
+      "key": "common.deleteTemplate",
+      "namespace": "common",
+      "leaf": "deleteTemplate",
+      "segments": [
+        "common",
+        "deleteTemplate"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3696
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Template verwijderen",
+        "fr": "Supprimer le modèle",
+        "en": "Delete template"
       }
     },
     {
@@ -61894,6 +61954,36 @@
         "nl": "Vragen",
         "fr": "Questions",
         "en": "Questions"
+      }
+    },
+    {
+      "key": "common.queues",
+      "namespace": "common",
+      "leaf": "queues",
+      "segments": [
+        "common",
+        "queues"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3694
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Wachtrijen",
+        "fr": "Files d’attente",
+        "en": "Queues"
       }
     },
     {
@@ -105792,6 +105882,36 @@
       }
     },
     {
+      "key": "success.templateAdded",
+      "namespace": "success",
+      "leaf": "templateAdded",
+      "segments": [
+        "success",
+        "templateAdded"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3697
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Template toegevoegd",
+        "fr": "Modèle ajouté",
+        "en": "Template added"
+      }
+    },
+    {
       "key": "success.templateAdministrationChanged",
       "namespace": "success",
       "leaf": "templateAdministrationChanged",
@@ -105849,6 +105969,66 @@
         "nl": "Sjabloon callcenter gewijzigd",
         "fr": "Matrice 'Centre d’appel' modifié",
         "en": "Template callcenter changed"
+      }
+    },
+    {
+      "key": "success.templateChanged",
+      "namespace": "success",
+      "leaf": "templateChanged",
+      "segments": [
+        "success",
+        "templateChanged"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3698
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Template gewijzigd",
+        "fr": "Modèle modifié",
+        "en": "Template updated"
+      }
+    },
+    {
+      "key": "success.templateDeleted",
+      "namespace": "success",
+      "leaf": "templateDeleted",
+      "segments": [
+        "success",
+        "templateDeleted"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3699
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Template verwijderd",
+        "fr": "Modèle supprimé",
+        "en": "Template deleted"
       }
     },
     {
@@ -108801,6 +108981,36 @@
       }
     },
     {
+      "key": "warning.aboutToDeleteTemplates",
+      "namespace": "warning",
+      "leaf": "aboutToDeleteTemplates",
+      "segments": [
+        "warning",
+        "aboutToDeleteTemplates"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3700
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Je staat op het punt {{value}} template(s) te verwijderen.",
+        "fr": "Vous êtes sur le point de supprimer {{value}} modèle(s).",
+        "en": "You are about to delete {{value}} template(s)."
+      }
+    },
+    {
       "key": "warning.aboutToDeleteTemporaryContacts",
       "namespace": "warning",
       "leaf": "aboutToDeleteTemporaryContacts",
@@ -111616,7 +111826,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2622
+      "keyCount": 2625
     },
     {
       "name": "confirmation",
@@ -111665,14 +111875,14 @@
       "label": "Geslaagd",
       "description": "Teksten die bevestigen dat een actie correct is uitgevoerd of succesvol is afgerond.",
       "status": "active",
-      "keyCount": 246
+      "keyCount": 249
     },
     {
       "name": "warning",
       "label": "Waarschuwingen",
       "description": "Teksten die de gebruiker wijzen op aandachtspunten, mogelijke gevolgen of vereiste zorgvuldigheid.",
       "status": "active",
-      "keyCount": 132
+      "keyCount": 133
     }
   ]
 }

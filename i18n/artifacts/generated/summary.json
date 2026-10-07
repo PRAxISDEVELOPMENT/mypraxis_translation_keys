@@ -15,8 +15,8 @@
     "unknown"
   ],
   "totals": {
-    "sourceEntries": 3693,
-    "uniqueKeys": 3693,
+    "sourceEntries": 3700,
+    "uniqueKeys": 3700,
     "namespaces": 11,
     "warnings": 0,
     "errors": 0,
@@ -28,21 +28,21 @@
   "namespaces": {
     "applicationNames": 15,
     "authentication": 121,
-    "common": 2622,
+    "common": 2625,
     "confirmation": 16,
     "error": 204,
     "info": 317,
     "metadata": 0,
     "notification": 16,
     "status": 4,
-    "success": 246,
-    "warning": 132
+    "success": 249,
+    "warning": 133
   },
   "applicationCounts": {
     "documenten": 0,
     "mypraxis_app": 1004,
     "mypraxis_data": 0,
-    "mypraxis_web": 2733,
+    "mypraxis_web": 2740,
     "unknown": 698
   },
   "warningCounts": {},

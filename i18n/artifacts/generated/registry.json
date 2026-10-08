@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3700,
-    "uniqueKeys": 3700,
+    "totalEntries": 3701,
+    "uniqueKeys": 3701,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -82991,6 +82991,36 @@
       }
     },
     {
+      "key": "common.yeastarSkill",
+      "namespace": "common",
+      "leaf": "yeastarSkill",
+      "segments": [
+        "common",
+        "yeastarSkill"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3701
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Yeastar skill",
+        "fr": "Compétence Yeastar",
+        "en": "Yeastar skill"
+      }
+    },
+    {
       "key": "common.yes",
       "namespace": "common",
       "leaf": "yes",
@@ -111826,7 +111856,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2625
+      "keyCount": 2626
     },
     {
       "name": "confirmation",

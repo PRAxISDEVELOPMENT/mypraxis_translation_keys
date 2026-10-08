@@ -25914,5 +25914,12 @@
     "fr": "Vous êtes sur le point de supprimer {{value}} modèle(s).",
     "en": "You are about to delete {{value}} template(s).",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.yeastarSkill",
+    "nl": "Yeastar skill",
+    "fr": "Compétence Yeastar",
+    "en": "Yeastar skill",
+    "applications": ["mypraxis_web"]
   }
 ]

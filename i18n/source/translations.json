@@ -25952,16 +25952,16 @@
   },
   {
     "key": "common.terminationImmediately",
-    "nl": "onmiddellijk",
-    "fr": "immédiatement",
-    "en": "immediately",
+    "nl": "Onmiddellijk",
+    "fr": "Immédiatement",
+    "en": "Immediately",
     "applications": ["mypraxis_web", "mypraxis_app"]
   },
   {
     "key": "common.terminationScheduledFor",
-    "nl": "op {{value}}",
-    "fr": "le {{value}}",
-    "en": "on {{value}}",
+    "nl": "Op {{value}}",
+    "fr": "Le {{value}}",
+    "en": "On {{value}}",
     "applications": ["mypraxis_web", "mypraxis_app"]
   },
   {

@@ -73392,9 +73392,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "onmiddellijk",
-        "fr": "immédiatement",
-        "en": "immediately"
+        "nl": "Onmiddellijk",
+        "fr": "Immédiatement",
+        "en": "Immediately"
       }
     },
     {
@@ -73453,9 +73453,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "op {{value}}",
-        "fr": "le {{value}}",
-        "en": "on {{value}}"
+        "nl": "Op {{value}}",
+        "fr": "Le {{value}}",
+        "en": "On {{value}}"
       }
     },
     {

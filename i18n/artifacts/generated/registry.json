@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3701,
-    "uniqueKeys": 3701,
+    "totalEntries": 3709,
+    "uniqueKeys": 3709,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -19704,6 +19704,37 @@
       }
     },
     {
+      "key": "common.confirmEmail",
+      "namespace": "common",
+      "leaf": "confirmEmail",
+      "segments": [
+        "common",
+        "confirmEmail"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3702
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "E-mail bevestigen",
+        "fr": "Confirmer l’e-mail",
+        "en": "Confirm email"
+      }
+    },
+    {
       "key": "common.confirmIdentification",
       "namespace": "common",
       "leaf": "confirmIdentification",
@@ -32512,9 +32543,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Polling inschakelen",
-        "fr": "Activer le Polling",
-        "en": "Enable polling"
+        "nl": "Polling mogelijk",
+        "fr": "Polling possible",
+        "en": "Polling possible"
       }
     },
     {
@@ -73213,6 +73244,99 @@
       }
     },
     {
+      "key": "common.terminateLater",
+      "namespace": "common",
+      "leaf": "terminateLater",
+      "segments": [
+        "common",
+        "terminateLater"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3703
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Stopzetten op een later tijdstip",
+        "fr": "Résilier à une date ultérieure",
+        "en": "Terminate at a later time"
+      }
+    },
+    {
+      "key": "common.terminateNow",
+      "namespace": "common",
+      "leaf": "terminateNow",
+      "segments": [
+        "common",
+        "terminateNow"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3704
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Onmiddellijk stopzetten",
+        "fr": "Résilier immédiatement",
+        "en": "Terminate now"
+      }
+    },
+    {
+      "key": "common.terminationDateTime",
+      "namespace": "common",
+      "leaf": "terminationDateTime",
+      "segments": [
+        "common",
+        "terminationDateTime"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3705
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Datum en tijd van stopzetting",
+        "fr": "Date et heure de résiliation",
+        "en": "Termination date and time"
+      }
+    },
+    {
       "key": "common.terminationEffectiveOn",
       "namespace": "common",
       "leaf": "terminationEffectiveOn",
@@ -73243,6 +73367,37 @@
       }
     },
     {
+      "key": "common.terminationImmediately",
+      "namespace": "common",
+      "leaf": "terminationImmediately",
+      "segments": [
+        "common",
+        "terminationImmediately"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3706
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "onmiddellijk",
+        "fr": "immédiatement",
+        "en": "immediately"
+      }
+    },
+    {
       "key": "common.terminationRequestedOn",
       "namespace": "common",
       "leaf": "terminationRequestedOn",
@@ -73270,6 +73425,68 @@
         "nl": "Stopzetting aangevraagd op",
         "fr": "Résiliation demandée le",
         "en": "Termination requested on"
+      }
+    },
+    {
+      "key": "common.terminationScheduledFor",
+      "namespace": "common",
+      "leaf": "terminationScheduledFor",
+      "segments": [
+        "common",
+        "terminationScheduledFor"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3707
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "op {{value}}",
+        "fr": "le {{value}}",
+        "en": "on {{value}}"
+      }
+    },
+    {
+      "key": "common.terminationTiming",
+      "namespace": "common",
+      "leaf": "terminationTiming",
+      "segments": [
+        "common",
+        "terminationTiming"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3708
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Tijdstip",
+        "fr": "Moment",
+        "en": "Timing"
       }
     },
     {
@@ -89224,6 +89441,37 @@
         "nl": "Opslag niet beschikbaar",
         "fr": "Stockage indisponible",
         "en": "Storage unavailable"
+      }
+    },
+    {
+      "key": "error.terminationMustBeInTheFuture",
+      "namespace": "error",
+      "leaf": "terminationMustBeInTheFuture",
+      "segments": [
+        "error",
+        "terminationMustBeInTheFuture"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3709
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Kies een geldige datum en tijd in de toekomst.",
+        "fr": "Choisissez une date et une heure valides dans le futur.",
+        "en": "Choose a valid date and time in the future."
       }
     },
     {
@@ -111856,7 +112104,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2626
+      "keyCount": 2633
     },
     {
       "name": "confirmation",
@@ -111870,7 +112118,7 @@
       "label": "Fouten",
       "description": "Teksten voor situaties waarin een actie niet kan worden voltooid of onverwacht mislukt.",
       "status": "active",
-      "keyCount": 204
+      "keyCount": 205
     },
     {
       "name": "info",

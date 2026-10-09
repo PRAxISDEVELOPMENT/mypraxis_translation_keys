@@ -6994,9 +6994,9 @@
   },
   {
     "key": "common.enablePolling",
-    "nl": "Polling inschakelen",
-    "fr": "Activer le Polling",
-    "en": "Enable polling",
+    "nl": "Polling mogelijk",
+    "fr": "Polling possible",
+    "en": "Polling possible",
     "applications": ["mypraxis_web"]
   },
   {
@@ -25921,5 +25921,61 @@
     "fr": "Compétence Yeastar",
     "en": "Yeastar skill",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.confirmEmail",
+    "nl": "E-mail bevestigen",
+    "fr": "Confirmer l’e-mail",
+    "en": "Confirm email",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.terminateLater",
+    "nl": "Stopzetten op een later tijdstip",
+    "fr": "Résilier à une date ultérieure",
+    "en": "Terminate at a later time",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.terminateNow",
+    "nl": "Onmiddellijk stopzetten",
+    "fr": "Résilier immédiatement",
+    "en": "Terminate now",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.terminationDateTime",
+    "nl": "Datum en tijd van stopzetting",
+    "fr": "Date et heure de résiliation",
+    "en": "Termination date and time",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.terminationImmediately",
+    "nl": "onmiddellijk",
+    "fr": "immédiatement",
+    "en": "immediately",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.terminationScheduledFor",
+    "nl": "op {{value}}",
+    "fr": "le {{value}}",
+    "en": "on {{value}}",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.terminationTiming",
+    "nl": "Tijdstip",
+    "fr": "Moment",
+    "en": "Timing",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "error.terminationMustBeInTheFuture",
+    "nl": "Kies een geldige datum en tijd in de toekomst.",
+    "fr": "Choisissez une date et une heure valides dans le futur.",
+    "en": "Choose a valid date and time in the future.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

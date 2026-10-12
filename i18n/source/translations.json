@@ -25977,5 +25977,62 @@
     "fr": "Choisissez une date et une heure valides dans le futur.",
     "en": "Choose a valid date and time in the future.",
     "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+
+  {
+    "key": "common.openActionsOverview",
+    "nl": "Overzicht openstaande acties",
+    "fr": "Aperçu des actions ouvertes",
+    "en": "Open actions overview",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.openActionsOverTime",
+    "nl": "Openstaande acties doorheen de tijd",
+    "fr": "Actions ouvertes au fil du temps",
+    "en": "Open actions over time",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.snapshot",
+    "nl": "Momentopname",
+    "fr": "Relevé",
+    "en": "Snapshot",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.actionsLatestSnapshotInPeriod",
+    "nl": "Laatste momentopname binnen de geselecteerde periode",
+    "fr": "Dernier relevé dans la période sélectionnée",
+    "en": "Latest snapshot within the selected period",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.actionsHistoryInPeriod",
+    "nl": "Verloop binnen de geselecteerde periode",
+    "fr": "Évolution dans la période sélectionnée",
+    "en": "Trend within the selected period",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.actionsLatestSnapshotInfo",
+    "nl": "Toont de openstaande acties bij de laatste beschikbare meting binnen de geselecteerde periode en filters.",
+    "fr": "Affiche les actions ouvertes lors du dernier relevé disponible selon la période et les filtres sélectionnés.",
+    "en": "Shows open actions at the latest available measurement within the selected period and filters.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.actionsHistoryInfo",
+    "nl": "Toont hoe het aantal openstaande acties verandert binnen de geselecteerde periode en filters.",
+    "fr": "Affiche l’évolution du nombre d’actions ouvertes selon la période et les filtres sélectionnés.",
+    "en": "Shows how the number of open actions changes within the selected period and filters.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.finance",
+    "nl": "Finance",
+    "fr": "Finance",
+    "en": "Finance",
+    "applications": ["mypraxis_web"]
   }
 ]

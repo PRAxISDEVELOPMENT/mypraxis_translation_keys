@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3709,
-    "uniqueKeys": 3709,
+    "totalEntries": 3717,
+    "uniqueKeys": 3717,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -5050,6 +5050,126 @@
         "nl": "Acties",
         "fr": "Actions",
         "en": "Actions"
+      }
+    },
+    {
+      "key": "common.actionsHistoryInfo",
+      "namespace": "common",
+      "leaf": "actionsHistoryInfo",
+      "segments": [
+        "common",
+        "actionsHistoryInfo"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3716
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Toont hoe het aantal openstaande acties verandert binnen de geselecteerde periode en filters.",
+        "fr": "Affiche l’évolution du nombre d’actions ouvertes selon la période et les filtres sélectionnés.",
+        "en": "Shows how the number of open actions changes within the selected period and filters."
+      }
+    },
+    {
+      "key": "common.actionsHistoryInPeriod",
+      "namespace": "common",
+      "leaf": "actionsHistoryInPeriod",
+      "segments": [
+        "common",
+        "actionsHistoryInPeriod"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3714
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Verloop binnen de geselecteerde periode",
+        "fr": "Évolution dans la période sélectionnée",
+        "en": "Trend within the selected period"
+      }
+    },
+    {
+      "key": "common.actionsLatestSnapshotInfo",
+      "namespace": "common",
+      "leaf": "actionsLatestSnapshotInfo",
+      "segments": [
+        "common",
+        "actionsLatestSnapshotInfo"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3715
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Toont de openstaande acties bij de laatste beschikbare meting binnen de geselecteerde periode en filters.",
+        "fr": "Affiche les actions ouvertes lors du dernier relevé disponible selon la période et les filtres sélectionnés.",
+        "en": "Shows open actions at the latest available measurement within the selected period and filters."
+      }
+    },
+    {
+      "key": "common.actionsLatestSnapshotInPeriod",
+      "namespace": "common",
+      "leaf": "actionsLatestSnapshotInPeriod",
+      "segments": [
+        "common",
+        "actionsLatestSnapshotInPeriod"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3713
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Laatste momentopname binnen de geselecteerde periode",
+        "fr": "Dernier relevé dans la période sélectionnée",
+        "en": "Latest snapshot within the selected period"
       }
     },
     {
@@ -36378,6 +36498,36 @@
       }
     },
     {
+      "key": "common.finance",
+      "namespace": "common",
+      "leaf": "finance",
+      "segments": [
+        "common",
+        "finance"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3717
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Finance",
+        "fr": "Finance",
+        "en": "Finance"
+      }
+    },
+    {
       "key": "common.financial",
       "namespace": "common",
       "leaf": "financial",
@@ -55518,6 +55668,66 @@
       }
     },
     {
+      "key": "common.openActionsOverTime",
+      "namespace": "common",
+      "leaf": "openActionsOverTime",
+      "segments": [
+        "common",
+        "openActionsOverTime"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3711
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Openstaande acties doorheen de tijd",
+        "fr": "Actions ouvertes au fil du temps",
+        "en": "Open actions over time"
+      }
+    },
+    {
+      "key": "common.openActionsOverview",
+      "namespace": "common",
+      "leaf": "openActionsOverview",
+      "segments": [
+        "common",
+        "openActionsOverview"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3710
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Overzicht openstaande acties",
+        "fr": "Aperçu des actions ouvertes",
+        "en": "Open actions overview"
+      }
+    },
+    {
       "key": "common.openApp",
       "namespace": "common",
       "leaf": "openApp",
@@ -70584,6 +70794,36 @@
         "nl": "SMS LIGHT zonder operatoractie",
         "fr": "SMS LIGHT sans intervention d'un opérateur PRAxIS",
         "en": "SMS LIGHT without operator action"
+      }
+    },
+    {
+      "key": "common.snapshot",
+      "namespace": "common",
+      "leaf": "snapshot",
+      "segments": [
+        "common",
+        "snapshot"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3712
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Momentopname",
+        "fr": "Relevé",
+        "en": "Snapshot"
       }
     },
     {
@@ -112104,7 +112344,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2633
+      "keyCount": 2641
     },
     {
       "name": "confirmation",

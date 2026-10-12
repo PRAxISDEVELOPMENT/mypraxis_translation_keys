@@ -26031,8 +26031,8 @@
   {
     "key": "common.finance",
     "nl": "Finance",
-    "fr": "Finance",
-    "en": "Finance",
+    "fr": "Finance ",
+    "en": "Finance ",
     "applications": ["mypraxis_web"]
   }
 ]

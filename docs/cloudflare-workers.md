@@ -38,8 +38,10 @@ Wrangler reads `wrangler.jsonc` and deploys `.cloudflare-assets/` as one static
 asset deployment. `_headers` enables cross-origin reads and forces clients to
 revalidate JSON instead of keeping an old browser-cache copy.
 
-The repository pins Wrangler in the deploy script so a future Wrangler release
-cannot unexpectedly change an otherwise identical deployment.
+The repository pins Wrangler as a development dependency and records its dependency
+tree in `package-lock.json`. Cloudflare installs it during `npm ci`; the deploy
+script runs that local executable without downloading packages through `npx`.
+Keep development dependencies enabled in the Cloudflare build environment.
 
 ## GitHub Verification Setup
 

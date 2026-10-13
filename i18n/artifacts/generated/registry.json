@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3719,
-    "uniqueKeys": 3719,
+    "totalEntries": 3720,
+    "uniqueKeys": 3720,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -71999,6 +71999,36 @@
       }
     },
     {
+      "key": "common.streamKey",
+      "namespace": "common",
+      "leaf": "streamKey",
+      "segments": [
+        "common",
+        "streamKey"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3720
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Streamsleutel",
+        "fr": "Clé de flux",
+        "en": "Stream key"
+      }
+    },
+    {
       "key": "common.street",
       "namespace": "common",
       "leaf": "street",
@@ -112404,7 +112434,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2643
+      "keyCount": 2644
     },
     {
       "name": "confirmation",

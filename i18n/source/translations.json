@@ -26048,5 +26048,12 @@
     "fr": "Afficher la clé de flux",
     "en": "Show stream key",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.streamKey",
+    "nl": "Streamsleutel",
+    "fr": "Clé de flux",
+    "en": "Stream key",
+    "applications": ["mypraxis_web"]
   }
 ]

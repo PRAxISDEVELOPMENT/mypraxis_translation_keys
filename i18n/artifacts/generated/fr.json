@@ -2384,6 +2384,7 @@
     "store": "Stockage",
     "storeNumber": "Numéro de magasin",
     "storeUpdateAvailableMessage": "Une nouvelle version de MyPRAxIS est disponible dans {{storeName}}. Choisissez « {{updateAction}} » pour ouvrir {{storeName}} et installer la dernière version. Choisissez « {{laterAction}} » pour reporter l’installation.",
+    "streamKey": "Clé de flux",
     "street": "Rue",
     "streetName": "Nom de la rue",
     "strikethrough": "Barré",

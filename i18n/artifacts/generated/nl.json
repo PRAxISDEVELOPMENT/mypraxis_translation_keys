@@ -2384,6 +2384,7 @@
     "store": "Opslag",
     "storeNumber": "Winkelnummer",
     "storeUpdateAvailableMessage": "Er is een nieuwe versie van MyPRAxIS beschikbaar in {{storeName}}. Kies ‘{{updateAction}}’ om {{storeName}} te openen en de nieuwste versie te installeren. Kies ‘{{laterAction}}’ om dit uit te stellen.",
+    "streamKey": "Streamsleutel",
     "street": "Straat",
     "streetName": "Straatnaam",
     "strikethrough": "Doorhalen",

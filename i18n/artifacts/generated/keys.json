@@ -2379,6 +2379,7 @@
   "common.store",
   "common.storeNumber",
   "common.storeUpdateAvailableMessage",
+  "common.streamKey",
   "common.street",
   "common.streetName",
   "common.strikethrough",

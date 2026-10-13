@@ -26041,5 +26041,12 @@
     "fr": "Tout afficher",
     "en": "Show all",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.showStreamKey",
+    "nl": "Streamsleutel tonen",
+    "fr": "Afficher la clé de flux",
+    "en": "Show stream key",
+    "applications": ["mypraxis_web"]
   }
 ]

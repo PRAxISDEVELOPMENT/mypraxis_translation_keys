@@ -10648,10 +10648,10 @@
   },
   {
     "key": "common.manuallyEnterEpromNumbers",
-    "nl": "Eprom nummer(s) handmatig ingeven",
-    "fr": "Entrer manuellement le(s) numéro(s) d'EPROM",
-    "en": "Manually enter EPROM number(s)",
-    "applications": ["unknown"]
+    "nl": "Eprom nummer handmatig ingeven",
+    "fr": "Entrer manuellement le numéro d'EPROM",
+    "en": "Manually enter EPROM number",
+    "applications": ["mypraxis_web"]
   },
   {
     "key": "common.manuals",

@@ -2305,6 +2305,7 @@
     "shortSiaCode4Digits": "Short SIA code (4 digits)",
     "show": "Show",
     "showAll": "Show all ({{value}})",
+    "showAllItems": "Show all",
     "showContent": "Show content",
     "showDetail": "Show detail",
     "showFullRange": "Show full range",

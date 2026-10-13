@@ -2305,6 +2305,7 @@
     "shortSiaCode4Digits": "Verkorte SIA-code (4 cijfers)",
     "show": "Tonen",
     "showAll": "Toon alle ({{value}})",
+    "showAllItems": "Toon alles",
     "showContent": "Inhoud tonen",
     "showDetail": "Details weergeven",
     "showFullRange": "Volledig bereik tonen",

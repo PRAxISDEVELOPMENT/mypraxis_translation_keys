@@ -26034,5 +26034,12 @@
     "fr": "Finance ",
     "en": "Finance ",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.showAllItems",
+    "nl": "Toon alles",
+    "fr": "Tout afficher",
+    "en": "Show all",
+    "applications": ["mypraxis_web"]
   }
 ]

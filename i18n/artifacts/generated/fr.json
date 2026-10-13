@@ -2305,6 +2305,7 @@
     "shortSiaCode4Digits": "Code SIA court (4 chiffres)",
     "show": "Afficher",
     "showAll": "Afficher tout ({{value}})",
+    "showAllItems": "Tout afficher",
     "showContent": "Afficher le contenu",
     "showDetail": "Afficher les détails",
     "showFullRange": "Afficher toute la gamme",

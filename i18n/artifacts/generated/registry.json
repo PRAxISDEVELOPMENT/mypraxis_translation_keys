@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3720,
-    "uniqueKeys": 3720,
+    "totalEntries": 3726,
+    "uniqueKeys": 3726,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -4295,6 +4295,37 @@
         "nl": "2 verschillende eprom-nummers op dezelfde klantkaart (1 primair en 1 back-up)",
         "fr": "2 numéros d'EPROM sur la même fiche de client (1 principal et 1 en back-up)",
         "en": "2 EPROM numbers on the same customer card (1 primary and 1 back-up)"
+      }
+    },
+    {
+      "key": "common.aboutToDeleteFreeServices",
+      "namespace": "common",
+      "leaf": "aboutToDeleteFreeServices",
+      "segments": [
+        "common",
+        "aboutToDeleteFreeServices"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3721
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Je staat op het punt {{value}} gratis diensten te verwijderen.",
+        "fr": "Vous êtes sur le point de supprimer {{value}} services gratuits.",
+        "en": "You are about to delete {{value}} free services."
       }
     },
     {
@@ -26345,6 +26376,37 @@
       }
     },
     {
+      "key": "common.deleteFreeServices",
+      "namespace": "common",
+      "leaf": "deleteFreeServices",
+      "segments": [
+        "common",
+        "deleteFreeServices"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3722
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gratis diensten verwijderen",
+        "fr": "Supprimer les services gratuits",
+        "en": "Delete free services"
+      }
+    },
+    {
       "key": "common.deleteGlobalContact",
       "namespace": "common",
       "leaf": "deleteGlobalContact",
@@ -37461,6 +37523,68 @@
         "nl": "Gratis diensten",
         "fr": "Services gratuits",
         "en": "Free services"
+      }
+    },
+    {
+      "key": "common.freeServicesAdded",
+      "namespace": "common",
+      "leaf": "freeServicesAdded",
+      "segments": [
+        "common",
+        "freeServicesAdded"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3723
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "{{value}} gratis diensten toegevoegd.",
+        "fr": "{{value}} services gratuits ajoutés.",
+        "en": "{{value}} free services added."
+      }
+    },
+    {
+      "key": "common.freeServicesDeleted",
+      "namespace": "common",
+      "leaf": "freeServicesDeleted",
+      "segments": [
+        "common",
+        "freeServicesDeleted"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3724
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "{{value}} gratis diensten verwijderd.",
+        "fr": "{{value}} services gratuits supprimés.",
+        "en": "{{value}} free services deleted."
       }
     },
     {
@@ -61469,6 +61593,37 @@
         "nl": "Type probleem",
         "fr": "Type de problème",
         "en": "Problem type"
+      }
+    },
+    {
+      "key": "common.proceedConfirmation",
+      "namespace": "common",
+      "leaf": "proceedConfirmation",
+      "segments": [
+        "common",
+        "proceedConfirmation"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3725
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Wil je doorgaan?",
+        "fr": "Voulez-vous continuer ?",
+        "en": "Do you want to continue?"
       }
     },
     {
@@ -92199,6 +92354,37 @@
       }
     },
     {
+      "key": "info.clientInstallerInvoiceMethodRestriction",
+      "namespace": "info",
+      "leaf": "clientInstallerInvoiceMethodRestriction",
+      "segments": [
+        "info",
+        "clientInstallerInvoiceMethodRestriction"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3726
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Deze installateur kan niet worden geselecteerd vanwege de ingestelde facturatiemethode.",
+        "fr": "Cet installateur ne peut pas être sélectionné en raison du mode de facturation configuré.",
+        "en": "This installer cannot be selected because of the configured invoicing method."
+      }
+    },
+    {
       "key": "info.clientsWithoutErpInstallerReference",
       "namespace": "info",
       "leaf": "clientsWithoutErpInstallerReference",
@@ -112434,7 +112620,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2644
+      "keyCount": 2649
     },
     {
       "name": "confirmation",
@@ -112455,7 +112641,7 @@
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 317
+      "keyCount": 318
     },
     {
       "name": "metadata",

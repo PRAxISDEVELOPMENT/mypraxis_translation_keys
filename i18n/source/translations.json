@@ -25978,7 +25978,6 @@
     "en": "Choose a valid date and time in the future.",
     "applications": ["mypraxis_web", "mypraxis_app"]
   },
-
   {
     "key": "common.openActionsOverview",
     "nl": "Overzicht openstaande acties",
@@ -26055,5 +26054,47 @@
     "fr": "Clé de flux",
     "en": "Stream key",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.aboutToDeleteFreeServices",
+    "nl": "Je staat op het punt {{value}} gratis diensten te verwijderen.",
+    "fr": "Vous êtes sur le point de supprimer {{value}} services gratuits.",
+    "en": "You are about to delete {{value}} free services.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.deleteFreeServices",
+    "nl": "Gratis diensten verwijderen",
+    "fr": "Supprimer les services gratuits",
+    "en": "Delete free services",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.freeServicesAdded",
+    "nl": "{{value}} gratis diensten toegevoegd.",
+    "fr": "{{value}} services gratuits ajoutés.",
+    "en": "{{value}} free services added.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.freeServicesDeleted",
+    "nl": "{{value}} gratis diensten verwijderd.",
+    "fr": "{{value}} services gratuits supprimés.",
+    "en": "{{value}} free services deleted.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.proceedConfirmation",
+    "nl": "Wil je doorgaan?",
+    "fr": "Voulez-vous continuer ?",
+    "en": "Do you want to continue?",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "info.clientInstallerInvoiceMethodRestriction",
+    "nl": "Deze installateur kan niet worden geselecteerd vanwege de ingestelde facturatiemethode.",
+    "fr": "Cet installateur ne peut pas être sélectionné en raison du mode de facturation configuré.",
+    "en": "This installer cannot be selected because of the configured invoicing method.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

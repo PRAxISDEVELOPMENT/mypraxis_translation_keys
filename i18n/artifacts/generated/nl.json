@@ -1244,7 +1244,7 @@
     "freeService": "Gratis dienst",
     "freeServices": "Gratis diensten",
     "freeServicesAdded": "{{value}} gratis diensten toegevoegd.",
-    "freeServicesDeleted": "{{value}} gratis diensten verwijderd.",
+    "freeServicesDeleted": "{{value}} gratis diensten verwijderd. ",
     "frequency": "Frequentie",
     "fridayShort": "Vr",
     "from": "Van",

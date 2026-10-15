@@ -37582,7 +37582,7 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "{{value}} gratis diensten verwijderd.",
+        "nl": "{{value}} gratis diensten verwijderd. ",
         "fr": "{{value}} services gratuits supprimés.",
         "en": "{{value}} free services deleted."
       }

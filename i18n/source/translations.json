@@ -26078,7 +26078,7 @@
   },
   {
     "key": "common.freeServicesDeleted",
-    "nl": "{{value}} gratis diensten verwijderd.",
+    "nl": "{{value}} gratis diensten verwijderd. ",
     "fr": "{{value}} services gratuits supprimés.",
     "en": "{{value}} free services deleted.",
     "applications": ["mypraxis_web", "mypraxis_app"]

@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "proposalBatchId": "client-installer-invoice-method-restriction",
+  "status": "pending-review",
+  "createdAt": "2026-10-15T00:00:00.000Z",
+  "source": {
+    "proposalCount": 1
+  },
+  "review": {
+    "required": true,
+    "instructions": "Review the requested key and the Dutch, French and English explanations before merge."
+  },
+  "proposals": [
+    {
+      "proposalId": "client-installer-invoice-method-restriction-01",
+      "source": {
+        "uploadEntryIndex": 1
+      },
+      "review": {
+        "requestedNamespace": "info",
+        "suggestedKey": "info.clientInstallerInvoiceMethodRestriction",
+        "suggestedNamespace": "info",
+        "confidence": "requested",
+        "reason": "Exact translation key requested for web and mobile parity."
+      },
+      "originalEntry": {
+        "nl": "Je kunt de installateur alleen wijzigen als je schrijfrechten hebt en zowel de klant als de nieuwe installateur facturatiemethode 1 gebruikt.",
+        "fr": "Vous pouvez modifier l’installateur uniquement si vous disposez des droits d’écriture et si le client et le nouvel installateur utilisent tous deux le mode de facturation 1.",
+        "en": "You can change the installer only if you have write access and both the customer and the new installer use invoice method 1.",
+        "applications": [
+          "mypraxis_web",
+          "mypraxis_app"
+        ],
+        "notes": "Explanation shown below disabled installer options when changing the installer for an existing customer. Internal administrators are exempt from this restriction.",
+        "requestedNamespace": "info"
+      },
+      "proposedEntry": {
+        "key": "info.clientInstallerInvoiceMethodRestriction",
+        "nl": "Je kunt de installateur alleen wijzigen als je schrijfrechten hebt en zowel de klant als de nieuwe installateur facturatiemethode 1 gebruikt.",
+        "fr": "Vous pouvez modifier l’installateur uniquement si vous disposez des droits d’écriture et si le client et le nouvel installateur utilisent tous deux le mode de facturation 1.",
+        "en": "You can change the installer only if you have write access and both the customer and the new installer use invoice method 1.",
+        "applications": [
+          "mypraxis_web",
+          "mypraxis_app"
+        ],
+        "notes": "Explanation shown below disabled installer options when changing the installer for an existing customer. Internal administrators are exempt from this restriction."
+      }
+    }
+  ]
+}

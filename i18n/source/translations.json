@@ -26096,5 +26096,19 @@
     "fr": "Cet installateur ne peut pas être sélectionné en raison du mode de facturation configuré.",
     "en": "This installer cannot be selected because of the configured invoicing method.",
     "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.tier",
+    "nl": "Staffel",
+    "fr": "Palier",
+    "en": "Tier",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.callcenter",
+    "nl": "Wachtdienst",
+    "fr": "Service de garde",
+    "en": "Guard service",
+    "applications": ["mypraxis_web"]
   }
 ]

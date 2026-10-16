@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3726,
-    "uniqueKeys": 3726,
+    "totalEntries": 3728,
+    "uniqueKeys": 3728,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -13479,6 +13479,36 @@
         "nl": "Bellen bij",
         "fr": "Appeler en cas de",
         "en": "Call at"
+      }
+    },
+    {
+      "key": "common.callcenter",
+      "namespace": "common",
+      "leaf": "callcenter",
+      "segments": [
+        "common",
+        "callcenter"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3728
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Wachtdienst",
+        "fr": "Service de garde",
+        "en": "Guard service"
       }
     },
     {
@@ -74907,6 +74937,36 @@
       }
     },
     {
+      "key": "common.tier",
+      "namespace": "common",
+      "leaf": "tier",
+      "segments": [
+        "common",
+        "tier"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3727
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Staffel",
+        "fr": "Palier",
+        "en": "Tier"
+      }
+    },
+    {
       "key": "common.time",
       "namespace": "common",
       "leaf": "time",
@@ -112620,7 +112680,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2649
+      "keyCount": 2651
     },
     {
       "name": "confirmation",

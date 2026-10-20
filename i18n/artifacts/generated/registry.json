@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3730,
-    "uniqueKeys": 3730,
+    "totalEntries": 3732,
+    "uniqueKeys": 3732,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -38226,6 +38226,36 @@
       }
     },
     {
+      "key": "common.generalStatistics",
+      "namespace": "common",
+      "leaf": "generalStatistics",
+      "segments": [
+        "common",
+        "generalStatistics"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3731
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Algemene statistieken",
+        "fr": "Statistiques générales",
+        "en": "General statistics"
+      }
+    },
+    {
       "key": "common.generate",
       "namespace": "common",
       "leaf": "generate",
@@ -59170,6 +59200,36 @@
         "nl": "Persoonlijke informatie",
         "fr": "Information personnelle",
         "en": "Personal information"
+      }
+    },
+    {
+      "key": "common.personalStatistics",
+      "namespace": "common",
+      "leaf": "personalStatistics",
+      "segments": [
+        "common",
+        "personalStatistics"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3732
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Persoonlijke statistieken",
+        "fr": "Statistiques personnelles",
+        "en": "Personal statistics"
       }
     },
     {
@@ -112744,7 +112804,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2653
+      "keyCount": 2655
     },
     {
       "name": "confirmation",

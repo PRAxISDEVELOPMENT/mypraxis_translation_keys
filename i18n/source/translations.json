@@ -26128,5 +26128,19 @@
     "fr": "Inclure les e-mails automatiques",
     "en": "Include automatic emails",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.generalStatistics",
+    "nl": "Algemene statistieken",
+    "fr": "Statistiques générales",
+    "en": "General statistics",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.personalStatistics",
+    "nl": "Persoonlijke statistieken",
+    "fr": "Statistiques personnelles",
+    "en": "Personal statistics",
+    "applications": ["mypraxis_web"]
   }
 ]

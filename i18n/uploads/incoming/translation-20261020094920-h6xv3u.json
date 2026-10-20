@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.terminationRequestedOn",
+      "nl": "Stopzetting aangevraagd voor",
+      "status": {
+        "fr": "review-required",
+        "en": "review-required"
+      }
+    }
+  ]
+}

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3728,
-    "uniqueKeys": 3728,
+    "totalEntries": 3729,
+    "uniqueKeys": 3729,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -30441,6 +30441,37 @@
         "nl": "DVR instellingen",
         "fr": "Paramètres du DVR",
         "en": "DVR settings"
+      }
+    },
+    {
+      "key": "common.dvrVerified",
+      "namespace": "common",
+      "leaf": "dvrVerified",
+      "segments": [
+        "common",
+        "dvrVerified"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3729
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "DVR/NVR geverifieerd",
+        "fr": "DVR/NVR vérifié",
+        "en": "DVR/NVR verified"
       }
     },
     {
@@ -112680,7 +112711,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2651
+      "keyCount": 2652
     },
     {
       "name": "confirmation",

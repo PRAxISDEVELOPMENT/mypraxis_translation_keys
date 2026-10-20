@@ -26110,5 +26110,12 @@
     "fr": "Service de garde",
     "en": "Guard service",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.dvrVerified",
+    "nl": "DVR/NVR geverifieerd",
+    "fr": "DVR/NVR vérifié",
+    "en": "DVR/NVR verified",
+    "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

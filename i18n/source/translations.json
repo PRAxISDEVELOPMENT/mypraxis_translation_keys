@@ -15898,8 +15898,8 @@
   },
   {
     "key": "common.selectMedia",
-    "nl": "Media selecteren",
-    "fr": "Sélectionner média",
+    "nl": "Beelden selecteren",
+    "fr": "Sélectionner des images",
     "en": "Select media",
     "applications": ["mypraxis_app"]
   },

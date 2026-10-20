@@ -2448,7 +2448,7 @@
     "terminationDateTime": "Datum en tijd van stopzetting",
     "terminationEffectiveOn": "Stopzetting van kracht op",
     "terminationImmediately": "Onmiddellijk",
-    "terminationRequestedOn": "Stopzetting aangevraagd op",
+    "terminationRequestedOn": "Stopzetting aangevraagd voor",
     "terminationScheduledFor": "Op {{value}}",
     "terminationTiming": "Tijdstip",
     "test": "Test",

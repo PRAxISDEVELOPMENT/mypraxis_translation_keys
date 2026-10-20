@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-10-20T09:49:55.820Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20261020094920-h6xv3u.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.terminationRequestedOn",
+      "namespace": "common",
+      "changes": {
+        "nl": "Stopzetting aangevraagd voor"
+      },
+      "statusChanges": {
+        "fr": "review-required",
+        "en": "review-required"
+      },
+      "current": {
+        "nl": "Stopzetting aangevraagd op",
+        "fr": "Résiliation demandée le",
+        "en": "Termination requested on"
+      },
+      "next": {
+        "nl": "Stopzetting aangevraagd voor",
+        "fr": "Résiliation demandée le",
+        "en": "Termination requested on"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "review-required",
+        "en": "review-required"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

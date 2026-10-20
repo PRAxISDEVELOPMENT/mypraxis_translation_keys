@@ -17118,13 +17118,7 @@
       "en": "review-required"
     }
   },
-  {
-    "key": "common.terminationScheduledFor",
-    "nl": "Op {{value}}",
-    "fr": "Le {{value}}",
-    "en": "On {{value}}",
-    "applications": ["mypraxis_web", "mypraxis_app"]
-  },
+
   {
     "key": "common.terminationTiming",
     "nl": "Tijdstip",
@@ -24884,13 +24878,6 @@
     "applications": ["mypraxis_web"]
   },
   {
-    "key": "success.theCustomerWillBeTerminatedOn",
-    "nl": "De klant zal worden stopgezet op: {{value}}",
-    "fr": "Le client sera désactivé le : {{value}}",
-    "en": "The customer will be terminated on: {{value}}",
-    "applications": ["mypraxis_web"]
-  },
-  {
     "key": "success.thePeriodicReportHasBeenDeleted",
     "nl": "Het periodiek rapport is verwijderd",
     "fr": "Le rapport périodique a été supprimé",
@@ -25901,8 +25888,22 @@
   {
     "key": "warning.requestToDeleteCustomer",
     "nl": "U staat op het punt de klant in onze software te verwijderen",
-    "fr": "Vous êtes sur le point d'effacer le client dans notre logiciel",
-    "en": "You are about to delete the customer in our software",
+    "fr": "Vous êtes sur le point de supprimer le client de notre logiciel",
+    "en": "You are about to delete the customer from our software",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.terminationScheduledFor",
+    "nl": "op {{date}} om {{time}}",
+    "fr": "le {{date}} à {{time}}",
+    "en": "on {{date}} at {{time}}",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "success.theCustomerWillBeTerminatedOn",
+    "nl": "De klant zal worden stopgezet op {{date}} om {{time}}",
+    "fr": "Le client sera désactivé le {{date}} à {{time}}",
+    "en": "The customer will be terminated on {{date}} at {{time}}",
     "applications": ["mypraxis_web"]
   },
   {

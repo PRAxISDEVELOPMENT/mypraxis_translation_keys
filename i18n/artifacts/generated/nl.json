@@ -1377,6 +1377,7 @@
     "incall": "In gesprek",
     "inCc": "in CC.",
     "incertNumber": "INCERT nummer",
+    "includeAutomaticEmails": "Automatische e-mails meetellen",
     "includeCallsWithoutContract": "Oproepen zonder contract opnemen",
     "includeCallsWithoutContractInDailyEmail": "Oproepen zonder contract opnemen in dagelijkse e-mail",
     "includeComments": "Commentaar meenemen",

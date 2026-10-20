@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3729,
-    "uniqueKeys": 3729,
+    "totalEntries": 3730,
+    "uniqueKeys": 3730,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -41580,6 +41580,36 @@
         "nl": "INCERT nummer",
         "fr": "Numéro Incert",
         "en": "Incert number"
+      }
+    },
+    {
+      "key": "common.includeAutomaticEmails",
+      "namespace": "common",
+      "leaf": "includeAutomaticEmails",
+      "segments": [
+        "common",
+        "includeAutomaticEmails"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3730
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Automatische e-mails meetellen",
+        "fr": "Inclure les e-mails automatiques",
+        "en": "Include automatic emails"
       }
     },
     {
@@ -112714,7 +112744,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2652
+      "keyCount": 2653
     },
     {
       "name": "confirmation",

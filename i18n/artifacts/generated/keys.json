@@ -1372,6 +1372,7 @@
   "common.incall",
   "common.inCc",
   "common.incertNumber",
+  "common.includeAutomaticEmails",
   "common.includeCallsWithoutContract",
   "common.includeCallsWithoutContractInDailyEmail",
   "common.includeComments",

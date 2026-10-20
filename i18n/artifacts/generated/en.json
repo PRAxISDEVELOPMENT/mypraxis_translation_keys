@@ -1377,6 +1377,7 @@
     "incall": "In call",
     "inCc": "in CC.",
     "incertNumber": "Incert number",
+    "includeAutomaticEmails": "Include automatic emails",
     "includeCallsWithoutContract": "Include calls without contract",
     "includeCallsWithoutContractInDailyEmail": "Include calls without contract in daily email",
     "includeComments": "Include comments",

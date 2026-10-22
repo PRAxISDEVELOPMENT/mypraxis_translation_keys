@@ -26150,5 +26150,12 @@
     "fr": "Refuser la note de crédit",
     "en": "Reject credit note",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.fieldsToComplete",
+    "nl": "In te vullen velden",
+    "fr": "Champs à compléter",
+    "en": "Fields to complete",
+    "applications": ["mypraxis_web"]
   }
 ]

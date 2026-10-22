@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3733,
-    "uniqueKeys": 3733,
+    "totalEntries": 3734,
+    "uniqueKeys": 3734,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -35654,6 +35654,36 @@
         "nl": "Velden",
         "fr": "Champs",
         "en": "Fields"
+      }
+    },
+    {
+      "key": "common.fieldsToComplete",
+      "namespace": "common",
+      "leaf": "fieldsToComplete",
+      "segments": [
+        "common",
+        "fieldsToComplete"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3734
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "In te vullen velden",
+        "fr": "Champs à compléter",
+        "en": "Fields to complete"
       }
     },
     {
@@ -112833,7 +112863,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2656
+      "keyCount": 2657
     },
     {
       "name": "confirmation",

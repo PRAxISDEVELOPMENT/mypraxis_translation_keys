@@ -2108,6 +2108,7 @@
   "common.registeredIp",
   "common.registeredTokens",
   "common.registerUser",
+  "common.rejectCreditNote",
   "common.releaseAdHoc",
   "common.releaseAppStore",
   "common.releaseDevelopment",

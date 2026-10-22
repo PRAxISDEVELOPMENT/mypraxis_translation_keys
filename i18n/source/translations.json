@@ -26143,5 +26143,12 @@
     "fr": "Statistiques personnelles",
     "en": "Personal statistics",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.rejectCreditNote",
+    "nl": "Creditnota weigeren",
+    "fr": "Refuser la note de crédit",
+    "en": "Reject credit note",
+    "applications": ["mypraxis_web"]
   }
 ]

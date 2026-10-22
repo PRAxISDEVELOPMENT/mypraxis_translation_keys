@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3732,
-    "uniqueKeys": 3732,
+    "totalEntries": 3733,
+    "uniqueKeys": 3733,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -63829,6 +63829,36 @@
       }
     },
     {
+      "key": "common.rejectCreditNote",
+      "namespace": "common",
+      "leaf": "rejectCreditNote",
+      "segments": [
+        "common",
+        "rejectCreditNote"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3733
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Creditnota weigeren",
+        "fr": "Refuser la note de crédit",
+        "en": "Reject credit note"
+      }
+    },
+    {
       "key": "common.releaseAdHoc",
       "namespace": "common",
       "leaf": "releaseAdHoc",
@@ -112803,7 +112833,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2655
+      "keyCount": 2656
     },
     {
       "name": "confirmation",

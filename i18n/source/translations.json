@@ -26192,5 +26192,12 @@
     "fr": "Indisponible pour les divisions fictives, car les données nécessaires ne sont pas encore enregistrées dans MyPRAxIS.",
     "en": "Unavailable for fictitious divisions because the required data has not yet been recorded in MyPRAxIS.",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.toBeAgreed",
+    "nl": "Nog overeen te komen",
+    "fr": "À convenir",
+    "en": "To be agreed",
+    "applications": ["mypraxis_web"]
   }
 ]

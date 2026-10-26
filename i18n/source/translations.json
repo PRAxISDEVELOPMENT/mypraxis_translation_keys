@@ -26157,5 +26157,40 @@
     "fr": "Champs à compléter",
     "en": "Fields to complete",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.fictitiousDivisions",
+    "nl": "Fictieve divisies",
+    "fr": "Divisions fictives",
+    "en": "Fictitious divisions",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.includeAnnualPriceRevisionWithIndexation",
+    "nl": "Neem de bepaling voor jaarlijkse prijsherziening met indexering op in het contract.",
+    "fr": "Inclure dans le contrat la clause de révision annuelle des prix avec indexation.",
+    "en": "Include the annual price revision clause with indexation in the contract.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.includeAnnualPriceRevisionWithoutIndexation",
+    "nl": "Neem de bepaling voor jaarlijkse prijsherziening zonder indexering op in het contract.",
+    "fr": "Inclure dans le contrat la clause de révision annuelle des prix sans indexation.",
+    "en": "Include the annual price revision clause without indexation in the contract.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.linkedDivisions",
+    "nl": "Gekoppelde divisies",
+    "fr": "Divisions liées",
+    "en": "Linked divisions",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.unavailableForFictitiousDivisions",
+    "nl": "Niet beschikbaar voor fictieve divisies, omdat de benodigde gegevens nog niet in MyPRAxIS zijn vastgelegd.",
+    "fr": "Indisponible pour les divisions fictives, car les données nécessaires ne sont pas encore enregistrées dans MyPRAxIS.",
+    "en": "Unavailable for fictitious divisions because the required data has not yet been recorded in MyPRAxIS.",
+    "applications": ["mypraxis_web"]
   }
 ]

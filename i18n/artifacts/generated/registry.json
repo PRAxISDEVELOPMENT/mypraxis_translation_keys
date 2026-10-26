@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3734,
-    "uniqueKeys": 3734,
+    "totalEntries": 3739,
+    "uniqueKeys": 3739,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -35627,6 +35627,36 @@
       }
     },
     {
+      "key": "common.fictitiousDivisions",
+      "namespace": "common",
+      "leaf": "fictitiousDivisions",
+      "segments": [
+        "common",
+        "fictitiousDivisions"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3735
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Fictieve divisies",
+        "fr": "Divisions fictives",
+        "en": "Fictitious divisions"
+      }
+    },
+    {
       "key": "common.fields",
       "namespace": "common",
       "leaf": "fields",
@@ -41643,6 +41673,66 @@
       }
     },
     {
+      "key": "common.includeAnnualPriceRevisionWithIndexation",
+      "namespace": "common",
+      "leaf": "includeAnnualPriceRevisionWithIndexation",
+      "segments": [
+        "common",
+        "includeAnnualPriceRevisionWithIndexation"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3736
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Neem de bepaling voor jaarlijkse prijsherziening met indexering op in het contract.",
+        "fr": "Inclure dans le contrat la clause de révision annuelle des prix avec indexation.",
+        "en": "Include the annual price revision clause with indexation in the contract."
+      }
+    },
+    {
+      "key": "common.includeAnnualPriceRevisionWithoutIndexation",
+      "namespace": "common",
+      "leaf": "includeAnnualPriceRevisionWithoutIndexation",
+      "segments": [
+        "common",
+        "includeAnnualPriceRevisionWithoutIndexation"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3737
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Neem de bepaling voor jaarlijkse prijsherziening zonder indexering op in het contract.",
+        "fr": "Inclure dans le contrat la clause de révision annuelle des prix sans indexation.",
+        "en": "Include the annual price revision clause without indexation in the contract."
+      }
+    },
+    {
       "key": "common.includeAutomaticEmails",
       "namespace": "common",
       "leaf": "includeAutomaticEmails",
@@ -46573,6 +46663,36 @@
         "nl": "Gelinkte klanten",
         "fr": "Clients liés",
         "en": "Linked customers"
+      }
+    },
+    {
+      "key": "common.linkedDivisions",
+      "namespace": "common",
+      "leaf": "linkedDivisions",
+      "segments": [
+        "common",
+        "linkedDivisions"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3738
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gekoppelde divisies",
+        "fr": "Divisions liées",
+        "en": "Linked divisions"
       }
     },
     {
@@ -77560,6 +77680,36 @@
         "nl": "Geen toestemming om dit API-endpoint te benaderen.",
         "fr": "Accès non authorisé au point de jonction API.",
         "en": "Unauthorized access to API endpoint."
+      }
+    },
+    {
+      "key": "common.unavailableForFictitiousDivisions",
+      "namespace": "common",
+      "leaf": "unavailableForFictitiousDivisions",
+      "segments": [
+        "common",
+        "unavailableForFictitiousDivisions"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3739
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Niet beschikbaar voor fictieve divisies, omdat de benodigde gegevens nog niet in MyPRAxIS zijn vastgelegd.",
+        "fr": "Indisponible pour les divisions fictives, car les données nécessaires ne sont pas encore enregistrées dans MyPRAxIS.",
+        "en": "Unavailable for fictitious divisions because the required data has not yet been recorded in MyPRAxIS."
       }
     },
     {
@@ -112863,7 +113013,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2657
+      "keyCount": 2662
     },
     {
       "name": "confirmation",

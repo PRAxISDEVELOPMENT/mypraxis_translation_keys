@@ -26206,5 +26206,12 @@
     "fr": "Le code d’identification et le code sous contrainte ne peuvent pas être identiques.",
     "en": "The identification code and duress code must not be the same.",
     "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.annex2CallcenterPriceList",
+    "nl": "Bijlage 2: Prijslijst oproepcentrale",
+    "fr": "Annexe 2 : Liste de prix du centre d’appels",
+    "en": "Annex 2: Callcenter price list",
+    "applications": ["mypraxis_web"]
   }
 ]

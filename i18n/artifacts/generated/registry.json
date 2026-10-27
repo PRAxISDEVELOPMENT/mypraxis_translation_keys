@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3741,
-    "uniqueKeys": 3741,
+    "totalEntries": 3742,
+    "uniqueKeys": 3742,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -9127,6 +9127,36 @@
         "nl": "Bijlage 1: Contract van telebewaking en videobewaking",
         "fr": "Annexe 1 : Contrat de télésurveillance et de vidéosurveillance",
         "en": "Annex 1: Telemonitoring and video surveillance contract"
+      }
+    },
+    {
+      "key": "common.annex2CallcenterPriceList",
+      "namespace": "common",
+      "leaf": "annex2CallcenterPriceList",
+      "segments": [
+        "common",
+        "annex2CallcenterPriceList"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3742
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bijlage 2: Prijslijst oproepcentrale",
+        "fr": "Annexe 2 : Liste de prix du centre d’appels",
+        "en": "Annex 2: Callcenter price list"
       }
     },
     {
@@ -113074,7 +113104,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2663
+      "keyCount": 2664
     },
     {
       "name": "confirmation",

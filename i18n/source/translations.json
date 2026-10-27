@@ -26244,7 +26244,7 @@
   },
   {
     "key": "common.draftContractsDescription",
-    "nl": "Werkversies van contracten die nog verder uitgewerkt moeten worden.",
+    "nl": "Werkversies van contracten die nog verder uitgewerkt moeten worden. ",
     "fr": "Versions de travail des contrats restant à compléter.",
     "en": "Working versions of contracts that still need to be completed.",
     "applications": ["mypraxis_web"]

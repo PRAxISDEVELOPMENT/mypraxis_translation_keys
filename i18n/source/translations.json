@@ -26227,5 +26227,26 @@
     "fr": "Téléversez un PDF pour joindre la procédure au contrat en tant qu’annexe facultative.",
     "en": "Upload a PDF to include the procedure as an optional annex to the contract.",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.contractDossiers",
+    "nl": "Contractdossiers",
+    "fr": "Dossiers de contrats",
+    "en": "Contract files",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.draftContracts",
+    "nl": "Conceptcontracten",
+    "fr": "Brouillons de contrats",
+    "en": "Draft contracts",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.draftContractsDescription",
+    "nl": "Werkversies van contracten die nog verder uitgewerkt moeten worden.",
+    "fr": "Versions de travail des contrats restant à compléter.",
+    "en": "Working versions of contracts that still need to be completed.",
+    "applications": ["mypraxis_web"]
   }
 ]

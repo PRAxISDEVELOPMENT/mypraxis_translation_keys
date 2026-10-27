@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3744,
-    "uniqueKeys": 3744,
+    "totalEntries": 3747,
+    "uniqueKeys": 3747,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -21124,6 +21124,36 @@
       }
     },
     {
+      "key": "common.contractDossiers",
+      "namespace": "common",
+      "leaf": "contractDossiers",
+      "segments": [
+        "common",
+        "contractDossiers"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3745
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Contractdossiers",
+        "fr": "Dossiers de contrats",
+        "en": "Contract files"
+      }
+    },
+    {
       "key": "common.contractDuration",
       "namespace": "common",
       "leaf": "contractDuration",
@@ -30380,6 +30410,66 @@
         "nl": "Concept",
         "fr": "Brouillon",
         "en": "Draft"
+      }
+    },
+    {
+      "key": "common.draftContracts",
+      "namespace": "common",
+      "leaf": "draftContracts",
+      "segments": [
+        "common",
+        "draftContracts"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3746
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Conceptcontracten",
+        "fr": "Brouillons de contrats",
+        "en": "Draft contracts"
+      }
+    },
+    {
+      "key": "common.draftContractsDescription",
+      "namespace": "common",
+      "leaf": "draftContractsDescription",
+      "segments": [
+        "common",
+        "draftContractsDescription"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3747
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Werkversies van contracten die nog verder uitgewerkt moeten worden.",
+        "fr": "Versions de travail des contrats restant à compléter.",
+        "en": "Working versions of contracts that still need to be completed."
       }
     },
     {
@@ -113164,7 +113254,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2665
+      "keyCount": 2668
     },
     {
       "name": "confirmation",

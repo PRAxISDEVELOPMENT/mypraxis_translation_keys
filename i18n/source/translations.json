@@ -26199,5 +26199,12 @@
     "fr": "À convenir",
     "en": "To be agreed",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "error.identificationAndDuressCodesMustDiffer",
+    "nl": "De identificatiecode en paniekcode mogen niet gelijk zijn.",
+    "fr": "Le code d’identification et le code sous contrainte doivent être différents.",
+    "en": "The identification code and duress code must be different.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

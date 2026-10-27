@@ -2932,6 +2932,7 @@
     "handlingCountReportPollingErrors": "Rapport du nombre de traitements 'erreur de Polling'",
     "haveYouNotFoundTheDesiredCentral": "Vous ne trouvez pas le type de centrale de votre choix (transmetteur/communicateur) dans notre logiciel?",
     "hubNotFound": "HUB pas trouvé",
+    "identificationAndDuressCodesMustDiffer": "Le code d’identification et le code sous contrainte doivent être différents.",
     "invalidDataTypeForParameter": "Type de données non valide pour le paramètre '{{param}}'.",
     "invalidFormat": "Format non valide",
     "invalidHEXColorCode": "Code couleur hexadécimal non valide",

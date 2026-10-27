@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3740,
-    "uniqueKeys": 3740,
+    "totalEntries": 3741,
+    "uniqueKeys": 3741,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -88425,6 +88425,37 @@
       }
     },
     {
+      "key": "error.identificationAndDuressCodesMustDiffer",
+      "namespace": "error",
+      "leaf": "identificationAndDuressCodesMustDiffer",
+      "segments": [
+        "error",
+        "identificationAndDuressCodesMustDiffer"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3741
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "De identificatiecode en paniekcode mogen niet gelijk zijn.",
+        "fr": "Le code d’identification et le code sous contrainte doivent être différents.",
+        "en": "The identification code and duress code must be different."
+      }
+    },
+    {
       "key": "error.invalidDataTypeForParameter",
       "namespace": "error",
       "leaf": "invalidDataTypeForParameter",
@@ -113057,7 +113088,7 @@
       "label": "Fouten",
       "description": "Teksten voor situaties waarin een actie niet kan worden voltooid of onverwacht mislukt.",
       "status": "active",
-      "keyCount": 205
+      "keyCount": 206
     },
     {
       "name": "info",

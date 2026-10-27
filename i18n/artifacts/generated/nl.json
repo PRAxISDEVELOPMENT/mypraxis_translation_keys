@@ -2932,6 +2932,7 @@
     "handlingCountReportPollingErrors": "Rapport aantal afhandelingen pollingfouten",
     "haveYouNotFoundTheDesiredCentral": "Heeft u de gebruikte centrale (kiezer/communicator) niet gevonden",
     "hubNotFound": "Hub niet gevonden.",
+    "identificationAndDuressCodesMustDiffer": "De identificatiecode en paniekcode mogen niet gelijk zijn.",
     "invalidDataTypeForParameter": "Ongeldig gegevenstype voor parameter '{{param}}'.",
     "invalidFormat": "Ongeldig formaat",
     "invalidHEXColorCode": "Ongeldige hex kleurcode",

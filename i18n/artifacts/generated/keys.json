@@ -2923,6 +2923,7 @@
   "error.handlingCountReportPollingErrors",
   "error.haveYouNotFoundTheDesiredCentral",
   "error.hubNotFound",
+  "error.identificationAndDuressCodesMustDiffer",
   "error.invalidDataTypeForParameter",
   "error.invalidFormat",
   "error.invalidHEXColorCode",

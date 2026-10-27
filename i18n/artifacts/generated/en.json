@@ -2932,7 +2932,7 @@
     "handlingCountReportPollingErrors": "Handling count report polling errors",
     "haveYouNotFoundTheDesiredCentral": "Have you not found the desired exchange (dialer/communicator)",
     "hubNotFound": "Hub not found.",
-    "identificationAndDuressCodesMustDiffer": "The identification code and duress code must be different.",
+    "identificationAndDuressCodesMustDiffer": "The identification code and duress code must not be the same.",
     "invalidDataTypeForParameter": "Invalid data type for parameter '{{param}}'.",
     "invalidFormat": "Invalid format",
     "invalidHEXColorCode": "Invalid hex color code",

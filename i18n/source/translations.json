@@ -26202,9 +26202,9 @@
   },
   {
     "key": "error.identificationAndDuressCodesMustDiffer",
-    "nl": "De identificatiecode en paniekcode mogen niet gelijk zijn.",
-    "fr": "Le code d’identification et le code sous contrainte doivent être différents.",
-    "en": "The identification code and duress code must be different.",
+    "nl": "De identificatiecode en code onder dwang mogen niet gelijk zijn.",
+    "fr": "Le code d’identification et le code sous contrainte ne peuvent pas être identiques.",
+    "en": "The identification code and duress code must not be the same.",
     "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

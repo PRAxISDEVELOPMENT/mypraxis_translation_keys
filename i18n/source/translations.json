@@ -26213,5 +26213,19 @@
     "fr": "Annexe 2 : Liste de prix du centre d’appels",
     "en": "Annex 2: Callcenter price list",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.annex1Procedure",
+    "nl": "Bijlage 1: Procedure",
+    "fr": "Annexe 1 : Procédure",
+    "en": "Annex 1: Procedure",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "info.uploadProcedurePdfToIncludeAsOptionalAnnex",
+    "nl": "Upload een PDF om de procedure als optionele bijlage aan het contract toe te voegen.",
+    "fr": "Téléversez un PDF pour joindre la procédure au contrat en tant qu’annexe facultative.",
+    "en": "Upload a PDF to include the procedure as an optional annex to the contract.",
+    "applications": ["mypraxis_web"]
   }
 ]

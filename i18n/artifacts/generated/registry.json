@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3742,
-    "uniqueKeys": 3742,
+    "totalEntries": 3744,
+    "uniqueKeys": 3744,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -9097,6 +9097,36 @@
         "nl": "Een voorbeeld van CSV-bestand",
         "fr": "Un fichier CSV de référence",
         "en": "An example CSV file"
+      }
+    },
+    {
+      "key": "common.annex1Procedure",
+      "namespace": "common",
+      "leaf": "annex1Procedure",
+      "segments": [
+        "common",
+        "annex1Procedure"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3743
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bijlage 1: Procedure",
+        "fr": "Annexe 1 : Procédure",
+        "en": "Annex 1: Procedure"
       }
     },
     {
@@ -100022,6 +100052,36 @@
       }
     },
     {
+      "key": "info.uploadProcedurePdfToIncludeAsOptionalAnnex",
+      "namespace": "info",
+      "leaf": "uploadProcedurePdfToIncludeAsOptionalAnnex",
+      "segments": [
+        "info",
+        "uploadProcedurePdfToIncludeAsOptionalAnnex"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3744
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Upload een PDF om de procedure als optionele bijlage aan het contract toe te voegen.",
+        "fr": "Téléversez un PDF pour joindre la procédure au contrat en tant qu’annexe facultative.",
+        "en": "Upload a PDF to include the procedure as an optional annex to the contract."
+      }
+    },
+    {
       "key": "info.uponReceiptOurAdministrationFinancePraxisGroupEuWillHandleTheTerminationRequestAndProvideFeedbackToOurMutualCustomer",
       "namespace": "info",
       "leaf": "uponReceiptOurAdministrationFinancePraxisGroupEuWillHandleTheTerminationRequestAndProvideFeedbackToOurMutualCustomer",
@@ -113104,7 +113164,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2664
+      "keyCount": 2665
     },
     {
       "name": "confirmation",
@@ -113125,7 +113185,7 @@
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 318
+      "keyCount": 319
     },
     {
       "name": "metadata",

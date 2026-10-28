@@ -26248,5 +26248,47 @@
     "fr": "Versions de travail des contrats restant à compléter.",
     "en": "Working versions of contracts that still need to be completed.",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.reviewDraft",
+    "nl": "Concept raadplegen",
+    "fr": "Consulter le brouillon",
+    "en": "Review draft",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.continueDraft",
+    "nl": "Verderwerken aan concept",
+    "fr": "Reprendre le brouillon",
+    "en": "Continue draft",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.useDraftValues",
+    "nl": "Gegevens uit concept overnemen",
+    "fr": "Reprendre les données du brouillon",
+    "en": "Use draft values",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.includedDraftFields",
+    "nl": "Velden die meegaan",
+    "fr": "Champs repris",
+    "en": "Included fields",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "info.contractDraftFieldRules",
+    "nl": "Een concept bewaart alleen verplichte velden die je zelf kunt bewerken. Geblokkeerde API-velden en optionele velden worden niet meegenomen.",
+    "fr": "Un brouillon conserve uniquement les champs obligatoires et modifiables. Les champs verrouillés provenant de l’API et les champs facultatifs sont exclus.",
+    "en": "A draft saves only required, editable fields. Locked API fields and optional fields are excluded.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "info.contractDraftTransferRules",
+    "nl": "De huidige divisie en haar API-gegevens blijven behouden. Alleen de onderstaande verplichte, bewerkbare velden krijgen de nieuwe waarden.",
+    "fr": "La division actuelle et ses données API sont conservées. Seuls les champs obligatoires et modifiables ci-dessous recevront les nouvelles valeurs.",
+    "en": "The current division and its API data are preserved. Only the required, editable fields below will receive the new values.",
+    "applications": ["mypraxis_web"]
   }
 ]

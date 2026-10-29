@@ -26367,5 +26367,12 @@
     "fr": "Ce brouillon ne contient aucune donnée pouvant être reprise. Les champs API sont renseignés selon la division sélectionnée.",
     "en": "This draft contains no data that can be carried over. API fields are populated based on the selected division.",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.saveAsDraft",
+    "nl": "Opslaan als concept",
+    "fr": "Enregistrer comme brouillon",
+    "en": "Save as draft",
+    "applications": ["mypraxis_web"]
   }
 ]

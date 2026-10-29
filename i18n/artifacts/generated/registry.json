@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3764,
-    "uniqueKeys": 3764,
+    "totalEntries": 3765,
+    "uniqueKeys": 3765,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -68085,6 +68085,36 @@
       }
     },
     {
+      "key": "common.saveAsDraft",
+      "namespace": "common",
+      "leaf": "saveAsDraft",
+      "segments": [
+        "common",
+        "saveAsDraft"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3765
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Opslaan als concept",
+        "fr": "Enregistrer comme brouillon",
+        "en": "Save as draft"
+      }
+    },
+    {
       "key": "common.saveAsNewDraft",
       "namespace": "common",
       "leaf": "saveAsNewDraft",
@@ -113764,7 +113794,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2675
+      "keyCount": 2676
     },
     {
       "name": "confirmation",

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3763,
-    "uniqueKeys": 3763,
+    "totalEntries": 3764,
+    "uniqueKeys": 3764,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -93890,6 +93890,36 @@
       }
     },
     {
+      "key": "info.contractDraftHasNoTransferableData",
+      "namespace": "info",
+      "leaf": "contractDraftHasNoTransferableData",
+      "segments": [
+        "info",
+        "contractDraftHasNoTransferableData"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3764
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Dit concept bevat geen gegevens die kunnen worden overgenomen. API-velden worden ingevuld op basis van de geselecteerde divisie.",
+        "fr": "Ce brouillon ne contient aucune donnée pouvant être reprise. Les champs API sont renseignés selon la division sélectionnée.",
+        "en": "This draft contains no data that can be carried over. API fields are populated based on the selected division."
+      }
+    },
+    {
       "key": "info.contractDraftTransferRules",
       "namespace": "info",
       "leaf": "contractDraftTransferRules",
@@ -113755,7 +113785,7 @@
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 322
+      "keyCount": 323
     },
     {
       "name": "metadata",

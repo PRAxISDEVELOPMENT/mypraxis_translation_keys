@@ -3104,6 +3104,7 @@
   "info.contractCannotBeGeneratedBecauseBothTheAddressDetailsTheContactDetailsAndThePriceDetailsAreMissing",
   "info.contractCannotBeGeneratedBecauseBothTheContactDetailsAndThePriceDetailsAreMissing",
   "info.contractDraftFieldRules",
+  "info.contractDraftHasNoTransferableData",
   "info.contractDraftTransferRules",
   "info.contractSubtypeCanOnlyBeChangedUponRequestViaPraxisGroupNV",
   "info.contractuallyOurMutualCustomerMustTerminateContractByRegisteredLetterThreeMonthsBeforeTheEndOfTheSubscription",

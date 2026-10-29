@@ -3115,6 +3115,7 @@
     "contractCannotBeGeneratedBecauseBothTheAddressDetailsTheContactDetailsAndThePriceDetailsAreMissing": "The contract cannot be generated because both the address details, the contact details and the price details are missing",
     "contractCannotBeGeneratedBecauseBothTheContactDetailsAndThePriceDetailsAreMissing": "The contract cannot be generated because both the contact details and the price details are missing",
     "contractDraftFieldRules": "A draft saves your input and selections, including optional fields and additional agreements. Locked API fields are fetched again when you resume.",
+    "contractDraftHasNoTransferableData": "This draft contains no data that can be carried over. API fields are populated based on the selected division.",
     "contractDraftTransferRules": "Your input and selections are restored from the draft. Locked API fields remain linked to the selected division.",
     "contractSubtypeCanOnlyBeChangedUponRequestViaPraxisGroupNV": "The contract subtype can only be changed upon request via PRAxIS GROUP N.V.",
     "contractuallyOurMutualCustomerMustTerminateContractByRegisteredLetterThreeMonthsBeforeTheEndOfTheSubscription": "Contractually, our mutual customer must terminate the contract by registered letter, three months before the end of the subscription.",

@@ -3115,6 +3115,7 @@
     "contractCannotBeGeneratedBecauseBothTheAddressDetailsTheContactDetailsAndThePriceDetailsAreMissing": "Het contract kan niet gegenereerd worden omdat zowel de adresgegevens, de contactgegevens als de prijsgegevens ontbreken",
     "contractCannotBeGeneratedBecauseBothTheContactDetailsAndThePriceDetailsAreMissing": "Het contract kan niet gegenereerd worden omdat zowel de contactgegevens als de prijsgegevens ontbreken",
     "contractDraftFieldRules": "Een concept bewaart je invoer en keuzes, inclusief optionele velden en bijkomende afspraken. Geblokkeerde API-velden worden bij het hervatten opnieuw opgehaald.",
+    "contractDraftHasNoTransferableData": "Dit concept bevat geen gegevens die kunnen worden overgenomen. API-velden worden ingevuld op basis van de geselecteerde divisie.",
     "contractDraftTransferRules": "Je invoer en keuzes worden uit het concept overgenomen. Geblokkeerde API-velden blijven gekoppeld aan de geselecteerde divisie.",
     "contractSubtypeCanOnlyBeChangedUponRequestViaPraxisGroupNV": "Het contractsubtype kan alleen gewijzigd worden door PRAxIS GROUP N.V.",
     "contractuallyOurMutualCustomerMustTerminateContractByRegisteredLetterThreeMonthsBeforeTheEndOfTheSubscription": "Contractueel moet onze gemeenschappelijke klant het contract per aangetekend schrijven opzeggen, 3 maanden voor het einde van het abonnement.",

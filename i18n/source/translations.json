@@ -26360,5 +26360,12 @@
     "fr": "Vous êtes sur le point de supprimer {{value}} brouillons.",
     "en": "You are about to delete {{value}} drafts.",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "info.contractDraftHasNoTransferableData",
+    "nl": "Dit concept bevat geen gegevens die kunnen worden overgenomen. API-velden worden ingevuld op basis van de geselecteerde divisie.",
+    "fr": "Ce brouillon ne contient aucune donnée pouvant être reprise. Les champs API sont renseignés selon la division sélectionnée.",
+    "en": "This draft contains no data that can be carried over. API fields are populated based on the selected division.",
+    "applications": ["mypraxis_web"]
   }
 ]

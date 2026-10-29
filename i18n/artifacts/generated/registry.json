@@ -93734,9 +93734,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Een concept bewaart alleen verplichte velden die je zelf kunt bewerken. Geblokkeerde API-velden en optionele velden worden niet meegenomen.",
-        "fr": "Un brouillon conserve uniquement les champs obligatoires et modifiables. Les champs verrouillés provenant de l’API et les champs facultatifs sont exclus.",
-        "en": "A draft saves only required, editable fields. Locked API fields and optional fields are excluded."
+        "nl": "Een concept bewaart je invoer en keuzes, inclusief optionele velden en bijkomende afspraken. Geblokkeerde API-velden worden bij het hervatten opnieuw opgehaald.",
+        "fr": "Un brouillon conserve vos saisies et vos choix, y compris les champs facultatifs et les accords complémentaires. Les champs API verrouillés sont récupérés à nouveau à la reprise.",
+        "en": "A draft saves your input and selections, including optional fields and additional agreements. Locked API fields are fetched again when you resume."
       }
     },
     {
@@ -93764,9 +93764,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "De huidige divisie en haar API-gegevens blijven behouden. Alleen de onderstaande verplichte, bewerkbare velden krijgen de nieuwe waarden.",
-        "fr": "La division actuelle et ses données API sont conservées. Seuls les champs obligatoires et modifiables ci-dessous recevront les nouvelles valeurs.",
-        "en": "The current division and its API data are preserved. Only the required, editable fields below will receive the new values."
+        "nl": "Je invoer en keuzes worden uit het concept overgenomen. Geblokkeerde API-velden blijven gekoppeld aan de geselecteerde divisie.",
+        "fr": "Vos saisies et vos choix sont repris du brouillon. Les champs API verrouillés restent liés à la division sélectionnée.",
+        "en": "Your input and selections are restored from the draft. Locked API fields remain linked to the selected division."
       }
     },
     {

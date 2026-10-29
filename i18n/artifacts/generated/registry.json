@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3753,
-    "uniqueKeys": 3753,
+    "totalEntries": 3763,
+    "uniqueKeys": 3763,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -22634,6 +22634,36 @@
       }
     },
     {
+      "key": "common.createNewContract",
+      "namespace": "common",
+      "leaf": "createNewContract",
+      "segments": [
+        "common",
+        "createNewContract"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3754
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Nieuw contract opmaken",
+        "fr": "Créer un nouveau contrat",
+        "en": "Create a new contract"
+      }
+    },
+    {
       "key": "common.creationDate",
       "namespace": "common",
       "leaf": "creationDate",
@@ -26343,6 +26373,36 @@
         "nl": "Documenttype(s) verwijderen",
         "fr": "Supprimer le(s) type(s) de document",
         "en": "Delete document type(s)"
+      }
+    },
+    {
+      "key": "common.deleteDraftContract",
+      "namespace": "common",
+      "leaf": "deleteDraftContract",
+      "segments": [
+        "common",
+        "deleteDraftContract"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3755
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Concept verwijderen",
+        "fr": "Supprimer le brouillon",
+        "en": "Delete draft"
       }
     },
     {
@@ -30467,9 +30527,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Conceptcontracten",
-        "fr": "Brouillons de contrats",
-        "en": "Draft contracts"
+        "nl": "Concepten",
+        "fr": "Brouillons",
+        "en": "Drafts"
       }
     },
     {
@@ -42087,8 +42147,8 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Velden die meegaan",
-        "fr": "Champs repris",
+        "nl": "Opgenomen velden",
+        "fr": "Champs inclus",
         "en": "Included fields"
       }
     },
@@ -68025,6 +68085,36 @@
       }
     },
     {
+      "key": "common.saveAsNewDraft",
+      "namespace": "common",
+      "leaf": "saveAsNewDraft",
+      "segments": [
+        "common",
+        "saveAsNewDraft"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3756
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Opslaan als nieuw concept",
+        "fr": "Enregistrer comme nouveau brouillon",
+        "en": "Save as new draft"
+      }
+    },
+    {
       "key": "common.saveReportInMyPRAxIS",
       "namespace": "common",
       "leaf": "saveReportInMyPRAxIS",
@@ -86649,6 +86739,66 @@
       }
     },
     {
+      "key": "error.contractDraftDeleteFailed",
+      "namespace": "error",
+      "leaf": "contractDraftDeleteFailed",
+      "segments": [
+        "error",
+        "contractDraftDeleteFailed"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3757
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Het concept kon niet worden verwijderd.",
+        "fr": "Le brouillon n’a pas pu être supprimé.",
+        "en": "The draft could not be deleted."
+      }
+    },
+    {
+      "key": "error.contractDraftSaveFailed",
+      "namespace": "error",
+      "leaf": "contractDraftSaveFailed",
+      "segments": [
+        "error",
+        "contractDraftSaveFailed"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3758
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Het concept kon niet worden opgeslagen.",
+        "fr": "Le brouillon n’a pas pu être enregistré.",
+        "en": "The draft could not be saved."
+      }
+    },
+    {
       "key": "error.contractTypeIsRequiredToGenerateTelemonitoringContract",
       "namespace": "error",
       "leaf": "contractTypeIsRequiredToGenerateTelemonitoringContract",
@@ -98783,6 +98933,36 @@
       }
     },
     {
+      "key": "info.startContractWithoutDraft",
+      "namespace": "info",
+      "leaf": "startContractWithoutDraft",
+      "segments": [
+        "info",
+        "startContractWithoutDraft"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3759
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Start zonder gegevens uit een concept over te nemen.",
+        "fr": "Commencez sans reprendre les données d’un brouillon.",
+        "en": "Start without using data from a draft."
+      }
+    },
+    {
       "key": "info.stayOnPaceToPerformWalktestCorrectly",
       "namespace": "info",
       "leaf": "stayOnPaceToPerformWalktestCorrectly",
@@ -103600,6 +103780,66 @@
         "nl": "Contact(en) geïmporteerd",
         "fr": "Contact(s) importé(s)",
         "en": "Contact(s) imported"
+      }
+    },
+    {
+      "key": "success.contractDraftDeleted",
+      "namespace": "success",
+      "leaf": "contractDraftDeleted",
+      "segments": [
+        "success",
+        "contractDraftDeleted"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3760
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Concept verwijderd.",
+        "fr": "Brouillon supprimé.",
+        "en": "Draft deleted."
+      }
+    },
+    {
+      "key": "success.contractDraftSaved",
+      "namespace": "success",
+      "leaf": "contractDraftSaved",
+      "segments": [
+        "success",
+        "contractDraftSaved"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3761
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Concept opgeslagen.",
+        "fr": "Brouillon enregistré.",
+        "en": "Draft saved."
       }
     },
     {
@@ -110259,6 +110499,66 @@
       }
     },
     {
+      "key": "warning.aboutToDeleteDraftContract",
+      "namespace": "warning",
+      "leaf": "aboutToDeleteDraftContract",
+      "segments": [
+        "warning",
+        "aboutToDeleteDraftContract"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3762
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "U staat op het punt concept ‘{{name}}’ te verwijderen.",
+        "fr": "Vous êtes sur le point de supprimer le brouillon « {{name}} ».",
+        "en": "You are about to delete draft ‘{{name}}’."
+      }
+    },
+    {
+      "key": "warning.aboutToDeleteDraftContracts",
+      "namespace": "warning",
+      "leaf": "aboutToDeleteDraftContracts",
+      "segments": [
+        "warning",
+        "aboutToDeleteDraftContracts"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3763
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "U staat op het punt {{value}} concepten te verwijderen.",
+        "fr": "Vous êtes sur le point de supprimer {{value}} brouillons.",
+        "en": "You are about to delete {{value}} drafts."
+      }
+    },
+    {
       "key": "warning.aboutToDeleteEmailAdres",
       "namespace": "warning",
       "leaf": "aboutToDeleteEmailAdres",
@@ -113434,7 +113734,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2672
+      "keyCount": 2675
     },
     {
       "name": "confirmation",
@@ -113448,14 +113748,14 @@
       "label": "Fouten",
       "description": "Teksten voor situaties waarin een actie niet kan worden voltooid of onverwacht mislukt.",
       "status": "active",
-      "keyCount": 206
+      "keyCount": 208
     },
     {
       "name": "info",
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 321
+      "keyCount": 322
     },
     {
       "name": "metadata",
@@ -113483,14 +113783,14 @@
       "label": "Geslaagd",
       "description": "Teksten die bevestigen dat een actie correct is uitgevoerd of succesvol is afgerond.",
       "status": "active",
-      "keyCount": 249
+      "keyCount": 251
     },
     {
       "name": "warning",
       "label": "Waarschuwingen",
       "description": "Teksten die de gebruiker wijzen op aandachtspunten, mogelijke gevolgen of vereiste zorgvuldigheid.",
       "status": "active",
-      "keyCount": 133
+      "keyCount": 135
     }
   ]
 }

@@ -26237,9 +26237,9 @@
   },
   {
     "key": "common.draftContracts",
-    "nl": "Conceptcontracten",
-    "fr": "Brouillons de contrats",
-    "en": "Draft contracts",
+    "nl": "Concepten",
+    "fr": "Brouillons",
+    "en": "Drafts",
     "applications": ["mypraxis_web"]
   },
   {
@@ -26272,8 +26272,8 @@
   },
   {
     "key": "common.includedDraftFields",
-    "nl": "Velden die meegaan",
-    "fr": "Champs repris",
+    "nl": "Opgenomen velden",
+    "fr": "Champs inclus",
     "en": "Included fields",
     "applications": ["mypraxis_web"]
   },
@@ -26289,6 +26289,76 @@
     "nl": "Je invoer en keuzes worden uit het concept overgenomen. Geblokkeerde API-velden blijven gekoppeld aan de geselecteerde divisie.",
     "fr": "Vos saisies et vos choix sont repris du brouillon. Les champs API verrouillés restent liés à la division sélectionnée.",
     "en": "Your input and selections are restored from the draft. Locked API fields remain linked to the selected division.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.createNewContract",
+    "nl": "Nieuw contract opmaken",
+    "fr": "Créer un nouveau contrat",
+    "en": "Create a new contract",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.deleteDraftContract",
+    "nl": "Concept verwijderen",
+    "fr": "Supprimer le brouillon",
+    "en": "Delete draft",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.saveAsNewDraft",
+    "nl": "Opslaan als nieuw concept",
+    "fr": "Enregistrer comme nouveau brouillon",
+    "en": "Save as new draft",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "error.contractDraftDeleteFailed",
+    "nl": "Het concept kon niet worden verwijderd.",
+    "fr": "Le brouillon n’a pas pu être supprimé.",
+    "en": "The draft could not be deleted.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "error.contractDraftSaveFailed",
+    "nl": "Het concept kon niet worden opgeslagen.",
+    "fr": "Le brouillon n’a pas pu être enregistré.",
+    "en": "The draft could not be saved.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "info.startContractWithoutDraft",
+    "nl": "Start zonder gegevens uit een concept over te nemen.",
+    "fr": "Commencez sans reprendre les données d’un brouillon.",
+    "en": "Start without using data from a draft.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "success.contractDraftDeleted",
+    "nl": "Concept verwijderd.",
+    "fr": "Brouillon supprimé.",
+    "en": "Draft deleted.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "success.contractDraftSaved",
+    "nl": "Concept opgeslagen.",
+    "fr": "Brouillon enregistré.",
+    "en": "Draft saved.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "warning.aboutToDeleteDraftContract",
+    "nl": "U staat op het punt concept ‘{{name}}’ te verwijderen.",
+    "fr": "Vous êtes sur le point de supprimer le brouillon « {{name}} ».",
+    "en": "You are about to delete draft ‘{{name}}’.",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "warning.aboutToDeleteDraftContracts",
+    "nl": "U staat op het punt {{value}} concepten te verwijderen.",
+    "fr": "Vous êtes sur le point de supprimer {{value}} brouillons.",
+    "en": "You are about to delete {{value}} drafts.",
     "applications": ["mypraxis_web"]
   }
 ]

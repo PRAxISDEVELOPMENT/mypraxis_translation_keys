@@ -26195,9 +26195,9 @@
   },
   {
     "key": "common.toBeAgreed",
-    "nl": "Nog overeen te komen",
-    "fr": "À convenir",
-    "en": "To be agreed",
+    "nl": "Later te bepalen",
+    "fr": "À déterminer ultérieurement",
+    "en": "To be determined later",
     "applications": ["mypraxis_web"]
   },
   {

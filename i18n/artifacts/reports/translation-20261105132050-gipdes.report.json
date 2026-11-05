@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-11-05T13:21:07.054Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20261105132050-gipdes.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.callMobileNumbersFirst",
+      "namespace": "common",
+      "changes": {
+        "nl": "Eerst mobiel(e) nummer(s) bellen"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Eerst mobiele nummer(s) bellen",
+        "fr": "Appeler d'abord le(s) numéro(s) mobile(s)",
+        "en": "Call mobile number(s) first"
+      },
+      "next": {
+        "nl": "Eerst mobiel(e) nummer(s) bellen",
+        "fr": "Appeler d'abord le(s) numéro(s) mobile(s)",
+        "en": "Call mobile number(s) first"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

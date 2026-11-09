@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3765,
-    "uniqueKeys": 3765,
+    "totalEntries": 3768,
+    "uniqueKeys": 3768,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -35353,6 +35353,36 @@
       }
     },
     {
+      "key": "common.extraAlarmBilling",
+      "namespace": "common",
+      "leaf": "extraAlarmBilling",
+      "segments": [
+        "common",
+        "extraAlarmBilling"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3766
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Berekening extra alarmen",
+        "fr": "Facturation des alarmes supplémentaires",
+        "en": "Extra alarm billing"
+      }
+    },
+    {
       "key": "common.extraAmountChargedToTheInstallerBecauseWeHandleInvoicingWithTheCustomer",
       "namespace": "common",
       "leaf": "extraAmountChargedToTheInstallerBecauseWeHandleInvoicingWithTheCustomer",
@@ -60558,6 +60588,36 @@
         "nl": "Polling verplicht",
         "fr": "Polling obligatoire",
         "en": "Polling required"
+      }
+    },
+    {
+      "key": "common.pool",
+      "namespace": "common",
+      "leaf": "pool",
+      "segments": [
+        "common",
+        "pool"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3767
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Poule",
+        "fr": "Pool",
+        "en": "Pool"
       }
     },
     {
@@ -95217,6 +95277,36 @@
       }
     },
     {
+      "key": "info.extraAlarmBillingMethod",
+      "namespace": "info",
+      "leaf": "extraAlarmBillingMethod",
+      "segments": [
+        "info",
+        "extraAlarmBillingMethod"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3768
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bepaal of extra alarmen via het standaard- of poulesysteem worden berekend.",
+        "fr": "Déterminez si les alarmes supplémentaires sont facturées selon le système standard ou le système de pool.",
+        "en": "Choose whether extra alarms are billed using the standard or pool system."
+      }
+    },
+    {
       "key": "info.extraInfoCanOnlyBeAddedOrChangedUponRequestViaPraxisGroupNV",
       "namespace": "info",
       "leaf": "extraInfoCanOnlyBeAddedOrChangedUponRequestViaPraxisGroupNV",
@@ -113794,7 +113884,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2676
+      "keyCount": 2678
     },
     {
       "name": "confirmation",
@@ -113815,7 +113905,7 @@
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 323
+      "keyCount": 324
     },
     {
       "name": "metadata",

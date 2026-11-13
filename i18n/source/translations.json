@@ -26394,5 +26394,61 @@
     "fr": "Déterminez si les alarmes supplémentaires sont facturées selon le système standard ou le système de pool.",
     "en": "Choose whether extra alarms are billed using the standard or pool system.",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.totalActiveClients",
+    "nl": "Totaal actieve klanten",
+    "fr": "Total des clients actifs",
+    "en": "Total active clients",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.totalFreeAlarms",
+    "nl": "Totaal gratis alarmen",
+    "fr": "Total des alarmes gratuites",
+    "en": "Total free alarms",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.totalEffectiveAlarms",
+    "nl": "Totaal effectieve alarmen",
+    "fr": "Total des alarmes effectives",
+    "en": "Total effective alarms",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.usagePercentage",
+    "nl": "Gebruikspercentage",
+    "fr": "Pourcentage d’utilisation",
+    "en": "Usage percentage",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.pouleAlarmDifference",
+    "nl": "Verschil gratis − effectief",
+    "fr": "Différence : gratuites − effectives",
+    "en": "Difference: free − effective",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.averageFreeAlarmsPerActiveClient",
+    "nl": "Gemiddeld gratis per actieve klant",
+    "fr": "Moyenne d’alarmes gratuites par client actif",
+    "en": "Average free alarms per active client",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.averageEffectiveAlarmsPerActiveClient",
+    "nl": "Gemiddeld effectief per actieve klant",
+    "fr": "Moyenne d’alarmes effectives par client actif",
+    "en": "Average effective alarms per active client",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.calculatedFromTotals",
+    "nl": "Berekend op basis van de totalen",
+    "fr": "Calculé à partir des totaux",
+    "en": "Calculated from the totals",
+    "applications": ["mypraxis_web"]
   }
 ]

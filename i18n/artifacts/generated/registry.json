@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3768,
-    "uniqueKeys": 3768,
+    "totalEntries": 3776,
+    "uniqueKeys": 3776,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -11060,6 +11060,66 @@
       }
     },
     {
+      "key": "common.averageEffectiveAlarmsPerActiveClient",
+      "namespace": "common",
+      "leaf": "averageEffectiveAlarmsPerActiveClient",
+      "segments": [
+        "common",
+        "averageEffectiveAlarmsPerActiveClient"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3775
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gemiddeld effectief per actieve klant",
+        "fr": "Moyenne d’alarmes effectives par client actif",
+        "en": "Average effective alarms per active client"
+      }
+    },
+    {
+      "key": "common.averageFreeAlarmsPerActiveClient",
+      "namespace": "common",
+      "leaf": "averageFreeAlarmsPerActiveClient",
+      "segments": [
+        "common",
+        "averageFreeAlarmsPerActiveClient"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3774
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gemiddeld gratis per actieve klant",
+        "fr": "Moyenne d’alarmes gratuites par client actif",
+        "en": "Average free alarms per active client"
+      }
+    },
+    {
       "key": "common.averageTime",
       "namespace": "common",
       "leaf": "averageTime",
@@ -13297,6 +13357,36 @@
         "nl": "Aangemaakt door",
         "fr": "Créé par",
         "en": "Created by"
+      }
+    },
+    {
+      "key": "common.calculatedFromTotals",
+      "namespace": "common",
+      "leaf": "calculatedFromTotals",
+      "segments": [
+        "common",
+        "calculatedFromTotals"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3776
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Berekend op basis van de totalen",
+        "fr": "Calculé à partir des totaux",
+        "en": "Calculated from the totals"
       }
     },
     {
@@ -60954,6 +61044,36 @@
       }
     },
     {
+      "key": "common.pouleAlarmDifference",
+      "namespace": "common",
+      "leaf": "pouleAlarmDifference",
+      "segments": [
+        "common",
+        "pouleAlarmDifference"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3773
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Verschil gratis − effectief",
+        "fr": "Différence : gratuites − effectives",
+        "en": "Difference: free − effective"
+      }
+    },
+    {
       "key": "common.praxisClientnumber",
       "namespace": "common",
       "leaf": "praxisClientnumber",
@@ -76806,6 +76926,36 @@
       }
     },
     {
+      "key": "common.totalActiveClients",
+      "namespace": "common",
+      "leaf": "totalActiveClients",
+      "segments": [
+        "common",
+        "totalActiveClients"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3769
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Totaal actieve klanten",
+        "fr": "Total des clients actifs",
+        "en": "Total active clients"
+      }
+    },
+    {
       "key": "common.totalAdditionalCosts",
       "namespace": "common",
       "leaf": "totalAdditionalCosts",
@@ -77103,6 +77253,66 @@
         "nl": "Totale duur: {{value}}",
         "fr": "Durée totale: {{value}}",
         "en": "Total duration: {{value}}"
+      }
+    },
+    {
+      "key": "common.totalEffectiveAlarms",
+      "namespace": "common",
+      "leaf": "totalEffectiveAlarms",
+      "segments": [
+        "common",
+        "totalEffectiveAlarms"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3771
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Totaal effectieve alarmen",
+        "fr": "Total des alarmes effectives",
+        "en": "Total effective alarms"
+      }
+    },
+    {
+      "key": "common.totalFreeAlarms",
+      "namespace": "common",
+      "leaf": "totalFreeAlarms",
+      "segments": [
+        "common",
+        "totalFreeAlarms"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3770
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Totaal gratis alarmen",
+        "fr": "Total des alarmes gratuites",
+        "en": "Total free alarms"
       }
     },
     {
@@ -80031,6 +80241,36 @@
         "nl": "URL",
         "fr": "URL",
         "en": "URL"
+      }
+    },
+    {
+      "key": "common.usagePercentage",
+      "namespace": "common",
+      "leaf": "usagePercentage",
+      "segments": [
+        "common",
+        "usagePercentage"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3772
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gebruikspercentage",
+        "fr": "Pourcentage d’utilisation",
+        "en": "Usage percentage"
       }
     },
     {
@@ -113884,7 +114124,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2678
+      "keyCount": 2686
     },
     {
       "name": "confirmation",

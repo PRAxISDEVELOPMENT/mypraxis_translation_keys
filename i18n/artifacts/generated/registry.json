@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3786,
-    "uniqueKeys": 3786,
+    "totalEntries": 3787,
+    "uniqueKeys": 3787,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -31341,7 +31341,7 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Hoger onderwijs – korte cyclus",
+        "nl": "Hoger onderwijs - korte cyclus",
         "fr": "Enseignement supérieur de cycle court",
         "en": "Short-cycle tertiary education"
       }
@@ -52362,9 +52362,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Nationaliteit",
-        "fr": "Nationalité",
-        "en": "Nationality"
+        "nl": "Land van nationaliteit",
+        "fr": "Pays de nationalité",
+        "en": "Country of nationality"
       }
     },
     {
@@ -52393,9 +52393,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Nationaliteit van echtgenote/echtgenoot",
-        "fr": "Nationalité du conjoint",
-        "en": "Nationality of wife/husband"
+        "nl": "Land van nationaliteit van echtgenoot/echtgenote",
+        "fr": "Pays de nationalité du conjoint/de la conjointe",
+        "en": "Country of nationality of spouse"
       }
     },
     {
@@ -72513,6 +72513,37 @@
       }
     },
     {
+      "key": "common.spouseDetails",
+      "namespace": "common",
+      "leaf": "spouseDetails",
+      "segments": [
+        "common",
+        "spouseDetails"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3787
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gegevens echtgenoot/echtgenote",
+        "fr": "Coordonnées du conjoint/de la conjointe",
+        "en": "Spouse details"
+      }
+    },
+    {
       "key": "common.standard",
       "namespace": "common",
       "leaf": "standard",
@@ -78274,9 +78305,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Methode woon/werkverkeer",
-        "fr": "Moyen de transport",
-        "en": "Travel method"
+        "nl": "Woon/werkverkeer",
+        "fr": "Trajet domicile-travail",
+        "en": "Commuting"
       }
     },
     {
@@ -114424,7 +114455,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2696
+      "keyCount": 2697
     },
     {
       "name": "confirmation",

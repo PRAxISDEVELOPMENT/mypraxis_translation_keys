@@ -12006,16 +12006,16 @@
   },
   {
     "key": "common.nationality",
-    "nl": "Nationaliteit",
-    "fr": "Nationalité",
-    "en": "Nationality",
+    "nl": "Land van nationaliteit",
+    "fr": "Pays de nationalité",
+    "en": "Country of nationality",
     "applications": ["mypraxis_web", "mypraxis_app"]
   },
   {
     "key": "common.nationalityOfWifeHusband",
-    "nl": "Nationaliteit van echtgenote/echtgenoot",
-    "fr": "Nationalité du conjoint",
-    "en": "Nationality of wife/husband",
+    "nl": "Land van nationaliteit van echtgenoot/echtgenote",
+    "fr": "Pays de nationalité du conjoint/de la conjointe",
+    "en": "Country of nationality of spouse",
     "applications": ["mypraxis_web", "mypraxis_app"]
   },
   {
@@ -17981,9 +17981,9 @@
   },
   {
     "key": "common.travelMethod",
-    "nl": "Methode woon/werkverkeer",
-    "fr": "Moyen de transport",
-    "en": "Travel method",
+    "nl": "Woon/werkverkeer",
+    "fr": "Trajet domicile-travail",
+    "en": "Commuting",
     "applications": ["mypraxis_web", "mypraxis_app"]
   },
   {
@@ -26495,7 +26495,7 @@
   },
   {
     "key": "common.educationLevel5",
-    "nl": "Hoger onderwijs – korte cyclus",
+    "nl": "Hoger onderwijs - korte cyclus",
     "fr": "Enseignement supérieur de cycle court",
     "en": "Short-cycle tertiary education",
     "applications": ["mypraxis_web"]
@@ -26520,5 +26520,12 @@
     "fr": "Doctorat ou équivalent",
     "en": "Doctorate or equivalent",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.spouseDetails",
+    "nl": "Gegevens echtgenoot/echtgenote",
+    "fr": "Coordonnées du conjoint/de la conjointe",
+    "en": "Spouse details",
+    "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

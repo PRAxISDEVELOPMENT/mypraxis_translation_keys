@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "proposalBatchId": "mypraxis-spouse-details-upload.proposals",
+  "status": "pending-review",
+  "createdAt": "2026-11-17T11:37:01.900Z",
+  "source": {
+    "uploadFile": "../../../../tmp/mypraxis-spouse-details-upload.json",
+    "reportFile": "../../../../tmp/mypraxis-spouse-details-report.json",
+    "proposalCount": 1
+  },
+  "review": {
+    "required": true,
+    "instructions": "Edit the proposedEntry block for each proposal in this file when the key, applications, or locale text needs adjustment before merge."
+  },
+  "proposals": [
+    {
+      "proposalId": "mypraxis-spouse-details-upload.proposal-01",
+      "source": {
+        "uploadEntryIndex": 1
+      },
+      "review": {
+        "requestedNamespace": "common",
+        "suggestedKey": "common.spouseDetails",
+        "suggestedNamespace": "common",
+        "confidence": "requested",
+        "reason": "Upload explicitly requested namespace \"common\"."
+      },
+      "originalEntry": {
+        "nl": "Gegevens echtgenoot/echtgenote",
+        "fr": "Coordonnées du conjoint/de la conjointe",
+        "en": "Spouse details",
+        "description": "Bloktitel boven de persoonlijke gegevens van de echtgenoot/echtgenote in stap 3 van de medewerkerregistratie.",
+        "requestedNamespace": "common"
+      },
+      "proposedEntry": {
+        "key": "common.spouseDetails",
+        "nl": "Gegevens echtgenoot/echtgenote",
+        "fr": "Coordonnées du conjoint/de la conjointe",
+        "en": "Spouse details",
+        "applications": [
+          "mypraxis_web"
+        ],
+        "description": "Bloktitel boven de persoonlijke gegevens van de echtgenoot/echtgenote in stap 3 van de medewerkerregistratie."
+      }
+    }
+  ]
+}

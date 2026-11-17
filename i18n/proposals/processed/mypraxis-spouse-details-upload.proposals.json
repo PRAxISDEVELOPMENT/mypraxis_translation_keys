@@ -1,7 +1,7 @@
 {
   "version": 2,
   "proposalBatchId": "mypraxis-spouse-details-upload.proposals",
-  "status": "pending-review",
+  "status": "already-applied",
   "createdAt": "2026-11-17T11:37:01.900Z",
   "source": {
     "uploadFile": "../../../../tmp/mypraxis-spouse-details-upload.json",
@@ -43,5 +43,9 @@
         "description": "Bloktitel boven de persoonlijke gegevens van de echtgenoot/echtgenote in stap 3 van de medewerkerregistratie."
       }
     }
-  ]
+  ],
+  "resolution": {
+    "reason": "The canonical source already contains the same key and locale values, with application scope covering this proposal.",
+    "key": "common.spouseDetails"
+  }
 }

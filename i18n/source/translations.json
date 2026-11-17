@@ -5257,10 +5257,10 @@
     "applications": ["mypraxis_web"]
   },
   {
-    "key": "common.creationSheetOperator",
-    "nl": "Creatiefiche Operator",
-    "fr": "Fiche de création pour un opérateur",
-    "en": "Creation sheet operator",
+    "key": "common.createEmployeeSheet",
+    "nl": "Registratie medewerker",
+    "fr": "Inscription d’un collaborateur",
+    "en": "Employee registration",
     "applications": ["mypraxis_web"]
   },
   {
@@ -9954,10 +9954,10 @@
     "applications": ["mypraxis_web"]
   },
   {
-    "key": "common.inOrderToCreateYouAsAnOperatorWeNeedSomeAdditionalInformation",
-    "nl": "Om u als operator aan te maken, hebben we nog wat extra informatie nodig.",
-    "fr": "Afin de vous créer en tant qu'opérateur, nous avons besoin de quelques informations supplémentaires.",
-    "en": "In order to create you as an operator, we need some additional information.",
+    "key": "common.employeeRegistrationAdditionalInformation",
+    "nl": "Om uw registratie als medewerker te voltooien, hebben we nog enkele gegevens nodig.",
+    "fr": "Pour finaliser votre inscription en tant que collaborateur, nous avons besoin de quelques informations supplémentaires.",
+    "en": "To complete your registration as an employee, we need a few more details.",
     "applications": ["mypraxis_web"]
   },
   {
@@ -26449,6 +26449,76 @@
     "nl": "Berekend op basis van de totalen",
     "fr": "Calculé à partir des totaux",
     "en": "Calculated from the totals",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.highestCompletedEducationLevel",
+    "nl": "Hoogst behaald onderwijsniveau",
+    "fr": "Niveau d’enseignement le plus élevé atteint",
+    "en": "Highest completed education level",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.educationLevel0",
+    "nl": "Minder dan basisonderwijs",
+    "fr": "Niveau inférieur à l’enseignement primaire",
+    "en": "Less than primary education",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.educationLevel1",
+    "nl": "Basisonderwijs",
+    "fr": "Enseignement primaire",
+    "en": "Primary education",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.educationLevel2",
+    "nl": "Lager secundair onderwijs",
+    "fr": "Premier cycle de l’enseignement secondaire",
+    "en": "Lower secondary education",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.educationLevel3",
+    "nl": "Hoger secundair onderwijs",
+    "fr": "Deuxième cycle de l’enseignement secondaire",
+    "en": "Upper secondary education",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.educationLevel4",
+    "nl": "Postsecundair niet-hoger onderwijs",
+    "fr": "Enseignement postsecondaire non supérieur",
+    "en": "Post-secondary non-tertiary education",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.educationLevel5",
+    "nl": "Hoger onderwijs – korte cyclus",
+    "fr": "Enseignement supérieur de cycle court",
+    "en": "Short-cycle tertiary education",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.educationLevel6",
+    "nl": "Bachelor of gelijkwaardig",
+    "fr": "Bachelier ou équivalent",
+    "en": "Bachelor or equivalent",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.educationLevel7",
+    "nl": "Master of gelijkwaardig",
+    "fr": "Master ou équivalent",
+    "en": "Master or equivalent",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.educationLevel8",
+    "nl": "Doctoraat of gelijkwaardig",
+    "fr": "Doctorat ou équivalent",
+    "en": "Doctorate or equivalent",
     "applications": ["mypraxis_web"]
   }
 ]

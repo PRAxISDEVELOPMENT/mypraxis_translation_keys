@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3776,
-    "uniqueKeys": 3776,
+    "totalEntries": 3786,
+    "uniqueKeys": 3786,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -22664,6 +22664,36 @@
       }
     },
     {
+      "key": "common.createEmployeeSheet",
+      "namespace": "common",
+      "leaf": "createEmployeeSheet",
+      "segments": [
+        "common",
+        "createEmployeeSheet"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        752
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Registratie medewerker",
+        "fr": "Inscription d’un collaborateur",
+        "en": "Employee registration"
+      }
+    },
+    {
       "key": "common.createLinkedCustomer",
       "namespace": "common",
       "leaf": "createLinkedCustomer",
@@ -22903,36 +22933,6 @@
         "nl": "Creatiefiche installateur",
         "fr": "Fiche de création pour l'installateur",
         "en": "Creation sheet installer"
-      }
-    },
-    {
-      "key": "common.creationSheetOperator",
-      "namespace": "common",
-      "leaf": "creationSheetOperator",
-      "segments": [
-        "common",
-        "creationSheetOperator"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        752
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "status": {
-        "nl": "approved",
-        "fr": "approved",
-        "en": "approved"
-      },
-      "reviewRequiredLocales": [],
-      "resolved": {
-        "nl": "Creatiefiche Operator",
-        "fr": "Fiche de création pour un opérateur",
-        "en": "Creation sheet operator"
       }
     },
     {
@@ -31167,6 +31167,276 @@
       }
     },
     {
+      "key": "common.educationLevel0",
+      "namespace": "common",
+      "leaf": "educationLevel0",
+      "segments": [
+        "common",
+        "educationLevel0"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3778
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Minder dan basisonderwijs",
+        "fr": "Niveau inférieur à l’enseignement primaire",
+        "en": "Less than primary education"
+      }
+    },
+    {
+      "key": "common.educationLevel1",
+      "namespace": "common",
+      "leaf": "educationLevel1",
+      "segments": [
+        "common",
+        "educationLevel1"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3779
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Basisonderwijs",
+        "fr": "Enseignement primaire",
+        "en": "Primary education"
+      }
+    },
+    {
+      "key": "common.educationLevel2",
+      "namespace": "common",
+      "leaf": "educationLevel2",
+      "segments": [
+        "common",
+        "educationLevel2"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3780
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Lager secundair onderwijs",
+        "fr": "Premier cycle de l’enseignement secondaire",
+        "en": "Lower secondary education"
+      }
+    },
+    {
+      "key": "common.educationLevel3",
+      "namespace": "common",
+      "leaf": "educationLevel3",
+      "segments": [
+        "common",
+        "educationLevel3"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3781
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Hoger secundair onderwijs",
+        "fr": "Deuxième cycle de l’enseignement secondaire",
+        "en": "Upper secondary education"
+      }
+    },
+    {
+      "key": "common.educationLevel4",
+      "namespace": "common",
+      "leaf": "educationLevel4",
+      "segments": [
+        "common",
+        "educationLevel4"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3782
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Postsecundair niet-hoger onderwijs",
+        "fr": "Enseignement postsecondaire non supérieur",
+        "en": "Post-secondary non-tertiary education"
+      }
+    },
+    {
+      "key": "common.educationLevel5",
+      "namespace": "common",
+      "leaf": "educationLevel5",
+      "segments": [
+        "common",
+        "educationLevel5"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3783
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Hoger onderwijs – korte cyclus",
+        "fr": "Enseignement supérieur de cycle court",
+        "en": "Short-cycle tertiary education"
+      }
+    },
+    {
+      "key": "common.educationLevel6",
+      "namespace": "common",
+      "leaf": "educationLevel6",
+      "segments": [
+        "common",
+        "educationLevel6"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3784
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bachelor of gelijkwaardig",
+        "fr": "Bachelier ou équivalent",
+        "en": "Bachelor or equivalent"
+      }
+    },
+    {
+      "key": "common.educationLevel7",
+      "namespace": "common",
+      "leaf": "educationLevel7",
+      "segments": [
+        "common",
+        "educationLevel7"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3785
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Master of gelijkwaardig",
+        "fr": "Master ou équivalent",
+        "en": "Master or equivalent"
+      }
+    },
+    {
+      "key": "common.educationLevel8",
+      "namespace": "common",
+      "leaf": "educationLevel8",
+      "segments": [
+        "common",
+        "educationLevel8"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3786
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Doctoraat of gelijkwaardig",
+        "fr": "Doctorat ou équivalent",
+        "en": "Doctorate or equivalent"
+      }
+    },
+    {
       "key": "common.email",
       "namespace": "common",
       "leaf": "email",
@@ -32608,6 +32878,36 @@
         "nl": "Werknemer",
         "fr": "Employé",
         "en": "Employee"
+      }
+    },
+    {
+      "key": "common.employeeRegistrationAdditionalInformation",
+      "namespace": "common",
+      "leaf": "employeeRegistrationAdditionalInformation",
+      "segments": [
+        "common",
+        "employeeRegistrationAdditionalInformation"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        1423
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Om uw registratie als medewerker te voltooien, hebben we nog enkele gegevens nodig.",
+        "fr": "Pour finaliser votre inscription en tant que collaborateur, nous avons besoin de quelques informations supplémentaires.",
+        "en": "To complete your registration as an employee, we need a few more details."
       }
     },
     {
@@ -40700,6 +41000,36 @@
       }
     },
     {
+      "key": "common.highestCompletedEducationLevel",
+      "namespace": "common",
+      "leaf": "highestCompletedEducationLevel",
+      "segments": [
+        "common",
+        "highestCompletedEducationLevel"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3777
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Hoogst behaald onderwijsniveau",
+        "fr": "Niveau d’enseignement le plus élevé atteint",
+        "en": "Highest completed education level"
+      }
+    },
+    {
       "key": "common.history",
       "namespace": "common",
       "leaf": "history",
@@ -43171,36 +43501,6 @@
         "nl": "Inline code",
         "fr": "Code en ligne",
         "en": "Inline code"
-      }
-    },
-    {
-      "key": "common.inOrderToCreateYouAsAnOperatorWeNeedSomeAdditionalInformation",
-      "namespace": "common",
-      "leaf": "inOrderToCreateYouAsAnOperatorWeNeedSomeAdditionalInformation",
-      "segments": [
-        "common",
-        "inOrderToCreateYouAsAnOperatorWeNeedSomeAdditionalInformation"
-      ],
-      "applications": [
-        "mypraxis_web"
-      ],
-      "namespaceStatus": "active",
-      "sourceEntries": [
-        1423
-      ],
-      "duplicateCount": 1,
-      "duplicateValuesDiffer": false,
-      "missingLocales": [],
-      "status": {
-        "nl": "approved",
-        "fr": "approved",
-        "en": "approved"
-      },
-      "reviewRequiredLocales": [],
-      "resolved": {
-        "nl": "Om u als operator aan te maken, hebben we nog wat extra informatie nodig.",
-        "fr": "Afin de vous créer en tant qu'opérateur, nous avons besoin de quelques informations supplémentaires.",
-        "en": "In order to create you as an operator, we need some additional information."
       }
     },
     {
@@ -114124,7 +114424,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2686
+      "keyCount": 2696
     },
     {
       "name": "confirmation",

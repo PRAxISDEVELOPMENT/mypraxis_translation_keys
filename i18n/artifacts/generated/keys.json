@@ -3645,6 +3645,7 @@
   "success.vocalChanged",
   "success.vocalDeleted",
   "success.willBeCopiedFromClient",
+  "success.yourRequestIsBeingProcessed",
   "success.zoneAdded",
   "success.zoneChanged",
   "success.zonesDeleted",

@@ -3662,6 +3662,7 @@
     "vocalChanged": "Vocal changed",
     "vocalDeleted": "Vocal deleted",
     "willBeCopiedFromClient": "Will be copied from client",
+    "yourRequestIsBeingProcessed": "Your request is being processed.",
     "zoneAdded": "Zone added",
     "zoneChanged": "Zone changed",
     "zonesDeleted": "{{value}} zone(s) deleted",

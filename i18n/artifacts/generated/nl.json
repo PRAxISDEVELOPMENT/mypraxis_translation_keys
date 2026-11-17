@@ -3662,6 +3662,7 @@
     "vocalChanged": "Inluistering gewijzigd",
     "vocalDeleted": "Inluistering verwijderd",
     "willBeCopiedFromClient": "Wordt gekopieerd van klant",
+    "yourRequestIsBeingProcessed": "Uw aanvraag is in behandeling.",
     "zoneAdded": "Zone toegevoegd",
     "zoneChanged": "Zone gewijzigd",
     "zonesDeleted": "{{value}} zone(s) verwijderd",

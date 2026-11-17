@@ -26527,5 +26527,12 @@
     "fr": "Coordonnées du conjoint/de la conjointe",
     "en": "Spouse details",
     "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "success.yourRequestIsBeingProcessed",
+    "nl": "Uw aanvraag is in behandeling.",
+    "fr": "Votre demande est en cours de traitement.",
+    "en": "Your request is being processed.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

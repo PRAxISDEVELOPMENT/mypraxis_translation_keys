@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3787,
-    "uniqueKeys": 3787,
+    "totalEntries": 3788,
+    "uniqueKeys": 3788,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -110197,6 +110197,37 @@
       }
     },
     {
+      "key": "success.yourRequestIsBeingProcessed",
+      "namespace": "success",
+      "leaf": "yourRequestIsBeingProcessed",
+      "segments": [
+        "success",
+        "yourRequestIsBeingProcessed"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3788
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Uw aanvraag is in behandeling.",
+        "fr": "Votre demande est en cours de traitement.",
+        "en": "Your request is being processed."
+      }
+    },
+    {
       "key": "success.zoneAdded",
       "namespace": "success",
       "leaf": "zoneAdded",
@@ -114504,7 +114535,7 @@
       "label": "Geslaagd",
       "description": "Teksten die bevestigen dat een actie correct is uitgevoerd of succesvol is afgerond.",
       "status": "active",
-      "keyCount": 251
+      "keyCount": 252
     },
     {
       "name": "warning",

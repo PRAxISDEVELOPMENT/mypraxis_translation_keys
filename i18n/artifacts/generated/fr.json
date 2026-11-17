@@ -3662,6 +3662,7 @@
     "vocalChanged": "Écoute à distance modifiée",
     "vocalDeleted": "L'option d'écoute à distance supprimée",
     "willBeCopiedFromClient": "Sera copié provenant du client",
+    "yourRequestIsBeingProcessed": "Votre demande est en cours de traitement.",
     "zoneAdded": "Zone ajoutée",
     "zoneChanged": "Zone modifiée",
     "zonesDeleted": "{{value}} zone(s) supprimées",

@@ -70,7 +70,7 @@
       "label": "Geslaagd",
       "description": "Teksten die bevestigen dat een actie correct is uitgevoerd of succesvol is afgerond.",
       "status": "active",
-      "keyCount": 251
+      "keyCount": 252
     },
     {
       "name": "warning",

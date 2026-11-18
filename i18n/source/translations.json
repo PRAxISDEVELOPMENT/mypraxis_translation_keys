@@ -26534,5 +26534,138 @@
     "fr": "Votre demande est en cours de traitement.",
     "en": "Your request is being processed.",
     "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoHandlingInfo",
+    "nl": "Deze instellingen bepalen hoe alarmen worden afgehandeld. Ook wanneer er niemand gebeld hoeft te worden, blijft dit onderdeel van de alarmafhandeling.",
+    "fr": "Ces paramètres définissent le traitement des alarmes. Même si personne ne doit être appelé, l’alarme reste traitée selon ces paramètres.",
+    "en": "These settings define how alarms are handled. Even when no one needs to be called, the alarm is still handled according to these settings.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoGeneralSettings",
+    "nl": "Algemene instellingen",
+    "fr": "Paramètres généraux",
+    "en": "General settings",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoAlwaysCallAllAlarms",
+    "nl": "Altijd bellen voor alle alarmen in de alarmbuffer",
+    "fr": "Toujours appeler pour toutes les alarmes dans le tampon d’alarmes",
+    "en": "Always call for all alarms in the alarm buffer",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoAlwaysCallAllAlarmsDescription",
+    "nl": "Wanneer ingeschakeld, wordt altijd gebeld, ongeacht wat op de beelden zichtbaar is.",
+    "fr": "Lorsque cette option est activée, un appel est toujours effectué, quels que soient les éléments visibles sur les images.",
+    "en": "When enabled, a call is always made, regardless of what is visible in the footage.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoCallWhenCameraUnavailable",
+    "nl": "Altijd bellen voor alle alarmen wanneer de beelden niet werken",
+    "fr": "Toujours appeler pour toutes les alarmes lorsque les images ne sont pas disponibles",
+    "en": "Always call for all alarms when the footage is unavailable",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoExceptions",
+    "nl": "Met uitzondering van",
+    "fr": "À l’exception de",
+    "en": "Except for",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoRequired",
+    "nl": "verplicht",
+    "fr": "obligatoire",
+    "en": "required",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoCallConditionsTitle",
+    "nl": "Enkel bellen wanneer er bij alarmafhandeling op de beelden:",
+    "fr": "Appeler uniquement lorsque les images montrent, lors du traitement de l’alarme :",
+    "en": "Call only when the footage shows the following during alarm handling:",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoPersonVisible",
+    "nl": "Eén of meerdere personen te zien zijn",
+    "fr": "Une ou plusieurs personnes sont visibles",
+    "en": "One or more people are visible",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoMovingVehicles",
+    "nl": "Bewegende voertuigen te zien zijn",
+    "fr": "Des véhicules en mouvement sont visibles",
+    "en": "Moving vehicles are visible",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoHumanPresence",
+    "nl": "Een indicatie van menselijke aanwezigheid te zien is",
+    "fr": "Un signe de présence humaine est visible",
+    "en": "An indication of human presence is visible",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoHumanPresenceDescription",
+    "nl": "Bijvoorbeeld een opengaande of dichtgaande deur/poort, oplichtend of dovend licht, …",
+    "fr": "Par exemple, une porte ou un portail qui s’ouvre ou se ferme, une lumière qui s’allume ou s’éteint, …",
+    "en": "For example, a door or gate opening or closing, a light turning on or off, …",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoFollowingVisible",
+    "nl": "Volgende te zien is:",
+    "fr": "Les éléments suivants sont visibles :",
+    "en": "The following is visible:",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoOtherImageActions",
+    "nl": "Overige acties in functie van beelden:",
+    "fr": "Autres actions liées aux images :",
+    "en": "Other actions related to footage:",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoLinkedCommandButton",
+    "nl": "Gekoppelde commandoknop (optioneel)",
+    "fr": "Bouton de commande associé (facultatif)",
+    "en": "Linked command button (optional)",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoOpenProcedure",
+    "nl": "Procedure openen",
+    "fr": "Ouvrir la procédure",
+    "en": "Open procedure",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoCommandButtonsLoading",
+    "nl": "Commandoknoppen laden…",
+    "fr": "Chargement des boutons de commande…",
+    "en": "Loading command buttons…",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoCommandButtonsError",
+    "nl": "De commandoknoppen konden niet worden geladen.",
+    "fr": "Impossible de charger les boutons de commande.",
+    "en": "The command buttons could not be loaded.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.videoUnavailableCommandButton",
+    "nl": "Gekoppelde commandoknop",
+    "fr": "Bouton de commande associé",
+    "en": "Linked command button",
+    "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

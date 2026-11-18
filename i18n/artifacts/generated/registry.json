@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3788,
-    "uniqueKeys": 3788,
+    "totalEntries": 3807,
+    "uniqueKeys": 3807,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -82089,6 +82089,130 @@
       }
     },
     {
+      "key": "common.videoAlwaysCallAllAlarms",
+      "namespace": "common",
+      "leaf": "videoAlwaysCallAllAlarms",
+      "segments": [
+        "common",
+        "videoAlwaysCallAllAlarms"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3791
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Altijd bellen voor alle alarmen in de alarmbuffer",
+        "fr": "Toujours appeler pour toutes les alarmes dans le tampon d’alarmes",
+        "en": "Always call for all alarms in the alarm buffer"
+      }
+    },
+    {
+      "key": "common.videoAlwaysCallAllAlarmsDescription",
+      "namespace": "common",
+      "leaf": "videoAlwaysCallAllAlarmsDescription",
+      "segments": [
+        "common",
+        "videoAlwaysCallAllAlarmsDescription"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3792
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Wanneer ingeschakeld, wordt altijd gebeld, ongeacht wat op de beelden zichtbaar is.",
+        "fr": "Lorsque cette option est activée, un appel est toujours effectué, quels que soient les éléments visibles sur les images.",
+        "en": "When enabled, a call is always made, regardless of what is visible in the footage."
+      }
+    },
+    {
+      "key": "common.videoCallConditionsTitle",
+      "namespace": "common",
+      "leaf": "videoCallConditionsTitle",
+      "segments": [
+        "common",
+        "videoCallConditionsTitle"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3796
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Enkel bellen wanneer er bij alarmafhandeling op de beelden:",
+        "fr": "Appeler uniquement lorsque les images montrent, lors du traitement de l’alarme :",
+        "en": "Call only when the footage shows the following during alarm handling:"
+      }
+    },
+    {
+      "key": "common.videoCallWhenCameraUnavailable",
+      "namespace": "common",
+      "leaf": "videoCallWhenCameraUnavailable",
+      "segments": [
+        "common",
+        "videoCallWhenCameraUnavailable"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3793
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Altijd bellen voor alle alarmen wanneer de beelden niet werken",
+        "fr": "Toujours appeler pour toutes les alarmes lorsque les images ne sont pas disponibles",
+        "en": "Always call for all alarms when the footage is unavailable"
+      }
+    },
+    {
       "key": "common.videoclip",
       "namespace": "common",
       "leaf": "videoclip",
@@ -82119,6 +82243,68 @@
       }
     },
     {
+      "key": "common.videoCommandButtonsError",
+      "namespace": "common",
+      "leaf": "videoCommandButtonsError",
+      "segments": [
+        "common",
+        "videoCommandButtonsError"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3806
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "De commandoknoppen konden niet worden geladen.",
+        "fr": "Impossible de charger les boutons de commande.",
+        "en": "The command buttons could not be loaded."
+      }
+    },
+    {
+      "key": "common.videoCommandButtonsLoading",
+      "namespace": "common",
+      "leaf": "videoCommandButtonsLoading",
+      "segments": [
+        "common",
+        "videoCommandButtonsLoading"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3805
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Commandoknoppen laden…",
+        "fr": "Chargement des boutons de commande…",
+        "en": "Loading command buttons…"
+      }
+    },
+    {
       "key": "common.videoData",
       "namespace": "common",
       "leaf": "videoData",
@@ -82146,6 +82332,378 @@
         "nl": "Videogegevens",
         "fr": "Données vidéo",
         "en": "Video data"
+      }
+    },
+    {
+      "key": "common.videoExceptions",
+      "namespace": "common",
+      "leaf": "videoExceptions",
+      "segments": [
+        "common",
+        "videoExceptions"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3794
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Met uitzondering van",
+        "fr": "À l’exception de",
+        "en": "Except for"
+      }
+    },
+    {
+      "key": "common.videoFollowingVisible",
+      "namespace": "common",
+      "leaf": "videoFollowingVisible",
+      "segments": [
+        "common",
+        "videoFollowingVisible"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3801
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Volgende te zien is:",
+        "fr": "Les éléments suivants sont visibles :",
+        "en": "The following is visible:"
+      }
+    },
+    {
+      "key": "common.videoGeneralSettings",
+      "namespace": "common",
+      "leaf": "videoGeneralSettings",
+      "segments": [
+        "common",
+        "videoGeneralSettings"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3790
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Algemene instellingen",
+        "fr": "Paramètres généraux",
+        "en": "General settings"
+      }
+    },
+    {
+      "key": "common.videoHandlingInfo",
+      "namespace": "common",
+      "leaf": "videoHandlingInfo",
+      "segments": [
+        "common",
+        "videoHandlingInfo"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3789
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Deze instellingen bepalen hoe alarmen worden afgehandeld. Ook wanneer er niemand gebeld hoeft te worden, blijft dit onderdeel van de alarmafhandeling.",
+        "fr": "Ces paramètres définissent le traitement des alarmes. Même si personne ne doit être appelé, l’alarme reste traitée selon ces paramètres.",
+        "en": "These settings define how alarms are handled. Even when no one needs to be called, the alarm is still handled according to these settings."
+      }
+    },
+    {
+      "key": "common.videoHumanPresence",
+      "namespace": "common",
+      "leaf": "videoHumanPresence",
+      "segments": [
+        "common",
+        "videoHumanPresence"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3799
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Een indicatie van menselijke aanwezigheid te zien is",
+        "fr": "Un signe de présence humaine est visible",
+        "en": "An indication of human presence is visible"
+      }
+    },
+    {
+      "key": "common.videoHumanPresenceDescription",
+      "namespace": "common",
+      "leaf": "videoHumanPresenceDescription",
+      "segments": [
+        "common",
+        "videoHumanPresenceDescription"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3800
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bijvoorbeeld een opengaande of dichtgaande deur/poort, oplichtend of dovend licht, …",
+        "fr": "Par exemple, une porte ou un portail qui s’ouvre ou se ferme, une lumière qui s’allume ou s’éteint, …",
+        "en": "For example, a door or gate opening or closing, a light turning on or off, …"
+      }
+    },
+    {
+      "key": "common.videoLinkedCommandButton",
+      "namespace": "common",
+      "leaf": "videoLinkedCommandButton",
+      "segments": [
+        "common",
+        "videoLinkedCommandButton"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3803
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gekoppelde commandoknop (optioneel)",
+        "fr": "Bouton de commande associé (facultatif)",
+        "en": "Linked command button (optional)"
+      }
+    },
+    {
+      "key": "common.videoMovingVehicles",
+      "namespace": "common",
+      "leaf": "videoMovingVehicles",
+      "segments": [
+        "common",
+        "videoMovingVehicles"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3798
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Bewegende voertuigen te zien zijn",
+        "fr": "Des véhicules en mouvement sont visibles",
+        "en": "Moving vehicles are visible"
+      }
+    },
+    {
+      "key": "common.videoOpenProcedure",
+      "namespace": "common",
+      "leaf": "videoOpenProcedure",
+      "segments": [
+        "common",
+        "videoOpenProcedure"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3804
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Procedure openen",
+        "fr": "Ouvrir la procédure",
+        "en": "Open procedure"
+      }
+    },
+    {
+      "key": "common.videoOtherImageActions",
+      "namespace": "common",
+      "leaf": "videoOtherImageActions",
+      "segments": [
+        "common",
+        "videoOtherImageActions"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3802
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Overige acties in functie van beelden:",
+        "fr": "Autres actions liées aux images :",
+        "en": "Other actions related to footage:"
+      }
+    },
+    {
+      "key": "common.videoPersonVisible",
+      "namespace": "common",
+      "leaf": "videoPersonVisible",
+      "segments": [
+        "common",
+        "videoPersonVisible"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3797
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Eén of meerdere personen te zien zijn",
+        "fr": "Une ou plusieurs personnes sont visibles",
+        "en": "One or more people are visible"
+      }
+    },
+    {
+      "key": "common.videoRequired",
+      "namespace": "common",
+      "leaf": "videoRequired",
+      "segments": [
+        "common",
+        "videoRequired"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3795
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "verplicht",
+        "fr": "obligatoire",
+        "en": "required"
       }
     },
     {
@@ -82267,6 +82825,37 @@
         "nl": "Videotype",
         "fr": "Type de vidéo",
         "en": "Video type"
+      }
+    },
+    {
+      "key": "common.videoUnavailableCommandButton",
+      "namespace": "common",
+      "leaf": "videoUnavailableCommandButton",
+      "segments": [
+        "common",
+        "videoUnavailableCommandButton"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3807
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gekoppelde commandoknop",
+        "fr": "Bouton de commande associé",
+        "en": "Linked command button"
       }
     },
     {
@@ -114486,7 +115075,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2697
+      "keyCount": 2716
     },
     {
       "name": "confirmation",

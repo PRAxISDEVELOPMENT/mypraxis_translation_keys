@@ -26667,5 +26667,12 @@
     "fr": "Bouton de commande associé",
     "en": "Linked command button",
     "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "common.onlyAvailableInDesktopApp",
+    "nl": "Alleen beschikbaar via de desktopapplicatie.",
+    "fr": "Disponible uniquement dans l’application de bureau.",
+    "en": "Only available in the desktop application.",
+    "applications": ["mypraxis_web", "mypraxis_app"]
   }
 ]

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3807,
-    "uniqueKeys": 3807,
+    "totalEntries": 3808,
+    "uniqueKeys": 3808,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -56478,6 +56478,37 @@
         "nl": "Online",
         "fr": "Connecté",
         "en": "Online"
+      }
+    },
+    {
+      "key": "common.onlyAvailableInDesktopApp",
+      "namespace": "common",
+      "leaf": "onlyAvailableInDesktopApp",
+      "segments": [
+        "common",
+        "onlyAvailableInDesktopApp"
+      ],
+      "applications": [
+        "mypraxis_app",
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3808
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Alleen beschikbaar via de desktopapplicatie.",
+        "fr": "Disponible uniquement dans l’application de bureau.",
+        "en": "Only available in the desktop application."
       }
     },
     {
@@ -115075,7 +115106,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2716
+      "keyCount": 2717
     },
     {
       "name": "confirmation",

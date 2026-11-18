@@ -1865,6 +1865,7 @@
   "common.ongoingDeactivationPeriodSet",
   "common.onhold",
   "common.online",
+  "common.onlyAvailableInDesktopApp",
   "common.onlyCp3OrCp4",
   "common.onlyEmailToTheOffice",
   "common.onlyNumericValuesAllowed",

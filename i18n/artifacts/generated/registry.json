@@ -15767,9 +15767,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Wijzig DVR instellingen",
-        "fr": "Modifier les paramètres du DVR",
-        "en": "Change DVR settings"
+        "nl": "Wijzig DVR/NVR instellingen",
+        "fr": "Modifier les paramètres du DVR/NVR",
+        "en": "Change DVR/NVR settings"
       }
     },
     {
@@ -26520,9 +26520,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Verwijder DVR instellingen",
-        "fr": "Supprimer les paramètres du DVR",
-        "en": "Delete DVR settings"
+        "nl": "Verwijder DVR/NVR instellingen",
+        "fr": "Supprimer les paramètres du DVR/NVR",
+        "en": "Delete DVR/NVR settings"
       }
     },
     {
@@ -30768,9 +30768,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "DVR instellingen",
-        "fr": "Paramètres du DVR",
-        "en": "DVR settings"
+        "nl": "DVR/NVR instellingen",
+        "fr": "Paramètres du DVR/NVR",
+        "en": "DVR/NVR settings"
       }
     },
     {
@@ -106684,9 +106684,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "DVR instellingen gewijzigd",
-        "fr": "Paramètres du DVR modifiés",
-        "en": "DVR settings changed"
+        "nl": "DVR/NVR instellingen gewijzigd",
+        "fr": "Paramètres du DVR/NVR modifiés",
+        "en": "DVR/NVR settings changed"
       }
     },
     {
@@ -106714,9 +106714,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "{{value}} DVR instelling(en) verwijderd",
-        "fr": "{{value}} paramètre(s) du DVR supprimé(s)",
-        "en": "{{value}} DVR setting(s) deleted"
+        "nl": "{{value}} DVR/NVR instelling(en) verwijderd",
+        "fr": "{{value}} paramètre(s) du DVR/NVR supprimé(s)",
+        "en": "{{value}} DVR/NVR setting(s) deleted"
       }
     },
     {
@@ -106744,9 +106744,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "DVR software toegevoegd",
-        "fr": "Logiciel DVR ajouté",
-        "en": "DVR software added"
+        "nl": "DVR/NVR software toegevoegd",
+        "fr": "Logiciel DVR/NVR ajouté",
+        "en": "DVR/NVR software added"
       }
     },
     {
@@ -114929,9 +114929,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "U staat op het punt om {{value}} DVR instelling(en) te verwijderen.",
-        "fr": "Vous êtes sur le point de supprimer {{value}} paramètre(s) du DVR.",
-        "en": "You are about to delete {{value}} DVR setting(s)."
+        "nl": "U staat op het punt om {{value}} DVR/NVR instelling(en) te verwijderen.",
+        "fr": "Vous êtes sur le point de supprimer {{value}} paramètre(s) du DVR/NVR.",
+        "en": "You are about to delete {{value}} DVR/NVR setting(s)."
       }
     },
     {

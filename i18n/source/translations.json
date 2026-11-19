@@ -21389,13 +21389,6 @@
     "applications": ["mypraxis_web", "mypraxis_app"]
   },
   {
-    "key": "info.addVideoVerificationThroughACommunicatorOrDvrNvrAndManageTheAssociatedConfigurations",
-    "nl": "Voeg beeldverificatie toe via het alarmpaneel of via een DVR/NVR en beheer hun configuratie",
-    "fr": "Ajouter une vérification image directement via le système d'alarme ou viaa un enregistreur vidéo numérique (DVR/NVR) et gérer leur configuration",
-    "en": "Add image verification through a communicator or DVR/NVR and manage the associated configurations.",
-    "applications": ["mypraxis_app"]
-  },
-  {
     "key": "info.aDifferenceBetweenTheAutomaticallyTransmittedZoneDescriptionAndTheManuallyEnteredLabelMayResultInIncorrectInformationBeingCommunicatedToTheClient",
     "nl": "Een verschil tussen de automatisch meegestuurde zoneomschrijving en de manueel ingevoerde benaming kan ertoe leiden dat foutieve informatie aan de klant wordt meegegeven.",
     "fr": "Si la 'description de zone' transmise automatiquement et la description de zone ajoutée manuellement diffèrent, ceci peut entraîner une communication d’information erronée au client.",
@@ -26674,5 +26667,12 @@
     "fr": "Disponible uniquement dans l’application de bureau.",
     "en": "Only available in the desktop application.",
     "applications": ["mypraxis_web", "mypraxis_app"]
+  },
+  {
+    "key": "info.addVideoVerificationThroughACommunicatorOrDvrNvrAndManageTheAssociatedConfigurations",
+    "nl": "Beheer de DVR/NVR-instellingen en bepaal welke acties op basis van de beelden worden uitgevoerd.",
+    "fr": "Gérez les paramètres DVR/NVR et définissez les actions à effectuer en fonction des images.",
+    "en": "Manage DVR/NVR settings and define which actions are performed based on the footage.",
+    "applications": ["mypraxis_app"]
   }
 ]

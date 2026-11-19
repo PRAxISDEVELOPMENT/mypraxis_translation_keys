@@ -3106,7 +3106,7 @@
     "additionalEmailAddressAccessRequired": "In addition, you need to grant access via the email address below in the respective software so that the footage can be consulted",
     "additionalExcelSummaryInTheDailyPDFContainingAllNotificationsReceivedFromYourCustomersOverThePast24Hours": "Additional Excel summary in the daily PDF containing all notifications received from your customers over the past 24 hours.",
     "additionalHandlingEmailOptOutConfirmation": "I hereby confirm that I agree to disable e-mail notifications for additional actions.",
-    "addVideoVerificationThroughACommunicatorOrDvrNvrAndManageTheAssociatedConfigurations": "Manage DVR/NVR settings and define which actions are performed based on the footage.",
+    "addVideoVerificationThroughACommunicatorOrDvrNvrAndManageTheAssociatedConfigurations": "Manage DVR/NVR settings and view which actions are performed based on the footage.",
     "aDifferenceBetweenTheAutomaticallyTransmittedZoneDescriptionAndTheManuallyEnteredLabelMayResultInIncorrectInformationBeingCommunicatedToTheClient": "A difference between the automatically transmitted zone description and the manually entered label may result in incorrect information being communicated to the client.",
     "afterOrderingYouWillReceiveNecessaryInformation": "After ordering you will receive all necessary information.",
     "afterReceiptOfTheSignedContractThisCertificateIsGeneratedViaAPIAndSentByEmail": "After receipt of the signed contract, this certificate is generated via API and sent by email.",

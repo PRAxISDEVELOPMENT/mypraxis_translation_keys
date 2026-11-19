@@ -3106,7 +3106,7 @@
     "additionalEmailAddressAccessRequired": "De plus, vous devez accorder l'accès via l'adresse e-mail ci-dessous dans le logiciel correspondant afin que les images puissent être consultées",
     "additionalExcelSummaryInTheDailyPDFContainingAllNotificationsReceivedFromYourCustomersOverThePast24Hours": "Résumé Excel supplémentaire ajouté au PDF quotidien, contenant toutes les notifications reçues de vos clients au cours des dernières 24 heures.",
     "additionalHandlingEmailOptOutConfirmation": "Je confirme par la présente que j'accepte de désactiver l'envoi d'emails de notification concernant les actions supplémentaires.",
-    "addVideoVerificationThroughACommunicatorOrDvrNvrAndManageTheAssociatedConfigurations": "Gérez les paramètres DVR/NVR et définissez les actions à effectuer en fonction des images.",
+    "addVideoVerificationThroughACommunicatorOrDvrNvrAndManageTheAssociatedConfigurations": "Gérez les paramètres DVR/NVR et consultez les actions effectuées en fonction des images.",
     "aDifferenceBetweenTheAutomaticallyTransmittedZoneDescriptionAndTheManuallyEnteredLabelMayResultInIncorrectInformationBeingCommunicatedToTheClient": "Si la 'description de zone' transmise automatiquement et la description de zone ajoutée manuellement diffèrent, ceci peut entraîner une communication d’information erronée au client.",
     "afterOrderingYouWillReceiveNecessaryInformation": "Après avoir passé commande, vous recevrez toutes les informations nécessaires.",
     "afterReceiptOfTheSignedContractThisCertificateIsGeneratedViaAPIAndSentByEmail": "Après réception du contrat signé, cette attestation est générée via l’API et envoyée par e-mail.",

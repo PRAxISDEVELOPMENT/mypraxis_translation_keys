@@ -93658,9 +93658,9 @@
       },
       "reviewRequiredLocales": [],
       "resolved": {
-        "nl": "Beheer de DVR/NVR-instellingen en bepaal welke acties op basis van de beelden worden uitgevoerd.",
-        "fr": "Gérez les paramètres DVR/NVR et définissez les actions à effectuer en fonction des images.",
-        "en": "Manage DVR/NVR settings and define which actions are performed based on the footage."
+        "nl": "Beheer de DVR/NVR-instellingen en bekijk welke acties op basis van de beelden worden uitgevoerd.",
+        "fr": "Gérez les paramètres DVR/NVR et consultez les actions effectuées en fonction des images.",
+        "en": "Manage DVR/NVR settings and view which actions are performed based on the footage."
       }
     },
     {

@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3808,
-    "uniqueKeys": 3808,
+    "totalEntries": 3809,
+    "uniqueKeys": 3809,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -69471,6 +69471,36 @@
       }
     },
     {
+      "key": "common.selectAtLeastOneFreeServiceOrAFixedDiscount",
+      "namespace": "common",
+      "leaf": "selectAtLeastOneFreeServiceOrAFixedDiscount",
+      "segments": [
+        "common",
+        "selectAtLeastOneFreeServiceOrAFixedDiscount"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3809
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Kies minstens één gratis dienst of een vaste korting.",
+        "fr": "Sélectionnez au moins un service gratuit ou une remise fixe.",
+        "en": "Select at least one free service or a fixed discount."
+      }
+    },
+    {
       "key": "common.selectCallcenter",
       "namespace": "common",
       "leaf": "selectCallcenter",
@@ -115106,7 +115136,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2717
+      "keyCount": 2718
     },
     {
       "name": "confirmation",

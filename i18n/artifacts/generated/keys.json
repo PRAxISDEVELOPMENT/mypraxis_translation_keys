@@ -2295,6 +2295,7 @@
   "common.selectableDuringSetup",
   "common.selectAll",
   "common.selectAllLabel",
+  "common.selectAtLeastOneFreeServiceOrAFixedDiscount",
   "common.selectCallcenter",
   "common.selectContactPerson",
   "common.selectContractType",

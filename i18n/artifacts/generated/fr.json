@@ -2300,6 +2300,7 @@
     "selectableDuringSetup": "Sélectionnable lors de la mise en forme",
     "selectAll": "Tout sélectionner",
     "selectAllLabel": "Tout sélectionner",
+    "selectAtLeastOneFreeServiceOrAFixedDiscount": "Sélectionnez au moins un service gratuit ou une remise fixe.",
     "selectCallcenter": "Sélectionner la service de garde",
     "selectContactPerson": "Sélectionner un contact",
     "selectContractType": "Sélectionnez le type de contrat",

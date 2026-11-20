@@ -26674,5 +26674,12 @@
     "fr": "Gérez les paramètres DVR/NVR et consultez les actions effectuées en fonction des images.",
     "en": "Manage DVR/NVR settings and view which actions are performed based on the footage.",
     "applications": ["mypraxis_app"]
+  },
+  {
+    "key": "common.selectAtLeastOneFreeServiceOrAFixedDiscount",
+    "nl": "Kies minstens één gratis dienst of een vaste korting.",
+    "fr": "Sélectionnez au moins un service gratuit ou une remise fixe.",
+    "en": "Select at least one free service or a fixed discount.",
+    "applications": ["mypraxis_web"]
   }
 ]

@@ -2300,6 +2300,7 @@
     "selectableDuringSetup": "Selectable during setup",
     "selectAll": "Select All",
     "selectAllLabel": "Select all",
+    "selectAtLeastOneFreeServiceOrAFixedDiscount": "Select at least one free service or a fixed discount.",
     "selectCallcenter": "Select callcenter",
     "selectContactPerson": "Select contact",
     "selectContractType": "Select contract type",

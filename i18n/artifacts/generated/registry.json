@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3809,
-    "uniqueKeys": 3809,
+    "totalEntries": 3815,
+    "uniqueKeys": 3815,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -30262,6 +30262,36 @@
       }
     },
     {
+      "key": "common.downloadContractDraft",
+      "namespace": "common",
+      "leaf": "downloadContractDraft",
+      "segments": [
+        "common",
+        "downloadContractDraft"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3810
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Concept downloaden",
+        "fr": "Télécharger le projet de contrat",
+        "en": "Download draft"
+      }
+    },
+    {
       "key": "common.downloadCSV",
       "namespace": "common",
       "leaf": "downloadCSV",
@@ -39065,6 +39095,36 @@
         "nl": "Contract genereren",
         "fr": "Générer le contrat",
         "en": "Generate contract"
+      }
+    },
+    {
+      "key": "common.generateContractDraftDescription",
+      "namespace": "common",
+      "leaf": "generateContractDraftDescription",
+      "segments": [
+        "common",
+        "generateContractDraftDescription"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3811
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Dit concept dient ter voorbereiding van het definitieve telebewakingscontract.",
+        "fr": "Ce projet sert à préparer le contrat de télésurveillance définitif.",
+        "en": "This draft is for preparing the final remote monitoring contract."
       }
     },
     {
@@ -68656,6 +68716,36 @@
       }
     },
     {
+      "key": "common.saveDraftChanges",
+      "namespace": "common",
+      "leaf": "saveDraftChanges",
+      "segments": [
+        "common",
+        "saveDraftChanges"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3812
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Wijzigingen aan concept opslaan",
+        "fr": "Enregistrer les modifications du brouillon",
+        "en": "Save draft changes"
+      }
+    },
+    {
       "key": "common.saveReportInMyPRAxIS",
       "namespace": "common",
       "leaf": "saveReportInMyPRAxIS",
@@ -82675,6 +82765,36 @@
       }
     },
     {
+      "key": "common.videoOtherCommandButtons",
+      "namespace": "common",
+      "leaf": "videoOtherCommandButtons",
+      "segments": [
+        "common",
+        "videoOtherCommandButtons"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3813
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Overige commandoknoppen",
+        "fr": "Autres boutons de commande",
+        "en": "Other command buttons"
+      }
+    },
+    {
       "key": "common.videoOtherImageActions",
       "namespace": "common",
       "leaf": "videoOtherImageActions",
@@ -89279,6 +89399,36 @@
         "nl": "Bestaande vertaalupdates vereisen een sleutel.",
         "fr": "Les mises à jour de traduction existantes nécessitent une clé.",
         "en": "Existing translation updates require a key."
+      }
+    },
+    {
+      "key": "error.externalMediaSelectionExpired",
+      "namespace": "error",
+      "leaf": "externalMediaSelectionExpired",
+      "segments": [
+        "error",
+        "externalMediaSelectionExpired"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3815
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Uw selectie bevat beelden die ouder zijn dan {{count}} dagen. Controleer uw selectie en probeer opnieuw.",
+        "fr": "Votre sélection contient des fichiers datant de plus de {{count}} jours. Vérifiez votre sélection et réessayez.",
+        "en": "Your selection includes footage that is more than {{count}} days old. Review your selection and try again."
       }
     },
     {
@@ -96495,6 +96645,36 @@
         "nl": "Er werd een uitzondering gevonden",
         "fr": "Exeption constatée",
         "en": "An exception was found"
+      }
+    },
+    {
+      "key": "info.externalMediaAvailability",
+      "namespace": "info",
+      "leaf": "externalMediaAvailability",
+      "segments": [
+        "info",
+        "externalMediaAvailability"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3814
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "U kunt beelden tot drie maanden terug bekijken. Beelden van maximaal {{count}} dagen oud kunt u downloaden en versturen.",
+        "fr": "Vous pouvez consulter les images et vidéos des trois derniers mois. Vous pouvez télécharger et envoyer les fichiers datant de {{count}} jours au maximum.",
+        "en": "You can view footage from the past three months. You can download and send footage up to {{count}} days old."
       }
     },
     {
@@ -115136,7 +115316,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2718
+      "keyCount": 2722
     },
     {
       "name": "confirmation",
@@ -115150,14 +115330,14 @@
       "label": "Fouten",
       "description": "Teksten voor situaties waarin een actie niet kan worden voltooid of onverwacht mislukt.",
       "status": "active",
-      "keyCount": 208
+      "keyCount": 209
     },
     {
       "name": "info",
       "label": "Informatie",
       "description": "Ondersteunende teksten die extra context, uitleg of begeleiding bieden aan de gebruiker.",
       "status": "active",
-      "keyCount": 324
+      "keyCount": 325
     },
     {
       "name": "metadata",

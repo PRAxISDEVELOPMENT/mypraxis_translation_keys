@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "source": "frontend-editor",
+  "entries": [
+    {
+      "key": "common.videoOtherImageActions",
+      "nl": "Overige acties in functie van de beelden:",
+      "fr": "Autres actions en functionne des images:",
+      "en": "Other actions related to the images:"
+    }
+  ]
+}

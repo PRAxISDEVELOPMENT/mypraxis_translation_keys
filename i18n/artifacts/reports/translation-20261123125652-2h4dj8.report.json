@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "command": "prepare",
+  "createdAt": "2026-11-23T12:57:06.990Z",
+  "inputFile": "../../_temp/translation-routing/direct/translation-20261123125652-2h4dj8.json",
+  "summary": {
+    "totalEntries": 1,
+    "directUpdates": 1,
+    "appliedDirectUpdates": 1,
+    "proposals": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "directUpdates": [
+    {
+      "type": "directUpdate",
+      "index": 1,
+      "key": "common.videoOtherImageActions",
+      "namespace": "common",
+      "changes": {
+        "nl": "Overige acties in functie van de beelden:",
+        "fr": "Autres actions en functionne des images:",
+        "en": "Other actions related to the images:"
+      },
+      "statusChanges": {},
+      "current": {
+        "nl": "Overige acties in functie van beelden:",
+        "fr": "Autres actions liées aux images :",
+        "en": "Other actions related to footage:"
+      },
+      "next": {
+        "nl": "Overige acties in functie van de beelden:",
+        "fr": "Autres actions en functionne des images:",
+        "en": "Other actions related to the images:"
+      },
+      "currentStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "nextStatus": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      }
+    }
+  ],
+  "proposals": [],
+  "skipped": [],
+  "errors": []
+}

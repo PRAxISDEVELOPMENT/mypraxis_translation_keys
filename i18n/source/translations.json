@@ -6948,7 +6948,7 @@
     "nl": "Download",
     "fr": "Téléchargez",
     "en": "Download",
-    "applications": ["mypraxis_web"]
+    "applications": ["mypraxis_web", "mypraxis_app"]
   },
   {
     "key": "common.downloadAttachment",
@@ -13958,6 +13958,13 @@
     "applications": ["mypraxis_web"]
   },
   {
+    "key": "common.playVideo",
+    "nl": "Video afspelen",
+    "fr": "Lire la vidéo",
+    "en": "Play video",
+    "applications": ["mypraxis_app"]
+  },
+  {
     "key": "common.pleaseArrangePaymentAsSoonAsPossible",
     "nl": "Gelieve deze betaling dringend uit te voeren",
     "fr": "Merci d'effectuer ce paiement d'urgence",
@@ -20374,6 +20381,13 @@
     "applications": ["mypraxis_web"]
   },
   {
+    "key": "error.externalMediaDownloadExpired",
+    "nl": "Dit beeld is ouder dan {{count}} dagen en kan niet meer worden gedownload.",
+    "fr": "Ce fichier date de plus de {{count}} jours et ne peut plus être téléchargé.",
+    "en": "This file is more than {{count}} days old and can no longer be downloaded.",
+    "applications": ["mypraxis_app"]
+  },
+  {
     "key": "error.failedToCopyPlaceholder",
     "nl": "Placeholder kopiëren mislukt",
     "fr": "Échec de la copie du placeholder",
@@ -22038,6 +22052,13 @@
     "fr": "Exeption constatée",
     "en": "An exception was found",
     "applications": ["unknown"]
+  },
+  {
+    "key": "info.externalMediaDownloadAvailability",
+    "nl": "U kunt beelden tot drie maanden terug bekijken. Beelden van maximaal {{count}} dagen oud kunt u afzonderlijk downloaden.",
+    "fr": "Vous pouvez consulter les images et vidéos des trois derniers mois. Vous pouvez télécharger séparément les fichiers datant de {{count}} jours au maximum.",
+    "en": "You can view footage from the past three months. You can download individual files up to {{count}} days old.",
+    "applications": ["mypraxis_app"]
   },
   {
     "key": "info.extraInfoCanOnlyBeAddedOrChangedUponRequestViaPraxisGroupNV",

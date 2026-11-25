@@ -26744,5 +26744,124 @@
     "fr": "Votre sélection contient des fichiers datant de plus de {{count}} jours. Vérifiez votre sélection et réessayez.",
     "en": "Your selection includes footage that is more than {{count}} days old. Review your selection and try again.",
     "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionTotal",
+    "nl": "Totaal acties",
+    "fr": "Total des actions",
+    "en": "Total promotions",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionFreeMonths",
+    "nl": "Gratis maanden",
+    "fr": "Mois gratuits",
+    "en": "Free months",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionTarget",
+    "nl": "Doelstelling",
+    "fr": "Objectif",
+    "en": "Target",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionTargetRatio",
+    "nl": "{{value}} van {{total}}",
+    "fr": "{{value}} sur {{total}}",
+    "en": "{{value}} of {{total}}",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionRequiredClients",
+    "nl": "Nodig: {{value}}",
+    "fr": "Nombre requis : {{value}}",
+    "en": "Required: {{value}}",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionRemainingClients",
+    "nl": "Nog nodig",
+    "fr": "Clients restants",
+    "en": "Customers still needed",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionGoalShare",
+    "nl": "Voortgang naar doel",
+    "fr": "Progression vers l’objectif",
+    "en": "Progress toward target",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionCurrentShare",
+    "nl": "Aandeel van potentiële klanten",
+    "fr": "Part des clients potentiels",
+    "en": "Share of potential customers",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionProgress",
+    "nl": "Voortgang",
+    "fr": "Progression",
+    "en": "Progress",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionTargetReached",
+    "nl": "Doelstelling behaald",
+    "fr": "Objectif atteint",
+    "en": "Target reached",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionTargetMissed",
+    "nl": "Doelstelling niet behaald",
+    "fr": "Objectif non atteint",
+    "en": "Target not reached",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionActiveTargets",
+    "nl": "Doelen van actieve acties",
+    "fr": "Objectifs des actions actives",
+    "en": "Targets for active promotions",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionRequiredClientCount",
+    "nl": "Vereiste nieuwe klanten",
+    "fr": "Nouveaux clients requis",
+    "en": "New customers required",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionGoalReached",
+    "nl": "Doel behaald",
+    "fr": "Objectif atteint",
+    "en": "Target reached",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionGoalOpen",
+    "nl": "Nog niet behaald",
+    "fr": "Pas encore atteint",
+    "en": "Not yet reached",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionTargetCoverage",
+    "nl": "Doelstatus bekend voor {{reported}} van {{active}}",
+    "fr": "Statut connu pour {{reported}} sur {{active}}",
+    "en": "Status known for {{reported}} of {{active}}",
+    "applications": ["mypraxis_web"]
+  },
+  {
+    "key": "common.commercialActionActiveShare",
+    "nl": "Aandeel actieve acties",
+    "fr": "Part des actions actives",
+    "en": "Share of active promotions",
+    "applications": ["mypraxis_web"]
   }
 ]

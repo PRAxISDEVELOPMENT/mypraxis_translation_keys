@@ -9,8 +9,8 @@
     "review-required"
   ],
   "summary": {
-    "totalEntries": 3818,
-    "uniqueKeys": 3818,
+    "totalEntries": 3835,
+    "uniqueKeys": 3835,
     "namespaces": 11,
     "applications": 5,
     "duplicateKeys": 0,
@@ -19038,6 +19038,216 @@
       }
     },
     {
+      "key": "common.commercialActionActiveShare",
+      "namespace": "common",
+      "leaf": "commercialActionActiveShare",
+      "segments": [
+        "common",
+        "commercialActionActiveShare"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3835
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Aandeel actieve acties",
+        "fr": "Part des actions actives",
+        "en": "Share of active promotions"
+      }
+    },
+    {
+      "key": "common.commercialActionActiveTargets",
+      "namespace": "common",
+      "leaf": "commercialActionActiveTargets",
+      "segments": [
+        "common",
+        "commercialActionActiveTargets"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3830
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Doelen van actieve acties",
+        "fr": "Objectifs des actions actives",
+        "en": "Targets for active promotions"
+      }
+    },
+    {
+      "key": "common.commercialActionCurrentShare",
+      "namespace": "common",
+      "leaf": "commercialActionCurrentShare",
+      "segments": [
+        "common",
+        "commercialActionCurrentShare"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3826
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Aandeel van potentiële klanten",
+        "fr": "Part des clients potentiels",
+        "en": "Share of potential customers"
+      }
+    },
+    {
+      "key": "common.commercialActionFreeMonths",
+      "namespace": "common",
+      "leaf": "commercialActionFreeMonths",
+      "segments": [
+        "common",
+        "commercialActionFreeMonths"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3820
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Gratis maanden",
+        "fr": "Mois gratuits",
+        "en": "Free months"
+      }
+    },
+    {
+      "key": "common.commercialActionGoalOpen",
+      "namespace": "common",
+      "leaf": "commercialActionGoalOpen",
+      "segments": [
+        "common",
+        "commercialActionGoalOpen"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3833
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Nog niet behaald",
+        "fr": "Pas encore atteint",
+        "en": "Not yet reached"
+      }
+    },
+    {
+      "key": "common.commercialActionGoalReached",
+      "namespace": "common",
+      "leaf": "commercialActionGoalReached",
+      "segments": [
+        "common",
+        "commercialActionGoalReached"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3832
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Doel behaald",
+        "fr": "Objectif atteint",
+        "en": "Target reached"
+      }
+    },
+    {
+      "key": "common.commercialActionGoalShare",
+      "namespace": "common",
+      "leaf": "commercialActionGoalShare",
+      "segments": [
+        "common",
+        "commercialActionGoalShare"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3825
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Voortgang naar doel",
+        "fr": "Progression vers l’objectif",
+        "en": "Progress toward target"
+      }
+    },
+    {
       "key": "common.commercialActionIsActiveClickTheSliderToDeactivate",
       "namespace": "common",
       "leaf": "commercialActionIsActiveClickTheSliderToDeactivate",
@@ -19098,6 +19308,126 @@
       }
     },
     {
+      "key": "common.commercialActionProgress",
+      "namespace": "common",
+      "leaf": "commercialActionProgress",
+      "segments": [
+        "common",
+        "commercialActionProgress"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3827
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Voortgang",
+        "fr": "Progression",
+        "en": "Progress"
+      }
+    },
+    {
+      "key": "common.commercialActionRemainingClients",
+      "namespace": "common",
+      "leaf": "commercialActionRemainingClients",
+      "segments": [
+        "common",
+        "commercialActionRemainingClients"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3824
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Nog nodig",
+        "fr": "Clients restants",
+        "en": "Customers still needed"
+      }
+    },
+    {
+      "key": "common.commercialActionRequiredClientCount",
+      "namespace": "common",
+      "leaf": "commercialActionRequiredClientCount",
+      "segments": [
+        "common",
+        "commercialActionRequiredClientCount"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3831
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Vereiste nieuwe klanten",
+        "fr": "Nouveaux clients requis",
+        "en": "New customers required"
+      }
+    },
+    {
+      "key": "common.commercialActionRequiredClients",
+      "namespace": "common",
+      "leaf": "commercialActionRequiredClients",
+      "segments": [
+        "common",
+        "commercialActionRequiredClients"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3823
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Nodig: {{value}}",
+        "fr": "Nombre requis : {{value}}",
+        "en": "Required: {{value}}"
+      }
+    },
+    {
       "key": "common.commercialActions",
       "namespace": "common",
       "leaf": "commercialActions",
@@ -19125,6 +19455,186 @@
         "nl": "Commerciële acties",
         "fr": "Actions commerciales",
         "en": "Commercial actions"
+      }
+    },
+    {
+      "key": "common.commercialActionTarget",
+      "namespace": "common",
+      "leaf": "commercialActionTarget",
+      "segments": [
+        "common",
+        "commercialActionTarget"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3821
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Doelstelling",
+        "fr": "Objectif",
+        "en": "Target"
+      }
+    },
+    {
+      "key": "common.commercialActionTargetCoverage",
+      "namespace": "common",
+      "leaf": "commercialActionTargetCoverage",
+      "segments": [
+        "common",
+        "commercialActionTargetCoverage"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3834
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Doelstatus bekend voor {{reported}} van {{active}}",
+        "fr": "Statut connu pour {{reported}} sur {{active}}",
+        "en": "Status known for {{reported}} of {{active}}"
+      }
+    },
+    {
+      "key": "common.commercialActionTargetMissed",
+      "namespace": "common",
+      "leaf": "commercialActionTargetMissed",
+      "segments": [
+        "common",
+        "commercialActionTargetMissed"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3829
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Doelstelling niet behaald",
+        "fr": "Objectif non atteint",
+        "en": "Target not reached"
+      }
+    },
+    {
+      "key": "common.commercialActionTargetRatio",
+      "namespace": "common",
+      "leaf": "commercialActionTargetRatio",
+      "segments": [
+        "common",
+        "commercialActionTargetRatio"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3822
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "{{value}} van {{total}}",
+        "fr": "{{value}} sur {{total}}",
+        "en": "{{value}} of {{total}}"
+      }
+    },
+    {
+      "key": "common.commercialActionTargetReached",
+      "namespace": "common",
+      "leaf": "commercialActionTargetReached",
+      "segments": [
+        "common",
+        "commercialActionTargetReached"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3828
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Doelstelling behaald",
+        "fr": "Objectif atteint",
+        "en": "Target reached"
+      }
+    },
+    {
+      "key": "common.commercialActionTotal",
+      "namespace": "common",
+      "leaf": "commercialActionTotal",
+      "segments": [
+        "common",
+        "commercialActionTotal"
+      ],
+      "applications": [
+        "mypraxis_web"
+      ],
+      "namespaceStatus": "active",
+      "sourceEntries": [
+        3819
+      ],
+      "duplicateCount": 1,
+      "duplicateValuesDiffer": false,
+      "missingLocales": [],
+      "status": {
+        "nl": "approved",
+        "fr": "approved",
+        "en": "approved"
+      },
+      "reviewRequiredLocales": [],
+      "resolved": {
+        "nl": "Totaal acties",
+        "fr": "Total des actions",
+        "en": "Total promotions"
       }
     },
     {
@@ -115407,7 +115917,7 @@
       "label": "Algemeen",
       "description": "Algemene interface-teksten die op meerdere plaatsen binnen de applicatie worden hergebruikt.",
       "status": "active",
-      "keyCount": 2723
+      "keyCount": 2740
     },
     {
       "name": "confirmation",

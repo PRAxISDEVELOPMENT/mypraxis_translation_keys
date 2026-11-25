@@ -26642,9 +26642,9 @@
   },
   {
     "key": "common.videoOtherImageActions",
-    "nl": "Overige acties in functie van beelden:",
-    "fr": "Autres actions liées aux images :",
-    "en": "Other actions related to footage:",
+    "nl": "Overige acties in functie van de beelden:",
+    "fr": "Autres actions en functionne des images:",
+    "en": "Other actions related to the images:",
     "applications": ["mypraxis_web", "mypraxis_app"]
   },
   {

@@ -26796,9 +26796,9 @@
   },
   {
     "key": "common.commercialActionCurrentShare",
-    "nl": "Aandeel van potentiële klanten",
-    "fr": "Part des clients potentiels",
-    "en": "Share of potential customers",
+    "nl": "Nieuwe klanten (% van potentieel)",
+    "fr": "Nouveaux clients (% du potentiel)",
+    "en": "New customers (% of potential customers)",
     "applications": ["mypraxis_web"]
   },
   {
